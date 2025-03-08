@@ -5,9 +5,10 @@ import java.time.Month;
 
 public class ExpenseManager {
     private List<ExpenseRecord> expenses;
-
+    private BudgetSet budgetSet;
     public ExpenseManager() {
         expenses = new ArrayList<>();
+        budgetSet = new BudgetSet();
         loadExpensesFromFile();
     }
 
@@ -47,7 +48,11 @@ public class ExpenseManager {
         ExpenseRecord record = new ExpenseRecord(category, amount, date, itemName);
         expenses.add(record);
         saveExpensesToFile();
+
+        // **确保 `BudgetSet` 记录消费**
+        budgetSet.addExpense(category, date, amount);
     }
+
 
     // 显示所有支出记录（控制台输出）
     public void displayExpenses() {
@@ -157,5 +162,23 @@ public class ExpenseManager {
             }
         }
     }
+    public void setBudget(String category, LocalDate budgetSetDate, LocalDate endDate, double amount) {
+        budgetSet.setBudget(category, endDate, amount);
+    }
 
+
+    // **获取预算进度**
+    public double getBudgetProgress(String category, LocalDate budgetSetDate, LocalDate endDate) {
+        return budgetSet.getBudgetProgress(category, budgetSetDate, endDate);
+    }
+
+    // **删除预算**
+    public boolean removeBudget(String category, LocalDate endDate) {
+        return budgetSet.removeBudget(category, endDate);
+    }
+
+    // **获取所有预算**
+    public Map<String, Map<LocalDate, Double>> getAllBudgets() {
+        return budgetSet.getAllBudgets();
+    }
 }

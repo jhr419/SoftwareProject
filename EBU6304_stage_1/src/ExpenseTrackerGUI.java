@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.time.LocalDate;
 import java.util.Map;
 
-// JFreeChart相关导入
+// JFreeChart 相关导入
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -26,159 +26,175 @@ public class ExpenseTrackerGUI {
         // 创建主框架
         frame = new JFrame("Expense Tracker");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 500);  // 设置框架大小
+        frame.setSize(900, 600);
+        frame.setLayout(new BorderLayout());
 
-        // 设置主面板
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridBagLayout());  // 使用GridBagLayout管理布局
+        // **创建主面板**
+        JPanel panel = new JPanel(new GridBagLayout());
         frame.getContentPane().add(panel, BorderLayout.CENTER);
-
-// 完整路径到图片文件
-        String imagePath = "AI_assistant.jpg";  // 你的图片路径
-
-// 创建ImageIcon并加载图片
-        ImageIcon imageIcon = new ImageIcon(imagePath);
-
-// 获取原始图片
-        Image image = imageIcon.getImage();
-
-// 调整图片大小，比如设置宽度为200px，高度为200px
-        Image resizedImage = image.getScaledInstance(150, 150, Image.SCALE_SMOOTH);  // 使用平滑缩放
-
-// 创建新的ImageIcon对象并将调整大小后的图片设置为图标
-        ImageIcon resizedImageIcon = new ImageIcon(resizedImage);
-
-// 创建JLabel并设置ImageIcon
-        JLabel imageLabel = new JLabel(resizedImageIcon);
-
-// 设置GridBagConstraints来定位图片
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 0;   // 在第一列
-        gbc.gridy = 0;   // 在第一行
-        gbc.gridwidth = 2;  // 占用两列空间
-        panel.add(imageLabel, gbc);  // 将图片添加到面板
+        gbc.insets = new Insets(10, 10, 10, 10);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
 
+        // **加载并显示图片**
+        String imagePath = "AI_assistant.jpg";
+        ImageIcon imageIcon = new ImageIcon(imagePath);
+        Image image = imageIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
+        JLabel imageLabel = new JLabel(new ImageIcon(image));
 
-        gbc.insets = new Insets(10, 10, 10, 10);  // 添加间距，避免按钮太挤
-
-        // 按钮样式
-        Font buttonFont = new Font("Arial", Font.PLAIN, 14);
-
-        // 添加支出记录按钮
-        JButton addExpenseButton = new JButton("Add Expense");
-        addExpenseButton.setFont(buttonFont);
-        gbc.gridx = 0; gbc.gridy = 1;
-        gbc.gridwidth = 2; // 按钮跨越两列
-        panel.add(addExpenseButton, gbc);
-        addExpenseButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String category = JOptionPane.showInputDialog("Enter category:");
-                String amountStr = JOptionPane.showInputDialog("Enter amount:");
-                String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
-                String itemName = JOptionPane.showInputDialog("Enter item name:");
-                LocalDate date = LocalDate.parse(dateStr);
-                double amount = Double.parseDouble(amountStr);
-                expenseManager.addExpense(category, amount, date, itemName);
-            }
-        });
-
-        // 显示所有支出记录按钮
-        JButton displayExpensesButton = new JButton("Display Expenses");
-        displayExpensesButton.setFont(buttonFont);
-        gbc.gridx = 0; gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        panel.add(displayExpensesButton, gbc);
-        displayExpensesButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                expenseManager.displayExpenses();
-            }
-        });
-
-        // 显示按分类统计的支出记录
-        JButton displayCategoryButton = new JButton("Display Category Expenses");
-        displayCategoryButton.setFont(buttonFont);
-        gbc.gridx = 1; gbc.gridy = 2;
-        panel.add(displayCategoryButton, gbc);
-        displayCategoryButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                expenseManager.displayCategoryExpenses();
-            }
-        });
-
-        // 绘制时间折线图按钮（每日支出趋势）
-        JButton timeLineChartButton = new JButton("Show Time-Line Chart");
-        timeLineChartButton.setFont(buttonFont);
-        gbc.gridx = 0; gbc.gridy = 3;
-        panel.add(timeLineChartButton, gbc);
-        timeLineChartButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                showTimeLineChart();
-            }
-        });
-
-        // 绘制种类饼图按钮
-        JButton categoryPieChartButton = new JButton("Show Category Pie Chart");
-        categoryPieChartButton.setFont(buttonFont);
-        gbc.gridx = 1; gbc.gridy = 3;
-        panel.add(categoryPieChartButton, gbc);
-        categoryPieChartButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                showCategoryPieChart();
-            }
-        });
-
-        // 显示分类和时间（年）按钮
-        JButton displayCategoryAndYearButton = new JButton("Display Category and Year Expenses");
-        displayCategoryAndYearButton.setFont(buttonFont);
-        gbc.gridx = 0; gbc.gridy = 4;
-        panel.add(displayCategoryAndYearButton, gbc);
-        displayCategoryAndYearButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                expenseManager.displayCategoryAndTimeExpenses();
-            }
-        });
-
-        // 显示分类和时间（月）按钮
-        JButton displayCategoryAndMonthButton = new JButton("Display Category and Month Expenses");
-        displayCategoryAndMonthButton.setFont(buttonFont);
-        gbc.gridx = 1; gbc.gridy = 4;
-        panel.add(displayCategoryAndMonthButton, gbc);
-        displayCategoryAndMonthButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                expenseManager.displayCategoryAndTimeExpenses();
-            }
-        });
-
-        // 显示分类和时间（日）按钮
-        JButton displayCategoryAndDayButton = new JButton("Display Category and Day Expenses");
-        displayCategoryAndDayButton.setFont(buttonFont);
-        gbc.gridx = 0; gbc.gridy = 5;
+        gbc.gridx = 0;
+        gbc.gridy = 0;
         gbc.gridwidth = 2;
-        panel.add(displayCategoryAndDayButton, gbc);
-        displayCategoryAndDayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                expenseManager.displayCategoryAndTimeExpenses();
-            }
-        });
+        panel.add(imageLabel, gbc);
 
-        // 设置框架可见
+        // **支出管理**
+        addSectionTitle(panel, gbc, "Expense Management", 1);
+        addButton(panel, gbc, "Add Expense", 2, e -> addExpense());
+        addButton(panel, gbc, "Display Expenses", 3, e -> expenseManager.displayExpenses());
+        addButton(panel, gbc, "Display Category Expenses", 4, e -> expenseManager.displayCategoryExpenses());
+
+        // **预算管理**
+        addSectionTitle(panel, gbc, "Budget Management", 5);
+        addButton(panel, gbc, "Set Budget (Category + Date)", 6, e -> setBudget());
+        addButton(panel, gbc, "Remove Budget", 7, e -> removeBudget());
+        addButton(panel, gbc, "Show Budget Report", 8, e -> showBudgetReport());
+        addButton(panel, gbc, "Show Budget Progress", 9, e -> showBudgetProgress());
+
+        // **数据可视化**
+        addSectionTitle(panel, gbc, "Data Visualization", 10);
+        addButton(panel, gbc, "Show Time-Line Chart", 11, e -> showTimeLineChart());
+        addButton(panel, gbc, "Show Category Pie Chart", 12, e -> showCategoryPieChart());
+
         frame.setVisible(true);
     }
 
-    // 使用 JFreeChart 绘制时间折线图（按每日统计）
+    // **添加分组标题**
+    private void addSectionTitle(JPanel panel, GridBagConstraints gbc, String title, int row) {
+        JLabel sectionLabel = new JLabel(title, SwingConstants.CENTER);
+        sectionLabel.setFont(new Font("Arial", Font.BOLD, 18));
+        gbc.gridx = 0;
+        gbc.gridy = row;
+        gbc.gridwidth = 2;
+        panel.add(sectionLabel, gbc);
+    }
+
+    // **添加按钮**
+    private void addButton(JPanel panel, GridBagConstraints gbc, String text, int row, ActionListener action) {
+        JButton button = new JButton(text);
+        button.setFont(new Font("Arial", Font.PLAIN, 14));
+        gbc.gridx = 0;
+        gbc.gridy = row;
+        gbc.gridwidth = 2;
+        button.addActionListener(action);
+        panel.add(button, gbc);
+    }
+
+    // **支出管理**
+    private void addExpense() {
+        String category = JOptionPane.showInputDialog("Enter category:");
+        String amountStr = JOptionPane.showInputDialog("Enter amount:");
+        String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
+        String itemName = JOptionPane.showInputDialog("Enter item name:");
+        LocalDate date = LocalDate.parse(dateStr);
+        double amount = Double.parseDouble(amountStr);
+        expenseManager.addExpense(category, amount, date, itemName);
+    }
+
+    // **预算管理**
+    // **设置预算**
+    private void setBudget() {
+        String category = JOptionPane.showInputDialog("Enter category:");
+        String startDateStr = JOptionPane.showInputDialog("Enter budget start date (YYYY-MM-DD):");
+        String endDateStr = JOptionPane.showInputDialog("Enter budget end date (YYYY-MM-DD):");
+        String amountStr = JOptionPane.showInputDialog("Enter budget amount:");
+
+        LocalDate budgetSetDate = LocalDate.parse(startDateStr);
+        LocalDate endDate = LocalDate.parse(endDateStr);
+        double amount = Double.parseDouble(amountStr);
+
+        expenseManager.setBudget(category, budgetSetDate, endDate, amount);
+        JOptionPane.showMessageDialog(frame, "Budget Set Successfully!");
+    }
+
+    private void removeBudget() {
+        Map<String, Map<LocalDate, Double>> budgets = expenseManager.getAllBudgets();
+
+        if (budgets.isEmpty()) {
+            JOptionPane.showMessageDialog(frame, "No budgets available to remove.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        // **创建预算列表**
+        String[] budgetOptions = budgets.entrySet().stream()
+                .flatMap(categoryEntry -> categoryEntry.getValue().entrySet().stream()
+                        .map(dateEntry -> categoryEntry.getKey() + " (" + dateEntry.getKey() + ")"))
+                .toArray(String[]::new);
+
+        // **让用户从下拉菜单中选择要删除的预算**
+        String selected = (String) JOptionPane.showInputDialog(
+                frame,
+                "Select Budget to Remove:",
+                "Remove Budget",
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                budgetOptions,
+                budgetOptions[0] // 默认选中第一个
+        );
+
+        if (selected != null) {
+            String[] parts = selected.split(" \\(");
+            String category = parts[0];
+            LocalDate endDate = LocalDate.parse(parts[1].replace(")", ""));
+            boolean success = expenseManager.removeBudget(category, endDate);
+
+            if (success) {
+                JOptionPane.showMessageDialog(frame, "Budget Removed Successfully!");
+            } else {
+                JOptionPane.showMessageDialog(frame, "Failed to remove budget!", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+
+    private void showBudgetReport() {
+        String category = JOptionPane.showInputDialog("Enter category (leave empty for all):");
+        Map<String, Map<LocalDate, Double>> budgets = expenseManager.getAllBudgets();
+        StringBuilder report = new StringBuilder("Budget Report:\n");
+
+        for (String cat : budgets.keySet()) {
+            if (category.isEmpty() || category.equalsIgnoreCase(cat)) {
+                for (LocalDate date : budgets.get(cat).keySet()) {
+                    report.append(cat).append(" (").append(date).append("): ").append(budgets.get(cat).get(date)).append("\n");
+                }
+            }
+        }
+        JOptionPane.showMessageDialog(frame, report.toString(), "Budget Report", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private void showBudgetProgress() {
+        String category = JOptionPane.showInputDialog("Enter category:");
+        String startDateStr = JOptionPane.showInputDialog("Enter budget start date (YYYY-MM-DD):");
+        String endDateStr = JOptionPane.showInputDialog("Enter budget end date (YYYY-MM-DD):");
+
+        LocalDate budgetSetDate = LocalDate.parse(startDateStr);
+        LocalDate endDate = LocalDate.parse(endDateStr);
+
+        double progress = expenseManager.getBudgetProgress(category, budgetSetDate, endDate) * 100;
+
+        JProgressBar progressBar = new JProgressBar(0, 100);
+        progressBar.setValue((int) progress);
+        progressBar.setStringPainted(true);
+
+        JOptionPane.showMessageDialog(frame, progressBar, "Budget Progress", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+
+
+    // **数据可视化 - 时间折线图**
     private void showTimeLineChart() {
         Map<LocalDate, Double> dailyData = expenseManager.getDailySpendingData();
         TimeSeries series = new TimeSeries("Daily Spending");
 
-        // 将数据添加到时间序列中
         for (Map.Entry<LocalDate, Double> entry : dailyData.entrySet()) {
             LocalDate date = entry.getKey();
             double amount = entry.getValue();
@@ -188,25 +204,11 @@ public class ExpenseTrackerGUI {
         TimeSeriesCollection dataset = new TimeSeriesCollection();
         dataset.addSeries(series);
 
-        JFreeChart chart = ChartFactory.createTimeSeriesChart(
-                "Daily Expense Line Chart", // 图表标题
-                "Date",           // x轴标签
-                "Expense",       // y轴标签
-                dataset,
-                true,
-                true,
-                false
-        );
-
-        ChartPanel chartPanel = new ChartPanel(chart);
-        JFrame chartFrame = new JFrame("Daily Expense Line Chart");
-        chartFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        chartFrame.add(chartPanel);
-        chartFrame.pack();
-        chartFrame.setVisible(true);
+        JFreeChart chart = ChartFactory.createTimeSeriesChart("Daily Expense Line Chart", "Date", "Expense", dataset, true, true, false);
+        showChart(chart, "Daily Expense Line Chart");
     }
 
-    // 使用 JFreeChart 绘制消费种类饼图
+    // **数据可视化 - 饼图**
     private void showCategoryPieChart() {
         Map<String, Double> categoryData = expenseManager.getCategorySpendingData();
         DefaultPieDataset dataset = new DefaultPieDataset();
@@ -214,16 +216,13 @@ public class ExpenseTrackerGUI {
             dataset.setValue(entry.getKey(), entry.getValue());
         }
 
-        JFreeChart chart = ChartFactory.createPieChart(
-                "Spending by Category", // 图表标题
-                dataset,
-                true,
-                true,
-                false
-        );
+        JFreeChart chart = ChartFactory.createPieChart("Spending by Category", dataset, true, true, false);
+        showChart(chart, "Spending by Category Pie Chart");
+    }
 
+    private void showChart(JFreeChart chart, String title) {
         ChartPanel chartPanel = new ChartPanel(chart);
-        JFrame chartFrame = new JFrame("Spending by Category Pie Chart");
+        JFrame chartFrame = new JFrame(title);
         chartFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         chartFrame.add(chartPanel);
         chartFrame.pack();
@@ -231,11 +230,6 @@ public class ExpenseTrackerGUI {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new ExpenseTrackerGUI();
-            }
-        });
+        SwingUtilities.invokeLater(ExpenseTrackerGUI::new);
     }
 }
