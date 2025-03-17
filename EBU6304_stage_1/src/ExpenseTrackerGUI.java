@@ -12,7 +12,7 @@ import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.time.TimeSeries;
 import org.jfree.data.time.TimeSeriesCollection;
 import org.jfree.data.time.Day;
-
+//测试一下git
 public class ExpenseTrackerGUI {
     private JFrame frame;
     private ExpenseManager expenseManager;
