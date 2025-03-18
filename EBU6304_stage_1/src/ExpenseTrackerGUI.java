@@ -12,6 +12,9 @@ import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.time.TimeSeries;
 import org.jfree.data.time.TimeSeriesCollection;
 import org.jfree.data.time.Day;
+import org.jfree.chart.axis.DateAxis;
+import java.text.SimpleDateFormat;
+
 //测试一下git
 public class ExpenseTrackerGUI {
     private JFrame frame;
@@ -204,10 +207,24 @@ public class ExpenseTrackerGUI {
         TimeSeriesCollection dataset = new TimeSeriesCollection();
         dataset.addSeries(series);
 
-        JFreeChart chart = ChartFactory.createTimeSeriesChart("Daily Expense Line Chart", "Date", "Expense", dataset, true, true, false);
+        // **创建图表**
+        JFreeChart chart = ChartFactory.createTimeSeriesChart(
+                "Daily Expense Line Chart",
+                "Date",
+                "Expense",
+                dataset,
+                true,
+                true,
+                false
+        );
+
+        // **强制设置 X 轴格式（按具体日期显示）**
+        DateAxis xAxis = (DateAxis) chart.getXYPlot().getDomainAxis();
+        xAxis.setDateFormatOverride(new SimpleDateFormat("yyyy-MM-dd")); // **设置日期格式**
+        xAxis.setVerticalTickLabels(true); // **垂直显示日期，防止重叠**
+
         showChart(chart, "Daily Expense Line Chart");
     }
-
     // **数据可视化 - 饼图**
     private void showCategoryPieChart() {
         Map<String, Double> categoryData = expenseManager.getCategorySpendingData();
