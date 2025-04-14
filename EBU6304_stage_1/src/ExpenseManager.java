@@ -233,6 +233,12 @@ public class ExpenseManager {
         }
         return false;
     }
+    public Map<String, Double> getBudgetsByDate(LocalDate date) {
+        return budgetSet.getBudgetsByDate(date);
+    }
+    public Map<LocalDate, Double> getBudgetsByCategory(String category) {
+        return budgetSet.getBudgetsByCategory(category);
+    }
 
     // 新增：对收入和支出进行分类统计，返回一个 Map，
     // 键为 "income" 或 "expense"，值为每个类别的总金额
