@@ -72,6 +72,10 @@ public class ExpenseTrackerGUI {
         // 第二行按钮：Show Budget Report | Show Budget Progress
         addButton(panel, gbc, "Show Budget Report", row, 0, e -> showBudgetReport());
         addButton(panel, gbc, "Show Budget Progress", row, 1, e -> showBudgetProgress());
+        row++;
+        addButton(panel, gbc, "Show Budgets by Date", row, 0, e -> showBudgetsByDate());
+        // 添加 "Show Budgets by Category" 按钮
+        addButton(panel, gbc, "Show Budgets by Category", row, 1, e -> showBudgetsByCategory());
 
         row++;
         // Data Visualization 分组标题
@@ -95,6 +99,41 @@ public class ExpenseTrackerGUI {
         panel.add(reportButton, gbc);
 
         frame.setVisible(true);
+    }
+    private void showBudgetsByCategory() {
+        String category = JOptionPane.showInputDialog("Enter category:");
+        if (category != null && !category.isEmpty()) {
+            Map<LocalDate, Double> budgets = expenseManager.getBudgetsByCategory(category);
+
+            if (budgets.isEmpty()) {
+                JOptionPane.showMessageDialog(frame, "No budgets found for category: " + category, "No Data", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                StringBuilder report = new StringBuilder("Budgets for category: " + category + "\n");
+                for (Map.Entry<LocalDate, Double> entry : budgets.entrySet()) {
+                    report.append("End Date: ").append(entry.getKey()).append(" | Budget: ").append(entry.getValue()).append("\n");
+                }
+                JOptionPane.showMessageDialog(frame, report.toString(), "Category Budgets", JOptionPane.INFORMATION_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(frame, "Category input cannot be empty.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void showBudgetsByDate() {
+        String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
+        try {
+            LocalDate date = LocalDate.parse(dateStr);
+            Map<String, Double> budgets = expenseManager.getBudgetsByDate(date);
+
+            StringBuilder report = new StringBuilder("Budgets for " + date + ":\n");
+            for (Map.Entry<String, Double> entry : budgets.entrySet()) {
+                report.append("Category: " + entry.getKey() + " | Budget: " + entry.getValue() + "\n");
+            }
+
+            JOptionPane.showMessageDialog(frame, report.toString(), "Budgets for " + date, JOptionPane.INFORMATION_MESSAGE);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(frame, "Invalid date format: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     // 辅助方法：添加分组标题（横跨两列）
