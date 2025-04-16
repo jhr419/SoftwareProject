@@ -6,13 +6,60 @@ public class BudgetSet {
     private Map<String, Map<LocalDate, Double>> categoryBudgets;  // {类别 -> {截止日期 -> 预算金额}}
     private Map<String, Map<LocalDate, Double>> categorySpending; // {类别 -> {日期 -> 已支出金额}}
     private static final String BUDGET_FILE = "budget.csv";
-
+    private Map<String, Map<LocalDate, Double>> categorySavings;  // {类别 -> {日期 -> 储蓄金额}}
     public BudgetSet() {
         categoryBudgets = new HashMap<>();
         categorySpending = new HashMap<>();
+        categorySavings = new HashMap<>();  // 初始化储蓄数据
         loadBudgetsFromFile();
         loadExpensesFromFile(); // **新增：在启动时加载 `expenses.csv`**
 
+    }
+
+    public void setSavings(String category, LocalDate date, double amount) {
+        categorySavings.putIfAbsent(category, new HashMap<>());
+        categorySavings.get(category).put(date, amount);
+        saveSavingsToFile();
+    }
+
+    // **记录储蓄**
+    public void addSavings(String category, LocalDate date, double amount) {
+        categorySavings.putIfAbsent(category, new HashMap<>());
+        categorySavings.get(category).put(date, categorySavings.get(category).getOrDefault(date, 0.0) + amount);
+    }
+
+    // **查询所有储蓄**
+    public Map<String, Map<LocalDate, Double>> getAllSavings() {
+        return categorySavings;
+    }
+
+    // **按类别查询储蓄**
+    public Map<LocalDate, Double> getSavingsByCategory(String category) {
+        return categorySavings.getOrDefault(category, new HashMap<>());
+    }
+
+    // **按日期查询储蓄**
+    public Map<String, Double> getSavingsByDate(LocalDate date) {
+        Map<String, Double> result = new HashMap<>();
+        for (String category : categorySavings.keySet()) {
+            if (categorySavings.get(category).containsKey(date)) {
+                result.put(category, categorySavings.get(category).get(date));
+            }
+        }
+        return result;
+    }
+
+    private void saveSavingsToFile() {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("savings.csv"))) {
+            for (String category : categorySavings.keySet()) {
+                for (LocalDate date : categorySavings.get(category).keySet()) {
+                    writer.write(category + "," + date + "," + categorySavings.get(category).get(date));
+                    writer.newLine();
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error saving savings data: " + e.getMessage());
+        }
     }
 
     // **设定预算**
