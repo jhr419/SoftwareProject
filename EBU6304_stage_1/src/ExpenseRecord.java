@@ -35,6 +35,8 @@ public class ExpenseRecord {
         return transactionType;
     }
 
+
+
     @Override
     public String toString() {
         // 保存时采用 CSV 格式，新增交易类型字段
