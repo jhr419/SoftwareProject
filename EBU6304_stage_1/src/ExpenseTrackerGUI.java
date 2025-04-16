@@ -27,7 +27,7 @@ public class ExpenseTrackerGUI {
     }
 
     private void initialize() {
-        frame = new JFrame("Expense Tracker");
+        frame = new JFrame("Kobe Xie");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 700);
         frame.setLayout(new BorderLayout());
@@ -86,8 +86,16 @@ public class ExpenseTrackerGUI {
         addButton(panel, gbc, "Show Category Pie Chart", row, 1, e -> showCategoryPieChart());
 
         row++;
+        addSectionTitle(panel, gbc, "Savings", row);
+        row++;
+        addButton(panel, gbc, "Set Savings", row, 0, e -> setSavings());
+        addButton(panel, gbc, "Show Savings Report", row, 1, e -> showSavingsReport());
+
+        row++;
         // Reports 分组标题
         addSectionTitle(panel, gbc, "Reports", row);
+
+
         row++;
         // 单个按钮居中：Show Classification Report
         gbc.gridx = 0;
@@ -155,6 +163,20 @@ public class ExpenseTrackerGUI {
         button.setFont(new Font("Arial", Font.PLAIN, 14));
         button.addActionListener(action);
         panel.add(button, gbc);
+    }
+    private void setSavings() {
+        String category = JOptionPane.showInputDialog("Enter category:");
+        String dateStr = JOptionPane.showInputDialog("Enter savings date (YYYY-MM-DD):");
+        String amountStr = JOptionPane.showInputDialog("Enter savings amount:");
+
+        try {
+            LocalDate date = LocalDate.parse(dateStr);
+            double amount = Double.parseDouble(amountStr);
+            expenseManager.setSavings(category, date, amount);
+            JOptionPane.showMessageDialog(frame, "Savings Set Successfully!");
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(frame, "Invalid input: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     // 添加记录（交易）——提示用户输入交易类型（income 或 expense）
@@ -241,6 +263,20 @@ public class ExpenseTrackerGUI {
             }
         }
         JOptionPane.showMessageDialog(frame, report.toString(), "Budget Report", JOptionPane.INFORMATION_MESSAGE);
+    }
+    private void showSavingsReport() {
+        String category = JOptionPane.showInputDialog("Enter category (leave empty for all):");
+        Map<String, Map<LocalDate, Double>> savings = expenseManager.getAllSavings();
+        StringBuilder report = new StringBuilder("Savings Report:\n");
+
+        for (String cat : savings.keySet()) {
+            if (category.isEmpty() || category.equalsIgnoreCase(cat)) {
+                for (LocalDate date : savings.get(cat).keySet()) {
+                    report.append(cat).append(" (").append(date).append("): ").append(savings.get(cat).get(date)).append("\n");
+                }
+            }
+        }
+        JOptionPane.showMessageDialog(frame, report.toString(), "Savings Report", JOptionPane.INFORMATION_MESSAGE);
     }
 
     private void showBudgetProgress() {
