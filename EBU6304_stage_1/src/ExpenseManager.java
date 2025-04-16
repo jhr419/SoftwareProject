@@ -254,4 +254,22 @@ public class ExpenseManager {
         }
         return classification;
     }
+
+    public void setSavings(String category, LocalDate date, double amount) {
+        budgetSet.setSavings(category, date, amount);
+    }
+
+    public Map<String, Map<LocalDate, Double>> getAllSavings() {
+        return budgetSet.getAllSavings();
+    }
+
+    public Map<LocalDate, Double> getSavingsByCategory(String category) {
+        return budgetSet.getSavingsByCategory(category);
+    }
+
+    public Map<String, Double> getSavingsByDate(LocalDate date) {
+        return budgetSet.getSavingsByDate(date);
+    }
+
+
 }
