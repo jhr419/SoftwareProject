@@ -4,16 +4,17 @@ import java.util.*;
 import java.time.Month;
 
 public class ExpenseManager {
-    private List<ExpenseRecord> expenses;
-    private BudgetSet budgetSet;
+    private List<ExpenseRecord> expenses;  // 用于存储所有的消费记录
+    private BudgetSet budgetSet;  // 用于管理预算
 
+    // 构造函数，初始化消费记录和预算管理
     public ExpenseManager() {
         expenses = new ArrayList<>();
         budgetSet = new BudgetSet();
-        loadExpensesFromFile();
+        loadExpensesFromFile();  // 从文件加载消费记录
     }
 
-    // 从CSV文件加载记录（支持收入和支出）
+    // 从CSV文件加载消费记录（支持收入和支出）
     private void loadExpensesFromFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader("expenses.csv"))) {
             String line;
@@ -32,42 +33,42 @@ public class ExpenseManager {
                 expenses.add(new ExpenseRecord(category, amount, date, itemName, transactionType));
             }
         } catch (IOException e) {
-            System.out.println("Error loading expenses: " + e.getMessage());
+            System.out.println("加载消费记录时出错: " + e.getMessage());
         }
     }
 
-    // 保存记录到CSV文件
+    // 保存消费记录到CSV文件
     public void saveExpensesToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("expenses.csv"))) {
             for (ExpenseRecord record : expenses) {
-                writer.write(record.toString());
+                writer.write(record.toString());  // 将每条记录写入文件
                 writer.newLine();
             }
         } catch (IOException e) {
-            System.out.println("Error saving expenses: " + e.getMessage());
+            System.out.println("保存消费记录时出错: " + e.getMessage());
         }
     }
 
-    // 添加新的记录（交易）
+    // 添加新的消费记录（交易）
     public void addExpense(String category, double amount, LocalDate date, String itemName, String transactionType) {
         ExpenseRecord record = new ExpenseRecord(category, amount, date, itemName, transactionType);
         expenses.add(record);
-        saveExpensesToFile();
+        saveExpensesToFile();  // 保存新的消费记录到文件
 
-        // 如果是出账，更新预算支出数据
+        // 如果是支出，更新预算数据
         if (transactionType.equalsIgnoreCase("expense")) {
             budgetSet.addExpense(category, date, amount);
         }
     }
 
-    // 显示所有记录（控制台输出）
+    // 显示所有消费记录（控制台输出）
     public void displayExpenses() {
         for (ExpenseRecord record : expenses) {
             System.out.println(record);
         }
     }
 
-    // 按分类统计出账总额
+    // 按类别统计支出总额
     public void displayCategoryExpenses() {
         Map<String, Double> categoryTotals = new HashMap<>();
         for (ExpenseRecord record : expenses) {
@@ -77,12 +78,13 @@ public class ExpenseManager {
                 categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
             }
         }
+        // 打印每个类别的支出总额
         for (Map.Entry<String, Double> entry : categoryTotals.entrySet()) {
             System.out.println("分类: " + entry.getKey() + " | 总支出: " + entry.getValue());
         }
     }
 
-    // 按日统计出账数据，用于折线图绘制
+    // 按日统计支出数据，用于折线图绘制
     public Map<LocalDate, Double> getDailySpendingData() {
         Map<LocalDate, Double> dailyData = new HashMap<>();
         for (ExpenseRecord record : expenses) {
@@ -106,7 +108,7 @@ public class ExpenseManager {
         return dailyData;
     }
 
-    // 按分类统计出账数据，用于饼图绘制
+    // 按分类统计支出数据，用于饼图绘制
     public Map<String, Double> getCategorySpendingData() {
         Map<String, Double> categoryData = new HashMap<>();
         for (ExpenseRecord record : expenses) {
@@ -118,7 +120,7 @@ public class ExpenseManager {
         return categoryData;
     }
 
-    // 按分类和时间（年）统计出账总额
+    // 按分类和时间（年）统计支出总额
     public void displayCategoryAndTimeExpenses() {
         Map<String, Map<Integer, Double>> categoryTimeTotals = new HashMap<>();
 
@@ -134,6 +136,7 @@ public class ExpenseManager {
             }
         }
 
+        // 打印每个类别按年统计的支出
         for (Map.Entry<String, Map<Integer, Double>> entry : categoryTimeTotals.entrySet()) {
             System.out.println("分类: " + entry.getKey());
             for (Map.Entry<Integer, Double> yearEntry : entry.getValue().entrySet()) {
@@ -142,7 +145,7 @@ public class ExpenseManager {
         }
     }
 
-    // 按分类和时间（月）统计出账总额
+    // 按分类和时间（月）统计支出总额
     public void displayCategoryAndMonthExpenses() {
         Map<String, Map<Month, Double>> categoryMonthTotals = new HashMap<>();
 
@@ -158,6 +161,7 @@ public class ExpenseManager {
             }
         }
 
+        // 打印每个类别按月统计的支出
         for (Map.Entry<String, Map<Month, Double>> entry : categoryMonthTotals.entrySet()) {
             System.out.println("分类: " + entry.getKey());
             for (Map.Entry<Month, Double> monthEntry : entry.getValue().entrySet()) {
@@ -166,7 +170,7 @@ public class ExpenseManager {
         }
     }
 
-    // 按分类和日期统计出账总额
+    // 按分类和日期统计支出总额
     public void displayCategoryAndDayExpenses() {
         Map<String, Map<LocalDate, Double>> categoryDayTotals = new HashMap<>();
 
@@ -182,6 +186,7 @@ public class ExpenseManager {
             }
         }
 
+        // 打印每个类别按日期统计的支出
         for (Map.Entry<String, Map<LocalDate, Double>> entry : categoryDayTotals.entrySet()) {
             System.out.println("分类: " + entry.getKey());
             for (Map.Entry<LocalDate, Double> dayEntry : entry.getValue().entrySet()) {
@@ -190,6 +195,7 @@ public class ExpenseManager {
         }
     }
 
+    // 设置预算
     public void setBudget(String category, LocalDate endDate, double amount) {
         budgetSet.setBudget(category, endDate, amount);
     }
@@ -209,39 +215,42 @@ public class ExpenseManager {
         return budgetSet.getAllBudgets();
     }
 
-    // 获取所有记录
+    // 获取所有消费记录
     public List<ExpenseRecord> getExpenses() {
         return expenses;
     }
 
-    // 修改指定索引处的记录
+    // 修改指定索引处的消费记录
     public boolean updateExpense(int index, ExpenseRecord newRecord) {
         if (index >= 0 && index < expenses.size()) {
             expenses.set(index, newRecord);
-            saveExpensesToFile();
+            saveExpensesToFile();  // 保存更新后的消费记录
             return true;
         }
         return false;
     }
 
-    // 删除指定索引处的记录
+    // 删除指定索引处的消费记录
     public boolean deleteExpense(int index) {
         if (index >= 0 && index < expenses.size()) {
-            expenses.remove(index);
-            saveExpensesToFile();
+            expenses.remove(index);  // 删除消费记录
+            saveExpensesToFile();  // 保存删除后的消费记录
             return true;
         }
         return false;
     }
+
+    // 获取按日期查询的预算数据
     public Map<String, Double> getBudgetsByDate(LocalDate date) {
         return budgetSet.getBudgetsByDate(date);
     }
+
+    // 获取按类别查询的预算数据
     public Map<LocalDate, Double> getBudgetsByCategory(String category) {
         return budgetSet.getBudgetsByCategory(category);
     }
 
-    // 新增：对收入和支出进行分类统计，返回一个 Map，
-    // 键为 "income" 或 "expense"，值为每个类别的总金额
+    // 分类统计收入和支出，返回一个分类数据的Map
     public Map<String, Map<String, Double>> getClassificationData() {
         Map<String, Map<String, Double>> classification = new HashMap<>();
         classification.put("income", new HashMap<>());
@@ -255,21 +264,23 @@ public class ExpenseManager {
         return classification;
     }
 
+    // 设置储蓄
     public void setSavings(String category, LocalDate date, double amount) {
         budgetSet.setSavings(category, date, amount);
     }
 
+    // 获取所有储蓄数据
     public Map<String, Map<LocalDate, Double>> getAllSavings() {
         return budgetSet.getAllSavings();
     }
 
+    // 获取按类别查询的储蓄数据
     public Map<LocalDate, Double> getSavingsByCategory(String category) {
         return budgetSet.getSavingsByCategory(category);
     }
 
+    // 获取按日期查询的储蓄数据
     public Map<String, Double> getSavingsByDate(LocalDate date) {
         return budgetSet.getSavingsByDate(date);
     }
-
-
 }

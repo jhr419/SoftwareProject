@@ -5,40 +5,41 @@ import java.util.*;
 public class BudgetSet {
     private Map<String, Map<LocalDate, Double>> categoryBudgets;  // {类别 -> {截止日期 -> 预算金额}}
     private Map<String, Map<LocalDate, Double>> categorySpending; // {类别 -> {日期 -> 已支出金额}}
-    private static final String BUDGET_FILE = "budget.csv";
+    private static final String BUDGET_FILE = "budget.csv"; // 预算数据文件名
     private Map<String, Map<LocalDate, Double>> categorySavings;  // {类别 -> {日期 -> 储蓄金额}}
+
     public BudgetSet() {
         categoryBudgets = new HashMap<>();
         categorySpending = new HashMap<>();
         categorySavings = new HashMap<>();  // 初始化储蓄数据
-        loadBudgetsFromFile();
-        loadExpensesFromFile(); // **新增：在启动时加载 `expenses.csv`**
-
+        loadBudgetsFromFile();  // 加载预算数据
+        loadExpensesFromFile(); // 加载消费数据
     }
 
+    // 设定储蓄金额
     public void setSavings(String category, LocalDate date, double amount) {
         categorySavings.putIfAbsent(category, new HashMap<>());
         categorySavings.get(category).put(date, amount);
-        saveSavingsToFile();
+        saveSavingsToFile();  // 保存储蓄数据
     }
 
-    // **记录储蓄**
+    // 增加储蓄金额
     public void addSavings(String category, LocalDate date, double amount) {
         categorySavings.putIfAbsent(category, new HashMap<>());
         categorySavings.get(category).put(date, categorySavings.get(category).getOrDefault(date, 0.0) + amount);
     }
 
-    // **查询所有储蓄**
+    // 查询所有储蓄数据
     public Map<String, Map<LocalDate, Double>> getAllSavings() {
         return categorySavings;
     }
 
-    // **按类别查询储蓄**
+    // 按类别查询储蓄数据
     public Map<LocalDate, Double> getSavingsByCategory(String category) {
         return categorySavings.getOrDefault(category, new HashMap<>());
     }
 
-    // **按日期查询储蓄**
+    // 按日期查询储蓄数据
     public Map<String, Double> getSavingsByDate(LocalDate date) {
         Map<String, Double> result = new HashMap<>();
         for (String category : categorySavings.keySet()) {
@@ -49,6 +50,7 @@ public class BudgetSet {
         return result;
     }
 
+    // 保存储蓄数据到文件
     private void saveSavingsToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("savings.csv"))) {
             for (String category : categorySavings.keySet()) {
@@ -58,34 +60,34 @@ public class BudgetSet {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error saving savings data: " + e.getMessage());
+            System.out.println("保存储蓄数据时出错: " + e.getMessage());
         }
     }
 
-    // **设定预算**
+    // 设定预算
     public void setBudget(String category, LocalDate endDate, double amount) {
         categoryBudgets.putIfAbsent(category, new HashMap<>());
         categoryBudgets.get(category).put(endDate, amount);
-        saveBudgetsToFile();
+        saveBudgetsToFile();  // 保存预算数据
     }
 
-    // **记录支出**
+    // 记录支出
     public void addExpense(String category, LocalDate date, double amount) {
         categorySpending.putIfAbsent(category, new HashMap<>());
         categorySpending.get(category).put(date, categorySpending.get(category).getOrDefault(date, 0.0) + amount);
     }
 
-    // **查询所有预算**
+    // 查询所有预算数据
     public Map<String, Map<LocalDate, Double>> getAllBudgets() {
         return categoryBudgets;
     }
 
-    // **按类别查询预算**
+    // 按类别查询预算数据
     public Map<LocalDate, Double> getBudgetsByCategory(String category) {
         return categoryBudgets.getOrDefault(category, new HashMap<>());
     }
 
-    // **按截止日期查询预算**
+    // 按截止日期查询预算数据
     public Map<String, Double> getBudgetsByDate(LocalDate endDate) {
         Map<String, Double> result = new HashMap<>();
         for (String category : categoryBudgets.keySet()) {
@@ -96,20 +98,20 @@ public class BudgetSet {
         return result;
     }
 
-    // **删除预算（优化交互）**
+    // 删除预算数据（优化交互）
     public boolean removeBudget(String category, LocalDate endDate) {
         if (categoryBudgets.containsKey(category) && categoryBudgets.get(category).containsKey(endDate)) {
             categoryBudgets.get(category).remove(endDate);
             if (categoryBudgets.get(category).isEmpty()) {
                 categoryBudgets.remove(category);
             }
-            saveBudgetsToFile();
+            saveBudgetsToFile();  // 更新预算文件
             return true; // 删除成功
         }
         return false; // 预算不存在
     }
 
-    // **获取预算进度**
+    // 获取预算进度
     public double getBudgetProgress(String category, LocalDate budgetSetDate, LocalDate endDate) {
         // 获取预算金额
         double budget = categoryBudgets.getOrDefault(category, new HashMap<>()).getOrDefault(endDate, 0.0);
@@ -121,16 +123,17 @@ public class BudgetSet {
         for (Map.Entry<LocalDate, Double> entry : categorySpending.getOrDefault(category, new HashMap<>()).entrySet()) {
             LocalDate expenseDate = entry.getKey();
 
-            // **计算 budgetSetDate ~ endDate 之间的消费**
+            // 计算 budgetSetDate ~ endDate 之间的消费
             if (!expenseDate.isBefore(budgetSetDate) && !expenseDate.isAfter(endDate)) {
                 spent += entry.getValue();
             }
         }
 
         // 计算进度：支出金额 / 预算金额
-        return Math.min(1.0, spent / budget); // **进度最大为100%**
+        return Math.min(1.0, spent / budget); // 进度最大为100%
     }
 
+    // 从文件加载消费数据
     private void loadExpensesFromFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader("expenses.csv"))) {
             String line;
@@ -141,17 +144,16 @@ public class BudgetSet {
                 double amount = Double.parseDouble(data[1]);
                 LocalDate date = LocalDate.parse(data[2]);
 
-                // **将历史消费数据存入 categorySpending**
+                // 将历史消费数据存入 categorySpending
                 categorySpending.putIfAbsent(category, new HashMap<>());
                 categorySpending.get(category).put(date, categorySpending.get(category).getOrDefault(date, 0.0) + amount);
             }
         } catch (IOException e) {
-            System.out.println("No previous expense data found.");
+            System.out.println("没有找到历史消费数据.");
         }
     }
 
-
-    // **加载预算**
+    // 从文件加载预算数据
     private void loadBudgetsFromFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader(BUDGET_FILE))) {
             String line;
@@ -161,7 +163,7 @@ public class BudgetSet {
                 String category = data[0];
                 String dateStr = data[1];
 
-                // **处理 YYYY-MM 格式的日期**
+                // 处理 YYYY-MM 格式的日期
                 if (dateStr.length() == 7) {
                     dateStr += "-01";  // 补充为 YYYY-MM-01
                 }
@@ -172,11 +174,11 @@ public class BudgetSet {
                 setBudget(category, endDate, amount);
             }
         } catch (IOException e) {
-            System.out.println("No previous budget data found.");
+            System.out.println("没有找到历史预算数据.");
         }
     }
 
-    // **保存预算**
+    // 保存预算数据到文件
     private void saveBudgetsToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(BUDGET_FILE))) {
             for (String category : categoryBudgets.keySet()) {
@@ -186,7 +188,7 @@ public class BudgetSet {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error saving budget data: " + e.getMessage());
+            System.out.println("保存预算数据时出错: " + e.getMessage());
         }
     }
 }
