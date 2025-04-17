@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.*;
 import org.json.JSONObject;
+import javax.swing.JTextArea;
 
 public class ApiClient {
     private static final String URL = "https://api.siliconflow.cn/v1/chat/completions";
@@ -10,11 +11,11 @@ public class ApiClient {
         this.apiKey = apiKey;
     }
 
-    public String sendRequest(String question) throws Exception {
+    public void sendRequest(String question, JTextArea responseArea) throws Exception {
         // 构建请求的 JSON 数据
         JSONObject jsonPayload = new JSONObject();
         jsonPayload.put("model", "Qwen/Qwen2.5-72B-Instruct");
-        jsonPayload.put("stream", false);
+        jsonPayload.put("stream", false);  // 保持流式模式
         jsonPayload.put("max_tokens", 2048);
         jsonPayload.put("temperature", 0.7);
         jsonPayload.put("top_p", 0.7);
@@ -40,34 +41,30 @@ public class ApiClient {
             os.write(input, 0, input.length);
         }
 
-        // 读取响应
+        // 读取响应并逐字输出
         try (BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream(), "utf-8"))) {
             StringBuilder response = new StringBuilder();
             String responseLine;
             while ((responseLine = br.readLine()) != null) {
                 response.append(responseLine.trim());
             }
-            // 解析响应并仅提取 content 部分
+
+            // 解析响应并提取 content 部分
             JSONObject responseJson = new JSONObject(response.toString());
             String answer = responseJson.getJSONArray("choices")
                     .getJSONObject(0)
                     .getJSONObject("message")
                     .getString("content");
 
-            // 返回 content 作为回答
-            return answer;
-        }
-    }
-
-    public static void main(String[] args) {
-        ApiClient client = new ApiClient("sk-");
-
-        try {
-            String question = "What is the capital of France?";
-            String response = client.sendRequest(question);
-            System.out.println("Answer from API: " + response);  // 只显示 content 部分
-        } catch (Exception e) {
-            e.printStackTrace();
+            // 实时逐字输出（带模型名称前缀）
+            responseArea.append("Qwen: ");  // 模型名称
+            for (int i = 0; i < answer.length(); i++) {
+                String character = String.valueOf(answer.charAt(i));
+                responseArea.append(character);  // 输出每个字符
+                responseArea.setCaretPosition(responseArea.getDocument().getLength());  // 滚动到最后
+                Thread.sleep(50);  // 控制每个字符的输出速度，可以调整这个值
+            }
+            responseArea.append("\n\n");  // 添加换行
         }
     }
 }
