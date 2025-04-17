@@ -22,7 +22,7 @@ public class ExpenseTrackerGUI {
     private ExpenseManager expenseManager;
 
     public ExpenseTrackerGUI() {
-        expenseManager = new ExpenseManager();
+        expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
         initialize();
     }
 
@@ -406,7 +406,11 @@ public class ExpenseTrackerGUI {
                 try {
                     double newAmount = Double.parseDouble(newAmountStr);
                     LocalDate parsedDate = LocalDate.parse(newDate);
-                    ExpenseRecord newRecord = new ExpenseRecord(newCategory, newAmount, parsedDate, newItemName, newType);
+
+                    // 根据新输入的 itemName 获取 AI 分类
+                    String newAiCategory = expenseManager.classifyWithAI(newItemName);  // 获取新的 AI 分类
+
+                    ExpenseRecord newRecord = new ExpenseRecord(newCategory,newAiCategory, newAmount, parsedDate, newItemName, newType);
                     boolean success = expenseManager.updateExpense(selectedRow, newRecord);
                     if (success) {
                         model.setValueAt(newCategory, selectedRow, 0);
