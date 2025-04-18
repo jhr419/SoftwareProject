@@ -1,6 +1,8 @@
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+import java.time.format.DateTimeFormatter;
+import java.util.TreeMap;
 
 public class SavingsManager {
     private Map<String, Map<LocalDate, Double>> categorySavings;  // 存储储蓄数据：{类别 -> {日期 -> 储蓄金额}}
@@ -40,5 +42,27 @@ public class SavingsManager {
             }
         }
         return result;
+    }
+
+    public String exportReport() {
+        StringBuilder report = new StringBuilder();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+        report.append("=== 储蓄情况报告 ===\n");
+
+        for (String category : categorySavings.keySet()) {
+            report.append("类别: ").append(category).append("\n");
+
+            // 使用 TreeMap 排序日期
+            Map<LocalDate, Double> savings = new TreeMap<>(categorySavings.get(category));
+            for (Map.Entry<LocalDate, Double> entry : savings.entrySet()) {
+                report.append("  ").append(formatter.format(entry.getKey()))
+                        .append(" : ￥").append(String.format("%.2f", entry.getValue()))
+                        .append("\n");
+            }
+            report.append("\n");
+        }
+
+        return report.toString();
     }
 }
