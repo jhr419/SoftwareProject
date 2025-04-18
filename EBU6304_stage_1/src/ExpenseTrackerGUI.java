@@ -339,7 +339,7 @@ public class ExpenseTrackerGUI {
 
     // 数据可视化 - 饼图（仅显示出账数据）
     private void showCategoryPieChart() {
-        Map<String, Double> categoryData = expenseManager.getCategorySpendingData();
+        Map<String, Double> categoryData = expenseManager.getAiCategorySpendingData();
         DefaultPieDataset dataset = new DefaultPieDataset();
         for (Map.Entry<String, Double> entry : categoryData.entrySet()) {
             dataset.setValue(entry.getKey(), entry.getValue());
@@ -372,7 +372,7 @@ public class ExpenseTrackerGUI {
         List<ExpenseRecord> expenseList = expenseManager.getExpenses();
         for (ExpenseRecord record : expenseList) {
             Object[] row = {
-                    record.getCategory(),
+                    record.getAiCategory(),
                     record.getAmount(),
                     record.getDate(),
                     record.getItemName(),
@@ -410,10 +410,10 @@ public class ExpenseTrackerGUI {
                     // 根据新输入的 itemName 获取 AI 分类
                     String newAiCategory = expenseManager.classifyWithAI(newItemName);  // 获取新的 AI 分类
 
-                    ExpenseRecord newRecord = new ExpenseRecord(newCategory,newAiCategory, newAmount, parsedDate, newItemName, newType);
+                    ExpenseRecord newRecord = new ExpenseRecord(newAiCategory, newAmount, parsedDate, newItemName, newType);
                     boolean success = expenseManager.updateExpense(selectedRow, newRecord);
                     if (success) {
-                        model.setValueAt(newCategory, selectedRow, 0);
+                        model.setValueAt(newAiCategory, selectedRow, 0);
                         model.setValueAt(newAmount, selectedRow, 1);
                         model.setValueAt(parsedDate, selectedRow, 2);
                         model.setValueAt(newItemName, selectedRow, 3);
