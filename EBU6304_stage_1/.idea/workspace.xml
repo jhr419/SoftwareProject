@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbf2afa7-0e6c-4348-ba2d-e11398499de6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BudgetSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BudgetSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExpenseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExpenseRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionAnswerApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionAnswerApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expenses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/expenses.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuestionAnswerApp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuestionAnswerApp-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/QuestionAnswerApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/budget.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/expenses.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/input.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/ApiClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/BudgetSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/ExpenseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/ExpenseRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/ExpenseTrackerGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/QuestionAnswerApp-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,21 +38,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Wenxian-ee"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Wenxian-ee&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jhr419/SoftwareProject.git",
-    "accountId": "f8d7b2a3-b838-48ce-9ebb-4c004797758d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:jhr419/SoftwareProject.git&quot;,
+    &quot;accountId&quot;: &quot;f8d7b2a3-b838-48ce-9ebb-4c004797758d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2vwqtMqKeuNDpxNaz82lOtGvgfD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />

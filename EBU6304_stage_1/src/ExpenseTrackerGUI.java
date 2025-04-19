@@ -421,12 +421,12 @@ public class ExpenseTrackerGUI {
                     LocalDate parsedDate = LocalDate.parse(newDate);
 
                     // 根据新输入的 itemName 获取 AI 分类
-                    String newAiCategory = expenseManager.classifyWithAI(newItemName);  // 获取新的 AI 分类
+                    //String newAiCategory = expenseManager.classifyWithAI(newItemName);  // 获取新的 AI 分类
 
-                    ExpenseRecord newRecord = new ExpenseRecord(newAiCategory, newAmount, parsedDate, newItemName, newType);
+                    ExpenseRecord newRecord = new ExpenseRecord(newCategory, newAmount, parsedDate, newItemName, newType);
                     boolean success = expenseManager.updateExpense(selectedRow, newRecord);
                     if (success) {
-                        model.setValueAt(newAiCategory, selectedRow, 0);
+                        model.setValueAt(newCategory, selectedRow, 0);
                         model.setValueAt(newAmount, selectedRow, 1);
                         model.setValueAt(parsedDate, selectedRow, 2);
                         model.setValueAt(newItemName, selectedRow, 3);

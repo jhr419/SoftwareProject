@@ -8,7 +8,7 @@
 
     <!-- 项目基本信息 -->
     <groupId>com.example</groupId>        <!-- 项目的 Group ID -->
-    <artifactId>QuestionAnswerApp</artifactId>  <!-- 项目的 Artifact ID -->
+    <artifactId>SmartMoney</artifactId>  <!-- 项目的 Artifact ID -->
     <version>1.0-SNAPSHOT</version>       <!-- 项目的版本 -->
 
     <!-- 项目构建的基础配置 -->
