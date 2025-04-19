@@ -105,7 +105,7 @@ public class ExpenseManager {
     }
 
     // 添加新的记录（交易）
-    public void addExpense(String category, double amount, LocalDate date, String itemName, String transactionType) {
+    public void addExpense(String itemName, double amount, LocalDate date,  String transactionType) {
         String aiCategory = classifyWithAI(itemName);  // 使用AI分类
 
         ExpenseRecord record = new ExpenseRecord(aiCategory, amount, date, itemName, transactionType);
@@ -114,7 +114,7 @@ public class ExpenseManager {
 
         // 如果是支出，则更新预算数据
         if (transactionType.equalsIgnoreCase("expense")) {
-            budgetSet.addExpense(category, date, amount);
+            budgetSet.addExpense(aiCategory, date, amount);
         }
     }
 

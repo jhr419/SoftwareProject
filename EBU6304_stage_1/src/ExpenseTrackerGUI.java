@@ -181,16 +181,15 @@ public class ExpenseTrackerGUI {
 
     // 添加记录（交易）——提示用户输入交易类型（income 或 expense）
     private void addExpense() {
-        String category = JOptionPane.showInputDialog("Enter category:");
+        String itemName = JOptionPane.showInputDialog("Enter item name:");
         String amountStr = JOptionPane.showInputDialog("Enter amount:");
         String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
-        String itemName = JOptionPane.showInputDialog("Enter item name:");
         String transactionType = JOptionPane.showInputDialog("Enter transaction type (income/expense):");
 
         try {
             LocalDate date = LocalDate.parse(dateStr);
             double amount = Double.parseDouble(amountStr);
-            expenseManager.addExpense(category, amount, date, itemName, transactionType);
+            expenseManager.addExpense(itemName, amount, date, transactionType);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(frame, "Invalid input: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
