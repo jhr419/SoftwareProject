@@ -54,7 +54,7 @@ public class ApiClient {
                     .getJSONObject("message")
                     .getString("content");
 
-            System.out.println(answer);
+            //System.out.println(answer);
             // 返回 content 作为回答
             return answer;
         }
