@@ -24,7 +24,7 @@ public class ExpenseTrackerGUI {
     private ExpenseManager expenseManager;
 
     public ExpenseTrackerGUI() {
-        expenseManager = new ExpenseManager();
+        expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
         initialize();
     }
 
@@ -195,16 +195,15 @@ public class ExpenseTrackerGUI {
 
     // 添加记录（交易）——提示用户输入交易类型（income 或 expense）
     private void addExpense() {
-        String category = JOptionPane.showInputDialog("Enter category:");
+        String itemName = JOptionPane.showInputDialog("Enter item name:");
         String amountStr = JOptionPane.showInputDialog("Enter amount:");
         String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
-        String itemName = JOptionPane.showInputDialog("Enter item name:");
         String transactionType = JOptionPane.showInputDialog("Enter transaction type (income/expense):");
 
         try {
             LocalDate date = LocalDate.parse(dateStr);
             double amount = Double.parseDouble(amountStr);
-            expenseManager.addExpense(category, amount, date, itemName, transactionType);
+            expenseManager.addExpense(itemName, amount, date, transactionType);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(frame, "Invalid input: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -353,7 +352,7 @@ public class ExpenseTrackerGUI {
 
     // 数据可视化 - 饼图（仅显示出账数据）
     private void showCategoryPieChart() {
-        Map<String, Double> categoryData = expenseManager.getCategorySpendingData();
+        Map<String, Double> categoryData = expenseManager.getAiCategorySpendingData();
         DefaultPieDataset dataset = new DefaultPieDataset();
         for (Map.Entry<String, Double> entry : categoryData.entrySet()) {
             dataset.setValue(entry.getKey(), entry.getValue());
@@ -386,7 +385,7 @@ public class ExpenseTrackerGUI {
         List<ExpenseRecord> expenseList = expenseManager.getExpenses();
         for (ExpenseRecord record : expenseList) {
             Object[] row = {
-                    record.getCategory(),
+                    record.getAiCategory(),
                     record.getAmount(),
                     record.getDate(),
                     record.getItemName(),
@@ -420,10 +419,14 @@ public class ExpenseTrackerGUI {
                 try {
                     double newAmount = Double.parseDouble(newAmountStr);
                     LocalDate parsedDate = LocalDate.parse(newDate);
-                    ExpenseRecord newRecord = new ExpenseRecord(newCategory, newAmount, parsedDate, newItemName, newType);
+
+                    // 根据新输入的 itemName 获取 AI 分类
+                    String newAiCategory = expenseManager.classifyWithAI(newItemName);  // 获取新的 AI 分类
+
+                    ExpenseRecord newRecord = new ExpenseRecord(newAiCategory, newAmount, parsedDate, newItemName, newType);
                     boolean success = expenseManager.updateExpense(selectedRow, newRecord);
                     if (success) {
-                        model.setValueAt(newCategory, selectedRow, 0);
+                        model.setValueAt(newAiCategory, selectedRow, 0);
                         model.setValueAt(newAmount, selectedRow, 1);
                         model.setValueAt(parsedDate, selectedRow, 2);
                         model.setValueAt(newItemName, selectedRow, 3);
@@ -457,6 +460,7 @@ public class ExpenseTrackerGUI {
                 JOptionPane.showMessageDialog(tableFrame, "Please select a record to delete.", "Warning", JOptionPane.WARNING_MESSAGE);
             }
         });
+
 
         buttonPanel.add(editButton);
         buttonPanel.add(deleteButton);

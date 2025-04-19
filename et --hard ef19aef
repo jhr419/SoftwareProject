@@ -1,0 +1,70 @@
+[33mef19aef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/AI_Class[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{0}: checkout: moving from feature/AI_Class to feature/AI_Class
+[33mef19aef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/AI_Class[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{1}: pull origin main: Fast-forward
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{2}: checkout: moving from main to feature/AI_Class
+[33mef19aef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/AI_Class[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from feature/AI_Class to main
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{4}: checkout: moving from main to feature/AI_Class
+[33mef19aef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/AI_Class[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{5}: checkout: moving from feature/AI_Class to main
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{6}: checkout: moving from main to feature/AI_Class
+[33mef19aef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/AI_Class[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{7}: checkout: moving from main to main
+[33mef19aef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/AI_Class[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{8}: pull: Fast-forward
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{9}: checkout: moving from main to main
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{10}: checkout: moving from feature/AI_QA to main
+[33m198824f[m[33m ([m[1;31morigin/feature/AI_QA[m[33m, [m[1;32mfeature/AI_QA[m[33m)[m HEAD@{11}: reset: moving to HEAD
+[33m198824f[m[33m ([m[1;31morigin/feature/AI_QA[m[33m, [m[1;32mfeature/AI_QA[m[33m)[m HEAD@{12}: commit: #
+[33m05cf5bd[m HEAD@{13}: checkout: moving from feature/AI_QA to feature/AI_QA
+[33m05cf5bd[m HEAD@{14}: reset: moving to HEAD
+[33m05cf5bd[m HEAD@{15}: pull: Fast-forward
+[33me93549d[m HEAD@{16}: checkout: moving from feature/AI_QA to feature/AI_QA
+[33me93549d[m HEAD@{17}: reset: moving to HEAD
+[33me93549d[m HEAD@{18}: reset: moving to HEAD
+[33me93549d[m HEAD@{19}: checkout: moving from feature/AI_QA to feature/AI_QA
+[33me93549d[m HEAD@{20}: checkout: moving from main to feature/AI_QA
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{21}: checkout: moving from main to main
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{22}: merge feature/AI_Class: Fast-forward
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{23}: checkout: moving from feature/AI_Class to main
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{24}: checkout: moving from feature/AI_Class to feature/AI_Class
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{25}: checkout: moving from main to feature/AI_Class
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{26}: checkout: moving from feature/AI_Class to main
+[33md08ca18[m[33m ([m[1;31morigin/feature/AI_Class[m[33m)[m HEAD@{27}: commit: delete one system output
+[33m499fd2e[m HEAD@{28}: commit: Zhifei update AiCategory logic
+[33m421f245[m HEAD@{29}: checkout: moving from feature/AI_Class to feature/AI_Class
+[33m421f245[m HEAD@{30}: commit: Zhifei Add AI classification function and regulate the input file
+[33mc7d4980[m HEAD@{31}: checkout: moving from feature/AI_Class to feature/AI_Class
+[33mc7d4980[m HEAD@{32}: commit: add AI classification logic
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{33}: checkout: moving from feature/AI_Class to feature/AI_Class
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{34}: Branch: renamed refs/heads/feature/AI_cla to refs/heads/feature/AI_Class
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{36}: Branch: renamed refs/heads/feature/AI_reco to refs/heads/feature/AI_cla
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{38}: checkout: moving from feature/AI_QA to feature/AI_reco
+[33me93549d[m HEAD@{39}: checkout: moving from feature/AI_reco to feature/AI_QA
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{40}: checkout: moving from main to feature/AI_reco
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{41}: checkout: moving from feature/AI_QA to main
+[33me93549d[m HEAD@{42}: checkout: moving from main to feature/AI_QA
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{43}: checkout: moving from feature/AI to main
+[33me93549d[m HEAD@{44}: commit: remove unnecessary installation packages
+[33md97f21b[m HEAD@{45}: checkout: moving from feature/AI to feature/AI
+[33md97f21b[m HEAD@{46}: checkout: moving from Resoure-Branch to feature/AI
+[33m4cb152a[m[33m ([m[1;32mResoure-Branch[m[33m)[m HEAD@{47}: checkout: moving from master to Resoure-Branch
+[33mc9ec810[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{48}: checkout: moving from integrate to master
+[33m250d07c[m[33m ([m[1;32mintegrate[m[33m)[m HEAD@{49}: checkout: moving from main to integrate
+[33m6b6d392[m[33m ([m[1;31morigin/feature/AI_reco[m[33m)[m HEAD@{50}: commit: Remove unnecessary installation packages
+[33m57b0957[m HEAD@{51}: checkout: moving from main to main
+[33m57b0957[m HEAD@{52}: commit (merge): Merge integrate branch into main and resolve conflicts
+[33m3c04005[m HEAD@{53}: checkout: moving from integrate to main
+[33m250d07c[m[33m ([m[1;32mintegrate[m[33m)[m HEAD@{54}: checkout: moving from integrate to integrate
+[33m250d07c[m[33m ([m[1;32mintegrate[m[33m)[m HEAD@{55}: commit: 将integrate的文件移动到main
+[33ma1d7bc9[m HEAD@{56}: checkout: moving from feature/AI to integrate
+[33md97f21b[m HEAD@{57}: Branch: renamed refs/heads/Zhifei_Liu to refs/heads/feature/AI
+[33md97f21b[m HEAD@{59}: checkout: moving from Zhifei_Liu to Zhifei_Liu
+[33md97f21b[m HEAD@{60}: commit: Add AI-QA part and simple GUI
+[33ma1d7bc9[m HEAD@{61}: checkout: moving from Zhifei_lIU to Zhifei_Liu
+[33ma1d7bc9[m HEAD@{62}: checkout: moving from Zhifei_Liu to Zhifei_lIU
+[33ma1d7bc9[m HEAD@{63}: merge integrate: Fast-forward
+[33m3a6b2c0[m HEAD@{64}: checkout: moving from integrate to Zhifei_Liu
+[33ma1d7bc9[m HEAD@{65}: pull origin integrate: Fast-forward
+[33m3a6b2c0[m HEAD@{66}: checkout: moving from Zhifei_Liu to integrate
+[33m3a6b2c0[m HEAD@{67}: checkout: moving from Zhifei_Liu to Zhifei_Liu
+[33m3a6b2c0[m HEAD@{68}: checkout: moving from integrate to Zhifei_Liu
+[33m3a6b2c0[m HEAD@{69}: checkout: moving from main to integrate
+[33m3c04005[m HEAD@{70}: checkout: moving from integrate to main
+[33m3a6b2c0[m HEAD@{71}: checkout: moving from main to integrate
+[33m3c04005[m HEAD@{72}: clone: from https://github.com/jhr419/SoftwareProject.git
