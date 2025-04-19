@@ -3,11 +3,11 @@ import java.net.*;
 import org.json.JSONObject;
 import javax.swing.JTextArea;
 
-public class ApiClient {
+public class ApiQA {
     private static final String URL = "https://api.siliconflow.cn/v1/chat/completions";
     private String apiKey;
 
-    public ApiClient(String apiKey) {
+    public ApiQA(String apiKey) {
         this.apiKey = apiKey;
     }
 

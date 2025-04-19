@@ -8,7 +8,7 @@ public class ChatUI {
     private JTextArea userInputArea;
     private JTextArea responseArea;
     private JButton submitButton;
-    private ApiClient apiClient;
+    private ApiQA apiClient;
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -22,7 +22,7 @@ public class ChatUI {
     }
 
     public ChatUI() {
-        apiClient = new ApiClient("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf"); // api-key
+        apiClient = new ApiQA("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf"); // api-key
         initialize();
     }
 
