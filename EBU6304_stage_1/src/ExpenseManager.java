@@ -4,99 +4,43 @@ import java.util.*;
 import java.time.Month;
 
 public class ExpenseManager {
-
     private List<ExpenseRecord> expenses;
     private BudgetSet budgetSet;
-    private String cla;
-    // 添加AI 自动分类
-    private ApiClient apiClient;
-    private static final Set<String> predefinedCategories = new HashSet<>(Arrays.asList(
-            "Travel", "Entertainment", "Clothing", "Education", "Transportation",
-            "Medical", "Home", "Food", "Sports", "Communication", "Others"
-    ));
 
-    public ExpenseManager(String apiKey) {
-        this.apiClient = new ApiClient(apiKey); // 初始化ApiClient
+    public ExpenseManager() {
         expenses = new ArrayList<>();
         budgetSet = new BudgetSet();
         loadExpensesFromFile();
     }
-    public String classifyWithAI(String itemName) {
-        try {
-            // 构建请求的提示信息
-            String[] categories = {"Travel", "Entertainment", "Clothing", "Education", "Transportation",
-                    "Medical", "Home", "Food", "Sports", "Communication"};
-
-            StringBuilder prompt = new StringBuilder("Classify this expense item: " + itemName + "\n\n");
-            prompt.append("Please choose one of the following categories:\n");
-            for (String category : categories) {
-                prompt.append("- ").append(category).append("\n");
-            }
-            prompt.append("- Others\n");
-            prompt.append("Your answer should only cover the name of classification. No other explain is needed\n");
-
-            // 请求AI模型进行分类
-            String response = apiClient.sendRequest(prompt.toString());
-
-            // 解析AI返回的分类
-            cla=extractCategoryFromResponse(response);
-            System.out.println(cla);
-            return cla;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "Others"; // 默认分类为Others
-        }
-    }
-
-    // 从AI响应中提取分类
-    private String extractCategoryFromResponse(String response) {
-        response = response.trim();  // 去除多余的空格
-
-        // 检查返回的分类是否是预定义的分类之一
-        if (predefinedCategories.contains(response)) {
-            return response;
-        } else {
-            return "Others"; // 如果不在预定义分类中，返回Others
-        }
-    }
-
 
     // 从CSV文件加载记录（支持收入和支出）
     private void loadExpensesFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("input.csv"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("expenses.csv"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
                 // 如果数据不足4项则跳过
                 if(data.length < 4) continue;
-                //String category = data[0];
+                String category = data[0];
                 double amount = Double.parseDouble(data[1]);
                 LocalDate date = LocalDate.parse(data[2]);
-                String itemName = data[0];
+                String itemName = data[3];
                 String transactionType = "expense";
-                if(data.length >= 4) {
-                    transactionType = data[3];
+                if(data.length >= 5) {
+                    transactionType = data[4];
                 }
-                String aiCategory = classifyWithAI(itemName);
-                expenses.add(new ExpenseRecord(aiCategory, amount, date, itemName, transactionType));
-                saveExpensesToFile();
+                expenses.add(new ExpenseRecord(category, amount, date, itemName, transactionType));
             }
         } catch (IOException e) {
             System.out.println("Error loading expenses: " + e.getMessage());
         }
     }
 
-
     // 保存记录到CSV文件
     public void saveExpensesToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("expenses.csv"))) {
             for (ExpenseRecord record : expenses) {
-
-                writer.write(record.getItemName() + "," +
-                        record.getAiCategory() + "," +
-                        record.getAmount() + "," +
-                        record.getDate() + "," +
-                        record.getTransactionType());
+                writer.write(record.toString());
                 writer.newLine();
             }
         } catch (IOException e) {
@@ -105,16 +49,14 @@ public class ExpenseManager {
     }
 
     // 添加新的记录（交易）
-    public void addExpense(String itemName, double amount, LocalDate date,  String transactionType) {
-        String aiCategory = classifyWithAI(itemName);  // 使用AI分类
-
-        ExpenseRecord record = new ExpenseRecord(aiCategory, amount, date, itemName, transactionType);
+    public void addExpense(String category, double amount, LocalDate date, String itemName, String transactionType) {
+        ExpenseRecord record = new ExpenseRecord(category, amount, date, itemName, transactionType);
         expenses.add(record);
-        saveExpensesToFile();  // 保留原有保存功能
+        saveExpensesToFile();
 
-        // 如果是支出，则更新预算数据
+        // 如果是出账，更新预算支出数据
         if (transactionType.equalsIgnoreCase("expense")) {
-            budgetSet.addExpense(aiCategory, date, amount);
+            budgetSet.addExpense(category, date, amount);
         }
     }
 
@@ -130,7 +72,7 @@ public class ExpenseManager {
         Map<String, Double> categoryTotals = new HashMap<>();
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 double amount = record.getAmount();
                 categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
             }
@@ -165,11 +107,11 @@ public class ExpenseManager {
     }
 
     // 按分类统计出账数据，用于饼图绘制
-    public Map<String, Double> getAiCategorySpendingData() {
+    public Map<String, Double> getCategorySpendingData() {
         Map<String, Double> categoryData = new HashMap<>();
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 categoryData.put(category, categoryData.getOrDefault(category, 0.0) + record.getAmount());
             }
         }
@@ -182,7 +124,7 @@ public class ExpenseManager {
 
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 int year = record.getDate().getYear();
                 double amount = record.getAmount();
 
@@ -206,7 +148,7 @@ public class ExpenseManager {
 
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 Month month = record.getDate().getMonth();
                 double amount = record.getAmount();
 
@@ -230,7 +172,7 @@ public class ExpenseManager {
 
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 LocalDate date = record.getDate();
                 double amount = record.getAmount();
 
@@ -306,7 +248,7 @@ public class ExpenseManager {
         classification.put("expense", new HashMap<>());
         for (ExpenseRecord record : expenses) {
             String type = record.getTransactionType().toLowerCase();
-            String category = record.getAiCategory();
+            String category = record.getCategory();
             Map<String, Double> typeMap = classification.get(type);
             typeMap.put(category, typeMap.getOrDefault(category, 0.0) + record.getAmount());
         }

@@ -137,9 +137,9 @@ public class BudgetSet {
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
                 if (data.length < 3) continue;
-                String category = data[1];
-                double amount = Double.parseDouble(data[2]);
-                LocalDate date = LocalDate.parse(data[3]);
+                String category = data[0];
+                double amount = Double.parseDouble(data[1]);
+                LocalDate date = LocalDate.parse(data[2]);
 
                 // **将历史消费数据存入 categorySpending**
                 categorySpending.putIfAbsent(category, new HashMap<>());
