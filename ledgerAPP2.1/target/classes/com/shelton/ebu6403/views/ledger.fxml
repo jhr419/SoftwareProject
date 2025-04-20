@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<!-- ledger.fxml -->
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:id="mainContainer"
+            fx:controller="com.shelton.ebu6403.controller.LedgerController"
+            stylesheets="@../styles/main.css">
+
+    <!-- 左侧导航栏 (固定宽度) -->
+    <left>
+        <VBox spacing="15" styleClass="nav-sidebar" prefWidth="150">
+            <Button text="Home" onAction="#loadHome" styleClass="nav-btn"/>
+            <Button text="Analysis" onAction="#loadAnalysis" styleClass="nav-btn"/>
+            <Button text="Categories" onAction="#loadCategories" styleClass="nav-btn"/>
+            <Button text="Investments" onAction="#loadInvestments" styleClass="nav-btn"/>
+            <Button text="Setting" onAction="#loadSettings" styleClass="nav-btn"/>
+        </VBox>
+    </left>
+
+    <!-- 右侧主区域 (BorderPane嵌套) -->
+    <center>
+        <BorderPane>
+            <!-- 右侧的顶部工具栏 -->
+            <top>
+                <HBox styleClass="top-toolbar" alignment="CENTER_LEFT">
+                    <TextField promptText="搜索交易..." styleClass="search-field"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button styleClass="icon-btn">
+                        <graphic>
+                            <ImageView fx:id="notificationIcon" fitWidth="24" fitHeight="24"/>
+                        </graphic>
+                    </Button>
+                    <ComboBox fx:id="languageCombo" styleClass="lang-combo" promptText="English">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="English"/>
+                                <String fx:value="简体中文"/>
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                    <ImageView fx:id="avatarView" fitWidth="40" fitHeight="40" styleClass="user-avatar"/>
+                </HBox>
+            </top>
+
+            <!-- 右侧的动态内容区域 -->
+            <center>
+                <fx:include fx:id="contentContainer" source="home.fxml"/>
+            </center>
+        </BorderPane>
+    </center>
+</BorderPane>
