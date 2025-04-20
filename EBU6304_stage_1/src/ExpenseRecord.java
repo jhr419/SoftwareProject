@@ -19,9 +19,9 @@ public class ExpenseRecord {
         this.transactionType = transactionType;
     }
 
-//    public String getCategory() {
-//        return category;
-//    }
+    public String getCategory() {
+       return category;
+    }
 
     public double getAmount() {
         return amount;
