@@ -95,5 +95,3 @@ public class ChatUI {
         return frame;
     }
 }
-
-//to do：stop button, 对话框绘制，回复格式选择

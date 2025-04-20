@@ -116,6 +116,23 @@ public class ExpenseTrackerGUI {
         reportButton.addActionListener(e -> showClassificationReport());
         panel.add(reportButton, gbc);
 
+        row++;
+        //AI Asistance
+        addSectionTitle(panel, gbc, "AI Assistance", row);
+        row++;
+
+        gbc.gridx = 0;
+        gbc.gridy = row;
+        gbc.gridwidth = 2;
+        JButton AIqaButton = new JButton("AI_QA Help");
+        AIqaButton.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        AIqaButton.setBackground(new Color(33, 150, 243)); // 按钮颜色
+        AIqaButton.setForeground(Color.WHITE);  // 字体颜色
+        AIqaButton.setBorder(new RoundedBorder(20));  // 更大的圆角
+        AIqaButton.setFocusPainted(false);
+        AIqaButton.addActionListener(e -> openChatUI());
+        panel.add(AIqaButton, gbc);
+
         frame.setVisible(true);
     }
 
