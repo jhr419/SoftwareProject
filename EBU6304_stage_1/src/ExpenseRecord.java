@@ -47,9 +47,6 @@ public class ExpenseRecord {
     public boolean getUseAI(){
         return useAI;
     }
-    public void setUseAI(boolean change){
-        this.useAI = change;
-    }
 
 
     @Override
