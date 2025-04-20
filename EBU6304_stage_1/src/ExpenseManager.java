@@ -40,7 +40,7 @@ public class ExpenseManager {
 
             // 解析AI返回的分类
             cla=extractCategoryFromResponse(response);
-            System.out.println(cla);
+            //System.out.println(cla);
             return cla;
         } catch (Exception e) {
             e.printStackTrace();
