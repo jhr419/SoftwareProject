@@ -5,9 +5,10 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import javax.swing.border.*;
 // JFreeChart 相关导入
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -29,7 +30,7 @@ public class ExpenseTrackerGUI {
     }
 
     private void initialize() {
-        frame = new JFrame("Kobe Xie - 财务管理");
+        frame = new JFrame("Finance Management");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 700);
         frame.setLayout(new BorderLayout());
@@ -37,76 +38,96 @@ public class ExpenseTrackerGUI {
         // 设置背景色
         frame.getContentPane().setBackground(new Color(245, 245, 245));
 
-        // 创建主面板，使用GridBagLayout布局
         JPanel panel = new JPanel(new GridBagLayout());
+        panel.setBackground(new Color(245, 245, 245)); // 使面板背景与窗口一致
         frame.getContentPane().add(panel, BorderLayout.CENTER);
+
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
         gbc.fill = GridBagConstraints.BOTH;
 
+
         // 设置图片（头像）
         int row = 0;
-        String imagePath = "AI_assistant.jpg";  // 头像路径
-        ImageIcon imageIcon = new ImageIcon(imagePath);
-        Image image = imageIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
-        JLabel imageLabel = new JLabel(new ImageIcon(image));
+        //String imagePath = "AI_assistant.jpg";  // 头像路径
+        //ImageIcon imageIcon = new ImageIcon(imagePath);
+        //Image image = imageIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
+        //JLabel imageLabel = new JLabel(new ImageIcon(image));
+        //gbc.gridx = 0;
+        //gbc.gridy = row;
+        //gbc.gridwidth = 2;
+        //panel.add(imageLabel, gbc);
+
+        addSectionTitle(panel, gbc, "Transaction Management", row);
+        row++;
+        // 第一行按钮：Add Transaction | Display Transactions
+        addButton(panel, gbc, "Add Transaction", row, 0, e -> addExpense());
+        addButton(panel, gbc, "Display Transactions", row, 1, e -> showAllTransactions());
+        row++;
+        // 第二行按钮：Display Category Expenses | Load CSV Data
+        addButton(panel, gbc, "Display Category Expenses", row, 0, e -> showCategoryExpenses());
+        addButton(panel, gbc, "Edit Data", row, 1, e -> showExpenseTable());
+
+        row++;
+        // Budget Management 分组标题
+        addSectionTitle(panel, gbc, "Budget Management", row);
+        row++;
+        // 第一行按钮：Set Budget (Category + Date) | Remove Budget
+        addButton(panel, gbc, "Set Budget (Category + Date)", row, 0, e -> setBudget());
+        addButton(panel, gbc, "Remove Budget", row, 1, e -> removeBudget());
+        row++;
+        // 第二行按钮：Show Budget Report | Show Budget Progress
+        addButton(panel, gbc, "Show Budget Report", row, 0, e -> showBudgetReport());
+        addButton(panel, gbc, "Show Budget Progress", row, 1, e -> showBudgetProgress());
+        row++;
+        addButton(panel, gbc, "Show Budgets by Date", row, 0, e -> showBudgetsByDate());
+        addButton(panel, gbc, "Show Budgets by Category", row, 1, e -> showBudgetsByCategory());
+
+        row++;
+        // Data Visualization 分组标题
+        addSectionTitle(panel, gbc, "Data Visualization", row);
+        row++;
+        // 一行按钮：Show Time-Line Chart | Show Category Pie Chart
+        addButton(panel, gbc, "Show Time-Line Chart", row, 0, e -> showTimeLineChart());
+        addButton(panel, gbc, "Show Category Pie Chart", row, 1, e -> showCategoryPieChart());
+
+        row++;
+        // Savings 分组标题
+        addSectionTitle(panel, gbc, "Savings", row);
+        row++;
+        addButton(panel, gbc, "Set Savings", row, 0, e -> setSavings());
+        addButton(panel, gbc, "Show Savings Report", row, 1, e -> showSavingsReport());
+
+        row++;
+        // Reports 分组标题
+        addSectionTitle(panel, gbc, "Reports", row);
+        row++;
+        // 单个按钮居中：Show Classification Report
         gbc.gridx = 0;
         gbc.gridy = row;
         gbc.gridwidth = 2;
-        panel.add(imageLabel, gbc);
+        JButton reportButton = new JButton("Show Classification Report");
+        reportButton.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        reportButton.setBackground(new Color(33, 150, 243)); // 按钮颜色
+        reportButton.setForeground(Color.WHITE);  // 字体颜色
+        reportButton.setBorder(new RoundedBorder(20));  // 更大的圆角
+        reportButton.setFocusPainted(false);
+        reportButton.addActionListener(e -> showClassificationReport());
+        panel.add(reportButton, gbc);
 
-        row++;
-        // 添加“Transaction Management”分组标题
-        addSectionTitle(panel, gbc, "交易管理", row);
-        row++;
-        // 添加按钮：添加交易，显示交易记录
-        addButton(panel, gbc, "添加交易", row, 0, e -> addExpense());
-        addButton(panel, gbc, "显示交易记录", row, 1, e -> expenseManager.displayExpenses());
-        row++;
-        // 添加更多按钮
-        addButton(panel, gbc, "显示分类支出", row, 0, e -> expenseManager.displayCategoryExpenses());
-        addButton(panel, gbc, "编辑数据", row, 1, e -> showExpenseTable());
-
-        row++;
-        // 添加“预算管理”分组标题
-        addSectionTitle(panel, gbc, "预算管理", row);
-        row++;
-        // 设置预算按钮
-        addButton(panel, gbc, "设置预算", row, 0, e -> setBudget());
-        addButton(panel, gbc, "移除预算", row, 1, e -> removeBudget());
-        row++;
-        // 显示预算报告按钮
-        addButton(panel, gbc, "显示预算报告", row, 0, e -> showBudgetReport());
-        addButton(panel, gbc, "显示预算进度", row, 1, e -> showBudgetProgress());
-        row++;
-        // 显示按日期和类别的预算
-        addButton(panel, gbc, "按日期显示预算", row, 0, e -> showBudgetsByDate());
-        addButton(panel, gbc, "按类别显示预算", row, 1, e -> showBudgetsByCategory());
-
-        row++;
-        // 添加“数据可视化”分组标题
-        addSectionTitle(panel, gbc, "数据可视化", row);
-        row++;
-        // 显示图表按钮
-        addButton(panel, gbc, "显示时间线图", row, 0, e -> showTimeLineChart());
-        addButton(panel, gbc, "显示分类饼图", row, 1, e -> showCategoryPieChart());
-
-        row++;
-        // 添加“储蓄管理”分组标题
-        addSectionTitle(panel, gbc, "储蓄管理", row);
-        row++;
-        addButton(panel, gbc, "设置储蓄", row, 0, e -> setSavings());
-        addButton(panel, gbc, "显示储蓄报告", row, 1, e -> showSavingsReport());
-
-        row++;
-        // 添加“报告”分组标题
-        addSectionTitle(panel, gbc, "报告", row);
-        row++;
-        // 显示分类报告按钮
-        addButton(panel, gbc, "显示分类报告", row, 0, e -> showClassificationReport());
-
-        // 显示界面
         frame.setVisible(true);
+    }
+
+    private JButton createModernButton(String text, ActionListener action) {
+        JButton button = new JButton(text);
+        button.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        button.setBackground(new Color(33, 150, 243));  // 按钮背景颜色
+        button.setForeground(Color.WHITE);  // 字体颜色
+        button.setBorder(new RoundedBorder(20));  // 圆角按钮
+        button.setFocusPainted(false);
+        button.setPreferredSize(new Dimension(200, 50));  // 增加按钮的高度，使其更大，易于点击
+        button.addActionListener(action);
+        return button;
     }
 
     private void addSectionTitle(JPanel panel, GridBagConstraints gbc, String title, int row) {
@@ -114,8 +135,11 @@ public class ExpenseTrackerGUI {
         gbc.gridy = row;
         gbc.gridwidth = 2;
         JLabel sectionLabel = new JLabel(title, SwingConstants.CENTER);
-        sectionLabel.setFont(new Font("微软雅黑", Font.BOLD, 18));
-        sectionLabel.setForeground(new Color(0, 102, 204));  // 蓝色字体
+        sectionLabel.setFont(new Font("Segoe UI", Font.BOLD, 20));  // 更现代的字体
+        sectionLabel.setForeground(new Color(33, 150, 243));  // 标题颜色
+        sectionLabel.setOpaque(true);
+        sectionLabel.setBackground(new Color(230, 230, 230));  // 背景颜色
+        sectionLabel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));  // 边距
         panel.add(sectionLabel, gbc);
     }
 
@@ -123,15 +147,89 @@ public class ExpenseTrackerGUI {
         gbc.gridx = col;
         gbc.gridy = row;
         gbc.gridwidth = 1;
-        JButton button = new JButton(text);
-        button.setFont(new Font("微软雅黑", Font.PLAIN, 14));
-        button.setBackground(new Color(70, 130, 180));  // 深蓝色按钮
-        button.setForeground(Color.WHITE);  // 白色文字
-        button.setFocusPainted(false);  // 去掉按钮聚焦时的虚线框
-        button.setContentAreaFilled(true);  // 去掉默认背景色
-        button.setBorder(BorderFactory.createLineBorder(new Color(0, 102, 204), 1, true));  // 添加边框
-        button.addActionListener(action);
+        JButton button = createModernButton(text, action);
         panel.add(button, gbc);
+    }
+
+
+    private void addSection(JPanel panel, String sectionTitle, String[] buttonLabels, ActionListener[] actions) {
+        JPanel sectionPanel = new JPanel();
+        sectionPanel.setLayout(new BoxLayout(sectionPanel, BoxLayout.Y_AXIS));
+        sectionPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        // 分区标题
+        JLabel sectionLabel = new JLabel(sectionTitle);
+        sectionLabel.setFont(new Font("微软雅黑", Font.BOLD, 20));
+        sectionLabel.setForeground(new Color(33, 150, 243));
+        sectionPanel.add(sectionLabel);
+
+        // 按钮
+        for (int i = 0; i < buttonLabels.length; i++) {
+            JButton button = createButton(buttonLabels[i], actions[i]);
+            sectionPanel.add(button);
+            sectionPanel.add(Box.createVerticalStrut(10));  // 按钮之间的间隔
+        }
+
+        panel.add(sectionPanel);
+        panel.add(Box.createVerticalStrut(20));  // 分区之间的间隔
+    }
+
+    private JButton createButton(String text, ActionListener action) {
+        JButton button = new JButton(text);
+        button.setFont(new Font("微软雅黑", Font.PLAIN, 16));
+        button.setBackground(new Color(33, 150, 243));
+        button.setForeground(Color.WHITE);
+        button.setBorder(new RoundedBorder(10));  // 圆角边框
+        button.setFocusPainted(false);
+        button.addActionListener(action);
+        button.setPreferredSize(new Dimension(200, 40));
+        return button;
+    }
+    // 设置圆角边框类
+    static class RoundedBorder implements Border {
+        private int radius;
+
+        RoundedBorder(int radius) {
+            this.radius = radius;
+        }
+
+        @Override
+        public Insets getBorderInsets(Component c) {
+            return new Insets(5, 5, 5, 5);
+        }
+
+        @Override
+        public boolean isBorderOpaque() {
+            return false;
+        }
+
+        @Override
+        public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+            g.setColor(c.getForeground());
+            g.drawRoundRect(x, y, width - 1, height - 1, radius, radius);
+        }
+    }
+
+    private void showCategoryExpenses() {
+        StringBuilder categoryExpenses = new StringBuilder("Classified Expense:\n");
+
+        // 获取分类支出统计数据
+        Map<String, Double> categoryTotals = new HashMap<>();
+        for (ExpenseRecord record : expenseManager.getExpenses()) {
+            if (record.getTransactionType().equalsIgnoreCase("expense")) {
+                String category = record.getCategory();
+                double amount = record.getAmount();
+                categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
+            }
+        }
+
+        // 拼接分类支出数据
+        for (Map.Entry<String, Double> entry : categoryTotals.entrySet()) {
+            categoryExpenses.append("Category: ").append(entry.getKey()).append(" | Total Expense: ").append(entry.getValue()).append("\n");
+        }
+
+        // 使用JOptionPane弹出对话框显示分类支出
+        JOptionPane.showMessageDialog(frame, categoryExpenses.toString(), "Classified Expense", JOptionPane.INFORMATION_MESSAGE);
     }
 
     // 修改按钮样式：添加圆角
@@ -141,6 +239,32 @@ public class ExpenseTrackerGUI {
         button.setFont(new Font("微软雅黑", Font.PLAIN, 14));
         button.setFocusPainted(false);  // 去掉聚焦的虚线框
     }
+
+    private void showAllTransactions() {
+        StringBuilder transactions = new StringBuilder("ALL Transactions:\n");
+
+        // 获取所有交易记录
+        for (ExpenseRecord record : expenseManager.getExpenses()) {
+            transactions.append(record.toString()).append("\n");
+        }
+
+        // 创建文本区域，用来显示交易记录
+        JTextArea textArea = new JTextArea(transactions.toString());
+        textArea.setEditable(false);  // 设置文本区域为不可编辑
+        textArea.setFont(new Font("微软雅黑", Font.PLAIN, 14));
+        textArea.setLineWrap(true);  // 自动换行
+        textArea.setWrapStyleWord(true);  // 单词折行
+
+        // 将文本区域添加到滚动面板中
+        JScrollPane scrollPane = new JScrollPane(textArea);
+
+        // 设置滚动面板的大小，使其适应你需要的显示区域
+        scrollPane.setPreferredSize(new Dimension(600, 400));  // 设置滚动面板的宽度和高度
+
+        // 弹出窗口显示滚动的交易记录
+        JOptionPane.showMessageDialog(frame, scrollPane, "ALL Transactions:", JOptionPane.INFORMATION_MESSAGE);
+    }
+
 
     private void showBudgetsByCategory() {
         String category = JOptionPane.showInputDialog("Enter category:");
