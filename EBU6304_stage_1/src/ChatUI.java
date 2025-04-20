@@ -90,6 +90,10 @@ public class ChatUI {
         bottomPanel.add(submitButton, BorderLayout.EAST);
         frame.getContentPane().add(bottomPanel, BorderLayout.SOUTH);
     }
+    // 获取 JFrame 供其他窗口控制
+    public JFrame getFrame() {
+        return frame;
+    }
 }
 
-//待开发：stop button, 对话框绘制，回复格式选择
+//to do：stop button, 对话框绘制，回复格式选择
