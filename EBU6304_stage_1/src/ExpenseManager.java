@@ -325,12 +325,42 @@ public class ExpenseManager {
         budgetSet.setSavings(category, date, amount);
     }
 
+
     public Map<String, Map<LocalDate, Double>> getAllSavings() {
         return budgetSet.getAllSavings();
     }
 
     public Map<LocalDate, Double> getSavingsByCategory(String category) {
         return budgetSet.getSavingsByCategory(category);
+    }
+
+    private List<SavingsTarget> savingsTargets; // 储蓄目标列表
+
+    public ExpenseManager(String apiKey) {
+        this.apiClient = new ApiClient(apiKey);
+        expenses = new ArrayList<>();
+        budgetSet = new BudgetSet();
+        savingsTargets = new ArrayList<>(); // 初始化储蓄目标列表
+        loadExpensesFromFile();
+    }
+
+    public void addSavingsTarget(String name, String category, LocalDate startDate, LocalDate endDate, double goalAmount) {
+        SavingsTarget target = new SavingsTarget(name, category, startDate, endDate, goalAmount);
+        savingsTargets.add(target);
+    }
+
+    public List<SavingsTarget> getSavingsTargets() {
+        List<SavingsTarget> targets = new ArrayList<>(savingsTargets);
+        return targets;
+    }
+
+    public SavingsTarget getSavingsTargetByName(String targetName) {
+        for (SavingsTarget target : savingsTargets) {
+            if (target.getName().equals(targetName)) {
+                return target;
+            }
+        }
+        return null; // 如果未找到，返回 null
     }
 
     public Map<String, Double> getSavingsByDate(LocalDate date) {
