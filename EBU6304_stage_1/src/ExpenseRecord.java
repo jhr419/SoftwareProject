@@ -8,6 +8,7 @@ public class ExpenseRecord {
     private LocalDate date;        // 日期
     private String itemName;       // 物品名称
     private String transactionType; // 交易类型："income" 或 "expense"
+    private boolean useAI = true;
 
     public ExpenseRecord( String aiCategory, double amount, LocalDate date, String itemName, String transactionType) {
         //this.category = category;
@@ -42,6 +43,12 @@ public class ExpenseRecord {
     }
     public void setAiCategory(String aiCategory) {
         this.aiCategory = aiCategory;
+    }
+    public boolean getUseAI(){
+        return useAI;
+    }
+    public void setUseAI(boolean change){
+        this.useAI = change;
     }
 
 
