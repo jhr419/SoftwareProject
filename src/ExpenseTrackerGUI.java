@@ -5,6 +5,7 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,7 @@ import java.text.SimpleDateFormat;
 public class ExpenseTrackerGUI {
     private JFrame frame;
     private ExpenseManager expenseManager;
+    private List<FixedIncome> fixedIncomes = new ArrayList<>();
 
     public ExpenseTrackerGUI() {
         expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
@@ -132,6 +134,12 @@ public class ExpenseTrackerGUI {
         AIqaButton.setFocusPainted(false);
         AIqaButton.addActionListener(e -> openChatUI());
         panel.add(AIqaButton, gbc);
+
+        addSectionTitle(panel, gbc, "Fixed Income Management", row);
+        row++;
+        addButton(panel, gbc, "Add Fixed Income", row, 0, e -> addFixedIncome());
+        addButton(panel, gbc, "View Fixed Incomes", row, 1, e -> viewFixedIncomes());
+        addButton(panel, gbc, "Delete Fixed Income", row, 2, e -> deleteFixedIncome());
 
         frame.setVisible(true);
     }
@@ -630,6 +638,66 @@ public class ExpenseTrackerGUI {
         // 创建并显示 ChatUI 窗口
         ChatUI chatUI = new ChatUI();
         chatUI.getFrame().setVisible(true); // 显示 ChatUI 窗口
+    }
+
+    // 添加固定收入
+    private void addFixedIncome() {
+        String source = JOptionPane.showInputDialog("输入收入来源:");
+        String amountStr = JOptionPane.showInputDialog("输入收入金额:");
+        String period = JOptionPane.showInputDialog("输入收入周期 (如每月/每季度):");
+
+        try {
+            double amount = Double.parseDouble(amountStr);
+            FixedIncome income = new FixedIncome(source, amount, period);
+            fixedIncomes.add(income);
+            JOptionPane.showMessageDialog(frame, "固定收入添加成功!");
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(frame, "无效的金额输入!", "错误", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    // 查看固定收入
+    private void viewFixedIncomes() {
+        if (fixedIncomes.isEmpty()) {
+            JOptionPane.showMessageDialog(frame, "当前没有固定收入记录!", "提示", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        StringBuilder message = new StringBuilder("固定收入列表:\n");
+        for (int i = 0; i < fixedIncomes.size(); i++) {
+            message.append(i + 1).append(". ").append(fixedIncomes.get(i)).append("\n");
+        }
+
+        JOptionPane.showMessageDialog(frame, message.toString(), "固定收入", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    // 删除固定收入
+    private void deleteFixedIncome() {
+        if (fixedIncomes.isEmpty()) {
+            JOptionPane.showMessageDialog(frame, "当前没有固定收入记录!", "提示", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        StringBuilder message = new StringBuilder("固定收入列表:\n");
+        for (int i = 0; i < fixedIncomes.size(); i++) {
+            message.append(i + 1).append(". ").append(fixedIncomes.get(i)).append("\n");
+        }
+        message.append("\n请输入要删除的固定收入编号:");
+
+        String input = JOptionPane.showInputDialog(frame, message.toString(), "删除固定收入", JOptionPane.QUESTION_MESSAGE);
+        if (input != null) {
+            try {
+                int index = Integer.parseInt(input) - 1;
+                if (index >= 0 && index < fixedIncomes.size()) {
+                    fixedIncomes.remove(index);
+                    JOptionPane.showMessageDialog(frame, "固定收入删除成功!");
+                } else {
+                    JOptionPane.showMessageDialog(frame, "无效的编号!", "错误", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(frame, "无效的输入!", "错误", JOptionPane.ERROR_MESSAGE);
+            }
+        }
     }
 
     public static void main(String[] args) {
