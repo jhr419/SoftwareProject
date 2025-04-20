@@ -52,6 +52,7 @@ public class ExpenseTrackerGUI {
         row++;
         // Transaction Management 分组标题
         addSectionTitle(panel, gbc, "Transaction Management", row);
+        addButton(panel, gbc, "AI Assistant", row, 30, e -> openChatUI()); // 点击时打开 ChatUI
         row++;
         // 第一行按钮：Add Transaction | Display Transactions
         addButton(panel, gbc, "Add Transaction", row, 0, e -> addExpense());
@@ -464,6 +465,12 @@ public class ExpenseTrackerGUI {
             report.append("  ").append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
         }
         JOptionPane.showMessageDialog(frame, report.toString(), "Classification Report", JOptionPane.INFORMATION_MESSAGE);
+    }
+    // 方法：打开 ChatUI
+    private void openChatUI() {
+        // 创建并显示 ChatUI 窗口
+        ChatUI chatUI = new ChatUI();
+        chatUI.getFrame().setVisible(true); // 显示 ChatUI 窗口
     }
 
     public static void main(String[] args) {
