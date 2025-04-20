@@ -97,6 +97,8 @@ public class ExpenseTrackerGUI {
         row++;
         addButton(panel, gbc, "设置储蓄", row, 0, e -> setSavings());
         addButton(panel, gbc, "显示储蓄报告", row, 1, e -> showSavingsReport());
+        row++;
+        addButton(panel, gbc, "显示储蓄进度", row, 0, e -> showSavingsProgress());
 
         row++;
         // 添加“报告”分组标题
@@ -104,6 +106,8 @@ public class ExpenseTrackerGUI {
         row++;
         // 显示分类报告按钮
         addButton(panel, gbc, "显示分类报告", row, 0, e -> showClassificationReport());
+
+
 
         // 显示界面
         frame.setVisible(true);
@@ -178,6 +182,7 @@ public class ExpenseTrackerGUI {
         }
     }
 
+    //设置储蓄进度
     private void setSavings() {
         String category = JOptionPane.showInputDialog("Enter category:");
         String dateStr = JOptionPane.showInputDialog("Enter savings date (YYYY-MM-DD):");
@@ -277,6 +282,8 @@ public class ExpenseTrackerGUI {
         }
         JOptionPane.showMessageDialog(frame, report.toString(), "Budget Report", JOptionPane.INFORMATION_MESSAGE);
     }
+
+    //展示储蓄报告
     private void showSavingsReport() {
         String category = JOptionPane.showInputDialog("Enter category (leave empty for all):");
         Map<String, Map<LocalDate, Double>> savings = expenseManager.getAllSavings();
@@ -482,6 +489,59 @@ public class ExpenseTrackerGUI {
             report.append("  ").append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
         }
         JOptionPane.showMessageDialog(frame, report.toString(), "Classification Report", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private void showSavingsProgress() {
+        String category = JOptionPane.showInputDialog("输入类别:");
+        String startDateStr = JOptionPane.showInputDialog("输入储蓄开始日期 (YYYY-MM-DD):");
+        String endDateStr = JOptionPane.showInputDialog("输入储蓄结束日期 (YYYY-MM-DD):");
+
+        try {
+            LocalDate startDate = LocalDate.parse(startDateStr);
+            LocalDate endDate = LocalDate.parse(endDateStr);
+
+            // 获取储蓄目标金额
+            Map<LocalDate, Double> savingsByCategory = expenseManager.getSavingsByCategory(category);
+            double savingsGoal = savingsByCategory.entrySet().stream()
+                    .filter(entry -> !entry.getKey().isBefore(startDate) && !entry.getKey().isAfter(endDate))
+                    .mapToDouble(Map.Entry::getValue)
+                    .sum();
+
+            // 计算收入和支出
+            double totalIncome = expenseManager.getExpenses().stream()
+                    .filter(record -> record.getAiCategory().equalsIgnoreCase(category)
+                            && record.getTransactionType().equalsIgnoreCase("income")
+                            && !record.getDate().isBefore(startDate)
+                            && !record.getDate().isAfter(endDate))
+                    .mapToDouble(ExpenseRecord::getAmount)
+                    .sum();
+
+            double totalExpense = expenseManager.getExpenses().stream()
+                    .filter(record -> record.getAiCategory().equalsIgnoreCase(category)
+                            && record.getTransactionType().equalsIgnoreCase("expense")
+                            && !record.getDate().isBefore(startDate)
+                            && !record.getDate().isAfter(endDate))
+                    .mapToDouble(ExpenseRecord::getAmount)
+                    .sum();
+
+            double currentSavings = totalIncome - totalExpense;
+
+            // 计算进度
+            int progress = (int) Math.min((currentSavings / savingsGoal) * 100, 100);
+
+            // 显示进度条
+            JProgressBar progressBar = new JProgressBar(0, 100);
+            progressBar.setValue(progress);
+            progressBar.setStringPainted(true);
+
+            String message = String.format("类别: %s\n储蓄目标: %.2f\n当前储蓄: %.2f\n进度: %d%%",
+                    category, savingsGoal, currentSavings, progress);
+
+            JOptionPane.showMessageDialog(frame, new Object[]{message, progressBar}, "储蓄进度", JOptionPane.INFORMATION_MESSAGE);
+
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(frame, "输入无效: " + ex.getMessage(), "错误", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public static void main(String[] args) {
