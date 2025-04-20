@@ -235,7 +235,7 @@ public class ExpenseTrackerGUI {
         Map<String, Double> categoryTotals = new HashMap<>();
         for (ExpenseRecord record : expenseManager.getExpenses()) {
             if (record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getCategory();
+                String category = record.getAiCategory();
                 double amount = record.getAmount();
                 categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
             }
