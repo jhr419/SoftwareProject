@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="Rebuild project structure">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMoney.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SavingsTarget.java" afterDir="false" />
+    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="Delete unused files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExpenseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginGUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,9 @@
     "accountId": "be8bd6ad-e652-4514-a868-1265d144818b"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -63,7 +69,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.ExpenseTrackerGUI.executor": "Run"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -82,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745165630012</updated>
-      <workItem from="1745165632151" duration="193000" />
+      <workItem from="1745165632151" duration="892000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild struct of project">
       <option name="closed" value="true" />
@@ -100,16 +107,45 @@
       <option name="project" value="LOCAL" />
       <updated>1745165777451</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New SavingsTarget">
+      <option name="closed" value="true" />
+      <created>1745165851247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745165851247</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Delete unused files">
+      <option name="closed" value="true" />
+      <created>1745166104016</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745166104016</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SavingsTarget" />
     <MESSAGE value="Rebuild struct of project" />
     <MESSAGE value="Rebuild project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rebuild project structure" />
+    <MESSAGE value="New SavingsTarget" />
+    <MESSAGE value="Delete unused files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused files" />
   </component>
 </project>

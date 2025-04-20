@@ -5,7 +5,7 @@ import java.util.*;
 public class BudgetSet {
     private Map<String, Map<LocalDate, Double>> categoryBudgets;  // {类别 -> {截止日期 -> 预算金额}}
     private Map<String, Map<LocalDate, Double>> categorySpending; // {类别 -> {日期 -> 已支出金额}}
-    private static final String BUDGET_FILE = "budget.csv";
+    private static final String BUDGET_FILE = "resources/budget.csv";
     private Map<String, Map<LocalDate, Double>> categorySavings;  // {类别 -> {日期 -> 储蓄金额}}
     public BudgetSet() {
         categoryBudgets = new HashMap<>();
@@ -50,7 +50,7 @@ public class BudgetSet {
     }
 
     private void saveSavingsToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("savings.csv"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("resources/savings.csv"))) {
             for (String category : categorySavings.keySet()) {
                 for (LocalDate date : categorySavings.get(category).keySet()) {
                     writer.write(category + "," + date + "," + categorySavings.get(category).get(date));
@@ -132,7 +132,7 @@ public class BudgetSet {
     }
 
     private void loadExpensesFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("expenses.csv"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("resources/expenses.csv"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");

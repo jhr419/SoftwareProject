@@ -63,7 +63,7 @@ public class ExpenseManager {
 
     // 从CSV文件加载记录（支持收入和支出）
     private void loadExpensesFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("input.csv"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("resources/input.csv"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
@@ -88,8 +88,8 @@ public class ExpenseManager {
 
 
     public void saveExpensesToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("expenses.csv"));
-             BufferedWriter inputWriter = new BufferedWriter(new FileWriter("input.csv"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("resources/expenses.csv"));
+             BufferedWriter inputWriter = new BufferedWriter(new FileWriter("resources/input.csv"))) {
 
             for (ExpenseRecord record : expenses) {
                 // 写入到 expenses.csv 文件
