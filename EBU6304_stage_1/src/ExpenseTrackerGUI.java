@@ -1,11 +1,14 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import javax.swing.border.*;
 // JFreeChart 相关导入
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -22,44 +25,47 @@ public class ExpenseTrackerGUI {
     private ExpenseManager expenseManager;
 
     public ExpenseTrackerGUI() {
-        expenseManager = new ExpenseManager();
+        expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
         initialize();
     }
 
     private void initialize() {
-        frame = new JFrame("Kobe Xie");
+        frame = new JFrame("Finance Management");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 700);
         frame.setLayout(new BorderLayout());
 
+        // 设置背景色
+        frame.getContentPane().setBackground(new Color(245, 245, 245));
+
         JPanel panel = new JPanel(new GridBagLayout());
+        panel.setBackground(new Color(245, 245, 245)); // 使面板背景与窗口一致
         frame.getContentPane().add(panel, BorderLayout.CENTER);
+
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
         gbc.fill = GridBagConstraints.BOTH;
 
-        int row = 0;
-        // 图片（独占一行，两列）
-        String imagePath = "AI_assistant.jpg";
-        ImageIcon imageIcon = new ImageIcon(imagePath);
-        Image image = imageIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
-        JLabel imageLabel = new JLabel(new ImageIcon(image));
-        gbc.gridx = 0;
-        gbc.gridy = row;
-        gbc.gridwidth = 2;
-        panel.add(imageLabel, gbc);
 
-        row++;
-        // Transaction Management 分组标题
+        // 设置图片（头像）
+        int row = 0;
+        //String imagePath = "AI_assistant.jpg";  // 头像路径
+        //ImageIcon imageIcon = new ImageIcon(imagePath);
+        //Image image = imageIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
+        //JLabel imageLabel = new JLabel(new ImageIcon(image));
+        //gbc.gridx = 0;
+        //gbc.gridy = row;
+        //gbc.gridwidth = 2;
+        //panel.add(imageLabel, gbc);
+
         addSectionTitle(panel, gbc, "Transaction Management", row);
-        addButton(panel, gbc, "AI Assistant", row, 30, e -> openChatUI()); // 点击时打开 ChatUI
         row++;
         // 第一行按钮：Add Transaction | Display Transactions
         addButton(panel, gbc, "Add Transaction", row, 0, e -> addExpense());
-        addButton(panel, gbc, "Display Transactions", row, 1, e -> expenseManager.displayExpenses());
+        addButton(panel, gbc, "Display Transactions", row, 1, e -> showAllTransactions());
         row++;
         // 第二行按钮：Display Category Expenses | Load CSV Data
-        addButton(panel, gbc, "Display Category Expenses", row, 0, e -> expenseManager.displayCategoryExpenses());
+        addButton(panel, gbc, "Display Category Expenses", row, 0, e -> showCategoryExpenses());
         addButton(panel, gbc, "Edit Data", row, 1, e -> showExpenseTable());
 
         row++;
@@ -87,6 +93,7 @@ public class ExpenseTrackerGUI {
         addButton(panel, gbc, "Show Category Pie Chart", row, 1, e -> showCategoryPieChart());
 
         row++;
+        // Savings 分组标题
         addSectionTitle(panel, gbc, "Savings", row);
         row++;
         addButton(panel, gbc, "Set Savings", row, 0, e -> setSavings());
@@ -95,20 +102,171 @@ public class ExpenseTrackerGUI {
         row++;
         // Reports 分组标题
         addSectionTitle(panel, gbc, "Reports", row);
-
-
         row++;
         // 单个按钮居中：Show Classification Report
         gbc.gridx = 0;
         gbc.gridy = row;
         gbc.gridwidth = 2;
         JButton reportButton = new JButton("Show Classification Report");
-        reportButton.setFont(new Font("Arial", Font.PLAIN, 14));
+        reportButton.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        reportButton.setBackground(new Color(33, 150, 243)); // 按钮颜色
+        reportButton.setForeground(Color.WHITE);  // 字体颜色
+        reportButton.setBorder(new RoundedBorder(20));  // 更大的圆角
+        reportButton.setFocusPainted(false);
         reportButton.addActionListener(e -> showClassificationReport());
         panel.add(reportButton, gbc);
 
         frame.setVisible(true);
     }
+
+    private JButton createModernButton(String text, ActionListener action) {
+        JButton button = new JButton(text);
+        button.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        button.setBackground(new Color(33, 150, 243));  // 按钮背景颜色
+        button.setForeground(Color.WHITE);  // 字体颜色
+        button.setBorder(new RoundedBorder(20));  // 圆角按钮
+        button.setFocusPainted(false);
+        button.setPreferredSize(new Dimension(200, 50));  // 增加按钮的高度，使其更大，易于点击
+        button.addActionListener(action);
+        return button;
+    }
+
+    private void addSectionTitle(JPanel panel, GridBagConstraints gbc, String title, int row) {
+        gbc.gridx = 0;
+        gbc.gridy = row;
+        gbc.gridwidth = 2;
+        JLabel sectionLabel = new JLabel(title, SwingConstants.CENTER);
+        sectionLabel.setFont(new Font("Segoe UI", Font.BOLD, 20));  // 更现代的字体
+        sectionLabel.setForeground(new Color(33, 150, 243));  // 标题颜色
+        sectionLabel.setOpaque(true);
+        sectionLabel.setBackground(new Color(230, 230, 230));  // 背景颜色
+        sectionLabel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));  // 边距
+        panel.add(sectionLabel, gbc);
+    }
+
+    private void addButton(JPanel panel, GridBagConstraints gbc, String text, int row, int col, ActionListener action) {
+        gbc.gridx = col;
+        gbc.gridy = row;
+        gbc.gridwidth = 1;
+        JButton button = createModernButton(text, action);
+        panel.add(button, gbc);
+    }
+
+
+    private void addSection(JPanel panel, String sectionTitle, String[] buttonLabels, ActionListener[] actions) {
+        JPanel sectionPanel = new JPanel();
+        sectionPanel.setLayout(new BoxLayout(sectionPanel, BoxLayout.Y_AXIS));
+        sectionPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        // 分区标题
+        JLabel sectionLabel = new JLabel(sectionTitle);
+        sectionLabel.setFont(new Font("微软雅黑", Font.BOLD, 20));
+        sectionLabel.setForeground(new Color(33, 150, 243));
+        sectionPanel.add(sectionLabel);
+
+        // 按钮
+        for (int i = 0; i < buttonLabels.length; i++) {
+            JButton button = createButton(buttonLabels[i], actions[i]);
+            sectionPanel.add(button);
+            sectionPanel.add(Box.createVerticalStrut(10));  // 按钮之间的间隔
+        }
+
+        panel.add(sectionPanel);
+        panel.add(Box.createVerticalStrut(20));  // 分区之间的间隔
+    }
+
+    private JButton createButton(String text, ActionListener action) {
+        JButton button = new JButton(text);
+        button.setFont(new Font("微软雅黑", Font.PLAIN, 16));
+        button.setBackground(new Color(33, 150, 243));
+        button.setForeground(Color.WHITE);
+        button.setBorder(new RoundedBorder(10));  // 圆角边框
+        button.setFocusPainted(false);
+        button.addActionListener(action);
+        button.setPreferredSize(new Dimension(200, 40));
+        return button;
+    }
+    // 设置圆角边框类
+    static class RoundedBorder implements Border {
+        private int radius;
+
+        RoundedBorder(int radius) {
+            this.radius = radius;
+        }
+
+        @Override
+        public Insets getBorderInsets(Component c) {
+            return new Insets(5, 5, 5, 5);
+        }
+
+        @Override
+        public boolean isBorderOpaque() {
+            return false;
+        }
+
+        @Override
+        public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+            g.setColor(c.getForeground());
+            g.drawRoundRect(x, y, width - 1, height - 1, radius, radius);
+        }
+    }
+
+    private void showCategoryExpenses() {
+        StringBuilder categoryExpenses = new StringBuilder("Classified Expense:\n");
+
+        // 获取分类支出统计数据
+        Map<String, Double> categoryTotals = new HashMap<>();
+        for (ExpenseRecord record : expenseManager.getExpenses()) {
+            if (record.getTransactionType().equalsIgnoreCase("expense")) {
+                String category = record.getCategory();
+                double amount = record.getAmount();
+                categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
+            }
+        }
+
+        // 拼接分类支出数据
+        for (Map.Entry<String, Double> entry : categoryTotals.entrySet()) {
+            categoryExpenses.append("Category: ").append(entry.getKey()).append(" | Total Expense: ").append(entry.getValue()).append("\n");
+        }
+
+        // 使用JOptionPane弹出对话框显示分类支出
+        JOptionPane.showMessageDialog(frame, categoryExpenses.toString(), "Classified Expense", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    // 修改按钮样式：添加圆角
+    private void setButtonStyle(JButton button) {
+        button.setBackground(new Color(70, 130, 180));  // 设置按钮背景色
+        button.setForeground(Color.WHITE);  // 设置按钮文字颜色
+        button.setFont(new Font("微软雅黑", Font.PLAIN, 14));
+        button.setFocusPainted(false);  // 去掉聚焦的虚线框
+    }
+
+    private void showAllTransactions() {
+        StringBuilder transactions = new StringBuilder("ALL Transactions:\n");
+
+        // 获取所有交易记录
+        for (ExpenseRecord record : expenseManager.getExpenses()) {
+            transactions.append(record.toString()).append("\n");
+        }
+
+        // 创建文本区域，用来显示交易记录
+        JTextArea textArea = new JTextArea(transactions.toString());
+        textArea.setEditable(false);  // 设置文本区域为不可编辑
+        textArea.setFont(new Font("微软雅黑", Font.PLAIN, 14));
+        textArea.setLineWrap(true);  // 自动换行
+        textArea.setWrapStyleWord(true);  // 单词折行
+
+        // 将文本区域添加到滚动面板中
+        JScrollPane scrollPane = new JScrollPane(textArea);
+
+        // 设置滚动面板的大小，使其适应你需要的显示区域
+        scrollPane.setPreferredSize(new Dimension(600, 400));  // 设置滚动面板的宽度和高度
+
+        // 弹出窗口显示滚动的交易记录
+        JOptionPane.showMessageDialog(frame, scrollPane, "ALL Transactions:", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+
     private void showBudgetsByCategory() {
         String category = JOptionPane.showInputDialog("Enter category:");
         if (category != null && !category.isEmpty()) {
@@ -145,26 +303,6 @@ public class ExpenseTrackerGUI {
         }
     }
 
-    // 辅助方法：添加分组标题（横跨两列）
-    private void addSectionTitle(JPanel panel, GridBagConstraints gbc, String title, int row) {
-        gbc.gridx = 0;
-        gbc.gridy = row;
-        gbc.gridwidth = 2;
-        JLabel sectionLabel = new JLabel(title, SwingConstants.CENTER);
-        sectionLabel.setFont(new Font("Arial", Font.BOLD, 18));
-        panel.add(sectionLabel, gbc);
-    }
-
-    // 辅助方法：在指定行列添加按钮，gridwidth 固定为1
-    private void addButton(JPanel panel, GridBagConstraints gbc, String text, int row, int col, ActionListener action) {
-        gbc.gridx = col;
-        gbc.gridy = row;
-        gbc.gridwidth = 1;
-        JButton button = new JButton(text);
-        button.setFont(new Font("Arial", Font.PLAIN, 14));
-        button.addActionListener(action);
-        panel.add(button, gbc);
-    }
     private void setSavings() {
         String category = JOptionPane.showInputDialog("Enter category:");
         String dateStr = JOptionPane.showInputDialog("Enter savings date (YYYY-MM-DD):");
@@ -182,16 +320,15 @@ public class ExpenseTrackerGUI {
 
     // 添加记录（交易）——提示用户输入交易类型（income 或 expense）
     private void addExpense() {
-        String category = JOptionPane.showInputDialog("Enter category:");
+        String itemName = JOptionPane.showInputDialog("Enter item name:");
         String amountStr = JOptionPane.showInputDialog("Enter amount:");
         String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
-        String itemName = JOptionPane.showInputDialog("Enter item name:");
         String transactionType = JOptionPane.showInputDialog("Enter transaction type (income/expense):");
 
         try {
             LocalDate date = LocalDate.parse(dateStr);
             double amount = Double.parseDouble(amountStr);
-            expenseManager.addExpense(category, amount, date, itemName, transactionType);
+            expenseManager.addExpense(itemName, amount, date, transactionType);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(frame, "Invalid input: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -340,7 +477,7 @@ public class ExpenseTrackerGUI {
 
     // 数据可视化 - 饼图（仅显示出账数据）
     private void showCategoryPieChart() {
-        Map<String, Double> categoryData = expenseManager.getCategorySpendingData();
+        Map<String, Double> categoryData = expenseManager.getAiCategorySpendingData();
         DefaultPieDataset dataset = new DefaultPieDataset();
         for (Map.Entry<String, Double> entry : categoryData.entrySet()) {
             dataset.setValue(entry.getKey(), entry.getValue());
@@ -373,7 +510,7 @@ public class ExpenseTrackerGUI {
         List<ExpenseRecord> expenseList = expenseManager.getExpenses();
         for (ExpenseRecord record : expenseList) {
             Object[] row = {
-                    record.getCategory(),
+                    record.getAiCategory(),
                     record.getAmount(),
                     record.getDate(),
                     record.getItemName(),
@@ -407,6 +544,10 @@ public class ExpenseTrackerGUI {
                 try {
                     double newAmount = Double.parseDouble(newAmountStr);
                     LocalDate parsedDate = LocalDate.parse(newDate);
+
+                    // 根据新输入的 itemName 获取 AI 分类
+                    //String newAiCategory = expenseManager.classifyWithAI(newItemName);  // 获取新的 AI 分类
+
                     ExpenseRecord newRecord = new ExpenseRecord(newCategory, newAmount, parsedDate, newItemName, newType);
                     boolean success = expenseManager.updateExpense(selectedRow, newRecord);
                     if (success) {
@@ -444,6 +585,7 @@ public class ExpenseTrackerGUI {
                 JOptionPane.showMessageDialog(tableFrame, "Please select a record to delete.", "Warning", JOptionPane.WARNING_MESSAGE);
             }
         });
+
 
         buttonPanel.add(editButton);
         buttonPanel.add(deleteButton);
