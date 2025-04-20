@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="Delete unused files">
-      <change afterPath="$PROJECT_DIR$/src/FixedIncome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" afterDir="false" />
-    </list>
+    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="add new feature of fixedincome" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,18 +117,58 @@
       <option name="project" value="LOCAL" />
       <updated>1745166104016</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add new feature of fixedincome">
+      <option name="closed" value="true" />
+      <created>1745170300614</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745170300614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/feature/import-export-records" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/import-export-records" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -146,6 +180,7 @@
     <MESSAGE value="Rebuild project structure" />
     <MESSAGE value="New SavingsTarget" />
     <MESSAGE value="Delete unused files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unused files" />
+    <MESSAGE value="add new feature of fixedincome" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new feature of fixedincome" />
   </component>
 </project>
