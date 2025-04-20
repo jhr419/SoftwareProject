@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="add new feature of fixedincome">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2025_4_21_00_44____.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2025_4_21_00_44____1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/_2025_4_21_01_32____.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2025_4_21_00_44_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2025_4_21_00_44_取消提交了更改_[更改]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2025_4_21_01_32_取消提交了更改_[更改]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FixedIncome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SavingsTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ApiQA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ChatUI$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ChatUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ExpenseRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI$RoundedBorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FixedIncome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/LoginGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/SavingsTarget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/AI_assistant.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/AI_assistant.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/EBU6304_stage_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/SmartMoney.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMoney.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/budget.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/budget.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/expenses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/expenses.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/input.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/lib/jfreechart-1.5.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jfreechart-1.5.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/savings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/savings.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ApiQA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiQA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/BudgetSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BudgetSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ChatUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseTrackerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseTrackerGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/LoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/QuestionAnswerApp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuestionAnswerApp-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/SmartMoney-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SmartMoney-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/ApiClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApiClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/BudgetSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BudgetSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/ExpenseAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/ExpenseCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/ExpenseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/ExpenseRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/ExpenseTrackerGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/classes/LoginGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jhr419/SoftwareProject.git",
+    "accountId": "0507dcf2-e8f1-47a3-8910-1a68ae690abc"
+  }
+}]]></component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "正在合并 feature/import-export-records",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
