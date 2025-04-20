@@ -1,0 +1,33 @@
+<changelist name="在进行签出之前于_2025_4_20_23_15_取消提交了更改_[更改]" date="1745162122941" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2025_4_20_23_15_取消提交了更改_[更改]/shelved.patch" />
+  <option name="DESCRIPTION" value="在进行签出之前于 2025/4/20 23:15 取消提交了更改 [更改]" />
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/ExpenseCategory.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/ApiClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/ExpenseManager.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/LoginGUI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/BudgetSet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/ExpenseAnalyzer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/ExpenseRecord.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/SmartMoney-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="EBU6304_stage_1/target/SmartMoney-1.0-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2025_4_20_23_15_取消提交了更改_[更改]/SmartMoney-1.0-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="EBU6304_stage_1/target/classes/ExpenseTrackerGUI.class" />
+  </binary>
+</changelist>

@@ -1,0 +1,56 @@
+Index: EBU6304_stage_1/src/SavingsTarget.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/EBU6304_stage_1/src/SavingsTarget.java b/EBU6304_stage_1/src/SavingsTarget.java
+new file mode 100644
+--- /dev/null	(date 1745161581230)
++++ b/EBU6304_stage_1/src/SavingsTarget.java	(date 1745161581230)
+@@ -0,0 +1,45 @@
++import java.time.LocalDate;
++
++public class SavingsTarget {
++    private String name;        // 储蓄目标名称
++    private String category;    // 类别
++    private LocalDate startDate; // 开始日期
++    private LocalDate endDate;   // 结束日期
++    private double goalAmount;   // 储蓄目标金额
++
++    // 构造函数
++    public SavingsTarget(String name, String category, LocalDate startDate, LocalDate endDate, double goalAmount) {
++        this.name = name;
++        this.category = category;
++        this.startDate = startDate;
++        this.endDate = endDate;
++        this.goalAmount = goalAmount;
++    }
++
++    // Getter 和 Setter 方法
++    public String getName() {
++        return name;
++    }
++
++    public String getCategory() {
++        return category;
++    }
++
++    public LocalDate getStartDate() {
++        return startDate;
++    }
++
++    public LocalDate getEndDate() {
++        return endDate;
++    }
++
++    public double getGoalAmount() {
++        return goalAmount;
++    }
++
++    @Override
++    public String toString() {
++        return String.format("目标: %s, 类别: %s, 开始日期: %s, 结束日期: %s, 目标金额: %.2f",
++                name, category, startDate, endDate, goalAmount);
++    }
++}
+\ No newline at end of file
