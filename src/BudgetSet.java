@@ -1,6 +1,7 @@
 import java.io.*;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class BudgetSet {
     private Map<String, Map<LocalDate, Double>> categoryBudgets;  // {类别 -> {截止日期 -> 预算金额}}
@@ -110,26 +111,52 @@ public class BudgetSet {
     }
 
     // **获取预算进度**
-    public double getBudgetProgress(String category, LocalDate budgetSetDate, LocalDate endDate) {
-        // 获取预算金额
-        double budget = categoryBudgets.getOrDefault(category, new HashMap<>()).getOrDefault(endDate, 0.0);
-        if (budget == 0) return 0.0; // 避免除零错误
+    public double getBudgetProgress(String category, LocalDate inputStartDate, LocalDate inputEndDate) {
+        // 1. 计算用户输入时间范围内的支出总金额
+        double totalSpent = 0.0;
 
-        double spent = 0.0;
-
-        // 遍历 categorySpending（包括从 expenses.csv 加载的历史消费）
+        // 遍历支出数据，计算在用户输入日期范围内的支出金额
         for (Map.Entry<LocalDate, Double> entry : categorySpending.getOrDefault(category, new HashMap<>()).entrySet()) {
             LocalDate expenseDate = entry.getKey();
-
-            // **计算 budgetSetDate ~ endDate 之间的消费**
-            if (!expenseDate.isBefore(budgetSetDate) && !expenseDate.isAfter(endDate)) {
-                spent += entry.getValue();
+            if (!expenseDate.isBefore(inputStartDate) && !expenseDate.isAfter(inputEndDate)) {
+                totalSpent += entry.getValue();  // 累计在用户输入的日期范围内的支出
             }
         }
 
-        // 计算进度：支出金额 / 预算金额
-        return Math.min(1.0, spent / budget); // **进度最大为100%**
+        // 2. 获取所有预算，并根据预算的截止日期过滤（截止日期必须大于用户输入的结束日期）
+        Map<LocalDate, Double> relevantBudgets = categoryBudgets.getOrDefault(category, new HashMap<>())
+                .entrySet().stream()
+                .filter(entry -> !entry.getKey().isBefore(inputEndDate))  // 过滤出截止日期晚于用户输入的预算
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+        // 3. 如果没有符合条件的预算，返回0
+        if (relevantBudgets.isEmpty()) {
+            return 0.0;
+        }
+
+        // 4. 计算进度并返回进度百分比
+        double totalBudget = 0.0;
+        double totalSpentForProgress = 0.0;
+
+        for (Map.Entry<LocalDate, Double> budgetEntry : relevantBudgets.entrySet()) {
+            LocalDate budgetEndDate = budgetEntry.getKey();
+            double budgetAmount = budgetEntry.getValue();
+
+            // 计算该预算的进度
+            double progress = Math.min(1.0, totalSpent / budgetAmount);  // 进度最大为100%
+
+            // 累加预算总金额和支出总金额（用于显示进度）
+            totalBudget += budgetAmount;
+            totalSpentForProgress += totalSpent;
+
+            // 打印每个预算的进度
+            //System.out.println("Budget for " + category + " (End Date: " + budgetEndDate + "): " + (progress * 100) + "%");
+        }
+
+        // 返回计算的进度，进度最大为100%
+        return totalSpentForProgress / totalBudget;
     }
+
 
     private void loadExpensesFromFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader("resources/expenses.csv"))) {

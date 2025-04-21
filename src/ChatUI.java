@@ -29,7 +29,7 @@ public class ChatUI {
     private void initialize() {
         frame = new JFrame("Chat Interface");
         frame.setBounds(100, 100, 600, 500);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.getContentPane().setLayout(new BorderLayout());
 
         // Create response area with scrollable text area for chat
