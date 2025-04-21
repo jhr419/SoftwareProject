@@ -139,7 +139,8 @@ public class ExpenseTrackerGUI {
         row++;
         addButton(panel, gbc, "Add Fixed Income", row, 0, e -> addFixedIncome());
         addButton(panel, gbc, "View Fixed Incomes", row, 1, e -> viewFixedIncomes());
-        addButton(panel, gbc, "Delete Fixed Income", row, 2, e -> deleteFixedIncome());
+        row++;
+        addButton(panel, gbc, "Delete Fixed Income", row, 0, e -> deleteFixedIncome());
 
         frame.setVisible(true);
     }
