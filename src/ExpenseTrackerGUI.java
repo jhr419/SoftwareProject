@@ -20,6 +20,7 @@ import org.jfree.data.time.TimeSeriesCollection;
 import org.jfree.data.time.Day;
 import org.jfree.chart.axis.DateAxis;
 import java.text.SimpleDateFormat;
+import java.util.stream.Collectors;
 
 public class ExpenseTrackerGUI {
     private JFrame frame;
@@ -43,10 +44,12 @@ public class ExpenseTrackerGUI {
 
         // 设置背景色
         frame.getContentPane().setBackground(new Color(245, 245, 245));
-
         JPanel panel = new JPanel(new GridBagLayout());
         panel.setBackground(new Color(245, 245, 245)); // 使面板背景与窗口一致
-        frame.getContentPane().add(panel, BorderLayout.CENTER);
+        // 创建 JScrollPane 将按钮面板包裹起来
+        JScrollPane scrollPane = new JScrollPane(panel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
@@ -456,17 +459,49 @@ public class ExpenseTrackerGUI {
         try {
             LocalDate budgetSetDate = LocalDate.parse(startDateStr);
             LocalDate endDate = LocalDate.parse(endDateStr);
-            double progress = expenseManager.getBudgetProgress(category, budgetSetDate, endDate) * 100;
 
-            JProgressBar progressBar = new JProgressBar(0, 100);
-            progressBar.setValue((int) progress);
-            progressBar.setStringPainted(true);
+            // 获取符合条件的所有预算
+            Map<LocalDate, Double> relevantBudgets = expenseManager.getBudgetsByCategory(category).entrySet().stream()
+                    .filter(entry -> !entry.getKey().isBefore(budgetSetDate) && !entry.getKey().isAfter(endDate))
+                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
-            JOptionPane.showMessageDialog(frame, progressBar, "Budget Progress", JOptionPane.INFORMATION_MESSAGE);
+            // 如果没有找到相关的预算，提示用户
+            if (relevantBudgets.isEmpty()) {
+                JOptionPane.showMessageDialog(frame, "No budgets found for the specified category and date range.", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            // 创建一个面板来显示多个进度条
+            JPanel panel = new JPanel();
+            panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));  // 垂直布局显示多个进度条
+
+            // 显示每个符合条件的预算的进度条
+            for (Map.Entry<LocalDate, Double> budgetEntry : relevantBudgets.entrySet()) {
+                LocalDate budgetEndDate = budgetEntry.getKey();
+                double budgetAmount = budgetEntry.getValue();
+
+                // 获取进度：调用 getBudgetProgress 方法计算进度
+                double progress = expenseManager.getBudgetProgress(category, budgetSetDate, budgetEndDate) * 100;
+
+                // 创建进度条
+                JProgressBar progressBar = new JProgressBar(0, 100);
+                progressBar.setValue((int) (progress));
+                progressBar.setStringPainted(true);
+                progressBar.setString(String.format("Progress for %s (End Date: %s): %.2f%%", category, budgetEndDate, progress));
+
+                // 将进度条添加到面板
+                panel.add(progressBar);
+                panel.add(Box.createVerticalStrut(10));  // 添加间隔
+            }
+
+            // 弹出窗口显示包含进度条的面板
+            JOptionPane.showMessageDialog(frame, panel, "Budget Progress", JOptionPane.INFORMATION_MESSAGE);
+
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(frame, "Invalid input: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+
 
     // 显示收入和支出折线图：收入和出账各为一条曲线
     private void showTimeLineChart() {
