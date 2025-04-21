@@ -135,6 +135,7 @@ public class ExpenseTrackerGUI {
         AIqaButton.addActionListener(e -> openChatUI());
         panel.add(AIqaButton, gbc);
 
+        row++;
         addSectionTitle(panel, gbc, "Fixed Income Management", row);
         row++;
         addButton(panel, gbc, "Add Fixed Income", row, 0, e -> addFixedIncome());
@@ -640,6 +641,8 @@ public class ExpenseTrackerGUI {
         ChatUI chatUI = new ChatUI();
         chatUI.getFrame().setVisible(true); // 显示 ChatUI 窗口
     }
+
+    
 
     // 添加固定收入
     private void addFixedIncome() {
