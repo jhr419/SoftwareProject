@@ -4,149 +4,86 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment=" Fix a bug of GUI">
+    <list default="true" id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="add new feature of fixedincome">
       <change afterPath="$PROJECT_DIR$/resources/fixedincome.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FixedIncomeDataHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EBU6304_stage_1/src/ExpenseTrackerGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FixedIncome ver0.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saving ver0.1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoftwareProject.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stage1_03_13.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExpenseTrackerGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI$RoundedBorder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI$RoundedBorder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuestionAnswerApp-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SmartMoney-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApiClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApiQA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BudgetSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ChatUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ChatUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI$RoundedBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExpenseTrackerGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FixedIncome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SavingsTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Guang-Xiaoc"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jhr419/SoftwareProject.git&quot;,
+    &quot;accountId&quot;: &quot;0507dcf2-e8f1-47a3-8910-1a68ae690abc&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:jhr419/SoftwareProject.git",
-    "accountId": "0507dcf2-e8f1-47a3-8910-1a68ae690abc"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2w1MiPiNQPY8BbwNlHYBaywDXQZ" />
+}</component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "Maven.SmartMoney [clean].executor": "Run",
+    "Maven.SmartMoney [compile].executor": "Run",
+    "Maven.SmartMoney [install].executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feature/import-export-records",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true",
+    "settings.editor.selected.configurable": "build.tools",
     "应用程序.ExpenseTrackerGUI.executor": "Run"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="37e806cd-f088-4e1c-8f08-b194c98cf847" name="更改" comment="update the latest version" />
-      <created>1745204753836</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1745204753836</updated>
-      <workItem from="1745204755360" duration="1533000" />
-    </task>
-    <task id="LOCAL-00001" summary="update the latest version">
-      <option name="closed" value="true" />
-      <created>1745205343973</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1745205343973</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="feature/import-export-records" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/feature/import-export-records" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/feature/SavingManager" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value=" Fix a bug of GUI" />
-    <MESSAGE value=" Fix a bug of GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Fix a bug of GUI" />
   </component>
 </project>

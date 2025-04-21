@@ -25,6 +25,7 @@ public class ExpenseTrackerGUI {
     private JFrame frame;
     private ExpenseManager expenseManager;
     private List<FixedIncome> fixedIncomes = new ArrayList<>();
+    private FixedIncomeDataHandler dataHandler = new FixedIncomeDataHandler();
 
     public ExpenseTrackerGUI() {
         expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
@@ -36,6 +37,9 @@ public class ExpenseTrackerGUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 700);
         frame.setLayout(new BorderLayout());
+
+        // 加载固定收入数据
+        fixedIncomes = dataHandler.loadFixedIncomes();
 
         // 设置背景色
         frame.getContentPane().setBackground(new Color(245, 245, 245));
@@ -642,7 +646,7 @@ public class ExpenseTrackerGUI {
         chatUI.getFrame().setVisible(true); // 显示 ChatUI 窗口
     }
 
-    
+
 
     // 添加固定收入
     private void addFixedIncome() {
@@ -654,6 +658,7 @@ public class ExpenseTrackerGUI {
             double amount = Double.parseDouble(amountStr);
             FixedIncome income = new FixedIncome(source, amount, period);
             fixedIncomes.add(income);
+            dataHandler.saveFixedIncomes(fixedIncomes); // 保存到文件
             JOptionPane.showMessageDialog(frame, "固定收入添加成功!");
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(frame, "无效的金额输入!", "错误", JOptionPane.ERROR_MESSAGE);
@@ -694,6 +699,7 @@ public class ExpenseTrackerGUI {
                 int index = Integer.parseInt(input) - 1;
                 if (index >= 0 && index < fixedIncomes.size()) {
                     fixedIncomes.remove(index);
+                    dataHandler.saveFixedIncomes(fixedIncomes); // 保存到文件
                     JOptionPane.showMessageDialog(frame, "固定收入删除成功!");
                 } else {
                     JOptionPane.showMessageDialog(frame, "无效的编号!", "错误", JOptionPane.ERROR_MESSAGE);
