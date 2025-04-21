@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.shelton.ebu6403.controller.CategoriesController"
+            stylesheets="@../styles/categories.css">
+
+    <center>
+        <HBox spacing="20" style="-fx-padding: 0">
+            <!-- 支出分类区域 -->
+            <VBox spacing="15" styleClass="category-section" HBox.hgrow="ALWAYS">
+                <Label text="Expenses" styleClass="section-title"/>
+
+                <!-- 分类卡片容器 (可滚动) -->
+                <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+                    <FlowPane fx:id="expensesCardContainer" styleClass="card-container" hgap="15" vgap="15" prefWrapLength="600">
+                        <!-- 卡片将通过Controller动态生成 -->
+                    </FlowPane>
+                </ScrollPane>
+
+                <!-- 交易记录表格 -->
+                <TableView fx:id="expensesTable" styleClass="transaction-table">
+                    <columns>
+                        <TableColumn text="SL No" prefWidth="60"/>
+                        <TableColumn text="Name" prefWidth="150"/>
+                        <TableColumn text="Date" prefWidth="120"/>
+                        <TableColumn text="Price" prefWidth="100"/>
+                    </columns>
+                </TableView>
+            </VBox>
+
+            <!-- 收入分类区域 -->
+            <VBox spacing="15" styleClass="category-section" HBox.hgrow="ALWAYS">
+                <Label text="Income" styleClass="section-title"/>
+
+                <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+                    <FlowPane fx:id="incomeCardContainer" styleClass="card-container" hgap="15" vgap="15" prefWrapLength="600">
+                        <!-- 卡片将通过Controller动态生成 -->
+                    </FlowPane>
+                </ScrollPane>
+
+                <TableView fx:id="incomeTable" styleClass="transaction-table">
+                    <columns>
+                        <TableColumn text="SL No" prefWidth="60"/>
+                        <TableColumn text="Name" prefWidth="150"/>
+                        <TableColumn text="Datzhie" prefWidth="120"/>
+                        <TableColumn text="Amount" prefWidth="100"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </HBox>
+    </center>
+
+    <!-- 添加按钮 -->
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" style="-fx-padding: 0 20 20 0;">
+            <Button text="Add Expense" onAction="#showAddExpenseDialog" styleClass="add-button"/>
+            <Button text="Add Income" onAction="#showAddIncomeDialog" styleClass="add-button"/>
+        </HBox>
+    </bottom>
+</BorderPane>
