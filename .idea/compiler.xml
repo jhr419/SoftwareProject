@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SmartMoney" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JunitTest" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
