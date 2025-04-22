@@ -321,12 +321,12 @@ public class ExpenseTrackerGUI {
     }
 
     private void showBudgetsByDate() {
-        String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
+        String dateStr = JOptionPane.showInputDialog("Enter End Date (YYYY-MM-DD):");
         try {
             LocalDate date = LocalDate.parse(dateStr);
             Map<String, Double> budgets = expenseManager.getBudgetsByDate(date);
 
-            StringBuilder report = new StringBuilder("Budgets for " + date + ":\n");
+            StringBuilder report = new StringBuilder("Budget closest to entered date " + date + ":\n");
             for (Map.Entry<String, Double> entry : budgets.entrySet()) {
                 report.append("Category: " + entry.getKey() + " | Budget: " + entry.getValue() + "\n");
             }

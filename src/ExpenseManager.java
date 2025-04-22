@@ -300,7 +300,7 @@ public class ExpenseManager {
         return false;
     }
     public Map<String, Double> getBudgetsByDate(LocalDate date) {
-        return budgetSet.getBudgetsByDate(date);
+        return budgetSet.getClosestBudgetBeforeDate(date);
     }
     public Map<LocalDate, Double> getBudgetsByCategory(String category) {
         return budgetSet.getBudgetsByCategory(category);

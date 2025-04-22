@@ -86,7 +86,7 @@ public class BudgetSet {
         return categoryBudgets.getOrDefault(category, new HashMap<>());
     }
 
-    // **按截止日期查询预算**
+     //**按截止日期查询预算**
     public Map<String, Double> getBudgetsByDate(LocalDate endDate) {
         Map<String, Double> result = new HashMap<>();
         for (String category : categoryBudgets.keySet()) {
@@ -96,6 +96,40 @@ public class BudgetSet {
         }
         return result;
     }
+    // **按日期查询离用户输入日期最近的预算（截止日期必须在输入日期之前）**
+    public Map<String, Double> getClosestBudgetBeforeDate(LocalDate inputDate) {
+        // 创建一个Map来保存所有符合条件的预算
+        Map<String, Double> closestBudget = new HashMap<>();
+
+        // 存储离用户输入日期最近的预算
+        LocalDate closestDate = null;
+        double closestBudgetAmount = 0.0;
+
+        // 遍历所有预算，找到截止日期在用户输入日期之前且最接近的那个预算
+        for (String category : categoryBudgets.keySet()) {
+            for (Map.Entry<LocalDate, Double> entry : categoryBudgets.get(category).entrySet()) {
+                LocalDate budgetEndDate = entry.getKey();
+                double budgetAmount = entry.getValue();
+
+                // 只考虑截止日期在用户输入日期之前的预算
+                if (budgetEndDate.isBefore(inputDate)) {
+                    // 查找最接近的截止日期
+                    if (closestDate == null || budgetEndDate.isAfter(closestDate)) {
+                        closestDate = budgetEndDate;
+                        closestBudgetAmount = budgetAmount;
+                    }
+                }
+            }
+        }
+
+        // 如果找到了最接近的预算，返回它
+        if (closestDate != null) {
+            closestBudget.put(closestDate.toString(), closestBudgetAmount);
+        }
+
+        return closestBudget;
+    }
+
 
     // **删除预算（优化交互）**
     public boolean removeBudget(String category, LocalDate endDate) {
