@@ -21,6 +21,7 @@ import org.jfree.data.time.Day;
 import org.jfree.chart.axis.DateAxis;
 import java.text.SimpleDateFormat;
 import java.util.stream.Collectors;
+import java.io.File;
 
 public class ExpenseTrackerGUI {
     private JFrame frame;
@@ -74,8 +75,25 @@ public class ExpenseTrackerGUI {
         addButton(panel, gbc, "Display Transactions", row, 1, e -> showAllTransactions());
         row++;
         // 第二行按钮：Display Category Expenses | Load CSV Data
-        addButton(panel, gbc, "Display Category Expenses", row, 0, e -> showCategoryExpenses());
-        addButton(panel, gbc, "Edit Data", row, 1, e -> showExpenseTable());
+        addButton(panel, gbc, "Import Custom CSV", row, 0, e -> {
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setDialogTitle("选择要导入的 CSV 文件");
+            int result = fileChooser.showOpenDialog(frame);
+
+            if (result == JFileChooser.APPROVE_OPTION) {
+                File selectedFile = fileChooser.getSelectedFile();
+                String path = selectedFile.getAbsolutePath();
+
+                int confirm = JOptionPane.showConfirmDialog(frame,
+                        "你选择的文件是:\n" + path + "\n是否确认导入？",
+                        "确认导入", JOptionPane.YES_NO_OPTION);
+
+                if (confirm == JOptionPane.YES_OPTION) {
+                    expenseManager.loadExpensesFromFile(path);
+                    JOptionPane.showMessageDialog(frame, "导入完成！");
+                }
+            }
+        });
 
         row++;
         // Budget Management 分组标题
@@ -252,7 +270,7 @@ public class ExpenseTrackerGUI {
         Map<String, Double> categoryTotals = new HashMap<>();
         for (ExpenseRecord record : expenseManager.getExpenses()) {
             if (record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 double amount = record.getAmount();
                 categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
             }
@@ -358,11 +376,12 @@ public class ExpenseTrackerGUI {
         String amountStr = JOptionPane.showInputDialog("Enter amount:");
         String dateStr = JOptionPane.showInputDialog("Enter date (YYYY-MM-DD):");
         String transactionType = JOptionPane.showInputDialog("Enter transaction type (income/expense):");
+        String category = JOptionPane.showInputDialog("Enter category (leave empty for AI classification):");
 
         try {
             LocalDate date = LocalDate.parse(dateStr);
             double amount = Double.parseDouble(amountStr);
-            expenseManager.addExpense(itemName, amount, date, transactionType);
+            expenseManager.addExpense(itemName, amount, date, transactionType,category);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(frame, "Invalid input: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -543,7 +562,7 @@ public class ExpenseTrackerGUI {
 
     // 数据可视化 - 饼图（仅显示出账数据）
     private void showCategoryPieChart() {
-        Map<String, Double> categoryData = expenseManager.getAiCategorySpendingData();
+        Map<String, Double> categoryData = expenseManager.SpendingData();
         DefaultPieDataset dataset = new DefaultPieDataset();
         for (Map.Entry<String, Double> entry : categoryData.entrySet()) {
             dataset.setValue(entry.getKey(), entry.getValue());
@@ -576,7 +595,7 @@ public class ExpenseTrackerGUI {
         List<ExpenseRecord> expenseList = expenseManager.getExpenses();
         for (ExpenseRecord record : expenseList) {
             Object[] row = {
-                    record.getAiCategory(),
+                    record.getCategory(),
                     record.getAmount(),
                     record.getDate(),
                     record.getItemName(),

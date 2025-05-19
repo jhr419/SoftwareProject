@@ -10,9 +10,9 @@ public class ExpenseRecord {
     private String transactionType; // 交易类型："income" 或 "expense"
     private boolean useAI = true;
 
-    public ExpenseRecord( String aiCategory, double amount, LocalDate date, String itemName, String transactionType) {
-        //this.category = category;
-        this.aiCategory = aiCategory;  // AI分类
+    public ExpenseRecord( String Category, double amount, LocalDate date, String itemName, String transactionType) {
+        this.category = Category;
+        //this.aiCategory = aiCategory;  // AI分类
         this.amount = amount;
         this.date = date;
         this.itemName = itemName;
@@ -52,6 +52,6 @@ public class ExpenseRecord {
     @Override
     public String toString() {
         // 保存时采用 CSV 格式，新增交易类型字段
-        return aiCategory + "," + amount + "," + date + "," + itemName + "," + transactionType;
+        return category + "," + amount + "," + date + "," + itemName + "," + transactionType;
     }
 }
