@@ -20,6 +20,13 @@ public class SpendingInsightService {
                     .append("3. Saving Advice\n")
                     .append("4. Expense Reduction Advice\n\n");
 
+            // 添加：节日消费背景分析
+            ChineseHolidayAnalyzer holidayAnalyzer = new ChineseHolidayAnalyzer(expenses);
+            String seasonalContext = holidayAnalyzer.generateSeasonalContext();
+            if (seasonalContext != null && !seasonalContext.isBlank()) {
+                prompt.append("Here is some seasonal spending context:\n").append(seasonalContext).append("\n\n");
+            }
+
             int startIdx = Math.max(0, expenses.size() - 30);
             List<ExpenseRecord> recent = expenses.subList(startIdx, expenses.size());
 
