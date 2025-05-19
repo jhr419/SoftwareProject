@@ -147,7 +147,20 @@ public class ExpenseTrackerGUI {
         //AI Asistance
         addSectionTitle(panel, gbc, "AI Assistance", row);
         row++;
+        gbc.gridx = 0;
+        gbc.gridy = row;
+        gbc.gridwidth = 2;
 
+        JButton insightButton = new JButton("Spending Insight & Prediction");
+        insightButton.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        insightButton.setBackground(new Color(33, 150, 243));
+        insightButton.setForeground(Color.WHITE);
+        insightButton.setBorder(new RoundedBorder(20));
+        insightButton.setFocusPainted(false);
+        insightButton.addActionListener(e -> showSpendingInsight());
+
+        panel.add(insightButton, gbc);
+        row++;
         gbc.gridx = 0;
         gbc.gridy = row;
         gbc.gridwidth = 2;
@@ -763,6 +776,76 @@ public class ExpenseTrackerGUI {
             }
         }
     }
+    // 修改后的 showSpendingInsight 方法
+    private void showSpendingInsight() {
+        // 创建进度对话框
+        JDialog progressDialog = new JDialog(frame, "AI Analysis in Progress", true);
+        JProgressBar progressBar = new JProgressBar(0, 100);
+        progressBar.setStringPainted(true);
+        progressDialog.add(progressBar);
+        progressDialog.setSize(400, 100);
+        progressDialog.setLocationRelativeTo(frame);
+
+        SwingWorker<String, Integer> worker = new SwingWorker<>() {
+            @Override
+            protected String doInBackground() {
+                // 模拟进度更新
+                for (int i = 0; i <= 90; i += 10) {
+                    try {
+                        Thread.sleep(6000); // 每300ms更新一次
+                    } catch (InterruptedException ignored) {}
+                    publish(i); // 更新进度条
+                }
+
+                SpendingInsightService insightService = new SpendingInsightService(
+                        expenseManager.getExpenses(),
+                        expenseManager.getApiClient()
+                );
+
+                String result = insightService.generateSpendingInsights();
+
+                publish(100); // 最终完成进度
+                return result;
+            }
+
+            @Override
+            protected void process(List<Integer> chunks) {
+                int latest = chunks.get(chunks.size() - 1);
+                progressBar.setValue(latest);
+                progressBar.setString("Progress: " + latest + "%");
+            }
+
+            @Override
+            protected void done() {
+                progressDialog.dispose();
+                try {
+                    String suggestion = get();
+
+                    // 创建可滚动的文本区域
+                    JTextArea textArea = new JTextArea(suggestion);
+                    textArea.setLineWrap(true);               // 自动换行
+                    textArea.setWrapStyleWord(true);          // 单词换行（美观）
+                    textArea.setEditable(false);              // 只读
+                    textArea.setFont(new Font("微软雅黑", Font.PLAIN, 14));
+
+                    JScrollPane scrollPane = new JScrollPane(textArea);
+                    scrollPane.setPreferredSize(new Dimension(600, 400));  // 设置窗口大小
+                    scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+
+                    JOptionPane.showMessageDialog(frame, scrollPane, "AI Spending Suggestion", JOptionPane.INFORMATION_MESSAGE);
+
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(frame, "Failed to generate suggestion.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+
+        };
+
+        worker.execute();
+        progressDialog.setVisible(true);
+    }
+
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(ExpenseTrackerGUI::new);
