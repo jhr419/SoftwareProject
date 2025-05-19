@@ -19,7 +19,7 @@ public class ExpenseManager {
         this.apiClient = new ApiClient(apiKey); // 初始化ApiClient
         expenses = new ArrayList<>();
         budgetSet = new BudgetSet();
-        loadExpensesFromFile();
+        //loadExpensesFromFile();
     }
     public String classifyWithAI(String itemName) {
         try {
@@ -59,71 +59,95 @@ public class ExpenseManager {
             return "Others"; // 如果不在预定义分类中，返回Others
         }
     }
+    //决定写入文件类型
+    private void saveToProperCSV(ExpenseRecord record) {
+        String filePath = record.getTransactionType().equalsIgnoreCase("expense")
+                ? "resources/expenses.csv"
+                : "resources/savings.csv";
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(record.getItemName() + "," +
+                    record.getCategory() + "," +
+                    record.getAmount() + "," +
+                    record.getDate() + "," +
+                    record.getTransactionType());
+            writer.newLine();
+        } catch (IOException e) {
+            System.out.println("Error writing record: " + e.getMessage());
+        }
+    }
+    //复写整个文件
+    public void saveExpensesToFile() {
+        try (
+                BufferedWriter expenseWriter = new BufferedWriter(new FileWriter("resources/expenses.csv"));
+                BufferedWriter savingsWriter = new BufferedWriter(new FileWriter("resources/savings.csv"));
+        ) {
+            for (ExpenseRecord record : expenses) {
+                String baseLine = record.getItemName() + "," +
+                        record.getCategory() + "," +
+                        record.getAmount() + "," +
+                        record.getDate() + "," +
+                        record.getTransactionType();
+
+                // 按类型写入
+                if (record.getTransactionType().equalsIgnoreCase("expense")) {
+                    expenseWriter.write(baseLine);
+                    expenseWriter.newLine();
+                } else {
+                    savingsWriter.write(baseLine);
+                    savingsWriter.newLine();
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error saving all expenses: " + e.getMessage());
+        }
+    }
 
 
     // 从CSV文件加载记录（支持收入和支出）
-    private void loadExpensesFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("resources/input.csv"))) {
+    public void loadExpensesFromFile(String filePath) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                // 如果数据不足4项则跳过
-                if(data.length < 4) continue;
-                //String category = data[0];
+                if (data.length < 4) continue;
+
+                String itemName = data[0];
                 double amount = Double.parseDouble(data[1]);
                 LocalDate date = LocalDate.parse(data[2]);
-                String itemName = data[0];
-                String transactionType = "expense";
-                if(data.length >= 4) {
-                    transactionType = data[3];
-                }
-                String aiCategory = classifyWithAI(itemName);
-                expenses.add(new ExpenseRecord(aiCategory, amount, date, itemName, transactionType));
-                saveExpensesToFile();
+                String transactionType = data[3];
+
+                String category = (data.length >= 5 && !data[4].trim().isEmpty())
+                        ? data[4].trim()
+                        : classifyWithAI(itemName);
+
+                ExpenseRecord record = new ExpenseRecord(category, amount, date, itemName, transactionType);
+                expenses.add(record);
+                saveToProperCSV(record);
             }
         } catch (IOException e) {
-            System.out.println("Error loading expenses: " + e.getMessage());
+            System.out.println("Error loading expenses from " + filePath + ": " + e.getMessage());
         }
     }
 
 
-    public void saveExpensesToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("resources/expenses.csv"));
-             BufferedWriter inputWriter = new BufferedWriter(new FileWriter("resources/input.csv"))) {
-
-            for (ExpenseRecord record : expenses) {
-                // 写入到 expenses.csv 文件
-                writer.write(record.getItemName() + "," +
-                        record.getAiCategory() + "," +
-                        record.getAmount() + "," +
-                        record.getDate() + "," +
-                        record.getTransactionType());
-                writer.newLine();
-
-                // 写入到 input.csv 文件
-                inputWriter.write(record.getItemName() + "," +
-                        record.getAmount() + "," +
-                        record.getDate() + "," +
-                        record.getTransactionType());
-                inputWriter.newLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error saving expenses: " + e.getMessage());
-        }
-    }
 
     // 添加新的记录（交易）
-    public void addExpense(String itemName, double amount, LocalDate date,  String transactionType) {
-        String aiCategory = classifyWithAI(itemName);  // 使用AI分类
+    public void addExpense(String itemName, double amount, LocalDate date, String transactionType, String userCategory) {
+        String finalCategory = (userCategory != null && !userCategory.isBlank())
+                ? userCategory
+                : classifyWithAI(itemName);
 
-        ExpenseRecord record = new ExpenseRecord(aiCategory, amount, date, itemName, transactionType);
+        ExpenseRecord record = new ExpenseRecord(finalCategory, amount, date, itemName, transactionType);
         expenses.add(record);
-        saveExpensesToFile();  // 保留原有保存功能
+        saveToProperCSV(record);  // 写入正确的CSV文件
 
-        // 如果是支出，则更新预算数据
         if (transactionType.equalsIgnoreCase("expense")) {
-            budgetSet.addExpense(aiCategory, date, amount);
+            budgetSet.addExpense(finalCategory, date, amount);
         }
+    }
+    public void addExpense(String itemName, double amount, LocalDate date, String transactionType) {
+        addExpense(itemName, amount, date, transactionType, null);
     }
 
     // 显示所有记录（控制台输出）
@@ -138,7 +162,7 @@ public class ExpenseManager {
         Map<String, Double> categoryTotals = new HashMap<>();
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 double amount = record.getAmount();
                 categoryTotals.put(category, categoryTotals.getOrDefault(category, 0.0) + amount);
             }
@@ -173,11 +197,11 @@ public class ExpenseManager {
     }
 
     // 按分类统计出账数据，用于饼图绘制
-    public Map<String, Double> getAiCategorySpendingData() {
+    public Map<String, Double> SpendingData() {
         Map<String, Double> categoryData = new HashMap<>();
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 categoryData.put(category, categoryData.getOrDefault(category, 0.0) + record.getAmount());
             }
         }
@@ -190,7 +214,7 @@ public class ExpenseManager {
 
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 int year = record.getDate().getYear();
                 double amount = record.getAmount();
 
@@ -214,7 +238,7 @@ public class ExpenseManager {
 
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 Month month = record.getDate().getMonth();
                 double amount = record.getAmount();
 
@@ -238,7 +262,7 @@ public class ExpenseManager {
 
         for (ExpenseRecord record : expenses) {
             if(record.getTransactionType().equalsIgnoreCase("expense")) {
-                String category = record.getAiCategory();
+                String category = record.getCategory();
                 LocalDate date = record.getDate();
                 double amount = record.getAmount();
 
@@ -314,7 +338,7 @@ public class ExpenseManager {
         classification.put("expense", new HashMap<>());
         for (ExpenseRecord record : expenses) {
             String type = record.getTransactionType().toLowerCase();
-            String category = record.getAiCategory();
+            String category = record.getCategory();
             Map<String, Double> typeMap = classification.get(type);
             typeMap.put(category, typeMap.getOrDefault(category, 0.0) + record.getAmount());
         }
