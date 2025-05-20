@@ -1,0 +1,52 @@
+<changelist name="在进行签出之前于_2025_4_21_17_47_取消提交了更改_[更改]" date="1745228848579" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2025_4_21_17_47_取消提交了更改_[更改]/shelved.patch" />
+  <option name="DESCRIPTION" value="在进行签出之前于 2025/4/21 17:47 取消提交了更改 [更改]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExpenseRecord.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/SavingsTarget.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LoginGUI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ChatUI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/QuestionAnswerApp-1.0-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExpenseTrackerGUI$RoundedBorder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ApiQA.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExpenseCategory.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ApiClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExpenseManager.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExpenseTrackerGUI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/SmartMoney-1.0-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/BudgetSet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ExpenseAnalyzer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/FixedIncome.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ChatUI$1.class" />
+  </binary>
+</changelist>

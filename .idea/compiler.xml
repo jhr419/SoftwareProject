@@ -9,7 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SmartMoney" target="21" />
+      <module name="JunitTest" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
