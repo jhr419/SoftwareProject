@@ -19,7 +19,7 @@ public class ExpenseManager {
         this.apiClient = new ApiClient(apiKey); // 初始化ApiClient
         expenses = new ArrayList<>();
         budgetSet = new BudgetSet();
-        loadExpenses();
+        loadData();
 
         //loadExpensesFromFile();
     }
@@ -135,12 +135,21 @@ public class ExpenseManager {
             System.out.println("Error loading expenses from " + filePath + ": " + e.getMessage());
         }
     }
-    public void loadExpenses() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("resources/expenses.csv"))) {
+    public void loadData() {
+        // 加载 expenses.csv（支出记录）
+        loadFromCSV("resources/expenses.csv");
+
+        // 加载 savings.csv（收入记录）
+        loadFromCSV("resources/savings.csv");
+    }
+
+    // 抽出通用 CSV 加载逻辑
+    private void loadFromCSV(String filePath) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                if (data.length < 5) continue; // 确保字段完整
+                if (data.length < 5) continue;
 
                 String itemName = data[0];
                 String category = data[1];
@@ -152,9 +161,11 @@ public class ExpenseManager {
                 expenses.add(record);
             }
         } catch (IOException e) {
-            System.out.println("Failed to load expenses from CSV: " + e.getMessage());
+            System.out.println("Failed to load from " + filePath + ": " + e.getMessage());
         }
     }
+
+
 
 
     // 添加新的记录（交易）
@@ -369,6 +380,7 @@ public class ExpenseManager {
         }
         return classification;
     }
+
 
     public void setSavings(String category, LocalDate date, double amount) {
         budgetSet.setSavings(category, date, amount);
