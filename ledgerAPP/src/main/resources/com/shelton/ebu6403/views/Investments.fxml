@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.shelton.ebu6403.controller.InvestmentsController"
+            stylesheets="@../styles/investments.css"
+            fitToWidth="true">
+
+    <content>
+        <BorderPane>
+
+            <!-- 顶部卡片区 -->
+            <top>
+                <VBox spacing="20" style="-fx-padding: 20;">
+                    <ScrollPane fitToHeight="false" fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="NEVER">
+                        <HBox fx:id="cardScrollContainer" spacing="15" styleClass="card-scroll-container" />
+                    </ScrollPane>
+
+                    <HBox spacing="20">
+                        <!-- 左侧 Summary -->
+                        <VBox fx:id="infoSummaryContainer" spacing="15" prefWidth="400" />
+
+                        <!-- 右侧 Line Chart -->
+                        <VBox HBox.hgrow="ALWAYS">
+                            <Label text="Monthly Revenue" styleClass="section-title" />
+                            <LineChart fx:id="monthlyRevenueChart" title="" prefHeight="350">
+                                <xAxis>
+                                    <CategoryAxis label="Month" />
+                                </xAxis>
+                                <yAxis>
+                                    <NumberAxis label="Amount" />
+                                </yAxis>
+                            </LineChart>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </top>
+
+            <!-- 下部投资区 -->
+            <center>
+                <HBox spacing="20" style="-fx-padding: 20;">
+                    <!-- My Investment 列表 -->
+                    <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER">
+                        <VBox fx:id="investmentListContainer" spacing="15" />
+                    </ScrollPane>
+
+                    <!-- AI Assistant -->
+                    <VBox fx:id="aiAssistantCard" alignment="CENTER" spacing="15">
+                        <Button text="AI+  DEEPSEEK-R1   →" styleClass="ai-assistant-button" onAction="#goToAiPage"/>
+                    </VBox>
+                </HBox>
+            </center>
+        </BorderPane>
+    </content>
+</ScrollPane>
+
