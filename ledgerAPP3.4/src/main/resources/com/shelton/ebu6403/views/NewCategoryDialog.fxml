@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="15" style="-fx-padding: 20; -fx-pref-width: 300;">
+
+    <Label text="New Category" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="categoryField" promptText="Category Name"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Save" styleClass="dialog-button"/>
+        <Button text="Cancel" styleClass="dialog-button"/>
+    </HBox>
+</VBox>
