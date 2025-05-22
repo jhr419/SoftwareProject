@@ -1,0 +1,631 @@
+serialNo,name,date,amount,category
+1,Stock Dividend,2020-05-28,32380.24,Investment
+2,Real Estate Rent,2020-05-08,24379.75,Investment
+3,Crowdfunding Return,2020-05-15,70891.88,Investment
+4,Freelance,2020-05-18,5465.32,Salary
+5,Overtime Pay,2020-05-15,76973.69,Salary
+6,Part-time,2020-05-06,74188.84,Salary
+7,Commission,2020-05-24,36859.59,Salary
+8,Bond Interest,2020-05-02,12239.26,Investment
+9,Savings Interest,2020-05-27,23950.67,Investment
+10,ETF Return,2020-05-20,547.52,Investment
+11,Real Estate Rent,2020-06-22,64545.84,Investment
+12,Savings Interest,2020-06-18,7755.89,Investment
+13,Fund Return,2020-06-01,2035.06,Investment
+14,Consulting Fee,2020-06-21,47339.62,Salary
+15,Commission,2020-06-18,11149.36,Salary
+16,Stock Dividend,2020-06-11,948.3,Investment
+17,Allowance,2020-06-11,78054.18,Salary
+18,Savings Interest,2020-06-24,10727.09,Investment
+19,Allowance,2020-06-03,23945.98,Salary
+20,Freelance,2020-06-04,51984.15,Salary
+21,Consulting Fee,2020-07-01,61371.11,Salary
+22,Bonus,2020-07-13,3337.32,Salary
+23,Bond Interest,2020-07-14,43139.74,Investment
+24,Monthly Salary,2020-07-05,35204.51,Salary
+25,Consulting Fee,2020-07-12,93705.16,Salary
+26,Holiday Pay,2020-07-01,95819.25,Salary
+27,Monthly Salary,2020-07-03,23390.46,Salary
+28,Consulting Fee,2020-07-12,36875.88,Salary
+29,Fund Return,2020-07-20,86364.78,Investment
+30,Savings Interest,2020-07-15,36942.16,Investment
+31,Freelance,2020-08-06,81581.28,Salary
+32,Freelance,2020-08-01,54510.53,Salary
+33,Bonus,2020-08-23,87932.82,Salary
+34,Allowance,2020-08-26,18762.42,Salary
+35,Private Equity,2020-08-04,59269.96,Investment
+36,Private Equity,2020-08-23,85597.07,Investment
+37,Allowance,2020-08-02,45262.52,Salary
+38,Commission,2020-08-03,30405.06,Salary
+39,Stock Dividend,2020-08-14,31563.3,Investment
+40,Part-time,2020-08-08,99461.39,Salary
+41,Monthly Salary,2020-09-04,20840.73,Salary
+42,Consulting Fee,2020-09-22,12909.25,Salary
+43,Commission,2020-09-28,43273.14,Salary
+44,Stock Dividend,2020-09-16,88433.13,Investment
+45,Overtime Pay,2020-09-02,55990.6,Salary
+46,Commission,2020-09-15,34584.84,Salary
+47,Holiday Pay,2020-09-17,11632.5,Salary
+48,Part-time,2020-09-21,4904.09,Salary
+49,ETF Return,2020-09-05,95533.7,Investment
+50,Part-time,2020-09-15,71791.88,Salary
+51,Monthly Salary,2020-10-28,29365.81,Salary
+52,Bonus,2020-10-19,10810.33,Salary
+53,Savings Interest,2020-10-10,28943.02,Investment
+54,Private Equity,2020-10-23,70007.54,Investment
+55,Bonus,2020-10-15,39271.3,Salary
+56,Commission,2020-10-03,3896.09,Salary
+57,Savings Interest,2020-10-19,41985.98,Investment
+58,Bonus,2020-10-12,5792.61,Salary
+59,IPO Gain,2020-10-12,2501.47,Investment
+60,Fund Return,2020-10-14,13032.4,Investment
+61,Consulting Fee,2020-11-13,80456.37,Salary
+62,Bonus,2020-11-06,77369.63,Salary
+63,Commission,2020-11-18,10504.13,Salary
+64,Overtime Pay,2020-11-16,45584.12,Salary
+65,Fund Return,2020-11-27,5391.54,Investment
+66,Commission,2020-11-19,18612.24,Salary
+67,Bonus,2020-11-07,62719.68,Salary
+68,Part-time,2020-11-06,16658.59,Salary
+69,IPO Gain,2020-11-16,98960.82,Investment
+70,Private Equity,2020-11-16,25696.76,Investment
+71,Bond Interest,2020-12-22,48164.74,Investment
+72,Fund Return,2020-12-17,43304.99,Investment
+73,Private Equity,2020-12-14,19436.04,Investment
+74,Commission,2020-12-12,66965.61,Salary
+75,Private Equity,2020-12-11,71601.84,Investment
+76,Consulting Fee,2020-12-16,36935.1,Salary
+77,Fund Return,2020-12-01,57634.54,Investment
+78,Holiday Pay,2020-12-28,83345.75,Salary
+79,Consulting Fee,2020-12-25,65154.47,Salary
+80,Part-time,2020-12-20,74041.5,Salary
+81,IPO Gain,2021-01-09,36499.56,Investment
+82,Holiday Pay,2021-01-02,40827.83,Salary
+83,Commission,2021-01-25,37899.41,Salary
+84,Private Equity,2021-01-06,17427.58,Investment
+85,Commission,2021-01-22,15951.96,Salary
+86,Stipend,2021-01-27,58665.43,Salary
+87,Crypto Profit,2021-01-17,43036.4,Investment
+88,Bonus,2021-01-16,90827.92,Salary
+89,ETF Return,2021-01-01,36466.76,Investment
+90,Freelance,2021-01-15,4012.08,Salary
+91,Private Equity,2021-02-12,61225.92,Investment
+92,Real Estate Rent,2021-02-21,94775.15,Investment
+93,Bonus,2021-02-07,36032.65,Salary
+94,Part-time,2021-02-27,701.25,Salary
+95,IPO Gain,2021-02-11,58614.38,Investment
+96,Stock Dividend,2021-02-11,66073.01,Investment
+97,IPO Gain,2021-02-13,94679.21,Investment
+98,Crowdfunding Return,2021-02-22,91884.76,Investment
+99,Bonus,2021-02-09,44003.27,Salary
+100,Fund Return,2021-02-11,10040.93,Investment
+101,Bond Interest,2021-03-09,16119.82,Investment
+102,Real Estate Rent,2021-03-01,99962.31,Investment
+103,Overtime Pay,2021-03-15,13978.69,Salary
+104,Commission,2021-03-02,30286.08,Salary
+105,Commission,2021-03-11,41194.92,Salary
+106,Fund Return,2021-03-19,44715.86,Investment
+107,Fund Return,2021-03-25,94553.18,Investment
+108,ETF Return,2021-03-23,528.19,Investment
+109,Allowance,2021-03-07,46935.92,Salary
+110,Holiday Pay,2021-03-01,23612.44,Salary
+111,Savings Interest,2021-04-14,90595.08,Investment
+112,ETF Return,2021-04-17,77028.38,Investment
+113,Bonus,2021-04-07,7691.59,Salary
+114,Savings Interest,2021-04-22,86059.78,Investment
+115,Private Equity,2021-04-12,41613.55,Investment
+116,Private Equity,2021-04-12,88818.68,Investment
+117,Bond Interest,2021-04-24,66456.52,Investment
+118,Real Estate Rent,2021-04-07,98084.21,Investment
+119,Consulting Fee,2021-04-05,32955.23,Salary
+120,Bond Interest,2021-04-20,41309.57,Investment
+121,IPO Gain,2021-05-15,44536.81,Investment
+122,Consulting Fee,2021-05-18,46995.46,Salary
+123,Freelance,2021-05-26,49509.8,Salary
+124,Crowdfunding Return,2021-05-13,7929.25,Investment
+125,Stipend,2021-05-20,4536.17,Salary
+126,Monthly Salary,2021-05-06,62499.4,Salary
+127,IPO Gain,2021-05-06,96831.77,Investment
+128,Holiday Pay,2021-05-15,25351.64,Salary
+129,Commission,2021-05-11,26512.01,Salary
+130,Part-time,2021-05-28,80364.68,Salary
+131,Bond Interest,2021-06-05,5266.79,Investment
+132,Bond Interest,2021-06-20,61030.18,Investment
+133,Monthly Salary,2021-06-03,68426.05,Salary
+134,Crowdfunding Return,2021-06-20,37843.82,Investment
+135,Crowdfunding Return,2021-06-06,50341.13,Investment
+136,IPO Gain,2021-06-01,73326.05,Investment
+137,Crowdfunding Return,2021-06-18,89092.43,Investment
+138,Consulting Fee,2021-06-16,38980.07,Salary
+139,ETF Return,2021-06-15,7818.77,Investment
+140,Part-time,2021-06-16,34557.14,Salary
+141,Allowance,2021-07-17,55772.75,Salary
+142,Crypto Profit,2021-07-14,29694.53,Investment
+143,Overtime Pay,2021-07-03,63593.81,Salary
+144,Monthly Salary,2021-07-03,52211.47,Salary
+145,Consulting Fee,2021-07-26,38406.62,Salary
+146,Private Equity,2021-07-02,88204.05,Investment
+147,Allowance,2021-07-11,24349.17,Salary
+148,Savings Interest,2021-07-26,58602.37,Investment
+149,Consulting Fee,2021-07-21,84064.27,Salary
+150,Stock Dividend,2021-07-23,55002.68,Investment
+151,Consulting Fee,2021-08-09,66933.98,Salary
+152,Savings Interest,2021-08-01,98618.85,Investment
+153,Crowdfunding Return,2021-08-04,96914.91,Investment
+154,Savings Interest,2021-08-18,38650.75,Investment
+155,Crypto Profit,2021-08-20,62660.71,Investment
+156,Consulting Fee,2021-08-16,82028.87,Salary
+157,Commission,2021-08-28,78542.46,Salary
+158,Private Equity,2021-08-04,60291.08,Investment
+159,ETF Return,2021-08-23,15902.72,Investment
+160,Savings Interest,2021-08-26,3707.49,Investment
+161,Holiday Pay,2021-09-24,13520.34,Salary
+162,Bond Interest,2021-09-13,30764.24,Investment
+163,Bonus,2021-09-18,60142.1,Salary
+164,Fund Return,2021-09-28,16514.1,Investment
+165,Stipend,2021-09-15,16560.4,Salary
+166,Crypto Profit,2021-09-06,34171.01,Investment
+167,Monthly Salary,2021-09-15,86571.61,Salary
+168,Crowdfunding Return,2021-09-19,49264.74,Investment
+169,Commission,2021-09-15,95250.99,Salary
+170,Real Estate Rent,2021-09-22,73837.86,Investment
+171,Part-time,2021-10-16,28854.86,Salary
+172,Overtime Pay,2021-10-19,82379.82,Salary
+173,Consulting Fee,2021-10-04,62592.09,Salary
+174,Consulting Fee,2021-10-26,16905.86,Salary
+175,Savings Interest,2021-10-26,77570.74,Investment
+176,Real Estate Rent,2021-10-05,91893.82,Investment
+177,ETF Return,2021-10-20,46569.13,Investment
+178,Monthly Salary,2021-10-08,69750.61,Salary
+179,Bond Interest,2021-10-18,78628.58,Investment
+180,Private Equity,2021-10-27,61968.69,Investment
+181,ETF Return,2021-11-10,39346.46,Investment
+182,Commission,2021-11-15,73519.53,Salary
+183,Stock Dividend,2021-11-20,25606.8,Investment
+184,Commission,2021-11-15,21145.68,Salary
+185,Freelance,2021-11-18,42809.1,Salary
+186,Holiday Pay,2021-11-23,62531.66,Salary
+187,Commission,2021-11-07,618.45,Salary
+188,Real Estate Rent,2021-11-07,74926.92,Investment
+189,Savings Interest,2021-11-28,50721.69,Investment
+190,Holiday Pay,2021-11-21,93830.67,Salary
+191,Holiday Pay,2021-12-08,14144.87,Salary
+192,ETF Return,2021-12-09,75551.34,Investment
+193,Stock Dividend,2021-12-24,20287.32,Investment
+194,Savings Interest,2021-12-28,8216.18,Investment
+195,Bond Interest,2021-12-28,10834.05,Investment
+196,Consulting Fee,2021-12-13,82427.97,Salary
+197,Commission,2021-12-11,54261.81,Salary
+198,Crypto Profit,2021-12-24,41201.81,Investment
+199,Part-time,2021-12-02,53682.31,Salary
+200,Allowance,2021-12-17,30667.21,Salary
+201,Commission,2022-01-16,800.08,Salary
+202,Crypto Profit,2022-01-03,9988.84,Investment
+203,Part-time,2022-01-07,54863.26,Salary
+204,Monthly Salary,2022-01-11,61700.0,Salary
+205,Private Equity,2022-01-16,81913.2,Investment
+206,Part-time,2022-01-07,90682.3,Salary
+207,Allowance,2022-01-11,20358.22,Salary
+208,Overtime Pay,2022-01-25,32388.59,Salary
+209,Freelance,2022-01-23,46381.64,Salary
+210,Crypto Profit,2022-01-05,25487.1,Investment
+211,Crowdfunding Return,2022-02-05,28990.28,Investment
+212,Stock Dividend,2022-02-27,45214.26,Investment
+213,Commission,2022-02-28,8479.71,Salary
+214,Crowdfunding Return,2022-02-28,55888.05,Investment
+215,Freelance,2022-02-18,56088.13,Salary
+216,Commission,2022-02-22,73736.77,Salary
+217,Fund Return,2022-02-01,94804.8,Investment
+218,Crowdfunding Return,2022-02-06,20385.69,Investment
+219,Holiday Pay,2022-02-03,25090.31,Salary
+220,Commission,2022-02-28,96605.06,Salary
+221,Bond Interest,2022-03-26,59803.11,Investment
+222,Overtime Pay,2022-03-25,88174.92,Salary
+223,Fund Return,2022-03-04,56451.1,Investment
+224,Crypto Profit,2022-03-18,53536.95,Investment
+225,Real Estate Rent,2022-03-06,7607.88,Investment
+226,Allowance,2022-03-18,2799.46,Salary
+227,Crypto Profit,2022-03-14,76320.74,Investment
+228,Private Equity,2022-03-22,58821.36,Investment
+229,Holiday Pay,2022-03-28,70796.31,Salary
+230,Overtime Pay,2022-03-05,27138.83,Salary
+231,Crowdfunding Return,2022-04-17,42046.24,Investment
+232,Crowdfunding Return,2022-04-14,53744.47,Investment
+233,Stipend,2022-04-18,42774.99,Salary
+234,Part-time,2022-04-26,48077.66,Salary
+235,Crowdfunding Return,2022-04-15,85081.92,Investment
+236,Part-time,2022-04-22,15896.21,Salary
+237,Stipend,2022-04-01,9987.68,Salary
+238,Commission,2022-04-22,71243.85,Salary
+239,Commission,2022-04-02,12932.84,Salary
+240,Monthly Salary,2022-04-09,46025.57,Salary
+241,Fund Return,2022-05-02,22603.76,Investment
+242,Private Equity,2022-05-14,96408.32,Investment
+243,Crypto Profit,2022-05-02,23871.81,Investment
+244,Part-time,2022-05-01,92876.68,Salary
+245,Fund Return,2022-05-16,73094.74,Investment
+246,Bonus,2022-05-16,59604.95,Salary
+247,Crowdfunding Return,2022-05-14,13843.45,Investment
+248,Bonus,2022-05-18,51926.58,Salary
+249,Bonus,2022-05-17,31753.95,Salary
+250,Consulting Fee,2022-05-06,47496.68,Salary
+251,Fund Return,2022-06-26,51403.42,Investment
+252,Savings Interest,2022-06-19,49597.74,Investment
+253,Consulting Fee,2022-06-05,89339.29,Salary
+254,Crowdfunding Return,2022-06-19,4769.09,Investment
+255,Holiday Pay,2022-06-27,54486.88,Salary
+256,Overtime Pay,2022-06-14,92227.78,Salary
+257,Real Estate Rent,2022-06-28,12492.08,Investment
+258,Freelance,2022-06-18,8631.35,Salary
+259,Private Equity,2022-06-14,55377.56,Investment
+260,Bond Interest,2022-06-20,34984.91,Investment
+261,Real Estate Rent,2022-07-15,57460.81,Investment
+262,Private Equity,2022-07-23,11307.33,Investment
+263,Overtime Pay,2022-07-19,68957.17,Salary
+264,Stock Dividend,2022-07-01,41073.4,Investment
+265,Monthly Salary,2022-07-12,17451.48,Salary
+266,Holiday Pay,2022-07-25,19456.48,Salary
+267,Commission,2022-07-01,16425.93,Salary
+268,Part-time,2022-07-10,2590.66,Salary
+269,Bond Interest,2022-07-07,91963.89,Investment
+270,Bonus,2022-07-19,53668.08,Salary
+271,Part-time,2022-08-18,12179.95,Salary
+272,Savings Interest,2022-08-14,51843.53,Investment
+273,Stipend,2022-08-18,62102.33,Salary
+274,Overtime Pay,2022-08-07,36060.35,Salary
+275,Crypto Profit,2022-08-08,14330.31,Investment
+276,IPO Gain,2022-08-03,96780.49,Investment
+277,Allowance,2022-08-18,52973.71,Salary
+278,Consulting Fee,2022-08-14,61832.36,Salary
+279,Commission,2022-08-01,78671.42,Salary
+280,ETF Return,2022-08-28,32880.9,Investment
+281,Private Equity,2022-09-20,32883.81,Investment
+282,IPO Gain,2022-09-28,38488.2,Investment
+283,Freelance,2022-09-12,49438.61,Salary
+284,Part-time,2022-09-21,45299.65,Salary
+285,Part-time,2022-09-02,61515.43,Salary
+286,Overtime Pay,2022-09-25,40481.27,Salary
+287,Bonus,2022-09-07,14022.42,Salary
+288,Monthly Salary,2022-09-02,53315.21,Salary
+289,Overtime Pay,2022-09-18,36675.68,Salary
+290,Allowance,2022-09-26,81242.44,Salary
+291,Holiday Pay,2022-10-17,11214.22,Salary
+292,Bonus,2022-10-27,57280.69,Salary
+293,Real Estate Rent,2022-10-22,21364.94,Investment
+294,Freelance,2022-10-11,14040.67,Salary
+295,Part-time,2022-10-26,70555.56,Salary
+296,Overtime Pay,2022-10-10,53119.88,Salary
+297,Consulting Fee,2022-10-23,4103.81,Salary
+298,Stipend,2022-10-02,7969.21,Salary
+299,Consulting Fee,2022-10-25,3738.53,Salary
+300,IPO Gain,2022-10-02,52112.72,Investment
+301,Stipend,2022-11-10,26885.15,Salary
+302,Overtime Pay,2022-11-04,5055.48,Salary
+303,Commission,2022-11-03,82924.85,Salary
+304,IPO Gain,2022-11-13,64739.15,Investment
+305,Private Equity,2022-11-26,23342.71,Investment
+306,Bonus,2022-11-06,36248.15,Salary
+307,Private Equity,2022-11-19,2157.11,Investment
+308,Holiday Pay,2022-11-28,7116.88,Salary
+309,Holiday Pay,2022-11-16,56106.75,Salary
+310,Real Estate Rent,2022-11-03,76999.95,Investment
+311,Holiday Pay,2022-12-07,44768.38,Salary
+312,Crowdfunding Return,2022-12-06,51534.0,Investment
+313,Crowdfunding Return,2022-12-12,39829.29,Investment
+314,Fund Return,2022-12-26,52572.18,Investment
+315,Monthly Salary,2022-12-24,31603.91,Salary
+316,ETF Return,2022-12-12,49034.48,Investment
+317,Monthly Salary,2022-12-28,91998.43,Salary
+318,IPO Gain,2022-12-18,86464.62,Investment
+319,Commission,2022-12-28,49141.88,Salary
+320,Consulting Fee,2022-12-20,15666.67,Salary
+321,Monthly Salary,2023-01-07,28549.28,Salary
+322,Commission,2023-01-08,51950.1,Salary
+323,Allowance,2023-01-23,20730.32,Salary
+324,Monthly Salary,2023-01-14,79524.28,Salary
+325,Crypto Profit,2023-01-16,89633.44,Investment
+326,Stipend,2023-01-11,49956.95,Salary
+327,IPO Gain,2023-01-16,58640.7,Investment
+328,Private Equity,2023-01-08,51224.07,Investment
+329,ETF Return,2023-01-12,37387.49,Investment
+330,Stipend,2023-01-25,47383.69,Salary
+331,Holiday Pay,2023-02-17,85509.48,Salary
+332,Fund Return,2023-02-03,41906.6,Investment
+333,Savings Interest,2023-02-09,84343.19,Investment
+334,Stock Dividend,2023-02-08,46973.17,Investment
+335,Fund Return,2023-02-13,70208.06,Investment
+336,Holiday Pay,2023-02-20,63335.28,Salary
+337,Freelance,2023-02-17,16393.88,Salary
+338,Stock Dividend,2023-02-20,54857.13,Investment
+339,Allowance,2023-02-05,78846.13,Salary
+340,Stock Dividend,2023-02-28,6578.97,Investment
+341,Freelance,2023-03-27,90731.65,Salary
+342,Overtime Pay,2023-03-18,17288.88,Salary
+343,Holiday Pay,2023-03-01,37605.56,Salary
+344,Overtime Pay,2023-03-24,83954.11,Salary
+345,Crypto Profit,2023-03-25,42208.03,Investment
+346,Commission,2023-03-15,12019.52,Salary
+347,Allowance,2023-03-24,27546.55,Salary
+348,Stipend,2023-03-18,40876.95,Salary
+349,Stipend,2023-03-23,5026.31,Salary
+350,Private Equity,2023-03-13,83523.22,Investment
+351,Real Estate Rent,2023-04-11,58383.29,Investment
+352,Freelance,2023-04-06,68888.81,Salary
+353,Crypto Profit,2023-04-01,92005.92,Investment
+354,Commission,2023-04-12,6351.62,Salary
+355,Consulting Fee,2023-04-13,84657.21,Salary
+356,Fund Return,2023-04-09,56073.38,Investment
+357,Real Estate Rent,2023-04-16,25898.49,Investment
+358,Crowdfunding Return,2023-04-24,81443.7,Investment
+359,Bonus,2023-04-12,54319.94,Salary
+360,Real Estate Rent,2023-04-14,43766.31,Investment
+361,Crypto Profit,2023-05-22,66006.14,Investment
+362,Overtime Pay,2023-05-01,90696.23,Salary
+363,Savings Interest,2023-05-21,81146.49,Investment
+364,Real Estate Rent,2023-05-03,51526.57,Investment
+365,Commission,2023-05-17,82800.9,Salary
+366,Stock Dividend,2023-05-04,42294.32,Investment
+367,Freelance,2023-05-01,81030.85,Salary
+368,Freelance,2023-05-26,80317.73,Salary
+369,Fund Return,2023-05-09,25097.64,Investment
+370,Crypto Profit,2023-05-18,16073.13,Investment
+371,Part-time,2023-06-23,74463.53,Salary
+372,Private Equity,2023-06-23,76902.81,Investment
+373,Commission,2023-06-03,97001.24,Salary
+374,Bond Interest,2023-06-13,56218.2,Investment
+375,Commission,2023-06-20,61743.73,Salary
+376,Bond Interest,2023-06-05,18809.86,Investment
+377,Savings Interest,2023-06-20,51918.93,Investment
+378,Commission,2023-06-22,38276.63,Salary
+379,Holiday Pay,2023-06-22,82302.13,Salary
+380,Stipend,2023-06-01,63111.23,Salary
+381,Allowance,2023-07-24,87780.36,Salary
+382,Consulting Fee,2023-07-08,14937.33,Salary
+383,Private Equity,2023-07-20,92875.8,Investment
+384,Consulting Fee,2023-07-28,26061.86,Salary
+385,IPO Gain,2023-07-03,91444.91,Investment
+386,Fund Return,2023-07-12,14587.99,Investment
+387,Commission,2023-07-08,15321.29,Salary
+388,Commission,2023-07-14,46951.61,Salary
+389,Part-time,2023-07-16,78850.3,Salary
+390,Stock Dividend,2023-07-14,87263.3,Investment
+391,Part-time,2023-08-15,61873.17,Salary
+392,Part-time,2023-08-21,10746.19,Salary
+393,Allowance,2023-08-24,81305.01,Salary
+394,Savings Interest,2023-08-08,7098.15,Investment
+395,Crypto Profit,2023-08-27,96744.22,Investment
+396,IPO Gain,2023-08-07,48307.01,Investment
+397,Savings Interest,2023-08-09,6802.99,Investment
+398,Private Equity,2023-08-13,91500.29,Investment
+399,IPO Gain,2023-08-13,79041.67,Investment
+400,Real Estate Rent,2023-08-27,29719.15,Investment
+401,Commission,2023-09-22,27858.56,Salary
+402,Real Estate Rent,2023-09-07,96326.63,Investment
+403,Part-time,2023-09-25,61775.24,Salary
+404,Commission,2023-09-12,18700.15,Salary
+405,Bond Interest,2023-09-23,35698.51,Investment
+406,Real Estate Rent,2023-09-16,3765.6,Investment
+407,Part-time,2023-09-15,59309.69,Salary
+408,Crowdfunding Return,2023-09-18,80837.23,Investment
+409,Bond Interest,2023-09-13,74458.9,Investment
+410,Holiday Pay,2023-09-22,91199.26,Salary
+411,Commission,2023-10-18,69927.72,Salary
+412,Savings Interest,2023-10-12,56615.69,Investment
+413,Monthly Salary,2023-10-13,47735.85,Salary
+414,Crypto Profit,2023-10-03,26188.38,Investment
+415,Part-time,2023-10-12,41762.71,Salary
+416,ETF Return,2023-10-24,11314.41,Investment
+417,Savings Interest,2023-10-02,65178.22,Investment
+418,Overtime Pay,2023-10-11,62861.88,Salary
+419,Private Equity,2023-10-05,44946.67,Investment
+420,Private Equity,2023-10-16,22363.35,Investment
+421,IPO Gain,2023-11-11,31318.74,Investment
+422,Commission,2023-11-27,78990.26,Salary
+423,Freelance,2023-11-06,95966.36,Salary
+424,Freelance,2023-11-05,87820.59,Salary
+425,ETF Return,2023-11-19,28418.41,Investment
+426,Allowance,2023-11-21,8361.44,Salary
+427,Crowdfunding Return,2023-11-09,69037.61,Investment
+428,Freelance,2023-11-09,31897.49,Salary
+429,Overtime Pay,2023-11-13,54744.07,Salary
+430,Commission,2023-11-01,39941.34,Salary
+431,Consulting Fee,2023-12-07,4188.24,Salary
+432,Allowance,2023-12-22,15157.15,Salary
+433,Allowance,2023-12-15,69778.8,Salary
+434,Crowdfunding Return,2023-12-20,93140.38,Investment
+435,Commission,2023-12-01,87680.48,Salary
+436,Real Estate Rent,2023-12-04,61048.52,Investment
+437,Bond Interest,2023-12-07,11344.15,Investment
+438,Savings Interest,2023-12-19,11092.88,Investment
+439,Overtime Pay,2023-12-25,42145.09,Salary
+440,Overtime Pay,2023-12-12,46478.98,Salary
+441,Part-time,2024-01-07,50090.51,Salary
+442,Overtime Pay,2024-01-13,52326.2,Salary
+443,Private Equity,2024-01-01,66026.88,Investment
+444,Crowdfunding Return,2024-01-11,89389.95,Investment
+445,Monthly Salary,2024-01-26,96946.0,Salary
+446,Savings Interest,2024-01-01,80754.9,Investment
+447,ETF Return,2024-01-05,32045.96,Investment
+448,Freelance,2024-01-04,17135.23,Salary
+449,Commission,2024-01-05,29262.48,Salary
+450,Crypto Profit,2024-01-16,3577.82,Investment
+451,Freelance,2024-02-16,45999.14,Salary
+452,Allowance,2024-02-07,11813.11,Salary
+453,Part-time,2024-02-04,36014.08,Salary
+454,Overtime Pay,2024-02-01,1540.85,Salary
+455,Bonus,2024-02-17,34792.42,Salary
+456,Holiday Pay,2024-02-19,57123.6,Salary
+457,Part-time,2024-02-13,40142.51,Salary
+458,Consulting Fee,2024-02-20,19514.01,Salary
+459,Consulting Fee,2024-02-22,99232.87,Salary
+460,Stock Dividend,2024-02-16,91156.53,Investment
+461,IPO Gain,2024-03-23,56879.36,Investment
+462,Crowdfunding Return,2024-03-14,87264.08,Investment
+463,Bond Interest,2024-03-25,54823.48,Investment
+464,Consulting Fee,2024-03-09,29491.33,Salary
+465,Part-time,2024-03-08,18520.05,Salary
+466,Monthly Salary,2024-03-05,63215.97,Salary
+467,Stock Dividend,2024-03-20,38235.36,Investment
+468,Allowance,2024-03-04,9199.03,Salary
+469,Crowdfunding Return,2024-03-02,21556.78,Investment
+470,Bonus,2024-03-11,82241.69,Salary
+471,Overtime Pay,2024-04-20,57091.61,Salary
+472,Private Equity,2024-04-07,48089.34,Investment
+473,Overtime Pay,2024-04-18,6427.8,Salary
+474,Private Equity,2024-04-16,44672.42,Investment
+475,Consulting Fee,2024-04-07,92037.48,Salary
+476,IPO Gain,2024-04-07,62431.48,Investment
+477,Monthly Salary,2024-04-16,40179.12,Salary
+478,Allowance,2024-04-24,80023.83,Salary
+479,Overtime Pay,2024-04-27,79634.75,Salary
+480,ETF Return,2024-04-02,79879.93,Investment
+481,Savings Interest,2024-05-09,11649.32,Investment
+482,ETF Return,2024-05-14,68502.47,Investment
+483,Bond Interest,2024-05-01,56895.74,Investment
+484,Allowance,2024-05-13,56010.0,Salary
+485,Private Equity,2024-05-23,86051.55,Investment
+486,Freelance,2024-05-16,51420.0,Salary
+487,Monthly Salary,2024-05-05,21311.71,Salary
+488,Holiday Pay,2024-05-27,92631.18,Salary
+489,Fund Return,2024-05-25,76878.75,Investment
+490,Commission,2024-05-13,45076.74,Salary
+491,Part-time,2024-06-24,44956.26,Salary
+492,Freelance,2024-06-24,60212.37,Salary
+493,Stock Dividend,2024-06-19,68661.5,Investment
+494,Crypto Profit,2024-06-24,1177.15,Investment
+495,Holiday Pay,2024-06-27,88611.65,Salary
+496,Crypto Profit,2024-06-28,43895.11,Investment
+497,IPO Gain,2024-06-22,77335.1,Investment
+498,Stipend,2024-06-06,13411.76,Salary
+499,Stock Dividend,2024-06-10,27439.86,Investment
+500,Stock Dividend,2024-06-16,96600.9,Investment
+501,Bonus,2024-07-05,35353.15,Salary
+502,Private Equity,2024-07-15,94959.75,Investment
+503,Crowdfunding Return,2024-07-09,43542.83,Investment
+504,ETF Return,2024-07-06,13666.76,Investment
+505,Freelance,2024-07-04,7316.09,Salary
+506,Part-time,2024-07-03,10065.03,Salary
+507,Stock Dividend,2024-07-10,80051.17,Investment
+508,Freelance,2024-07-09,96997.38,Salary
+509,Bond Interest,2024-07-07,11602.96,Investment
+510,Private Equity,2024-07-07,80689.4,Investment
+511,ETF Return,2024-08-21,5669.75,Investment
+512,Holiday Pay,2024-08-08,71945.24,Salary
+513,Crypto Profit,2024-08-03,48072.25,Investment
+514,Savings Interest,2024-08-17,89645.83,Investment
+515,Crypto Profit,2024-08-26,30309.53,Investment
+516,Real Estate Rent,2024-08-11,2267.93,Investment
+517,ETF Return,2024-08-17,93491.3,Investment
+518,Stipend,2024-08-21,23283.78,Salary
+519,Fund Return,2024-08-16,72008.78,Investment
+520,ETF Return,2024-08-09,95861.53,Investment
+521,Freelance,2024-09-09,19620.41,Salary
+522,Commission,2024-09-16,58000.75,Salary
+523,Holiday Pay,2024-09-23,37392.41,Salary
+524,Part-time,2024-09-03,756.99,Salary
+525,Bonus,2024-09-02,24572.95,Salary
+526,Monthly Salary,2024-09-19,72112.03,Salary
+527,Stipend,2024-09-19,75074.06,Salary
+528,Fund Return,2024-09-17,89846.27,Investment
+529,IPO Gain,2024-09-02,8101.88,Investment
+530,Holiday Pay,2024-09-05,84905.7,Salary
+531,Part-time,2024-10-12,51960.37,Salary
+532,Bond Interest,2024-10-13,1715.94,Investment
+533,Monthly Salary,2024-10-24,58748.64,Salary
+534,Private Equity,2024-10-20,95773.57,Investment
+535,Savings Interest,2024-10-23,85456.95,Investment
+536,Allowance,2024-10-03,24215.95,Salary
+537,Monthly Salary,2024-10-21,40358.63,Salary
+538,Real Estate Rent,2024-10-22,34158.3,Investment
+539,Savings Interest,2024-10-05,53052.91,Investment
+540,Allowance,2024-10-06,84524.7,Salary
+541,Real Estate Rent,2024-11-20,9520.83,Investment
+542,Bonus,2024-11-22,8206.38,Salary
+543,Stipend,2024-11-17,92384.68,Salary
+544,Bonus,2024-11-07,15613.55,Salary
+545,Consulting Fee,2024-11-04,82593.51,Salary
+546,Freelance,2024-11-20,17646.58,Salary
+547,Consulting Fee,2024-11-09,29900.44,Salary
+548,Fund Return,2024-11-28,58895.85,Investment
+549,Part-time,2024-11-15,11370.43,Salary
+550,Freelance,2024-11-25,44066.26,Salary
+551,Bonus,2024-12-09,87801.21,Salary
+552,Real Estate Rent,2024-12-18,46218.64,Investment
+553,Allowance,2024-12-13,40192.77,Salary
+554,Stipend,2024-12-06,59223.01,Salary
+555,Commission,2024-12-28,23873.14,Salary
+556,Fund Return,2024-12-26,51536.8,Investment
+557,Part-time,2024-12-19,98180.94,Salary
+558,Real Estate Rent,2024-12-22,24348.08,Investment
+559,Monthly Salary,2024-12-20,80519.45,Salary
+560,Crypto Profit,2024-12-28,5969.61,Investment
+561,Private Equity,2025-01-02,85784.33,Investment
+562,Real Estate Rent,2025-01-27,57732.03,Investment
+563,Bonus,2025-01-17,31764.7,Salary
+564,Freelance,2025-01-25,6478.95,Salary
+565,Freelance,2025-01-12,3330.66,Salary
+566,Consulting Fee,2025-01-28,49828.5,Salary
+567,Bonus,2025-01-06,78829.68,Salary
+568,Part-time,2025-01-02,91323.17,Salary
+569,IPO Gain,2025-01-10,20608.11,Investment
+570,Commission,2025-01-12,20227.04,Salary
+571,Savings Interest,2025-02-02,75192.63,Investment
+572,Savings Interest,2025-02-26,1330.0,Investment
+573,IPO Gain,2025-02-25,70507.0,Investment
+574,Bonus,2025-02-17,18590.73,Salary
+575,Freelance,2025-02-19,19733.46,Salary
+576,Savings Interest,2025-02-28,65669.91,Investment
+577,Freelance,2025-02-27,15343.52,Salary
+578,Overtime Pay,2025-02-27,1223.64,Salary
+579,Part-time,2025-02-22,26592.71,Salary
+580,ETF Return,2025-02-05,33210.98,Investment
+581,Bonus,2025-03-28,48157.17,Salary
+582,Consulting Fee,2025-03-03,27190.67,Salary
+583,Holiday Pay,2025-03-07,5005.78,Salary
+584,Bond Interest,2025-03-24,93523.41,Investment
+585,Monthly Salary,2025-03-08,15735.31,Salary
+586,Stipend,2025-03-13,72180.54,Salary
+587,Real Estate Rent,2025-03-02,49954.64,Investment
+588,Monthly Salary,2025-03-12,5946.38,Salary
+589,Holiday Pay,2025-03-03,61628.19,Salary
+590,Bonus,2025-03-05,18007.32,Salary
+591,Bond Interest,2025-04-15,73167.74,Investment
+592,Crypto Profit,2025-04-07,49210.84,Investment
+593,Part-time,2025-04-06,37990.04,Salary
+594,Crypto Profit,2025-04-10,84071.9,Investment
+595,ETF Return,2025-04-14,52004.76,Investment
+596,Fund Return,2025-04-11,60556.15,Investment
+597,Stipend,2025-04-23,7202.13,Salary
+598,Savings Interest,2025-04-06,79772.53,Investment
+599,Private Equity,2025-04-23,96055.7,Investment
+600,Allowance,2025-04-10,27364.02,Salary
+601,Crypto Profit,2025-05-09,38119.33,Investment
+602,Fund Return,2025-05-06,63069.49,Investment
+603,Overtime Pay,2025-05-25,78031.8,Salary
+604,IPO Gain,2025-05-01,36199.18,Investment
+605,Savings Interest,2025-05-27,1931.67,Investment
+606,Fund Return,2025-05-10,85374.92,Investment
+607,Monthly Salary,2025-05-20,40984.92,Salary
+608,Bonus,2025-05-15,87096.87,Salary
+609,Holiday Pay,2025-05-06,50334.11,Salary
+610,Private Equity,2025-05-22,69301.92,Investment
+611,ETF Return,2025-05-23,96343.69,Investment
+612,Overtime Pay,2025-05-08,12696.73,Salary
+613,Allowance,2025-05-01,75774.82,Salary
+614,Holiday Pay,2025-05-03,50874.48,Salary
+615,Overtime Pay,2025-05-21,71463.68,Salary
+616,Overtime Pay,2025-05-21,40674.09,Salary
+617,Crowdfunding Return,2025-05-23,40241.93,Investment
+618,Overtime Pay,2025-05-26,13784.92,Salary
+619,IPO Gain,2025-05-03,22903.67,Investment
+620,Private Equity,2025-05-25,55700.07,Investment
+621,Commission,2025-05-05,39321.6,Salary
+622,Consulting Fee,2025-05-28,84254.14,Salary
+623,Overtime Pay,2025-05-01,9198.08,Salary
+624,Bond Interest,2025-05-15,24125.16,Investment
+625,Part-time,2025-05-27,73460.24,Salary
+626,Crowdfunding Return,2025-05-11,9239.89,Investment
+627,Real Estate Rent,2025-05-16,95932.89,Investment
+628,Holiday Pay,2025-05-23,74461.17,Salary
+629,ETF Return,2025-05-28,79867.91,Investment
+630,Private Equity,2025-05-14,76644.45,Investment

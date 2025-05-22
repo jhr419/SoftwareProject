@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.shelton.ebu6403.controller.HomeController"
+            stylesheets="@../styles/home.css">
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+            <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #f5f5f5;" minHeight="-Infinity">
+                <!-- 欢迎区域 -->
+                <VBox spacing="2" alignment="CENTER_LEFT" style="-fx-padding: 0 0 10 0;">
+                    <Label text="Hi, Welcome Back!" styleClass="welcome-title"/>
+                    <Label text="Good Morning :)" styleClass="welcome-subtitle"/>
+                </VBox>
+
+                <!-- 每日统计 -->
+                <VBox spacing="10">
+                    <Label text="Daily Statistics" styleClass="section-title"/>
+                    <HBox spacing="15" styleClass="card-container" HBox.hgrow="ALWAYS">
+                        <!-- 食品卡片 -->
+                        <VBox styleClass="stat-card" spacing="5" prefWidth="200" HBox.hgrow="ALWAYS">
+                            <!--                        <HBox alignment="CENTER_RIGHT">-->
+                            <!--                            <FontIcon iconLiteral="mdi-food" iconSize="20" styleClass="card-icon"/>-->
+                            <!--                        </HBox>-->
+                            <Label text="Food" styleClass="card-category"/>
+                            <Label fx:id="foodAmount" text="/$49.20" styleClass="card-amount"/>
+                            <Label fx:id="foodUpdate" text="Updated at 17:46 - April 30" styleClass="card-update"/>
+                        </VBox>
+
+                        <!-- 交通卡片 -->
+                        <VBox styleClass="stat-card" spacing="5" prefWidth="200" HBox.hgrow="ALWAYS">
+                            <!--                        <HBox alignment="CENTER_RIGHT">-->
+                            <!--                            <FontIcon iconLiteral="mdi-car" iconSize="20" styleClass="card-icon"/>-->
+                            <!--                        </HBox>-->
+                            <Label text="Transport" styleClass="card-category"/>
+                            <Label fx:id="transportAmount" text="/$30.40" styleClass="card-amount"/>
+                            <Label fx:id="transportUpdate" text="Updated at 8:27 - April 30" styleClass="card-update"/>
+                        </VBox>
+
+                        <!-- 药品卡片 -->
+                        <VBox styleClass="stat-card" spacing="5" prefWidth="200" HBox.hgrow="ALWAYS">
+                            <!--                        <HBox alignment="CENTER_RIGHT">-->
+                            <!--                            <FontIcon iconLiteral="mdi-medical-bag" iconSize="20" styleClass="card-icon"/>-->
+                            <!--                        </HBox>-->
+                            <Label text="Sports" styleClass="card-category"/>
+                            <Label fx:id="sportsAmount" text="/$25.21" styleClass="card-amount"/>
+                            <Label fx:id="sportsUpdate" text="Updated at 18:43 - April 30" styleClass="card-update"/>
+                        </VBox>
+
+                        <!-- 礼物卡片 -->
+                        <VBox styleClass="stat-card" spacing="5" prefWidth="200" HBox.hgrow="ALWAYS">
+                            <!--                        <HBox alignment="CENTER_RIGHT">-->
+                            <!--                            <FontIcon iconLiteral="mdi-gift" iconSize="20" styleClass="card-icon"/>-->
+                            <!--                        </HBox>-->
+                            <Label text="Clothing" styleClass="card-category"/>
+                            <Label fx:id="clothingAmount" text="/$15.00" styleClass="card-amount"/>
+                            <Label fx:id="clothingUpdate" text="Updated at 12:15 - April 30" styleClass="card-update"/>
+                        </VBox>
+                    </HBox>
+                </VBox>
+
+                <!-- 主内容网格 -->
+                <GridPane hgap="20" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="65"/>
+                        <ColumnConstraints percentWidth="35"/>
+                    </columnConstraints>
+
+                    <!-- 第一行：周活动图表 -->
+                    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <Label text="Weekly Activity" styleClass="section-title"/>
+                        <BarChart fx:id="weeklyChart" title="Weekly Activity" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                            <xAxis>
+                                <CategoryAxis fx:id="xAxis">
+                                    <categories>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Mon"/>
+                                            <String fx:value="Tue"/>
+                                            <String fx:value="Wed"/>
+                                            <String fx:value="Thu"/>
+                                            <String fx:value="Fri"/>
+                                            <String fx:value="Sat"/>
+                                            <String fx:value="Sun"/>
+                                        </FXCollections>
+                                    </categories>
+                                </CategoryAxis>
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="yAxis" label="Amount ($)"/>
+                            </yAxis>
+                        </BarChart>
+                    </VBox>
+
+                    <!-- 第一行：最近交易 -->
+                    <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <Label text="Recent Transactions" styleClass="section-title"/>
+                        <ListView fx:id="recentTransactions" styleClass="transaction-list" prefHeight="250"/>
+                    </VBox>
+
+                    <!-- 第二行：银行卡 -->
+                    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <Label text="My Cards" styleClass="section-title"/>
+                        <HBox spacing="20">
+                            <VBox styleClass="bank-card" spacing="10" prefWidth="300">
+                                <Label text="3778 **** 1234" styleClass="card-number"/>
+                                <Label text="Balance" styleClass="card-label"/>
+                                <Label fx:id="card1Balance" text="/$5,756.38" styleClass="card-value"/>
+                                <Label text="Card Holder" styleClass="card-label"/>
+                                <Label fx:id="card1Holder" text="Eddy Cusuma" styleClass="card-value"/>
+                            </VBox>
+                            <VBox styleClass="bank-card" spacing="10" prefWidth="300">
+                                <Label text="3778 **** 5678" styleClass="card-number"/>
+                                <Label text="Balance" styleClass="card-label"/>
+                                <Label fx:id="card2Balance" text="/$2,345.67" styleClass="card-value"/>
+                                <Label text="Card Holder" styleClass="card-label"/>
+                                <Label fx:id="card2Holder" text="Shelton Li" styleClass="card-value"/>
+                            </VBox>
+                        </HBox>
+                    </VBox>
+
+                    <!-- 第二行：支出统计 -->
+                    <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Label text="Expense Statistics" styleClass="section-title"/>
+                        <PieChart fx:id="expenseChart" prefHeight="250"/>
+                    </VBox>
+                </GridPane>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>
