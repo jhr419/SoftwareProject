@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+    <content>
+        <VBox spacing="15" style="-fx-padding: 20;">
+            <Label wrapText="true" text="Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to a Cardholder, with a credit limit, that can be used to purchase goods and services on credit or obtain cash advances." styleClass="dialog-description" />
+
+            <GridPane hgap="10" vgap="10">
+                <Label text="Card Type" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <TextField fx:id="cardTypeField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+                <Label text="Name On Card" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="nameField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+                <Label text="Card Number" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextField fx:id="cardNumberField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+                <Label text="Expiration Date" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                <DatePicker fx:id="expiryDatePicker" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+            </GridPane>
+        </VBox>
+    </content>
+
+    <buttonTypes>
+        <ButtonType text="Add Card" buttonData="OK_DONE" />
+        <ButtonType text="Cancel" buttonData="CANCEL_CLOSE" />
+    </buttonTypes>
+</DialogPane>
+
