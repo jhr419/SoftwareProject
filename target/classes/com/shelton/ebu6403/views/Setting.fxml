@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.shelton.ebu6403.controller.SettingController"
+            stylesheets="@../styles/setting.css">
+
+    <center>
+        <VBox spacing="15" style="-fx-padding: 20;">
+            <!-- 设置选项卡 -->
+            <TabPane fx:id="settingsTabPane" styleClass="settings-tab-pane"/>
+
+            <!-- 预算设置内容 (默认隐藏，通过选项卡控制) -->
+            <VBox fx:id="budgetSettingsContent" styleClass="budget-settings-container">
+                <!-- 预算设置表单 -->
+                <HBox styleClass="budget-form">
+                    <VBox spacing="10" prefWidth="300">
+                        <Label text="Select budget categories" styleClass="section-label"/>
+                        <ComboBox fx:id="categoryCombo" promptText="Select category"/>
+
+                        <Label text="Set budget amount" styleClass="section-label"/>
+                        <TextField fx:id="budgetAmountField" promptText="Amount"/>
+
+                        <Label text="Select month and year" styleClass="section-label"/>
+                        <HBox spacing="10">
+                            <ComboBox fx:id="monthCombo" prefWidth="150"/>
+                            <ComboBox fx:id="yearCombo" prefWidth="100"/>
+                        </HBox>
+
+                        <Button text="SAVE" onAction="#handleAddBudget" styleClass="save-button"/>
+                    </VBox>
+
+                    <!-- 预算表格 -->
+                    <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+                        <TableView fx:id="budgetTable" styleClass="budget-table"/>
+                    </ScrollPane>
+                </HBox>
+
+                <!-- 预算卡片 -->
+                <Label text="Budget Overview" styleClass="section-title"/>
+                <ScrollPane fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="NEVER">
+                    <FlowPane fx:id="budgetCardsContainer" styleClass="budget-cards-container"
+                              prefWrapLength="800" hgap="15" vgap="15"/>
+                </ScrollPane>
+                <HBox alignment="CENTER">
+                    <Button text="Generate AI Spending Insights"
+                            onAction="#handleGenerateInsights"
+                            fx:id="insightButton"
+                            styleClass="generate-button">
+                        <VBox.margin>
+                            <Insets top="20"/>
+                        </VBox.margin>
+                    </Button>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <ProgressIndicator fx:id="insightProgress"
+                                       visible="false"
+                                       maxWidth="100"
+                                       maxHeight="100">
+                        <VBox.margin>
+                            <Insets top="20"/>
+                        </VBox.margin>
+                    </ProgressIndicator>
+                </HBox>
+
+
+
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

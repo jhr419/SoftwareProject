@@ -1,0 +1,151 @@
+/* 设置选项卡样式 */
+.settings-tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 120px;
+}
+
+.settings-tab-pane .tab-header-area {
+    -fx-padding: 0 0 10 0;
+}
+
+.settings-tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.settings-tab-pane .tab {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 5 5 0 0;
+}
+
+.settings-tab-pane .tab:selected {
+    -fx-background-color: #4285f4;
+    -fx-text-fill: white;
+}
+
+/* 预算设置区域样式 */
+.budget-settings-container {
+    -fx-padding: 15px 0 0 0;
+}
+
+.budget-form {
+    -fx-spacing: 15px;
+    -fx-padding: 0 0 15px 0;
+    -fx-alignment: top-center;
+}
+
+.section-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #616161;
+}
+
+/* 预算表格样式 */
+.budget-table {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
+    -fx-table-cell-border-color: transparent;
+}
+
+.budget-table .column-header {
+    -fx-background-color: #4285f4;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.budget-table .table-row-cell {
+    -fx-border-color: #f0f0f0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.budget-table .table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+/* 按钮样式 */
+.save-button {
+    -fx-background-color: #4285f4;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 20px;
+    -fx-background-radius: 5px;
+}
+
+.save-button:hover {
+    -fx-background-color: #3a79e0;
+}
+
+.edit-button {
+    -fx-background-color: #f39c12;
+    -fx-text-fill: white;
+    -fx-padding: 3px 8px;
+    -fx-background-radius: 3px;
+    -fx-font-size: 12px;
+}
+
+.edit-button:hover {
+    -fx-background-color: #e67e22;
+}
+
+.remove-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-padding: 3px 8px;
+    -fx-background-radius: 3px;
+    -fx-font-size: 12px;
+}
+
+.remove-button:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* 预算卡片 */
+.budget-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-alignment: center;
+}
+
+.card-category {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4285f4;
+}
+
+.card-amount {
+    -fx-font-size: 16px;
+    -fx-text-fill: #616161;
+    -fx-font-weight: bold;
+}
+
+/* 饼图样式 */
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 10px;
+}
+
+.default-color0.chart-pie { -fx-pie-color: #e74c3c; }
+.default-color1.chart-pie { -fx-pie-color: #2ecc71; }
+
+/* 卡片容器 */
+.budget-cards-container {
+    -fx-padding: 10px;
+    -fx-hgap: 15px;
+    -fx-vgap: 15px;
+}
+.generate-button {
+    -fx-background-color: linear-gradient(to right, #28a745, #218838);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.generate-button:hover {
+    -fx-background-color: linear-gradient(to right, #218838, #1e7e34);
+}
