@@ -1,0 +1,2191 @@
+date,company,category,price,change
+2025-01-01,Apple Store,E-commerce,65594,-0.077
+2025-01-01,Samsung Mobile,Marketplace,73236,0.011
+2025-01-01,Tesla Motors,Electric Vehicles,45741,0.122
+2025-01-01,Amazon,E-commerce,31121,0.005
+2025-01-01,Nvidia,Semiconductors,47230,0.075
+2025-01-01,Google,Technology,17938,-0.032
+2025-01-02,Apple Store,E-commerce,15468,-0.099
+2025-01-02,Samsung Mobile,Marketplace,8678,0.179
+2025-01-02,Tesla Motors,Electric Vehicles,58056,-0.062
+2025-01-02,Amazon,E-commerce,66813,-0.0
+2025-01-02,Nvidia,Semiconductors,30508,0.054
+2025-01-02,Google,Technology,15339,0.015
+2025-01-03,Apple Store,E-commerce,38188,0.177
+2025-01-03,Samsung Mobile,Marketplace,5123,0.121
+2025-01-03,Tesla Motors,Electric Vehicles,24263,-0.011
+2025-01-03,Amazon,E-commerce,62468,0.044
+2025-01-03,Nvidia,Semiconductors,19287,0.099
+2025-01-03,Google,Technology,9325,0.062
+2025-01-04,Apple Store,E-commerce,74098,-0.034
+2025-01-04,Samsung Mobile,Marketplace,30754,0.187
+2025-01-04,Tesla Motors,Electric Vehicles,61971,0.184
+2025-01-04,Amazon,E-commerce,49787,0.168
+2025-01-04,Nvidia,Semiconductors,17129,0.043
+2025-01-04,Google,Technology,32614,-0.061
+2025-01-05,Apple Store,E-commerce,64795,-0.086
+2025-01-05,Samsung Mobile,Marketplace,62173,0.05
+2025-01-05,Tesla Motors,Electric Vehicles,27616,-0.06
+2025-01-05,Amazon,E-commerce,43351,-0.023
+2025-01-05,Nvidia,Semiconductors,58442,0.188
+2025-01-05,Google,Technology,5429,0.091
+2025-01-06,Apple Store,E-commerce,51981,0.04
+2025-01-06,Samsung Mobile,Marketplace,39535,0.197
+2025-01-06,Tesla Motors,Electric Vehicles,43071,0.182
+2025-01-06,Amazon,E-commerce,41351,0.193
+2025-01-06,Nvidia,Semiconductors,51864,0.035
+2025-01-06,Google,Technology,11444,-0.001
+2025-01-07,Apple Store,E-commerce,46790,0.087
+2025-01-07,Samsung Mobile,Marketplace,62755,0.1
+2025-01-07,Tesla Motors,Electric Vehicles,6569,0.081
+2025-01-07,Amazon,E-commerce,77752,-0.094
+2025-01-07,Nvidia,Semiconductors,41133,0.044
+2025-01-07,Google,Technology,9673,-0.012
+2025-01-08,Apple Store,E-commerce,68214,-0.095
+2025-01-08,Samsung Mobile,Marketplace,62530,0.018
+2025-01-08,Tesla Motors,Electric Vehicles,62935,-0.07
+2025-01-08,Amazon,E-commerce,18979,0.069
+2025-01-08,Nvidia,Semiconductors,77417,0.121
+2025-01-08,Google,Technology,25359,0.199
+2025-01-09,Apple Store,E-commerce,31075,-0.063
+2025-01-09,Samsung Mobile,Marketplace,5006,-0.075
+2025-01-09,Tesla Motors,Electric Vehicles,39813,0.117
+2025-01-09,Amazon,E-commerce,75674,0.063
+2025-01-09,Nvidia,Semiconductors,23289,0.177
+2025-01-09,Google,Technology,56906,0.127
+2025-01-10,Apple Store,E-commerce,76802,-0.013
+2025-01-10,Samsung Mobile,Marketplace,36578,0.084
+2025-01-10,Tesla Motors,Electric Vehicles,72676,0.145
+2025-01-10,Amazon,E-commerce,74242,0.089
+2025-01-10,Nvidia,Semiconductors,12502,-0.01
+2025-01-10,Google,Technology,23691,-0.036
+2025-01-11,Apple Store,E-commerce,74956,0.108
+2025-01-11,Samsung Mobile,Marketplace,6150,0.148
+2025-01-11,Tesla Motors,Electric Vehicles,26314,0.045
+2025-01-11,Amazon,E-commerce,5261,0.153
+2025-01-11,Nvidia,Semiconductors,60750,-0.023
+2025-01-11,Google,Technology,76507,0.029
+2025-01-12,Apple Store,E-commerce,5981,-0.078
+2025-01-12,Samsung Mobile,Marketplace,30378,-0.024
+2025-01-12,Tesla Motors,Electric Vehicles,67428,0.151
+2025-01-12,Amazon,E-commerce,36083,-0.024
+2025-01-12,Nvidia,Semiconductors,59490,-0.07
+2025-01-12,Google,Technology,16225,-0.061
+2025-01-13,Apple Store,E-commerce,28215,0.131
+2025-01-13,Samsung Mobile,Marketplace,12403,0.11
+2025-01-13,Tesla Motors,Electric Vehicles,33759,-0.048
+2025-01-13,Amazon,E-commerce,71023,0.018
+2025-01-13,Nvidia,Semiconductors,21388,0.064
+2025-01-13,Google,Technology,80000,-0.094
+2025-01-14,Apple Store,E-commerce,12948,0.127
+2025-01-14,Samsung Mobile,Marketplace,55080,0.076
+2025-01-14,Tesla Motors,Electric Vehicles,50469,0.043
+2025-01-14,Amazon,E-commerce,48981,-0.03
+2025-01-14,Nvidia,Semiconductors,76312,-0.019
+2025-01-14,Google,Technology,51433,0.189
+2025-01-15,Apple Store,E-commerce,74197,0.185
+2025-01-15,Samsung Mobile,Marketplace,66977,0.008
+2025-01-15,Tesla Motors,Electric Vehicles,62953,0.089
+2025-01-15,Amazon,E-commerce,20231,-0.078
+2025-01-15,Nvidia,Semiconductors,69669,0.101
+2025-01-15,Google,Technology,65068,-0.092
+2025-01-16,Apple Store,E-commerce,23503,0.186
+2025-01-16,Samsung Mobile,Marketplace,49680,0.131
+2025-01-16,Tesla Motors,Electric Vehicles,76831,0.137
+2025-01-16,Amazon,E-commerce,60330,0.031
+2025-01-16,Nvidia,Semiconductors,21833,-0.031
+2025-01-16,Google,Technology,33188,0.061
+2025-01-17,Apple Store,E-commerce,74308,-0.034
+2025-01-17,Samsung Mobile,Marketplace,57347,0.144
+2025-01-17,Tesla Motors,Electric Vehicles,25028,0.004
+2025-01-17,Amazon,E-commerce,21700,0.141
+2025-01-17,Nvidia,Semiconductors,55549,0.11
+2025-01-17,Google,Technology,21011,0.165
+2025-01-18,Apple Store,E-commerce,59345,0.037
+2025-01-18,Samsung Mobile,Marketplace,8382,0.088
+2025-01-18,Tesla Motors,Electric Vehicles,50840,0.136
+2025-01-18,Amazon,E-commerce,19876,0.169
+2025-01-18,Nvidia,Semiconductors,42587,-0.048
+2025-01-18,Google,Technology,41239,0.185
+2025-01-19,Apple Store,E-commerce,26716,-0.026
+2025-01-19,Samsung Mobile,Marketplace,39266,0.174
+2025-01-19,Tesla Motors,Electric Vehicles,31644,0.052
+2025-01-19,Amazon,E-commerce,77414,0.028
+2025-01-19,Nvidia,Semiconductors,79668,-0.055
+2025-01-19,Google,Technology,65893,0.181
+2025-01-20,Apple Store,E-commerce,12164,0.158
+2025-01-20,Samsung Mobile,Marketplace,50086,0.036
+2025-01-20,Tesla Motors,Electric Vehicles,75294,0.038
+2025-01-20,Amazon,E-commerce,6700,0.063
+2025-01-20,Nvidia,Semiconductors,58397,-0.06
+2025-01-20,Google,Technology,79470,-0.051
+2025-01-21,Apple Store,E-commerce,34611,-0.065
+2025-01-21,Samsung Mobile,Marketplace,54666,-0.048
+2025-01-21,Tesla Motors,Electric Vehicles,40374,0.047
+2025-01-21,Amazon,E-commerce,63987,0.092
+2025-01-21,Nvidia,Semiconductors,11250,0.196
+2025-01-21,Google,Technology,70524,-0.058
+2025-01-22,Apple Store,E-commerce,63282,-0.068
+2025-01-22,Samsung Mobile,Marketplace,51753,-0.001
+2025-01-22,Tesla Motors,Electric Vehicles,37754,0.102
+2025-01-22,Amazon,E-commerce,69722,-0.01
+2025-01-22,Nvidia,Semiconductors,43090,0.152
+2025-01-22,Google,Technology,15227,0.013
+2025-01-23,Apple Store,E-commerce,7954,0.101
+2025-01-23,Samsung Mobile,Marketplace,27488,0.039
+2025-01-23,Tesla Motors,Electric Vehicles,27570,-0.001
+2025-01-23,Amazon,E-commerce,69495,0.193
+2025-01-23,Nvidia,Semiconductors,30450,0.001
+2025-01-23,Google,Technology,64006,0.184
+2025-01-24,Apple Store,E-commerce,59660,-0.071
+2025-01-24,Samsung Mobile,Marketplace,78032,0.001
+2025-01-24,Tesla Motors,Electric Vehicles,43881,-0.074
+2025-01-24,Amazon,E-commerce,21061,0.077
+2025-01-24,Nvidia,Semiconductors,54562,0.189
+2025-01-24,Google,Technology,31428,0.138
+2025-01-25,Apple Store,E-commerce,54554,-0.047
+2025-01-25,Samsung Mobile,Marketplace,33714,0.116
+2025-01-25,Tesla Motors,Electric Vehicles,76274,0.185
+2025-01-25,Amazon,E-commerce,10314,0.156
+2025-01-25,Nvidia,Semiconductors,74536,-0.014
+2025-01-25,Google,Technology,31010,0.034
+2025-01-26,Apple Store,E-commerce,25462,-0.085
+2025-01-26,Samsung Mobile,Marketplace,9580,0.163
+2025-01-26,Tesla Motors,Electric Vehicles,19831,-0.064
+2025-01-26,Amazon,E-commerce,39656,0.179
+2025-01-26,Nvidia,Semiconductors,32953,0.125
+2025-01-26,Google,Technology,23809,-0.053
+2025-01-27,Apple Store,E-commerce,5910,-0.06
+2025-01-27,Samsung Mobile,Marketplace,70524,-0.039
+2025-01-27,Tesla Motors,Electric Vehicles,72083,0.159
+2025-01-27,Amazon,E-commerce,59095,-0.001
+2025-01-27,Nvidia,Semiconductors,77125,0.028
+2025-01-27,Google,Technology,56205,0.1
+2025-01-28,Apple Store,E-commerce,39967,0.158
+2025-01-28,Samsung Mobile,Marketplace,12676,-0.035
+2025-01-28,Tesla Motors,Electric Vehicles,56021,0.049
+2025-01-28,Amazon,E-commerce,26150,-0.006
+2025-01-28,Nvidia,Semiconductors,65237,0.004
+2025-01-28,Google,Technology,64266,-0.084
+2025-01-29,Apple Store,E-commerce,65271,0.193
+2025-01-29,Samsung Mobile,Marketplace,57243,0.175
+2025-01-29,Tesla Motors,Electric Vehicles,22793,0.182
+2025-01-29,Amazon,E-commerce,18523,-0.052
+2025-01-29,Nvidia,Semiconductors,11270,0.032
+2025-01-29,Google,Technology,78202,-0.003
+2025-01-30,Apple Store,E-commerce,54678,0.122
+2025-01-30,Samsung Mobile,Marketplace,30333,-0.065
+2025-01-30,Tesla Motors,Electric Vehicles,57582,-0.031
+2025-01-30,Amazon,E-commerce,44543,0.197
+2025-01-30,Nvidia,Semiconductors,46251,0.122
+2025-01-30,Google,Technology,34527,0.086
+2025-01-31,Apple Store,E-commerce,62893,0.195
+2025-01-31,Samsung Mobile,Marketplace,25976,0.188
+2025-01-31,Tesla Motors,Electric Vehicles,15711,0.078
+2025-01-31,Amazon,E-commerce,45404,-0.042
+2025-01-31,Nvidia,Semiconductors,67400,-0.002
+2025-01-31,Google,Technology,50769,0.079
+2025-02-01,Apple Store,E-commerce,25079,0.039
+2025-02-01,Samsung Mobile,Marketplace,20228,0.116
+2025-02-01,Tesla Motors,Electric Vehicles,29764,-0.059
+2025-02-01,Amazon,E-commerce,24973,0.191
+2025-02-01,Nvidia,Semiconductors,46959,0.043
+2025-02-01,Google,Technology,45887,-0.019
+2025-02-02,Apple Store,E-commerce,28080,-0.086
+2025-02-02,Samsung Mobile,Marketplace,69670,0.122
+2025-02-02,Tesla Motors,Electric Vehicles,72793,0.151
+2025-02-02,Amazon,E-commerce,5266,-0.087
+2025-02-02,Nvidia,Semiconductors,26121,0.092
+2025-02-02,Google,Technology,66786,-0.084
+2025-02-03,Apple Store,E-commerce,25707,0.047
+2025-02-03,Samsung Mobile,Marketplace,27754,-0.005
+2025-02-03,Tesla Motors,Electric Vehicles,37014,0.071
+2025-02-03,Amazon,E-commerce,40621,0.03
+2025-02-03,Nvidia,Semiconductors,57260,-0.045
+2025-02-03,Google,Technology,44609,-0.062
+2025-02-04,Apple Store,E-commerce,31917,0.062
+2025-02-04,Samsung Mobile,Marketplace,7035,0.156
+2025-02-04,Tesla Motors,Electric Vehicles,34022,0.033
+2025-02-04,Amazon,E-commerce,51672,0.088
+2025-02-04,Nvidia,Semiconductors,47046,0.105
+2025-02-04,Google,Technology,24777,-0.034
+2025-02-05,Apple Store,E-commerce,75460,-0.074
+2025-02-05,Samsung Mobile,Marketplace,60279,0.193
+2025-02-05,Tesla Motors,Electric Vehicles,24939,-0.005
+2025-02-05,Amazon,E-commerce,57108,0.084
+2025-02-05,Nvidia,Semiconductors,9323,-0.088
+2025-02-05,Google,Technology,10908,0.12
+2025-02-06,Apple Store,E-commerce,57764,-0.001
+2025-02-06,Samsung Mobile,Marketplace,40140,0.026
+2025-02-06,Tesla Motors,Electric Vehicles,9785,-0.001
+2025-02-06,Amazon,E-commerce,16007,0.148
+2025-02-06,Nvidia,Semiconductors,48717,0.06
+2025-02-06,Google,Technology,17995,0.168
+2025-02-07,Apple Store,E-commerce,60084,-0.009
+2025-02-07,Samsung Mobile,Marketplace,58816,-0.091
+2025-02-07,Tesla Motors,Electric Vehicles,57939,0.045
+2025-02-07,Amazon,E-commerce,71963,0.102
+2025-02-07,Nvidia,Semiconductors,54298,0.186
+2025-02-07,Google,Technology,78188,-0.063
+2025-02-08,Apple Store,E-commerce,5762,0.15
+2025-02-08,Samsung Mobile,Marketplace,75352,0.059
+2025-02-08,Tesla Motors,Electric Vehicles,6666,-0.056
+2025-02-08,Amazon,E-commerce,36861,0.047
+2025-02-08,Nvidia,Semiconductors,74496,0.19
+2025-02-08,Google,Technology,19635,0.108
+2025-02-09,Apple Store,E-commerce,29795,0.124
+2025-02-09,Samsung Mobile,Marketplace,64130,-0.063
+2025-02-09,Tesla Motors,Electric Vehicles,48885,0.125
+2025-02-09,Amazon,E-commerce,36378,0.095
+2025-02-09,Nvidia,Semiconductors,7026,0.046
+2025-02-09,Google,Technology,56367,0.104
+2025-02-10,Apple Store,E-commerce,27638,0.007
+2025-02-10,Samsung Mobile,Marketplace,34295,0.072
+2025-02-10,Tesla Motors,Electric Vehicles,71180,0.073
+2025-02-10,Amazon,E-commerce,14088,0.107
+2025-02-10,Nvidia,Semiconductors,57707,0.003
+2025-02-10,Google,Technology,68676,-0.081
+2025-02-11,Apple Store,E-commerce,52072,0.166
+2025-02-11,Samsung Mobile,Marketplace,10605,0.074
+2025-02-11,Tesla Motors,Electric Vehicles,54750,-0.077
+2025-02-11,Amazon,E-commerce,43447,0.098
+2025-02-11,Nvidia,Semiconductors,29765,0.045
+2025-02-11,Google,Technology,77644,-0.093
+2025-02-12,Apple Store,E-commerce,55220,0.182
+2025-02-12,Samsung Mobile,Marketplace,71465,0.12
+2025-02-12,Tesla Motors,Electric Vehicles,70731,-0.041
+2025-02-12,Amazon,E-commerce,67707,0.16
+2025-02-12,Nvidia,Semiconductors,22711,-0.009
+2025-02-12,Google,Technology,38615,0.042
+2025-02-13,Apple Store,E-commerce,46730,0.138
+2025-02-13,Samsung Mobile,Marketplace,62310,0.136
+2025-02-13,Tesla Motors,Electric Vehicles,43616,0.108
+2025-02-13,Amazon,E-commerce,35419,0.123
+2025-02-13,Nvidia,Semiconductors,30655,0.078
+2025-02-13,Google,Technology,24630,-0.032
+2025-02-14,Apple Store,E-commerce,64326,0.059
+2025-02-14,Samsung Mobile,Marketplace,26328,0.105
+2025-02-14,Tesla Motors,Electric Vehicles,52043,0.168
+2025-02-14,Amazon,E-commerce,79151,-0.013
+2025-02-14,Nvidia,Semiconductors,38502,0.087
+2025-02-14,Google,Technology,13333,0.123
+2025-02-15,Apple Store,E-commerce,63472,-0.092
+2025-02-15,Samsung Mobile,Marketplace,29369,0.166
+2025-02-15,Tesla Motors,Electric Vehicles,12936,-0.074
+2025-02-15,Amazon,E-commerce,33144,-0.033
+2025-02-15,Nvidia,Semiconductors,20828,-0.053
+2025-02-15,Google,Technology,10509,-0.079
+2025-02-16,Apple Store,E-commerce,74547,0.072
+2025-02-16,Samsung Mobile,Marketplace,30281,0.185
+2025-02-16,Tesla Motors,Electric Vehicles,15009,0.019
+2025-02-16,Amazon,E-commerce,65548,0.016
+2025-02-16,Nvidia,Semiconductors,7800,-0.014
+2025-02-16,Google,Technology,41451,-0.094
+2025-02-17,Apple Store,E-commerce,24403,-0.009
+2025-02-17,Samsung Mobile,Marketplace,37909,0.135
+2025-02-17,Tesla Motors,Electric Vehicles,12008,-0.09
+2025-02-17,Amazon,E-commerce,22896,-0.019
+2025-02-17,Nvidia,Semiconductors,36576,0.158
+2025-02-17,Google,Technology,16729,-0.066
+2025-02-18,Apple Store,E-commerce,57910,0.039
+2025-02-18,Samsung Mobile,Marketplace,8577,0.038
+2025-02-18,Tesla Motors,Electric Vehicles,18190,-0.062
+2025-02-18,Amazon,E-commerce,48019,-0.005
+2025-02-18,Nvidia,Semiconductors,54804,-0.075
+2025-02-18,Google,Technology,8617,0.071
+2025-02-19,Apple Store,E-commerce,69124,0.188
+2025-02-19,Samsung Mobile,Marketplace,41883,0.161
+2025-02-19,Tesla Motors,Electric Vehicles,52145,0.074
+2025-02-19,Amazon,E-commerce,5515,0.184
+2025-02-19,Nvidia,Semiconductors,58909,0.127
+2025-02-19,Google,Technology,6329,0.006
+2025-02-20,Apple Store,E-commerce,68019,0.134
+2025-02-20,Samsung Mobile,Marketplace,65055,0.106
+2025-02-20,Tesla Motors,Electric Vehicles,50975,-0.007
+2025-02-20,Amazon,E-commerce,47109,-0.036
+2025-02-20,Nvidia,Semiconductors,55526,-0.017
+2025-02-20,Google,Technology,77692,0.025
+2025-02-21,Apple Store,E-commerce,27772,0.173
+2025-02-21,Samsung Mobile,Marketplace,8364,-0.035
+2025-02-21,Tesla Motors,Electric Vehicles,7802,0.072
+2025-02-21,Amazon,E-commerce,33123,-0.096
+2025-02-21,Nvidia,Semiconductors,70235,0.001
+2025-02-21,Google,Technology,46571,0.104
+2025-02-22,Apple Store,E-commerce,37523,0.047
+2025-02-22,Samsung Mobile,Marketplace,70453,-0.015
+2025-02-22,Tesla Motors,Electric Vehicles,20071,0.024
+2025-02-22,Amazon,E-commerce,75310,0.182
+2025-02-22,Nvidia,Semiconductors,55912,0.137
+2025-02-22,Google,Technology,44482,-0.093
+2025-02-23,Apple Store,E-commerce,11052,0.0
+2025-02-23,Samsung Mobile,Marketplace,8503,-0.007
+2025-02-23,Tesla Motors,Electric Vehicles,38925,-0.011
+2025-02-23,Amazon,E-commerce,36146,-0.017
+2025-02-23,Nvidia,Semiconductors,30325,0.047
+2025-02-23,Google,Technology,61190,-0.033
+2025-02-24,Apple Store,E-commerce,48195,0.125
+2025-02-24,Samsung Mobile,Marketplace,33163,0.006
+2025-02-24,Tesla Motors,Electric Vehicles,13935,0.088
+2025-02-24,Amazon,E-commerce,67338,0.043
+2025-02-24,Nvidia,Semiconductors,24943,0.181
+2025-02-24,Google,Technology,50308,-0.06
+2025-02-25,Apple Store,E-commerce,31271,-0.059
+2025-02-25,Samsung Mobile,Marketplace,53726,-0.018
+2025-02-25,Tesla Motors,Electric Vehicles,64349,-0.076
+2025-02-25,Amazon,E-commerce,21427,0.064
+2025-02-25,Nvidia,Semiconductors,25280,0.137
+2025-02-25,Google,Technology,73123,0.049
+2025-02-26,Apple Store,E-commerce,8504,-0.063
+2025-02-26,Samsung Mobile,Marketplace,75311,-0.005
+2025-02-26,Tesla Motors,Electric Vehicles,55713,0.132
+2025-02-26,Amazon,E-commerce,56134,0.199
+2025-02-26,Nvidia,Semiconductors,64470,0.161
+2025-02-26,Google,Technology,47093,0.143
+2025-02-27,Apple Store,E-commerce,39089,0.095
+2025-02-27,Samsung Mobile,Marketplace,17662,0.039
+2025-02-27,Tesla Motors,Electric Vehicles,50738,0.109
+2025-02-27,Amazon,E-commerce,67300,0.023
+2025-02-27,Nvidia,Semiconductors,26299,0.004
+2025-02-27,Google,Technology,73366,0.041
+2025-02-28,Apple Store,E-commerce,31177,0.01
+2025-02-28,Samsung Mobile,Marketplace,42466,-0.015
+2025-02-28,Tesla Motors,Electric Vehicles,45058,0.191
+2025-02-28,Amazon,E-commerce,69967,0.142
+2025-02-28,Nvidia,Semiconductors,45897,0.023
+2025-02-28,Google,Technology,38351,-0.028
+2025-03-01,Apple Store,E-commerce,18753,0.063
+2025-03-01,Samsung Mobile,Marketplace,50302,0.112
+2025-03-01,Tesla Motors,Electric Vehicles,58785,-0.085
+2025-03-01,Amazon,E-commerce,42016,-0.075
+2025-03-01,Nvidia,Semiconductors,7691,0.124
+2025-03-01,Google,Technology,30059,-0.041
+2025-03-02,Apple Store,E-commerce,35365,0.036
+2025-03-02,Samsung Mobile,Marketplace,27499,0.095
+2025-03-02,Tesla Motors,Electric Vehicles,78915,0.151
+2025-03-02,Amazon,E-commerce,35194,0.195
+2025-03-02,Nvidia,Semiconductors,13421,0.176
+2025-03-02,Google,Technology,38279,0.179
+2025-03-03,Apple Store,E-commerce,78239,-0.05
+2025-03-03,Samsung Mobile,Marketplace,79356,0.132
+2025-03-03,Tesla Motors,Electric Vehicles,77875,-0.024
+2025-03-03,Amazon,E-commerce,67850,-0.028
+2025-03-03,Nvidia,Semiconductors,72357,0.015
+2025-03-03,Google,Technology,48462,-0.009
+2025-03-04,Apple Store,E-commerce,68674,0.152
+2025-03-04,Samsung Mobile,Marketplace,67415,-0.011
+2025-03-04,Tesla Motors,Electric Vehicles,34250,0.049
+2025-03-04,Amazon,E-commerce,16057,0.03
+2025-03-04,Nvidia,Semiconductors,38553,0.125
+2025-03-04,Google,Technology,78119,0.076
+2025-03-05,Apple Store,E-commerce,48284,0.092
+2025-03-05,Samsung Mobile,Marketplace,50378,-0.008
+2025-03-05,Tesla Motors,Electric Vehicles,73496,0.169
+2025-03-05,Amazon,E-commerce,44288,0.144
+2025-03-05,Nvidia,Semiconductors,6714,0.13
+2025-03-05,Google,Technology,28631,0.065
+2025-03-06,Apple Store,E-commerce,35239,-0.094
+2025-03-06,Samsung Mobile,Marketplace,61513,0.158
+2025-03-06,Tesla Motors,Electric Vehicles,48986,0.137
+2025-03-06,Amazon,E-commerce,15995,0.167
+2025-03-06,Nvidia,Semiconductors,47414,-0.06
+2025-03-06,Google,Technology,64270,0.06
+2025-03-07,Apple Store,E-commerce,11639,-0.045
+2025-03-07,Samsung Mobile,Marketplace,71487,0.014
+2025-03-07,Tesla Motors,Electric Vehicles,67277,-0.078
+2025-03-07,Amazon,E-commerce,38424,0.06
+2025-03-07,Nvidia,Semiconductors,60677,-0.092
+2025-03-07,Google,Technology,65523,-0.031
+2025-03-08,Apple Store,E-commerce,59893,0.141
+2025-03-08,Samsung Mobile,Marketplace,24075,0.183
+2025-03-08,Tesla Motors,Electric Vehicles,42403,0.041
+2025-03-08,Amazon,E-commerce,8716,-0.093
+2025-03-08,Nvidia,Semiconductors,52062,0.175
+2025-03-08,Google,Technology,69362,0.023
+2025-03-09,Apple Store,E-commerce,54242,-0.007
+2025-03-09,Samsung Mobile,Marketplace,62645,0.134
+2025-03-09,Tesla Motors,Electric Vehicles,50601,0.018
+2025-03-09,Amazon,E-commerce,77421,0.189
+2025-03-09,Nvidia,Semiconductors,59007,0.067
+2025-03-09,Google,Technology,35529,0.031
+2025-03-10,Apple Store,E-commerce,23275,0.119
+2025-03-10,Samsung Mobile,Marketplace,30600,-0.049
+2025-03-10,Tesla Motors,Electric Vehicles,72536,0.02
+2025-03-10,Amazon,E-commerce,52260,0.038
+2025-03-10,Nvidia,Semiconductors,58431,0.075
+2025-03-10,Google,Technology,15237,-0.019
+2025-03-11,Apple Store,E-commerce,31384,-0.086
+2025-03-11,Samsung Mobile,Marketplace,51335,0.133
+2025-03-11,Tesla Motors,Electric Vehicles,32565,0.088
+2025-03-11,Amazon,E-commerce,49095,0.065
+2025-03-11,Nvidia,Semiconductors,67926,-0.001
+2025-03-11,Google,Technology,20916,0.164
+2025-03-12,Apple Store,E-commerce,23430,-0.026
+2025-03-12,Samsung Mobile,Marketplace,14072,0.055
+2025-03-12,Tesla Motors,Electric Vehicles,67477,0.072
+2025-03-12,Amazon,E-commerce,35350,0.014
+2025-03-12,Nvidia,Semiconductors,61579,0.143
+2025-03-12,Google,Technology,10471,0.139
+2025-03-13,Apple Store,E-commerce,20742,0.07
+2025-03-13,Samsung Mobile,Marketplace,73453,0.051
+2025-03-13,Tesla Motors,Electric Vehicles,49163,0.01
+2025-03-13,Amazon,E-commerce,21444,-0.041
+2025-03-13,Nvidia,Semiconductors,63666,0.146
+2025-03-13,Google,Technology,69096,0.025
+2025-03-14,Apple Store,E-commerce,31427,-0.002
+2025-03-14,Samsung Mobile,Marketplace,31006,0.098
+2025-03-14,Tesla Motors,Electric Vehicles,54493,-0.004
+2025-03-14,Amazon,E-commerce,53889,-0.059
+2025-03-14,Nvidia,Semiconductors,17263,-0.0
+2025-03-14,Google,Technology,40862,-0.089
+2025-03-15,Apple Store,E-commerce,33896,-0.096
+2025-03-15,Samsung Mobile,Marketplace,40717,0.136
+2025-03-15,Tesla Motors,Electric Vehicles,54499,0.125
+2025-03-15,Amazon,E-commerce,79796,-0.052
+2025-03-15,Nvidia,Semiconductors,71816,0.001
+2025-03-15,Google,Technology,53332,-0.073
+2025-03-16,Apple Store,E-commerce,65925,-0.025
+2025-03-16,Samsung Mobile,Marketplace,68914,0.036
+2025-03-16,Tesla Motors,Electric Vehicles,72064,-0.007
+2025-03-16,Amazon,E-commerce,37948,0.182
+2025-03-16,Nvidia,Semiconductors,78619,0.001
+2025-03-16,Google,Technology,38116,0.184
+2025-03-17,Apple Store,E-commerce,7961,-0.057
+2025-03-17,Samsung Mobile,Marketplace,78189,-0.045
+2025-03-17,Tesla Motors,Electric Vehicles,15798,0.127
+2025-03-17,Amazon,E-commerce,78230,-0.012
+2025-03-17,Nvidia,Semiconductors,10385,0.198
+2025-03-17,Google,Technology,44898,-0.088
+2025-03-18,Apple Store,E-commerce,61779,0.118
+2025-03-18,Samsung Mobile,Marketplace,40076,0.196
+2025-03-18,Tesla Motors,Electric Vehicles,57148,0.093
+2025-03-18,Amazon,E-commerce,22076,0.064
+2025-03-18,Nvidia,Semiconductors,50768,0.182
+2025-03-18,Google,Technology,55546,-0.052
+2025-03-19,Apple Store,E-commerce,56381,-0.088
+2025-03-19,Samsung Mobile,Marketplace,23265,0.17
+2025-03-19,Tesla Motors,Electric Vehicles,29876,0.196
+2025-03-19,Amazon,E-commerce,42975,-0.093
+2025-03-19,Nvidia,Semiconductors,42130,0.128
+2025-03-19,Google,Technology,53632,-0.03
+2025-03-20,Apple Store,E-commerce,12181,-0.055
+2025-03-20,Samsung Mobile,Marketplace,31891,0.157
+2025-03-20,Tesla Motors,Electric Vehicles,23764,0.075
+2025-03-20,Amazon,E-commerce,31200,0.023
+2025-03-20,Nvidia,Semiconductors,44581,0.037
+2025-03-20,Google,Technology,7565,0.115
+2025-03-21,Apple Store,E-commerce,76642,0.099
+2025-03-21,Samsung Mobile,Marketplace,34123,-0.092
+2025-03-21,Tesla Motors,Electric Vehicles,11923,0.118
+2025-03-21,Amazon,E-commerce,18625,0.011
+2025-03-21,Nvidia,Semiconductors,24096,-0.085
+2025-03-21,Google,Technology,67436,0.094
+2025-03-22,Apple Store,E-commerce,45988,-0.029
+2025-03-22,Samsung Mobile,Marketplace,70426,-0.049
+2025-03-22,Tesla Motors,Electric Vehicles,59454,0.195
+2025-03-22,Amazon,E-commerce,48280,0.063
+2025-03-22,Nvidia,Semiconductors,78073,0.045
+2025-03-22,Google,Technology,10314,0.065
+2025-03-23,Apple Store,E-commerce,8882,-0.006
+2025-03-23,Samsung Mobile,Marketplace,8880,0.156
+2025-03-23,Tesla Motors,Electric Vehicles,24565,-0.07
+2025-03-23,Amazon,E-commerce,6331,0.116
+2025-03-23,Nvidia,Semiconductors,28467,-0.065
+2025-03-23,Google,Technology,43398,0.104
+2025-03-24,Apple Store,E-commerce,73268,0.083
+2025-03-24,Samsung Mobile,Marketplace,49860,0.046
+2025-03-24,Tesla Motors,Electric Vehicles,34039,0.02
+2025-03-24,Amazon,E-commerce,66361,-0.078
+2025-03-24,Nvidia,Semiconductors,21300,0.18
+2025-03-24,Google,Technology,30056,0.061
+2025-03-25,Apple Store,E-commerce,41551,0.177
+2025-03-25,Samsung Mobile,Marketplace,46820,-0.07
+2025-03-25,Tesla Motors,Electric Vehicles,10606,0.145
+2025-03-25,Amazon,E-commerce,28735,0.194
+2025-03-25,Nvidia,Semiconductors,73706,0.143
+2025-03-25,Google,Technology,58248,0.191
+2025-03-26,Apple Store,E-commerce,37600,0.191
+2025-03-26,Samsung Mobile,Marketplace,12470,0.105
+2025-03-26,Tesla Motors,Electric Vehicles,47091,-0.082
+2025-03-26,Amazon,E-commerce,62688,0.015
+2025-03-26,Nvidia,Semiconductors,70342,-0.029
+2025-03-26,Google,Technology,48732,0.072
+2025-03-27,Apple Store,E-commerce,61072,0.053
+2025-03-27,Samsung Mobile,Marketplace,18984,-0.046
+2025-03-27,Tesla Motors,Electric Vehicles,6303,0.108
+2025-03-27,Amazon,E-commerce,38347,-0.002
+2025-03-27,Nvidia,Semiconductors,58670,0.169
+2025-03-27,Google,Technology,34418,0.099
+2025-03-28,Apple Store,E-commerce,42740,-0.085
+2025-03-28,Samsung Mobile,Marketplace,71502,0.156
+2025-03-28,Tesla Motors,Electric Vehicles,7866,0.143
+2025-03-28,Amazon,E-commerce,59102,0.094
+2025-03-28,Nvidia,Semiconductors,67647,-0.01
+2025-03-28,Google,Technology,17190,0.148
+2025-03-29,Apple Store,E-commerce,65262,-0.03
+2025-03-29,Samsung Mobile,Marketplace,58157,0.072
+2025-03-29,Tesla Motors,Electric Vehicles,13399,0.014
+2025-03-29,Amazon,E-commerce,32611,-0.002
+2025-03-29,Nvidia,Semiconductors,73527,0.178
+2025-03-29,Google,Technology,69858,-0.073
+2025-03-30,Apple Store,E-commerce,37239,0.173
+2025-03-30,Samsung Mobile,Marketplace,77747,-0.056
+2025-03-30,Tesla Motors,Electric Vehicles,65446,0.197
+2025-03-30,Amazon,E-commerce,61634,-0.073
+2025-03-30,Nvidia,Semiconductors,47972,0.095
+2025-03-30,Google,Technology,34114,0.012
+2025-03-31,Apple Store,E-commerce,66884,0.167
+2025-03-31,Samsung Mobile,Marketplace,61992,0.166
+2025-03-31,Tesla Motors,Electric Vehicles,60811,-0.07
+2025-03-31,Amazon,E-commerce,32466,-0.017
+2025-03-31,Nvidia,Semiconductors,54456,0.048
+2025-03-31,Google,Technology,55787,0.062
+2025-04-01,Apple Store,E-commerce,67018,0.053
+2025-04-01,Samsung Mobile,Marketplace,53995,0.046
+2025-04-01,Tesla Motors,Electric Vehicles,6980,0.057
+2025-04-01,Amazon,E-commerce,66149,0.075
+2025-04-01,Nvidia,Semiconductors,79993,-0.053
+2025-04-01,Google,Technology,56816,-0.085
+2025-04-02,Apple Store,E-commerce,14087,-0.057
+2025-04-02,Samsung Mobile,Marketplace,34509,0.043
+2025-04-02,Tesla Motors,Electric Vehicles,69581,-0.025
+2025-04-02,Amazon,E-commerce,11027,0.048
+2025-04-02,Nvidia,Semiconductors,71190,-0.018
+2025-04-02,Google,Technology,69695,0.103
+2025-04-03,Apple Store,E-commerce,59976,0.043
+2025-04-03,Samsung Mobile,Marketplace,25330,0.102
+2025-04-03,Tesla Motors,Electric Vehicles,74348,0.026
+2025-04-03,Amazon,E-commerce,45013,0.008
+2025-04-03,Nvidia,Semiconductors,76967,0.161
+2025-04-03,Google,Technology,34616,0.061
+2025-04-04,Apple Store,E-commerce,55109,0.072
+2025-04-04,Samsung Mobile,Marketplace,54061,-0.037
+2025-04-04,Tesla Motors,Electric Vehicles,12446,0.052
+2025-04-04,Amazon,E-commerce,77870,0.066
+2025-04-04,Nvidia,Semiconductors,52595,0.015
+2025-04-04,Google,Technology,39028,0.193
+2025-04-05,Apple Store,E-commerce,15146,0.086
+2025-04-05,Samsung Mobile,Marketplace,27208,-0.0
+2025-04-05,Tesla Motors,Electric Vehicles,24367,0.191
+2025-04-05,Amazon,E-commerce,45388,-0.01
+2025-04-05,Nvidia,Semiconductors,40960,0.196
+2025-04-05,Google,Technology,42983,0.138
+2025-04-06,Apple Store,E-commerce,45687,-0.062
+2025-04-06,Samsung Mobile,Marketplace,55413,0.127
+2025-04-06,Tesla Motors,Electric Vehicles,45979,0.058
+2025-04-06,Amazon,E-commerce,73588,-0.071
+2025-04-06,Nvidia,Semiconductors,32579,0.079
+2025-04-06,Google,Technology,40401,-0.084
+2025-04-07,Apple Store,E-commerce,10545,-0.015
+2025-04-07,Samsung Mobile,Marketplace,71959,-0.067
+2025-04-07,Tesla Motors,Electric Vehicles,54498,0.149
+2025-04-07,Amazon,E-commerce,48300,0.128
+2025-04-07,Nvidia,Semiconductors,52573,0.194
+2025-04-07,Google,Technology,39567,0.193
+2025-04-08,Apple Store,E-commerce,78608,0.08
+2025-04-08,Samsung Mobile,Marketplace,77463,0.077
+2025-04-08,Tesla Motors,Electric Vehicles,38895,-0.027
+2025-04-08,Amazon,E-commerce,17458,-0.014
+2025-04-08,Nvidia,Semiconductors,43825,0.115
+2025-04-08,Google,Technology,50358,0.176
+2025-04-09,Apple Store,E-commerce,32080,0.14
+2025-04-09,Samsung Mobile,Marketplace,50617,-0.038
+2025-04-09,Tesla Motors,Electric Vehicles,8397,-0.025
+2025-04-09,Amazon,E-commerce,23743,0.163
+2025-04-09,Nvidia,Semiconductors,27376,-0.002
+2025-04-09,Google,Technology,42145,-0.062
+2025-04-10,Apple Store,E-commerce,49263,-0.007
+2025-04-10,Samsung Mobile,Marketplace,39908,-0.033
+2025-04-10,Tesla Motors,Electric Vehicles,68701,0.049
+2025-04-10,Amazon,E-commerce,72974,0.111
+2025-04-10,Nvidia,Semiconductors,64832,0.109
+2025-04-10,Google,Technology,36268,-0.026
+2025-04-11,Apple Store,E-commerce,5487,0.12
+2025-04-11,Samsung Mobile,Marketplace,48612,0.064
+2025-04-11,Tesla Motors,Electric Vehicles,55792,0.153
+2025-04-11,Amazon,E-commerce,68159,0.102
+2025-04-11,Nvidia,Semiconductors,78930,0.154
+2025-04-11,Google,Technology,59281,0.103
+2025-04-12,Apple Store,E-commerce,41476,0.149
+2025-04-12,Samsung Mobile,Marketplace,76667,0.178
+2025-04-12,Tesla Motors,Electric Vehicles,33544,0.133
+2025-04-12,Amazon,E-commerce,10309,0.157
+2025-04-12,Nvidia,Semiconductors,73176,0.181
+2025-04-12,Google,Technology,74604,0.112
+2025-04-13,Apple Store,E-commerce,75393,0.11
+2025-04-13,Samsung Mobile,Marketplace,37357,0.058
+2025-04-13,Tesla Motors,Electric Vehicles,11607,0.101
+2025-04-13,Amazon,E-commerce,40219,0.128
+2025-04-13,Nvidia,Semiconductors,44845,0.184
+2025-04-13,Google,Technology,42006,-0.019
+2025-04-14,Apple Store,E-commerce,79752,-0.085
+2025-04-14,Samsung Mobile,Marketplace,42762,-0.068
+2025-04-14,Tesla Motors,Electric Vehicles,28333,0.196
+2025-04-14,Amazon,E-commerce,29762,0.057
+2025-04-14,Nvidia,Semiconductors,73987,-0.001
+2025-04-14,Google,Technology,28189,-0.036
+2025-04-15,Apple Store,E-commerce,43900,0.194
+2025-04-15,Samsung Mobile,Marketplace,25594,0.056
+2025-04-15,Tesla Motors,Electric Vehicles,63047,0.044
+2025-04-15,Amazon,E-commerce,10101,0.106
+2025-04-15,Nvidia,Semiconductors,78084,-0.078
+2025-04-15,Google,Technology,58329,0.183
+2025-04-16,Apple Store,E-commerce,32127,0.17
+2025-04-16,Samsung Mobile,Marketplace,49231,0.129
+2025-04-16,Tesla Motors,Electric Vehicles,25532,0.032
+2025-04-16,Amazon,E-commerce,51750,-0.027
+2025-04-16,Nvidia,Semiconductors,48700,0.023
+2025-04-16,Google,Technology,25240,0.109
+2025-04-17,Apple Store,E-commerce,13434,-0.075
+2025-04-17,Samsung Mobile,Marketplace,49644,0.142
+2025-04-17,Tesla Motors,Electric Vehicles,33146,0.033
+2025-04-17,Amazon,E-commerce,20618,0.044
+2025-04-17,Nvidia,Semiconductors,64527,0.023
+2025-04-17,Google,Technology,13477,0.015
+2025-04-18,Apple Store,E-commerce,22986,0.117
+2025-04-18,Samsung Mobile,Marketplace,10225,0.043
+2025-04-18,Tesla Motors,Electric Vehicles,49358,0.141
+2025-04-18,Amazon,E-commerce,56253,-0.021
+2025-04-18,Nvidia,Semiconductors,75716,0.144
+2025-04-18,Google,Technology,76473,0.109
+2025-04-19,Apple Store,E-commerce,74046,-0.027
+2025-04-19,Samsung Mobile,Marketplace,49188,-0.043
+2025-04-19,Tesla Motors,Electric Vehicles,41384,0.076
+2025-04-19,Amazon,E-commerce,58063,0.021
+2025-04-19,Nvidia,Semiconductors,63524,0.075
+2025-04-19,Google,Technology,35336,0.185
+2025-04-20,Apple Store,E-commerce,68347,0.113
+2025-04-20,Samsung Mobile,Marketplace,23686,-0.011
+2025-04-20,Tesla Motors,Electric Vehicles,17018,0.143
+2025-04-20,Amazon,E-commerce,69007,0.173
+2025-04-20,Nvidia,Semiconductors,43243,0.163
+2025-04-20,Google,Technology,71911,0.038
+2025-04-21,Apple Store,E-commerce,40611,0.105
+2025-04-21,Samsung Mobile,Marketplace,6973,-0.023
+2025-04-21,Tesla Motors,Electric Vehicles,17690,-0.081
+2025-04-21,Amazon,E-commerce,23739,0.124
+2025-04-21,Nvidia,Semiconductors,73605,-0.014
+2025-04-21,Google,Technology,45028,-0.06
+2025-04-22,Apple Store,E-commerce,78646,-0.096
+2025-04-22,Samsung Mobile,Marketplace,39373,0.107
+2025-04-22,Tesla Motors,Electric Vehicles,26264,0.056
+2025-04-22,Amazon,E-commerce,20035,0.084
+2025-04-22,Nvidia,Semiconductors,25056,-0.032
+2025-04-22,Google,Technology,57057,-0.058
+2025-04-23,Apple Store,E-commerce,58098,-0.093
+2025-04-23,Samsung Mobile,Marketplace,58794,0.099
+2025-04-23,Tesla Motors,Electric Vehicles,67676,0.007
+2025-04-23,Amazon,E-commerce,65368,0.069
+2025-04-23,Nvidia,Semiconductors,76445,0.165
+2025-04-23,Google,Technology,44231,-0.054
+2025-04-24,Apple Store,E-commerce,22453,0.17
+2025-04-24,Samsung Mobile,Marketplace,34074,0.041
+2025-04-24,Tesla Motors,Electric Vehicles,46540,-0.092
+2025-04-24,Amazon,E-commerce,37064,-0.087
+2025-04-24,Nvidia,Semiconductors,76737,0.195
+2025-04-24,Google,Technology,71769,0.128
+2025-04-25,Apple Store,E-commerce,67428,0.057
+2025-04-25,Samsung Mobile,Marketplace,77750,-0.025
+2025-04-25,Tesla Motors,Electric Vehicles,34567,0.112
+2025-04-25,Amazon,E-commerce,62486,0.017
+2025-04-25,Nvidia,Semiconductors,55831,0.068
+2025-04-25,Google,Technology,75831,0.045
+2025-04-26,Apple Store,E-commerce,8946,0.057
+2025-04-26,Samsung Mobile,Marketplace,53844,-0.078
+2025-04-26,Tesla Motors,Electric Vehicles,71678,-0.087
+2025-04-26,Amazon,E-commerce,12116,0.154
+2025-04-26,Nvidia,Semiconductors,7322,0.156
+2025-04-26,Google,Technology,54432,0.17
+2025-04-27,Apple Store,E-commerce,21344,0.168
+2025-04-27,Samsung Mobile,Marketplace,34201,0.026
+2025-04-27,Tesla Motors,Electric Vehicles,47129,-0.092
+2025-04-27,Amazon,E-commerce,61362,0.017
+2025-04-27,Nvidia,Semiconductors,27219,0.157
+2025-04-27,Google,Technology,61694,-0.023
+2025-04-28,Apple Store,E-commerce,50293,0.172
+2025-04-28,Samsung Mobile,Marketplace,11972,-0.045
+2025-04-28,Tesla Motors,Electric Vehicles,8854,0.025
+2025-04-28,Amazon,E-commerce,25686,-0.092
+2025-04-28,Nvidia,Semiconductors,14180,-0.058
+2025-04-28,Google,Technology,65613,-0.029
+2025-04-29,Apple Store,E-commerce,9853,-0.074
+2025-04-29,Samsung Mobile,Marketplace,25326,-0.091
+2025-04-29,Tesla Motors,Electric Vehicles,26134,0.095
+2025-04-29,Amazon,E-commerce,24068,0.067
+2025-04-29,Nvidia,Semiconductors,31268,0.117
+2025-04-29,Google,Technology,74710,0.196
+2025-04-30,Apple Store,E-commerce,50096,0.171
+2025-04-30,Samsung Mobile,Marketplace,60432,0.177
+2025-04-30,Tesla Motors,Electric Vehicles,37424,-0.052
+2025-04-30,Amazon,E-commerce,52441,0.145
+2025-04-30,Nvidia,Semiconductors,25116,0.194
+2025-04-30,Google,Technology,70930,0.019
+2025-05-01,Apple Store,E-commerce,21153,0.077
+2025-05-01,Samsung Mobile,Marketplace,47464,-0.044
+2025-05-01,Tesla Motors,Electric Vehicles,19550,0.039
+2025-05-01,Amazon,E-commerce,6166,0.149
+2025-05-01,Nvidia,Semiconductors,63047,-0.082
+2025-05-01,Google,Technology,42941,0.045
+2025-05-02,Apple Store,E-commerce,72140,-0.034
+2025-05-02,Samsung Mobile,Marketplace,49758,-0.021
+2025-05-02,Tesla Motors,Electric Vehicles,43376,0.189
+2025-05-02,Amazon,E-commerce,73009,0.178
+2025-05-02,Nvidia,Semiconductors,5441,0.129
+2025-05-02,Google,Technology,24872,-0.081
+2025-05-03,Apple Store,E-commerce,15776,0.16
+2025-05-03,Samsung Mobile,Marketplace,65627,-0.007
+2025-05-03,Tesla Motors,Electric Vehicles,71839,0.101
+2025-05-03,Amazon,E-commerce,43315,-0.088
+2025-05-03,Nvidia,Semiconductors,73689,0.03
+2025-05-03,Google,Technology,12860,0.16
+2025-05-04,Apple Store,E-commerce,32831,-0.013
+2025-05-04,Samsung Mobile,Marketplace,64486,0.14
+2025-05-04,Tesla Motors,Electric Vehicles,24813,-0.07
+2025-05-04,Amazon,E-commerce,29822,-0.027
+2025-05-04,Nvidia,Semiconductors,20008,-0.072
+2025-05-04,Google,Technology,25318,0.132
+2025-05-05,Apple Store,E-commerce,36689,0.125
+2025-05-05,Samsung Mobile,Marketplace,49374,0.022
+2025-05-05,Tesla Motors,Electric Vehicles,46337,0.035
+2025-05-05,Amazon,E-commerce,36299,0.159
+2025-05-05,Nvidia,Semiconductors,67257,0.128
+2025-05-05,Google,Technology,70274,0.118
+2025-05-06,Apple Store,E-commerce,74913,-0.02
+2025-05-06,Samsung Mobile,Marketplace,5064,0.05
+2025-05-06,Tesla Motors,Electric Vehicles,42313,0.116
+2025-05-06,Amazon,E-commerce,69370,0.092
+2025-05-06,Nvidia,Semiconductors,53648,0.101
+2025-05-06,Google,Technology,54052,0.162
+2025-05-07,Apple Store,E-commerce,77051,0.058
+2025-05-07,Samsung Mobile,Marketplace,68597,-0.009
+2025-05-07,Tesla Motors,Electric Vehicles,70787,-0.048
+2025-05-07,Amazon,E-commerce,9554,-0.06
+2025-05-07,Nvidia,Semiconductors,72613,0.068
+2025-05-07,Google,Technology,51318,-0.054
+2025-05-08,Apple Store,E-commerce,76363,0.144
+2025-05-08,Samsung Mobile,Marketplace,28908,0.066
+2025-05-08,Tesla Motors,Electric Vehicles,46052,0.172
+2025-05-08,Amazon,E-commerce,53660,-0.039
+2025-05-08,Nvidia,Semiconductors,22597,0.017
+2025-05-08,Google,Technology,77281,0.117
+2025-05-09,Apple Store,E-commerce,46973,-0.014
+2025-05-09,Samsung Mobile,Marketplace,33103,0.146
+2025-05-09,Tesla Motors,Electric Vehicles,64937,0.138
+2025-05-09,Amazon,E-commerce,12867,0.119
+2025-05-09,Nvidia,Semiconductors,78201,0.131
+2025-05-09,Google,Technology,33219,-0.049
+2025-05-10,Apple Store,E-commerce,54202,0.162
+2025-05-10,Samsung Mobile,Marketplace,17668,0.175
+2025-05-10,Tesla Motors,Electric Vehicles,5288,-0.091
+2025-05-10,Amazon,E-commerce,59464,-0.071
+2025-05-10,Nvidia,Semiconductors,49994,-0.078
+2025-05-10,Google,Technology,8003,0.198
+2025-05-11,Apple Store,E-commerce,57084,0.064
+2025-05-11,Samsung Mobile,Marketplace,57580,-0.014
+2025-05-11,Tesla Motors,Electric Vehicles,36367,0.01
+2025-05-11,Amazon,E-commerce,52731,0.147
+2025-05-11,Nvidia,Semiconductors,20763,-0.045
+2025-05-11,Google,Technology,14476,0.175
+2025-05-12,Apple Store,E-commerce,59601,0.037
+2025-05-12,Samsung Mobile,Marketplace,39612,-0.086
+2025-05-12,Tesla Motors,Electric Vehicles,27269,-0.009
+2025-05-12,Amazon,E-commerce,37171,0.037
+2025-05-12,Nvidia,Semiconductors,35080,-0.049
+2025-05-12,Google,Technology,50680,0.07
+2025-05-13,Apple Store,E-commerce,16867,0.185
+2025-05-13,Samsung Mobile,Marketplace,75881,-0.086
+2025-05-13,Tesla Motors,Electric Vehicles,26622,-0.051
+2025-05-13,Amazon,E-commerce,66535,0.079
+2025-05-13,Nvidia,Semiconductors,40185,-0.073
+2025-05-13,Google,Technology,19960,-0.093
+2025-05-14,Apple Store,E-commerce,8007,-0.012
+2025-05-14,Samsung Mobile,Marketplace,13533,0.038
+2025-05-14,Tesla Motors,Electric Vehicles,36489,-0.078
+2025-05-14,Amazon,E-commerce,23800,0.093
+2025-05-14,Nvidia,Semiconductors,46753,0.064
+2025-05-14,Google,Technology,30633,0.062
+2025-05-15,Apple Store,E-commerce,56159,-0.063
+2025-05-15,Samsung Mobile,Marketplace,68891,-0.073
+2025-05-15,Tesla Motors,Electric Vehicles,74260,0.062
+2025-05-15,Amazon,E-commerce,11490,-0.019
+2025-05-15,Nvidia,Semiconductors,45469,0.014
+2025-05-15,Google,Technology,14957,-0.059
+2025-05-16,Apple Store,E-commerce,65618,-0.052
+2025-05-16,Samsung Mobile,Marketplace,63075,0.123
+2025-05-16,Tesla Motors,Electric Vehicles,52239,0.055
+2025-05-16,Amazon,E-commerce,6077,0.061
+2025-05-16,Nvidia,Semiconductors,29339,0.15
+2025-05-16,Google,Technology,28565,0.023
+2025-05-17,Apple Store,E-commerce,10359,0.187
+2025-05-17,Samsung Mobile,Marketplace,77653,0.0
+2025-05-17,Tesla Motors,Electric Vehicles,55603,0.139
+2025-05-17,Amazon,E-commerce,47477,-0.097
+2025-05-17,Nvidia,Semiconductors,75256,-0.001
+2025-05-17,Google,Technology,8128,0.079
+2025-05-18,Apple Store,E-commerce,9174,0.036
+2025-05-18,Samsung Mobile,Marketplace,66153,-0.09
+2025-05-18,Tesla Motors,Electric Vehicles,7700,0.075
+2025-05-18,Amazon,E-commerce,58024,-0.062
+2025-05-18,Nvidia,Semiconductors,48252,0.025
+2025-05-18,Google,Technology,25526,0.003
+2025-05-19,Apple Store,E-commerce,10808,0.125
+2025-05-19,Samsung Mobile,Marketplace,29684,-0.017
+2025-05-19,Tesla Motors,Electric Vehicles,9521,-0.081
+2025-05-19,Amazon,E-commerce,15241,-0.034
+2025-05-19,Nvidia,Semiconductors,45342,0.193
+2025-05-19,Google,Technology,59698,-0.081
+2025-05-20,Apple Store,E-commerce,62579,0.007
+2025-05-20,Samsung Mobile,Marketplace,7010,-0.002
+2025-05-20,Tesla Motors,Electric Vehicles,59074,0.18
+2025-05-20,Amazon,E-commerce,58028,0.02
+2025-05-20,Nvidia,Semiconductors,36253,0.092
+2025-05-20,Google,Technology,77118,-0.036
+2025-05-21,Apple Store,E-commerce,39988,0.046
+2025-05-21,Samsung Mobile,Marketplace,55188,0.018
+2025-05-21,Tesla Motors,Electric Vehicles,55231,-0.064
+2025-05-21,Amazon,E-commerce,77614,0.073
+2025-05-21,Nvidia,Semiconductors,33560,-0.041
+2025-05-21,Google,Technology,59484,-0.018
+2025-05-22,Apple Store,E-commerce,15516,-0.022
+2025-05-22,Samsung Mobile,Marketplace,74555,-0.076
+2025-05-22,Tesla Motors,Electric Vehicles,13617,0.102
+2025-05-22,Amazon,E-commerce,54292,0.196
+2025-05-22,Nvidia,Semiconductors,14374,-0.001
+2025-05-22,Google,Technology,40580,0.008
+2025-05-23,Apple Store,E-commerce,5217,-0.09
+2025-05-23,Samsung Mobile,Marketplace,52662,0.045
+2025-05-23,Tesla Motors,Electric Vehicles,36124,-0.015
+2025-05-23,Amazon,E-commerce,65948,-0.073
+2025-05-23,Nvidia,Semiconductors,47155,0.055
+2025-05-23,Google,Technology,5722,0.157
+2025-05-24,Apple Store,E-commerce,12571,0.186
+2025-05-24,Samsung Mobile,Marketplace,45772,-0.075
+2025-05-24,Tesla Motors,Electric Vehicles,61701,0.17
+2025-05-24,Amazon,E-commerce,35056,0.167
+2025-05-24,Nvidia,Semiconductors,61553,0.095
+2025-05-24,Google,Technology,70181,0.067
+2025-05-25,Apple Store,E-commerce,34673,0.116
+2025-05-25,Samsung Mobile,Marketplace,50626,-0.067
+2025-05-25,Tesla Motors,Electric Vehicles,23720,0.114
+2025-05-25,Amazon,E-commerce,13881,0.097
+2025-05-25,Nvidia,Semiconductors,28016,0.011
+2025-05-25,Google,Technology,47660,-0.071
+2025-05-26,Apple Store,E-commerce,62739,-0.054
+2025-05-26,Samsung Mobile,Marketplace,43883,0.04
+2025-05-26,Tesla Motors,Electric Vehicles,11024,-0.044
+2025-05-26,Amazon,E-commerce,74606,0.038
+2025-05-26,Nvidia,Semiconductors,18172,-0.065
+2025-05-26,Google,Technology,61467,-0.088
+2025-05-27,Apple Store,E-commerce,38620,0.017
+2025-05-27,Samsung Mobile,Marketplace,26793,0.133
+2025-05-27,Tesla Motors,Electric Vehicles,17320,0.017
+2025-05-27,Amazon,E-commerce,34890,0.062
+2025-05-27,Nvidia,Semiconductors,13347,0.19
+2025-05-27,Google,Technology,21675,0.035
+2025-05-28,Apple Store,E-commerce,73253,0.126
+2025-05-28,Samsung Mobile,Marketplace,15686,0.195
+2025-05-28,Tesla Motors,Electric Vehicles,32736,0.03
+2025-05-28,Amazon,E-commerce,46992,0.044
+2025-05-28,Nvidia,Semiconductors,43317,0.099
+2025-05-28,Google,Technology,13712,-0.02
+2025-05-29,Apple Store,E-commerce,71406,-0.079
+2025-05-29,Samsung Mobile,Marketplace,24584,0.106
+2025-05-29,Tesla Motors,Electric Vehicles,30505,0.182
+2025-05-29,Amazon,E-commerce,45922,0.076
+2025-05-29,Nvidia,Semiconductors,7773,-0.046
+2025-05-29,Google,Technology,23359,-0.093
+2025-05-30,Apple Store,E-commerce,5806,0.073
+2025-05-30,Samsung Mobile,Marketplace,7794,0.072
+2025-05-30,Tesla Motors,Electric Vehicles,77324,0.084
+2025-05-30,Amazon,E-commerce,10687,-0.032
+2025-05-30,Nvidia,Semiconductors,26185,0.025
+2025-05-30,Google,Technology,15471,0.082
+2025-05-31,Apple Store,E-commerce,11285,0.127
+2025-05-31,Samsung Mobile,Marketplace,59333,0.1
+2025-05-31,Tesla Motors,Electric Vehicles,12485,0.012
+2025-05-31,Amazon,E-commerce,13415,0.109
+2025-05-31,Nvidia,Semiconductors,43947,0.182
+2025-05-31,Google,Technology,43299,-0.047
+2025-06-01,Apple Store,E-commerce,7423,-0.055
+2025-06-01,Samsung Mobile,Marketplace,18846,-0.063
+2025-06-01,Tesla Motors,Electric Vehicles,18343,-0.024
+2025-06-01,Amazon,E-commerce,20209,0.069
+2025-06-01,Nvidia,Semiconductors,37638,0.155
+2025-06-01,Google,Technology,31939,0.06
+2025-06-02,Apple Store,E-commerce,56718,0.037
+2025-06-02,Samsung Mobile,Marketplace,34933,-0.042
+2025-06-02,Tesla Motors,Electric Vehicles,39107,-0.094
+2025-06-02,Amazon,E-commerce,12133,-0.033
+2025-06-02,Nvidia,Semiconductors,36608,-0.044
+2025-06-02,Google,Technology,28918,0.02
+2025-06-03,Apple Store,E-commerce,74459,-0.039
+2025-06-03,Samsung Mobile,Marketplace,15063,0.161
+2025-06-03,Tesla Motors,Electric Vehicles,48089,-0.004
+2025-06-03,Amazon,E-commerce,32286,-0.017
+2025-06-03,Nvidia,Semiconductors,71083,0.006
+2025-06-03,Google,Technology,23787,-0.009
+2025-06-04,Apple Store,E-commerce,45209,-0.025
+2025-06-04,Samsung Mobile,Marketplace,77974,0.126
+2025-06-04,Tesla Motors,Electric Vehicles,35228,-0.093
+2025-06-04,Amazon,E-commerce,6888,0.108
+2025-06-04,Nvidia,Semiconductors,5543,-0.047
+2025-06-04,Google,Technology,23822,0.095
+2025-06-05,Apple Store,E-commerce,33590,0.17
+2025-06-05,Samsung Mobile,Marketplace,44022,0.057
+2025-06-05,Tesla Motors,Electric Vehicles,58557,0.099
+2025-06-05,Amazon,E-commerce,11728,-0.017
+2025-06-05,Nvidia,Semiconductors,55747,-0.011
+2025-06-05,Google,Technology,10499,0.17
+2025-06-06,Apple Store,E-commerce,51539,0.026
+2025-06-06,Samsung Mobile,Marketplace,35766,-0.076
+2025-06-06,Tesla Motors,Electric Vehicles,56165,0.061
+2025-06-06,Amazon,E-commerce,50789,0.025
+2025-06-06,Nvidia,Semiconductors,11310,0.072
+2025-06-06,Google,Technology,51349,0.179
+2025-06-07,Apple Store,E-commerce,42727,0.059
+2025-06-07,Samsung Mobile,Marketplace,40545,0.105
+2025-06-07,Tesla Motors,Electric Vehicles,51357,0.169
+2025-06-07,Amazon,E-commerce,50408,0.112
+2025-06-07,Nvidia,Semiconductors,42046,-0.011
+2025-06-07,Google,Technology,75176,0.014
+2025-06-08,Apple Store,E-commerce,16846,0.178
+2025-06-08,Samsung Mobile,Marketplace,29652,0.09
+2025-06-08,Tesla Motors,Electric Vehicles,35978,0.016
+2025-06-08,Amazon,E-commerce,23807,-0.068
+2025-06-08,Nvidia,Semiconductors,17858,-0.083
+2025-06-08,Google,Technology,46083,-0.084
+2025-06-09,Apple Store,E-commerce,47884,0.058
+2025-06-09,Samsung Mobile,Marketplace,33769,0.111
+2025-06-09,Tesla Motors,Electric Vehicles,12292,0.076
+2025-06-09,Amazon,E-commerce,38498,-0.027
+2025-06-09,Nvidia,Semiconductors,78767,0.121
+2025-06-09,Google,Technology,74775,-0.016
+2025-06-10,Apple Store,E-commerce,42806,0.037
+2025-06-10,Samsung Mobile,Marketplace,33055,-0.038
+2025-06-10,Tesla Motors,Electric Vehicles,39989,0.014
+2025-06-10,Amazon,E-commerce,55373,0.199
+2025-06-10,Nvidia,Semiconductors,26093,-0.088
+2025-06-10,Google,Technology,69978,0.062
+2025-06-11,Apple Store,E-commerce,56157,-0.06
+2025-06-11,Samsung Mobile,Marketplace,41438,0.172
+2025-06-11,Tesla Motors,Electric Vehicles,71023,0.162
+2025-06-11,Amazon,E-commerce,67703,0.085
+2025-06-11,Nvidia,Semiconductors,38379,-0.0
+2025-06-11,Google,Technology,66645,0.038
+2025-06-12,Apple Store,E-commerce,37750,0.072
+2025-06-12,Samsung Mobile,Marketplace,28109,0.031
+2025-06-12,Tesla Motors,Electric Vehicles,32066,-0.099
+2025-06-12,Amazon,E-commerce,13045,0.08
+2025-06-12,Nvidia,Semiconductors,39449,0.171
+2025-06-12,Google,Technology,71091,0.148
+2025-06-13,Apple Store,E-commerce,28680,-0.057
+2025-06-13,Samsung Mobile,Marketplace,73337,0.073
+2025-06-13,Tesla Motors,Electric Vehicles,11577,0.102
+2025-06-13,Amazon,E-commerce,45193,-0.081
+2025-06-13,Nvidia,Semiconductors,15399,-0.0
+2025-06-13,Google,Technology,57482,0.161
+2025-06-14,Apple Store,E-commerce,73726,-0.037
+2025-06-14,Samsung Mobile,Marketplace,39333,0.161
+2025-06-14,Tesla Motors,Electric Vehicles,46118,0.153
+2025-06-14,Amazon,E-commerce,23785,0.159
+2025-06-14,Nvidia,Semiconductors,57472,0.121
+2025-06-14,Google,Technology,8213,0.09
+2025-06-15,Apple Store,E-commerce,73376,0.053
+2025-06-15,Samsung Mobile,Marketplace,44911,-0.073
+2025-06-15,Tesla Motors,Electric Vehicles,63988,0.198
+2025-06-15,Amazon,E-commerce,34756,0.146
+2025-06-15,Nvidia,Semiconductors,76902,0.1
+2025-06-15,Google,Technology,46757,0.176
+2025-06-16,Apple Store,E-commerce,52601,0.194
+2025-06-16,Samsung Mobile,Marketplace,44588,0.045
+2025-06-16,Tesla Motors,Electric Vehicles,46181,0.112
+2025-06-16,Amazon,E-commerce,73950,-0.092
+2025-06-16,Nvidia,Semiconductors,43713,0.016
+2025-06-16,Google,Technology,55680,0.042
+2025-06-17,Apple Store,E-commerce,11986,-0.09
+2025-06-17,Samsung Mobile,Marketplace,48491,0.115
+2025-06-17,Tesla Motors,Electric Vehicles,65292,0.102
+2025-06-17,Amazon,E-commerce,15231,-0.043
+2025-06-17,Nvidia,Semiconductors,51053,0.016
+2025-06-17,Google,Technology,9980,0.027
+2025-06-18,Apple Store,E-commerce,34215,-0.099
+2025-06-18,Samsung Mobile,Marketplace,61968,-0.033
+2025-06-18,Tesla Motors,Electric Vehicles,76063,-0.075
+2025-06-18,Amazon,E-commerce,68882,0.083
+2025-06-18,Nvidia,Semiconductors,17043,0.15
+2025-06-18,Google,Technology,39262,0.068
+2025-06-19,Apple Store,E-commerce,72407,0.104
+2025-06-19,Samsung Mobile,Marketplace,45729,0.041
+2025-06-19,Tesla Motors,Electric Vehicles,45994,-0.07
+2025-06-19,Amazon,E-commerce,79228,0.171
+2025-06-19,Nvidia,Semiconductors,52099,0.124
+2025-06-19,Google,Technology,57959,0.043
+2025-06-20,Apple Store,E-commerce,53166,0.174
+2025-06-20,Samsung Mobile,Marketplace,27720,-0.059
+2025-06-20,Tesla Motors,Electric Vehicles,64136,0.071
+2025-06-20,Amazon,E-commerce,66201,0.052
+2025-06-20,Nvidia,Semiconductors,47938,0.141
+2025-06-20,Google,Technology,61768,0.008
+2025-06-21,Apple Store,E-commerce,45931,-0.056
+2025-06-21,Samsung Mobile,Marketplace,75384,0.003
+2025-06-21,Tesla Motors,Electric Vehicles,26201,0.129
+2025-06-21,Amazon,E-commerce,46886,-0.02
+2025-06-21,Nvidia,Semiconductors,37497,0.197
+2025-06-21,Google,Technology,47195,0.013
+2025-06-22,Apple Store,E-commerce,17959,0.066
+2025-06-22,Samsung Mobile,Marketplace,48647,0.044
+2025-06-22,Tesla Motors,Electric Vehicles,40029,0.193
+2025-06-22,Amazon,E-commerce,75632,0.028
+2025-06-22,Nvidia,Semiconductors,8294,0.191
+2025-06-22,Google,Technology,55556,-0.032
+2025-06-23,Apple Store,E-commerce,24891,0.026
+2025-06-23,Samsung Mobile,Marketplace,20650,0.189
+2025-06-23,Tesla Motors,Electric Vehicles,34285,-0.053
+2025-06-23,Amazon,E-commerce,22787,-0.016
+2025-06-23,Nvidia,Semiconductors,21278,-0.053
+2025-06-23,Google,Technology,14355,0.015
+2025-06-24,Apple Store,E-commerce,65953,0.049
+2025-06-24,Samsung Mobile,Marketplace,15680,0.133
+2025-06-24,Tesla Motors,Electric Vehicles,65854,0.036
+2025-06-24,Amazon,E-commerce,77120,0.099
+2025-06-24,Nvidia,Semiconductors,40317,-0.099
+2025-06-24,Google,Technology,36802,-0.084
+2025-06-25,Apple Store,E-commerce,33916,0.039
+2025-06-25,Samsung Mobile,Marketplace,52938,-0.021
+2025-06-25,Tesla Motors,Electric Vehicles,28312,0.063
+2025-06-25,Amazon,E-commerce,59924,0.05
+2025-06-25,Nvidia,Semiconductors,23007,0.158
+2025-06-25,Google,Technology,13847,0.069
+2025-06-26,Apple Store,E-commerce,60793,0.136
+2025-06-26,Samsung Mobile,Marketplace,47034,0.112
+2025-06-26,Tesla Motors,Electric Vehicles,57019,0.051
+2025-06-26,Amazon,E-commerce,56618,0.052
+2025-06-26,Nvidia,Semiconductors,38960,-0.077
+2025-06-26,Google,Technology,66841,-0.074
+2025-06-27,Apple Store,E-commerce,34926,0.067
+2025-06-27,Samsung Mobile,Marketplace,8832,-0.071
+2025-06-27,Tesla Motors,Electric Vehicles,30328,0.131
+2025-06-27,Amazon,E-commerce,71945,-0.017
+2025-06-27,Nvidia,Semiconductors,46238,0.14
+2025-06-27,Google,Technology,40003,0.104
+2025-06-28,Apple Store,E-commerce,72479,-0.091
+2025-06-28,Samsung Mobile,Marketplace,54667,0.005
+2025-06-28,Tesla Motors,Electric Vehicles,65503,0.157
+2025-06-28,Amazon,E-commerce,58505,-0.035
+2025-06-28,Nvidia,Semiconductors,73694,0.002
+2025-06-28,Google,Technology,62220,-0.036
+2025-06-29,Apple Store,E-commerce,42265,-0.086
+2025-06-29,Samsung Mobile,Marketplace,48210,-0.089
+2025-06-29,Tesla Motors,Electric Vehicles,54274,0.136
+2025-06-29,Amazon,E-commerce,63238,0.038
+2025-06-29,Nvidia,Semiconductors,5828,0.015
+2025-06-29,Google,Technology,60866,-0.091
+2025-06-30,Apple Store,E-commerce,18312,-0.076
+2025-06-30,Samsung Mobile,Marketplace,40609,0.049
+2025-06-30,Tesla Motors,Electric Vehicles,37884,-0.075
+2025-06-30,Amazon,E-commerce,11079,-0.082
+2025-06-30,Nvidia,Semiconductors,26709,-0.051
+2025-06-30,Google,Technology,24690,0.13
+2025-07-01,Apple Store,E-commerce,21946,0.001
+2025-07-01,Samsung Mobile,Marketplace,16348,-0.083
+2025-07-01,Tesla Motors,Electric Vehicles,20048,0.131
+2025-07-01,Amazon,E-commerce,7750,-0.017
+2025-07-01,Nvidia,Semiconductors,31627,0.146
+2025-07-01,Google,Technology,8185,0.193
+2025-07-02,Apple Store,E-commerce,19226,0.067
+2025-07-02,Samsung Mobile,Marketplace,26440,-0.071
+2025-07-02,Tesla Motors,Electric Vehicles,16382,-0.005
+2025-07-02,Amazon,E-commerce,61040,0.171
+2025-07-02,Nvidia,Semiconductors,77778,0.173
+2025-07-02,Google,Technology,18243,0.195
+2025-07-03,Apple Store,E-commerce,53964,0.02
+2025-07-03,Samsung Mobile,Marketplace,56555,0.007
+2025-07-03,Tesla Motors,Electric Vehicles,47682,0.112
+2025-07-03,Amazon,E-commerce,57050,0.073
+2025-07-03,Nvidia,Semiconductors,67789,0.025
+2025-07-03,Google,Technology,41901,-0.074
+2025-07-04,Apple Store,E-commerce,76307,0.107
+2025-07-04,Samsung Mobile,Marketplace,39114,-0.06
+2025-07-04,Tesla Motors,Electric Vehicles,68534,0.169
+2025-07-04,Amazon,E-commerce,57311,0.139
+2025-07-04,Nvidia,Semiconductors,26038,0.087
+2025-07-04,Google,Technology,74895,0.005
+2025-07-05,Apple Store,E-commerce,15504,0.143
+2025-07-05,Samsung Mobile,Marketplace,51820,-0.034
+2025-07-05,Tesla Motors,Electric Vehicles,10740,0.059
+2025-07-05,Amazon,E-commerce,36313,0.028
+2025-07-05,Nvidia,Semiconductors,58435,0.146
+2025-07-05,Google,Technology,47521,0.035
+2025-07-06,Apple Store,E-commerce,8279,0.182
+2025-07-06,Samsung Mobile,Marketplace,41841,0.156
+2025-07-06,Tesla Motors,Electric Vehicles,26629,0.18
+2025-07-06,Amazon,E-commerce,24585,0.064
+2025-07-06,Nvidia,Semiconductors,58531,0.137
+2025-07-06,Google,Technology,35208,0.053
+2025-07-07,Apple Store,E-commerce,41378,0.127
+2025-07-07,Samsung Mobile,Marketplace,42106,-0.097
+2025-07-07,Tesla Motors,Electric Vehicles,5680,-0.019
+2025-07-07,Amazon,E-commerce,17861,0.172
+2025-07-07,Nvidia,Semiconductors,57276,0.042
+2025-07-07,Google,Technology,64576,-0.041
+2025-07-08,Apple Store,E-commerce,50689,-0.059
+2025-07-08,Samsung Mobile,Marketplace,19352,0.088
+2025-07-08,Tesla Motors,Electric Vehicles,35961,-0.049
+2025-07-08,Amazon,E-commerce,8348,-0.008
+2025-07-08,Nvidia,Semiconductors,77618,0.199
+2025-07-08,Google,Technology,56391,0.123
+2025-07-09,Apple Store,E-commerce,56673,0.094
+2025-07-09,Samsung Mobile,Marketplace,32886,0.108
+2025-07-09,Tesla Motors,Electric Vehicles,61736,0.17
+2025-07-09,Amazon,E-commerce,8717,-0.082
+2025-07-09,Nvidia,Semiconductors,42981,0.18
+2025-07-09,Google,Technology,66516,0.014
+2025-07-10,Apple Store,E-commerce,14546,0.196
+2025-07-10,Samsung Mobile,Marketplace,31433,-0.096
+2025-07-10,Tesla Motors,Electric Vehicles,67615,0.077
+2025-07-10,Amazon,E-commerce,73017,-0.075
+2025-07-10,Nvidia,Semiconductors,17987,0.102
+2025-07-10,Google,Technology,15805,0.064
+2025-07-11,Apple Store,E-commerce,78249,-0.048
+2025-07-11,Samsung Mobile,Marketplace,64319,0.021
+2025-07-11,Tesla Motors,Electric Vehicles,41238,0.167
+2025-07-11,Amazon,E-commerce,34596,0.082
+2025-07-11,Nvidia,Semiconductors,53496,0.008
+2025-07-11,Google,Technology,61454,0.016
+2025-07-12,Apple Store,E-commerce,53836,-0.034
+2025-07-12,Samsung Mobile,Marketplace,74394,0.056
+2025-07-12,Tesla Motors,Electric Vehicles,39897,0.072
+2025-07-12,Amazon,E-commerce,73610,0.102
+2025-07-12,Nvidia,Semiconductors,51856,0.157
+2025-07-12,Google,Technology,74309,-0.027
+2025-07-13,Apple Store,E-commerce,54202,0.08
+2025-07-13,Samsung Mobile,Marketplace,49983,0.037
+2025-07-13,Tesla Motors,Electric Vehicles,73420,-0.05
+2025-07-13,Amazon,E-commerce,27512,0.102
+2025-07-13,Nvidia,Semiconductors,23512,0.103
+2025-07-13,Google,Technology,64091,0.071
+2025-07-14,Apple Store,E-commerce,23979,-0.056
+2025-07-14,Samsung Mobile,Marketplace,22211,0.137
+2025-07-14,Tesla Motors,Electric Vehicles,69350,0.096
+2025-07-14,Amazon,E-commerce,35873,-0.041
+2025-07-14,Nvidia,Semiconductors,57832,0.054
+2025-07-14,Google,Technology,29614,0.179
+2025-07-15,Apple Store,E-commerce,24337,0.196
+2025-07-15,Samsung Mobile,Marketplace,50581,-0.013
+2025-07-15,Tesla Motors,Electric Vehicles,36572,0.023
+2025-07-15,Amazon,E-commerce,75373,0.183
+2025-07-15,Nvidia,Semiconductors,13682,0.001
+2025-07-15,Google,Technology,10812,-0.023
+2025-07-16,Apple Store,E-commerce,76658,0.151
+2025-07-16,Samsung Mobile,Marketplace,60745,-0.043
+2025-07-16,Tesla Motors,Electric Vehicles,53699,0.034
+2025-07-16,Amazon,E-commerce,67922,0.154
+2025-07-16,Nvidia,Semiconductors,22236,-0.041
+2025-07-16,Google,Technology,10648,0.021
+2025-07-17,Apple Store,E-commerce,14402,0.029
+2025-07-17,Samsung Mobile,Marketplace,71715,-0.053
+2025-07-17,Tesla Motors,Electric Vehicles,19112,0.187
+2025-07-17,Amazon,E-commerce,36155,-0.083
+2025-07-17,Nvidia,Semiconductors,56567,0.116
+2025-07-17,Google,Technology,62756,-0.034
+2025-07-18,Apple Store,E-commerce,5064,0.042
+2025-07-18,Samsung Mobile,Marketplace,17224,-0.098
+2025-07-18,Tesla Motors,Electric Vehicles,50346,-0.066
+2025-07-18,Amazon,E-commerce,36680,0.037
+2025-07-18,Nvidia,Semiconductors,13372,-0.035
+2025-07-18,Google,Technology,72334,0.143
+2025-07-19,Apple Store,E-commerce,22214,0.178
+2025-07-19,Samsung Mobile,Marketplace,70460,0.199
+2025-07-19,Tesla Motors,Electric Vehicles,11899,-0.01
+2025-07-19,Amazon,E-commerce,37372,0.025
+2025-07-19,Nvidia,Semiconductors,66820,0.097
+2025-07-19,Google,Technology,64017,0.168
+2025-07-20,Apple Store,E-commerce,37122,0.05
+2025-07-20,Samsung Mobile,Marketplace,30902,0.06
+2025-07-20,Tesla Motors,Electric Vehicles,45278,0.106
+2025-07-20,Amazon,E-commerce,39949,0.023
+2025-07-20,Nvidia,Semiconductors,8798,0.194
+2025-07-20,Google,Technology,14247,0.195
+2025-07-21,Apple Store,E-commerce,67588,0.088
+2025-07-21,Samsung Mobile,Marketplace,33270,-0.012
+2025-07-21,Tesla Motors,Electric Vehicles,77066,-0.01
+2025-07-21,Amazon,E-commerce,60270,-0.099
+2025-07-21,Nvidia,Semiconductors,25545,0.123
+2025-07-21,Google,Technology,77274,0.081
+2025-07-22,Apple Store,E-commerce,48621,0.083
+2025-07-22,Samsung Mobile,Marketplace,47599,-0.059
+2025-07-22,Tesla Motors,Electric Vehicles,62077,0.005
+2025-07-22,Amazon,E-commerce,28469,0.053
+2025-07-22,Nvidia,Semiconductors,49236,0.164
+2025-07-22,Google,Technology,32328,0.07
+2025-07-23,Apple Store,E-commerce,9386,0.176
+2025-07-23,Samsung Mobile,Marketplace,75914,0.118
+2025-07-23,Tesla Motors,Electric Vehicles,39122,0.039
+2025-07-23,Amazon,E-commerce,51948,0.139
+2025-07-23,Nvidia,Semiconductors,12643,0.052
+2025-07-23,Google,Technology,7124,0.029
+2025-07-24,Apple Store,E-commerce,40480,0.097
+2025-07-24,Samsung Mobile,Marketplace,32861,0.127
+2025-07-24,Tesla Motors,Electric Vehicles,38952,0.028
+2025-07-24,Amazon,E-commerce,7132,-0.012
+2025-07-24,Nvidia,Semiconductors,16476,0.154
+2025-07-24,Google,Technology,38619,0.106
+2025-07-25,Apple Store,E-commerce,16349,-0.062
+2025-07-25,Samsung Mobile,Marketplace,42012,0.002
+2025-07-25,Tesla Motors,Electric Vehicles,40393,0.123
+2025-07-25,Amazon,E-commerce,59072,0.092
+2025-07-25,Nvidia,Semiconductors,6032,0.054
+2025-07-25,Google,Technology,23591,0.176
+2025-07-26,Apple Store,E-commerce,59446,0.169
+2025-07-26,Samsung Mobile,Marketplace,72403,-0.041
+2025-07-26,Tesla Motors,Electric Vehicles,12354,-0.007
+2025-07-26,Amazon,E-commerce,69374,0.017
+2025-07-26,Nvidia,Semiconductors,29271,-0.068
+2025-07-26,Google,Technology,57302,0.008
+2025-07-27,Apple Store,E-commerce,25566,0.155
+2025-07-27,Samsung Mobile,Marketplace,63187,0.141
+2025-07-27,Tesla Motors,Electric Vehicles,38632,0.093
+2025-07-27,Amazon,E-commerce,55383,-0.024
+2025-07-27,Nvidia,Semiconductors,66485,-0.057
+2025-07-27,Google,Technology,71382,0.115
+2025-07-28,Apple Store,E-commerce,73918,0.192
+2025-07-28,Samsung Mobile,Marketplace,43059,0.071
+2025-07-28,Tesla Motors,Electric Vehicles,60428,0.116
+2025-07-28,Amazon,E-commerce,46274,0.0
+2025-07-28,Nvidia,Semiconductors,56278,0.167
+2025-07-28,Google,Technology,45424,-0.059
+2025-07-29,Apple Store,E-commerce,76076,-0.041
+2025-07-29,Samsung Mobile,Marketplace,17729,0.085
+2025-07-29,Tesla Motors,Electric Vehicles,38557,0.129
+2025-07-29,Amazon,E-commerce,78995,0.168
+2025-07-29,Nvidia,Semiconductors,27255,-0.044
+2025-07-29,Google,Technology,35852,0.057
+2025-07-30,Apple Store,E-commerce,12957,-0.014
+2025-07-30,Samsung Mobile,Marketplace,41904,-0.035
+2025-07-30,Tesla Motors,Electric Vehicles,26892,0.025
+2025-07-30,Amazon,E-commerce,54321,0.057
+2025-07-30,Nvidia,Semiconductors,50733,0.013
+2025-07-30,Google,Technology,65098,0.118
+2025-07-31,Apple Store,E-commerce,5364,0.193
+2025-07-31,Samsung Mobile,Marketplace,20080,-0.067
+2025-07-31,Tesla Motors,Electric Vehicles,43214,0.038
+2025-07-31,Amazon,E-commerce,69758,-0.061
+2025-07-31,Nvidia,Semiconductors,47625,0.028
+2025-07-31,Google,Technology,72835,-0.024
+2025-08-01,Apple Store,E-commerce,52381,-0.005
+2025-08-01,Samsung Mobile,Marketplace,48914,0.057
+2025-08-01,Tesla Motors,Electric Vehicles,72380,0.191
+2025-08-01,Amazon,E-commerce,45816,0.153
+2025-08-01,Nvidia,Semiconductors,28836,0.108
+2025-08-01,Google,Technology,53533,0.189
+2025-08-02,Apple Store,E-commerce,53299,-0.07
+2025-08-02,Samsung Mobile,Marketplace,13206,-0.015
+2025-08-02,Tesla Motors,Electric Vehicles,19660,0.151
+2025-08-02,Amazon,E-commerce,38266,0.193
+2025-08-02,Nvidia,Semiconductors,26680,-0.052
+2025-08-02,Google,Technology,77874,-0.044
+2025-08-03,Apple Store,E-commerce,45062,-0.058
+2025-08-03,Samsung Mobile,Marketplace,36939,0.001
+2025-08-03,Tesla Motors,Electric Vehicles,24720,0.037
+2025-08-03,Amazon,E-commerce,44177,-0.023
+2025-08-03,Nvidia,Semiconductors,44660,0.181
+2025-08-03,Google,Technology,44828,0.086
+2025-08-04,Apple Store,E-commerce,7637,-0.082
+2025-08-04,Samsung Mobile,Marketplace,68689,-0.012
+2025-08-04,Tesla Motors,Electric Vehicles,44628,0.127
+2025-08-04,Amazon,E-commerce,10082,-0.064
+2025-08-04,Nvidia,Semiconductors,51972,0.02
+2025-08-04,Google,Technology,53916,0.084
+2025-08-05,Apple Store,E-commerce,76715,0.046
+2025-08-05,Samsung Mobile,Marketplace,66765,0.103
+2025-08-05,Tesla Motors,Electric Vehicles,7059,0.149
+2025-08-05,Amazon,E-commerce,7898,-0.034
+2025-08-05,Nvidia,Semiconductors,75461,0.06
+2025-08-05,Google,Technology,49467,0.08
+2025-08-06,Apple Store,E-commerce,42635,-0.071
+2025-08-06,Samsung Mobile,Marketplace,73836,0.017
+2025-08-06,Tesla Motors,Electric Vehicles,10325,0.025
+2025-08-06,Amazon,E-commerce,68833,0.027
+2025-08-06,Nvidia,Semiconductors,55067,0.113
+2025-08-06,Google,Technology,15764,-0.017
+2025-08-07,Apple Store,E-commerce,38915,-0.001
+2025-08-07,Samsung Mobile,Marketplace,26283,-0.084
+2025-08-07,Tesla Motors,Electric Vehicles,76510,-0.098
+2025-08-07,Amazon,E-commerce,30163,0.122
+2025-08-07,Nvidia,Semiconductors,58235,-0.051
+2025-08-07,Google,Technology,5146,-0.025
+2025-08-08,Apple Store,E-commerce,58202,-0.06
+2025-08-08,Samsung Mobile,Marketplace,33631,-0.035
+2025-08-08,Tesla Motors,Electric Vehicles,35652,0.075
+2025-08-08,Amazon,E-commerce,15706,-0.094
+2025-08-08,Nvidia,Semiconductors,16642,-0.07
+2025-08-08,Google,Technology,50065,-0.088
+2025-08-09,Apple Store,E-commerce,7355,-0.01
+2025-08-09,Samsung Mobile,Marketplace,74192,0.184
+2025-08-09,Tesla Motors,Electric Vehicles,71106,-0.042
+2025-08-09,Amazon,E-commerce,35397,0.118
+2025-08-09,Nvidia,Semiconductors,48084,0.139
+2025-08-09,Google,Technology,54056,-0.072
+2025-08-10,Apple Store,E-commerce,70631,-0.06
+2025-08-10,Samsung Mobile,Marketplace,70862,0.022
+2025-08-10,Tesla Motors,Electric Vehicles,56201,0.165
+2025-08-10,Amazon,E-commerce,65541,-0.058
+2025-08-10,Nvidia,Semiconductors,76202,0.128
+2025-08-10,Google,Technology,76633,-0.025
+2025-08-11,Apple Store,E-commerce,24151,-0.099
+2025-08-11,Samsung Mobile,Marketplace,60660,0.01
+2025-08-11,Tesla Motors,Electric Vehicles,48598,-0.023
+2025-08-11,Amazon,E-commerce,66927,0.163
+2025-08-11,Nvidia,Semiconductors,35066,-0.059
+2025-08-11,Google,Technology,6762,0.019
+2025-08-12,Apple Store,E-commerce,21183,0.159
+2025-08-12,Samsung Mobile,Marketplace,39626,0.022
+2025-08-12,Tesla Motors,Electric Vehicles,51424,0.174
+2025-08-12,Amazon,E-commerce,64759,-0.06
+2025-08-12,Nvidia,Semiconductors,43255,0.133
+2025-08-12,Google,Technology,65798,0.082
+2025-08-13,Apple Store,E-commerce,64780,0.183
+2025-08-13,Samsung Mobile,Marketplace,58990,0.095
+2025-08-13,Tesla Motors,Electric Vehicles,26523,-0.1
+2025-08-13,Amazon,E-commerce,61593,-0.022
+2025-08-13,Nvidia,Semiconductors,6884,0.049
+2025-08-13,Google,Technology,13999,-0.049
+2025-08-14,Apple Store,E-commerce,69029,0.026
+2025-08-14,Samsung Mobile,Marketplace,32767,0.166
+2025-08-14,Tesla Motors,Electric Vehicles,28458,0.121
+2025-08-14,Amazon,E-commerce,48491,0.095
+2025-08-14,Nvidia,Semiconductors,66745,-0.032
+2025-08-14,Google,Technology,16514,0.123
+2025-08-15,Apple Store,E-commerce,11638,0.185
+2025-08-15,Samsung Mobile,Marketplace,44623,0.141
+2025-08-15,Tesla Motors,Electric Vehicles,35016,-0.024
+2025-08-15,Amazon,E-commerce,39771,-0.027
+2025-08-15,Nvidia,Semiconductors,57570,0.181
+2025-08-15,Google,Technology,59850,0.185
+2025-08-16,Apple Store,E-commerce,14852,0.14
+2025-08-16,Samsung Mobile,Marketplace,6586,0.114
+2025-08-16,Tesla Motors,Electric Vehicles,20302,0.189
+2025-08-16,Amazon,E-commerce,19349,0.017
+2025-08-16,Nvidia,Semiconductors,38954,0.13
+2025-08-16,Google,Technology,8037,0.032
+2025-08-17,Apple Store,E-commerce,55564,-0.025
+2025-08-17,Samsung Mobile,Marketplace,64350,0.191
+2025-08-17,Tesla Motors,Electric Vehicles,75701,0.104
+2025-08-17,Amazon,E-commerce,64196,-0.062
+2025-08-17,Nvidia,Semiconductors,35561,0.012
+2025-08-17,Google,Technology,71440,-0.048
+2025-08-18,Apple Store,E-commerce,12999,0.014
+2025-08-18,Samsung Mobile,Marketplace,17941,-0.026
+2025-08-18,Tesla Motors,Electric Vehicles,77015,0.144
+2025-08-18,Amazon,E-commerce,76979,-0.009
+2025-08-18,Nvidia,Semiconductors,20172,0.172
+2025-08-18,Google,Technology,59895,-0.062
+2025-08-19,Apple Store,E-commerce,9402,0.134
+2025-08-19,Samsung Mobile,Marketplace,14484,-0.061
+2025-08-19,Tesla Motors,Electric Vehicles,37734,-0.039
+2025-08-19,Amazon,E-commerce,23386,0.164
+2025-08-19,Nvidia,Semiconductors,52185,-0.008
+2025-08-19,Google,Technology,34875,0.093
+2025-08-20,Apple Store,E-commerce,36646,-0.089
+2025-08-20,Samsung Mobile,Marketplace,17485,0.017
+2025-08-20,Tesla Motors,Electric Vehicles,26688,0.126
+2025-08-20,Amazon,E-commerce,27937,0.11
+2025-08-20,Nvidia,Semiconductors,7789,0.121
+2025-08-20,Google,Technology,69167,0.095
+2025-08-21,Apple Store,E-commerce,70648,0.013
+2025-08-21,Samsung Mobile,Marketplace,75036,0.004
+2025-08-21,Tesla Motors,Electric Vehicles,51594,0.178
+2025-08-21,Amazon,E-commerce,55540,0.1
+2025-08-21,Nvidia,Semiconductors,30210,-0.07
+2025-08-21,Google,Technology,54453,-0.029
+2025-08-22,Apple Store,E-commerce,26743,0.098
+2025-08-22,Samsung Mobile,Marketplace,36842,-0.069
+2025-08-22,Tesla Motors,Electric Vehicles,35687,0.106
+2025-08-22,Amazon,E-commerce,16182,0.16
+2025-08-22,Nvidia,Semiconductors,54719,-0.05
+2025-08-22,Google,Technology,32716,0.156
+2025-08-23,Apple Store,E-commerce,25622,0.087
+2025-08-23,Samsung Mobile,Marketplace,55890,-0.012
+2025-08-23,Tesla Motors,Electric Vehicles,47263,0.029
+2025-08-23,Amazon,E-commerce,5697,0.158
+2025-08-23,Nvidia,Semiconductors,11124,-0.05
+2025-08-23,Google,Technology,32453,0.183
+2025-08-24,Apple Store,E-commerce,17674,-0.009
+2025-08-24,Samsung Mobile,Marketplace,40940,-0.02
+2025-08-24,Tesla Motors,Electric Vehicles,25866,-0.037
+2025-08-24,Amazon,E-commerce,14427,0.126
+2025-08-24,Nvidia,Semiconductors,46622,-0.071
+2025-08-24,Google,Technology,75769,0.158
+2025-08-25,Apple Store,E-commerce,37071,-0.031
+2025-08-25,Samsung Mobile,Marketplace,61726,0.17
+2025-08-25,Tesla Motors,Electric Vehicles,19394,0.128
+2025-08-25,Amazon,E-commerce,36943,0.128
+2025-08-25,Nvidia,Semiconductors,72378,0.131
+2025-08-25,Google,Technology,53565,0.052
+2025-08-26,Apple Store,E-commerce,65743,0.087
+2025-08-26,Samsung Mobile,Marketplace,52864,-0.079
+2025-08-26,Tesla Motors,Electric Vehicles,8920,0.047
+2025-08-26,Amazon,E-commerce,58072,0.032
+2025-08-26,Nvidia,Semiconductors,54407,0.04
+2025-08-26,Google,Technology,28973,0.128
+2025-08-27,Apple Store,E-commerce,46773,0.15
+2025-08-27,Samsung Mobile,Marketplace,70690,-0.019
+2025-08-27,Tesla Motors,Electric Vehicles,20465,-0.081
+2025-08-27,Amazon,E-commerce,43514,-0.096
+2025-08-27,Nvidia,Semiconductors,23642,-0.096
+2025-08-27,Google,Technology,33752,0.059
+2025-08-28,Apple Store,E-commerce,12724,-0.003
+2025-08-28,Samsung Mobile,Marketplace,69840,-0.015
+2025-08-28,Tesla Motors,Electric Vehicles,68327,-0.039
+2025-08-28,Amazon,E-commerce,5567,0.133
+2025-08-28,Nvidia,Semiconductors,69420,0.173
+2025-08-28,Google,Technology,71208,0.195
+2025-08-29,Apple Store,E-commerce,65205,-0.046
+2025-08-29,Samsung Mobile,Marketplace,78959,0.13
+2025-08-29,Tesla Motors,Electric Vehicles,25387,0.022
+2025-08-29,Amazon,E-commerce,11136,-0.058
+2025-08-29,Nvidia,Semiconductors,71389,0.072
+2025-08-29,Google,Technology,38507,0.117
+2025-08-30,Apple Store,E-commerce,44847,0.009
+2025-08-30,Samsung Mobile,Marketplace,36631,0.08
+2025-08-30,Tesla Motors,Electric Vehicles,13678,0.145
+2025-08-30,Amazon,E-commerce,70590,-0.049
+2025-08-30,Nvidia,Semiconductors,27617,-0.069
+2025-08-30,Google,Technology,77975,0.099
+2025-08-31,Apple Store,E-commerce,30758,0.013
+2025-08-31,Samsung Mobile,Marketplace,36102,0.057
+2025-08-31,Tesla Motors,Electric Vehicles,17813,-0.096
+2025-08-31,Amazon,E-commerce,75965,0.134
+2025-08-31,Nvidia,Semiconductors,11409,-0.014
+2025-08-31,Google,Technology,50369,0.124
+2025-09-01,Apple Store,E-commerce,19281,0.013
+2025-09-01,Samsung Mobile,Marketplace,5857,0.092
+2025-09-01,Tesla Motors,Electric Vehicles,55633,0.087
+2025-09-01,Amazon,E-commerce,54635,-0.017
+2025-09-01,Nvidia,Semiconductors,35323,-0.079
+2025-09-01,Google,Technology,18518,0.055
+2025-09-02,Apple Store,E-commerce,62610,-0.059
+2025-09-02,Samsung Mobile,Marketplace,45607,-0.017
+2025-09-02,Tesla Motors,Electric Vehicles,12331,0.195
+2025-09-02,Amazon,E-commerce,55997,0.064
+2025-09-02,Nvidia,Semiconductors,15626,-0.065
+2025-09-02,Google,Technology,69108,0.136
+2025-09-03,Apple Store,E-commerce,79041,-0.01
+2025-09-03,Samsung Mobile,Marketplace,49651,-0.045
+2025-09-03,Tesla Motors,Electric Vehicles,38133,0.148
+2025-09-03,Amazon,E-commerce,60670,0.091
+2025-09-03,Nvidia,Semiconductors,49508,0.187
+2025-09-03,Google,Technology,74860,0.015
+2025-09-04,Apple Store,E-commerce,50772,0.174
+2025-09-04,Samsung Mobile,Marketplace,5114,0.146
+2025-09-04,Tesla Motors,Electric Vehicles,72532,0.152
+2025-09-04,Amazon,E-commerce,34069,0.165
+2025-09-04,Nvidia,Semiconductors,57879,0.165
+2025-09-04,Google,Technology,36152,-0.034
+2025-09-05,Apple Store,E-commerce,44954,0.035
+2025-09-05,Samsung Mobile,Marketplace,75587,-0.071
+2025-09-05,Tesla Motors,Electric Vehicles,74965,0.108
+2025-09-05,Amazon,E-commerce,39995,0.087
+2025-09-05,Nvidia,Semiconductors,65847,0.176
+2025-09-05,Google,Technology,64274,0.15
+2025-09-06,Apple Store,E-commerce,73083,0.017
+2025-09-06,Samsung Mobile,Marketplace,65164,-0.059
+2025-09-06,Tesla Motors,Electric Vehicles,16288,0.052
+2025-09-06,Amazon,E-commerce,33493,-0.032
+2025-09-06,Nvidia,Semiconductors,22301,-0.0
+2025-09-06,Google,Technology,20671,0.012
+2025-09-07,Apple Store,E-commerce,62111,0.126
+2025-09-07,Samsung Mobile,Marketplace,44864,-0.083
+2025-09-07,Tesla Motors,Electric Vehicles,21835,0.153
+2025-09-07,Amazon,E-commerce,22122,0.005
+2025-09-07,Nvidia,Semiconductors,78957,0.043
+2025-09-07,Google,Technology,24204,0.135
+2025-09-08,Apple Store,E-commerce,55075,-0.052
+2025-09-08,Samsung Mobile,Marketplace,19012,0.042
+2025-09-08,Tesla Motors,Electric Vehicles,44193,0.105
+2025-09-08,Amazon,E-commerce,8410,0.016
+2025-09-08,Nvidia,Semiconductors,21958,0.158
+2025-09-08,Google,Technology,70586,0.054
+2025-09-09,Apple Store,E-commerce,23009,-0.026
+2025-09-09,Samsung Mobile,Marketplace,79871,0.054
+2025-09-09,Tesla Motors,Electric Vehicles,15805,0.04
+2025-09-09,Amazon,E-commerce,12854,0.018
+2025-09-09,Nvidia,Semiconductors,39766,0.133
+2025-09-09,Google,Technology,16040,0.134
+2025-09-10,Apple Store,E-commerce,38418,0.034
+2025-09-10,Samsung Mobile,Marketplace,21411,-0.071
+2025-09-10,Tesla Motors,Electric Vehicles,30888,0.03
+2025-09-10,Amazon,E-commerce,37435,0.037
+2025-09-10,Nvidia,Semiconductors,13102,0.02
+2025-09-10,Google,Technology,57375,0.103
+2025-09-11,Apple Store,E-commerce,44077,-0.035
+2025-09-11,Samsung Mobile,Marketplace,34313,-0.06
+2025-09-11,Tesla Motors,Electric Vehicles,65481,0.024
+2025-09-11,Amazon,E-commerce,69655,-0.009
+2025-09-11,Nvidia,Semiconductors,42407,0.067
+2025-09-11,Google,Technology,20295,0.066
+2025-09-12,Apple Store,E-commerce,60086,-0.085
+2025-09-12,Samsung Mobile,Marketplace,71960,-0.067
+2025-09-12,Tesla Motors,Electric Vehicles,59071,0.146
+2025-09-12,Amazon,E-commerce,65500,0.169
+2025-09-12,Nvidia,Semiconductors,77698,0.172
+2025-09-12,Google,Technology,72773,0.17
+2025-09-13,Apple Store,E-commerce,11214,-0.034
+2025-09-13,Samsung Mobile,Marketplace,78146,0.13
+2025-09-13,Tesla Motors,Electric Vehicles,65358,0.032
+2025-09-13,Amazon,E-commerce,20919,-0.019
+2025-09-13,Nvidia,Semiconductors,51374,0.024
+2025-09-13,Google,Technology,15692,0.054
+2025-09-14,Apple Store,E-commerce,40735,-0.087
+2025-09-14,Samsung Mobile,Marketplace,75526,0.158
+2025-09-14,Tesla Motors,Electric Vehicles,21023,0.09
+2025-09-14,Amazon,E-commerce,78970,0.029
+2025-09-14,Nvidia,Semiconductors,74142,-0.095
+2025-09-14,Google,Technology,72755,0.159
+2025-09-15,Apple Store,E-commerce,22876,-0.06
+2025-09-15,Samsung Mobile,Marketplace,58433,0.175
+2025-09-15,Tesla Motors,Electric Vehicles,17045,-0.015
+2025-09-15,Amazon,E-commerce,74441,-0.012
+2025-09-15,Nvidia,Semiconductors,19850,0.09
+2025-09-15,Google,Technology,67633,0.021
+2025-09-16,Apple Store,E-commerce,6444,0.002
+2025-09-16,Samsung Mobile,Marketplace,66275,-0.096
+2025-09-16,Tesla Motors,Electric Vehicles,28723,-0.0
+2025-09-16,Amazon,E-commerce,61317,0.064
+2025-09-16,Nvidia,Semiconductors,54729,-0.02
+2025-09-16,Google,Technology,75024,0.022
+2025-09-17,Apple Store,E-commerce,53662,0.124
+2025-09-17,Samsung Mobile,Marketplace,10368,-0.012
+2025-09-17,Tesla Motors,Electric Vehicles,30487,-0.093
+2025-09-17,Amazon,E-commerce,27288,0.136
+2025-09-17,Nvidia,Semiconductors,35392,0.006
+2025-09-17,Google,Technology,59865,0.013
+2025-09-18,Apple Store,E-commerce,76040,0.022
+2025-09-18,Samsung Mobile,Marketplace,27182,-0.1
+2025-09-18,Tesla Motors,Electric Vehicles,56977,0.171
+2025-09-18,Amazon,E-commerce,59264,0.162
+2025-09-18,Nvidia,Semiconductors,78476,0.079
+2025-09-18,Google,Technology,20408,-0.067
+2025-09-19,Apple Store,E-commerce,66708,0.147
+2025-09-19,Samsung Mobile,Marketplace,10604,0.007
+2025-09-19,Tesla Motors,Electric Vehicles,39162,-0.032
+2025-09-19,Amazon,E-commerce,10683,0.046
+2025-09-19,Nvidia,Semiconductors,76716,-0.002
+2025-09-19,Google,Technology,64555,0.124
+2025-09-20,Apple Store,E-commerce,79003,0.055
+2025-09-20,Samsung Mobile,Marketplace,31032,0.175
+2025-09-20,Tesla Motors,Electric Vehicles,71318,-0.034
+2025-09-20,Amazon,E-commerce,61921,0.098
+2025-09-20,Nvidia,Semiconductors,52203,0.128
+2025-09-20,Google,Technology,75509,0.059
+2025-09-21,Apple Store,E-commerce,63348,0.061
+2025-09-21,Samsung Mobile,Marketplace,69725,0.014
+2025-09-21,Tesla Motors,Electric Vehicles,21433,-0.098
+2025-09-21,Amazon,E-commerce,77059,-0.068
+2025-09-21,Nvidia,Semiconductors,63914,-0.094
+2025-09-21,Google,Technology,40941,0.172
+2025-09-22,Apple Store,E-commerce,33996,0.096
+2025-09-22,Samsung Mobile,Marketplace,18254,0.034
+2025-09-22,Tesla Motors,Electric Vehicles,62868,0.085
+2025-09-22,Amazon,E-commerce,58174,0.132
+2025-09-22,Nvidia,Semiconductors,21521,0.175
+2025-09-22,Google,Technology,55603,-0.0
+2025-09-23,Apple Store,E-commerce,14102,-0.004
+2025-09-23,Samsung Mobile,Marketplace,76282,-0.061
+2025-09-23,Tesla Motors,Electric Vehicles,22811,0.063
+2025-09-23,Amazon,E-commerce,43439,0.034
+2025-09-23,Nvidia,Semiconductors,50856,0.158
+2025-09-23,Google,Technology,23108,-0.078
+2025-09-24,Apple Store,E-commerce,52413,-0.033
+2025-09-24,Samsung Mobile,Marketplace,52601,0.136
+2025-09-24,Tesla Motors,Electric Vehicles,5782,-0.095
+2025-09-24,Amazon,E-commerce,30419,-0.02
+2025-09-24,Nvidia,Semiconductors,25017,0.029
+2025-09-24,Google,Technology,16992,-0.059
+2025-09-25,Apple Store,E-commerce,8372,0.075
+2025-09-25,Samsung Mobile,Marketplace,61447,-0.009
+2025-09-25,Tesla Motors,Electric Vehicles,71726,-0.095
+2025-09-25,Amazon,E-commerce,41005,0.042
+2025-09-25,Nvidia,Semiconductors,18563,0.12
+2025-09-25,Google,Technology,10958,0.068
+2025-09-26,Apple Store,E-commerce,32866,0.027
+2025-09-26,Samsung Mobile,Marketplace,52621,0.11
+2025-09-26,Tesla Motors,Electric Vehicles,23664,0.105
+2025-09-26,Amazon,E-commerce,26144,-0.073
+2025-09-26,Nvidia,Semiconductors,31751,-0.07
+2025-09-26,Google,Technology,10362,0.021
+2025-09-27,Apple Store,E-commerce,61201,-0.075
+2025-09-27,Samsung Mobile,Marketplace,67068,-0.092
+2025-09-27,Tesla Motors,Electric Vehicles,40410,0.177
+2025-09-27,Amazon,E-commerce,79243,0.087
+2025-09-27,Nvidia,Semiconductors,39924,0.062
+2025-09-27,Google,Technology,15197,-0.018
+2025-09-28,Apple Store,E-commerce,15369,-0.064
+2025-09-28,Samsung Mobile,Marketplace,6933,0.072
+2025-09-28,Tesla Motors,Electric Vehicles,22373,0.085
+2025-09-28,Amazon,E-commerce,55532,0.02
+2025-09-28,Nvidia,Semiconductors,8409,0.175
+2025-09-28,Google,Technology,69042,0.144
+2025-09-29,Apple Store,E-commerce,11184,0.196
+2025-09-29,Samsung Mobile,Marketplace,8712,0.006
+2025-09-29,Tesla Motors,Electric Vehicles,34931,0.041
+2025-09-29,Amazon,E-commerce,46753,0.164
+2025-09-29,Nvidia,Semiconductors,42694,0.02
+2025-09-29,Google,Technology,25021,0.086
+2025-09-30,Apple Store,E-commerce,41688,-0.01
+2025-09-30,Samsung Mobile,Marketplace,24652,-0.038
+2025-09-30,Tesla Motors,Electric Vehicles,62602,-0.093
+2025-09-30,Amazon,E-commerce,49905,0.128
+2025-09-30,Nvidia,Semiconductors,10894,0.195
+2025-09-30,Google,Technology,73930,0.079
+2025-10-01,Apple Store,E-commerce,11202,-0.003
+2025-10-01,Samsung Mobile,Marketplace,18078,0.155
+2025-10-01,Tesla Motors,Electric Vehicles,8992,0.038
+2025-10-01,Amazon,E-commerce,49110,0.141
+2025-10-01,Nvidia,Semiconductors,15357,0.184
+2025-10-01,Google,Technology,36035,0.198
+2025-10-02,Apple Store,E-commerce,32718,-0.032
+2025-10-02,Samsung Mobile,Marketplace,50025,0.071
+2025-10-02,Tesla Motors,Electric Vehicles,58520,-0.016
+2025-10-02,Amazon,E-commerce,71250,-0.078
+2025-10-02,Nvidia,Semiconductors,68515,0.006
+2025-10-02,Google,Technology,40660,-0.079
+2025-10-03,Apple Store,E-commerce,42757,0.148
+2025-10-03,Samsung Mobile,Marketplace,26734,-0.03
+2025-10-03,Tesla Motors,Electric Vehicles,35617,-0.046
+2025-10-03,Amazon,E-commerce,79269,-0.007
+2025-10-03,Nvidia,Semiconductors,67828,-0.069
+2025-10-03,Google,Technology,25224,0.071
+2025-10-04,Apple Store,E-commerce,61312,-0.043
+2025-10-04,Samsung Mobile,Marketplace,67397,0.019
+2025-10-04,Tesla Motors,Electric Vehicles,38120,0.132
+2025-10-04,Amazon,E-commerce,9708,-0.084
+2025-10-04,Nvidia,Semiconductors,77328,-0.068
+2025-10-04,Google,Technology,75814,0.009
+2025-10-05,Apple Store,E-commerce,47621,0.097
+2025-10-05,Samsung Mobile,Marketplace,24226,0.19
+2025-10-05,Tesla Motors,Electric Vehicles,30755,-0.077
+2025-10-05,Amazon,E-commerce,7849,0.029
+2025-10-05,Nvidia,Semiconductors,7688,-0.038
+2025-10-05,Google,Technology,72741,0.029
+2025-10-06,Apple Store,E-commerce,38689,0.118
+2025-10-06,Samsung Mobile,Marketplace,5275,0.172
+2025-10-06,Tesla Motors,Electric Vehicles,18520,0.022
+2025-10-06,Amazon,E-commerce,49857,0.005
+2025-10-06,Nvidia,Semiconductors,21101,0.184
+2025-10-06,Google,Technology,30836,0.159
+2025-10-07,Apple Store,E-commerce,78286,0.065
+2025-10-07,Samsung Mobile,Marketplace,47306,0.062
+2025-10-07,Tesla Motors,Electric Vehicles,63883,0.01
+2025-10-07,Amazon,E-commerce,20527,0.115
+2025-10-07,Nvidia,Semiconductors,19552,-0.055
+2025-10-07,Google,Technology,14854,-0.033
+2025-10-08,Apple Store,E-commerce,18762,0.148
+2025-10-08,Samsung Mobile,Marketplace,79268,0.034
+2025-10-08,Tesla Motors,Electric Vehicles,22332,0.052
+2025-10-08,Amazon,E-commerce,66088,0.016
+2025-10-08,Nvidia,Semiconductors,68343,0.008
+2025-10-08,Google,Technology,26394,0.094
+2025-10-09,Apple Store,E-commerce,31467,0.099
+2025-10-09,Samsung Mobile,Marketplace,19442,-0.07
+2025-10-09,Tesla Motors,Electric Vehicles,23002,-0.047
+2025-10-09,Amazon,E-commerce,20382,0.006
+2025-10-09,Nvidia,Semiconductors,16872,0.067
+2025-10-09,Google,Technology,38826,0.073
+2025-10-10,Apple Store,E-commerce,42151,0.186
+2025-10-10,Samsung Mobile,Marketplace,49107,0.114
+2025-10-10,Tesla Motors,Electric Vehicles,10086,0.088
+2025-10-10,Amazon,E-commerce,10944,0.098
+2025-10-10,Nvidia,Semiconductors,34063,0.115
+2025-10-10,Google,Technology,47791,0.191
+2025-10-11,Apple Store,E-commerce,47419,0.03
+2025-10-11,Samsung Mobile,Marketplace,23952,0.137
+2025-10-11,Tesla Motors,Electric Vehicles,51427,0.007
+2025-10-11,Amazon,E-commerce,39716,0.182
+2025-10-11,Nvidia,Semiconductors,25118,0.13
+2025-10-11,Google,Technology,6870,0.143
+2025-10-12,Apple Store,E-commerce,79429,0.147
+2025-10-12,Samsung Mobile,Marketplace,8974,-0.033
+2025-10-12,Tesla Motors,Electric Vehicles,65285,0.156
+2025-10-12,Amazon,E-commerce,30622,0.023
+2025-10-12,Nvidia,Semiconductors,13145,-0.011
+2025-10-12,Google,Technology,10592,0.06
+2025-10-13,Apple Store,E-commerce,43675,0.198
+2025-10-13,Samsung Mobile,Marketplace,45198,-0.089
+2025-10-13,Tesla Motors,Electric Vehicles,18506,0.029
+2025-10-13,Amazon,E-commerce,70080,-0.072
+2025-10-13,Nvidia,Semiconductors,73252,0.008
+2025-10-13,Google,Technology,68893,-0.033
+2025-10-14,Apple Store,E-commerce,6937,0.064
+2025-10-14,Samsung Mobile,Marketplace,58513,0.195
+2025-10-14,Tesla Motors,Electric Vehicles,15684,0.177
+2025-10-14,Amazon,E-commerce,57134,0.109
+2025-10-14,Nvidia,Semiconductors,79615,0.19
+2025-10-14,Google,Technology,14635,0.196
+2025-10-15,Apple Store,E-commerce,42033,0.158
+2025-10-15,Samsung Mobile,Marketplace,42928,-0.002
+2025-10-15,Tesla Motors,Electric Vehicles,37465,0.028
+2025-10-15,Amazon,E-commerce,67776,0.088
+2025-10-15,Nvidia,Semiconductors,34480,-0.098
+2025-10-15,Google,Technology,59129,0.175
+2025-10-16,Apple Store,E-commerce,40465,0.153
+2025-10-16,Samsung Mobile,Marketplace,76673,0.051
+2025-10-16,Tesla Motors,Electric Vehicles,67414,-0.029
+2025-10-16,Amazon,E-commerce,20253,0.108
+2025-10-16,Nvidia,Semiconductors,34926,-0.08
+2025-10-16,Google,Technology,19621,0.166
+2025-10-17,Apple Store,E-commerce,60363,0.002
+2025-10-17,Samsung Mobile,Marketplace,5787,0.066
+2025-10-17,Tesla Motors,Electric Vehicles,30048,0.197
+2025-10-17,Amazon,E-commerce,17869,0.101
+2025-10-17,Nvidia,Semiconductors,72687,0.01
+2025-10-17,Google,Technology,77995,0.17
+2025-10-18,Apple Store,E-commerce,35701,0.153
+2025-10-18,Samsung Mobile,Marketplace,64831,0.131
+2025-10-18,Tesla Motors,Electric Vehicles,46106,0.026
+2025-10-18,Amazon,E-commerce,6590,0.008
+2025-10-18,Nvidia,Semiconductors,53883,0.182
+2025-10-18,Google,Technology,54511,-0.048
+2025-10-19,Apple Store,E-commerce,64463,0.089
+2025-10-19,Samsung Mobile,Marketplace,16694,0.131
+2025-10-19,Tesla Motors,Electric Vehicles,14679,0.024
+2025-10-19,Amazon,E-commerce,16053,-0.054
+2025-10-19,Nvidia,Semiconductors,61733,0.051
+2025-10-19,Google,Technology,27536,-0.019
+2025-10-20,Apple Store,E-commerce,24892,-0.026
+2025-10-20,Samsung Mobile,Marketplace,51946,0.189
+2025-10-20,Tesla Motors,Electric Vehicles,23569,-0.074
+2025-10-20,Amazon,E-commerce,14191,0.135
+2025-10-20,Nvidia,Semiconductors,7174,0.115
+2025-10-20,Google,Technology,20268,0.121
+2025-10-21,Apple Store,E-commerce,46695,-0.018
+2025-10-21,Samsung Mobile,Marketplace,67694,0.084
+2025-10-21,Tesla Motors,Electric Vehicles,14379,-0.041
+2025-10-21,Amazon,E-commerce,63648,-0.006
+2025-10-21,Nvidia,Semiconductors,75556,-0.008
+2025-10-21,Google,Technology,13295,-0.008
+2025-10-22,Apple Store,E-commerce,36356,0.008
+2025-10-22,Samsung Mobile,Marketplace,25596,-0.093
+2025-10-22,Tesla Motors,Electric Vehicles,59855,0.178
+2025-10-22,Amazon,E-commerce,18882,-0.04
+2025-10-22,Nvidia,Semiconductors,76235,0.129
+2025-10-22,Google,Technology,51340,0.063
+2025-10-23,Apple Store,E-commerce,51943,-0.036
+2025-10-23,Samsung Mobile,Marketplace,40559,0.1
+2025-10-23,Tesla Motors,Electric Vehicles,11152,-0.042
+2025-10-23,Amazon,E-commerce,31805,0.15
+2025-10-23,Nvidia,Semiconductors,23915,-0.072
+2025-10-23,Google,Technology,46749,0.1
+2025-10-24,Apple Store,E-commerce,18155,-0.02
+2025-10-24,Samsung Mobile,Marketplace,35645,0.069
+2025-10-24,Tesla Motors,Electric Vehicles,46041,-0.053
+2025-10-24,Amazon,E-commerce,51050,-0.023
+2025-10-24,Nvidia,Semiconductors,18935,0.009
+2025-10-24,Google,Technology,38708,0.013
+2025-10-25,Apple Store,E-commerce,51950,0.112
+2025-10-25,Samsung Mobile,Marketplace,23009,0.017
+2025-10-25,Tesla Motors,Electric Vehicles,61758,-0.08
+2025-10-25,Amazon,E-commerce,74325,-0.054
+2025-10-25,Nvidia,Semiconductors,60759,-0.039
+2025-10-25,Google,Technology,70651,0.188
+2025-10-26,Apple Store,E-commerce,20911,-0.07
+2025-10-26,Samsung Mobile,Marketplace,68301,0.137
+2025-10-26,Tesla Motors,Electric Vehicles,47507,-0.019
+2025-10-26,Amazon,E-commerce,45684,0.107
+2025-10-26,Nvidia,Semiconductors,45629,-0.001
+2025-10-26,Google,Technology,25905,-0.014
+2025-10-27,Apple Store,E-commerce,67617,0.159
+2025-10-27,Samsung Mobile,Marketplace,29574,-0.063
+2025-10-27,Tesla Motors,Electric Vehicles,74886,0.022
+2025-10-27,Amazon,E-commerce,79530,-0.048
+2025-10-27,Nvidia,Semiconductors,78903,0.14
+2025-10-27,Google,Technology,33233,0.08
+2025-10-28,Apple Store,E-commerce,50588,-0.062
+2025-10-28,Samsung Mobile,Marketplace,58336,0.098
+2025-10-28,Tesla Motors,Electric Vehicles,74605,0.164
+2025-10-28,Amazon,E-commerce,23608,0.117
+2025-10-28,Nvidia,Semiconductors,44074,0.196
+2025-10-28,Google,Technology,62558,0.157
+2025-10-29,Apple Store,E-commerce,16257,-0.065
+2025-10-29,Samsung Mobile,Marketplace,47821,0.088
+2025-10-29,Tesla Motors,Electric Vehicles,24930,0.197
+2025-10-29,Amazon,E-commerce,40061,0.151
+2025-10-29,Nvidia,Semiconductors,75426,0.022
+2025-10-29,Google,Technology,7309,0.16
+2025-10-30,Apple Store,E-commerce,25720,-0.035
+2025-10-30,Samsung Mobile,Marketplace,51383,-0.096
+2025-10-30,Tesla Motors,Electric Vehicles,28005,0.011
+2025-10-30,Amazon,E-commerce,6252,-0.097
+2025-10-30,Nvidia,Semiconductors,33082,0.169
+2025-10-30,Google,Technology,43247,0.093
+2025-10-31,Apple Store,E-commerce,42189,0.149
+2025-10-31,Samsung Mobile,Marketplace,73416,0.077
+2025-10-31,Tesla Motors,Electric Vehicles,50785,0.148
+2025-10-31,Amazon,E-commerce,25425,-0.078
+2025-10-31,Nvidia,Semiconductors,60369,0.163
+2025-10-31,Google,Technology,69249,0.11
+2025-11-01,Apple Store,E-commerce,57771,0.071
+2025-11-01,Samsung Mobile,Marketplace,44768,-0.086
+2025-11-01,Tesla Motors,Electric Vehicles,34030,0.002
+2025-11-01,Amazon,E-commerce,72976,0.12
+2025-11-01,Nvidia,Semiconductors,6853,0.106
+2025-11-01,Google,Technology,39334,0.137
+2025-11-02,Apple Store,E-commerce,25126,-0.071
+2025-11-02,Samsung Mobile,Marketplace,50593,0.065
+2025-11-02,Tesla Motors,Electric Vehicles,60487,0.098
+2025-11-02,Amazon,E-commerce,5700,-0.02
+2025-11-02,Nvidia,Semiconductors,47258,-0.005
+2025-11-02,Google,Technology,66932,0.193
+2025-11-03,Apple Store,E-commerce,53411,-0.016
+2025-11-03,Samsung Mobile,Marketplace,47514,-0.089
+2025-11-03,Tesla Motors,Electric Vehicles,74029,0.119
+2025-11-03,Amazon,E-commerce,5385,0.066
+2025-11-03,Nvidia,Semiconductors,50067,0.123
+2025-11-03,Google,Technology,32128,0.144
+2025-11-04,Apple Store,E-commerce,55202,-0.05
+2025-11-04,Samsung Mobile,Marketplace,71170,-0.026
+2025-11-04,Tesla Motors,Electric Vehicles,49892,0.124
+2025-11-04,Amazon,E-commerce,36573,-0.031
+2025-11-04,Nvidia,Semiconductors,70997,0.134
+2025-11-04,Google,Technology,66259,0.068
+2025-11-05,Apple Store,E-commerce,10399,-0.049
+2025-11-05,Samsung Mobile,Marketplace,69911,0.151
+2025-11-05,Tesla Motors,Electric Vehicles,16194,0.123
+2025-11-05,Amazon,E-commerce,79773,0.004
+2025-11-05,Nvidia,Semiconductors,21147,0.13
+2025-11-05,Google,Technology,60381,0.117
+2025-11-06,Apple Store,E-commerce,16179,-0.051
+2025-11-06,Samsung Mobile,Marketplace,45088,0.092
+2025-11-06,Tesla Motors,Electric Vehicles,62348,-0.09
+2025-11-06,Amazon,E-commerce,8730,-0.057
+2025-11-06,Nvidia,Semiconductors,40541,0.159
+2025-11-06,Google,Technology,64938,-0.025
+2025-11-07,Apple Store,E-commerce,45027,0.041
+2025-11-07,Samsung Mobile,Marketplace,64083,-0.029
+2025-11-07,Tesla Motors,Electric Vehicles,50176,-0.038
+2025-11-07,Amazon,E-commerce,42279,0.01
+2025-11-07,Nvidia,Semiconductors,41682,0.068
+2025-11-07,Google,Technology,58021,0.095
+2025-11-08,Apple Store,E-commerce,55618,0.106
+2025-11-08,Samsung Mobile,Marketplace,72401,-0.015
+2025-11-08,Tesla Motors,Electric Vehicles,5062,0.108
+2025-11-08,Amazon,E-commerce,19455,0.157
+2025-11-08,Nvidia,Semiconductors,31999,-0.059
+2025-11-08,Google,Technology,77520,0.105
+2025-11-09,Apple Store,E-commerce,57525,0.109
+2025-11-09,Samsung Mobile,Marketplace,50847,-0.052
+2025-11-09,Tesla Motors,Electric Vehicles,21104,0.036
+2025-11-09,Amazon,E-commerce,20102,0.107
+2025-11-09,Nvidia,Semiconductors,7889,0.079
+2025-11-09,Google,Technology,47200,-0.091
+2025-11-10,Apple Store,E-commerce,17465,0.096
+2025-11-10,Samsung Mobile,Marketplace,22726,0.004
+2025-11-10,Tesla Motors,Electric Vehicles,15159,0.047
+2025-11-10,Amazon,E-commerce,59935,0.064
+2025-11-10,Nvidia,Semiconductors,74533,0.064
+2025-11-10,Google,Technology,40869,0.105
+2025-11-11,Apple Store,E-commerce,8612,-0.085
+2025-11-11,Samsung Mobile,Marketplace,10604,0.176
+2025-11-11,Tesla Motors,Electric Vehicles,39584,0.091
+2025-11-11,Amazon,E-commerce,47995,0.065
+2025-11-11,Nvidia,Semiconductors,8412,0.042
+2025-11-11,Google,Technology,37737,0.138
+2025-11-12,Apple Store,E-commerce,79083,0.002
+2025-11-12,Samsung Mobile,Marketplace,10402,-0.041
+2025-11-12,Tesla Motors,Electric Vehicles,25052,0.11
+2025-11-12,Amazon,E-commerce,58790,0.028
+2025-11-12,Nvidia,Semiconductors,67108,0.032
+2025-11-12,Google,Technology,9789,-0.09
+2025-11-13,Apple Store,E-commerce,59570,0.027
+2025-11-13,Samsung Mobile,Marketplace,61878,0.015
+2025-11-13,Tesla Motors,Electric Vehicles,28225,-0.055
+2025-11-13,Amazon,E-commerce,6412,0.141
+2025-11-13,Nvidia,Semiconductors,21642,-0.057
+2025-11-13,Google,Technology,33133,0.033
+2025-11-14,Apple Store,E-commerce,60903,-0.072
+2025-11-14,Samsung Mobile,Marketplace,21333,-0.008
+2025-11-14,Tesla Motors,Electric Vehicles,27299,0.042
+2025-11-14,Amazon,E-commerce,25690,-0.055
+2025-11-14,Nvidia,Semiconductors,24299,0.153
+2025-11-14,Google,Technology,20770,0.175
+2025-11-15,Apple Store,E-commerce,27605,0.07
+2025-11-15,Samsung Mobile,Marketplace,66919,0.182
+2025-11-15,Tesla Motors,Electric Vehicles,11279,0.185
+2025-11-15,Amazon,E-commerce,24536,0.196
+2025-11-15,Nvidia,Semiconductors,73623,0.117
+2025-11-15,Google,Technology,78668,0.104
+2025-11-16,Apple Store,E-commerce,26484,-0.048
+2025-11-16,Samsung Mobile,Marketplace,20989,-0.031
+2025-11-16,Tesla Motors,Electric Vehicles,59474,-0.082
+2025-11-16,Amazon,E-commerce,33904,0.091
+2025-11-16,Nvidia,Semiconductors,51463,-0.059
+2025-11-16,Google,Technology,22811,0.116
+2025-11-17,Apple Store,E-commerce,20800,0.174
+2025-11-17,Samsung Mobile,Marketplace,15763,-0.046
+2025-11-17,Tesla Motors,Electric Vehicles,78482,-0.063
+2025-11-17,Amazon,E-commerce,54562,-0.076
+2025-11-17,Nvidia,Semiconductors,28347,-0.027
+2025-11-17,Google,Technology,48809,0.144
+2025-11-18,Apple Store,E-commerce,37605,-0.09
+2025-11-18,Samsung Mobile,Marketplace,27030,0.106
+2025-11-18,Tesla Motors,Electric Vehicles,9183,0.137
+2025-11-18,Amazon,E-commerce,79714,-0.058
+2025-11-18,Nvidia,Semiconductors,35731,0.108
+2025-11-18,Google,Technology,44425,0.172
+2025-11-19,Apple Store,E-commerce,14481,-0.019
+2025-11-19,Samsung Mobile,Marketplace,67685,0.157
+2025-11-19,Tesla Motors,Electric Vehicles,34071,-0.05
+2025-11-19,Amazon,E-commerce,27812,-0.072
+2025-11-19,Nvidia,Semiconductors,9967,0.167
+2025-11-19,Google,Technology,64985,-0.063
+2025-11-20,Apple Store,E-commerce,61985,0.178
+2025-11-20,Samsung Mobile,Marketplace,70625,0.098
+2025-11-20,Tesla Motors,Electric Vehicles,26262,0.123
+2025-11-20,Amazon,E-commerce,19754,0.044
+2025-11-20,Nvidia,Semiconductors,48476,0.047
+2025-11-20,Google,Technology,15583,-0.006
+2025-11-21,Apple Store,E-commerce,56020,-0.031
+2025-11-21,Samsung Mobile,Marketplace,17646,0.009
+2025-11-21,Tesla Motors,Electric Vehicles,73206,0.005
+2025-11-21,Amazon,E-commerce,74079,0.063
+2025-11-21,Nvidia,Semiconductors,16655,0.065
+2025-11-21,Google,Technology,60432,0.176
+2025-11-22,Apple Store,E-commerce,14696,0.092
+2025-11-22,Samsung Mobile,Marketplace,50282,0.132
+2025-11-22,Tesla Motors,Electric Vehicles,78630,-0.083
+2025-11-22,Amazon,E-commerce,10271,0.117
+2025-11-22,Nvidia,Semiconductors,33971,0.018
+2025-11-22,Google,Technology,41445,0.076
+2025-11-23,Apple Store,E-commerce,6746,0.067
+2025-11-23,Samsung Mobile,Marketplace,20521,0.171
+2025-11-23,Tesla Motors,Electric Vehicles,78624,0.084
+2025-11-23,Amazon,E-commerce,39098,-0.033
+2025-11-23,Nvidia,Semiconductors,34293,0.069
+2025-11-23,Google,Technology,34901,0.081
+2025-11-24,Apple Store,E-commerce,60781,0.017
+2025-11-24,Samsung Mobile,Marketplace,7914,0.194
+2025-11-24,Tesla Motors,Electric Vehicles,21941,0.012
+2025-11-24,Amazon,E-commerce,63571,0.13
+2025-11-24,Nvidia,Semiconductors,72510,-0.062
+2025-11-24,Google,Technology,27983,0.038
+2025-11-25,Apple Store,E-commerce,67069,0.151
+2025-11-25,Samsung Mobile,Marketplace,50162,0.117
+2025-11-25,Tesla Motors,Electric Vehicles,76023,0.058
+2025-11-25,Amazon,E-commerce,56262,-0.017
+2025-11-25,Nvidia,Semiconductors,59575,-0.057
+2025-11-25,Google,Technology,61812,0.033
+2025-11-26,Apple Store,E-commerce,37045,0.147
+2025-11-26,Samsung Mobile,Marketplace,67433,-0.07
+2025-11-26,Tesla Motors,Electric Vehicles,24695,0.018
+2025-11-26,Amazon,E-commerce,31135,-0.018
+2025-11-26,Nvidia,Semiconductors,11851,0.06
+2025-11-26,Google,Technology,72776,0.06
+2025-11-27,Apple Store,E-commerce,56508,-0.064
+2025-11-27,Samsung Mobile,Marketplace,46664,-0.003
+2025-11-27,Tesla Motors,Electric Vehicles,56453,0.148
+2025-11-27,Amazon,E-commerce,61044,-0.011
+2025-11-27,Nvidia,Semiconductors,73539,0.029
+2025-11-27,Google,Technology,8677,0.093
+2025-11-28,Apple Store,E-commerce,43494,0.18
+2025-11-28,Samsung Mobile,Marketplace,30029,-0.052
+2025-11-28,Tesla Motors,Electric Vehicles,11970,0.101
+2025-11-28,Amazon,E-commerce,43158,-0.002
+2025-11-28,Nvidia,Semiconductors,8417,0.196
+2025-11-28,Google,Technology,64253,0.197
+2025-11-29,Apple Store,E-commerce,52746,-0.043
+2025-11-29,Samsung Mobile,Marketplace,16583,-0.045
+2025-11-29,Tesla Motors,Electric Vehicles,22172,-0.031
+2025-11-29,Amazon,E-commerce,58632,0.125
+2025-11-29,Nvidia,Semiconductors,76708,0.034
+2025-11-29,Google,Technology,23261,0.137
+2025-11-30,Apple Store,E-commerce,17162,-0.045
+2025-11-30,Samsung Mobile,Marketplace,69551,-0.002
+2025-11-30,Tesla Motors,Electric Vehicles,19731,0.181
+2025-11-30,Amazon,E-commerce,70836,-0.072
+2025-11-30,Nvidia,Semiconductors,59487,-0.016
+2025-11-30,Google,Technology,65462,0.087
+2025-12-01,Apple Store,E-commerce,58374,-0.098
+2025-12-01,Samsung Mobile,Marketplace,10641,0.184
+2025-12-01,Tesla Motors,Electric Vehicles,56184,0.039
+2025-12-01,Amazon,E-commerce,21589,-0.003
+2025-12-01,Nvidia,Semiconductors,78111,-0.042
+2025-12-01,Google,Technology,38347,0.1
+2025-12-02,Apple Store,E-commerce,49312,-0.007
+2025-12-02,Samsung Mobile,Marketplace,59344,0.065
+2025-12-02,Tesla Motors,Electric Vehicles,27661,0.124
+2025-12-02,Amazon,E-commerce,79857,0.108
+2025-12-02,Nvidia,Semiconductors,25978,-0.097
+2025-12-02,Google,Technology,40455,0.052
+2025-12-03,Apple Store,E-commerce,76960,0.03
+2025-12-03,Samsung Mobile,Marketplace,25351,0.061
+2025-12-03,Tesla Motors,Electric Vehicles,7396,0.197
+2025-12-03,Amazon,E-commerce,54402,0.129
+2025-12-03,Nvidia,Semiconductors,45876,-0.095
+2025-12-03,Google,Technology,11721,-0.089
+2025-12-04,Apple Store,E-commerce,34642,0.033
+2025-12-04,Samsung Mobile,Marketplace,24729,0.013
+2025-12-04,Tesla Motors,Electric Vehicles,44746,0.084
+2025-12-04,Amazon,E-commerce,31110,0.014
+2025-12-04,Nvidia,Semiconductors,31832,0.024
+2025-12-04,Google,Technology,63433,0.128
+2025-12-05,Apple Store,E-commerce,40141,-0.01
+2025-12-05,Samsung Mobile,Marketplace,72398,-0.017
+2025-12-05,Tesla Motors,Electric Vehicles,60184,0.008
+2025-12-05,Amazon,E-commerce,20864,0.189
+2025-12-05,Nvidia,Semiconductors,76688,0.08
+2025-12-05,Google,Technology,36240,-0.074
+2025-12-06,Apple Store,E-commerce,38696,0.122
+2025-12-06,Samsung Mobile,Marketplace,25180,0.049
+2025-12-06,Tesla Motors,Electric Vehicles,54370,-0.021
+2025-12-06,Amazon,E-commerce,71080,-0.019
+2025-12-06,Nvidia,Semiconductors,56439,0.039
+2025-12-06,Google,Technology,35461,0.151
+2025-12-07,Apple Store,E-commerce,6552,0.043
+2025-12-07,Samsung Mobile,Marketplace,74043,0.1
+2025-12-07,Tesla Motors,Electric Vehicles,29390,0.087
+2025-12-07,Amazon,E-commerce,11819,-0.052
+2025-12-07,Nvidia,Semiconductors,58804,-0.029
+2025-12-07,Google,Technology,26770,-0.046
+2025-12-08,Apple Store,E-commerce,34215,-0.043
+2025-12-08,Samsung Mobile,Marketplace,25837,0.054
+2025-12-08,Tesla Motors,Electric Vehicles,56550,-0.069
+2025-12-08,Amazon,E-commerce,62547,0.102
+2025-12-08,Nvidia,Semiconductors,64745,0.016
+2025-12-08,Google,Technology,9268,-0.002
+2025-12-09,Apple Store,E-commerce,12615,-0.042
+2025-12-09,Samsung Mobile,Marketplace,35090,0.071
+2025-12-09,Tesla Motors,Electric Vehicles,8809,0.108
+2025-12-09,Amazon,E-commerce,27923,0.194
+2025-12-09,Nvidia,Semiconductors,31170,0.198
+2025-12-09,Google,Technology,5715,0.049
+2025-12-10,Apple Store,E-commerce,42775,0.025
+2025-12-10,Samsung Mobile,Marketplace,77272,0.023
+2025-12-10,Tesla Motors,Electric Vehicles,24910,0.134
+2025-12-10,Amazon,E-commerce,32571,0.109
+2025-12-10,Nvidia,Semiconductors,7009,0.13
+2025-12-10,Google,Technology,31942,0.176
+2025-12-11,Apple Store,E-commerce,50519,-0.032
+2025-12-11,Samsung Mobile,Marketplace,34752,-0.078
+2025-12-11,Tesla Motors,Electric Vehicles,26903,0.104
+2025-12-11,Amazon,E-commerce,57598,0.028
+2025-12-11,Nvidia,Semiconductors,48638,-0.084
+2025-12-11,Google,Technology,62567,0.101
+2025-12-12,Apple Store,E-commerce,13427,0.196
+2025-12-12,Samsung Mobile,Marketplace,66381,0.192
+2025-12-12,Tesla Motors,Electric Vehicles,74994,0.016
+2025-12-12,Amazon,E-commerce,7520,0.188
+2025-12-12,Nvidia,Semiconductors,26412,0.043
+2025-12-12,Google,Technology,42710,-0.086
+2025-12-13,Apple Store,E-commerce,32314,0.182
+2025-12-13,Samsung Mobile,Marketplace,18407,0.118
+2025-12-13,Tesla Motors,Electric Vehicles,55809,0.114
+2025-12-13,Amazon,E-commerce,45585,0.164
+2025-12-13,Nvidia,Semiconductors,30909,0.128
+2025-12-13,Google,Technology,53063,-0.002
+2025-12-14,Apple Store,E-commerce,58982,-0.019
+2025-12-14,Samsung Mobile,Marketplace,37551,-0.026
+2025-12-14,Tesla Motors,Electric Vehicles,77733,0.013
+2025-12-14,Amazon,E-commerce,45843,-0.034
+2025-12-14,Nvidia,Semiconductors,39511,0.172
+2025-12-14,Google,Technology,34814,0.186
+2025-12-15,Apple Store,E-commerce,57519,0.034
+2025-12-15,Samsung Mobile,Marketplace,9867,0.034
+2025-12-15,Tesla Motors,Electric Vehicles,21180,0.047
+2025-12-15,Amazon,E-commerce,52104,0.163
+2025-12-15,Nvidia,Semiconductors,44589,0.052
+2025-12-15,Google,Technology,68604,-0.027
+2025-12-16,Apple Store,E-commerce,32816,0.147
+2025-12-16,Samsung Mobile,Marketplace,60505,0.063
+2025-12-16,Tesla Motors,Electric Vehicles,22197,0.082
+2025-12-16,Amazon,E-commerce,39188,0.002
+2025-12-16,Nvidia,Semiconductors,59634,-0.04
+2025-12-16,Google,Technology,46162,0.124
+2025-12-17,Apple Store,E-commerce,10028,0.002
+2025-12-17,Samsung Mobile,Marketplace,28559,-0.069
+2025-12-17,Tesla Motors,Electric Vehicles,74051,0.12
+2025-12-17,Amazon,E-commerce,73913,0.159
+2025-12-17,Nvidia,Semiconductors,54971,-0.013
+2025-12-17,Google,Technology,60981,0.049
+2025-12-18,Apple Store,E-commerce,68464,-0.094
+2025-12-18,Samsung Mobile,Marketplace,61691,0.066
+2025-12-18,Tesla Motors,Electric Vehicles,32615,0.132
+2025-12-18,Amazon,E-commerce,56271,-0.065
+2025-12-18,Nvidia,Semiconductors,48697,0.199
+2025-12-18,Google,Technology,58509,0.021
+2025-12-19,Apple Store,E-commerce,72204,-0.039
+2025-12-19,Samsung Mobile,Marketplace,50391,0.192
+2025-12-19,Tesla Motors,Electric Vehicles,39755,0.163
+2025-12-19,Amazon,E-commerce,36992,0.14
+2025-12-19,Nvidia,Semiconductors,72705,0.118
+2025-12-19,Google,Technology,54269,0.074
+2025-12-20,Apple Store,E-commerce,46989,0.109
+2025-12-20,Samsung Mobile,Marketplace,18496,0.061
+2025-12-20,Tesla Motors,Electric Vehicles,9876,0.071
+2025-12-20,Amazon,E-commerce,9452,0.007
+2025-12-20,Nvidia,Semiconductors,35367,-0.073
+2025-12-20,Google,Technology,13539,0.105
+2025-12-21,Apple Store,E-commerce,49221,-0.096
+2025-12-21,Samsung Mobile,Marketplace,30045,-0.025
+2025-12-21,Tesla Motors,Electric Vehicles,30508,0.001
+2025-12-21,Amazon,E-commerce,11421,0.137
+2025-12-21,Nvidia,Semiconductors,13045,0.176
+2025-12-21,Google,Technology,38835,0.117
+2025-12-22,Apple Store,E-commerce,45061,0.139
+2025-12-22,Samsung Mobile,Marketplace,39227,-0.087
+2025-12-22,Tesla Motors,Electric Vehicles,24125,0.019
+2025-12-22,Amazon,E-commerce,28620,0.032
+2025-12-22,Nvidia,Semiconductors,22795,0.166
+2025-12-22,Google,Technology,65809,-0.085
+2025-12-23,Apple Store,E-commerce,42658,0.156
+2025-12-23,Samsung Mobile,Marketplace,76189,0.138
+2025-12-23,Tesla Motors,Electric Vehicles,46906,0.02
+2025-12-23,Amazon,E-commerce,27197,0.111
+2025-12-23,Nvidia,Semiconductors,40616,0.073
+2025-12-23,Google,Technology,78026,0.072
+2025-12-24,Apple Store,E-commerce,70864,0.063
+2025-12-24,Samsung Mobile,Marketplace,53890,-0.063
+2025-12-24,Tesla Motors,Electric Vehicles,68513,0.148
+2025-12-24,Amazon,E-commerce,74742,-0.045
+2025-12-24,Nvidia,Semiconductors,56900,0.197
+2025-12-24,Google,Technology,48957,-0.093
+2025-12-25,Apple Store,E-commerce,35061,-0.001
+2025-12-25,Samsung Mobile,Marketplace,20314,0.031
+2025-12-25,Tesla Motors,Electric Vehicles,26951,0.189
+2025-12-25,Amazon,E-commerce,33461,-0.065
+2025-12-25,Nvidia,Semiconductors,62818,0.148
+2025-12-25,Google,Technology,22897,0.073
+2025-12-26,Apple Store,E-commerce,43335,0.039
+2025-12-26,Samsung Mobile,Marketplace,71853,0.087
+2025-12-26,Tesla Motors,Electric Vehicles,68963,-0.049
+2025-12-26,Amazon,E-commerce,73196,0.135
+2025-12-26,Nvidia,Semiconductors,13504,-0.044
+2025-12-26,Google,Technology,22552,0.108
+2025-12-27,Apple Store,E-commerce,37571,-0.013
+2025-12-27,Samsung Mobile,Marketplace,21365,0.047
+2025-12-27,Tesla Motors,Electric Vehicles,30286,-0.059
+2025-12-27,Amazon,E-commerce,67620,0.026
+2025-12-27,Nvidia,Semiconductors,7527,-0.015
+2025-12-27,Google,Technology,58000,-0.076
+2025-12-28,Apple Store,E-commerce,73217,-0.003
+2025-12-28,Samsung Mobile,Marketplace,21149,-0.095
+2025-12-28,Tesla Motors,Electric Vehicles,59389,0.109
+2025-12-28,Amazon,E-commerce,13109,0.093
+2025-12-28,Nvidia,Semiconductors,54434,0.083
+2025-12-28,Google,Technology,42140,-0.04
+2025-12-29,Apple Store,E-commerce,22168,0.014
+2025-12-29,Samsung Mobile,Marketplace,66715,0.149
+2025-12-29,Tesla Motors,Electric Vehicles,7203,-0.005
+2025-12-29,Amazon,E-commerce,44429,0.135
+2025-12-29,Nvidia,Semiconductors,48035,-0.082
+2025-12-29,Google,Technology,79610,-0.01
+2025-12-30,Apple Store,E-commerce,21986,0.02
+2025-12-30,Samsung Mobile,Marketplace,51794,-0.044
+2025-12-30,Tesla Motors,Electric Vehicles,30127,-0.053
+2025-12-30,Amazon,E-commerce,51996,0.055
+2025-12-30,Nvidia,Semiconductors,16138,-0.061
+2025-12-30,Google,Technology,14815,0.118
+2025-12-31,Apple Store,E-commerce,60110,-0.085
+2025-12-31,Samsung Mobile,Marketplace,75853,-0.048
+2025-12-31,Tesla Motors,Electric Vehicles,64898,-0.042
+2025-12-31,Amazon,E-commerce,12401,-0.091
+2025-12-31,Nvidia,Semiconductors,45506,0.051
+2025-12-31,Google,Technology,66890,0.043

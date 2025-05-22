@@ -2,20 +2,20 @@ serialNo,name,date,amount,category
 1,Cafe,2020-05-25,3715.63,Food
 2,Online Course,2020-05-24,9260.64,Education
 3,Stationery,2020-05-11,5274.41,Education
-4,Movie,2020-05-15,2315.5,Entertainment
+4,Movie,2020-05-15,2315.50,Entertainment
 5,Cruise,2020-05-01,8915.19,Travel
 6,Medicine,2020-05-07,3584.06,Medical
-7,Metro,2020-05-16,4746.5,Transportation
+7,Metro,2020-05-16,4746.50,Transportation
 8,Insurance,2020-05-04,3670.03,Medical
-9,Dress,2020-05-06,6256.7,Clothing
+9,Dress,2020-05-06,6256.70,Clothing
 10,Taxi,2020-05-12,6094.81,Travel
 11,Train,2020-05-20,2944.22,Transportation
 12,Roaming,2020-05-15,4482.79,Communication
 13,Phone Bill,2020-05-27,3237.85,Communication
 14,Workshop,2020-05-28,941.16,Education
-15,Jacket,2020-05-16,1026.5,Clothing
+15,Jacket,2020-05-16,1026.50,Clothing
 16,Mortgage,2020-05-24,1471.35,Home
-17,Delivery,2020-05-04,3441.0,Food
+17,Delivery,2020-05-04,3441.00,Food
 18,Hospital Bill,2020-05-19,6155.77,Medical
 19,Amusement Park,2020-05-11,2158.04,Entertainment
 20,Bicycle,2020-05-14,5616.37,Transportation
@@ -48,7 +48,7 @@ serialNo,name,date,amount,category
 47,Fast Food,2020-05-27,1410.76,Food
 48,Fuel,2020-05-13,9506.35,Travel
 49,Taxi,2020-05-10,4450.76,Travel
-50,Bank Fee,2020-05-22,2340.1,Others
+50,Bank Fee,2020-05-22,2340.10,Others
 51,Backpack,2020-05-18,1770.21,Education
 52,Security,2020-05-22,8698.32,Others
 53,Parking,2020-05-24,9957.98,Transportation
@@ -73,7 +73,7 @@ serialNo,name,date,amount,category
 72,Train,2020-05-08,2272.07,Transportation
 73,Train,2020-05-03,5121.06,Transportation
 74,Online Course,2020-05-07,8699.84,Education
-75,Scarf,2020-05-08,3365.2,Clothing
+75,Scarf,2020-05-08,3365.20,Clothing
 76,Jeans,2020-05-27,8774.19,Clothing
 77,Therapy,2020-05-24,7338.94,Medical
 78,Fuel,2020-05-10,3460.47,Transportation
@@ -83,7 +83,7 @@ serialNo,name,date,amount,category
 82,Eye Exam,2020-05-07,3935.36,Medical
 83,SIM Card,2020-05-02,9413.62,Communication
 84,Fast Food,2020-05-02,2062.34,Food
-85,Metro,2020-05-19,7015.6,Transportation
+85,Metro,2020-05-19,7015.60,Transportation
 86,Backpack,2020-05-02,7358.65,Education
 87,Scarf,2020-05-03,6276.87,Clothing
 88,Fuel,2020-05-19,6315.71,Transportation
@@ -97,11 +97,11 @@ serialNo,name,date,amount,category
 96,Postage,2020-05-13,7143.09,Communication
 97,Gas,2020-05-26,9784.21,Home
 98,Vegetables,2020-05-14,5976.97,Food
-99,Dress,2020-05-15,8032.6,Clothing
+99,Dress,2020-05-15,8032.60,Clothing
 100,Maintenance,2020-05-20,4155.01,Home
 101,Internet,2020-06-05,1086.32,Communication
 102,Books,2020-06-21,2110.63,Education
-103,Fuel,2020-06-04,9230.8,Transportation
+103,Fuel,2020-06-04,9230.80,Transportation
 104,Game,2020-06-20,8988.13,Entertainment
 105,Electricity,2020-06-07,4735.23,Home
 106,Lottery,2020-06-22,951.03,Others
@@ -126,16 +126,16 @@ serialNo,name,date,amount,category
 125,Drinks,2020-06-26,7583.59,Food
 126,Sports Event,2020-06-13,3940.65,Entertainment
 127,Flight,2020-06-15,9301.29,Travel
-128,Donation,2020-06-14,277.0,Others
+128,Donation,2020-06-14,277.00,Others
 129,Bus,2020-06-23,8266.51,Transportation
 130,Donation,2020-06-21,9033.35,Others
 131,Train,2020-06-25,4689.75,Travel
-132,Tennis,2020-06-15,8188.9,Sports
+132,Tennis,2020-06-15,8188.90,Sports
 133,Calling Card,2020-06-03,7113.93,Communication
 134,Hospital Bill,2020-06-06,5866.75,Medical
 135,Gas,2020-06-26,3922.77,Home
 136,Mobile Recharge,2020-06-05,9732.51,Communication
-137,Pet,2020-06-02,9573.6,Others
+137,Pet,2020-06-02,9573.60,Others
 138,Pet,2020-06-17,5356.59,Others
 139,Roaming,2020-06-05,4008.56,Communication
 140,Toll,2020-06-12,649.88,Transportation
@@ -149,12 +149,12 @@ serialNo,name,date,amount,category
 148,Tuition,2020-06-26,7324.63,Education
 149,Parking,2020-06-19,258.84,Transportation
 150,Shirt,2020-06-26,2272.32,Clothing
-151,Cruise,2020-06-13,2414.3,Travel
+151,Cruise,2020-06-13,2414.30,Travel
 152,Coat,2020-06-23,6626.87,Clothing
-153,Eye Exam,2020-06-21,4524.6,Medical
+153,Eye Exam,2020-06-21,4524.60,Medical
 154,Insurance,2020-06-04,1284.41,Medical
 155,Workshop,2020-06-21,2963.59,Education
-156,Taxi,2020-06-15,2726.4,Transportation
+156,Taxi,2020-06-15,2726.40,Transportation
 157,Water Bill,2020-06-08,7081.27,Home
 158,Insurance,2020-06-18,5442.91,Medical
 159,Train,2020-06-19,1569.96,Travel
@@ -163,10 +163,10 @@ serialNo,name,date,amount,category
 162,Postage,2020-06-24,7215.02,Communication
 163,Water Bill,2020-06-25,5215.15,Home
 164,Flight,2020-06-07,5970.43,Travel
-165,Donation,2020-06-01,9091.5,Others
+165,Donation,2020-06-01,9091.50,Others
 166,Game,2020-06-09,7322.82,Entertainment
 167,Subscription,2020-06-21,7629.08,Communication
-168,Dress,2020-06-07,4050.0,Clothing
+168,Dress,2020-06-07,4050.00,Clothing
 169,Football,2020-06-05,7784.77,Sports
 170,Bicycle,2020-06-12,1314.33,Transportation
 171,Charity,2020-06-14,911.58,Others
@@ -179,13 +179,13 @@ serialNo,name,date,amount,category
 178,Music Festival,2020-06-13,4156.47,Entertainment
 179,Yoga,2020-06-04,7936.61,Sports
 180,Game,2020-06-18,4685.52,Entertainment
-181,Flight,2020-06-01,5271.1,Travel
+181,Flight,2020-06-01,5271.10,Travel
 182,Calling Card,2020-06-15,5897.56,Communication
 183,Shoes,2020-06-18,6747.33,Clothing
-184,Internet,2020-06-06,817.8,Communication
+184,Internet,2020-06-06,817.80,Communication
 185,Internet,2020-06-17,4736.42,Communication
 186,Ride Sharing,2020-06-28,5683.85,Transportation
-187,Running,2020-06-08,2246.2,Sports
+187,Running,2020-06-08,2246.20,Sports
 188,Internet,2020-06-25,7141.68,Home
 189,Gift,2020-06-17,5384.32,Others
 190,Toll,2020-06-15,5382.55,Transportation
@@ -214,12 +214,12 @@ serialNo,name,date,amount,category
 213,Shoes,2020-07-21,9004.03,Clothing
 214,Rental Car,2020-07-20,8728.42,Travel
 215,Gym,2020-07-21,781.94,Sports
-216,Coat,2020-07-18,355.1,Clothing
+216,Coat,2020-07-18,355.10,Clothing
 217,Stationery,2020-07-13,4154.28,Education
 218,Fruits,2020-07-03,7346.64,Food
 219,Roaming,2020-07-07,8194.88,Communication
 220,Postage,2020-07-05,6268.36,Communication
-221,Visa Fee,2020-07-18,5748.6,Travel
+221,Visa Fee,2020-07-18,5748.60,Travel
 222,Travel Insurance,2020-07-21,893.19,Travel
 223,Mobile Recharge,2020-07-06,1384.15,Communication
 224,Subscription,2020-07-06,3188.68,Communication
@@ -230,10 +230,10 @@ serialNo,name,date,amount,category
 229,Insurance,2020-07-19,518.48,Medical
 230,Delivery,2020-07-03,5979.73,Food
 231,Metro,2020-07-19,6192.51,Transportation
-232,Surgery,2020-07-05,881.3,Medical
-233,Jeans,2020-07-25,5063.0,Clothing
+232,Surgery,2020-07-05,881.30,Medical
+233,Jeans,2020-07-25,5063.00,Clothing
 234,Pen,2020-07-25,7559.23,Education
-235,Laundry,2020-07-22,5275.5,Others
+235,Laundry,2020-07-22,5275.50,Others
 236,Hospital Bill,2020-07-22,8950.81,Medical
 237,Meat,2020-07-05,6826.23,Food
 238,Cafe,2020-07-21,5244.31,Food
@@ -244,7 +244,7 @@ serialNo,name,date,amount,category
 243,Yoga,2020-07-20,6811.38,Sports
 244,Roaming,2020-07-04,8803.62,Communication
 245,Equipment,2020-07-07,1593.95,Sports
-246,Doctor Visit,2020-07-24,6071.7,Medical
+246,Doctor Visit,2020-07-24,6071.70,Medical
 247,Workshop,2020-07-09,730.48,Education
 248,Fuel,2020-07-28,7385.33,Transportation
 249,Mortgage,2020-07-03,4866.17,Home
@@ -275,14 +275,14 @@ serialNo,name,date,amount,category
 274,Bank Fee,2020-07-20,1797.76,Others
 275,Security,2020-07-13,5921.23,Others
 276,Accessories,2020-07-10,9221.85,Others
-277,Sports Event,2020-07-12,3624.6,Entertainment
+277,Sports Event,2020-07-12,3624.60,Entertainment
 278,Mortgage,2020-07-02,2914.73,Home
 279,Water Bill,2020-07-19,8615.46,Home
 280,Dental Check,2020-07-08,32.32,Medical
 281,Meat,2020-07-18,7652.96,Food
 282,Maintenance,2020-07-19,7264.08,Home
-283,Hotel,2020-07-06,9704.7,Travel
-284,Water Bill,2020-07-19,5705.6,Home
+283,Hotel,2020-07-06,9704.70,Travel
+284,Water Bill,2020-07-19,5705.60,Home
 285,Books,2020-07-24,3068.28,Education
 286,Train,2020-07-13,2456.42,Transportation
 287,SIM Card,2020-07-20,2733.94,Communication
@@ -294,7 +294,7 @@ serialNo,name,date,amount,category
 293,Basketball,2020-07-08,8119.79,Sports
 294,Notebook,2020-07-18,1775.09,Education
 295,Swimming,2020-07-08,8170.36,Sports
-296,Toll,2020-07-06,8452.8,Travel
+296,Toll,2020-07-06,8452.80,Travel
 297,VPN,2020-07-13,4651.93,Communication
 298,Coat,2020-07-13,6843.19,Clothing
 299,Snacks,2020-07-15,6970.21,Food
@@ -302,37 +302,37 @@ serialNo,name,date,amount,category
 301,Bank Fee,2020-08-21,8608.51,Others
 302,Pet,2020-08-27,1190.15,Others
 303,Books,2020-08-19,6903.46,Education
-304,Internet,2020-08-27,8041.7,Communication
+304,Internet,2020-08-27,8041.70,Communication
 305,Accessories,2020-08-16,6729.05,Others
-306,Charity,2020-08-17,3911.5,Others
+306,Charity,2020-08-17,3911.50,Others
 307,Bus,2020-08-12,2449.77,Transportation
 308,Streaming Service,2020-08-17,1174.39,Entertainment
 309,Notebook,2020-08-13,6514.17,Education
 310,Pet,2020-08-11,8753.04,Others
 311,Meat,2020-08-09,1912.86,Food
-312,Cruise,2020-08-06,3488.9,Travel
+312,Cruise,2020-08-06,3488.90,Travel
 313,Therapy,2020-08-02,6320.17,Medical
 314,Bus,2020-08-04,7124.21,Transportation
-315,Train,2020-08-14,4167.1,Travel
+315,Train,2020-08-14,4167.10,Travel
 316,Shoes,2020-08-08,2008.78,Clothing
 317,Gift,2020-08-11,2599.41,Others
 318,Jacket,2020-08-16,7594.37,Clothing
 319,Maintenance,2020-08-07,2786.15,Home
 320,Taxi,2020-08-13,360.44,Travel
-321,Rental Car,2020-08-28,3516.3,Travel
+321,Rental Car,2020-08-28,3516.30,Travel
 322,Data Plan,2020-08-14,8346.47,Communication
 323,Fast Food,2020-08-08,7389.45,Food
 324,Karaoke,2020-08-15,7771.73,Entertainment
 325,Medicine,2020-08-21,7426.54,Medical
-326,Therapy,2020-08-14,849.0,Medical
+326,Therapy,2020-08-14,849.00,Medical
 327,Dental Check,2020-08-14,6679.22,Medical
 328,Swimming,2020-08-11,5462.05,Sports
 329,Fitness Class,2020-08-28,2397.16,Sports
 330,Groceries,2020-08-03,2207.32,Food
 331,Cleaning,2020-08-01,2037.97,Home
 332,Rental Car,2020-08-05,7998.17,Travel
-333,Belt,2020-08-15,3908.7,Clothing
-334,Surgery,2020-08-28,2156.7,Medical
+333,Belt,2020-08-15,3908.70,Clothing
+334,Surgery,2020-08-28,2156.70,Medical
 335,Vegetables,2020-08-13,2552.82,Food
 336,Water Bill,2020-08-14,5064.41,Home
 337,Movie,2020-08-22,185.77,Entertainment
@@ -353,7 +353,7 @@ serialNo,name,date,amount,category
 352,Tennis,2020-08-24,4927.03,Sports
 353,Music Festival,2020-08-26,783.32,Entertainment
 354,Mobile Recharge,2020-08-17,3241.24,Communication
-355,SIM Card,2020-08-04,1064.0,Communication
+355,SIM Card,2020-08-04,1064.00,Communication
 356,Karaoke,2020-08-10,2964.42,Entertainment
 357,Club,2020-08-11,4798.18,Entertainment
 358,Shirt,2020-08-24,9494.93,Clothing
@@ -379,7 +379,7 @@ serialNo,name,date,amount,category
 378,Internet,2020-08-27,8923.57,Home
 379,Hotel,2020-08-16,4454.47,Travel
 380,Surgery,2020-08-28,4756.93,Medical
-381,Travel Insurance,2020-08-20,3886.4,Travel
+381,Travel Insurance,2020-08-20,3886.40,Travel
 382,Metro,2020-08-04,8566.52,Transportation
 383,Doctor Visit,2020-08-15,4588.47,Medical
 384,Workshop,2020-08-11,449.21,Education
@@ -387,7 +387,7 @@ serialNo,name,date,amount,category
 386,Socks,2020-08-01,6310.51,Clothing
 387,Bus,2020-08-09,4510.33,Transportation
 388,Taxi,2020-08-11,1622.65,Transportation
-389,Theater,2020-08-10,4940.1,Entertainment
+389,Theater,2020-08-10,4940.10,Entertainment
 390,Parking,2020-08-04,6250.16,Transportation
 391,Taxi,2020-08-14,4220.25,Transportation
 392,Health Check,2020-08-17,5644.89,Medical
@@ -416,8 +416,8 @@ serialNo,name,date,amount,category
 415,Train,2020-09-22,9154.21,Transportation
 416,Toll,2020-09-19,9369.37,Travel
 417,Internet,2020-09-04,5088.01,Home
-418,Fuel,2020-09-04,4092.5,Transportation
-419,Running,2020-09-26,8442.9,Sports
+418,Fuel,2020-09-04,4092.50,Transportation
+419,Running,2020-09-26,8442.90,Sports
 420,Electricity,2020-09-08,2864.45,Home
 421,Rent,2020-09-13,991.65,Home
 422,Equipment,2020-09-09,2299.38,Sports
@@ -489,16 +489,16 @@ serialNo,name,date,amount,category
 488,Stationery,2020-09-09,7377.57,Education
 489,Equipment,2020-09-14,31.23,Sports
 490,Donation,2020-09-14,8160.28,Others
-491,Calling Card,2020-09-10,3283.7,Communication
+491,Calling Card,2020-09-10,3283.70,Communication
 492,Stationery,2020-09-01,1764.43,Education
 493,Online Course,2020-09-01,9546.83,Education
 494,Club,2020-09-23,9313.56,Entertainment
 495,Data Plan,2020-09-15,9393.24,Communication
 496,Dental Check,2020-09-16,3033.98,Medical
-497,Security,2020-09-19,2788.9,Others
+497,Security,2020-09-19,2788.90,Others
 498,Cycling,2020-09-18,8976.55,Sports
 499,Running,2020-09-14,3795.58,Sports
-500,Stationery,2020-09-04,4273.9,Education
+500,Stationery,2020-09-04,4273.90,Education
 501,Gas,2020-10-27,7254.98,Home
 502,Electricity,2020-10-14,2662.13,Home
 503,Fruits,2020-10-19,90.21,Food
@@ -509,9 +509,9 @@ serialNo,name,date,amount,category
 508,Theater,2020-10-16,2126.78,Entertainment
 509,Bicycle,2020-10-20,4319.67,Transportation
 510,Doctor Visit,2020-10-08,8012.67,Medical
-511,Swimming,2020-10-03,7096.0,Sports
+511,Swimming,2020-10-03,7096.00,Sports
 512,Snacks,2020-10-03,6318.08,Food
-513,Bank Fee,2020-10-21,7388.0,Others
+513,Bank Fee,2020-10-21,7388.00,Others
 514,Yoga,2020-10-19,3735.08,Sports
 515,Karaoke,2020-10-14,2932.18,Entertainment
 516,Visa Fee,2020-10-10,4371.12,Travel
@@ -539,11 +539,11 @@ serialNo,name,date,amount,category
 538,Charity,2020-10-01,8025.49,Others
 539,Hat,2020-10-21,3950.59,Clothing
 540,Toll,2020-10-14,7814.01,Transportation
-541,Travel Insurance,2020-10-16,8493.6,Travel
+541,Travel Insurance,2020-10-16,8493.60,Travel
 542,Charity,2020-10-14,7760.71,Others
 543,Online Course,2020-10-05,1118.75,Education
 544,Dental Check,2020-10-09,9223.68,Medical
-545,Internet,2020-10-19,6407.5,Home
+545,Internet,2020-10-19,6407.50,Home
 546,Bus,2020-10-13,1774.91,Transportation
 547,Swimming,2020-10-16,3915.08,Sports
 548,Water Bill,2020-10-20,9582.12,Home
@@ -559,13 +559,13 @@ serialNo,name,date,amount,category
 558,Drinks,2020-10-08,8325.59,Food
 559,Swimming,2020-10-20,5915.47,Sports
 560,Cafe,2020-10-09,9759.05,Food
-561,Travel Insurance,2020-10-15,3699.6,Travel
+561,Travel Insurance,2020-10-15,3699.60,Travel
 562,Exam Fee,2020-10-10,8136.26,Education
 563,Cycling,2020-10-27,5132.01,Sports
 564,Hat,2020-10-17,330.17,Clothing
 565,Bicycle,2020-10-28,2999.77,Transportation
 566,Medicine,2020-10-16,8673.27,Medical
-567,Yoga,2020-10-17,5595.0,Sports
+567,Yoga,2020-10-17,5595.00,Sports
 568,Amusement Park,2020-10-26,6290.14,Entertainment
 569,Flight,2020-10-27,190.84,Travel
 570,Accessories,2020-10-17,9059.24,Others
@@ -576,12 +576,12 @@ serialNo,name,date,amount,category
 575,Socks,2020-10-01,6268.33,Clothing
 576,Sports Event,2020-10-23,8453.38,Entertainment
 577,Laundry,2020-10-28,9566.45,Others
-578,Fuel,2020-10-25,6403.0,Travel
+578,Fuel,2020-10-25,6403.00,Travel
 579,Therapy,2020-10-03,4507.32,Medical
-580,Drinks,2020-10-03,9163.7,Food
-581,Toll,2020-10-14,5162.4,Travel
+580,Drinks,2020-10-03,9163.70,Food
+581,Toll,2020-10-14,5162.40,Travel
 582,Calling Card,2020-10-09,3945.95,Communication
-583,Hospital Bill,2020-10-06,4100.8,Medical
+583,Hospital Bill,2020-10-06,4100.80,Medical
 584,Charity,2020-10-18,832.17,Others
 585,Charity,2020-10-27,4003.56,Others
 586,Travel Insurance,2020-10-24,1044.71,Travel
@@ -597,7 +597,7 @@ serialNo,name,date,amount,category
 596,Gift,2020-10-03,577.01,Others
 597,Swimming,2020-10-07,8619.91,Sports
 598,Concert,2020-10-16,4472.66,Entertainment
-599,Concert,2020-10-27,2372.0,Entertainment
+599,Concert,2020-10-27,2372.00,Entertainment
 600,Online Course,2020-10-24,869.82,Education
 601,Online Course,2020-11-05,9465.74,Education
 602,Football,2020-11-27,9931.02,Sports
@@ -612,7 +612,7 @@ serialNo,name,date,amount,category
 611,Taxi,2020-11-16,6129.28,Travel
 612,Dental Check,2020-11-06,7249.39,Medical
 613,Surgery,2020-11-07,4895.56,Medical
-614,Club,2020-11-05,2706.1,Entertainment
+614,Club,2020-11-05,2706.10,Entertainment
 615,Gym,2020-11-04,8254.67,Sports
 616,Karaoke,2020-11-01,5551.71,Entertainment
 617,Jeans,2020-11-15,9072.22,Clothing
@@ -620,18 +620,18 @@ serialNo,name,date,amount,category
 619,Subscription,2020-11-15,8793.26,Communication
 620,Furniture,2020-11-04,686.93,Home
 621,Lottery,2020-11-22,8538.75,Others
-622,Streaming Service,2020-11-23,3180.1,Entertainment
+622,Streaming Service,2020-11-23,3180.10,Entertainment
 623,Furniture,2020-11-20,749.02,Home
 624,Drinks,2020-11-25,5302.26,Food
 625,Equipment,2020-11-27,8649.05,Sports
-626,Cruise,2020-11-10,7581.4,Travel
+626,Cruise,2020-11-10,7581.40,Travel
 627,Parking,2020-11-25,6688.19,Transportation
 628,Accessories,2020-11-09,5915.56,Others
-629,Eye Exam,2020-11-25,1816.0,Medical
+629,Eye Exam,2020-11-25,1816.00,Medical
 630,Cleaning,2020-11-03,6261.46,Home
 631,Laundry,2020-11-15,2213.64,Others
 632,Internet,2020-11-27,3207.15,Communication
-633,Bus,2020-11-24,3424.1,Transportation
+633,Bus,2020-11-24,3424.10,Transportation
 634,Furniture,2020-11-18,1409.14,Home
 635,Accessories,2020-11-12,2499.35,Others
 636,Basketball,2020-11-28,3816.89,Sports
@@ -644,13 +644,13 @@ serialNo,name,date,amount,category
 643,Coat,2020-11-16,1578.97,Clothing
 644,Movie,2020-11-16,3009.66,Entertainment
 645,Vaccination,2020-11-25,430.75,Medical
-646,Postage,2020-11-19,6252.9,Communication
+646,Postage,2020-11-19,6252.90,Communication
 647,Storage,2020-11-02,7756.61,Others
 648,Fitness Class,2020-11-05,8692.44,Sports
 649,Running,2020-11-11,3239.31,Sports
 650,Workshop,2020-11-16,7551.03,Education
 651,Shirt,2020-11-15,35.02,Clothing
-652,Mobile Recharge,2020-11-26,5751.1,Communication
+652,Mobile Recharge,2020-11-26,5751.10,Communication
 653,Stationery,2020-11-12,6894.62,Education
 654,Parking,2020-11-04,1395.06,Transportation
 655,Laundry,2020-11-21,2293.52,Others
@@ -660,7 +660,7 @@ serialNo,name,date,amount,category
 659,Water Bill,2020-11-27,2164.21,Home
 660,Metro,2020-11-16,8151.61,Transportation
 661,Laundry,2020-11-16,3506.31,Others
-662,Eye Exam,2020-11-17,323.8,Medical
+662,Eye Exam,2020-11-17,323.80,Medical
 663,Coat,2020-11-24,8339.79,Clothing
 664,Cruise,2020-11-08,7100.16,Travel
 665,Notebook,2020-11-12,6206.77,Education
@@ -671,20 +671,20 @@ serialNo,name,date,amount,category
 670,Taxi,2020-11-01,1751.61,Travel
 671,Eye Exam,2020-11-05,2468.09,Medical
 672,Travel Insurance,2020-11-15,4595.97,Travel
-673,Donation,2020-11-03,3561.3,Others
+673,Donation,2020-11-03,3561.30,Others
 674,Lottery,2020-11-26,2231.76,Others
-675,Gym,2020-11-16,8864.1,Sports
+675,Gym,2020-11-16,8864.10,Sports
 676,Books,2020-11-24,9156.14,Education
 677,Hotel,2020-11-16,9203.91,Travel
 678,Amusement Park,2020-11-19,2511.67,Entertainment
-679,Backpack,2020-11-22,6530.1,Education
-680,Fitness Class,2020-11-22,9708.1,Sports
+679,Backpack,2020-11-22,6530.10,Education
+680,Fitness Class,2020-11-22,9708.10,Sports
 681,Workshop,2020-11-14,6141.98,Education
 682,Music Festival,2020-11-27,5054.67,Entertainment
 683,Dental Check,2020-11-19,253.93,Medical
 684,Surgery,2020-11-16,6247.04,Medical
-685,Belt,2020-11-07,190.8,Clothing
-686,Rental Car,2020-11-13,5152.2,Travel
+685,Belt,2020-11-07,190.80,Clothing
+686,Rental Car,2020-11-13,5152.20,Travel
 687,Taxi,2020-11-10,3737.57,Transportation
 688,Maintenance,2020-11-15,7621.54,Home
 689,Rental Car,2020-11-05,7767.83,Travel
@@ -694,7 +694,7 @@ serialNo,name,date,amount,category
 693,Socks,2020-11-14,3056.39,Clothing
 694,Visa Fee,2020-11-10,7575.02,Travel
 695,Furniture,2020-11-07,5225.53,Home
-696,Internet,2020-11-26,2757.6,Communication
+696,Internet,2020-11-26,2757.60,Communication
 697,Taxi,2020-11-17,4291.07,Transportation
 698,Notebook,2020-11-12,1669.19,Education
 699,Cleaning,2020-11-24,8974.72,Home
@@ -711,16 +711,16 @@ serialNo,name,date,amount,category
 710,Tennis,2020-12-02,3234.69,Sports
 711,Hotel,2020-12-21,3413.48,Travel
 712,Internet,2020-12-26,1038.69,Communication
-713,Rental Car,2020-12-24,4262.4,Travel
+713,Rental Car,2020-12-24,4262.40,Travel
 714,Gym,2020-12-20,3376.42,Sports
 715,Parking,2020-12-19,8336.11,Transportation
 716,Taxi,2020-12-26,3069.91,Travel
 717,Laundry,2020-12-02,5495.86,Others
 718,Postage,2020-12-21,7724.09,Communication
 719,Fruits,2020-12-23,7244.03,Food
-720,Doctor Visit,2020-12-11,8478.3,Medical
+720,Doctor Visit,2020-12-11,8478.30,Medical
 721,Movie,2020-12-14,1843.07,Entertainment
-722,Train,2020-12-16,9006.0,Transportation
+722,Train,2020-12-16,9006.00,Transportation
 723,Flight,2020-12-10,7473.28,Travel
 724,Cruise,2020-12-03,4955.28,Travel
 725,Medicine,2020-12-15,3988.73,Medical
@@ -732,14 +732,14 @@ serialNo,name,date,amount,category
 731,Backpack,2020-12-04,3897.38,Education
 732,Scarf,2020-12-05,2421.09,Clothing
 733,Drinks,2020-12-20,6283.71,Food
-734,Game,2020-12-26,6255.9,Entertainment
+734,Game,2020-12-26,6255.90,Entertainment
 735,Postage,2020-12-22,754.71,Communication
 736,Belt,2020-12-01,6866.06,Clothing
 737,Workshop,2020-12-14,9234.65,Education
 738,Hospital Bill,2020-12-14,7893.62,Medical
 739,Internet,2020-12-21,9990.38,Communication
-740,Tennis,2020-12-14,3227.8,Sports
-741,Rent,2020-12-14,7866.3,Home
+740,Tennis,2020-12-14,3227.80,Sports
+741,Rent,2020-12-14,7866.30,Home
 742,Calling Card,2020-12-19,4078.68,Communication
 743,Flight,2020-12-17,5153.95,Travel
 744,Coat,2020-12-24,7243.89,Clothing
@@ -768,7 +768,7 @@ serialNo,name,date,amount,category
 767,Postage,2020-12-02,1783.86,Communication
 768,Scooter,2020-12-06,5230.42,Transportation
 769,Fuel,2020-12-16,983.47,Travel
-770,Gas,2020-12-07,6860.4,Home
+770,Gas,2020-12-07,6860.40,Home
 771,Train,2020-12-26,4492.22,Travel
 772,Security,2020-12-06,6153.38,Others
 773,Amusement Park,2020-12-25,1756.93,Entertainment
@@ -788,14 +788,14 @@ serialNo,name,date,amount,category
 787,Security,2020-12-01,1434.86,Others
 788,Mobile Recharge,2020-12-12,6585.61,Communication
 789,Shirt,2020-12-20,9981.27,Clothing
-790,Theater,2020-12-03,3290.0,Entertainment
+790,Theater,2020-12-03,3290.00,Entertainment
 791,Restaurant,2020-12-07,9559.08,Food
-792,Stationery,2020-12-16,4838.2,Education
+792,Stationery,2020-12-16,4838.20,Education
 793,Travel Insurance,2020-12-22,7797.24,Travel
 794,Restaurant,2020-12-02,3250.95,Food
 795,Dental Check,2020-12-11,6924.67,Medical
-796,Theater,2020-12-15,4929.6,Entertainment
-797,Laundry,2020-12-08,8897.0,Others
+796,Theater,2020-12-15,4929.60,Entertainment
+797,Laundry,2020-12-08,8897.00,Others
 798,Subscription,2020-12-21,4690.55,Communication
 799,Insurance,2020-12-10,6943.02,Medical
 800,Swimming,2020-12-04,6376.67,Sports
@@ -803,7 +803,7 @@ serialNo,name,date,amount,category
 802,Rental Car,2021-01-06,7670.32,Travel
 803,Cleaning,2021-01-07,6128.69,Home
 804,Electricity,2021-01-18,1854.09,Home
-805,Metro,2021-01-24,4810.9,Transportation
+805,Metro,2021-01-24,4810.90,Transportation
 806,Charity,2021-01-22,2758.29,Others
 807,Phone Bill,2021-01-12,5799.55,Communication
 808,Toll,2021-01-07,1565.86,Transportation
@@ -816,7 +816,7 @@ serialNo,name,date,amount,category
 815,Cleaning,2021-01-20,9284.47,Home
 816,Dress,2021-01-18,3793.27,Clothing
 817,Jacket,2021-01-16,9260.87,Clothing
-818,Stationery,2021-01-28,6067.6,Education
+818,Stationery,2021-01-28,6067.60,Education
 819,Vegetables,2021-01-13,9163.83,Food
 820,Cruise,2021-01-11,9098.59,Travel
 821,Bus,2021-01-05,1089.62,Transportation
@@ -824,7 +824,7 @@ serialNo,name,date,amount,category
 823,Internet,2021-01-14,4954.97,Home
 824,Vegetables,2021-01-19,2136.53,Food
 825,Stationery,2021-01-04,6274.17,Education
-826,Shoes,2021-01-22,2394.3,Clothing
+826,Shoes,2021-01-22,2394.30,Clothing
 827,Surgery,2021-01-11,2169.28,Medical
 828,Lottery,2021-01-11,1431.93,Others
 829,Travel Insurance,2021-01-16,5770.62,Travel
@@ -837,7 +837,7 @@ serialNo,name,date,amount,category
 836,Lottery,2021-01-01,9992.14,Others
 837,Mobile Recharge,2021-01-27,991.54,Communication
 838,Concert,2021-01-21,7543.47,Entertainment
-839,Tuition,2021-01-20,9514.3,Education
+839,Tuition,2021-01-20,9514.30,Education
 840,Tennis,2021-01-27,9507.62,Sports
 841,Equipment,2021-01-26,6130.22,Sports
 842,VPN,2021-01-10,3075.83,Communication
@@ -858,7 +858,7 @@ serialNo,name,date,amount,category
 857,Appliance,2021-01-21,1569.52,Home
 858,Jeans,2021-01-06,3811.72,Clothing
 859,Pet,2021-01-26,7737.42,Others
-860,Fitness Class,2021-01-06,4347.4,Sports
+860,Fitness Class,2021-01-06,4347.40,Sports
 861,Water Bill,2021-01-27,8777.58,Home
 862,Delivery,2021-01-12,1695.57,Food
 863,Swimming,2021-01-06,4726.23,Sports
@@ -903,8 +903,8 @@ serialNo,name,date,amount,category
 902,Belt,2021-02-24,8873.09,Clothing
 903,Rental Car,2021-02-19,9824.37,Travel
 904,Backpack,2021-02-05,390.25,Education
-905,Cleaning,2021-02-02,7974.9,Home
-906,Notebook,2021-02-25,8183.5,Education
+905,Cleaning,2021-02-02,7974.90,Home
+906,Notebook,2021-02-25,8183.50,Education
 907,Socks,2021-02-17,2366.62,Clothing
 908,Restaurant,2021-02-13,9528.51,Food
 909,Tennis,2021-02-09,1607.15,Sports
@@ -927,16 +927,16 @@ serialNo,name,date,amount,category
 926,Belt,2021-02-13,603.23,Clothing
 927,Cycling,2021-02-12,7454.65,Sports
 928,Delivery,2021-02-01,1026.01,Food
-929,Ride Sharing,2021-02-19,4078.9,Transportation
-930,Vegetables,2021-02-27,6568.5,Food
+929,Ride Sharing,2021-02-19,4078.90,Transportation
+930,Vegetables,2021-02-27,6568.50,Food
 931,Cleaning,2021-02-20,6700.92,Home
-932,Electricity,2021-02-03,5459.3,Home
+932,Electricity,2021-02-03,5459.30,Home
 933,Groceries,2021-02-16,5029.29,Food
 934,Dental Check,2021-02-23,2255.07,Medical
 935,Music Festival,2021-02-01,4512.91,Entertainment
 936,Club,2021-02-06,6061.96,Entertainment
 937,Flight,2021-02-22,9530.44,Travel
-938,Furniture,2021-02-04,9456.4,Home
+938,Furniture,2021-02-04,9456.40,Home
 939,Running,2021-02-15,6967.93,Sports
 940,Fuel,2021-02-19,2348.93,Transportation
 941,Jeans,2021-02-27,8129.15,Clothing
@@ -946,10 +946,10 @@ serialNo,name,date,amount,category
 945,Cafe,2021-02-15,6824.83,Food
 946,Cleaning,2021-02-20,1081.32,Home
 947,Fuel,2021-02-13,5045.32,Travel
-948,Cleaning,2021-02-09,2284.8,Home
+948,Cleaning,2021-02-09,2284.80,Home
 949,Streaming Service,2021-02-17,408.15,Entertainment
 950,Delivery,2021-02-16,5370.54,Food
-951,SIM Card,2021-02-04,8679.0,Communication
+951,SIM Card,2021-02-04,8679.00,Communication
 952,Equipment,2021-02-05,9662.84,Sports
 953,Amusement Park,2021-02-04,2873.36,Entertainment
 954,Scarf,2021-02-12,6435.78,Clothing
@@ -964,24 +964,24 @@ serialNo,name,date,amount,category
 963,Gift,2021-02-27,4194.05,Others
 964,Vaccination,2021-02-02,916.11,Medical
 965,Coat,2021-02-08,6251.02,Clothing
-966,Maintenance,2021-02-21,5580.8,Home
+966,Maintenance,2021-02-21,5580.80,Home
 967,Water Bill,2021-02-11,5657.78,Home
-968,Shirt,2021-02-06,8737.0,Clothing
-969,SIM Card,2021-02-18,9007.7,Communication
+968,Shirt,2021-02-06,8737.00,Clothing
+969,SIM Card,2021-02-18,9007.70,Communication
 970,Books,2021-02-16,7294.96,Education
 971,Meat,2021-02-01,84.49,Food
-972,Shirt,2021-02-02,7136.2,Clothing
+972,Shirt,2021-02-02,7136.20,Clothing
 973,Furniture,2021-02-08,4058.41,Home
-974,Calling Card,2021-02-06,1453.4,Communication
+974,Calling Card,2021-02-06,1453.40,Communication
 975,Toll,2021-02-19,178.49,Travel
 976,Streaming Service,2021-02-11,7249.39,Entertainment
 977,Cruise,2021-02-21,7690.21,Travel
 978,Cleaning,2021-02-15,9194.93,Home
-979,Phone Bill,2021-02-19,1419.9,Communication
+979,Phone Bill,2021-02-19,1419.90,Communication
 980,Belt,2021-02-14,2986.86,Clothing
 981,Subscription,2021-02-08,2947.79,Communication
 982,Cleaning,2021-02-02,3355.66,Home
-983,Karaoke,2021-02-06,3659.4,Entertainment
+983,Karaoke,2021-02-06,3659.40,Entertainment
 984,Fast Food,2021-02-19,7208.37,Food
 985,Eye Exam,2021-02-20,3179.15,Medical
 986,Mobile Recharge,2021-02-25,4079.57,Communication
@@ -995,22 +995,22 @@ serialNo,name,date,amount,category
 994,Football,2021-02-20,9938.28,Sports
 995,Insurance,2021-02-16,4182.25,Medical
 996,Dental Check,2021-02-11,6152.63,Medical
-997,Running,2021-02-24,4356.8,Sports
+997,Running,2021-02-24,4356.80,Sports
 998,Vaccination,2021-02-27,9663.69,Medical
-999,Pen,2021-02-04,6938.5,Education
+999,Pen,2021-02-04,6938.50,Education
 1000,Cleaning,2021-02-19,8824.47,Home
 1001,Maintenance,2021-03-17,9419.29,Home
 1002,Toll,2021-03-10,205.82,Transportation
 1003,Bicycle,2021-03-08,7549.57,Transportation
-1004,Visa Fee,2021-03-11,606.0,Travel
+1004,Visa Fee,2021-03-11,606.00,Travel
 1005,Groceries,2021-03-11,2908.75,Food
 1006,Subscription,2021-03-20,9472.56,Communication
-1007,Pet,2021-03-11,386.2,Others
+1007,Pet,2021-03-11,386.20,Others
 1008,Jacket,2021-03-08,7849.17,Clothing
 1009,Belt,2021-03-18,1152.28,Clothing
 1010,Eye Exam,2021-03-01,7324.95,Medical
 1011,Notebook,2021-03-11,5979.54,Education
-1012,Taxi,2021-03-11,9704.0,Travel
+1012,Taxi,2021-03-11,9704.00,Travel
 1013,VPN,2021-03-22,9248.13,Communication
 1014,Vegetables,2021-03-23,2982.26,Food
 1015,Shirt,2021-03-01,4142.78,Clothing
@@ -1023,13 +1023,13 @@ serialNo,name,date,amount,category
 1022,Hotel,2021-03-06,7490.11,Travel
 1023,Furniture,2021-03-15,6562.34,Home
 1024,VPN,2021-03-02,2377.09,Communication
-1025,Karaoke,2021-03-25,3056.5,Entertainment
-1026,Cycling,2021-03-06,637.2,Sports
+1025,Karaoke,2021-03-25,3056.50,Entertainment
+1026,Cycling,2021-03-06,637.20,Sports
 1027,Amusement Park,2021-03-05,9330.59,Entertainment
 1028,Calling Card,2021-03-06,6924.96,Communication
 1029,Tuition,2021-03-20,4959.92,Education
 1030,Sports Event,2021-03-06,509.23,Entertainment
-1031,Club,2021-03-15,8380.1,Entertainment
+1031,Club,2021-03-15,8380.10,Entertainment
 1032,Belt,2021-03-13,6973.02,Clothing
 1033,Jeans,2021-03-23,7429.26,Clothing
 1034,Hat,2021-03-19,7628.22,Clothing
@@ -1040,7 +1040,7 @@ serialNo,name,date,amount,category
 1039,Eye Exam,2021-03-28,5348.06,Medical
 1040,VPN,2021-03-22,7033.75,Communication
 1041,Running,2021-03-23,19.69,Sports
-1042,Amusement Park,2021-03-06,798.0,Entertainment
+1042,Amusement Park,2021-03-06,798.00,Entertainment
 1043,Socks,2021-03-08,1547.15,Clothing
 1044,Fitness Class,2021-03-01,2770.74,Sports
 1045,Train,2021-03-11,9414.06,Transportation
@@ -1059,16 +1059,16 @@ serialNo,name,date,amount,category
 1058,Train,2021-03-22,5429.84,Travel
 1059,Train,2021-03-13,7233.19,Travel
 1060,Hat,2021-03-05,5504.62,Clothing
-1061,Fast Food,2021-03-22,4468.6,Food
+1061,Fast Food,2021-03-22,4468.60,Food
 1062,Fitness Class,2021-03-24,2367.98,Sports
 1063,Notebook,2021-03-18,1954.55,Education
 1064,Scarf,2021-03-08,9627.27,Clothing
 1065,Electricity,2021-03-09,8439.46,Home
 1066,Vegetables,2021-03-15,5867.25,Food
 1067,Water Bill,2021-03-19,4253.16,Home
-1068,Game,2021-03-22,6654.1,Entertainment
+1068,Game,2021-03-22,6654.10,Entertainment
 1069,Doctor Visit,2021-03-13,6226.99,Medical
-1070,Taxi,2021-03-27,281.9,Transportation
+1070,Taxi,2021-03-27,281.90,Transportation
 1071,Bus,2021-03-27,6431.25,Transportation
 1072,Yoga,2021-03-15,2641.42,Sports
 1073,Cruise,2021-03-04,8700.82,Travel
@@ -1088,7 +1088,7 @@ serialNo,name,date,amount,category
 1087,Game,2021-03-20,4647.92,Entertainment
 1088,Jeans,2021-03-22,2113.86,Clothing
 1089,Bank Fee,2021-03-04,7631.94,Others
-1090,Books,2021-03-23,625.1,Education
+1090,Books,2021-03-23,625.10,Education
 1091,Ride Sharing,2021-03-11,5979.41,Transportation
 1092,Cycling,2021-03-13,7884.34,Sports
 1093,Swimming,2021-03-13,9039.22,Sports
@@ -1131,14 +1131,14 @@ serialNo,name,date,amount,category
 1130,Security,2021-04-12,654.41,Others
 1131,Appliance,2021-04-01,8536.15,Home
 1132,Storage,2021-04-03,3682.73,Others
-1133,Phone Bill,2021-04-24,6521.2,Communication
+1133,Phone Bill,2021-04-24,6521.20,Communication
 1134,Club,2021-04-12,4903.94,Entertainment
 1135,Donation,2021-04-19,4166.39,Others
-1136,Basketball,2021-04-26,1520.9,Sports
-1137,Parking,2021-04-02,279.3,Transportation
-1138,Cruise,2021-04-18,3843.9,Travel
+1136,Basketball,2021-04-26,1520.90,Sports
+1137,Parking,2021-04-02,279.30,Transportation
+1138,Cruise,2021-04-18,3843.90,Travel
 1139,Cafe,2021-04-20,851.89,Food
-1140,Mortgage,2021-04-13,1151.1,Home
+1140,Mortgage,2021-04-13,1151.10,Home
 1141,Cafe,2021-04-10,2891.38,Food
 1142,Drinks,2021-04-22,5985.64,Food
 1143,Gas,2021-04-15,2747.48,Home
@@ -1161,25 +1161,25 @@ serialNo,name,date,amount,category
 1160,Ride Sharing,2021-04-08,5998.24,Transportation
 1161,Charity,2021-04-10,8595.86,Others
 1162,Coat,2021-04-16,4293.15,Clothing
-1163,Theater,2021-04-23,7402.5,Entertainment
+1163,Theater,2021-04-23,7402.50,Entertainment
 1164,VPN,2021-04-04,645.37,Communication
 1165,VPN,2021-04-09,3937.33,Communication
 1166,Cafe,2021-04-15,5982.02,Food
 1167,Lottery,2021-04-10,6675.39,Others
 1168,Insurance,2021-04-04,4995.68,Medical
 1169,Dental Check,2021-04-12,1776.93,Medical
-1170,Game,2021-04-25,1792.2,Entertainment
-1171,Bank Fee,2021-04-05,203.2,Others
+1170,Game,2021-04-25,1792.20,Entertainment
+1171,Bank Fee,2021-04-05,203.20,Others
 1172,Postage,2021-04-08,8784.72,Communication
 1173,Mortgage,2021-04-15,1374.71,Home
-1174,Socks,2021-04-04,8681.6,Clothing
+1174,Socks,2021-04-04,8681.60,Clothing
 1175,Accessories,2021-04-24,5332.94,Others
 1176,Hat,2021-04-17,7592.93,Clothing
-1177,Train,2021-04-06,567.1,Travel
+1177,Train,2021-04-06,567.10,Travel
 1178,Parking,2021-04-24,181.25,Transportation
 1179,Game,2021-04-05,299.11,Entertainment
 1180,Vegetables,2021-04-14,9598.09,Food
-1181,Toll,2021-04-24,6796.9,Transportation
+1181,Toll,2021-04-24,6796.90,Transportation
 1182,Jacket,2021-04-24,2614.91,Clothing
 1183,Stationery,2021-04-05,9074.39,Education
 1184,Meat,2021-04-04,8625.78,Food
@@ -1206,7 +1206,7 @@ serialNo,name,date,amount,category
 1205,Jeans,2021-05-21,241.59,Clothing
 1206,Rental Car,2021-05-18,8243.92,Travel
 1207,VPN,2021-05-14,7576.34,Communication
-1208,Internet,2021-05-10,2475.2,Home
+1208,Internet,2021-05-10,2475.20,Home
 1209,Cruise,2021-05-12,546.39,Travel
 1210,Charity,2021-05-01,7038.33,Others
 1211,Equipment,2021-05-03,9379.25,Sports
@@ -1221,18 +1221,18 @@ serialNo,name,date,amount,category
 1220,Taxi,2021-05-28,8626.45,Transportation
 1221,Accessories,2021-05-22,6971.26,Others
 1222,Hotel,2021-05-03,2796.68,Travel
-1223,Parking,2021-05-08,5046.6,Transportation
+1223,Parking,2021-05-08,5046.60,Transportation
 1224,Music Festival,2021-05-25,6034.79,Entertainment
 1225,Storage,2021-05-14,7367.69,Others
 1226,Metro,2021-05-03,6162.01,Transportation
 1227,Charity,2021-05-20,5993.04,Others
 1228,Accessories,2021-05-15,7005.89,Others
 1229,Tuition,2021-05-14,9735.56,Education
-1230,Belt,2021-05-05,6930.2,Clothing
+1230,Belt,2021-05-05,6930.20,Clothing
 1231,Laundry,2021-05-28,7447.64,Others
 1232,Internet,2021-05-01,5131.26,Home
 1233,Tuition,2021-05-13,5109.86,Education
-1234,Medicine,2021-05-16,7196.3,Medical
+1234,Medicine,2021-05-16,7196.30,Medical
 1235,Health Check,2021-05-18,7326.66,Medical
 1236,Restaurant,2021-05-23,7663.72,Food
 1237,Train,2021-05-05,6399.51,Travel
@@ -1247,7 +1247,7 @@ serialNo,name,date,amount,category
 1246,Pen,2021-05-06,8861.22,Education
 1247,Stationery,2021-05-20,3239.77,Education
 1248,Meat,2021-05-08,4869.59,Food
-1249,Insurance,2021-05-21,6155.9,Medical
+1249,Insurance,2021-05-21,6155.90,Medical
 1250,VPN,2021-05-25,5590.88,Communication
 1251,Movie,2021-05-21,7669.26,Entertainment
 1252,Subscription,2021-05-12,8036.99,Communication
@@ -1265,24 +1265,24 @@ serialNo,name,date,amount,category
 1264,Restaurant,2021-05-20,1957.45,Food
 1265,Seminar,2021-05-26,4805.38,Education
 1266,Bus,2021-05-12,3384.54,Transportation
-1267,Subscription,2021-05-12,4731.7,Communication
+1267,Subscription,2021-05-12,4731.70,Communication
 1268,Rent,2021-05-08,9407.52,Home
 1269,Surgery,2021-05-06,5726.84,Medical
 1270,Jacket,2021-05-12,470.56,Clothing
 1271,Therapy,2021-05-20,8413.87,Medical
-1272,Socks,2021-05-22,4113.1,Clothing
+1272,Socks,2021-05-22,4113.10,Clothing
 1273,Pen,2021-05-12,4874.16,Education
 1274,Laundry,2021-05-09,3825.66,Others
 1275,Equipment,2021-05-15,3113.43,Sports
 1276,Internet,2021-05-27,720.55,Home
 1277,Data Plan,2021-05-12,5530.57,Communication
-1278,Taxi,2021-05-05,7075.9,Transportation
+1278,Taxi,2021-05-05,7075.90,Transportation
 1279,Online Course,2021-05-22,7668.28,Education
 1280,Hat,2021-05-23,2078.75,Clothing
-1281,Exam Fee,2021-05-02,9884.6,Education
+1281,Exam Fee,2021-05-02,9884.60,Education
 1282,Scarf,2021-05-01,8856.66,Clothing
 1283,Phone Bill,2021-05-27,1064.14,Communication
-1284,Toll,2021-05-23,953.4,Transportation
+1284,Toll,2021-05-23,953.40,Transportation
 1285,Club,2021-05-05,4022.95,Entertainment
 1286,Hospital Bill,2021-05-24,4027.17,Medical
 1287,Stationery,2021-05-11,3976.51,Education
@@ -1313,8 +1313,8 @@ serialNo,name,date,amount,category
 1312,Tuition,2021-06-27,8587.58,Education
 1313,Fitness Class,2021-06-23,202.78,Sports
 1314,Internet,2021-06-03,4026.94,Communication
-1315,Exam Fee,2021-06-06,9398.4,Education
-1316,Doctor Visit,2021-06-16,724.0,Medical
+1315,Exam Fee,2021-06-06,9398.40,Education
+1316,Doctor Visit,2021-06-16,724.00,Medical
 1317,Books,2021-06-13,8552.03,Education
 1318,Internet,2021-06-06,1004.99,Home
 1319,Fuel,2021-06-22,1114.97,Transportation
@@ -1336,14 +1336,14 @@ serialNo,name,date,amount,category
 1335,Cafe,2021-06-25,1939.76,Food
 1336,Internet,2021-06-03,2770.76,Home
 1337,Water Bill,2021-06-24,1410.28,Home
-1338,Delivery,2021-06-11,4766.4,Food
+1338,Delivery,2021-06-11,4766.40,Food
 1339,Flight,2021-06-05,7924.55,Travel
 1340,Mortgage,2021-06-21,2801.76,Home
 1341,Jacket,2021-06-01,9969.54,Clothing
-1342,Dress,2021-06-17,6916.6,Clothing
+1342,Dress,2021-06-17,6916.60,Clothing
 1343,Exam Fee,2021-06-07,538.73,Education
 1344,Fast Food,2021-06-25,7339.26,Food
-1345,Internet,2021-06-15,6192.4,Home
+1345,Internet,2021-06-15,6192.40,Home
 1346,Calling Card,2021-06-11,3677.85,Communication
 1347,Vaccination,2021-06-05,5116.66,Medical
 1348,Parking,2021-06-08,9863.32,Transportation
@@ -1361,7 +1361,7 @@ serialNo,name,date,amount,category
 1360,Subscription,2021-06-04,4465.42,Communication
 1361,Internet,2021-06-03,8339.48,Home
 1362,Football,2021-06-19,6690.16,Sports
-1363,Movie,2021-06-19,9590.7,Entertainment
+1363,Movie,2021-06-19,9590.70,Entertainment
 1364,Toll,2021-06-15,2199.51,Transportation
 1365,Scooter,2021-06-24,1834.82,Transportation
 1366,Metro,2021-06-19,5723.84,Transportation
@@ -1375,27 +1375,27 @@ serialNo,name,date,amount,category
 1374,Health Check,2021-06-22,8985.42,Medical
 1375,Amusement Park,2021-06-01,2277.34,Entertainment
 1376,Therapy,2021-06-06,7993.81,Medical
-1377,Postage,2021-06-02,469.4,Communication
+1377,Postage,2021-06-02,469.40,Communication
 1378,Cycling,2021-06-23,3618.95,Sports
 1379,Gift,2021-06-07,7113.36,Others
-1380,Pen,2021-06-25,8659.8,Education
+1380,Pen,2021-06-25,8659.80,Education
 1381,Streaming Service,2021-06-14,3495.98,Entertainment
 1382,Bank Fee,2021-06-24,8045.76,Others
 1383,Eye Exam,2021-06-25,1722.83,Medical
 1384,Parking,2021-06-09,2428.05,Transportation
 1385,Gas,2021-06-25,1449.65,Home
-1386,Club,2021-06-25,2512.7,Entertainment
+1386,Club,2021-06-25,2512.70,Entertainment
 1387,Mortgage,2021-06-06,3873.78,Home
 1388,Workshop,2021-06-08,1651.13,Education
 1389,Belt,2021-06-03,5685.56,Clothing
 1390,Health Check,2021-06-06,5025.96,Medical
-1391,Sports Event,2021-06-28,8401.2,Entertainment
+1391,Sports Event,2021-06-28,8401.20,Entertainment
 1392,Pen,2021-06-13,1137.78,Education
 1393,Insurance,2021-06-14,4814.42,Medical
 1394,Snacks,2021-06-19,9393.02,Food
 1395,Pen,2021-06-12,5888.64,Education
 1396,Stationery,2021-06-05,5349.64,Education
-1397,Visa Fee,2021-06-08,1058.2,Travel
+1397,Visa Fee,2021-06-08,1058.20,Travel
 1398,Dress,2021-06-03,3783.03,Clothing
 1399,Rent,2021-06-03,5595.36,Home
 1400,Shirt,2021-06-27,2887.56,Clothing
@@ -1408,7 +1408,7 @@ serialNo,name,date,amount,category
 1407,Scarf,2021-07-02,9535.41,Clothing
 1408,Hospital Bill,2021-07-15,4017.18,Medical
 1409,Donation,2021-07-26,9983.35,Others
-1410,Snacks,2021-07-09,292.0,Food
+1410,Snacks,2021-07-09,292.00,Food
 1411,Jacket,2021-07-09,2139.14,Clothing
 1412,Taxi,2021-07-26,4558.75,Travel
 1413,Meat,2021-07-22,81.93,Food
@@ -1428,21 +1428,21 @@ serialNo,name,date,amount,category
 1427,Music Festival,2021-07-27,9087.94,Entertainment
 1428,Football,2021-07-10,7709.01,Sports
 1429,Charity,2021-07-20,3091.69,Others
-1430,Taxi,2021-07-15,9714.9,Transportation
-1431,Phone Bill,2021-07-14,8515.5,Communication
+1430,Taxi,2021-07-15,9714.90,Transportation
+1431,Phone Bill,2021-07-14,8515.50,Communication
 1432,Pet,2021-07-27,4530.02,Others
 1433,Rent,2021-07-05,5596.11,Home
 1434,Gym,2021-07-23,3722.67,Sports
 1435,Vegetables,2021-07-21,3367.39,Food
 1436,Swimming,2021-07-01,2793.88,Sports
-1437,Jacket,2021-07-06,3366.8,Clothing
+1437,Jacket,2021-07-06,3366.80,Clothing
 1438,Parking,2021-07-04,6985.84,Transportation
 1439,Cruise,2021-07-11,8232.45,Travel
 1440,Cruise,2021-07-08,2472.91,Travel
 1441,Flight,2021-07-02,2103.26,Travel
 1442,Running,2021-07-07,4199.01,Sports
 1443,SIM Card,2021-07-25,2488.66,Communication
-1444,Postage,2021-07-12,441.1,Communication
+1444,Postage,2021-07-12,441.10,Communication
 1445,Fuel,2021-07-11,3207.35,Travel
 1446,Sports Event,2021-07-28,2562.96,Entertainment
 1447,Pen,2021-07-27,6056.86,Education
@@ -1457,7 +1457,7 @@ serialNo,name,date,amount,category
 1456,VPN,2021-07-22,5390.89,Communication
 1457,Shoes,2021-07-22,8853.45,Clothing
 1458,Internet,2021-07-16,6702.93,Home
-1459,Dress,2021-07-02,5381.9,Clothing
+1459,Dress,2021-07-02,5381.90,Clothing
 1460,Notebook,2021-07-25,7037.41,Education
 1461,Amusement Park,2021-07-12,3607.04,Entertainment
 1462,Roaming,2021-07-09,8903.86,Communication
@@ -1465,32 +1465,32 @@ serialNo,name,date,amount,category
 1464,Appliance,2021-07-13,7269.88,Home
 1465,Streaming Service,2021-07-04,7535.78,Entertainment
 1466,Stationery,2021-07-16,2689.49,Education
-1467,Restaurant,2021-07-22,290.1,Food
+1467,Restaurant,2021-07-22,290.10,Food
 1468,Online Course,2021-07-24,1531.42,Education
 1469,Calling Card,2021-07-15,640.42,Communication
 1470,Toll,2021-07-07,9649.72,Transportation
 1471,Medicine,2021-07-04,1802.18,Medical
 1472,Stationery,2021-07-25,170.44,Education
-1473,Fuel,2021-07-19,8279.0,Transportation
+1473,Fuel,2021-07-19,8279.00,Transportation
 1474,Sports Event,2021-07-23,1773.53,Entertainment
 1475,Water Bill,2021-07-26,9348.94,Home
 1476,Concert,2021-07-07,9725.46,Entertainment
 1477,Scooter,2021-07-16,4951.35,Transportation
 1478,Internet,2021-07-15,9840.69,Communication
-1479,Theater,2021-07-10,3319.7,Entertainment
-1480,Scooter,2021-07-14,9356.2,Transportation
+1479,Theater,2021-07-10,3319.70,Entertainment
+1480,Scooter,2021-07-14,9356.20,Transportation
 1481,Maintenance,2021-07-25,8621.26,Home
 1482,Stationery,2021-07-17,3471.14,Education
 1483,Fitness Class,2021-07-10,4628.73,Sports
 1484,Cruise,2021-07-11,456.58,Travel
 1485,Internet,2021-07-17,4758.17,Communication
-1486,Toll,2021-07-16,8777.4,Travel
+1486,Toll,2021-07-16,8777.40,Travel
 1487,Hotel,2021-07-16,1205.18,Travel
 1488,Gift,2021-07-04,4183.69,Others
 1489,Rental Car,2021-07-22,5486.83,Travel
 1490,Rental Car,2021-07-13,5168.68,Travel
 1491,Backpack,2021-07-11,8734.31,Education
-1492,Security,2021-07-21,8673.7,Others
+1492,Security,2021-07-21,8673.70,Others
 1493,Bus,2021-07-19,8590.44,Transportation
 1494,Stationery,2021-07-23,6297.07,Education
 1495,Shirt,2021-07-27,5881.63,Clothing
@@ -1500,7 +1500,7 @@ serialNo,name,date,amount,category
 1499,Internet,2021-07-12,3195.44,Home
 1500,Train,2021-07-16,9785.93,Travel
 1501,Restaurant,2021-08-15,3191.28,Food
-1502,Movie,2021-08-16,1934.2,Entertainment
+1502,Movie,2021-08-16,1934.20,Entertainment
 1503,Pet,2021-08-03,5162.16,Others
 1504,Music Festival,2021-08-08,204.04,Entertainment
 1505,Snacks,2021-08-02,6734.26,Food
@@ -1520,7 +1520,7 @@ serialNo,name,date,amount,category
 1519,Surgery,2021-08-09,6066.45,Medical
 1520,Bank Fee,2021-08-08,9284.74,Others
 1521,Tuition,2021-08-06,6476.26,Education
-1522,Insurance,2021-08-10,1070.8,Medical
+1522,Insurance,2021-08-10,1070.80,Medical
 1523,Stationery,2021-08-12,5498.45,Education
 1524,Notebook,2021-08-16,1403.42,Education
 1525,Scarf,2021-08-11,5432.09,Clothing
@@ -1529,13 +1529,13 @@ serialNo,name,date,amount,category
 1528,Tuition,2021-08-12,5270.72,Education
 1529,Notebook,2021-08-15,3374.82,Education
 1530,Streaming Service,2021-08-19,6760.35,Entertainment
-1531,Fitness Class,2021-08-28,8655.7,Sports
+1531,Fitness Class,2021-08-28,8655.70,Sports
 1532,Football,2021-08-16,4584.67,Sports
 1533,Toll,2021-08-08,479.84,Travel
 1534,Train,2021-08-17,7674.68,Transportation
 1535,Mobile Recharge,2021-08-04,5216.47,Communication
 1536,Parking,2021-08-13,7010.39,Transportation
-1537,Cruise,2021-08-18,3980.6,Travel
+1537,Cruise,2021-08-18,3980.60,Travel
 1538,Appliance,2021-08-28,5767.44,Home
 1539,Ride Sharing,2021-08-20,5545.87,Transportation
 1540,Swimming,2021-08-07,1801.99,Sports
@@ -1552,11 +1552,11 @@ serialNo,name,date,amount,category
 1551,Fast Food,2021-08-04,298.32,Food
 1552,Dress,2021-08-16,4187.45,Clothing
 1553,Parking,2021-08-21,7788.68,Transportation
-1554,Equipment,2021-08-06,4562.0,Sports
+1554,Equipment,2021-08-06,4562.00,Sports
 1555,Water Bill,2021-08-18,6196.38,Home
 1556,Fast Food,2021-08-12,5964.24,Food
 1557,Gym,2021-08-20,5856.64,Sports
-1558,Dress,2021-08-27,405.9,Clothing
+1558,Dress,2021-08-27,405.90,Clothing
 1559,Streaming Service,2021-08-12,8798.58,Entertainment
 1560,Storage,2021-08-06,7898.54,Others
 1561,Tennis,2021-08-10,5131.96,Sports
@@ -1567,7 +1567,7 @@ serialNo,name,date,amount,category
 1566,Charity,2021-08-19,9782.54,Others
 1567,Yoga,2021-08-20,2537.62,Sports
 1568,Taxi,2021-08-26,6177.32,Travel
-1569,Scooter,2021-08-14,5221.8,Transportation
+1569,Scooter,2021-08-14,5221.80,Transportation
 1570,SIM Card,2021-08-12,632.05,Communication
 1571,Karaoke,2021-08-03,9011.81,Entertainment
 1572,Security,2021-08-11,7594.43,Others
@@ -1577,7 +1577,7 @@ serialNo,name,date,amount,category
 1576,Dental Check,2021-08-15,1504.76,Medical
 1577,Swimming,2021-08-10,3142.93,Sports
 1578,Security,2021-08-06,4591.27,Others
-1579,Football,2021-08-09,4106.4,Sports
+1579,Football,2021-08-09,4106.40,Sports
 1580,Exam Fee,2021-08-19,394.22,Education
 1581,Train,2021-08-28,8982.93,Travel
 1582,Electricity,2021-08-02,9348.06,Home
@@ -1588,7 +1588,7 @@ serialNo,name,date,amount,category
 1587,Internet,2021-08-22,1512.62,Communication
 1588,Electricity,2021-08-07,6677.45,Home
 1589,Belt,2021-08-04,4568.04,Clothing
-1590,Subscription,2021-08-25,6616.6,Communication
+1590,Subscription,2021-08-25,6616.60,Communication
 1591,Postage,2021-08-27,1673.66,Communication
 1592,Concert,2021-08-22,4560.21,Entertainment
 1593,Maintenance,2021-08-21,3555.11,Home
@@ -1597,7 +1597,7 @@ serialNo,name,date,amount,category
 1596,Theater,2021-08-06,7537.45,Entertainment
 1597,Basketball,2021-08-10,4919.26,Sports
 1598,Electricity,2021-08-22,4327.18,Home
-1599,Yoga,2021-08-19,8966.5,Sports
+1599,Yoga,2021-08-19,8966.50,Sports
 1600,VPN,2021-08-23,3516.94,Communication
 1601,Hospital Bill,2021-09-12,9044.91,Medical
 1602,Eye Exam,2021-09-09,9368.94,Medical
@@ -1608,8 +1608,8 @@ serialNo,name,date,amount,category
 1607,Belt,2021-09-21,6283.96,Clothing
 1608,Therapy,2021-09-22,7089.33,Medical
 1609,Jacket,2021-09-11,1068.14,Clothing
-1610,Security,2021-09-16,9167.1,Others
-1611,Charity,2021-09-21,1623.4,Others
+1610,Security,2021-09-16,9167.10,Others
+1611,Charity,2021-09-21,1623.40,Others
 1612,Jacket,2021-09-01,2819.53,Clothing
 1613,Travel Insurance,2021-09-10,6913.71,Travel
 1614,Notebook,2021-09-23,2395.92,Education
@@ -1633,13 +1633,13 @@ serialNo,name,date,amount,category
 1632,Backpack,2021-09-16,8486.34,Education
 1633,Charity,2021-09-08,4429.26,Others
 1634,Phone Bill,2021-09-08,7694.58,Communication
-1635,Furniture,2021-09-16,6676.0,Home
+1635,Furniture,2021-09-16,6676.00,Home
 1636,Security,2021-09-25,6107.07,Others
 1637,Online Course,2021-09-15,2182.58,Education
 1638,Theater,2021-09-08,60.47,Entertainment
-1639,Dress,2021-09-07,192.4,Clothing
+1639,Dress,2021-09-07,192.40,Clothing
 1640,Appliance,2021-09-19,8060.88,Home
-1641,Sports Event,2021-09-19,8505.2,Entertainment
+1641,Sports Event,2021-09-19,8505.20,Entertainment
 1642,Yoga,2021-09-08,8465.47,Sports
 1643,Drinks,2021-09-05,998.78,Food
 1644,Mortgage,2021-09-23,2265.96,Home
@@ -1649,26 +1649,26 @@ serialNo,name,date,amount,category
 1648,Travel Insurance,2021-09-25,4411.55,Travel
 1649,Therapy,2021-09-20,4374.12,Medical
 1650,Accessories,2021-09-18,4591.65,Others
-1651,Workshop,2021-09-14,2802.2,Education
+1651,Workshop,2021-09-14,2802.20,Education
 1652,Meat,2021-09-07,3089.06,Food
-1653,Storage,2021-09-14,620.3,Others
+1653,Storage,2021-09-14,620.30,Others
 1654,Gift,2021-09-19,5685.95,Others
 1655,Amusement Park,2021-09-02,2073.66,Entertainment
 1656,Donation,2021-09-20,6199.87,Others
-1657,Doctor Visit,2021-09-06,4644.4,Medical
+1657,Doctor Visit,2021-09-06,4644.40,Medical
 1658,Fuel,2021-09-21,7251.11,Travel
 1659,Insurance,2021-09-15,2793.67,Medical
 1660,Dental Check,2021-09-17,1383.91,Medical
 1661,Insurance,2021-09-02,6591.43,Medical
 1662,Therapy,2021-09-05,223.52,Medical
-1663,Cafe,2021-09-12,3790.4,Food
+1663,Cafe,2021-09-12,3790.40,Food
 1664,Club,2021-09-23,3750.41,Entertainment
 1665,Gas,2021-09-25,1161.25,Home
 1666,Maintenance,2021-09-24,7152.49,Home
 1667,Ride Sharing,2021-09-20,969.07,Transportation
 1668,Rental Car,2021-09-03,8485.12,Travel
 1669,Postage,2021-09-07,518.23,Communication
-1670,Electricity,2021-09-21,2746.9,Home
+1670,Electricity,2021-09-21,2746.90,Home
 1671,Coat,2021-09-05,8083.65,Clothing
 1672,Bus,2021-09-20,6577.81,Transportation
 1673,Stationery,2021-09-02,7391.85,Education
@@ -1694,14 +1694,14 @@ serialNo,name,date,amount,category
 1693,Scooter,2021-09-15,8884.49,Transportation
 1694,Storage,2021-09-20,5088.65,Others
 1695,Theater,2021-09-21,4802.23,Entertainment
-1696,VPN,2021-09-02,911.6,Communication
+1696,VPN,2021-09-02,911.60,Communication
 1697,Cafe,2021-09-21,5970.24,Food
-1698,Toll,2021-09-17,5988.2,Travel
+1698,Toll,2021-09-17,5988.20,Travel
 1699,Visa Fee,2021-09-04,6650.39,Travel
 1700,Doctor Visit,2021-09-01,7603.68,Medical
 1701,Cycling,2021-10-16,1605.88,Sports
 1702,Jeans,2021-10-15,3346.23,Clothing
-1703,Game,2021-10-02,4256.5,Entertainment
+1703,Game,2021-10-02,4256.50,Entertainment
 1704,Backpack,2021-10-26,5218.11,Education
 1705,Flight,2021-10-16,110.95,Travel
 1706,Theater,2021-10-20,6823.38,Entertainment
@@ -1719,21 +1719,21 @@ serialNo,name,date,amount,category
 1718,Delivery,2021-10-03,7787.76,Food
 1719,Coat,2021-10-15,8697.67,Clothing
 1720,Yoga,2021-10-12,5668.46,Sports
-1721,Notebook,2021-10-23,4897.9,Education
+1721,Notebook,2021-10-23,4897.90,Education
 1722,Streaming Service,2021-10-20,8334.54,Entertainment
 1723,Rent,2021-10-08,9457.77,Home
 1724,Jeans,2021-10-14,6193.44,Clothing
-1725,Cleaning,2021-10-16,8461.8,Home
+1725,Cleaning,2021-10-16,8461.80,Home
 1726,Surgery,2021-10-25,2120.82,Medical
 1727,Delivery,2021-10-03,8806.89,Food
 1728,Accessories,2021-10-12,2172.38,Others
 1729,Postage,2021-10-24,464.34,Communication
-1730,Rent,2021-10-14,2906.4,Home
+1730,Rent,2021-10-14,2906.40,Home
 1731,Football,2021-10-15,8180.44,Sports
-1732,Fast Food,2021-10-14,2444.4,Food
+1732,Fast Food,2021-10-14,2444.40,Food
 1733,Delivery,2021-10-26,5865.74,Food
-1734,Gym,2021-10-24,9927.5,Sports
-1735,Storage,2021-10-28,4653.0,Others
+1734,Gym,2021-10-24,9927.50,Sports
+1735,Storage,2021-10-28,4653.00,Others
 1736,Laundry,2021-10-11,3439.08,Others
 1737,Club,2021-10-14,2451.73,Entertainment
 1738,Mortgage,2021-10-18,5577.01,Home
@@ -1753,13 +1753,13 @@ serialNo,name,date,amount,category
 1752,Dental Check,2021-10-06,7109.23,Medical
 1753,Internet,2021-10-02,3183.04,Communication
 1754,Gift,2021-10-21,4666.23,Others
-1755,Theater,2021-10-25,5000.4,Entertainment
+1755,Theater,2021-10-25,5000.40,Entertainment
 1756,Cruise,2021-10-14,4080.86,Travel
-1757,Water Bill,2021-10-25,5223.9,Home
-1758,Cruise,2021-10-20,2765.0,Travel
+1757,Water Bill,2021-10-25,5223.90,Home
+1758,Cruise,2021-10-20,2765.00,Travel
 1759,Fast Food,2021-10-20,782.31,Food
 1760,Swimming,2021-10-28,5644.52,Sports
-1761,Toll,2021-10-13,696.5,Transportation
+1761,Toll,2021-10-13,696.50,Transportation
 1762,Taxi,2021-10-13,5897.43,Transportation
 1763,Notebook,2021-10-12,2903.87,Education
 1764,Game,2021-10-04,2689.72,Entertainment
@@ -1793,9 +1793,9 @@ serialNo,name,date,amount,category
 1792,Equipment,2021-10-02,8124.23,Sports
 1793,Game,2021-10-01,803.22,Entertainment
 1794,Game,2021-10-19,3696.41,Entertainment
-1795,Cleaning,2021-10-27,9015.2,Home
+1795,Cleaning,2021-10-27,9015.20,Home
 1796,Toll,2021-10-08,7344.35,Travel
-1797,Internet,2021-10-09,5643.0,Home
+1797,Internet,2021-10-09,5643.00,Home
 1798,Scarf,2021-10-09,1181.33,Clothing
 1799,Mobile Recharge,2021-10-06,1273.73,Communication
 1800,Movie,2021-10-28,4568.88,Entertainment
@@ -1807,7 +1807,7 @@ serialNo,name,date,amount,category
 1806,Bus,2021-11-26,6848.99,Transportation
 1807,Mobile Recharge,2021-11-28,1171.02,Communication
 1808,Fruits,2021-11-17,4872.11,Food
-1809,Hospital Bill,2021-11-04,3731.6,Medical
+1809,Hospital Bill,2021-11-04,3731.60,Medical
 1810,Equipment,2021-11-13,5310.71,Sports
 1811,Travel Insurance,2021-11-11,3854.13,Travel
 1812,Streaming Service,2021-11-04,1267.76,Entertainment
@@ -1817,21 +1817,21 @@ serialNo,name,date,amount,category
 1816,Taxi,2021-11-09,7976.17,Travel
 1817,Bank Fee,2021-11-04,3146.09,Others
 1818,Donation,2021-11-04,259.08,Others
-1819,Internet,2021-11-20,6550.8,Home
+1819,Internet,2021-11-20,6550.80,Home
 1820,Taxi,2021-11-02,8201.81,Transportation
 1821,Football,2021-11-11,3607.05,Sports
 1822,Gas,2021-11-21,5845.38,Home
-1823,Belt,2021-11-13,8617.5,Clothing
-1824,Jeans,2021-11-10,9942.0,Clothing
+1823,Belt,2021-11-13,8617.50,Clothing
+1824,Jeans,2021-11-10,9942.00,Clothing
 1825,Notebook,2021-11-02,6955.01,Education
 1826,Fruits,2021-11-02,5524.05,Food
 1827,Rent,2021-11-07,1823.46,Home
 1828,Gift,2021-11-06,4761.99,Others
-1829,Mortgage,2021-11-12,8829.0,Home
+1829,Mortgage,2021-11-12,8829.00,Home
 1830,Rental Car,2021-11-05,118.48,Travel
 1831,Internet,2021-11-10,4515.63,Communication
 1832,Accessories,2021-11-12,7160.25,Others
-1833,Rental Car,2021-11-09,604.4,Travel
+1833,Rental Car,2021-11-09,604.40,Travel
 1834,Stationery,2021-11-04,1932.39,Education
 1835,Pet,2021-11-14,2420.33,Others
 1836,Tennis,2021-11-17,4572.96,Sports
@@ -1851,14 +1851,14 @@ serialNo,name,date,amount,category
 1850,VPN,2021-11-04,2448.15,Communication
 1851,Club,2021-11-24,7020.61,Entertainment
 1852,Data Plan,2021-11-15,8961.52,Communication
-1853,Basketball,2021-11-21,1029.2,Sports
+1853,Basketball,2021-11-21,1029.20,Sports
 1854,Pet,2021-11-06,1391.04,Others
 1855,Scarf,2021-11-04,6725.61,Clothing
 1856,Yoga,2021-11-19,7359.56,Sports
 1857,Meat,2021-11-23,9390.75,Food
-1858,SIM Card,2021-11-25,8281.9,Communication
+1858,SIM Card,2021-11-25,8281.90,Communication
 1859,Streaming Service,2021-11-01,6422.83,Entertainment
-1860,Exam Fee,2021-11-28,3965.8,Education
+1860,Exam Fee,2021-11-28,3965.80,Education
 1861,Groceries,2021-11-01,6083.68,Food
 1862,Cruise,2021-11-25,3365.27,Travel
 1863,Hat,2021-11-25,6660.65,Clothing
@@ -1882,16 +1882,16 @@ serialNo,name,date,amount,category
 1881,Streaming Service,2021-11-06,7095.12,Entertainment
 1882,Sports Event,2021-11-28,8215.19,Entertainment
 1883,Vegetables,2021-11-18,6073.45,Food
-1884,Parking,2021-11-02,8099.8,Transportation
+1884,Parking,2021-11-02,8099.80,Transportation
 1885,SIM Card,2021-11-07,5741.45,Communication
 1886,Doctor Visit,2021-11-11,5952.77,Medical
 1887,Doctor Visit,2021-11-25,2449.09,Medical
-1888,Cafe,2021-11-02,923.9,Food
+1888,Cafe,2021-11-02,923.90,Food
 1889,Club,2021-11-07,3400.01,Entertainment
-1890,Hospital Bill,2021-11-20,7412.8,Medical
+1890,Hospital Bill,2021-11-20,7412.80,Medical
 1891,Fitness Class,2021-11-01,5798.05,Sports
 1892,Train,2021-11-01,9954.43,Transportation
-1893,Online Course,2021-11-14,5231.1,Education
+1893,Online Course,2021-11-14,5231.10,Education
 1894,Workshop,2021-11-11,5479.47,Education
 1895,Theater,2021-11-26,4583.94,Entertainment
 1896,Club,2021-11-14,4477.61,Entertainment
@@ -1902,7 +1902,7 @@ serialNo,name,date,amount,category
 1901,Tuition,2021-12-04,8385.67,Education
 1902,Tennis,2021-12-06,56.64,Sports
 1903,Shoes,2021-12-22,3385.87,Clothing
-1904,Restaurant,2021-12-23,8235.8,Food
+1904,Restaurant,2021-12-23,8235.80,Food
 1905,Therapy,2021-12-14,4089.13,Medical
 1906,Travel Insurance,2021-12-02,8526.48,Travel
 1907,SIM Card,2021-12-15,5570.81,Communication
@@ -1914,13 +1914,13 @@ serialNo,name,date,amount,category
 1913,Books,2021-12-22,6414.75,Education
 1914,Fuel,2021-12-11,6471.23,Transportation
 1915,Shirt,2021-12-18,1090.35,Clothing
-1916,Taxi,2021-12-03,2981.7,Travel
-1917,Tennis,2021-12-15,3202.0,Sports
+1916,Taxi,2021-12-03,2981.70,Travel
+1917,Tennis,2021-12-15,3202.00,Sports
 1918,Backpack,2021-12-07,7411.53,Education
 1919,Cruise,2021-12-05,3160.23,Travel
 1920,Gym,2021-12-21,8961.35,Sports
 1921,Calling Card,2021-12-25,5651.37,Communication
-1922,Taxi,2021-12-20,9935.5,Transportation
+1922,Taxi,2021-12-20,9935.50,Transportation
 1923,Travel Insurance,2021-12-22,3766.46,Travel
 1924,Fast Food,2021-12-02,5222.29,Food
 1925,Cafe,2021-12-07,8911.91,Food
@@ -1928,12 +1928,12 @@ serialNo,name,date,amount,category
 1927,Online Course,2021-12-21,8744.55,Education
 1928,Jeans,2021-12-04,8590.28,Clothing
 1929,Seminar,2021-12-09,7608.33,Education
-1930,Jeans,2021-12-18,1519.1,Clothing
+1930,Jeans,2021-12-18,1519.10,Clothing
 1931,Bank Fee,2021-12-27,4506.16,Others
 1932,Shirt,2021-12-24,1970.67,Clothing
 1933,Socks,2021-12-28,4786.61,Clothing
 1934,Karaoke,2021-12-11,4833.05,Entertainment
-1935,Doctor Visit,2021-12-24,8787.5,Medical
+1935,Doctor Visit,2021-12-24,8787.50,Medical
 1936,Scooter,2021-12-08,3935.87,Transportation
 1937,Postage,2021-12-13,517.37,Communication
 1938,Karaoke,2021-12-05,422.31,Entertainment
@@ -1958,12 +1958,12 @@ serialNo,name,date,amount,category
 1957,Sports Event,2021-12-21,7522.93,Entertainment
 1958,Music Festival,2021-12-28,7599.63,Entertainment
 1959,Concert,2021-12-09,8739.28,Entertainment
-1960,Water Bill,2021-12-06,2943.4,Home
+1960,Water Bill,2021-12-06,2943.40,Home
 1961,Surgery,2021-12-07,5010.02,Medical
 1962,Books,2021-12-23,8274.46,Education
 1963,Pen,2021-12-17,8574.76,Education
 1964,Tennis,2021-12-02,9349.38,Sports
-1965,Yoga,2021-12-09,343.3,Sports
+1965,Yoga,2021-12-09,343.30,Sports
 1966,Toll,2021-12-02,9274.18,Travel
 1967,Cafe,2021-12-09,9858.73,Food
 1968,Bicycle,2021-12-14,7880.17,Transportation
@@ -1981,10 +1981,10 @@ serialNo,name,date,amount,category
 1980,Workshop,2021-12-05,8154.11,Education
 1981,Jacket,2021-12-17,2773.03,Clothing
 1982,Vaccination,2021-12-20,5172.59,Medical
-1983,Game,2021-12-24,1946.8,Entertainment
+1983,Game,2021-12-24,1946.80,Entertainment
 1984,Fuel,2021-12-20,2152.22,Travel
 1985,Sports Event,2021-12-14,1583.42,Entertainment
-1986,Books,2021-12-16,2983.8,Education
+1986,Books,2021-12-16,2983.80,Education
 1987,Karaoke,2021-12-05,5032.52,Entertainment
 1988,Bicycle,2021-12-01,185.32,Transportation
 1989,Shirt,2021-12-02,2943.11,Clothing
@@ -2009,7 +2009,7 @@ serialNo,name,date,amount,category
 2008,Running,2022-01-06,4239.26,Sports
 2009,Belt,2022-01-25,5483.05,Clothing
 2010,Internet,2022-01-21,5676.27,Home
-2011,Phone Bill,2022-01-11,3028.1,Communication
+2011,Phone Bill,2022-01-11,3028.10,Communication
 2012,Roaming,2022-01-21,5632.27,Communication
 2013,Tennis,2022-01-18,3609.96,Sports
 2014,Karaoke,2022-01-20,1863.87,Entertainment
@@ -2029,11 +2029,11 @@ serialNo,name,date,amount,category
 2028,Streaming Service,2022-01-18,1322.26,Entertainment
 2029,Sports Event,2022-01-09,4275.19,Entertainment
 2030,Seminar,2022-01-27,4171.16,Education
-2031,Exam Fee,2022-01-20,7762.9,Education
+2031,Exam Fee,2022-01-20,7762.90,Education
 2032,Cafe,2022-01-19,3294.81,Food
-2033,Scarf,2022-01-07,6669.7,Clothing
-2034,Parking,2022-01-25,9445.5,Transportation
-2035,Bicycle,2022-01-28,4094.2,Transportation
+2033,Scarf,2022-01-07,6669.70,Clothing
+2034,Parking,2022-01-25,9445.50,Transportation
+2035,Bicycle,2022-01-28,4094.20,Transportation
 2036,Taxi,2022-01-13,1348.61,Travel
 2037,Streaming Service,2022-01-07,4660.37,Entertainment
 2038,Eye Exam,2022-01-05,5564.38,Medical
@@ -2049,13 +2049,13 @@ serialNo,name,date,amount,category
 2048,Bank Fee,2022-01-01,4781.41,Others
 2049,Storage,2022-01-17,1286.42,Others
 2050,Game,2022-01-09,5913.33,Entertainment
-2051,Visa Fee,2022-01-18,8354.1,Travel
+2051,Visa Fee,2022-01-18,8354.10,Travel
 2052,Books,2022-01-11,5893.21,Education
 2053,Notebook,2022-01-24,8655.04,Education
 2054,Backpack,2022-01-09,1758.54,Education
-2055,Hotel,2022-01-02,4379.7,Travel
+2055,Hotel,2022-01-02,4379.70,Travel
 2056,Bus,2022-01-22,354.52,Transportation
-2057,Fitness Class,2022-01-21,5782.2,Sports
+2057,Fitness Class,2022-01-21,5782.20,Sports
 2058,Gift,2022-01-23,3285.53,Others
 2059,Travel Insurance,2022-01-13,6556.22,Travel
 2060,Cycling,2022-01-01,3945.05,Sports
@@ -2068,18 +2068,18 @@ serialNo,name,date,amount,category
 2067,Internet,2022-01-25,8145.66,Communication
 2068,Stationery,2022-01-09,3183.34,Education
 2069,Socks,2022-01-01,6749.79,Clothing
-2070,Mortgage,2022-01-23,8148.4,Home
+2070,Mortgage,2022-01-23,8148.40,Home
 2071,Toll,2022-01-03,4220.54,Travel
 2072,Notebook,2022-01-07,3144.99,Education
 2073,Amusement Park,2022-01-19,7996.38,Entertainment
 2074,Backpack,2022-01-18,3417.67,Education
-2075,Cleaning,2022-01-08,9796.4,Home
+2075,Cleaning,2022-01-08,9796.40,Home
 2076,Fast Food,2022-01-28,1317.68,Food
 2077,Karaoke,2022-01-23,7524.38,Entertainment
 2078,Cleaning,2022-01-02,3556.48,Home
 2079,Cycling,2022-01-13,8255.88,Sports
 2080,Vegetables,2022-01-16,2510.27,Food
-2081,Scooter,2022-01-08,7052.9,Transportation
+2081,Scooter,2022-01-08,7052.90,Transportation
 2082,Restaurant,2022-01-10,2365.98,Food
 2083,Jacket,2022-01-15,6594.41,Clothing
 2084,Security,2022-01-21,2569.78,Others
@@ -2104,11 +2104,11 @@ serialNo,name,date,amount,category
 2103,Electricity,2022-02-01,2462.47,Home
 2104,Exam Fee,2022-02-23,9479.13,Education
 2105,Groceries,2022-02-21,4661.81,Food
-2106,Rental Car,2022-02-24,7719.9,Travel
+2106,Rental Car,2022-02-24,7719.90,Travel
 2107,Theater,2022-02-16,9658.16,Entertainment
 2108,Gym,2022-02-18,6706.15,Sports
 2109,Tuition,2022-02-02,8489.09,Education
-2110,Health Check,2022-02-24,7803.4,Medical
+2110,Health Check,2022-02-24,7803.40,Medical
 2111,Donation,2022-02-23,8652.99,Others
 2112,Movie,2022-02-06,7202.58,Entertainment
 2113,Lottery,2022-02-15,5561.68,Others
@@ -2139,7 +2139,7 @@ serialNo,name,date,amount,category
 2138,Basketball,2022-02-15,1486.95,Sports
 2139,Tuition,2022-02-26,2559.33,Education
 2140,Fitness Class,2022-02-28,2815.54,Sports
-2141,Appliance,2022-02-22,3025.1,Home
+2141,Appliance,2022-02-22,3025.10,Home
 2142,Vaccination,2022-02-13,222.09,Medical
 2143,Belt,2022-02-05,6006.35,Clothing
 2144,Snacks,2022-02-17,3760.58,Food
@@ -2177,7 +2177,7 @@ serialNo,name,date,amount,category
 2176,Eye Exam,2022-02-20,6176.92,Medical
 2177,VPN,2022-02-03,1653.87,Communication
 2178,Music Festival,2022-02-09,9235.99,Entertainment
-2179,Seminar,2022-02-14,3669.2,Education
+2179,Seminar,2022-02-14,3669.20,Education
 2180,Health Check,2022-02-04,9381.29,Medical
 2181,Phone Bill,2022-02-01,3850.21,Communication
 2182,Furniture,2022-02-14,3227.04,Home
@@ -2191,7 +2191,7 @@ serialNo,name,date,amount,category
 2190,Internet,2022-02-14,7748.59,Home
 2191,Club,2022-02-25,6324.06,Entertainment
 2192,Fast Food,2022-02-27,4701.68,Food
-2193,Toll,2022-02-04,8674.2,Travel
+2193,Toll,2022-02-04,8674.20,Travel
 2194,Appliance,2022-02-08,1807.81,Home
 2195,Tuition,2022-02-20,5739.16,Education
 2196,Metro,2022-02-15,1776.94,Transportation
@@ -2202,7 +2202,7 @@ serialNo,name,date,amount,category
 2201,Backpack,2022-03-27,4337.23,Education
 2202,Stationery,2022-03-17,8351.74,Education
 2203,Socks,2022-03-24,3997.85,Clothing
-2204,Internet,2022-03-26,5372.4,Home
+2204,Internet,2022-03-26,5372.40,Home
 2205,Lottery,2022-03-04,2309.16,Others
 2206,Cycling,2022-03-11,8293.95,Sports
 2207,Shirt,2022-03-21,8836.86,Clothing
@@ -2213,7 +2213,7 @@ serialNo,name,date,amount,category
 2212,Parking,2022-03-13,4251.66,Transportation
 2213,Amusement Park,2022-03-10,3617.99,Entertainment
 2214,Visa Fee,2022-03-15,3208.69,Travel
-2215,Accessories,2022-03-15,3524.7,Others
+2215,Accessories,2022-03-15,3524.70,Others
 2216,Belt,2022-03-27,344.38,Clothing
 2217,Notebook,2022-03-08,7789.46,Education
 2218,Cruise,2022-03-10,3900.52,Travel
@@ -2228,14 +2228,14 @@ serialNo,name,date,amount,category
 2227,Hat,2022-03-26,9156.03,Clothing
 2228,Hat,2022-03-08,7949.79,Clothing
 2229,Gym,2022-03-20,4610.74,Sports
-2230,Bus,2022-03-28,3084.8,Transportation
+2230,Bus,2022-03-28,3084.80,Transportation
 2231,Gift,2022-03-06,1084.99,Others
 2232,Seminar,2022-03-12,2847.75,Education
 2233,Online Course,2022-03-07,718.69,Education
 2234,Train,2022-03-12,1157.07,Transportation
 2235,Mobile Recharge,2022-03-16,139.07,Communication
 2236,Meat,2022-03-23,2125.05,Food
-2237,Shirt,2022-03-11,6026.0,Clothing
+2237,Shirt,2022-03-11,6026.00,Clothing
 2238,Backpack,2022-03-07,3498.88,Education
 2239,Hospital Bill,2022-03-10,8685.35,Medical
 2240,Hat,2022-03-23,8982.51,Clothing
@@ -2256,18 +2256,18 @@ serialNo,name,date,amount,category
 2255,Roaming,2022-03-14,1167.04,Communication
 2256,Electricity,2022-03-17,5221.78,Home
 2257,Cycling,2022-03-19,2961.62,Sports
-2258,Movie,2022-03-28,448.8,Entertainment
+2258,Movie,2022-03-28,448.80,Entertainment
 2259,Theater,2022-03-15,3561.94,Entertainment
 2260,Football,2022-03-20,4845.48,Sports
 2261,Cycling,2022-03-11,6844.38,Sports
 2262,Game,2022-03-09,6669.57,Entertainment
 2263,Hotel,2022-03-11,2662.17,Travel
-2264,Belt,2022-03-12,2437.8,Clothing
+2264,Belt,2022-03-12,2437.80,Clothing
 2265,Parking,2022-03-15,4095.08,Transportation
 2266,Dental Check,2022-03-09,7046.89,Medical
 2267,Pen,2022-03-22,1954.28,Education
 2268,Gym,2022-03-01,3821.32,Sports
-2269,Vegetables,2022-03-22,2028.8,Food
+2269,Vegetables,2022-03-22,2028.80,Food
 2270,Seminar,2022-03-15,8444.34,Education
 2271,Therapy,2022-03-13,1700.46,Medical
 2272,Roaming,2022-03-20,8241.84,Communication
@@ -2285,7 +2285,7 @@ serialNo,name,date,amount,category
 2284,Insurance,2022-03-25,3243.41,Medical
 2285,Internet,2022-03-01,2684.05,Home
 2286,Cycling,2022-03-05,3692.96,Sports
-2287,Cycling,2022-03-10,7839.0,Sports
+2287,Cycling,2022-03-10,7839.00,Sports
 2288,Rental Car,2022-03-26,1735.03,Travel
 2289,Basketball,2022-03-02,2134.97,Sports
 2290,Hat,2022-03-16,1499.06,Clothing
@@ -2295,18 +2295,18 @@ serialNo,name,date,amount,category
 2294,Karaoke,2022-03-02,2057.88,Entertainment
 2295,Laundry,2022-03-06,2834.39,Others
 2296,Pen,2022-03-07,7872.98,Education
-2297,Snacks,2022-03-20,8014.6,Food
+2297,Snacks,2022-03-20,8014.60,Food
 2298,Sports Event,2022-03-21,9472.08,Entertainment
 2299,Train,2022-03-23,4703.89,Transportation
 2300,Roaming,2022-03-03,4961.22,Communication
 2301,Phone Bill,2022-04-15,3779.88,Communication
 2302,Fitness Class,2022-04-23,1317.42,Sports
-2303,Postage,2022-04-10,190.0,Communication
+2303,Postage,2022-04-10,190.00,Communication
 2304,Workshop,2022-04-04,5764.62,Education
-2305,Train,2022-04-17,8591.4,Transportation
+2305,Train,2022-04-17,8591.40,Transportation
 2306,Train,2022-04-01,5099.01,Transportation
 2307,Club,2022-04-18,8330.34,Entertainment
-2308,Hat,2022-04-21,2204.3,Clothing
+2308,Hat,2022-04-21,2204.30,Clothing
 2309,Gas,2022-04-08,1247.46,Home
 2310,Laundry,2022-04-27,7263.05,Others
 2311,Mortgage,2022-04-24,628.94,Home
@@ -2323,7 +2323,7 @@ serialNo,name,date,amount,category
 2322,Karaoke,2022-04-08,2473.87,Entertainment
 2323,Delivery,2022-04-22,6691.66,Food
 2324,Running,2022-04-03,2133.19,Sports
-2325,Gas,2022-04-05,417.2,Home
+2325,Gas,2022-04-05,417.20,Home
 2326,Concert,2022-04-25,1057.92,Entertainment
 2327,Maintenance,2022-04-01,7944.76,Home
 2328,Gift,2022-04-15,5742.03,Others
@@ -2347,11 +2347,11 @@ serialNo,name,date,amount,category
 2346,Medicine,2022-04-04,1718.24,Medical
 2347,Laundry,2022-04-18,8752.57,Others
 2348,SIM Card,2022-04-14,1330.48,Communication
-2349,Flight,2022-04-08,187.1,Travel
+2349,Flight,2022-04-08,187.10,Travel
 2350,Club,2022-04-08,366.63,Entertainment
 2351,Pet,2022-04-19,6491.54,Others
 2352,Pen,2022-04-12,8240.76,Education
-2353,Cafe,2022-04-25,9965.7,Food
+2353,Cafe,2022-04-25,9965.70,Food
 2354,Basketball,2022-04-16,9958.62,Sports
 2355,Gas,2022-04-08,6082.65,Home
 2356,Cycling,2022-04-20,8343.63,Sports
@@ -2362,7 +2362,7 @@ serialNo,name,date,amount,category
 2361,Fruits,2022-04-27,2626.62,Food
 2362,Lottery,2022-04-01,2996.74,Others
 2363,Meat,2022-04-07,1320.08,Food
-2364,Shoes,2022-04-20,2258.2,Clothing
+2364,Shoes,2022-04-20,2258.20,Clothing
 2365,Taxi,2022-04-02,846.13,Travel
 2366,Notebook,2022-04-16,4149.72,Education
 2367,Rental Car,2022-04-13,8758.62,Travel
@@ -2385,14 +2385,14 @@ serialNo,name,date,amount,category
 2384,Vaccination,2022-04-15,8515.92,Medical
 2385,Donation,2022-04-15,6401.34,Others
 2386,Storage,2022-04-22,8918.03,Others
-2387,Dental Check,2022-04-22,535.2,Medical
+2387,Dental Check,2022-04-22,535.20,Medical
 2388,Dental Check,2022-04-06,1596.32,Medical
 2389,Socks,2022-04-28,734.69,Clothing
 2390,Toll,2022-04-18,4941.66,Travel
 2391,Ride Sharing,2022-04-05,5437.26,Transportation
 2392,Security,2022-04-18,2159.61,Others
 2393,Online Course,2022-04-22,3107.27,Education
-2394,Subscription,2022-04-26,4135.2,Communication
+2394,Subscription,2022-04-26,4135.20,Communication
 2395,Jeans,2022-04-16,9818.38,Clothing
 2396,Game,2022-04-21,2183.18,Entertainment
 2397,Maintenance,2022-04-09,7359.16,Home
@@ -2403,10 +2403,10 @@ serialNo,name,date,amount,category
 2402,Internet,2022-05-08,9124.67,Communication
 2403,Lottery,2022-05-12,4885.62,Others
 2404,Security,2022-05-08,4822.61,Others
-2405,Mortgage,2022-05-26,4672.8,Home
+2405,Mortgage,2022-05-26,4672.80,Home
 2406,Vegetables,2022-05-19,3436.29,Food
 2407,Maintenance,2022-05-16,5084.54,Home
-2408,Fuel,2022-05-18,5085.0,Transportation
+2408,Fuel,2022-05-18,5085.00,Transportation
 2409,Jeans,2022-05-27,3072.14,Clothing
 2410,Fuel,2022-05-26,8613.91,Transportation
 2411,Dental Check,2022-05-12,7844.71,Medical
@@ -2430,7 +2430,7 @@ serialNo,name,date,amount,category
 2429,Laundry,2022-05-13,9084.64,Others
 2430,VPN,2022-05-14,6078.67,Communication
 2431,Hotel,2022-05-18,9737.14,Travel
-2432,Train,2022-05-27,6097.5,Transportation
+2432,Train,2022-05-27,6097.50,Transportation
 2433,Groceries,2022-05-05,349.32,Food
 2434,Toll,2022-05-26,5768.27,Travel
 2435,Health Check,2022-05-18,1854.57,Medical
@@ -2445,7 +2445,7 @@ serialNo,name,date,amount,category
 2444,Bicycle,2022-05-28,9329.93,Transportation
 2445,Electricity,2022-05-15,5349.38,Home
 2446,Drinks,2022-05-20,432.48,Food
-2447,Books,2022-05-20,4961.7,Education
+2447,Books,2022-05-20,4961.70,Education
 2448,Storage,2022-05-07,153.99,Others
 2449,Restaurant,2022-05-10,2367.87,Food
 2450,Hat,2022-05-17,3968.76,Clothing
@@ -2457,7 +2457,7 @@ serialNo,name,date,amount,category
 2456,Charity,2022-05-25,2376.58,Others
 2457,Metro,2022-05-24,2479.99,Transportation
 2458,Cleaning,2022-05-28,84.67,Home
-2459,Bank Fee,2022-05-13,7928.5,Others
+2459,Bank Fee,2022-05-13,7928.50,Others
 2460,Appliance,2022-05-11,9240.29,Home
 2461,Gym,2022-05-10,3483.88,Sports
 2462,Coat,2022-05-04,9861.32,Clothing
@@ -2482,7 +2482,7 @@ serialNo,name,date,amount,category
 2481,Fuel,2022-05-14,256.68,Transportation
 2482,Meat,2022-05-12,530.86,Food
 2483,SIM Card,2022-05-12,4268.61,Communication
-2484,Dress,2022-05-08,3857.2,Clothing
+2484,Dress,2022-05-08,3857.20,Clothing
 2485,SIM Card,2022-05-09,8586.33,Communication
 2486,Laundry,2022-05-18,9724.13,Others
 2487,Concert,2022-05-06,6819.45,Entertainment
@@ -2516,7 +2516,7 @@ serialNo,name,date,amount,category
 2515,Theater,2022-06-10,1179.05,Entertainment
 2516,Socks,2022-06-13,3244.68,Clothing
 2517,Electricity,2022-06-17,7777.62,Home
-2518,Socks,2022-06-03,3750.7,Clothing
+2518,Socks,2022-06-03,3750.70,Clothing
 2519,Theater,2022-06-13,6773.36,Entertainment
 2520,Rental Car,2022-06-11,3626.06,Travel
 2521,Scarf,2022-06-08,3785.99,Clothing
@@ -2546,25 +2546,25 @@ serialNo,name,date,amount,category
 2545,Sports Event,2022-06-21,7801.73,Entertainment
 2546,Gym,2022-06-16,8361.87,Sports
 2547,Movie,2022-06-18,1620.41,Entertainment
-2548,Delivery,2022-06-21,3651.8,Food
+2548,Delivery,2022-06-21,3651.80,Food
 2549,Mortgage,2022-06-05,6734.51,Home
 2550,Shoes,2022-06-08,8174.14,Clothing
 2551,Calling Card,2022-06-21,5300.33,Communication
 2552,Rent,2022-06-17,5166.26,Home
-2553,Mortgage,2022-06-20,2292.0,Home
+2553,Mortgage,2022-06-20,2292.00,Home
 2554,Equipment,2022-06-12,7741.52,Sports
 2555,Jacket,2022-06-17,9914.67,Clothing
 2556,Running,2022-06-22,7637.41,Sports
-2557,Toll,2022-06-16,2196.8,Travel
-2558,Tennis,2022-06-14,2732.8,Sports
+2557,Toll,2022-06-16,2196.80,Travel
+2558,Tennis,2022-06-14,2732.80,Sports
 2559,Snacks,2022-06-26,569.27,Food
-2560,Theater,2022-06-27,9963.4,Entertainment
+2560,Theater,2022-06-27,9963.40,Entertainment
 2561,Coat,2022-06-10,3446.76,Clothing
 2562,Exam Fee,2022-06-27,3953.33,Education
 2563,Postage,2022-06-19,2812.52,Communication
 2564,Mortgage,2022-06-26,8924.15,Home
 2565,Gym,2022-06-04,8444.09,Sports
-2566,Taxi,2022-06-20,5326.7,Transportation
+2566,Taxi,2022-06-20,5326.70,Transportation
 2567,Coat,2022-06-07,9272.56,Clothing
 2568,Hospital Bill,2022-06-24,1787.65,Medical
 2569,Online Course,2022-06-20,9386.09,Education
@@ -2578,13 +2578,13 @@ serialNo,name,date,amount,category
 2577,Health Check,2022-06-23,9706.35,Medical
 2578,Cleaning,2022-06-02,4396.16,Home
 2579,Donation,2022-06-15,3410.33,Others
-2580,Parking,2022-06-24,2565.9,Transportation
+2580,Parking,2022-06-24,2565.90,Transportation
 2581,Game,2022-06-14,5850.07,Entertainment
 2582,Fitness Class,2022-06-16,424.55,Sports
 2583,Internet,2022-06-09,8673.37,Home
 2584,Mortgage,2022-06-14,6762.81,Home
 2585,Exam Fee,2022-06-07,5326.94,Education
-2586,Groceries,2022-06-02,1613.6,Food
+2586,Groceries,2022-06-02,1613.60,Food
 2587,Fast Food,2022-06-14,4508.74,Food
 2588,Swimming,2022-06-10,8377.11,Sports
 2589,Taxi,2022-06-11,8263.46,Travel
@@ -2593,7 +2593,7 @@ serialNo,name,date,amount,category
 2592,Shoes,2022-06-10,7895.91,Clothing
 2593,Scooter,2022-06-08,5927.29,Transportation
 2594,Pen,2022-06-20,5651.18,Education
-2595,Postage,2022-06-06,7320.7,Communication
+2595,Postage,2022-06-06,7320.70,Communication
 2596,Equipment,2022-06-02,1430.78,Sports
 2597,Coat,2022-06-20,5281.75,Clothing
 2598,Belt,2022-06-14,3007.34,Clothing
@@ -2612,7 +2612,7 @@ serialNo,name,date,amount,category
 2611,SIM Card,2022-07-10,8751.06,Communication
 2612,Travel Insurance,2022-07-28,8221.09,Travel
 2613,Fitness Class,2022-07-16,1672.94,Sports
-2614,Electricity,2022-07-18,5212.5,Home
+2614,Electricity,2022-07-18,5212.50,Home
 2615,Game,2022-07-15,1002.61,Entertainment
 2616,Subscription,2022-07-27,5907.25,Communication
 2617,Coat,2022-07-01,5288.61,Clothing
@@ -2647,25 +2647,25 @@ serialNo,name,date,amount,category
 2646,Hospital Bill,2022-07-23,9063.99,Medical
 2647,Rental Car,2022-07-05,3614.84,Travel
 2648,Roaming,2022-07-05,2358.11,Communication
-2649,Dental Check,2022-07-12,9880.9,Medical
+2649,Dental Check,2022-07-12,9880.90,Medical
 2650,Therapy,2022-07-10,6155.08,Medical
 2651,Internet,2022-07-19,8463.58,Communication
 2652,Internet,2022-07-23,3236.52,Communication
 2653,Pen,2022-07-24,491.98,Education
 2654,Movie,2022-07-07,6253.49,Entertainment
-2655,Accessories,2022-07-21,9288.3,Others
+2655,Accessories,2022-07-21,9288.30,Others
 2656,Mobile Recharge,2022-07-20,6590.67,Communication
 2657,Fruits,2022-07-11,5539.77,Food
 2658,Amusement Park,2022-07-16,6248.54,Entertainment
-2659,Dress,2022-07-08,207.9,Clothing
+2659,Dress,2022-07-08,207.90,Clothing
 2660,Amusement Park,2022-07-07,2188.11,Entertainment
 2661,Security,2022-07-02,3893.85,Others
 2662,Fuel,2022-07-27,9792.24,Transportation
-2663,Groceries,2022-07-13,7929.7,Food
-2664,Laundry,2022-07-12,9223.8,Others
+2663,Groceries,2022-07-13,7929.70,Food
+2664,Laundry,2022-07-12,9223.80,Others
 2665,Lottery,2022-07-28,9805.89,Others
 2666,Train,2022-07-13,6334.67,Travel
-2667,Fitness Class,2022-07-12,9280.3,Sports
+2667,Fitness Class,2022-07-12,9280.30,Sports
 2668,Hotel,2022-07-28,7325.18,Travel
 2669,Electricity,2022-07-18,5839.77,Home
 2670,Health Check,2022-07-11,3902.93,Medical
@@ -2718,7 +2718,7 @@ serialNo,name,date,amount,category
 2717,Gift,2022-08-23,1034.16,Others
 2718,Books,2022-08-15,2282.83,Education
 2719,Insurance,2022-08-21,9651.25,Medical
-2720,Water Bill,2022-08-14,7826.0,Home
+2720,Water Bill,2022-08-14,7826.00,Home
 2721,Shirt,2022-08-22,5962.51,Clothing
 2722,Meat,2022-08-21,7041.48,Food
 2723,Karaoke,2022-08-27,1663.37,Entertainment
@@ -2727,7 +2727,7 @@ serialNo,name,date,amount,category
 2726,Fruits,2022-08-27,8692.91,Food
 2727,Vegetables,2022-08-24,7250.11,Food
 2728,Cleaning,2022-08-03,9477.56,Home
-2729,Groceries,2022-08-11,5753.2,Food
+2729,Groceries,2022-08-11,5753.20,Food
 2730,Belt,2022-08-12,6082.95,Clothing
 2731,Concert,2022-08-18,1890.48,Entertainment
 2732,Maintenance,2022-08-07,7190.86,Home
@@ -2764,10 +2764,10 @@ serialNo,name,date,amount,category
 2763,Pen,2022-08-10,1911.96,Education
 2764,Online Course,2022-08-18,6473.83,Education
 2765,Fitness Class,2022-08-03,219.35,Sports
-2766,Hospital Bill,2022-08-07,69.2,Medical
+2766,Hospital Bill,2022-08-07,69.20,Medical
 2767,Fast Food,2022-08-11,6094.26,Food
 2768,Phone Bill,2022-08-04,6854.08,Communication
-2769,Coat,2022-08-20,480.4,Clothing
+2769,Coat,2022-08-20,480.40,Clothing
 2770,Amusement Park,2022-08-02,7919.69,Entertainment
 2771,Lottery,2022-08-13,8084.71,Others
 2772,Dental Check,2022-08-08,2035.92,Medical
@@ -2781,16 +2781,16 @@ serialNo,name,date,amount,category
 2780,Roaming,2022-08-08,4922.02,Communication
 2781,Stationery,2022-08-07,9273.27,Education
 2782,Gift,2022-08-01,5070.12,Others
-2783,Groceries,2022-08-21,9317.9,Food
+2783,Groceries,2022-08-21,9317.90,Food
 2784,Dress,2022-08-11,5038.35,Clothing
 2785,Exam Fee,2022-08-04,7701.13,Education
-2786,Vegetables,2022-08-03,6155.9,Food
+2786,Vegetables,2022-08-03,6155.90,Food
 2787,Fast Food,2022-08-18,4956.71,Food
 2788,Concert,2022-08-25,5654.68,Entertainment
 2789,Internet,2022-08-13,178.08,Communication
 2790,Furniture,2022-08-06,3604.07,Home
 2791,Charity,2022-08-12,8952.75,Others
-2792,Accessories,2022-08-13,268.7,Others
+2792,Accessories,2022-08-13,268.70,Others
 2793,Jacket,2022-08-12,1621.06,Clothing
 2794,Electricity,2022-08-05,4517.14,Home
 2795,Bus,2022-08-19,5264.66,Transportation
@@ -2817,14 +2817,14 @@ serialNo,name,date,amount,category
 2816,Visa Fee,2022-09-16,9215.67,Travel
 2817,Phone Bill,2022-09-09,9998.62,Communication
 2818,Donation,2022-09-02,2709.15,Others
-2819,SIM Card,2022-09-01,9174.5,Communication
+2819,SIM Card,2022-09-01,9174.50,Communication
 2820,Groceries,2022-09-09,4178.27,Food
 2821,Cleaning,2022-09-09,2130.89,Home
 2822,Water Bill,2022-09-24,9663.25,Home
-2823,Concert,2022-09-26,815.7,Entertainment
-2824,Snacks,2022-09-09,3192.7,Food
+2823,Concert,2022-09-26,815.70,Entertainment
+2824,Snacks,2022-09-09,3192.70,Food
 2825,Ride Sharing,2022-09-04,8372.81,Transportation
-2826,Cleaning,2022-09-03,5847.2,Home
+2826,Cleaning,2022-09-03,5847.20,Home
 2827,Online Course,2022-09-28,9492.84,Education
 2828,Sports Event,2022-09-17,8654.03,Entertainment
 2829,Hat,2022-09-01,2033.39,Clothing
@@ -2837,9 +2837,9 @@ serialNo,name,date,amount,category
 2836,Books,2022-09-25,1206.38,Education
 2837,Cycling,2022-09-07,2675.74,Sports
 2838,Basketball,2022-09-12,451.94,Sports
-2839,Taxi,2022-09-21,8579.1,Transportation
+2839,Taxi,2022-09-21,8579.10,Transportation
 2840,Vegetables,2022-09-07,3551.33,Food
-2841,Toll,2022-09-14,3931.6,Transportation
+2841,Toll,2022-09-14,3931.60,Transportation
 2842,Restaurant,2022-09-27,2707.96,Food
 2843,Eye Exam,2022-09-13,8127.07,Medical
 2844,Seminar,2022-09-26,4832.32,Education
@@ -2882,7 +2882,7 @@ serialNo,name,date,amount,category
 2881,Train,2022-09-04,4713.28,Transportation
 2882,Lottery,2022-09-28,2687.69,Others
 2883,Therapy,2022-09-22,1274.45,Medical
-2884,Storage,2022-09-13,5626.2,Others
+2884,Storage,2022-09-13,5626.20,Others
 2885,Cleaning,2022-09-15,3168.06,Home
 2886,Bank Fee,2022-09-03,9713.01,Others
 2887,Cleaning,2022-09-18,7641.48,Home
@@ -2905,7 +2905,7 @@ serialNo,name,date,amount,category
 2904,Charity,2022-10-07,2527.91,Others
 2905,Surgery,2022-10-25,2489.54,Medical
 2906,Hotel,2022-10-07,9793.76,Travel
-2907,Doctor Visit,2022-10-06,6506.7,Medical
+2907,Doctor Visit,2022-10-06,6506.70,Medical
 2908,Running,2022-10-24,4563.29,Sports
 2909,Hospital Bill,2022-10-28,8376.18,Medical
 2910,Hat,2022-10-13,9891.81,Clothing
@@ -2937,7 +2937,7 @@ serialNo,name,date,amount,category
 2936,Data Plan,2022-10-10,5712.55,Communication
 2937,Dental Check,2022-10-19,6284.98,Medical
 2938,Cleaning,2022-10-19,8435.99,Home
-2939,Mobile Recharge,2022-10-26,5413.2,Communication
+2939,Mobile Recharge,2022-10-26,5413.20,Communication
 2940,Subscription,2022-10-21,717.35,Communication
 2941,Train,2022-10-20,6440.04,Transportation
 2942,Health Check,2022-10-20,8243.53,Medical
@@ -2951,7 +2951,7 @@ serialNo,name,date,amount,category
 2950,Furniture,2022-10-05,2190.63,Home
 2951,Yoga,2022-10-02,7840.49,Sports
 2952,Notebook,2022-10-20,6676.44,Education
-2953,Medicine,2022-10-19,8641.7,Medical
+2953,Medicine,2022-10-19,8641.70,Medical
 2954,Rental Car,2022-10-05,6467.78,Travel
 2955,Toll,2022-10-28,369.09,Transportation
 2956,Dental Check,2022-10-23,6599.32,Medical
@@ -2962,7 +2962,7 @@ serialNo,name,date,amount,category
 2961,Delivery,2022-10-10,8490.41,Food
 2962,Bank Fee,2022-10-11,7367.91,Others
 2963,Maintenance,2022-10-04,9899.57,Home
-2964,Exam Fee,2022-10-25,4671.6,Education
+2964,Exam Fee,2022-10-25,4671.60,Education
 2965,Delivery,2022-10-02,2131.86,Food
 2966,Mobile Recharge,2022-10-27,5674.35,Communication
 2967,Yoga,2022-10-16,9588.43,Sports
@@ -2982,7 +2982,7 @@ serialNo,name,date,amount,category
 2981,Bicycle,2022-10-17,7951.56,Transportation
 2982,Online Course,2022-10-20,5768.67,Education
 2983,Therapy,2022-10-03,5918.21,Medical
-2984,Meat,2022-10-10,5979.2,Food
+2984,Meat,2022-10-10,5979.20,Food
 2985,Hospital Bill,2022-10-05,2076.88,Medical
 2986,Tennis,2022-10-07,5398.45,Sports
 2987,Fuel,2022-10-21,953.22,Transportation
@@ -2993,7 +2993,7 @@ serialNo,name,date,amount,category
 2992,Running,2022-10-23,3159.67,Sports
 2993,Lottery,2022-10-16,4228.24,Others
 2994,Scooter,2022-10-06,1744.27,Transportation
-2995,Cafe,2022-10-24,2716.9,Food
+2995,Cafe,2022-10-24,2716.90,Food
 2996,Groceries,2022-10-20,152.95,Food
 2997,Appliance,2022-10-24,5122.74,Home
 2998,Rental Car,2022-10-25,4235.27,Travel
@@ -3068,12 +3068,12 @@ serialNo,name,date,amount,category
 3067,Jeans,2022-11-24,3023.97,Clothing
 3068,Furniture,2022-11-05,7515.96,Home
 3069,Train,2022-11-21,7875.55,Transportation
-3070,Theater,2022-11-02,9430.5,Entertainment
+3070,Theater,2022-11-02,9430.50,Entertainment
 3071,VPN,2022-11-04,6540.04,Communication
 3072,Rent,2022-11-03,2488.49,Home
 3073,Cycling,2022-11-20,2595.03,Sports
-3074,Internet,2022-11-21,9201.1,Home
-3075,Swimming,2022-11-03,746.0,Sports
+3074,Internet,2022-11-21,9201.10,Home
+3075,Swimming,2022-11-03,746.00,Sports
 3076,Shoes,2022-11-23,7906.15,Clothing
 3077,Ride Sharing,2022-11-25,6630.02,Transportation
 3078,Music Festival,2022-11-10,2879.03,Entertainment
@@ -3083,10 +3083,10 @@ serialNo,name,date,amount,category
 3082,Jacket,2022-11-10,3420.05,Clothing
 3083,Fitness Class,2022-11-07,5592.97,Sports
 3084,Stationery,2022-11-07,2250.59,Education
-3085,Gym,2022-11-28,8137.5,Sports
+3085,Gym,2022-11-28,8137.50,Sports
 3086,Socks,2022-11-13,3438.71,Clothing
 3087,Parking,2022-11-19,2140.17,Transportation
-3088,Belt,2022-11-09,9360.2,Clothing
+3088,Belt,2022-11-09,9360.20,Clothing
 3089,Mobile Recharge,2022-11-04,7187.27,Communication
 3090,Exam Fee,2022-11-09,2184.73,Education
 3091,Metro,2022-11-08,8851.22,Transportation
@@ -3097,7 +3097,7 @@ serialNo,name,date,amount,category
 3096,Dental Check,2022-11-24,2502.52,Medical
 3097,Socks,2022-11-22,4944.35,Clothing
 3098,Meat,2022-11-27,8522.09,Food
-3099,Tennis,2022-11-19,8258.8,Sports
+3099,Tennis,2022-11-19,8258.80,Sports
 3100,Jacket,2022-11-13,6160.36,Clothing
 3101,Tuition,2022-12-15,9252.32,Education
 3102,Fast Food,2022-12-15,5459.44,Food
@@ -3115,11 +3115,11 @@ serialNo,name,date,amount,category
 3114,Fitness Class,2022-12-06,73.21,Sports
 3115,Theater,2022-12-21,3881.38,Entertainment
 3116,Storage,2022-12-27,4852.88,Others
-3117,Concert,2022-12-19,5435.8,Entertainment
+3117,Concert,2022-12-19,5435.80,Entertainment
 3118,Fast Food,2022-12-11,5289.21,Food
 3119,Insurance,2022-12-20,948.31,Medical
 3120,Medicine,2022-12-02,7049.46,Medical
-3121,Books,2022-12-01,9086.8,Education
+3121,Books,2022-12-01,9086.80,Education
 3122,Accessories,2022-12-28,8024.92,Others
 3123,Sports Event,2022-12-02,6481.23,Entertainment
 3124,Amusement Park,2022-12-17,5977.03,Entertainment
@@ -3127,13 +3127,13 @@ serialNo,name,date,amount,category
 3126,Sports Event,2022-12-09,4593.23,Entertainment
 3127,Workshop,2022-12-19,2530.02,Education
 3128,Fuel,2022-12-09,5970.33,Transportation
-3129,Donation,2022-12-15,5627.5,Others
-3130,Hospital Bill,2022-12-02,6311.6,Medical
+3129,Donation,2022-12-15,5627.50,Others
+3130,Hospital Bill,2022-12-02,6311.60,Medical
 3131,Lottery,2022-12-16,9963.79,Others
 3132,Workshop,2022-12-27,3235.27,Education
 3133,Sports Event,2022-12-03,5593.05,Entertainment
 3134,Rental Car,2022-12-14,7582.95,Travel
-3135,Gym,2022-12-10,3345.0,Sports
+3135,Gym,2022-12-10,3345.00,Sports
 3136,Maintenance,2022-12-05,3696.79,Home
 3137,Eye Exam,2022-12-22,5759.24,Medical
 3138,Cleaning,2022-12-07,6320.72,Home
@@ -3144,11 +3144,11 @@ serialNo,name,date,amount,category
 3143,Subscription,2022-12-28,5610.88,Communication
 3144,Concert,2022-12-27,1549.66,Entertainment
 3145,Socks,2022-12-03,7502.96,Clothing
-3146,Train,2022-12-27,279.7,Travel
+3146,Train,2022-12-27,279.70,Travel
 3147,Maintenance,2022-12-14,4545.34,Home
 3148,Train,2022-12-04,6143.58,Travel
 3149,Scarf,2022-12-07,7251.02,Clothing
-3150,Online Course,2022-12-17,3881.7,Education
+3150,Online Course,2022-12-17,3881.70,Education
 3151,Hat,2022-12-18,425.43,Clothing
 3152,Postage,2022-12-16,2489.43,Communication
 3153,Internet,2022-12-22,1329.26,Communication
@@ -3157,18 +3157,18 @@ serialNo,name,date,amount,category
 3156,Groceries,2022-12-06,6375.95,Food
 3157,Exam Fee,2022-12-20,5465.04,Education
 3158,Gift,2022-12-23,5616.24,Others
-3159,Jeans,2022-12-16,5791.0,Clothing
+3159,Jeans,2022-12-16,5791.00,Clothing
 3160,Charity,2022-12-09,1199.81,Others
 3161,Karaoke,2022-12-18,441.88,Entertainment
 3162,Yoga,2022-12-26,9444.97,Sports
 3163,Hotel,2022-12-07,1340.36,Travel
 3164,Jacket,2022-12-01,313.39,Clothing
-3165,Bus,2022-12-17,6095.1,Transportation
+3165,Bus,2022-12-17,6095.10,Transportation
 3166,Appliance,2022-12-11,4194.82,Home
 3167,Jeans,2022-12-08,7440.76,Clothing
 3168,Fruits,2022-12-10,927.94,Food
 3169,Vegetables,2022-12-03,6084.23,Food
-3170,Tennis,2022-12-16,1881.9,Sports
+3170,Tennis,2022-12-16,1881.90,Sports
 3171,Maintenance,2022-12-26,3522.15,Home
 3172,Basketball,2022-12-27,1382.15,Sports
 3173,Postage,2022-12-07,1977.59,Communication
@@ -3178,10 +3178,10 @@ serialNo,name,date,amount,category
 3177,Bank Fee,2022-12-12,8447.95,Others
 3178,Insurance,2022-12-01,8775.99,Medical
 3179,Taxi,2022-12-10,2804.42,Travel
-3180,Drinks,2022-12-08,2092.7,Food
+3180,Drinks,2022-12-08,2092.70,Food
 3181,Toll,2022-12-27,5915.36,Travel
 3182,Vegetables,2022-12-19,1297.02,Food
-3183,Streaming Service,2022-12-24,9935.0,Entertainment
+3183,Streaming Service,2022-12-24,9935.00,Entertainment
 3184,Lottery,2022-12-12,682.26,Others
 3185,Hotel,2022-12-15,9617.78,Travel
 3186,Swimming,2022-12-12,5848.34,Sports
@@ -3218,7 +3218,7 @@ serialNo,name,date,amount,category
 3217,Backpack,2023-01-05,9371.08,Education
 3218,Health Check,2023-01-21,2865.35,Medical
 3219,Eye Exam,2023-01-10,6847.22,Medical
-3220,Gift,2023-01-05,5715.8,Others
+3220,Gift,2023-01-05,5715.80,Others
 3221,Toll,2023-01-13,7594.26,Transportation
 3222,Vegetables,2023-01-10,9777.33,Food
 3223,Game,2023-01-21,8547.12,Entertainment
@@ -3238,7 +3238,7 @@ serialNo,name,date,amount,category
 3237,Therapy,2023-01-12,4859.19,Medical
 3238,Snacks,2023-01-13,9409.28,Food
 3239,Notebook,2023-01-04,3242.09,Education
-3240,Club,2023-01-09,6143.4,Entertainment
+3240,Club,2023-01-09,6143.40,Entertainment
 3241,Game,2023-01-20,7770.23,Entertainment
 3242,Fuel,2023-01-03,2835.46,Travel
 3243,Cafe,2023-01-21,1380.54,Food
@@ -3247,19 +3247,19 @@ serialNo,name,date,amount,category
 3246,Donation,2023-01-13,3143.64,Others
 3247,Yoga,2023-01-10,3835.36,Sports
 3248,Lottery,2023-01-17,4198.13,Others
-3249,Hospital Bill,2023-01-19,4431.5,Medical
-3250,Toll,2023-01-14,6648.3,Travel
+3249,Hospital Bill,2023-01-19,4431.50,Medical
+3250,Toll,2023-01-14,6648.30,Travel
 3251,Cafe,2023-01-19,3766.64,Food
 3252,Rent,2023-01-09,2356.14,Home
 3253,Pet,2023-01-03,5347.53,Others
 3254,Cycling,2023-01-20,8249.74,Sports
-3255,Tuition,2023-01-17,6630.0,Education
+3255,Tuition,2023-01-17,6630.00,Education
 3256,Water Bill,2023-01-09,1029.12,Home
 3257,Socks,2023-01-09,8557.01,Clothing
 3258,Karaoke,2023-01-20,4683.03,Entertainment
 3259,Swimming,2023-01-28,7601.16,Sports
-3260,Furniture,2023-01-17,5904.3,Home
-3261,Amusement Park,2023-01-11,6001.5,Entertainment
+3260,Furniture,2023-01-17,5904.30,Home
+3261,Amusement Park,2023-01-11,6001.50,Entertainment
 3262,Medicine,2023-01-09,8429.77,Medical
 3263,Running,2023-01-16,6160.49,Sports
 3264,Rent,2023-01-14,7553.62,Home
@@ -3270,7 +3270,7 @@ serialNo,name,date,amount,category
 3269,Cleaning,2023-01-01,8607.38,Home
 3270,Dress,2023-01-13,1864.34,Clothing
 3271,Jacket,2023-01-15,2619.62,Clothing
-3272,Phone Bill,2023-01-27,2975.9,Communication
+3272,Phone Bill,2023-01-27,2975.90,Communication
 3273,Data Plan,2023-01-05,669.58,Communication
 3274,Internet,2023-01-13,3103.55,Home
 3275,Medicine,2023-01-05,8007.93,Medical
@@ -3285,7 +3285,7 @@ serialNo,name,date,amount,category
 3284,Electricity,2023-01-19,4338.17,Home
 3285,Online Course,2023-01-22,4085.79,Education
 3286,Gift,2023-01-27,2171.72,Others
-3287,Visa Fee,2023-01-16,9718.6,Travel
+3287,Visa Fee,2023-01-16,9718.60,Travel
 3288,Bicycle,2023-01-22,5072.35,Transportation
 3289,Bus,2023-01-15,3682.88,Transportation
 3290,Groceries,2023-01-13,8742.21,Food
@@ -3298,7 +3298,7 @@ serialNo,name,date,amount,category
 3297,Gym,2023-01-12,920.75,Sports
 3298,Furniture,2023-01-23,4642.57,Home
 3299,Sports Event,2023-01-08,2516.83,Entertainment
-3300,Bus,2023-01-11,9050.1,Transportation
+3300,Bus,2023-01-11,9050.10,Transportation
 3301,Vegetables,2023-02-25,3197.89,Food
 3302,Coat,2023-02-22,1948.25,Clothing
 3303,Toll,2023-02-03,2865.32,Transportation
@@ -3318,15 +3318,15 @@ serialNo,name,date,amount,category
 3317,Yoga,2023-02-23,2518.23,Sports
 3318,Mobile Recharge,2023-02-23,7459.21,Communication
 3319,Doctor Visit,2023-02-27,4600.39,Medical
-3320,Streaming Service,2023-02-05,2540.9,Entertainment
-3321,Cycling,2023-02-23,6172.2,Sports
+3320,Streaming Service,2023-02-05,2540.90,Entertainment
+3321,Cycling,2023-02-23,6172.20,Sports
 3322,Phone Bill,2023-02-12,8191.53,Communication
 3323,Calling Card,2023-02-04,6125.57,Communication
 3324,Music Festival,2023-02-28,4724.85,Entertainment
 3325,Mortgage,2023-02-27,6089.28,Home
-3326,Restaurant,2023-02-15,504.0,Food
+3326,Restaurant,2023-02-15,504.00,Food
 3327,Tuition,2023-02-09,6335.11,Education
-3328,Health Check,2023-02-10,3569.9,Medical
+3328,Health Check,2023-02-10,3569.90,Medical
 3329,Scooter,2023-02-27,4845.96,Transportation
 3330,Running,2023-02-18,8595.09,Sports
 3331,Bank Fee,2023-02-09,3101.28,Others
@@ -3334,8 +3334,8 @@ serialNo,name,date,amount,category
 3333,Storage,2023-02-28,3982.21,Others
 3334,Fuel,2023-02-01,1063.22,Transportation
 3335,Karaoke,2023-02-14,4372.26,Entertainment
-3336,Gym,2023-02-20,5388.6,Sports
-3337,Roaming,2023-02-28,3702.8,Communication
+3336,Gym,2023-02-20,5388.60,Sports
+3337,Roaming,2023-02-28,3702.80,Communication
 3338,Concert,2023-02-01,3793.75,Entertainment
 3339,Gas,2023-02-15,2133.76,Home
 3340,Football,2023-02-07,7670.57,Sports
@@ -3350,7 +3350,7 @@ serialNo,name,date,amount,category
 3349,Calling Card,2023-02-03,3655.23,Communication
 3350,Accessories,2023-02-28,6142.18,Others
 3351,Rental Car,2023-02-15,9289.07,Travel
-3352,Streaming Service,2023-02-22,9749.2,Entertainment
+3352,Streaming Service,2023-02-22,9749.20,Entertainment
 3353,Rental Car,2023-02-19,8901.39,Travel
 3354,Data Plan,2023-02-05,2430.73,Communication
 3355,Concert,2023-02-07,5457.95,Entertainment
@@ -3374,7 +3374,7 @@ serialNo,name,date,amount,category
 3373,Books,2023-02-19,7300.81,Education
 3374,Roaming,2023-02-04,6670.95,Communication
 3375,Equipment,2023-02-25,9772.77,Sports
-3376,Snacks,2023-02-22,7047.6,Food
+3376,Snacks,2023-02-22,7047.60,Food
 3377,Fast Food,2023-02-22,4446.41,Food
 3378,Water Bill,2023-02-22,6294.65,Home
 3379,Fuel,2023-02-20,8367.84,Transportation
@@ -3388,7 +3388,7 @@ serialNo,name,date,amount,category
 3387,Postage,2023-02-05,9168.58,Communication
 3388,Music Festival,2023-02-14,7307.87,Entertainment
 3389,Restaurant,2023-02-15,5228.58,Food
-3390,Subscription,2023-02-03,5200.0,Communication
+3390,Subscription,2023-02-03,5200.00,Communication
 3391,Groceries,2023-02-16,9175.63,Food
 3392,Vaccination,2023-02-28,8929.82,Medical
 3393,Donation,2023-02-24,2433.36,Others
@@ -3396,7 +3396,7 @@ serialNo,name,date,amount,category
 3395,Socks,2023-02-01,7566.75,Clothing
 3396,Internet,2023-02-08,8451.13,Communication
 3397,Vegetables,2023-02-26,8201.94,Food
-3398,Security,2023-02-18,4851.2,Others
+3398,Security,2023-02-18,4851.20,Others
 3399,Insurance,2023-02-17,3493.87,Medical
 3400,Insurance,2023-02-03,5786.13,Medical
 3401,Shirt,2023-03-26,5924.03,Clothing
@@ -3412,14 +3412,14 @@ serialNo,name,date,amount,category
 3411,Rent,2023-03-01,5088.69,Home
 3412,Maintenance,2023-03-16,4615.61,Home
 3413,Fruits,2023-03-20,2409.62,Food
-3414,Storage,2023-03-14,6877.1,Others
+3414,Storage,2023-03-14,6877.10,Others
 3415,Accessories,2023-03-22,8285.38,Others
 3416,Theater,2023-03-22,2300.57,Entertainment
 3417,Rental Car,2023-03-11,7262.28,Travel
 3418,Gym,2023-03-20,3493.65,Sports
 3419,Health Check,2023-03-18,9551.12,Medical
 3420,Flight,2023-03-27,4242.26,Travel
-3421,Taxi,2023-03-06,6692.7,Transportation
+3421,Taxi,2023-03-06,6692.70,Transportation
 3422,Accessories,2023-03-19,685.17,Others
 3423,Jeans,2023-03-01,3696.57,Clothing
 3424,Bicycle,2023-03-04,5623.13,Transportation
@@ -3431,7 +3431,7 @@ serialNo,name,date,amount,category
 3430,Flight,2023-03-15,3979.28,Travel
 3431,Restaurant,2023-03-10,8318.35,Food
 3432,Maintenance,2023-03-25,7210.66,Home
-3433,Rent,2023-03-02,1671.6,Home
+3433,Rent,2023-03-02,1671.60,Home
 3434,Mobile Recharge,2023-03-14,1253.81,Communication
 3435,Gift,2023-03-09,3994.53,Others
 3436,Exam Fee,2023-03-04,1052.65,Education
@@ -3449,7 +3449,7 @@ serialNo,name,date,amount,category
 3448,Cafe,2023-03-17,3499.17,Food
 3449,Hospital Bill,2023-03-23,3412.52,Medical
 3450,Taxi,2023-03-18,2003.91,Transportation
-3451,Exam Fee,2023-03-05,1469.4,Education
+3451,Exam Fee,2023-03-05,1469.40,Education
 3452,Workshop,2023-03-02,1057.38,Education
 3453,Shirt,2023-03-09,758.22,Clothing
 3454,Game,2023-03-20,5365.72,Entertainment
@@ -3485,10 +3485,10 @@ serialNo,name,date,amount,category
 3484,Running,2023-03-23,3776.94,Sports
 3485,VPN,2023-03-04,9787.43,Communication
 3486,Scooter,2023-03-03,1338.58,Transportation
-3487,Toll,2023-03-02,929.7,Transportation
+3487,Toll,2023-03-02,929.70,Transportation
 3488,Bicycle,2023-03-14,6013.55,Transportation
 3489,Roaming,2023-03-19,2195.89,Communication
-3490,Coat,2023-03-09,5854.2,Clothing
+3490,Coat,2023-03-09,5854.20,Clothing
 3491,Toll,2023-03-02,6283.78,Transportation
 3492,Accessories,2023-03-03,4875.49,Others
 3493,Stationery,2023-03-09,487.77,Education
@@ -3505,12 +3505,12 @@ serialNo,name,date,amount,category
 3504,Vegetables,2023-04-20,6417.11,Food
 3505,Shirt,2023-04-25,9306.59,Clothing
 3506,Football,2023-04-23,138.39,Sports
-3507,Books,2023-04-02,222.1,Education
-3508,Laundry,2023-04-28,3135.1,Others
+3507,Books,2023-04-02,222.10,Education
+3508,Laundry,2023-04-28,3135.10,Others
 3509,Flight,2023-04-04,6813.73,Travel
 3510,Postage,2023-04-26,6643.18,Communication
 3511,Amusement Park,2023-04-22,8704.97,Entertainment
-3512,Socks,2023-04-27,8405.0,Clothing
+3512,Socks,2023-04-27,8405.00,Clothing
 3513,Doctor Visit,2023-04-02,545.39,Medical
 3514,Swimming,2023-04-16,1505.31,Sports
 3515,Insurance,2023-04-22,4106.54,Medical
@@ -3519,13 +3519,13 @@ serialNo,name,date,amount,category
 3518,SIM Card,2023-04-01,4444.95,Communication
 3519,Basketball,2023-04-14,1296.31,Sports
 3520,Scarf,2023-04-08,7022.58,Clothing
-3521,Workshop,2023-04-09,3625.4,Education
+3521,Workshop,2023-04-09,3625.40,Education
 3522,SIM Card,2023-04-09,2950.99,Communication
 3523,Cleaning,2023-04-20,2580.38,Home
 3524,Restaurant,2023-04-18,359.61,Food
 3525,Eye Exam,2023-04-18,2408.41,Medical
 3526,Backpack,2023-04-28,6674.47,Education
-3527,Charity,2023-04-09,9921.0,Others
+3527,Charity,2023-04-09,9921.00,Others
 3528,Scooter,2023-04-23,3805.31,Transportation
 3529,Shoes,2023-04-21,7911.63,Clothing
 3530,Security,2023-04-19,2671.35,Others
@@ -3543,7 +3543,7 @@ serialNo,name,date,amount,category
 3542,Karaoke,2023-04-04,1625.67,Entertainment
 3543,Storage,2023-04-25,2283.02,Others
 3544,Online Course,2023-04-22,869.59,Education
-3545,Dress,2023-04-20,8195.2,Clothing
+3545,Dress,2023-04-20,8195.20,Clothing
 3546,Groceries,2023-04-21,2217.52,Food
 3547,Fuel,2023-04-06,332.72,Travel
 3548,VPN,2023-04-14,1054.27,Communication
@@ -3564,7 +3564,7 @@ serialNo,name,date,amount,category
 3563,Basketball,2023-04-13,6111.05,Sports
 3564,Subscription,2023-04-18,3875.27,Communication
 3565,Theater,2023-04-23,8621.07,Entertainment
-3566,Ride Sharing,2023-04-09,1186.8,Transportation
+3566,Ride Sharing,2023-04-09,1186.80,Transportation
 3567,Insurance,2023-04-21,7509.93,Medical
 3568,Toll,2023-04-02,5819.02,Transportation
 3569,Parking,2023-04-27,1494.53,Transportation
@@ -3580,12 +3580,12 @@ serialNo,name,date,amount,category
 3579,Vegetables,2023-04-16,4153.87,Food
 3580,Football,2023-04-10,1912.04,Sports
 3581,Scarf,2023-04-18,612.07,Clothing
-3582,Yoga,2023-04-08,4997.4,Sports
+3582,Yoga,2023-04-08,4997.40,Sports
 3583,Scarf,2023-04-25,4774.83,Clothing
 3584,Roaming,2023-04-17,2075.77,Communication
 3585,Equipment,2023-04-09,6937.98,Sports
 3586,Metro,2023-04-18,2911.78,Transportation
-3587,Cycling,2023-04-12,3843.6,Sports
+3587,Cycling,2023-04-12,3843.60,Sports
 3588,Movie,2023-04-21,8058.18,Entertainment
 3589,Toll,2023-04-11,2520.19,Travel
 3590,Train,2023-04-28,8108.24,Travel
@@ -3604,7 +3604,7 @@ serialNo,name,date,amount,category
 3603,Vegetables,2023-05-20,6877.51,Food
 3604,Stationery,2023-05-27,9920.98,Education
 3605,Rent,2023-05-06,6093.21,Home
-3606,Insurance,2023-05-14,7179.0,Medical
+3606,Insurance,2023-05-14,7179.00,Medical
 3607,Game,2023-05-23,8018.91,Entertainment
 3608,Metro,2023-05-07,7433.85,Transportation
 3609,SIM Card,2023-05-20,677.79,Communication
@@ -3616,13 +3616,13 @@ serialNo,name,date,amount,category
 3615,Accessories,2023-05-19,7083.67,Others
 3616,Visa Fee,2023-05-07,4128.36,Travel
 3617,Rent,2023-05-11,1187.93,Home
-3618,Toll,2023-05-18,1784.3,Travel
+3618,Toll,2023-05-18,1784.30,Travel
 3619,VPN,2023-05-09,2288.69,Communication
 3620,Toll,2023-05-08,8930.98,Transportation
 3621,Electricity,2023-05-12,8747.28,Home
 3622,Books,2023-05-15,5693.76,Education
-3623,Online Course,2023-05-25,1618.2,Education
-3624,Seminar,2023-05-22,4216.1,Education
+3623,Online Course,2023-05-25,1618.20,Education
+3624,Seminar,2023-05-22,4216.10,Education
 3625,Seminar,2023-05-02,9515.33,Education
 3626,Bank Fee,2023-05-14,5016.13,Others
 3627,Books,2023-05-26,7346.74,Education
@@ -3634,7 +3634,7 @@ serialNo,name,date,amount,category
 3633,Bus,2023-05-19,8674.94,Transportation
 3634,Bus,2023-05-22,9543.26,Transportation
 3635,Mobile Recharge,2023-05-01,2937.75,Communication
-3636,Cafe,2023-05-16,3688.8,Food
+3636,Cafe,2023-05-16,3688.80,Food
 3637,Meat,2023-05-16,991.78,Food
 3638,Internet,2023-05-07,9401.68,Home
 3639,Jacket,2023-05-20,5045.12,Clothing
@@ -3645,19 +3645,19 @@ serialNo,name,date,amount,category
 3644,SIM Card,2023-05-25,834.67,Communication
 3645,Fuel,2023-05-13,1213.66,Travel
 3646,Hotel,2023-05-05,7855.65,Travel
-3647,Mobile Recharge,2023-05-15,7885.1,Communication
+3647,Mobile Recharge,2023-05-15,7885.10,Communication
 3648,Calling Card,2023-05-02,2497.12,Communication
 3649,Eye Exam,2023-05-22,344.57,Medical
 3650,Health Check,2023-05-23,7912.23,Medical
 3651,Online Course,2023-05-08,3091.38,Education
 3652,Music Festival,2023-05-11,9154.58,Entertainment
-3653,Water Bill,2023-05-22,9402.8,Home
+3653,Water Bill,2023-05-22,9402.80,Home
 3654,Vaccination,2023-05-12,4972.72,Medical
 3655,Ride Sharing,2023-05-09,3644.11,Transportation
 3656,Charity,2023-05-26,6774.12,Others
 3657,Backpack,2023-05-02,4350.55,Education
 3658,Maintenance,2023-05-04,4847.74,Home
-3659,Dress,2023-05-21,9265.3,Clothing
+3659,Dress,2023-05-21,9265.30,Clothing
 3660,Music Festival,2023-05-08,1030.71,Entertainment
 3661,Scarf,2023-05-03,8866.15,Clothing
 3662,Security,2023-05-06,8559.73,Others
@@ -3672,7 +3672,7 @@ serialNo,name,date,amount,category
 3671,Gym,2023-05-27,4922.52,Sports
 3672,Basketball,2023-05-08,5222.57,Sports
 3673,Shoes,2023-05-02,7401.05,Clothing
-3674,Pet,2023-05-08,9596.7,Others
+3674,Pet,2023-05-08,9596.70,Others
 3675,Scooter,2023-05-01,5069.26,Transportation
 3676,Groceries,2023-05-05,6975.84,Food
 3677,Fast Food,2023-05-27,4435.46,Food
@@ -3684,7 +3684,7 @@ serialNo,name,date,amount,category
 3683,Equipment,2023-05-17,8817.87,Sports
 3684,Appliance,2023-05-18,3529.17,Home
 3685,Lottery,2023-05-03,9055.95,Others
-3686,Taxi,2023-05-27,2022.2,Transportation
+3686,Taxi,2023-05-27,2022.20,Transportation
 3687,Sports Event,2023-05-07,3044.09,Entertainment
 3688,Mobile Recharge,2023-05-02,2466.49,Communication
 3689,Cafe,2023-05-04,497.67,Food
@@ -3694,20 +3694,20 @@ serialNo,name,date,amount,category
 3693,Furniture,2023-05-20,4372.57,Home
 3694,Movie,2023-05-18,1937.41,Entertainment
 3695,Delivery,2023-05-19,9287.38,Food
-3696,Jeans,2023-05-22,7465.3,Clothing
+3696,Jeans,2023-05-22,7465.30,Clothing
 3697,Calling Card,2023-05-04,6460.77,Communication
 3698,Toll,2023-05-16,636.25,Travel
 3699,Notebook,2023-05-08,4860.99,Education
 3700,Fast Food,2023-05-23,832.53,Food
 3701,Meat,2023-06-08,4765.05,Food
-3702,Concert,2023-06-05,7078.3,Entertainment
+3702,Concert,2023-06-05,7078.30,Entertainment
 3703,Football,2023-06-19,543.25,Sports
 3704,Taxi,2023-06-25,2541.34,Travel
 3705,Ride Sharing,2023-06-21,2966.59,Transportation
 3706,Backpack,2023-06-11,106.12,Education
 3707,Charity,2023-06-16,9419.29,Others
-3708,Sports Event,2023-06-27,8269.0,Entertainment
-3709,Jacket,2023-06-13,1711.2,Clothing
+3708,Sports Event,2023-06-27,8269.00,Entertainment
+3709,Jacket,2023-06-13,1711.20,Clothing
 3710,Gift,2023-06-22,7130.99,Others
 3711,Eye Exam,2023-06-17,4338.78,Medical
 3712,Water Bill,2023-06-08,2379.83,Home
@@ -3768,10 +3768,10 @@ serialNo,name,date,amount,category
 3767,Maintenance,2023-06-13,654.17,Home
 3768,Notebook,2023-06-06,3692.07,Education
 3769,Fuel,2023-06-11,5883.13,Transportation
-3770,Rent,2023-06-24,3658.6,Home
+3770,Rent,2023-06-24,3658.60,Home
 3771,Drinks,2023-06-17,5657.15,Food
 3772,Cafe,2023-06-04,8912.03,Food
-3773,Exam Fee,2023-06-15,3125.6,Education
+3773,Exam Fee,2023-06-15,3125.60,Education
 3774,Toll,2023-06-27,8789.19,Travel
 3775,Tennis,2023-06-25,9671.91,Sports
 3776,Jacket,2023-06-20,7225.04,Clothing
@@ -3800,16 +3800,16 @@ serialNo,name,date,amount,category
 3799,Dress,2023-06-14,8676.24,Clothing
 3800,Travel Insurance,2023-06-22,7471.29,Travel
 3801,Belt,2023-07-11,6641.82,Clothing
-3802,Coat,2023-07-08,163.3,Clothing
+3802,Coat,2023-07-08,163.30,Clothing
 3803,Fuel,2023-07-09,7473.48,Transportation
 3804,Taxi,2023-07-18,7421.87,Transportation
-3805,Security,2023-07-13,7129.7,Others
+3805,Security,2023-07-13,7129.70,Others
 3806,Tuition,2023-07-28,1876.58,Education
-3807,Eye Exam,2023-07-04,5868.0,Medical
+3807,Eye Exam,2023-07-04,5868.00,Medical
 3808,Game,2023-07-21,4680.42,Entertainment
 3809,Coat,2023-07-10,3170.52,Clothing
 3810,Scarf,2023-07-25,5615.94,Clothing
-3811,Jeans,2023-07-26,4748.8,Clothing
+3811,Jeans,2023-07-26,4748.80,Clothing
 3812,Seminar,2023-07-02,4424.48,Education
 3813,Ride Sharing,2023-07-01,6295.65,Transportation
 3814,Basketball,2023-07-09,389.06,Sports
@@ -3817,7 +3817,7 @@ serialNo,name,date,amount,category
 3816,Basketball,2023-07-07,3210.04,Sports
 3817,Coat,2023-07-06,1519.76,Clothing
 3818,Maintenance,2023-07-13,7113.19,Home
-3819,Electricity,2023-07-13,1456.3,Home
+3819,Electricity,2023-07-13,1456.30,Home
 3820,Visa Fee,2023-07-12,9912.55,Travel
 3821,Fuel,2023-07-28,8380.36,Travel
 3822,Toll,2023-07-26,30.27,Travel
@@ -3831,7 +3831,7 @@ serialNo,name,date,amount,category
 3830,Football,2023-07-07,6108.42,Sports
 3831,Online Course,2023-07-04,4296.32,Education
 3832,Amusement Park,2023-07-14,781.26,Entertainment
-3833,Yoga,2023-07-22,2406.7,Sports
+3833,Yoga,2023-07-22,2406.70,Sports
 3834,Visa Fee,2023-07-09,3583.84,Travel
 3835,Music Festival,2023-07-18,765.19,Entertainment
 3836,Stationery,2023-07-21,6251.16,Education
@@ -3844,7 +3844,7 @@ serialNo,name,date,amount,category
 3843,Electricity,2023-07-08,8535.18,Home
 3844,Security,2023-07-23,7790.79,Others
 3845,Drinks,2023-07-16,4422.79,Food
-3846,Delivery,2023-07-09,7243.2,Food
+3846,Delivery,2023-07-09,7243.20,Food
 3847,Maintenance,2023-07-17,6442.83,Home
 3848,Swimming,2023-07-04,4249.54,Sports
 3849,Cruise,2023-07-14,2446.14,Travel
@@ -3858,10 +3858,10 @@ serialNo,name,date,amount,category
 3857,Theater,2023-07-26,5564.77,Entertainment
 3858,Cafe,2023-07-12,7968.18,Food
 3859,Mortgage,2023-07-19,5203.31,Home
-3860,Accessories,2023-07-05,6904.4,Others
-3861,Yoga,2023-07-19,7076.2,Sports
+3860,Accessories,2023-07-05,6904.40,Others
+3861,Yoga,2023-07-19,7076.20,Sports
 3862,Water Bill,2023-07-20,2511.36,Home
-3863,Donation,2023-07-21,3688.2,Others
+3863,Donation,2023-07-21,3688.20,Others
 3864,Streaming Service,2023-07-14,3106.55,Entertainment
 3865,Club,2023-07-12,6573.37,Entertainment
 3866,Shoes,2023-07-06,9191.02,Clothing
@@ -3871,7 +3871,7 @@ serialNo,name,date,amount,category
 3870,Lottery,2023-07-02,4168.27,Others
 3871,Pen,2023-07-02,959.59,Education
 3872,Parking,2023-07-22,2521.37,Transportation
-3873,Parking,2023-07-11,602.5,Transportation
+3873,Parking,2023-07-11,602.50,Transportation
 3874,Roaming,2023-07-21,9631.42,Communication
 3875,Furniture,2023-07-25,1821.06,Home
 3876,Donation,2023-07-21,3475.43,Others
@@ -3882,10 +3882,10 @@ serialNo,name,date,amount,category
 3881,Hat,2023-07-09,5811.41,Clothing
 3882,Gas,2023-07-27,6236.37,Home
 3883,Mobile Recharge,2023-07-19,5458.13,Communication
-3884,Insurance,2023-07-18,6737.5,Medical
+3884,Insurance,2023-07-18,6737.50,Medical
 3885,Restaurant,2023-07-19,3791.63,Food
 3886,Train,2023-07-20,3636.66,Transportation
-3887,Scarf,2023-07-16,116.1,Clothing
+3887,Scarf,2023-07-16,116.10,Clothing
 3888,Seminar,2023-07-08,3634.36,Education
 3889,Gym,2023-07-05,8738.82,Sports
 3890,Fast Food,2023-07-17,5171.53,Food
@@ -3903,19 +3903,19 @@ serialNo,name,date,amount,category
 3902,Theater,2023-08-26,2324.46,Entertainment
 3903,Toll,2023-08-18,1567.79,Transportation
 3904,Dental Check,2023-08-08,7314.95,Medical
-3905,Hotel,2023-08-02,2029.2,Travel
+3905,Hotel,2023-08-02,2029.20,Travel
 3906,Shirt,2023-08-21,4241.77,Clothing
 3907,Notebook,2023-08-27,9569.44,Education
 3908,Running,2023-08-14,972.87,Sports
 3909,Books,2023-08-18,7789.54,Education
 3910,Gift,2023-08-26,431.03,Others
-3911,Workshop,2023-08-27,4916.9,Education
+3911,Workshop,2023-08-27,4916.90,Education
 3912,Postage,2023-08-03,9175.96,Communication
 3913,Online Course,2023-08-17,7875.27,Education
 3914,Charity,2023-08-13,7993.96,Others
-3915,Amusement Park,2023-08-18,1619.0,Entertainment
+3915,Amusement Park,2023-08-18,1619.00,Entertainment
 3916,Basketball,2023-08-04,3528.87,Sports
-3917,Surgery,2023-08-04,977.0,Medical
+3917,Surgery,2023-08-04,977.00,Medical
 3918,Books,2023-08-05,9959.16,Education
 3919,Donation,2023-08-20,2920.07,Others
 3920,Calling Card,2023-08-27,1973.71,Communication
@@ -3927,8 +3927,8 @@ serialNo,name,date,amount,category
 3926,Football,2023-08-19,2165.08,Sports
 3927,Shirt,2023-08-07,2253.53,Clothing
 3928,Movie,2023-08-12,3157.94,Entertainment
-3929,Theater,2023-08-09,5597.7,Entertainment
-3930,Cycling,2023-08-24,9511.0,Sports
+3929,Theater,2023-08-09,5597.70,Entertainment
+3930,Cycling,2023-08-24,9511.00,Sports
 3931,Train,2023-08-18,9450.97,Transportation
 3932,Coat,2023-08-01,9031.32,Clothing
 3933,Concert,2023-08-22,6696.88,Entertainment
@@ -3938,12 +3938,12 @@ serialNo,name,date,amount,category
 3937,Exam Fee,2023-08-14,5709.88,Education
 3938,Internet,2023-08-15,1328.18,Home
 3939,Security,2023-08-14,2228.25,Others
-3940,Dental Check,2023-08-01,1778.2,Medical
+3940,Dental Check,2023-08-01,1778.20,Medical
 3941,Fitness Class,2023-08-01,6378.93,Sports
 3942,Streaming Service,2023-08-12,4899.32,Entertainment
 3943,Laundry,2023-08-17,4439.84,Others
 3944,Taxi,2023-08-14,8172.88,Transportation
-3945,Rent,2023-08-16,5069.0,Home
+3945,Rent,2023-08-16,5069.00,Home
 3946,Shirt,2023-08-21,8943.78,Clothing
 3947,Socks,2023-08-14,7170.92,Clothing
 3948,Therapy,2023-08-10,2632.77,Medical
@@ -3951,7 +3951,7 @@ serialNo,name,date,amount,category
 3950,Maintenance,2023-08-11,1790.22,Home
 3951,Shoes,2023-08-04,8734.03,Clothing
 3952,Toll,2023-08-19,4095.28,Travel
-3953,Health Check,2023-08-22,3938.2,Medical
+3953,Health Check,2023-08-22,3938.20,Medical
 3954,Storage,2023-08-21,856.26,Others
 3955,Drinks,2023-08-18,9843.64,Food
 3956,Books,2023-08-17,5234.73,Education
@@ -3963,7 +3963,7 @@ serialNo,name,date,amount,category
 3962,Hat,2023-08-16,6806.71,Clothing
 3963,Delivery,2023-08-01,2841.83,Food
 3964,Gift,2023-08-01,4542.39,Others
-3965,Taxi,2023-08-25,6895.0,Transportation
+3965,Taxi,2023-08-25,6895.00,Transportation
 3966,Fuel,2023-08-25,1156.23,Travel
 3967,Hospital Bill,2023-08-11,5413.62,Medical
 3968,Karaoke,2023-08-22,2121.03,Entertainment
@@ -3975,7 +3975,7 @@ serialNo,name,date,amount,category
 3974,Music Festival,2023-08-19,1550.73,Entertainment
 3975,Drinks,2023-08-27,4275.52,Food
 3976,Metro,2023-08-12,2924.63,Transportation
-3977,Club,2023-08-09,5115.3,Entertainment
+3977,Club,2023-08-09,5115.30,Entertainment
 3978,Health Check,2023-08-13,1653.68,Medical
 3979,Toll,2023-08-09,9025.72,Transportation
 3980,Data Plan,2023-08-23,2698.61,Communication
@@ -3983,10 +3983,10 @@ serialNo,name,date,amount,category
 3982,Parking,2023-08-13,9862.03,Transportation
 3983,Ride Sharing,2023-08-27,4519.43,Transportation
 3984,Fruits,2023-08-14,6166.99,Food
-3985,Bicycle,2023-08-05,8432.7,Transportation
+3985,Bicycle,2023-08-05,8432.70,Transportation
 3986,Vegetables,2023-08-11,3836.41,Food
 3987,Sports Event,2023-08-19,681.37,Entertainment
-3988,Pen,2023-08-04,9093.2,Education
+3988,Pen,2023-08-04,9093.20,Education
 3989,Vegetables,2023-08-05,3417.72,Food
 3990,Belt,2023-08-08,9493.28,Clothing
 3991,Fitness Class,2023-08-19,912.42,Sports
@@ -3996,25 +3996,25 @@ serialNo,name,date,amount,category
 3995,Club,2023-08-02,8165.89,Entertainment
 3996,Scooter,2023-08-28,4683.73,Transportation
 3997,Rent,2023-08-22,958.57,Home
-3998,Game,2023-08-13,7917.2,Entertainment
+3998,Game,2023-08-13,7917.20,Entertainment
 3999,Phone Bill,2023-08-16,3283.41,Communication
 4000,Health Check,2023-08-03,3530.64,Medical
 4001,Gift,2023-09-22,5067.54,Others
-4002,Karaoke,2023-09-17,9247.8,Entertainment
+4002,Karaoke,2023-09-17,9247.80,Entertainment
 4003,Restaurant,2023-09-09,3910.39,Food
 4004,Visa Fee,2023-09-24,3521.17,Travel
-4005,Tuition,2023-09-22,9771.2,Education
+4005,Tuition,2023-09-22,9771.20,Education
 4006,Postage,2023-09-13,3697.36,Communication
 4007,Shirt,2023-09-13,4242.67,Clothing
 4008,Concert,2023-09-18,7691.06,Entertainment
 4009,Roaming,2023-09-19,7927.89,Communication
 4010,Football,2023-09-11,3313.57,Sports
-4011,Scarf,2023-09-16,6002.8,Clothing
+4011,Scarf,2023-09-16,6002.80,Clothing
 4012,Roaming,2023-09-18,9906.38,Communication
 4013,Metro,2023-09-07,3871.39,Transportation
 4014,Workshop,2023-09-02,4781.53,Education
 4015,Surgery,2023-09-20,1867.98,Medical
-4016,Gift,2023-09-21,9704.2,Others
+4016,Gift,2023-09-21,9704.20,Others
 4017,Flight,2023-09-07,7842.77,Travel
 4018,Notebook,2023-09-22,9882.63,Education
 4019,Snacks,2023-09-02,2954.33,Food
@@ -4025,7 +4025,7 @@ serialNo,name,date,amount,category
 4024,Swimming,2023-09-09,7264.69,Sports
 4025,Internet,2023-09-17,3666.87,Communication
 4026,Hat,2023-09-28,8993.41,Clothing
-4027,Visa Fee,2023-09-26,2051.0,Travel
+4027,Visa Fee,2023-09-26,2051.00,Travel
 4028,Dress,2023-09-10,4744.31,Clothing
 4029,Security,2023-09-21,2970.23,Others
 4030,Calling Card,2023-09-11,2639.54,Communication
@@ -4035,8 +4035,8 @@ serialNo,name,date,amount,category
 4034,VPN,2023-09-11,9737.84,Communication
 4035,Groceries,2023-09-14,4819.75,Food
 4036,Pet,2023-09-22,8821.55,Others
-4037,Shoes,2023-09-05,2706.7,Clothing
-4038,Cleaning,2023-09-10,2402.9,Home
+4037,Shoes,2023-09-05,2706.70,Clothing
+4038,Cleaning,2023-09-10,2402.90,Home
 4039,Lottery,2023-09-11,4827.62,Others
 4040,Shirt,2023-09-11,9460.97,Clothing
 4041,Rent,2023-09-07,860.85,Home
@@ -4054,25 +4054,25 @@ serialNo,name,date,amount,category
 4053,Exam Fee,2023-09-15,1613.58,Education
 4054,Jeans,2023-09-13,6729.68,Clothing
 4055,Music Festival,2023-09-24,7860.44,Entertainment
-4056,Restaurant,2023-09-26,9111.4,Food
+4056,Restaurant,2023-09-26,9111.40,Food
 4057,Train,2023-09-17,3366.22,Transportation
 4058,Fuel,2023-09-22,9167.43,Transportation
-4059,Water Bill,2023-09-25,6674.1,Home
+4059,Water Bill,2023-09-25,6674.10,Home
 4060,Bank Fee,2023-09-04,620.45,Others
 4061,Fitness Class,2023-09-17,3384.82,Sports
 4062,Fuel,2023-09-13,2207.25,Transportation
 4063,SIM Card,2023-09-08,6071.24,Communication
 4064,Tuition,2023-09-28,3777.45,Education
 4065,Cycling,2023-09-08,4578.44,Sports
-4066,Maintenance,2023-09-23,5511.5,Home
+4066,Maintenance,2023-09-23,5511.50,Home
 4067,Flight,2023-09-13,4195.44,Travel
 4068,Pet,2023-09-11,128.92,Others
 4069,Water Bill,2023-09-10,6463.91,Home
 4070,Tennis,2023-09-23,9927.35,Sports
 4071,Concert,2023-09-16,9344.23,Entertainment
-4072,Scooter,2023-09-20,6819.3,Transportation
-4073,Cleaning,2023-09-18,9950.4,Home
-4074,Bicycle,2023-09-21,771.2,Transportation
+4072,Scooter,2023-09-20,6819.30,Transportation
+4073,Cleaning,2023-09-18,9950.40,Home
+4074,Bicycle,2023-09-21,771.20,Transportation
 4075,Socks,2023-09-01,7530.97,Clothing
 4076,Vaccination,2023-09-28,1192.87,Medical
 4077,Medicine,2023-09-02,3617.22,Medical
@@ -4089,9 +4089,9 @@ serialNo,name,date,amount,category
 4088,Theater,2023-09-22,9155.81,Entertainment
 4089,Concert,2023-09-17,6082.55,Entertainment
 4090,Equipment,2023-09-11,2827.67,Sports
-4091,Shirt,2023-09-10,2748.8,Clothing
+4091,Shirt,2023-09-10,2748.80,Clothing
 4092,Shoes,2023-09-21,1702.26,Clothing
-4093,Books,2023-09-22,3491.7,Education
+4093,Books,2023-09-22,3491.70,Education
 4094,Yoga,2023-09-01,4815.29,Sports
 4095,Hospital Bill,2023-09-14,2885.72,Medical
 4096,Club,2023-09-20,2539.89,Entertainment
@@ -4100,12 +4100,12 @@ serialNo,name,date,amount,category
 4099,Online Course,2023-09-22,7008.97,Education
 4100,Toll,2023-09-05,3335.28,Transportation
 4101,Fast Food,2023-10-13,681.94,Food
-4102,Maintenance,2023-10-05,2665.0,Home
-4103,Visa Fee,2023-10-07,2802.3,Travel
+4102,Maintenance,2023-10-05,2665.00,Home
+4103,Visa Fee,2023-10-07,2802.30,Travel
 4104,Health Check,2023-10-27,2947.46,Medical
 4105,Fuel,2023-10-26,8443.94,Travel
 4106,Pen,2023-10-08,6453.51,Education
-4107,Basketball,2023-10-23,1057.7,Sports
+4107,Basketball,2023-10-23,1057.70,Sports
 4108,Taxi,2023-10-22,8890.86,Travel
 4109,Electricity,2023-10-13,2904.79,Home
 4110,Notebook,2023-10-11,4705.39,Education
@@ -4113,7 +4113,7 @@ serialNo,name,date,amount,category
 4112,Calling Card,2023-10-04,9447.58,Communication
 4113,Shirt,2023-10-25,284.87,Clothing
 4114,SIM Card,2023-10-14,2832.63,Communication
-4115,Socks,2023-10-02,5820.8,Clothing
+4115,Socks,2023-10-02,5820.80,Clothing
 4116,Restaurant,2023-10-25,3718.01,Food
 4117,Belt,2023-10-04,911.86,Clothing
 4118,Therapy,2023-10-05,1285.12,Medical
@@ -4122,7 +4122,7 @@ serialNo,name,date,amount,category
 4121,Security,2023-10-02,531.71,Others
 4122,Bicycle,2023-10-06,6227.57,Transportation
 4123,Data Plan,2023-10-25,6118.56,Communication
-4124,Subscription,2023-10-04,1600.3,Communication
+4124,Subscription,2023-10-04,1600.30,Communication
 4125,Karaoke,2023-10-18,9217.35,Entertainment
 4126,Doctor Visit,2023-10-07,6408.84,Medical
 4127,Postage,2023-10-12,6634.24,Communication
@@ -4131,7 +4131,7 @@ serialNo,name,date,amount,category
 4130,Tuition,2023-10-26,7352.47,Education
 4131,Workshop,2023-10-16,7709.52,Education
 4132,Groceries,2023-10-11,8618.34,Food
-4133,Furniture,2023-10-02,1233.2,Home
+4133,Furniture,2023-10-02,1233.20,Home
 4134,Shirt,2023-10-12,4394.13,Clothing
 4135,Football,2023-10-09,6386.66,Sports
 4136,Mobile Recharge,2023-10-08,8691.19,Communication
@@ -4160,7 +4160,7 @@ serialNo,name,date,amount,category
 4159,Travel Insurance,2023-10-12,5133.68,Travel
 4160,Delivery,2023-10-20,2257.83,Food
 4161,Ride Sharing,2023-10-26,9929.89,Transportation
-4162,Phone Bill,2023-10-16,7168.5,Communication
+4162,Phone Bill,2023-10-16,7168.50,Communication
 4163,Water Bill,2023-10-01,1532.99,Home
 4164,Delivery,2023-10-15,5692.86,Food
 4165,Shirt,2023-10-12,8410.75,Clothing
@@ -4185,8 +4185,8 @@ serialNo,name,date,amount,category
 4184,Travel Insurance,2023-10-26,2170.73,Travel
 4185,Electricity,2023-10-17,7864.81,Home
 4186,Water Bill,2023-10-12,4285.58,Home
-4187,Scarf,2023-10-22,6154.0,Clothing
-4188,Delivery,2023-10-05,9443.7,Food
+4187,Scarf,2023-10-22,6154.00,Clothing
+4188,Delivery,2023-10-05,9443.70,Food
 4189,Scarf,2023-10-25,4798.06,Clothing
 4190,Bicycle,2023-10-14,8952.05,Transportation
 4191,SIM Card,2023-10-02,5073.12,Communication
@@ -4201,21 +4201,21 @@ serialNo,name,date,amount,category
 4200,Gym,2023-10-07,913.16,Sports
 4201,Club,2023-11-24,3604.94,Entertainment
 4202,Cleaning,2023-11-18,9958.73,Home
-4203,Tuition,2023-11-01,3606.8,Education
+4203,Tuition,2023-11-01,3606.80,Education
 4204,Pen,2023-11-04,7639.99,Education
 4205,Coat,2023-11-13,6598.98,Clothing
-4206,Fuel,2023-11-24,9841.3,Transportation
+4206,Fuel,2023-11-24,9841.30,Transportation
 4207,Surgery,2023-11-25,1994.51,Medical
 4208,Cafe,2023-11-12,4829.74,Food
 4209,Calling Card,2023-11-25,9382.51,Communication
-4210,Flight,2023-11-27,5955.5,Travel
+4210,Flight,2023-11-27,5955.50,Travel
 4211,Dress,2023-11-12,2627.36,Clothing
 4212,Water Bill,2023-11-23,2281.63,Home
 4213,Internet,2023-11-21,2336.81,Communication
 4214,Security,2023-11-16,1370.82,Others
 4215,Pen,2023-11-02,5563.59,Education
 4216,Vaccination,2023-11-27,2251.46,Medical
-4217,Backpack,2023-11-12,8440.2,Education
+4217,Backpack,2023-11-12,8440.20,Education
 4218,Shirt,2023-11-04,5619.04,Clothing
 4219,Sports Event,2023-11-16,8903.85,Entertainment
 4220,Game,2023-11-08,6363.53,Entertainment
@@ -4229,42 +4229,42 @@ serialNo,name,date,amount,category
 4228,Internet,2023-11-14,831.76,Communication
 4229,Concert,2023-11-10,6040.33,Entertainment
 4230,Fuel,2023-11-24,7002.99,Transportation
-4231,Cafe,2023-11-24,1798.4,Food
+4231,Cafe,2023-11-24,1798.40,Food
 4232,Taxi,2023-11-10,9081.48,Travel
 4233,Concert,2023-11-12,6678.66,Entertainment
 4234,Game,2023-11-15,4526.24,Entertainment
 4235,Security,2023-11-26,1015.54,Others
-4236,Workshop,2023-11-01,7441.9,Education
+4236,Workshop,2023-11-01,7441.90,Education
 4237,Vaccination,2023-11-01,9491.93,Medical
 4238,Running,2023-11-04,1794.35,Sports
 4239,Bus,2023-11-02,2229.21,Transportation
-4240,Phone Bill,2023-11-02,1314.9,Communication
+4240,Phone Bill,2023-11-02,1314.90,Communication
 4241,Cleaning,2023-11-06,2463.98,Home
 4242,Lottery,2023-11-06,2332.94,Others
 4243,Rental Car,2023-11-25,8566.42,Travel
 4244,Sports Event,2023-11-25,8884.11,Entertainment
 4245,Roaming,2023-11-24,3243.27,Communication
-4246,Bank Fee,2023-11-18,1370.2,Others
+4246,Bank Fee,2023-11-18,1370.20,Others
 4247,Taxi,2023-11-23,6150.61,Transportation
 4248,Jacket,2023-11-14,2797.82,Clothing
 4249,SIM Card,2023-11-04,9122.58,Communication
 4250,Scooter,2023-11-23,5750.41,Transportation
 4251,Laundry,2023-11-07,6225.33,Others
 4252,Donation,2023-11-14,3117.03,Others
-4253,Exam Fee,2023-11-19,1877.4,Education
+4253,Exam Fee,2023-11-19,1877.40,Education
 4254,Train,2023-11-12,8710.35,Travel
 4255,Roaming,2023-11-13,9314.31,Communication
-4256,Internet,2023-11-20,2624.7,Home
+4256,Internet,2023-11-20,2624.70,Home
 4257,Music Festival,2023-11-02,5305.98,Entertainment
-4258,Therapy,2023-11-21,2393.7,Medical
+4258,Therapy,2023-11-21,2393.70,Medical
 4259,Water Bill,2023-11-18,1776.92,Home
 4260,Notebook,2023-11-25,1273.37,Education
 4261,Basketball,2023-11-07,9170.84,Sports
 4262,Mobile Recharge,2023-11-24,178.36,Communication
 4263,Dress,2023-11-05,4297.12,Clothing
 4264,Shirt,2023-11-22,2414.33,Clothing
-4265,Snacks,2023-11-03,4023.1,Food
-4266,Dental Check,2023-11-26,1145.3,Medical
+4265,Snacks,2023-11-03,4023.10,Food
+4266,Dental Check,2023-11-26,1145.30,Medical
 4267,Drinks,2023-11-05,5261.88,Food
 4268,Vegetables,2023-11-23,7362.24,Food
 4269,Restaurant,2023-11-19,2740.01,Food
@@ -4274,15 +4274,15 @@ serialNo,name,date,amount,category
 4273,Yoga,2023-11-08,1157.87,Sports
 4274,Parking,2023-11-23,5932.99,Transportation
 4275,Appliance,2023-11-17,2621.81,Home
-4276,Taxi,2023-11-19,679.6,Transportation
-4277,Surgery,2023-11-22,6413.5,Medical
+4276,Taxi,2023-11-19,679.60,Transportation
+4277,Surgery,2023-11-22,6413.50,Medical
 4278,Toll,2023-11-08,9480.37,Transportation
 4279,Eye Exam,2023-11-12,3549.95,Medical
 4280,Train,2023-11-13,1504.05,Travel
 4281,Toll,2023-11-02,1367.77,Transportation
-4282,Parking,2023-11-24,9572.1,Transportation
+4282,Parking,2023-11-24,9572.10,Transportation
 4283,Scooter,2023-11-11,8605.75,Transportation
-4284,Metro,2023-11-15,2156.1,Transportation
+4284,Metro,2023-11-15,2156.10,Transportation
 4285,Fruits,2023-11-16,8889.58,Food
 4286,Hospital Bill,2023-11-07,3927.91,Medical
 4287,Toll,2023-11-24,2298.77,Transportation
@@ -4298,14 +4298,14 @@ serialNo,name,date,amount,category
 4297,Fast Food,2023-11-14,6492.47,Food
 4298,Postage,2023-11-11,9450.48,Communication
 4299,Groceries,2023-11-10,1711.24,Food
-4300,Meat,2023-11-01,4421.7,Food
+4300,Meat,2023-11-01,4421.70,Food
 4301,Drinks,2023-12-01,5515.43,Food
 4302,Running,2023-12-03,5865.28,Sports
 4303,Electricity,2023-12-26,4402.63,Home
 4304,Vaccination,2023-12-24,7914.24,Medical
-4305,Parking,2023-12-05,6205.9,Transportation
+4305,Parking,2023-12-05,6205.90,Transportation
 4306,Fitness Class,2023-12-05,717.62,Sports
-4307,Ride Sharing,2023-12-26,5400.9,Transportation
+4307,Ride Sharing,2023-12-26,5400.90,Transportation
 4308,Surgery,2023-12-19,3076.28,Medical
 4309,Ride Sharing,2023-12-07,9458.81,Transportation
 4310,VPN,2023-12-26,5208.13,Communication
@@ -4325,7 +4325,7 @@ serialNo,name,date,amount,category
 4324,Cafe,2023-12-27,5791.36,Food
 4325,Club,2023-12-22,619.56,Entertainment
 4326,Data Plan,2023-12-19,923.65,Communication
-4327,Groceries,2023-12-28,4966.4,Food
+4327,Groceries,2023-12-28,4966.40,Food
 4328,Train,2023-12-25,4254.18,Transportation
 4329,Groceries,2023-12-10,7753.09,Food
 4330,Internet,2023-12-25,3888.33,Home
@@ -4341,13 +4341,13 @@ serialNo,name,date,amount,category
 4340,Toll,2023-12-20,7874.29,Travel
 4341,Appliance,2023-12-12,7777.73,Home
 4342,Donation,2023-12-25,9372.11,Others
-4343,Accessories,2023-12-08,6594.7,Others
+4343,Accessories,2023-12-08,6594.70,Others
 4344,Jeans,2023-12-02,86.49,Clothing
 4345,Fitness Class,2023-12-23,4638.26,Sports
 4346,Pen,2023-12-15,6377.34,Education
 4347,Dress,2023-12-10,8501.06,Clothing
 4348,Toll,2023-12-04,740.61,Travel
-4349,Appliance,2023-12-03,7352.6,Home
+4349,Appliance,2023-12-03,7352.60,Home
 4350,Hotel,2023-12-01,3721.85,Travel
 4351,Coat,2023-12-10,5578.88,Clothing
 4352,Jeans,2023-12-28,9821.77,Clothing
@@ -4362,7 +4362,7 @@ serialNo,name,date,amount,category
 4361,Internet,2023-12-19,3033.63,Home
 4362,Scarf,2023-12-03,665.42,Clothing
 4363,Scooter,2023-12-01,5159.67,Transportation
-4364,Stationery,2023-12-01,568.6,Education
+4364,Stationery,2023-12-01,568.60,Education
 4365,Rental Car,2023-12-24,2625.59,Travel
 4366,Water Bill,2023-12-07,907.35,Home
 4367,Exam Fee,2023-12-10,3163.31,Education
@@ -4372,7 +4372,7 @@ serialNo,name,date,amount,category
 4371,SIM Card,2023-12-15,1401.31,Communication
 4372,VPN,2023-12-19,6235.37,Communication
 4373,Basketball,2023-12-03,5052.34,Sports
-4374,Appliance,2023-12-19,2427.2,Home
+4374,Appliance,2023-12-19,2427.20,Home
 4375,Snacks,2023-12-18,3458.72,Food
 4376,Maintenance,2023-12-06,5150.31,Home
 4377,Pet,2023-12-07,852.84,Others
@@ -4380,15 +4380,15 @@ serialNo,name,date,amount,category
 4379,Calling Card,2023-12-11,1506.69,Communication
 4380,Toll,2023-12-18,6315.18,Travel
 4381,Dress,2023-12-13,4138.48,Clothing
-4382,Phone Bill,2023-12-12,407.4,Communication
+4382,Phone Bill,2023-12-12,407.40,Communication
 4383,Storage,2023-12-10,5195.71,Others
 4384,Game,2023-12-08,1356.09,Entertainment
 4385,Books,2023-12-02,1384.66,Education
 4386,Toll,2023-12-08,4828.11,Travel
-4387,Equipment,2023-12-12,9522.9,Sports
+4387,Equipment,2023-12-12,9522.90,Sports
 4388,Rental Car,2023-12-22,2926.23,Travel
 4389,Gym,2023-12-18,8812.99,Sports
-4390,Doctor Visit,2023-12-07,6571.6,Medical
+4390,Doctor Visit,2023-12-07,6571.60,Medical
 4391,Water Bill,2023-12-15,8422.32,Home
 4392,Laundry,2023-12-21,4438.96,Others
 4393,Medicine,2023-12-04,563.84,Medical
@@ -4396,12 +4396,12 @@ serialNo,name,date,amount,category
 4395,Furniture,2023-12-14,1430.18,Home
 4396,Bicycle,2023-12-08,4189.33,Transportation
 4397,Fuel,2023-12-13,492.88,Travel
-4398,Internet,2023-12-07,6715.9,Communication
+4398,Internet,2023-12-07,6715.90,Communication
 4399,Coat,2023-12-11,6025.93,Clothing
 4400,Notebook,2023-12-03,7491.12,Education
 4401,Furniture,2024-01-23,7441.44,Home
 4402,Sports Event,2024-01-03,8722.62,Entertainment
-4403,Movie,2024-01-04,8947.4,Entertainment
+4403,Movie,2024-01-04,8947.40,Entertainment
 4404,Laundry,2024-01-08,2091.02,Others
 4405,Restaurant,2024-01-17,9195.59,Food
 4406,Backpack,2024-01-12,2229.02,Education
@@ -4415,7 +4415,7 @@ serialNo,name,date,amount,category
 4414,Shoes,2024-01-10,1899.33,Clothing
 4415,Meat,2024-01-04,3411.48,Food
 4416,Travel Insurance,2024-01-09,374.38,Travel
-4417,Scooter,2024-01-09,392.8,Transportation
+4417,Scooter,2024-01-09,392.80,Transportation
 4418,Storage,2024-01-01,2397.86,Others
 4419,Exam Fee,2024-01-13,7979.62,Education
 4420,Shoes,2024-01-18,7587.19,Clothing
@@ -4425,7 +4425,7 @@ serialNo,name,date,amount,category
 4424,Cafe,2024-01-20,4523.04,Food
 4425,Charity,2024-01-04,1525.67,Others
 4426,Storage,2024-01-05,3878.23,Others
-4427,Online Course,2024-01-26,7715.3,Education
+4427,Online Course,2024-01-26,7715.30,Education
 4428,Cruise,2024-01-15,5958.53,Travel
 4429,Cleaning,2024-01-28,1815.83,Home
 4430,Ride Sharing,2024-01-14,2843.38,Transportation
@@ -4461,7 +4461,7 @@ serialNo,name,date,amount,category
 4460,Subscription,2024-01-02,1732.33,Communication
 4461,Electricity,2024-01-07,9245.93,Home
 4462,Cleaning,2024-01-27,9905.37,Home
-4463,Cruise,2024-01-21,4690.0,Travel
+4463,Cruise,2024-01-21,4690.00,Travel
 4464,Visa Fee,2024-01-21,7841.98,Travel
 4465,Bicycle,2024-01-20,6203.72,Transportation
 4466,Eye Exam,2024-01-25,5617.56,Medical
@@ -4473,7 +4473,7 @@ serialNo,name,date,amount,category
 4472,Fruits,2024-01-11,5991.15,Food
 4473,Tennis,2024-01-14,870.33,Sports
 4474,SIM Card,2024-01-13,4777.72,Communication
-4475,Rental Car,2024-01-18,5902.4,Travel
+4475,Rental Car,2024-01-18,5902.40,Travel
 4476,Concert,2024-01-10,7550.83,Entertainment
 4477,Shirt,2024-01-26,1044.02,Clothing
 4478,Drinks,2024-01-23,9748.97,Food
@@ -4493,13 +4493,13 @@ serialNo,name,date,amount,category
 4492,Bank Fee,2024-01-03,8191.45,Others
 4493,Therapy,2024-01-04,9959.67,Medical
 4494,Fuel,2024-01-27,4763.53,Travel
-4495,Sports Event,2024-01-26,1116.9,Entertainment
+4495,Sports Event,2024-01-26,1116.90,Entertainment
 4496,Socks,2024-01-12,6915.18,Clothing
 4497,Water Bill,2024-01-06,2399.81,Home
 4498,Vegetables,2024-01-02,2955.89,Food
 4499,Gift,2024-01-05,6392.75,Others
 4500,Electricity,2024-01-01,8782.19,Home
-4501,Scarf,2024-02-27,8523.9,Clothing
+4501,Scarf,2024-02-27,8523.90,Clothing
 4502,Health Check,2024-02-07,3214.02,Medical
 4503,Surgery,2024-02-04,4317.36,Medical
 4504,Jacket,2024-02-06,3988.01,Clothing
@@ -4511,7 +4511,7 @@ serialNo,name,date,amount,category
 4510,Medicine,2024-02-11,2501.45,Medical
 4511,Tuition,2024-02-02,5027.59,Education
 4512,Backpack,2024-02-22,5120.78,Education
-4513,Basketball,2024-02-22,5255.2,Sports
+4513,Basketball,2024-02-22,5255.20,Sports
 4514,Dental Check,2024-02-25,2193.23,Medical
 4515,Restaurant,2024-02-25,605.97,Food
 4516,Flight,2024-02-20,1332.07,Travel
@@ -4519,7 +4519,7 @@ serialNo,name,date,amount,category
 4518,Movie,2024-02-25,4047.18,Entertainment
 4519,VPN,2024-02-22,1251.79,Communication
 4520,Yoga,2024-02-11,8276.35,Sports
-4521,Lottery,2024-02-24,8999.1,Others
+4521,Lottery,2024-02-24,8999.10,Others
 4522,Amusement Park,2024-02-24,8792.22,Entertainment
 4523,Rental Car,2024-02-02,4338.06,Travel
 4524,VPN,2024-02-24,5352.83,Communication
@@ -4528,13 +4528,13 @@ serialNo,name,date,amount,category
 4527,Amusement Park,2024-02-13,2214.59,Entertainment
 4528,Cafe,2024-02-07,5558.12,Food
 4529,Vegetables,2024-02-03,9261.54,Food
-4530,Subscription,2024-02-02,8373.0,Communication
+4530,Subscription,2024-02-02,8373.00,Communication
 4531,Fast Food,2024-02-26,9624.11,Food
-4532,Notebook,2024-02-07,8157.6,Education
+4532,Notebook,2024-02-07,8157.60,Education
 4533,Hospital Bill,2024-02-17,8453.31,Medical
 4534,Socks,2024-02-03,6815.32,Clothing
 4535,Drinks,2024-02-04,8760.94,Food
-4536,Cleaning,2024-02-08,3863.1,Home
+4536,Cleaning,2024-02-08,3863.10,Home
 4537,Insurance,2024-02-27,544.78,Medical
 4538,Pen,2024-02-09,5995.82,Education
 4539,Exam Fee,2024-02-09,2573.73,Education
@@ -4548,7 +4548,7 @@ serialNo,name,date,amount,category
 4547,Football,2024-02-12,3402.74,Sports
 4548,Club,2024-02-07,8318.56,Entertainment
 4549,Vaccination,2024-02-06,4062.03,Medical
-4550,Sports Event,2024-02-23,1397.3,Entertainment
+4550,Sports Event,2024-02-23,1397.30,Entertainment
 4551,Concert,2024-02-09,6193.89,Entertainment
 4552,Internet,2024-02-05,205.03,Communication
 4553,Bicycle,2024-02-26,7053.49,Transportation
@@ -4580,7 +4580,7 @@ serialNo,name,date,amount,category
 4579,Concert,2024-02-12,2007.01,Entertainment
 4580,Taxi,2024-02-02,9588.81,Transportation
 4581,Charity,2024-02-02,8674.08,Others
-4582,Stationery,2024-02-22,5668.7,Education
+4582,Stationery,2024-02-22,5668.70,Education
 4583,Gym,2024-02-22,1390.19,Sports
 4584,Metro,2024-02-04,1958.73,Transportation
 4585,SIM Card,2024-02-14,6656.93,Communication
@@ -4603,7 +4603,7 @@ serialNo,name,date,amount,category
 4602,Workshop,2024-03-19,5143.08,Education
 4603,Pen,2024-03-23,4057.12,Education
 4604,Drinks,2024-03-05,8801.29,Food
-4605,Therapy,2024-03-07,2056.8,Medical
+4605,Therapy,2024-03-07,2056.80,Medical
 4606,Pen,2024-03-17,6584.72,Education
 4607,Delivery,2024-03-10,4394.31,Food
 4608,SIM Card,2024-03-16,7450.06,Communication
@@ -4611,7 +4611,7 @@ serialNo,name,date,amount,category
 4610,Travel Insurance,2024-03-25,2681.84,Travel
 4611,Scooter,2024-03-26,5423.42,Transportation
 4612,Insurance,2024-03-10,117.61,Medical
-4613,Game,2024-03-08,5844.8,Entertainment
+4613,Game,2024-03-08,5844.80,Entertainment
 4614,Postage,2024-03-05,9193.58,Communication
 4615,Subscription,2024-03-01,5351.57,Communication
 4616,Rent,2024-03-22,5342.39,Home
@@ -4622,18 +4622,18 @@ serialNo,name,date,amount,category
 4621,Snacks,2024-03-17,1118.24,Food
 4622,Shirt,2024-03-14,8410.56,Clothing
 4623,Basketball,2024-03-26,5509.49,Sports
-4624,Scarf,2024-03-21,6083.0,Clothing
-4625,Metro,2024-03-06,8084.2,Transportation
+4624,Scarf,2024-03-21,6083.00,Clothing
+4625,Metro,2024-03-06,8084.20,Transportation
 4626,Metro,2024-03-26,3667.12,Transportation
-4627,Yoga,2024-03-25,9265.2,Sports
+4627,Yoga,2024-03-25,9265.20,Sports
 4628,Electricity,2024-03-05,6163.95,Home
-4629,Parking,2024-03-16,2244.7,Transportation
-4630,Movie,2024-03-20,3604.0,Entertainment
-4631,Insurance,2024-03-07,9935.6,Medical
+4629,Parking,2024-03-16,2244.70,Transportation
+4630,Movie,2024-03-20,3604.00,Entertainment
+4631,Insurance,2024-03-07,9935.60,Medical
 4632,Parking,2024-03-13,3490.42,Transportation
 4633,Appliance,2024-03-05,9419.89,Home
 4634,Surgery,2024-03-18,3298.69,Medical
-4635,Therapy,2024-03-11,8681.0,Medical
+4635,Therapy,2024-03-11,8681.00,Medical
 4636,Toll,2024-03-03,732.58,Transportation
 4637,Fuel,2024-03-28,743.21,Travel
 4638,Delivery,2024-03-09,6772.01,Food
@@ -4647,15 +4647,15 @@ serialNo,name,date,amount,category
 4646,Tennis,2024-03-20,5855.25,Sports
 4647,Amusement Park,2024-03-27,2632.93,Entertainment
 4648,Coat,2024-03-19,4146.84,Clothing
-4649,Gym,2024-03-09,4818.6,Sports
+4649,Gym,2024-03-09,4818.60,Sports
 4650,Eye Exam,2024-03-07,2496.33,Medical
 4651,Travel Insurance,2024-03-13,3933.67,Travel
-4652,Shoes,2024-03-20,7720.5,Clothing
+4652,Shoes,2024-03-20,7720.50,Clothing
 4653,Train,2024-03-14,734.51,Travel
 4654,Doctor Visit,2024-03-19,684.42,Medical
 4655,Seminar,2024-03-08,4657.82,Education
-4656,Taxi,2024-03-22,5357.2,Transportation
-4657,Game,2024-03-23,2306.6,Entertainment
+4656,Taxi,2024-03-22,5357.20,Transportation
+4657,Game,2024-03-23,2306.60,Entertainment
 4658,Hat,2024-03-01,1486.69,Clothing
 4659,Internet,2024-03-07,6620.46,Communication
 4660,Snacks,2024-03-26,545.92,Food
@@ -4672,7 +4672,7 @@ serialNo,name,date,amount,category
 4671,Lottery,2024-03-21,3266.92,Others
 4672,Vegetables,2024-03-24,2372.07,Food
 4673,Pet,2024-03-09,3563.15,Others
-4674,Fuel,2024-03-17,863.9,Transportation
+4674,Fuel,2024-03-17,863.90,Transportation
 4675,Phone Bill,2024-03-14,650.86,Communication
 4676,Gas,2024-03-15,9222.42,Home
 4677,Train,2024-03-06,8912.53,Transportation
@@ -4729,14 +4729,14 @@ serialNo,name,date,amount,category
 4728,Pen,2024-04-06,2250.31,Education
 4729,Electricity,2024-04-21,9391.39,Home
 4730,Fruits,2024-04-07,4430.21,Food
-4731,Theater,2024-04-04,133.2,Entertainment
+4731,Theater,2024-04-04,133.20,Entertainment
 4732,Books,2024-04-17,2666.89,Education
 4733,Train,2024-04-19,6070.63,Transportation
 4734,Belt,2024-04-25,9302.51,Clothing
 4735,Tuition,2024-04-22,4535.04,Education
 4736,Doctor Visit,2024-04-08,5342.63,Medical
-4737,Bus,2024-04-23,7014.4,Transportation
-4738,Football,2024-04-12,9245.1,Sports
+4737,Bus,2024-04-23,7014.40,Transportation
+4738,Football,2024-04-12,9245.10,Sports
 4739,Delivery,2024-04-08,7130.27,Food
 4740,Fuel,2024-04-23,9226.86,Travel
 4741,Bus,2024-04-20,4696.63,Transportation
@@ -4749,7 +4749,7 @@ serialNo,name,date,amount,category
 4748,Appliance,2024-04-01,9735.39,Home
 4749,Online Course,2024-04-04,3060.66,Education
 4750,Therapy,2024-04-07,5835.81,Medical
-4751,Cafe,2024-04-22,1000.2,Food
+4751,Cafe,2024-04-22,1000.20,Food
 4752,Internet,2024-04-19,1472.81,Home
 4753,Bank Fee,2024-04-06,1974.64,Others
 4754,Train,2024-04-05,1351.02,Travel
@@ -4773,13 +4773,13 @@ serialNo,name,date,amount,category
 4772,Accessories,2024-04-03,7932.66,Others
 4773,Fitness Class,2024-04-19,4480.97,Sports
 4774,Basketball,2024-04-08,6412.39,Sports
-4775,Football,2024-04-05,9776.3,Sports
+4775,Football,2024-04-05,9776.30,Sports
 4776,Storage,2024-04-13,9829.18,Others
-4777,Toll,2024-04-21,9432.5,Travel
+4777,Toll,2024-04-21,9432.50,Travel
 4778,Data Plan,2024-04-27,6494.29,Communication
 4779,Train,2024-04-22,3777.53,Transportation
 4780,Gas,2024-04-25,1844.23,Home
-4781,Belt,2024-04-13,6984.3,Clothing
+4781,Belt,2024-04-13,6984.30,Clothing
 4782,Belt,2024-04-04,9633.06,Clothing
 4783,Ride Sharing,2024-04-15,3887.99,Transportation
 4784,Charity,2024-04-04,9610.09,Others
@@ -4796,11 +4796,11 @@ serialNo,name,date,amount,category
 4795,Football,2024-04-12,5845.26,Sports
 4796,Metro,2024-04-11,7092.61,Transportation
 4797,Gas,2024-04-09,5562.23,Home
-4798,Snacks,2024-04-12,8327.8,Food
+4798,Snacks,2024-04-12,8327.80,Food
 4799,Postage,2024-04-09,2143.99,Communication
 4800,Books,2024-04-12,4764.17,Education
 4801,Health Check,2024-05-26,3463.84,Medical
-4802,Notebook,2024-05-11,1796.9,Education
+4802,Notebook,2024-05-11,1796.90,Education
 4803,Fruits,2024-05-18,7283.23,Food
 4804,Surgery,2024-05-09,879.28,Medical
 4805,Hospital Bill,2024-05-14,4223.18,Medical
@@ -4815,12 +4815,12 @@ serialNo,name,date,amount,category
 4814,Equipment,2024-05-12,7610.34,Sports
 4815,Books,2024-05-17,8629.44,Education
 4816,Roaming,2024-05-10,8560.34,Communication
-4817,Scarf,2024-05-05,208.5,Clothing
+4817,Scarf,2024-05-05,208.50,Clothing
 4818,Hospital Bill,2024-05-22,9584.15,Medical
 4819,Visa Fee,2024-05-12,1686.32,Travel
 4820,Train,2024-05-15,8496.24,Transportation
 4821,Roaming,2024-05-26,3329.82,Communication
-4822,Delivery,2024-05-07,9591.9,Food
+4822,Delivery,2024-05-07,9591.90,Food
 4823,Furniture,2024-05-04,4116.55,Home
 4824,Streaming Service,2024-05-01,4632.98,Entertainment
 4825,Accessories,2024-05-22,7059.43,Others
@@ -4829,7 +4829,7 @@ serialNo,name,date,amount,category
 4828,Bank Fee,2024-05-05,6599.05,Others
 4829,Shirt,2024-05-01,6212.05,Clothing
 4830,Running,2024-05-11,1549.92,Sports
-4831,Game,2024-05-28,3278.5,Entertainment
+4831,Game,2024-05-28,3278.50,Entertainment
 4832,Data Plan,2024-05-02,7873.53,Communication
 4833,Lottery,2024-05-01,5622.64,Others
 4834,Club,2024-05-13,1712.98,Entertainment
@@ -4845,14 +4845,14 @@ serialNo,name,date,amount,category
 4844,Notebook,2024-05-23,5083.97,Education
 4845,Hospital Bill,2024-05-09,1251.08,Medical
 4846,Stationery,2024-05-02,9200.84,Education
-4847,Health Check,2024-05-07,8508.3,Medical
+4847,Health Check,2024-05-07,8508.30,Medical
 4848,Visa Fee,2024-05-07,8116.45,Travel
 4849,Online Course,2024-05-07,9185.35,Education
 4850,Seminar,2024-05-25,1439.68,Education
 4851,Jeans,2024-05-15,2884.06,Clothing
-4852,Calling Card,2024-05-23,4607.0,Communication
+4852,Calling Card,2024-05-23,4607.00,Communication
 4853,Storage,2024-05-17,6011.33,Others
-4854,Hotel,2024-05-24,5289.2,Travel
+4854,Hotel,2024-05-24,5289.20,Travel
 4855,Appliance,2024-05-01,1207.94,Home
 4856,Shoes,2024-05-04,6232.15,Clothing
 4857,Jacket,2024-05-03,1926.53,Clothing
@@ -4861,15 +4861,15 @@ serialNo,name,date,amount,category
 4860,Stationery,2024-05-26,1551.43,Education
 4861,Flight,2024-05-20,9629.91,Travel
 4862,Music Festival,2024-05-15,4010.09,Entertainment
-4863,Backpack,2024-05-06,5853.7,Education
+4863,Backpack,2024-05-06,5853.70,Education
 4864,Cruise,2024-05-13,9916.71,Travel
 4865,Cycling,2024-05-02,4639.69,Sports
-4866,Cafe,2024-05-12,9729.9,Food
+4866,Cafe,2024-05-12,9729.90,Food
 4867,SIM Card,2024-05-04,5102.12,Communication
 4868,Backpack,2024-05-17,1645.85,Education
-4869,Toll,2024-05-09,359.8,Transportation
+4869,Toll,2024-05-09,359.80,Transportation
 4870,Cycling,2024-05-12,7667.17,Sports
-4871,Snacks,2024-05-13,7590.4,Food
+4871,Snacks,2024-05-13,7590.40,Food
 4872,Pet,2024-05-11,5643.96,Others
 4873,Cycling,2024-05-23,9937.36,Sports
 4874,Calling Card,2024-05-25,3528.88,Communication
@@ -4880,9 +4880,9 @@ serialNo,name,date,amount,category
 4879,Electricity,2024-05-10,3802.63,Home
 4880,Appliance,2024-05-12,1450.85,Home
 4881,Jeans,2024-05-19,8432.76,Clothing
-4882,Dress,2024-05-12,9859.1,Clothing
+4882,Dress,2024-05-12,9859.10,Clothing
 4883,Fruits,2024-05-13,5821.48,Food
-4884,Fuel,2024-05-08,4609.3,Transportation
+4884,Fuel,2024-05-08,4609.30,Transportation
 4885,Appliance,2024-05-24,9403.16,Home
 4886,Bicycle,2024-05-20,8138.45,Transportation
 4887,Roaming,2024-05-08,2914.87,Communication
@@ -4894,7 +4894,7 @@ serialNo,name,date,amount,category
 4893,Taxi,2024-05-20,6534.45,Travel
 4894,Online Course,2024-05-22,8659.49,Education
 4895,Sports Event,2024-05-15,9432.26,Entertainment
-4896,Accessories,2024-05-20,7130.6,Others
+4896,Accessories,2024-05-20,7130.60,Others
 4897,Seminar,2024-05-06,1752.82,Education
 4898,Postage,2024-05-21,1583.13,Communication
 4899,Shoes,2024-05-26,7028.13,Clothing
@@ -4919,13 +4919,13 @@ serialNo,name,date,amount,category
 4918,Storage,2024-06-13,5325.93,Others
 4919,Shirt,2024-06-14,734.39,Clothing
 4920,Data Plan,2024-06-15,6624.03,Communication
-4921,Phone Bill,2024-06-15,530.4,Communication
-4922,Backpack,2024-06-16,3444.8,Education
-4923,Train,2024-06-26,3176.2,Travel
+4921,Phone Bill,2024-06-15,530.40,Communication
+4922,Backpack,2024-06-16,3444.80,Education
+4923,Train,2024-06-26,3176.20,Travel
 4924,Roaming,2024-06-14,1515.06,Communication
 4925,Sports Event,2024-06-27,918.24,Entertainment
 4926,Therapy,2024-06-28,1912.38,Medical
-4927,Belt,2024-06-17,1514.1,Clothing
+4927,Belt,2024-06-17,1514.10,Clothing
 4928,Shirt,2024-06-04,1609.42,Clothing
 4929,Mobile Recharge,2024-06-17,1692.32,Communication
 4930,Cycling,2024-06-22,4051.86,Sports
@@ -4952,7 +4952,7 @@ serialNo,name,date,amount,category
 4951,Tuition,2024-06-08,3324.09,Education
 4952,Shirt,2024-06-18,772.31,Clothing
 4953,Hat,2024-06-15,9128.66,Clothing
-4954,Health Check,2024-06-15,8086.7,Medical
+4954,Health Check,2024-06-15,8086.70,Medical
 4955,Cycling,2024-06-23,712.68,Sports
 4956,Calling Card,2024-06-20,4576.26,Communication
 4957,Cleaning,2024-06-19,9127.99,Home
@@ -4970,7 +4970,7 @@ serialNo,name,date,amount,category
 4969,Snacks,2024-06-07,6162.98,Food
 4970,Movie,2024-06-03,5184.64,Entertainment
 4971,Amusement Park,2024-06-11,6472.44,Entertainment
-4972,Dress,2024-06-01,7301.1,Clothing
+4972,Dress,2024-06-01,7301.10,Clothing
 4973,Toll,2024-06-03,5278.31,Transportation
 4974,Exam Fee,2024-06-15,6188.78,Education
 4975,Taxi,2024-06-25,2374.84,Travel
@@ -5004,7 +5004,7 @@ serialNo,name,date,amount,category
 5003,Theater,2024-07-21,1242.45,Entertainment
 5004,Dental Check,2024-07-18,4496.57,Medical
 5005,Bus,2024-07-21,5399.92,Transportation
-5006,Stationery,2024-07-18,2177.7,Education
+5006,Stationery,2024-07-18,2177.70,Education
 5007,Ride Sharing,2024-07-20,2850.05,Transportation
 5008,Fast Food,2024-07-05,218.18,Food
 5009,Train,2024-07-09,1842.41,Transportation
@@ -5012,7 +5012,7 @@ serialNo,name,date,amount,category
 5011,Medicine,2024-07-12,9577.81,Medical
 5012,Electricity,2024-07-05,1811.23,Home
 5013,Bus,2024-07-14,1777.04,Transportation
-5014,Accessories,2024-07-27,5528.8,Others
+5014,Accessories,2024-07-27,5528.80,Others
 5015,Pen,2024-07-12,8705.74,Education
 5016,Mobile Recharge,2024-07-06,1879.33,Communication
 5017,Gift,2024-07-12,6940.66,Others
@@ -5039,7 +5039,7 @@ serialNo,name,date,amount,category
 5038,Mobile Recharge,2024-07-13,8039.73,Communication
 5039,Hotel,2024-07-18,4703.22,Travel
 5040,Football,2024-07-15,1997.95,Sports
-5041,Books,2024-07-18,3165.3,Education
+5041,Books,2024-07-18,3165.30,Education
 5042,Amusement Park,2024-07-28,2863.81,Entertainment
 5043,Visa Fee,2024-07-02,3704.87,Travel
 5044,Dress,2024-07-07,3559.41,Clothing
@@ -5056,13 +5056,13 @@ serialNo,name,date,amount,category
 5055,Fitness Class,2024-07-03,2028.28,Sports
 5056,Scooter,2024-07-15,4118.92,Transportation
 5057,Restaurant,2024-07-01,8805.16,Food
-5058,Laundry,2024-07-11,1138.2,Others
+5058,Laundry,2024-07-11,1138.20,Others
 5059,Dental Check,2024-07-17,3527.97,Medical
 5060,Gift,2024-07-05,3001.16,Others
 5061,VPN,2024-07-10,453.37,Communication
 5062,Shirt,2024-07-08,2072.02,Clothing
 5063,Metro,2024-07-25,5345.39,Transportation
-5064,SIM Card,2024-07-17,8039.2,Communication
+5064,SIM Card,2024-07-17,8039.20,Communication
 5065,Game,2024-07-10,1188.44,Entertainment
 5066,Hat,2024-07-11,6843.95,Clothing
 5067,Jacket,2024-07-21,8610.43,Clothing
@@ -5073,7 +5073,7 @@ serialNo,name,date,amount,category
 5072,Accessories,2024-07-21,5826.88,Others
 5073,Theater,2024-07-16,3566.96,Entertainment
 5074,Surgery,2024-07-09,5008.54,Medical
-5075,Online Course,2024-07-23,8963.7,Education
+5075,Online Course,2024-07-23,8963.70,Education
 5076,Theater,2024-07-12,4151.12,Entertainment
 5077,Vegetables,2024-07-09,2168.67,Food
 5078,Movie,2024-07-25,8650.97,Entertainment
@@ -5083,7 +5083,7 @@ serialNo,name,date,amount,category
 5082,Toll,2024-07-14,1636.39,Travel
 5083,Football,2024-07-14,4464.52,Sports
 5084,Basketball,2024-07-16,8805.04,Sports
-5085,VPN,2024-07-24,2396.3,Communication
+5085,VPN,2024-07-24,2396.30,Communication
 5086,Coat,2024-07-28,4072.73,Clothing
 5087,Swimming,2024-07-25,9820.16,Sports
 5088,Concert,2024-07-23,4311.09,Entertainment
@@ -5091,15 +5091,15 @@ serialNo,name,date,amount,category
 5090,Medicine,2024-07-06,6460.48,Medical
 5091,Snacks,2024-07-16,552.96,Food
 5092,Pen,2024-07-19,1947.59,Education
-5093,Game,2024-07-25,1992.8,Entertainment
+5093,Game,2024-07-25,1992.80,Entertainment
 5094,Notebook,2024-07-22,8029.86,Education
 5095,Fruits,2024-07-25,5660.36,Food
 5096,Basketball,2024-07-10,8022.69,Sports
 5097,Basketball,2024-07-05,2711.54,Sports
 5098,Jacket,2024-07-27,3394.04,Clothing
-5099,Notebook,2024-07-02,6660.1,Education
+5099,Notebook,2024-07-02,6660.10,Education
 5100,Cafe,2024-07-11,8579.53,Food
-5101,Meat,2024-08-02,5372.7,Food
+5101,Meat,2024-08-02,5372.70,Food
 5102,Online Course,2024-08-27,3625.71,Education
 5103,Mortgage,2024-08-17,9836.23,Home
 5104,Phone Bill,2024-08-07,7116.96,Communication
@@ -5128,12 +5128,12 @@ serialNo,name,date,amount,category
 5127,Sports Event,2024-08-13,2144.54,Entertainment
 5128,Parking,2024-08-10,1803.67,Transportation
 5129,Phone Bill,2024-08-16,8364.61,Communication
-5130,Yoga,2024-08-04,2508.1,Sports
+5130,Yoga,2024-08-04,2508.10,Sports
 5131,Yoga,2024-08-05,7656.38,Sports
-5132,Restaurant,2024-08-08,3445.9,Food
-5133,Running,2024-08-16,9453.1,Sports
+5132,Restaurant,2024-08-08,3445.90,Food
+5133,Running,2024-08-16,9453.10,Sports
 5134,Seminar,2024-08-20,6487.28,Education
-5135,Tuition,2024-08-24,6336.6,Education
+5135,Tuition,2024-08-24,6336.60,Education
 5136,Travel Insurance,2024-08-13,2812.25,Travel
 5137,Fitness Class,2024-08-25,7106.76,Sports
 5138,Cruise,2024-08-18,6555.37,Travel
@@ -5165,11 +5165,11 @@ serialNo,name,date,amount,category
 5164,Bus,2024-08-24,754.68,Transportation
 5165,Taxi,2024-08-11,7798.01,Travel
 5166,Cafe,2024-08-04,2081.73,Food
-5167,Karaoke,2024-08-08,2264.9,Entertainment
+5167,Karaoke,2024-08-08,2264.90,Entertainment
 5168,Hat,2024-08-11,1381.06,Clothing
-5169,Data Plan,2024-08-02,4595.3,Communication
+5169,Data Plan,2024-08-02,4595.30,Communication
 5170,Game,2024-08-11,3030.02,Entertainment
-5171,Taxi,2024-08-24,2314.7,Transportation
+5171,Taxi,2024-08-24,2314.70,Transportation
 5172,Charity,2024-08-15,9532.28,Others
 5173,Internet,2024-08-14,3992.36,Communication
 5174,Tennis,2024-08-12,650.66,Sports
@@ -5193,7 +5193,7 @@ serialNo,name,date,amount,category
 5192,Shoes,2024-08-12,8283.47,Clothing
 5193,Shirt,2024-08-28,48.37,Clothing
 5194,Game,2024-08-26,1396.87,Entertainment
-5195,Mortgage,2024-08-08,2076.3,Home
+5195,Mortgage,2024-08-08,2076.30,Home
 5196,Charity,2024-08-11,6534.16,Others
 5197,Bicycle,2024-08-03,3398.37,Transportation
 5198,Rental Car,2024-08-03,2119.12,Travel
@@ -5201,19 +5201,19 @@ serialNo,name,date,amount,category
 5200,Streaming Service,2024-08-23,6426.77,Entertainment
 5201,Sports Event,2024-09-20,1885.12,Entertainment
 5202,Security,2024-09-02,1198.92,Others
-5203,Internet,2024-09-15,2046.9,Home
+5203,Internet,2024-09-15,2046.90,Home
 5204,Mobile Recharge,2024-09-24,6594.25,Communication
 5205,Yoga,2024-09-02,1220.48,Sports
 5206,Furniture,2024-09-18,5527.39,Home
 5207,Fast Food,2024-09-18,1106.58,Food
 5208,Music Festival,2024-09-12,5821.18,Entertainment
-5209,Accessories,2024-09-19,2882.8,Others
+5209,Accessories,2024-09-19,2882.80,Others
 5210,Workshop,2024-09-13,3400.82,Education
 5211,Internet,2024-09-08,8443.12,Home
 5212,Internet,2024-09-15,4297.56,Home
 5213,Appliance,2024-09-14,2496.33,Home
-5214,Calling Card,2024-09-15,1474.6,Communication
-5215,Medicine,2024-09-27,7945.8,Medical
+5214,Calling Card,2024-09-15,1474.60,Communication
+5215,Medicine,2024-09-27,7945.80,Medical
 5216,Medicine,2024-09-08,2899.66,Medical
 5217,Rental Car,2024-09-23,3592.91,Travel
 5218,Metro,2024-09-10,4536.84,Transportation
@@ -5250,10 +5250,10 @@ serialNo,name,date,amount,category
 5249,Meat,2024-09-28,1375.64,Food
 5250,Belt,2024-09-05,8076.14,Clothing
 5251,Subscription,2024-09-09,2049.24,Communication
-5252,Cycling,2024-09-24,2582.3,Sports
-5253,Calling Card,2024-09-17,4847.4,Communication
+5252,Cycling,2024-09-24,2582.30,Sports
+5253,Calling Card,2024-09-17,4847.40,Communication
 5254,Concert,2024-09-11,7881.45,Entertainment
-5255,Metro,2024-09-13,7443.4,Transportation
+5255,Metro,2024-09-13,7443.40,Transportation
 5256,Hospital Bill,2024-09-24,6593.14,Medical
 5257,Rent,2024-09-09,9024.26,Home
 5258,Cycling,2024-09-01,5913.18,Sports
@@ -5266,17 +5266,17 @@ serialNo,name,date,amount,category
 5265,Cruise,2024-09-25,9001.92,Travel
 5266,Notebook,2024-09-15,1418.25,Education
 5267,Toll,2024-09-09,3219.98,Transportation
-5268,Gym,2024-09-05,5631.5,Sports
+5268,Gym,2024-09-05,5631.50,Sports
 5269,Maintenance,2024-09-25,3070.08,Home
 5270,Vegetables,2024-09-07,7646.25,Food
 5271,Running,2024-09-18,1875.81,Sports
-5272,Postage,2024-09-14,2706.1,Communication
+5272,Postage,2024-09-14,2706.10,Communication
 5273,Health Check,2024-09-26,583.39,Medical
 5274,Subscription,2024-09-26,6273.94,Communication
-5275,Toll,2024-09-07,2302.1,Transportation
+5275,Toll,2024-09-07,2302.10,Transportation
 5276,Socks,2024-09-19,4835.87,Clothing
 5277,Backpack,2024-09-24,7492.48,Education
-5278,Water Bill,2024-09-09,7466.8,Home
+5278,Water Bill,2024-09-09,7466.80,Home
 5279,Roaming,2024-09-04,2317.98,Communication
 5280,Medicine,2024-09-19,7845.11,Medical
 5281,Charity,2024-09-03,1523.81,Others
@@ -5308,9 +5308,9 @@ serialNo,name,date,amount,category
 5307,Lottery,2024-10-26,1942.83,Others
 5308,Surgery,2024-10-17,8762.71,Medical
 5309,Delivery,2024-10-16,6251.01,Food
-5310,Accessories,2024-10-18,1290.0,Others
+5310,Accessories,2024-10-18,1290.00,Others
 5311,Club,2024-10-21,4110.61,Entertainment
-5312,Exam Fee,2024-10-10,444.3,Education
+5312,Exam Fee,2024-10-10,444.30,Education
 5313,Rent,2024-10-04,9623.49,Home
 5314,Movie,2024-10-01,5936.74,Entertainment
 5315,Maintenance,2024-10-07,6246.01,Home
@@ -5318,7 +5318,7 @@ serialNo,name,date,amount,category
 5317,Taxi,2024-10-27,629.77,Transportation
 5318,Ride Sharing,2024-10-25,5732.45,Transportation
 5319,Therapy,2024-10-21,5581.81,Medical
-5320,Exam Fee,2024-10-10,5703.1,Education
+5320,Exam Fee,2024-10-10,5703.10,Education
 5321,Accessories,2024-10-08,9691.68,Others
 5322,Workshop,2024-10-15,7144.14,Education
 5323,Hat,2024-10-27,2276.16,Clothing
@@ -5347,14 +5347,14 @@ serialNo,name,date,amount,category
 5346,Yoga,2024-10-16,7833.11,Sports
 5347,Health Check,2024-10-12,2470.16,Medical
 5348,Online Course,2024-10-21,4105.73,Education
-5349,Health Check,2024-10-02,8390.1,Medical
+5349,Health Check,2024-10-02,8390.10,Medical
 5350,Tuition,2024-10-03,5386.55,Education
 5351,Bicycle,2024-10-13,4467.75,Transportation
-5352,Gym,2024-10-20,3218.1,Sports
+5352,Gym,2024-10-20,3218.10,Sports
 5353,Dental Check,2024-10-18,5199.76,Medical
 5354,Mobile Recharge,2024-10-16,4951.78,Communication
 5355,Drinks,2024-10-26,739.11,Food
-5356,Equipment,2024-10-06,9827.8,Sports
+5356,Equipment,2024-10-06,9827.80,Sports
 5357,Shirt,2024-10-01,9441.73,Clothing
 5358,Taxi,2024-10-17,5837.64,Transportation
 5359,Electricity,2024-10-21,4362.92,Home
@@ -5379,21 +5379,21 @@ serialNo,name,date,amount,category
 5378,Vegetables,2024-10-20,6883.27,Food
 5379,Socks,2024-10-20,2865.72,Clothing
 5380,Music Festival,2024-10-03,6711.51,Entertainment
-5381,Jeans,2024-10-15,339.4,Clothing
+5381,Jeans,2024-10-15,339.40,Clothing
 5382,Water Bill,2024-10-28,2734.14,Home
 5383,Security,2024-10-19,2054.39,Others
 5384,Cafe,2024-10-03,2842.65,Food
 5385,Electricity,2024-10-09,9895.03,Home
 5386,Books,2024-10-26,4874.55,Education
 5387,Roaming,2024-10-15,7161.47,Communication
-5388,Charity,2024-10-07,8463.8,Others
+5388,Charity,2024-10-07,8463.80,Others
 5389,Game,2024-10-02,1272.88,Entertainment
 5390,Taxi,2024-10-21,8198.99,Travel
 5391,Groceries,2024-10-08,6834.18,Food
 5392,Lottery,2024-10-27,4000.42,Others
 5393,Internet,2024-10-01,6699.15,Communication
 5394,Therapy,2024-10-14,8898.13,Medical
-5395,Belt,2024-10-01,5466.8,Clothing
+5395,Belt,2024-10-01,5466.80,Clothing
 5396,Surgery,2024-10-18,683.93,Medical
 5397,Surgery,2024-10-08,9516.41,Medical
 5398,Accessories,2024-10-11,4307.78,Others
@@ -5409,13 +5409,13 @@ serialNo,name,date,amount,category
 5408,Pen,2024-11-21,1819.09,Education
 5409,Game,2024-11-10,4756.56,Entertainment
 5410,Postage,2024-11-22,7094.53,Communication
-5411,Fitness Class,2024-11-17,1147.9,Sports
+5411,Fitness Class,2024-11-17,1147.90,Sports
 5412,Lottery,2024-11-05,2512.09,Others
 5413,Parking,2024-11-18,8989.85,Transportation
 5414,Socks,2024-11-05,8230.91,Clothing
 5415,Gym,2024-11-03,5723.17,Sports
 5416,Roaming,2024-11-02,7052.51,Communication
-5417,Security,2024-11-24,1532.5,Others
+5417,Security,2024-11-24,1532.50,Others
 5418,Therapy,2024-11-06,9409.78,Medical
 5419,Fruits,2024-11-10,633.59,Food
 5420,Charity,2024-11-12,2996.34,Others
@@ -5437,14 +5437,14 @@ serialNo,name,date,amount,category
 5436,Game,2024-11-25,2107.29,Entertainment
 5437,Vegetables,2024-11-07,548.98,Food
 5438,Club,2024-11-11,6170.03,Entertainment
-5439,Internet,2024-11-28,9458.2,Communication
+5439,Internet,2024-11-28,9458.20,Communication
 5440,Meat,2024-11-01,1458.17,Food
 5441,Mobile Recharge,2024-11-25,9519.49,Communication
 5442,Amusement Park,2024-11-11,6000.76,Entertainment
 5443,Insurance,2024-11-20,8297.35,Medical
 5444,Basketball,2024-11-17,4503.19,Sports
 5445,Dental Check,2024-11-05,2378.51,Medical
-5446,Running,2024-11-24,9250.3,Sports
+5446,Running,2024-11-24,9250.30,Sports
 5447,Meat,2024-11-03,2079.37,Food
 5448,Online Course,2024-11-22,2016.62,Education
 5449,Dental Check,2024-11-18,8910.06,Medical
@@ -5469,7 +5469,7 @@ serialNo,name,date,amount,category
 5468,Hotel,2024-11-21,7528.98,Travel
 5469,Mobile Recharge,2024-11-07,1290.81,Communication
 5470,Yoga,2024-11-10,8607.84,Sports
-5471,Fast Food,2024-11-22,4212.7,Food
+5471,Fast Food,2024-11-22,4212.70,Food
 5472,Cycling,2024-11-20,3075.01,Sports
 5473,Cycling,2024-11-28,31.92,Sports
 5474,Charity,2024-11-15,2856.84,Others
@@ -5479,8 +5479,8 @@ serialNo,name,date,amount,category
 5478,Donation,2024-11-27,7395.16,Others
 5479,Storage,2024-11-18,8439.59,Others
 5480,Laundry,2024-11-16,6235.81,Others
-5481,Gas,2024-11-08,1705.1,Home
-5482,Cruise,2024-11-19,6116.5,Travel
+5481,Gas,2024-11-08,1705.10,Home
+5482,Cruise,2024-11-19,6116.50,Travel
 5483,Bank Fee,2024-11-08,6029.66,Others
 5484,Dental Check,2024-11-01,5555.27,Medical
 5485,Coat,2024-11-06,5819.18,Clothing
@@ -5496,7 +5496,7 @@ serialNo,name,date,amount,category
 5495,Bank Fee,2024-11-17,464.18,Others
 5496,Therapy,2024-11-13,8170.55,Medical
 5497,Visa Fee,2024-11-28,4938.69,Travel
-5498,Snacks,2024-11-21,1261.5,Food
+5498,Snacks,2024-11-21,1261.50,Food
 5499,Bus,2024-11-05,9294.85,Transportation
 5500,Gift,2024-11-03,2292.61,Others
 5501,Hospital Bill,2024-12-15,671.08,Medical
@@ -5523,7 +5523,7 @@ serialNo,name,date,amount,category
 5522,Lottery,2024-12-09,6893.19,Others
 5523,Gift,2024-12-09,6160.96,Others
 5524,Stationery,2024-12-19,2822.13,Education
-5525,Delivery,2024-12-16,2381.8,Food
+5525,Delivery,2024-12-16,2381.80,Food
 5526,Delivery,2024-12-24,1606.64,Food
 5527,Appliance,2024-12-07,7217.27,Home
 5528,Amusement Park,2024-12-09,7890.84,Entertainment
@@ -5560,7 +5560,7 @@ serialNo,name,date,amount,category
 5559,Stationery,2024-12-25,8548.19,Education
 5560,Jeans,2024-12-24,1544.43,Clothing
 5561,Metro,2024-12-10,4864.55,Transportation
-5562,Laundry,2024-12-23,774.7,Others
+5562,Laundry,2024-12-23,774.70,Others
 5563,Karaoke,2024-12-04,1886.18,Entertainment
 5564,Insurance,2024-12-13,396.27,Medical
 5565,Bank Fee,2024-12-08,4946.93,Others
@@ -5588,7 +5588,7 @@ serialNo,name,date,amount,category
 5587,Hotel,2024-12-19,7116.09,Travel
 5588,Jeans,2024-12-18,5314.11,Clothing
 5589,Tennis,2024-12-02,6292.28,Sports
-5590,Data Plan,2024-12-09,3318.8,Communication
+5590,Data Plan,2024-12-09,3318.80,Communication
 5591,Dental Check,2024-12-02,3062.69,Medical
 5592,Meat,2024-12-15,6592.31,Food
 5593,Basketball,2024-12-26,5981.86,Sports
@@ -5599,16 +5599,16 @@ serialNo,name,date,amount,category
 5598,Concert,2024-12-11,1045.51,Entertainment
 5599,Stationery,2024-12-18,2163.11,Education
 5600,Karaoke,2024-12-04,1157.48,Entertainment
-5601,Taxi,2025-01-14,7333.3,Travel
+5601,Taxi,2025-01-14,7333.30,Travel
 5602,Surgery,2025-01-02,1499.53,Medical
 5603,Backpack,2025-01-11,9348.42,Education
 5604,Pen,2025-01-24,7660.88,Education
-5605,Tuition,2025-01-21,7000.8,Education
+5605,Tuition,2025-01-21,7000.80,Education
 5606,Music Festival,2025-01-23,672.26,Entertainment
 5607,Seminar,2025-01-04,9831.92,Education
 5608,Taxi,2025-01-09,5455.14,Travel
 5609,Gift,2025-01-02,5102.27,Others
-5610,Postage,2025-01-04,4136.8,Communication
+5610,Postage,2025-01-04,4136.80,Communication
 5611,Internet,2025-01-19,6529.27,Communication
 5612,Appliance,2025-01-25,7619.46,Home
 5613,Basketball,2025-01-24,7385.13,Sports
@@ -5618,7 +5618,7 @@ serialNo,name,date,amount,category
 5617,Internet,2025-01-04,8054.98,Communication
 5618,Books,2025-01-07,6526.63,Education
 5619,Visa Fee,2025-01-17,2073.15,Travel
-5620,Football,2025-01-11,7906.3,Sports
+5620,Football,2025-01-11,7906.30,Sports
 5621,Fuel,2025-01-10,7497.77,Transportation
 5622,Equipment,2025-01-10,6398.93,Sports
 5623,Rent,2025-01-24,6688.12,Home
@@ -5628,12 +5628,12 @@ serialNo,name,date,amount,category
 5627,Maintenance,2025-01-07,906.14,Home
 5628,Seminar,2025-01-16,303.59,Education
 5629,Water Bill,2025-01-15,3605.76,Home
-5630,Storage,2025-01-25,1749.2,Others
+5630,Storage,2025-01-25,1749.20,Others
 5631,Mobile Recharge,2025-01-05,6415.53,Communication
 5632,Internet,2025-01-11,8965.74,Home
 5633,Stationery,2025-01-28,1414.56,Education
 5634,Cruise,2025-01-28,9964.02,Travel
-5635,Hotel,2025-01-27,8149.5,Travel
+5635,Hotel,2025-01-27,8149.50,Travel
 5636,Flight,2025-01-12,8276.03,Travel
 5637,Seminar,2025-01-05,4526.02,Education
 5638,Maintenance,2025-01-14,6246.92,Home
@@ -5644,8 +5644,8 @@ serialNo,name,date,amount,category
 5643,Running,2025-01-05,8466.14,Sports
 5644,Coat,2025-01-23,6362.55,Clothing
 5645,Restaurant,2025-01-04,4504.89,Food
-5646,Metro,2025-01-04,2755.9,Transportation
-5647,Rental Car,2025-01-11,6680.7,Travel
+5646,Metro,2025-01-04,2755.90,Transportation
+5647,Rental Car,2025-01-11,6680.70,Travel
 5648,Shoes,2025-01-25,9436.24,Clothing
 5649,Maintenance,2025-01-22,635.03,Home
 5650,Cycling,2025-01-05,9294.47,Sports
@@ -5659,7 +5659,7 @@ serialNo,name,date,amount,category
 5658,Socks,2025-01-09,6717.14,Clothing
 5659,Sports Event,2025-01-22,6079.55,Entertainment
 5660,Lottery,2025-01-23,1259.39,Others
-5661,Laundry,2025-01-23,1634.2,Others
+5661,Laundry,2025-01-23,1634.20,Others
 5662,Mortgage,2025-01-03,9777.95,Home
 5663,Mobile Recharge,2025-01-21,908.67,Communication
 5664,Streaming Service,2025-01-04,4396.16,Entertainment
@@ -5678,24 +5678,24 @@ serialNo,name,date,amount,category
 5677,Football,2025-01-01,6862.37,Sports
 5678,Pen,2025-01-10,8782.82,Education
 5679,Amusement Park,2025-01-26,6657.61,Entertainment
-5680,Metro,2025-01-24,9203.5,Transportation
+5680,Metro,2025-01-24,9203.50,Transportation
 5681,Pet,2025-01-02,3940.15,Others
 5682,Game,2025-01-05,5236.95,Entertainment
 5683,Backpack,2025-01-27,7646.54,Education
 5684,Visa Fee,2025-01-19,4590.65,Travel
 5685,Delivery,2025-01-19,1100.34,Food
 5686,Medicine,2025-01-23,269.44,Medical
-5687,Vaccination,2025-01-14,9552.6,Medical
+5687,Vaccination,2025-01-14,9552.60,Medical
 5688,Equipment,2025-01-11,3933.21,Sports
-5689,Scarf,2025-01-02,9903.2,Clothing
-5690,Restaurant,2025-01-07,9556.7,Food
+5689,Scarf,2025-01-02,9903.20,Clothing
+5690,Restaurant,2025-01-07,9556.70,Food
 5691,Football,2025-01-12,1784.63,Sports
 5692,Phone Bill,2025-01-23,246.61,Communication
 5693,Running,2025-01-28,2286.05,Sports
 5694,Bicycle,2025-01-26,7365.55,Transportation
 5695,Pen,2025-01-12,9685.86,Education
-5696,Flight,2025-01-12,7590.4,Travel
-5697,Gym,2025-01-26,8924.3,Sports
+5696,Flight,2025-01-12,7590.40,Travel
+5697,Gym,2025-01-26,8924.30,Sports
 5698,Bicycle,2025-01-07,4409.95,Transportation
 5699,Internet,2025-01-03,9778.97,Home
 5700,Game,2025-01-05,9796.35,Entertainment
@@ -5720,10 +5720,10 @@ serialNo,name,date,amount,category
 5719,Club,2025-02-12,171.99,Entertainment
 5720,Theater,2025-02-18,1666.14,Entertainment
 5721,Internet,2025-02-07,9500.42,Home
-5722,Restaurant,2025-02-25,8084.2,Food
+5722,Restaurant,2025-02-25,8084.20,Food
 5723,Donation,2025-02-22,8888.73,Others
 5724,Jeans,2025-02-23,2723.97,Clothing
-5725,Shirt,2025-02-18,2524.0,Clothing
+5725,Shirt,2025-02-18,2524.00,Clothing
 5726,Storage,2025-02-23,754.71,Others
 5727,Electricity,2025-02-10,928.44,Home
 5728,Furniture,2025-02-25,404.33,Home
@@ -5738,9 +5738,9 @@ serialNo,name,date,amount,category
 5737,Charity,2025-02-26,192.43,Others
 5738,Books,2025-02-07,3850.04,Education
 5739,Furniture,2025-02-14,7767.09,Home
-5740,Cruise,2025-02-11,3003.6,Travel
+5740,Cruise,2025-02-11,3003.60,Travel
 5741,Swimming,2025-02-17,155.12,Sports
-5742,Bank Fee,2025-02-04,6425.9,Others
+5742,Bank Fee,2025-02-04,6425.90,Others
 5743,Music Festival,2025-02-14,1620.88,Entertainment
 5744,Train,2025-02-11,6910.43,Transportation
 5745,Mortgage,2025-02-03,5594.39,Home
@@ -5750,17 +5750,17 @@ serialNo,name,date,amount,category
 5749,Football,2025-02-14,5978.13,Sports
 5750,Cafe,2025-02-26,8497.77,Food
 5751,Fruits,2025-02-24,8792.79,Food
-5752,Bus,2025-02-10,7202.0,Transportation
+5752,Bus,2025-02-10,7202.00,Transportation
 5753,Rental Car,2025-02-23,492.09,Travel
 5754,Lottery,2025-02-09,1473.85,Others
 5755,Rent,2025-02-20,6324.38,Home
 5756,Train,2025-02-07,6846.61,Transportation
 5757,Accessories,2025-02-17,2213.84,Others
 5758,Fuel,2025-02-04,347.85,Transportation
-5759,Stationery,2025-02-10,2436.8,Education
+5759,Stationery,2025-02-10,2436.80,Education
 5760,Notebook,2025-02-12,5120.43,Education
-5761,Delivery,2025-02-08,559.7,Food
-5762,Fast Food,2025-02-05,450.6,Food
+5761,Delivery,2025-02-08,559.70,Food
+5762,Fast Food,2025-02-05,450.60,Food
 5763,Groceries,2025-02-11,7648.38,Food
 5764,Doctor Visit,2025-02-13,196.25,Medical
 5765,Delivery,2025-02-19,921.26,Food
@@ -5774,7 +5774,7 @@ serialNo,name,date,amount,category
 5773,Visa Fee,2025-02-21,8481.16,Travel
 5774,Security,2025-02-03,1100.13,Others
 5775,Insurance,2025-02-07,7986.38,Medical
-5776,Tuition,2025-02-28,6489.6,Education
+5776,Tuition,2025-02-28,6489.60,Education
 5777,Toll,2025-02-08,5563.51,Travel
 5778,Cleaning,2025-02-18,4784.38,Home
 5779,Cycling,2025-02-27,7096.94,Sports
@@ -5792,11 +5792,11 @@ serialNo,name,date,amount,category
 5791,Mortgage,2025-02-10,3322.57,Home
 5792,Postage,2025-02-11,137.42,Communication
 5793,Delivery,2025-02-05,1554.11,Food
-5794,Meat,2025-02-02,9564.8,Food
+5794,Meat,2025-02-02,9564.80,Food
 5795,Rental Car,2025-02-23,4903.69,Travel
 5796,Music Festival,2025-02-02,2672.42,Entertainment
 5797,Appliance,2025-02-22,6643.72,Home
-5798,Exam Fee,2025-02-05,987.0,Education
+5798,Exam Fee,2025-02-05,987.00,Education
 5799,Taxi,2025-02-10,2004.76,Transportation
 5800,Water Bill,2025-02-19,5522.05,Home
 5801,Delivery,2025-03-15,6652.86,Food
@@ -5808,9 +5808,9 @@ serialNo,name,date,amount,category
 5807,Game,2025-03-08,6674.52,Entertainment
 5808,Bus,2025-03-25,7466.94,Transportation
 5809,Gym,2025-03-20,6429.61,Sports
-5810,Coat,2025-03-19,7977.6,Clothing
+5810,Coat,2025-03-19,7977.60,Clothing
 5811,Internet,2025-03-05,9249.88,Home
-5812,Cafe,2025-03-26,150.5,Food
+5812,Cafe,2025-03-26,150.50,Food
 5813,Surgery,2025-03-03,4182.03,Medical
 5814,Club,2025-03-28,9382.43,Entertainment
 5815,Postage,2025-03-04,2206.22,Communication
@@ -5826,7 +5826,7 @@ serialNo,name,date,amount,category
 5825,Accessories,2025-03-07,1423.12,Others
 5826,Eye Exam,2025-03-04,6289.55,Medical
 5827,Mobile Recharge,2025-03-11,4066.37,Communication
-5828,Phone Bill,2025-03-25,7607.5,Communication
+5828,Phone Bill,2025-03-25,7607.50,Communication
 5829,Therapy,2025-03-13,3852.21,Medical
 5830,Tennis,2025-03-09,1876.08,Sports
 5831,Lottery,2025-03-19,2467.09,Others
@@ -5834,7 +5834,7 @@ serialNo,name,date,amount,category
 5833,Equipment,2025-03-22,4220.86,Sports
 5834,Lottery,2025-03-01,9627.27,Others
 5835,Drinks,2025-03-21,8303.26,Food
-5836,Sports Event,2025-03-04,9984.5,Entertainment
+5836,Sports Event,2025-03-04,9984.50,Entertainment
 5837,Gas,2025-03-27,7255.62,Home
 5838,Donation,2025-03-07,5682.94,Others
 5839,Phone Bill,2025-03-11,2427.38,Communication
@@ -5857,15 +5857,15 @@ serialNo,name,date,amount,category
 5856,Internet,2025-03-08,7531.51,Home
 5857,Tuition,2025-03-25,6186.28,Education
 5858,Swimming,2025-03-06,3777.79,Sports
-5859,Theater,2025-03-12,9229.5,Entertainment
-5860,Drinks,2025-03-04,7936.6,Food
+5859,Theater,2025-03-12,9229.50,Entertainment
+5860,Drinks,2025-03-04,7936.60,Food
 5861,Socks,2025-03-05,3629.69,Clothing
 5862,Cruise,2025-03-18,2179.08,Travel
 5863,Running,2025-03-07,6397.33,Sports
 5864,Subscription,2025-03-09,2342.74,Communication
 5865,Shoes,2025-03-24,5733.48,Clothing
 5866,Phone Bill,2025-03-06,7701.68,Communication
-5867,Belt,2025-03-28,3791.3,Clothing
+5867,Belt,2025-03-28,3791.30,Clothing
 5868,Flight,2025-03-23,3661.23,Travel
 5869,Jacket,2025-03-25,8444.69,Clothing
 5870,Scooter,2025-03-11,7767.18,Transportation
@@ -5887,7 +5887,7 @@ serialNo,name,date,amount,category
 5886,Hotel,2025-03-08,3967.85,Travel
 5887,Concert,2025-03-28,1754.21,Entertainment
 5888,Shoes,2025-03-11,6729.23,Clothing
-5889,Internet,2025-03-13,241.3,Communication
+5889,Internet,2025-03-13,241.30,Communication
 5890,Postage,2025-03-25,8041.73,Communication
 5891,Surgery,2025-03-22,2280.89,Medical
 5892,Insurance,2025-03-20,7068.61,Medical
@@ -5895,7 +5895,7 @@ serialNo,name,date,amount,category
 5894,Appliance,2025-03-24,4340.51,Home
 5895,Storage,2025-03-17,4869.39,Others
 5896,Bicycle,2025-03-07,8886.66,Transportation
-5897,Exam Fee,2025-03-01,2427.1,Education
+5897,Exam Fee,2025-03-01,2427.10,Education
 5898,Socks,2025-03-02,1666.46,Clothing
 5899,Cycling,2025-03-02,4690.93,Sports
 5900,Bus,2025-03-24,8152.52,Transportation
@@ -5912,9 +5912,9 @@ serialNo,name,date,amount,category
 5911,Health Check,2025-04-19,5901.81,Medical
 5912,Drinks,2025-04-14,5260.17,Food
 5913,Jacket,2025-04-03,7534.94,Clothing
-5914,Rent,2025-04-01,7944.5,Home
+5914,Rent,2025-04-01,7944.50,Home
 5915,Scooter,2025-04-03,2206.95,Transportation
-5916,Ride Sharing,2025-04-27,2891.8,Transportation
+5916,Ride Sharing,2025-04-27,2891.80,Transportation
 5917,Books,2025-04-03,195.62,Education
 5918,Club,2025-04-15,5242.99,Entertainment
 5919,Gas,2025-04-25,4508.09,Home
@@ -5933,12 +5933,12 @@ serialNo,name,date,amount,category
 5932,Fitness Class,2025-04-25,1807.26,Sports
 5933,Donation,2025-04-09,9278.93,Others
 5934,Amusement Park,2025-04-13,9174.61,Entertainment
-5935,Postage,2025-04-14,192.6,Communication
-5936,Cleaning,2025-04-20,7941.2,Home
+5935,Postage,2025-04-14,192.60,Communication
+5936,Cleaning,2025-04-20,7941.20,Home
 5937,Pen,2025-04-26,7419.32,Education
 5938,Pet,2025-04-26,457.52,Others
 5939,Health Check,2025-04-10,4313.79,Medical
-5940,Amusement Park,2025-04-07,741.3,Entertainment
+5940,Amusement Park,2025-04-07,741.30,Entertainment
 5941,Medicine,2025-04-09,6083.83,Medical
 5942,Shirt,2025-04-15,6492.44,Clothing
 5943,Donation,2025-04-04,3958.91,Others
@@ -5950,7 +5950,7 @@ serialNo,name,date,amount,category
 5949,Pet,2025-04-27,3952.03,Others
 5950,Fitness Class,2025-04-22,6482.94,Sports
 5951,Mobile Recharge,2025-04-09,3946.09,Communication
-5952,Subscription,2025-04-06,7219.9,Communication
+5952,Subscription,2025-04-06,7219.90,Communication
 5953,Internet,2025-04-06,4020.42,Communication
 5954,Running,2025-04-07,7892.88,Sports
 5955,Theater,2025-04-26,3320.15,Entertainment
@@ -5960,9 +5960,9 @@ serialNo,name,date,amount,category
 5959,Lottery,2025-04-06,685.84,Others
 5960,Cycling,2025-04-15,5647.17,Sports
 5961,Amusement Park,2025-04-14,9125.22,Entertainment
-5962,Cruise,2025-04-02,1883.6,Travel
-5963,Taxi,2025-04-06,6503.4,Transportation
-5964,Flight,2025-04-01,5911.2,Travel
+5962,Cruise,2025-04-02,1883.60,Travel
+5963,Taxi,2025-04-06,6503.40,Transportation
+5964,Flight,2025-04-01,5911.20,Travel
 5965,Lottery,2025-04-16,3358.77,Others
 5966,Surgery,2025-04-02,2226.97,Medical
 5967,Metro,2025-04-02,8482.39,Transportation
@@ -5981,20 +5981,20 @@ serialNo,name,date,amount,category
 5980,Postage,2025-04-05,8750.16,Communication
 5981,Drinks,2025-04-12,6025.91,Food
 5982,Security,2025-04-19,4427.03,Others
-5983,Rental Car,2025-04-22,1023.1,Travel
+5983,Rental Car,2025-04-22,1023.10,Travel
 5984,Online Course,2025-04-14,3154.59,Education
 5985,Delivery,2025-04-18,5641.37,Food
 5986,Gym,2025-04-20,183.61,Sports
 5987,Belt,2025-04-18,1321.53,Clothing
 5988,Accessories,2025-04-23,7569.83,Others
-5989,Sports Event,2025-04-24,8795.2,Entertainment
+5989,Sports Event,2025-04-24,8795.20,Entertainment
 5990,Pet,2025-04-19,9262.38,Others
 5991,Tennis,2025-04-22,8785.64,Sports
 5992,Medicine,2025-04-14,7010.85,Medical
 5993,Surgery,2025-04-17,2844.93,Medical
 5994,Notebook,2025-04-07,3414.27,Education
 5995,Scarf,2025-04-28,1062.46,Clothing
-5996,Fuel,2025-04-11,8985.5,Travel
+5996,Fuel,2025-04-11,8985.50,Travel
 5997,Coat,2025-04-01,1043.11,Clothing
 5998,Rental Car,2025-04-07,138.37,Travel
 5999,Hat,2025-04-21,3618.34,Clothing
@@ -6002,13 +6002,13 @@ serialNo,name,date,amount,category
 6001,Seminar,2025-05-26,6638.12,Education
 6002,Seminar,2025-05-16,5752.77,Education
 6003,Toll,2025-05-03,1302.82,Transportation
-6004,Insurance,2025-05-11,359.9,Medical
-6005,Data Plan,2025-05-02,8857.5,Communication
+6004,Insurance,2025-05-11,359.90,Medical
+6005,Data Plan,2025-05-02,8857.50,Communication
 6006,Amusement Park,2025-05-15,2915.77,Entertainment
 6007,Storage,2025-05-21,4911.05,Others
 6008,Fuel,2025-05-10,4266.67,Transportation
 6009,Security,2025-05-01,6198.21,Others
-6010,Gas,2025-05-06,4364.7,Home
+6010,Gas,2025-05-06,4364.70,Home
 6011,Donation,2025-05-14,4363.49,Others
 6012,Football,2025-05-20,8709.08,Sports
 6013,Dental Check,2025-05-02,83.25,Medical
@@ -6023,17 +6023,17 @@ serialNo,name,date,amount,category
 6022,Concert,2025-05-06,3597.06,Entertainment
 6023,Bus,2025-05-06,7405.66,Transportation
 6024,Notebook,2025-05-11,5648.79,Education
-6025,Sports Event,2025-05-19,5339.8,Entertainment
+6025,Sports Event,2025-05-19,5339.80,Entertainment
 6026,Game,2025-05-26,9782.83,Entertainment
 6027,Health Check,2025-05-18,9940.51,Medical
 6028,Ride Sharing,2025-05-22,9115.53,Transportation
-6029,Fuel,2025-05-12,7298.0,Transportation
+6029,Fuel,2025-05-12,7298.00,Transportation
 6030,Metro,2025-05-07,3175.26,Transportation
 6031,Amusement Park,2025-05-08,6555.98,Entertainment
 6032,Meat,2025-05-10,2422.22,Food
 6033,Scarf,2025-05-08,2521.33,Clothing
 6034,Workshop,2025-05-08,7531.33,Education
-6035,Therapy,2025-05-20,8052.3,Medical
+6035,Therapy,2025-05-20,8052.30,Medical
 6036,Lottery,2025-05-14,1835.55,Others
 6037,Cleaning,2025-05-15,4331.72,Home
 6038,Therapy,2025-05-15,7335.47,Medical
@@ -6068,7 +6068,7 @@ serialNo,name,date,amount,category
 6067,Fuel,2025-05-19,532.38,Travel
 6068,Storage,2025-05-19,5386.29,Others
 6069,Notebook,2025-05-06,9738.02,Education
-6070,Fitness Class,2025-05-02,358.7,Sports
+6070,Fitness Class,2025-05-02,358.70,Sports
 6071,Health Check,2025-05-10,5893.12,Medical
 6072,Hotel,2025-05-12,2344.04,Travel
 6073,Bank Fee,2025-05-15,779.86,Others
@@ -6076,9 +6076,9 @@ serialNo,name,date,amount,category
 6075,Electricity,2025-05-09,8317.56,Home
 6076,Insurance,2025-05-02,5983.59,Medical
 6077,Vegetables,2025-05-12,3551.92,Food
-6078,Drinks,2025-05-13,4536.4,Food
+6078,Drinks,2025-05-13,4536.40,Food
 6079,Karaoke,2025-05-14,9591.19,Entertainment
-6080,Pet,2025-05-04,3717.1,Others
+6080,Pet,2025-05-04,3717.10,Others
 6081,Phone Bill,2025-05-06,2536.42,Communication
 6082,Basketball,2025-05-16,4482.86,Sports
 6083,Fast Food,2025-05-08,2336.95,Food
@@ -6091,20 +6091,20 @@ serialNo,name,date,amount,category
 6090,Seminar,2025-05-20,7680.38,Education
 6091,Flight,2025-05-11,5885.22,Travel
 6092,Mobile Recharge,2025-05-15,7218.95,Communication
-6093,Running,2025-05-27,4523.2,Sports
+6093,Running,2025-05-27,4523.20,Sports
 6094,Parking,2025-05-12,5134.05,Transportation
 6095,Scarf,2025-05-12,2712.16,Clothing
 6096,Restaurant,2025-05-12,5057.87,Food
 6097,Running,2025-05-01,1941.65,Sports
 6098,Hotel,2025-05-28,7930.37,Travel
-6099,Sports Event,2025-05-08,6464.1,Entertainment
+6099,Sports Event,2025-05-08,6464.10,Entertainment
 6100,Hotel,2025-05-01,9727.07,Travel
 6101,App Purchase,2025-05-23,9830.68,Communication
 6102,Data Plan,2025-05-29,5897.73,Communication
 6103,Socks,2025-05-18,2892.49,Clothing
 6104,Dental,2025-05-01,5851.65,Medical
 6105,Repair,2025-05-13,8539.61,Home
-6106,Jeans,2025-05-13,4162.7,Clothing
+6106,Jeans,2025-05-13,4162.70,Clothing
 6107,Groceries,2025-05-14,3565.89,Food
 6108,Tour Guide,2025-05-22,8497.34,Travel
 6109,Football,2025-05-24,1541.58,Sports
@@ -6120,15 +6120,15 @@ serialNo,name,date,amount,category
 6119,Hat,2025-05-29,2536.78,Clothing
 6120,Library Fee,2025-05-29,7488.84,Education
 6121,Exam Fee,2025-05-17,9723.54,Education
-6122,Decor,2025-05-29,3453.0,Home
+6122,Decor,2025-05-29,3453.00,Home
 6123,Beverages,2025-05-09,1815.67,Food
 6124,Car Wash,2025-05-16,6963.51,Transportation
-6125,Beverages,2025-05-23,916.1,Food
+6125,Beverages,2025-05-23,916.10,Food
 6126,Roaming,2025-05-27,560.63,Communication
 6127,Scouting,2025-05-27,7910.32,Others
 6128,Ride Share,2025-05-31,439.04,Transportation
 6129,Dress,2025-05-25,7848.07,Clothing
-6130,Swimming,2025-05-06,307.2,Sports
+6130,Swimming,2025-05-06,307.20,Sports
 6131,Rental Car,2025-05-03,8957.65,Travel
 6132,Metro,2025-05-07,7197.76,Transportation
 6133,Train,2025-05-05,4879.19,Transportation
@@ -6145,8 +6145,8 @@ serialNo,name,date,amount,category
 6144,Mobile Recharge,2025-05-17,1473.27,Communication
 6145,Skiing,2025-05-05,8942.93,Sports
 6146,Parking,2025-05-28,2228.26,Transportation
-6147,Stationery,2025-05-09,8425.9,Education
-6148,Repair,2025-05-01,5658.7,Home
+6147,Stationery,2025-05-09,8425.90,Education
+6148,Repair,2025-05-01,5658.70,Home
 6149,Health Check,2025-05-05,5069.12,Medical
 6150,Fuel,2025-05-22,2104.15,Travel
 6151,Calling Card,2025-05-08,5808.12,Communication
@@ -6166,19 +6166,19 @@ serialNo,name,date,amount,category
 6165,Eye Exam,2025-05-03,4236.08,Medical
 6166,Tuition,2025-05-25,6103.72,Education
 6167,Basketball,2025-05-14,5656.93,Sports
-6168,Course,2025-05-11,7651.5,Education
+6168,Course,2025-05-11,7651.50,Education
 6169,Socks,2025-05-09,6941.67,Clothing
 6170,Books,2025-05-13,37.02,Education
 6171,Taxi,2025-05-02,9239.77,Transportation
 6172,Lunch,2025-05-18,7528.08,Food
 6173,Yoga,2025-05-09,9723.84,Sports
-6174,Shoes,2025-05-04,5580.4,Clothing
+6174,Shoes,2025-05-04,5580.40,Clothing
 6175,Fuel,2025-05-17,8983.84,Travel
 6176,Football,2025-05-26,3088.31,Sports
 6177,Cycling,2025-05-22,8151.88,Sports
 6178,Seminar,2025-05-15,5728.05,Education
 6179,Ride Share,2025-05-28,6752.11,Transportation
-6180,Online Class,2025-05-03,4510.9,Education
+6180,Online Class,2025-05-03,4510.90,Education
 6181,Luggage,2025-05-15,6098.15,Travel
 6182,Exam Fee,2025-05-17,6652.68,Education
 6183,Beverages,2025-05-04,7427.49,Food
@@ -6188,14 +6188,14 @@ serialNo,name,date,amount,category
 6187,Socks,2025-05-26,7478.26,Clothing
 6188,Taxi,2025-05-16,6800.39,Transportation
 6189,Exam Fee,2025-05-17,4326.25,Education
-6190,Concert,2025-05-20,3260.0,Entertainment
+6190,Concert,2025-05-20,3260.00,Entertainment
 6191,Courier,2025-05-05,5912.35,Communication
 6192,Tuition,2025-05-30,1938.69,Education
 6193,Yoga,2025-05-13,8978.59,Sports
 6194,Sweater,2025-05-25,6381.25,Clothing
 6195,Repair,2025-05-20,8182.39,Home
 6196,Bus,2025-05-27,8998.78,Transportation
-6197,Roaming,2025-05-27,5634.4,Communication
+6197,Roaming,2025-05-27,5634.40,Communication
 6198,Workshop,2025-05-26,6624.63,Education
 6199,Fuel,2025-05-13,7405.32,Travel
 6200,Amusement Park,2025-05-07,9474.87,Entertainment
@@ -6208,7 +6208,7 @@ serialNo,name,date,amount,category
 6207,Yoga,2025-05-22,4496.75,Sports
 6208,Karaoke,2025-05-24,4766.72,Entertainment
 6209,Online Class,2025-05-12,7378.94,Education
-6210,Ride Share,2025-05-19,3283.4,Transportation
+6210,Ride Share,2025-05-19,3283.40,Transportation
 6211,Toll,2025-05-14,997.87,Transportation
 6212,Luggage,2025-05-30,6975.71,Travel
 6213,Scouting,2025-05-31,2003.32,Others
@@ -6223,7 +6223,7 @@ serialNo,name,date,amount,category
 6222,Gym,2025-05-03,4379.51,Sports
 6223,Training,2025-05-12,3114.02,Others
 6224,Therapy,2025-05-22,7748.31,Medical
-6225,Swimming,2025-05-14,1982.1,Sports
+6225,Swimming,2025-05-14,1982.10,Sports
 6226,Workshop,2025-05-20,6540.24,Education
 6227,Tennis,2025-05-01,2393.99,Sports
 6228,Appliance,2025-05-04,3443.71,Home
@@ -6262,19 +6262,19 @@ serialNo,name,date,amount,category
 6261,Lottery,2025-05-16,6365.19,Others
 6262,Dining Out,2025-05-25,5217.44,Food
 6263,Jeans,2025-05-13,9015.72,Clothing
-6264,Exam Fee,2025-05-03,4720.9,Education
+6264,Exam Fee,2025-05-03,4720.90,Education
 6265,Flight Ticket,2025-05-18,6725.67,Travel
 6266,Dress,2025-05-02,6320.46,Clothing
 6267,Football,2025-05-15,7113.89,Sports
 6268,Toll,2025-05-16,1090.39,Transportation
-6269,Movie,2025-05-07,9385.3,Entertainment
+6269,Movie,2025-05-07,9385.30,Entertainment
 6270,Course,2025-05-20,9686.04,Education
 6271,Donation,2025-05-16,8133.61,Others
-6272,Scouting,2025-05-07,1714.7,Others
+6272,Scouting,2025-05-07,1714.70,Others
 6273,Breakfast,2025-05-27,6644.68,Food
 6274,Shoes,2025-05-28,664.96,Clothing
 6275,Hat,2025-05-26,2867.92,Clothing
-6276,Maintenance,2025-05-29,7233.0,Transportation
+6276,Maintenance,2025-05-29,7233.00,Transportation
 6277,Dentist,2025-05-18,6891.13,Medical
 6278,Stationery,2025-05-31,7461.86,Education
 6279,Health Check,2025-05-09,9123.46,Medical
@@ -6289,13 +6289,13 @@ serialNo,name,date,amount,category
 6288,Tour Package,2025-05-02,7446.18,Travel
 6289,Rental Car,2025-05-08,1042.19,Travel
 6290,Internet,2025-05-08,1211.37,Communication
-6291,Museum,2025-05-28,5071.3,Entertainment
+6291,Museum,2025-05-28,5071.30,Entertainment
 6292,Delivery,2025-05-25,5951.25,Others
 6293,Football,2025-05-09,6865.17,Sports
 6294,Tennis,2025-05-24,883.31,Sports
 6295,Lunch,2025-05-21,8183.21,Food
 6296,Ride Share,2025-05-02,8855.99,Transportation
-6297,Parking,2025-05-19,7906.7,Transportation
+6297,Parking,2025-05-19,7906.70,Transportation
 6298,Rental Car,2025-05-19,8868.63,Travel
 6299,Basketball,2025-05-17,524.45,Sports
 6300,Jeans,2025-05-21,4721.89,Clothing
@@ -6303,7 +6303,7 @@ serialNo,name,date,amount,category
 6302,Dentist,2025-05-05,5522.48,Medical
 6303,Train,2025-05-01,5646.03,Transportation
 6304,Prescription,2025-05-11,965.09,Medical
-6305,Course,2025-05-30,6962.1,Education
+6305,Course,2025-05-30,6962.10,Education
 6306,Appliance,2025-05-09,8873.93,Home
 6307,Concert,2025-05-19,1761.51,Entertainment
 6308,Utilities,2025-05-31,7606.41,Home
@@ -6345,7 +6345,7 @@ serialNo,name,date,amount,category
 6344,Maintenance,2025-05-21,5183.28,Transportation
 6345,Travel Insurance,2025-05-21,1203.54,Travel
 6346,Football,2025-05-21,277.52,Sports
-6347,T-shirt,2025-05-29,3097.6,Clothing
+6347,T-shirt,2025-05-29,3097.60,Clothing
 6348,Miscellaneous,2025-05-21,592.19,Others
 6349,Streaming Service,2025-05-26,8802.77,Entertainment
 6350,Travel Insurance,2025-05-08,4226.98,Travel
@@ -6361,14 +6361,14 @@ serialNo,name,date,amount,category
 6360,Scouting,2025-05-12,4713.89,Others
 6361,Video Game,2025-05-05,640.66,Entertainment
 6362,Delivery,2025-05-13,2645.28,Others
-6363,Tuition,2025-05-26,9604.3,Education
+6363,Tuition,2025-05-26,9604.30,Education
 6364,Fitness Class,2025-05-21,9598.03,Sports
 6365,Maintenance,2025-05-23,8588.85,Transportation
 6366,Cleaning,2025-05-04,5923.92,Home
 6367,Exhibition,2025-05-04,1139.57,Entertainment
 6368,Books,2025-05-29,6024.81,Education
 6369,Dress,2025-05-04,3614.72,Clothing
-6370,Metro,2025-05-28,81.9,Transportation
+6370,Metro,2025-05-28,81.90,Transportation
 6371,School Trip,2025-05-15,8390.06,Education
 6372,Health Check,2025-05-01,2643.46,Medical
 6373,Medicine,2025-05-04,9110.46,Medical
@@ -6386,7 +6386,7 @@ serialNo,name,date,amount,category
 6385,Language Class,2025-05-06,3485.56,Education
 6386,Insurance,2025-05-22,4493.64,Medical
 6387,Furniture,2025-05-29,9605.56,Home
-6388,Maintenance,2025-05-07,37.7,Home
+6388,Maintenance,2025-05-07,37.70,Home
 6389,Charity,2025-05-08,9783.35,Others
 6390,Rent,2025-05-29,5147.06,Home
 6391,Scarf,2025-05-09,2506.94,Clothing
@@ -6404,18 +6404,23 @@ serialNo,name,date,amount,category
 6403,Fast Food,2025-05-02,568.67,Food
 6404,Tennis,2025-05-15,4146.36,Sports
 6405,Gift,2025-05-11,1100.04,Others
-6406,Concert,2025-05-27,8029.0,Entertainment
+6406,Concert,2025-05-27,8029.00,Entertainment
 6407,Vaccination,2025-05-10,4402.96,Medical
 6408,Bus,2025-05-29,9544.38,Transportation
 6409,Ride Share,2025-05-04,1609.41,Transportation
 6410,Postage,2025-05-29,3625.61,Communication
 6411,Health Check,2025-05-19,8130.75,Medical
 6412,Insurance,2025-05-14,570.93,Medical
-6413,Decor,2025-05-13,7415.6,Home
+6413,Decor,2025-05-13,7415.60,Home
 6414,Cleaning,2025-05-11,7441.31,Home
 6415,Fast Food,2025-05-30,3394.33,Food
 6416,Flight Ticket,2025-05-17,5757.33,Travel
 6417,Maintenance,2025-05-30,7892.08,Transportation
 6418,Course,2025-05-28,4500.96,Education
-6419,Dress,2025-05-05,4876.8,Clothing
-6420,Shirt,2025-05-18,8572.55,Clothing
+6419,Go to Hainan on vacation,2025-06-01,500.00,Travel
+6420,Grocery,2025-06-19,85.20,Food
+6421,Electricity Bill,2025-06-18,120.75,Home
+6422,English Class,2025-06-17,300.00,Education
+6423,Toy,2025-06-01,100.00,Entertainment
+6424,Apple Watch,2025-06-02,4000.00,others
+6425,Clothes,2025-06-03,50.00,Clothing
