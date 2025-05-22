@@ -79,20 +79,9 @@ public class HomeController {
             while ((line = reader.readLine()) != null) {
                 if (skip) { skip = false; continue; }
                 String[] parts = line.split(",", -1);
-
-                if (parts.length < 5) {
-                    System.err.println("跳过非法行: " + line); // 可加日志辅助调试
-                    continue;
-                }
-
-                try {
-                    LocalDate date = LocalDate.parse(parts[2]);
-                    allByDate.computeIfAbsent(date, d -> new ArrayList<>()).add(parts);
-                } catch (Exception e) {
-                    System.err.println("日期解析失败行: " + line);
-                }
+                LocalDate date = LocalDate.parse(parts[2]);
+                allByDate.computeIfAbsent(date, d -> new ArrayList<>()).add(parts);
             }
-
 
             LocalDate today = LocalDate.now();
             if (allByDate.containsKey(today)) {

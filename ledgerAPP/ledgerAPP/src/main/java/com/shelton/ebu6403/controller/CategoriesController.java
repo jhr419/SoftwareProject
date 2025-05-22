@@ -1,6 +1,5 @@
 package com.shelton.ebu6403.controller;
 
-import com.shelton.ebu6403.models.ExpenseManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -12,10 +11,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.FileChooser;
 
-import java.util.Set;
-import java.util.HashSet;
 import java.io.*;
 import java.util.Optional;
 
@@ -30,12 +26,11 @@ public class CategoriesController {
     private final String[] expenseCategories = {
             "Travel", "Entertainment", "Clothing", "Education",
             "Transportation", "Medical", "Home", "Food",
-            "Sports", "Communication","Others"
+            "Sports", "Communication", "Others"
     };
-    private final ExpenseManager expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
 
     // 收入分类
-    private final String[] incomeCategories = {"Salary", "Investment","Others"};
+    private final String[] incomeCategories = {"Salary", "Investment"};
 
     private final ObservableList<Transaction> allExpenses = FXCollections.observableArrayList();
     private final ObservableList<Transaction> allIncomes = FXCollections.observableArrayList();
@@ -46,57 +41,6 @@ public class CategoriesController {
         initTransactionTables();
         loadSampleData();
     }
-
-    @FXML
-    private void handleImportCSV() {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Import Transactions CSV");
-        fileChooser.getExtensionFilters().add(
-                new FileChooser.ExtensionFilter("CSV Files", "*.csv")
-        );
-        File selectedFile = fileChooser.showOpenDialog(null);
-        if (selectedFile != null) {
-            // 1. 从当前列表获取起始编号
-            int nextSerialNo = allExpenses.size() + 1;
-
-            try (BufferedReader reader = new BufferedReader(new FileReader(selectedFile))) {
-                String line;
-                boolean isFirst = true;
-                while ((line = reader.readLine()) != null) {
-                    if (isFirst) { isFirst = false; continue; } // 跳过表头
-
-                    String[] parts = line.split(",", -1);
-                    if (parts.length < 4) continue;
-
-                    // 忽略 parts[0] 原序号，直接重编号
-                    String name = parts[1];
-                    String date = parts[2];
-                    double amount = Double.parseDouble(parts[3]);
-                    String category = (parts.length >= 5 && !parts[4].isBlank())
-                            ? parts[4]
-                            : expenseManager.classifyWithAI(name, "expense");
-
-                    Transaction tx = new Transaction(nextSerialNo++, name, date, amount, category);
-                    allExpenses.add(tx);
-                    appendTransactionToCSV(tx, "data/expenses.csv");
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            expensesTable.setItems(allExpenses);
-
-            // 导入成功弹窗
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Import Successful");
-            alert.setHeaderText(null);
-            alert.setContentText("CSV 文件已成功导入！");
-            alert.showAndWait();
-
-        }
-    }
-
-
 
     private void initCategoryCards() {
         // 创建支出卡片
@@ -188,9 +132,6 @@ public class CategoriesController {
         TableColumn<Transaction, Double> expAmountCol = (TableColumn<Transaction, Double>) expensesTable.getColumns().get(3);
         expAmountCol.setCellValueFactory(new PropertyValueFactory<>("amount"));
 
-        TableColumn<Transaction, String> expCategoryCol = (TableColumn<Transaction, String>) expensesTable.getColumns().get(4);
-        expCategoryCol.setCellValueFactory(new PropertyValueFactory<>("category"));
-
         TableColumn<Transaction, Integer> incNoCol = (TableColumn<Transaction, Integer>) incomeTable.getColumns().get(0);
         incNoCol.setCellValueFactory(new PropertyValueFactory<>("serialNo"));
 
@@ -202,9 +143,6 @@ public class CategoriesController {
 
         TableColumn<Transaction, Double> incAmountCol = (TableColumn<Transaction, Double>) incomeTable.getColumns().get(3);
         incAmountCol.setCellValueFactory(new PropertyValueFactory<>("amount"));
-
-        TableColumn<Transaction, String> incCategoryCol = (TableColumn<Transaction, String>) incomeTable.getColumns().get(4);
-        incCategoryCol.setCellValueFactory(new PropertyValueFactory<>("category"));
     }
 
     private void loadSampleData() {
@@ -278,17 +216,22 @@ public class CategoriesController {
         Dialog<Transaction> dialog = new Dialog<>();
         dialog.setTitle("Add Expense");
 
+        Label nameLabel = new Label("Title:");
         TextField nameField = new TextField();
-        TextField dateField = new TextField();
-        TextField amountField = new TextField();
-        TextField categoryField = new TextField();
 
-        VBox content = new VBox(10,
-                new Label("Title:"), nameField,
-                new Label("Date:"), dateField,
-                new Label("Amount:"), amountField,
-                new Label("Category (Leave empty to use AI):"), categoryField
-        );
+        Label dateLabel = new Label("Date:");
+        TextField dateField = new TextField();
+
+        Label amountLabel = new Label("Amount:");
+        TextField amountField = new TextField();
+
+        Label categoryLabel = new Label("Category:");
+        TextField categoryField = new TextField("Custom");
+
+        VBox content = new VBox(10, nameLabel, nameField,
+                dateLabel, dateField,
+                amountLabel, amountField,
+                categoryLabel, categoryField);
         dialog.getDialogPane().setContent(content);
 
         ButtonType saveBtn = new ButtonType("Save", ButtonBar.ButtonData.OK_DONE);
@@ -296,32 +239,12 @@ public class CategoriesController {
 
         dialog.setResultConverter(btn -> {
             if (btn == saveBtn) {
-                String name = nameField.getText();
-                String date = dateField.getText();
-                double amount = Double.parseDouble(amountField.getText());
-                String categoryInput = categoryField.getText();
-                String finalCategory;
-
-                if (categoryInput == null || categoryInput.isBlank()) {
-                    String aiCategory = expenseManager.classifyWithAI(name, "expense");
-
-                    TextInputDialog confirmDialog = new TextInputDialog(aiCategory);
-                    confirmDialog.setTitle("AI Classification Suggestion");
-                    confirmDialog.setHeaderText("AI suggests category: " + aiCategory);
-                    confirmDialog.setContentText("You can use this category or modify it:");
-
-                    Optional<String> userChoice = confirmDialog.showAndWait();
-                    finalCategory = userChoice.orElse("Others");
-                } else {
-                    finalCategory = categoryInput;
-                }
-
                 return new Transaction(
                         allExpenses.size() + 1,
-                        name,
-                        date,
-                        amount,
-                        finalCategory
+                        nameField.getText(),
+                        dateField.getText(),
+                        Double.parseDouble(amountField.getText()),
+                        categoryField.getText()
                 );
             }
             return null;
@@ -340,17 +263,22 @@ public class CategoriesController {
         Dialog<Transaction> dialog = new Dialog<>();
         dialog.setTitle("Add Income");
 
+        Label nameLabel = new Label("Title:");
         TextField nameField = new TextField();
-        TextField dateField = new TextField();
-        TextField amountField = new TextField();
-        TextField categoryField = new TextField();
 
-        VBox content = new VBox(10,
-                new Label("Title:"), nameField,
-                new Label("Date:"), dateField,
-                new Label("Amount:"), amountField,
-                new Label("Category (Leave empty to use AI):"), categoryField
-        );
+        Label dateLabel = new Label("Date:");
+        TextField dateField = new TextField();
+
+        Label amountLabel = new Label("Amount:");
+        TextField amountField = new TextField();
+
+        Label categoryLabel = new Label("Category:");
+        TextField categoryField = new TextField("Custom");
+
+        VBox content = new VBox(10, nameLabel, nameField,
+                dateLabel, dateField,
+                amountLabel, amountField,
+                categoryLabel, categoryField);
         dialog.getDialogPane().setContent(content);
 
         ButtonType saveBtn = new ButtonType("Save", ButtonBar.ButtonData.OK_DONE);
@@ -358,32 +286,12 @@ public class CategoriesController {
 
         dialog.setResultConverter(btn -> {
             if (btn == saveBtn) {
-                String name = nameField.getText();
-                String date = dateField.getText();
-                double amount = Double.parseDouble(amountField.getText());
-                String categoryInput = categoryField.getText();
-                String finalCategory;
-
-                if (categoryInput == null || categoryInput.isBlank()) {
-                    String aiCategory = expenseManager.classifyWithAI(name, "income");
-
-                    TextInputDialog confirmDialog = new TextInputDialog(aiCategory);
-                    confirmDialog.setTitle("AI Classification Suggestion");
-                    confirmDialog.setHeaderText("AI suggests category: " + aiCategory);
-                    confirmDialog.setContentText("You can use this category or modify it:");
-
-                    Optional<String> userChoice = confirmDialog.showAndWait();
-                    finalCategory = userChoice.orElse("Others");
-                } else {
-                    finalCategory = categoryInput;
-                }
-
                 return new Transaction(
                         allIncomes.size() + 1,
-                        name,
-                        date,
-                        amount,
-                        finalCategory
+                        nameField.getText(),
+                        dateField.getText(),
+                        Double.parseDouble(amountField.getText()),
+                        categoryField.getText()
                 );
             }
             return null;
@@ -396,7 +304,6 @@ public class CategoriesController {
             appendTransactionToCSV(tx, "data/incomes.csv");
         });
     }
-
 
     // 修改后的 CategoriesController 的增删改功能
     @FXML
@@ -475,10 +382,6 @@ public class CategoriesController {
             incomeTable.refresh();
             overwriteCSV(allIncomes, "data/incomes.csv");
         }
-    }
-
-    public ExpenseManager getExpenseManager() {
-        return expenseManager;
     }
 
     public static class Transaction {

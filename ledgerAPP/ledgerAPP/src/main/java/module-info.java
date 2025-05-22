@@ -8,8 +8,6 @@ module com.shelton.ebu6403.ledgerapp {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires java.desktop;
-    requires org.jfree.jfreechart;
 
     opens com.shelton.ebu6403 to javafx.fxml, javafx.graphics;
     exports com.shelton.ebu6403;

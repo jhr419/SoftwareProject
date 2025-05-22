@@ -28,7 +28,6 @@
                         <TableColumn text="Name" prefWidth="150"/>
                         <TableColumn text="Date" prefWidth="120"/>
                         <TableColumn text="Price" prefWidth="100"/>
-                        <TableColumn text="Category" prefWidth="120"/>
                     </columns>
                 </TableView>
             </VBox>
@@ -49,7 +48,6 @@
                         <TableColumn text="Name" prefWidth="150"/>
                         <TableColumn text="Date" prefWidth="120"/>
                         <TableColumn text="Amount" prefWidth="100"/>
-                        <TableColumn text="Category" prefWidth="120"/>
                     </columns>
                 </TableView>
             </VBox>
@@ -59,7 +57,6 @@
     <!-- 添加按钮 -->
     <bottom>
         <HBox alignment="CENTER_RIGHT" style="-fx-padding: 0 20 20 0;">
-            <Button text="Import CSV" onAction="#handleImportCSV" styleClass="primary-button"/>
             <Button text="Add Expense" onAction="#showAddExpenseDialog" styleClass="add-button"/>
             <Button text="Add Income" onAction="#showAddIncomeDialog" styleClass="add-button"/>
             <Button text="Delete Expense" onAction="#handleDeleteExpense" styleClass="primary-button"/>

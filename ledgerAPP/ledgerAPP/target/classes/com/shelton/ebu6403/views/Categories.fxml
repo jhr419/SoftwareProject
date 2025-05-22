@@ -46,7 +46,7 @@
                     <columns>
                         <TableColumn text="SL No" prefWidth="60"/>
                         <TableColumn text="Name" prefWidth="150"/>
-                        <TableColumn text="Datzhie" prefWidth="120"/>
+                        <TableColumn text="Date" prefWidth="120"/>
                         <TableColumn text="Amount" prefWidth="100"/>
                     </columns>
                 </TableView>
