@@ -5,7 +5,6 @@ import javafx.scene.*;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.*;
 import javafx.scene.layout.*;
-
 import java.util.Objects;
 
 public class LedgerController {

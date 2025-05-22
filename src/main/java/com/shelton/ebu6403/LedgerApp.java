@@ -15,6 +15,7 @@ public class LedgerApp extends Application {
         );
         Parent root = loader.load();
 
+
         // 动态加载窗口图标
         try (InputStream iconStream = getClass().getResourceAsStream(
                 "/com/shelton/ebu6403/images/icon.png")) {

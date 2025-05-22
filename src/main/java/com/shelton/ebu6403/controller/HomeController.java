@@ -6,18 +6,19 @@ import javafx.fxml.FXML;
 import javafx.scene.chart.*;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-
+import javafx.scene.layout.StackPane;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class HomeController {
     // 卡片金额显示

@@ -19,7 +19,8 @@
                     <ScrollPane fitToHeight="false" fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="NEVER">
                         <HBox fx:id="cardScrollContainer" spacing="15" styleClass="card-scroll-container" />
                     </ScrollPane>
-
+                    <DatePicker fx:id="summaryDatePicker"  style="-fx-padding: 4; -fx-font-size: 13px; -fx-background-color: white;"
+                                promptText="Select a Date" />
                     <HBox spacing="20">
                         <!-- 左侧 Summary -->
                         <VBox fx:id="infoSummaryContainer" spacing="15" prefWidth="400" />
@@ -44,10 +45,15 @@
             <center>
                 <HBox spacing="20" style="-fx-padding: 20;">
                     <!-- My Investment 列表 -->
-                    <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER">
-                        <VBox fx:id="investmentListContainer" spacing="15" />
-                    </ScrollPane>
+                    <VBox spacing="10">
+                        <DatePicker fx:id="investmentDatePicker"
+                                    style="-fx-padding: 4; -fx-font-size: 13px; -fx-background-color: white;"
+                                    promptText="Select Investment Date"/>
 
+                        <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER">
+                            <VBox fx:id="investmentListContainer" spacing="15" />
+                        </ScrollPane>
+                    </VBox>
                     <!-- AI Assistant -->
                     <VBox fx:id="aiAssistantCard" alignment="CENTER" spacing="15">
                         <Button text="AI+  DEEPSEEK-R1   →" styleClass="ai-assistant-button" onAction="#goToAiPage"/>

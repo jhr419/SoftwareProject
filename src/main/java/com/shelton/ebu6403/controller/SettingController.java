@@ -5,21 +5,23 @@ import com.shelton.ebu6403.models.ExpenseManager;
 import com.shelton.ebu6403.models.ExpenseRecord;
 import com.shelton.ebu6403.models.SpendingInsightService;
 import javafx.beans.property.*;
-import javafx.collections.*;
 import javafx.collections.transformation.FilteredList;
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
-import javafx.scene.chart.*;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-
-import java.time.LocalDate;
+import javafx.collections.*;
+import javafx.scene.chart.*;
 import java.time.YearMonth;
-import java.util.LinkedHashMap;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.LinkedHashMap;
+import javafx.concurrent.Task;
+import javafx.concurrent.WorkerStateEvent;
+
+import java.lang.Thread;
 
 public class SettingController {
     // 顶部选项卡
