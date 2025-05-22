@@ -5,6 +5,7 @@ import javafx.scene.*;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.*;
 import javafx.scene.layout.*;
+
 import java.util.Objects;
 
 public class LedgerController {
@@ -91,7 +92,7 @@ public class LedgerController {
     private void loadInvestments() { loadView("/com/shelton/ebu6403/views/investments.fxml"); }
 
     @FXML
-    private void loadSettings() { loadView("/com/shelton/ebu6403/views/settings.fxml"); }
+    private void loadSettings() { loadView("/com/shelton/ebu6403/views/Setting.fxml"); }
 
     @FXML
     private void loadAiChat() {
