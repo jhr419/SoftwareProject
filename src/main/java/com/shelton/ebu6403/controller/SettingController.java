@@ -1,4 +1,4 @@
-package main.java.com.shelton.ebu6403.controller;
+package com.shelton.ebu6403.controller;
 
 import com.shelton.ebu6403.models.BudgetSet;
 import com.shelton.ebu6403.models.ExpenseManager;

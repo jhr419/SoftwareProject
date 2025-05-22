@@ -1,5 +1,5 @@
 // AiDeepseekController.java
-package main.java.com.shelton.ebu6403.controller;
+package com.shelton.ebu6403.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

@@ -1,4 +1,4 @@
-package main.java.com.shelton.ebu6403.models;
+package com.shelton.ebu6403.models;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.com.shelton.ebu6403.controller;
+package com.shelton.ebu6403.controller;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;

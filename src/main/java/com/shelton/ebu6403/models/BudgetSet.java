@@ -1,4 +1,4 @@
-package main.java.com.shelton.ebu6403.models;
+package com.shelton.ebu6403.models;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -168,9 +168,11 @@ public class BudgetSet {
     // **保存预算**
     private void saveBudgetsToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(BUDGET_FILE))) {
-            // 展开为列表，并排序
-            AtomicInteger serial = new AtomicInteger(1);
+            // ✅ 写入表头
+            writer.write("No,Category,Month,Amount");
+            writer.newLine();
 
+            AtomicInteger serial = new AtomicInteger(1);
             monthlyBudgets.entrySet().stream()
                     .flatMap(entry -> entry.getValue().entrySet().stream()
                             .map(e -> new BudgetEntry(entry.getKey(), e.getKey(), e.getValue())))
@@ -195,6 +197,7 @@ public class BudgetSet {
             System.out.println("Error saving budget data: " + e.getMessage());
         }
     }
+
     private static class BudgetEntry {
         String category;
         YearMonth month;

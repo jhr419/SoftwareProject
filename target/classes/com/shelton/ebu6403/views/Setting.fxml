@@ -3,6 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.chart.*?>
 
+<?import javafx.geometry.Insets?>
 <BorderPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.shelton.ebu6403.controller.SettingController"
@@ -45,11 +46,27 @@
                     <FlowPane fx:id="budgetCardsContainer" styleClass="budget-cards-container"
                               prefWrapLength="800" hgap="15" vgap="15"/>
                 </ScrollPane>
-                <Button text="Generate AI Spending Insights"
-                        onAction="#handleGenerateInsights"
-                        fx:id="insightButton"
-                        styleClass="generate-button"/>
-                <ProgressIndicator fx:id="insightProgress" visible="false" maxWidth="100" maxHeight="100"/>
+                <HBox alignment="CENTER">
+                    <Button text="Generate AI Spending Insights"
+                            onAction="#handleGenerateInsights"
+                            fx:id="insightButton"
+                            styleClass="generate-button">
+                        <VBox.margin>
+                            <Insets top="20"/>
+                        </VBox.margin>
+                    </Button>
+                </HBox>
+                <HBox alignment="CENTER">
+                    <ProgressIndicator fx:id="insightProgress"
+                                       visible="false"
+                                       maxWidth="100"
+                                       maxHeight="100">
+                        <VBox.margin>
+                            <Insets top="20"/>
+                        </VBox.margin>
+                    </ProgressIndicator>
+                </HBox>
+
 
 
             </VBox>

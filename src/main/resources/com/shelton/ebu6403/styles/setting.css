@@ -136,8 +136,16 @@
     -fx-vgap: 15px;
 }
 .generate-button {
-    -fx-background-color: #28a745;
+    -fx-background-color: linear-gradient(to right, #28a745, #218838);
     -fx-text-fill: white;
-    -fx-padding: 10px;
+    -fx-font-weight: bold;
     -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.generate-button:hover {
+    -fx-background-color: linear-gradient(to right, #218838, #1e7e34);
 }
