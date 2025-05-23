@@ -6416,12 +6416,14 @@ serialNo,name,date,amount,category
 6415,Fast Food,2025-05-30,3394.33,Food
 6416,Flight Ticket,2025-05-17,5757.33,Travel
 6417,Maintenance,2025-05-30,7892.08,Transportation
-6418,Course,2025-05-28,4500.96,Education
-6419,Go to Hainan on vacation,2025-06-01,500.00,Travel
-6420,Grocery,2025-06-19,85.20,Food
-6421,Electricity Bill,2025-06-18,120.75,Home
-6422,English Class,2025-06-17,300.00,Education
-6423,Toy,2025-06-01,100.00,Entertainment
-6424,Apple Watch,2025-06-02,4000.00,others
-6425,Clothes,2025-06-03,50.00,Clothing
-6426,Strawberry,2025-06-06,40.00,Food
+6418,Rent,2025-04-01,1500.00,Home
+6419,Internet Bill,2025-04-05,60.00,Communication
+6420,Coffee,2025-04-07,15.50,Food
+6421,Clothing,2025-04-12,250.00,Clothing
+6422,Transport Card Recharge,2025-04-15,100.00,Transportation
+6423,Dining Out,2025-04-18,80.25,Food
+6424,Books,2025-04-25,120.00,Education
+6425,Gym Membership,2025-05-01,200.00,Sports
+6426,Grocery,2025-05-10,92.35,Food
+6427,Electricity Bill,2025-05-15,110.60,Home
+6428,Dinner,2025-06-01,100.00,Food
