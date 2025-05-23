@@ -13,9 +13,19 @@
         <VBox spacing="15" style="-fx-padding: 20;">
             <!-- 设置选项卡 -->
             <TabPane fx:id="settingsTabPane" styleClass="settings-tab-pane"/>
+                <HBox alignment="CENTER">
+                    <Label fx:id="holidayReminderLabel"
+                           text=""
+                           visible="false"
+                           wrapText="true"
+                           style="-fx-background-color: #fff3cd; -fx-border-color: #ffeeba; -fx-padding: 10px 20px;
+                           -fx-text-fill: #856404; -fx-font-size: 14px; -fx-font-weight: bold;"
+                           maxWidth="900"/>
+                    <VBox.margin>
+                        <Insets top="10" bottom="10"/>
+                    </VBox.margin>
+                </HBox>
 
-            <!-- 预算设置内容 (默认隐藏，通过选项卡控制) -->
-            <VBox fx:id="budgetSettingsContent" styleClass="budget-settings-container">
                 <!-- 预算设置表单 -->
                 <HBox styleClass="budget-form">
                     <VBox spacing="10" prefWidth="300">
@@ -58,7 +68,7 @@
                 </HBox>
 
             </VBox>
-        </VBox>
+
     </center>
     <!-- 覆盖全屏的进度条层 -->
     <StackPane fx:id="progressOverlay"

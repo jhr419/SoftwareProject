@@ -1,9 +1,6 @@
 package com.shelton.ebu6403.controller;
 
-import com.shelton.ebu6403.models.BudgetSet;
-import com.shelton.ebu6403.models.ExpenseManager;
-import com.shelton.ebu6403.models.ExpenseRecord;
-import com.shelton.ebu6403.models.SpendingInsightService;
+import com.shelton.ebu6403.models.*;
 import javafx.beans.property.*;
 import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
@@ -35,12 +32,15 @@ public class SettingController {
     @FXML private TableView<Budget> budgetTable;
     @FXML private FlowPane budgetCardsContainer;
     @FXML private ProgressIndicator insightProgress;
+    @FXML private Label holidayReminderLabel;
+
 
     @FXML private Button insightButton;
 
     private final ObservableList<Budget> budgets = FXCollections.observableArrayList();
     private final FilteredList<Budget> filteredBudgets = new FilteredList<>(budgets);
     private final BudgetSet budgetSet = new BudgetSet();
+    private final ExpenseManager expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
 
     private final String[] categories = {
             "Travel", "Entertainment", "Clothing", "Education", "Transportation",
@@ -57,18 +57,20 @@ public class SettingController {
     public void initialize() {
         initSettingsTabs();
         initBudgetSettings();
-
-        // 默认不过滤分类
         categoryCombo.setValue("Select All");
-
-        // 设置初始过滤（当前年月 + 所有分类）
         updateMonthFilter();
-
         // 注册消费变化监听
         budgetSet.setOnExpenseChanged(() -> {
             refreshBudgetCards();
             budgetTable.refresh();
         });
+        // 添加：启动时展示节日前提醒（非弹窗）
+        ChineseHolidayAnalyzer analyzer = new ChineseHolidayAnalyzer(expenseManager.getExpenses());
+        String reminder = analyzer.getUpcomingHolidayReminder();
+        if (!reminder.isBlank()) {
+            holidayReminderLabel.setText("⚠ " + reminder);
+            holidayReminderLabel.setVisible(true);
+        }
     }
 
 
