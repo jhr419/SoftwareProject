@@ -142,7 +142,7 @@ public class HomeController {
         weeklyChart.setStyle("-fx-bar-fill-0: #e74c3c; -fx-bar-fill-1: #2ecc71;");
     }
 
-    private Map<LocalDate, Double> loadDailyTotal(String path) {
+    Map<LocalDate, Double> loadDailyTotal(String path) {
         Map<LocalDate, Double> result = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line;
@@ -240,7 +240,7 @@ public class HomeController {
         public String getCategory() { return category; }
     }
 
-    private List<Transaction> readTransactionsFromCSV(String path) {
+    List<Transaction> readTransactionsFromCSV(String path) {
         List<Transaction> result = new ArrayList<>();
         File file = new File(path);
         if (!file.exists()) return result;

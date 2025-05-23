@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="Created a test for the AnalysisControllerTest class and created a path for test data">
-      <change afterPath="$PROJECT_DIR$/JunitTest/com/shelton/ebu6403/controller/CategoriesControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shelton/ebu6403/controller/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shelton/ebu6403/controller/CategoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/CategoriesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/CategoriesController.class" afterDir="false" />
-    </list>
+    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="Created a test for the CategoriesController class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21073559",
     "vue.rearranger.settings.migration": "true"
@@ -151,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747971418045</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created a test for the CategoriesController class">
+      <option name="closed" value="true" />
+      <created>1747978629318</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747978629318</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +222,7 @@
     <MESSAGE value="add new feature of fixedincome" />
     <MESSAGE value="Created a test for the AIDeepseekController class" />
     <MESSAGE value="Created a test for the AnalysisControllerTest class and created a path for test data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a test for the AnalysisControllerTest class and created a path for test data" />
+    <MESSAGE value="Created a test for the CategoriesController class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a test for the CategoriesController class" />
   </component>
 </project>
