@@ -40,7 +40,7 @@
                             <!--                        <HBox alignment="CENTER_RIGHT">-->
                             <!--                            <FontIcon iconLiteral="mdi-car" iconSize="20" styleClass="card-icon"/>-->
                             <!--                        </HBox>-->
-                            <Label text="Transport" styleClass="card-category"/>
+                            <Label text="Transportation" styleClass="card-category"/>
                             <Label fx:id="transportAmount" text="/$30.40" styleClass="card-amount"/>
                             <Label fx:id="transportUpdate" text="Updated at 8:27 - April 30" styleClass="card-update"/>
                         </VBox>

@@ -97,47 +97,67 @@ public class CategoriesController {
         }
     }
 
-
-
     private void initCategoryCards() {
         // 创建支出卡片
         for (String category : expenseCategories) {
-            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/profile photo.png");
+            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/icons/");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(category, "Expense"));
             expensesCardContainer.getChildren().add(card);
         }
 
-        VBox moreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/profile photo.png");
+        VBox moreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/icons/");
         moreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Expense"));
         expensesCardContainer.getChildren().add(moreCard);
 
-        // 创建收入卡片
+
+        // 收入卡片
         for (String category : incomeCategories) {
-            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/profile photo.png");
+            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/icons/");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(category, "Income"));
             incomeCardContainer.getChildren().add(card);
         }
 
-        VBox incomeMoreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/profile photo.png");
+        VBox incomeMoreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/icons/");
         incomeMoreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Income"));
         incomeCardContainer.getChildren().add(incomeMoreCard);
+
     }
 
-    private VBox createCategoryCard(String title, String iconPath) {
+    private VBox createCategoryCard(String title, String iconDir) {
         VBox card = new VBox(5);
         card.getStyleClass().add("category-card");
         card.setAlignment(Pos.CENTER);
 
-        ImageView icon = new ImageView(new Image(getClass().getResourceAsStream(iconPath)));
-        icon.setFitWidth(40);
-        icon.setFitHeight(40);
+        ImageView iconView = new ImageView();
+        String formattedName = title.toLowerCase().replaceAll("\\s+", "_");
+        String imagePath = iconDir + formattedName + ".png";
+
+        try {
+            InputStream imageStream = getClass().getResourceAsStream(imagePath);
+            if (imageStream != null) {
+                Image icon = new Image(imageStream);
+                iconView.setImage(icon);
+                iconView.setFitWidth(40);
+                iconView.setFitHeight(40);
+                card.getChildren().add(iconView);
+            } else {
+                Label fallbackIcon = new Label("📂");
+                fallbackIcon.setStyle("-fx-font-size: 32px;");
+                card.getChildren().add(fallbackIcon);
+            }
+        } catch (Exception e) {
+            Label fallbackIcon = new Label("❓");
+            fallbackIcon.setStyle("-fx-font-size: 32px;");
+            card.getChildren().add(fallbackIcon);
+        }
 
         Label titleLabel = new Label(title);
         titleLabel.getStyleClass().add("card-title");
+        card.getChildren().add(titleLabel);
 
-        card.getChildren().addAll(icon, titleLabel);
         return card;
     }
+
     private void appendTransactionToCSV(Transaction tx, String filePath) {
         File file = new File(filePath);
         boolean fileExists = file.exists();
