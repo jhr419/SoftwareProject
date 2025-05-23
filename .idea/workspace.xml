@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="Created a test for the AIDeepseekController class">
-      <change afterPath="$PROJECT_DIR$/JunitTest/com/shelton/ebu6403/controller/AnalysisControllerTest.java" afterDir="false" />
+    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="Created a test for the AnalysisControllerTest class and created a path for test data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +60,21 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "test",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/WorkFiles/Code/JavaCode/SoftwareProject",
+    "last_opened_file_path": "E:/WorkFiles/Code/JavaCode/SoftwareProject/JunitTest/test_data",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21073559",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkFiles\Code\JavaCode\SoftwareProject\JunitTest\test_data" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747970162013</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created a test for the AnalysisControllerTest class and created a path for test data">
+      <option name="closed" value="true" />
+      <created>1747971311563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747971311563</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +206,7 @@
     <MESSAGE value="update the project configuration files" />
     <MESSAGE value="add new feature of fixedincome" />
     <MESSAGE value="Created a test for the AIDeepseekController class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a test for the AIDeepseekController class" />
+    <MESSAGE value="Created a test for the AnalysisControllerTest class and created a path for test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a test for the AnalysisControllerTest class and created a path for test data" />
   </component>
 </project>
