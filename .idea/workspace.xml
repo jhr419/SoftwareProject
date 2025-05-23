@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="add new feature of fixedincome">
-      <change afterPath="$PROJECT_DIR$/JunitTest/com/shelton/ebu6403/controller/AiDeepseekControllerTest.java" afterDir="false" />
+    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="Created a test for the AIDeepseekController class">
       <change afterPath="$PROJECT_DIR$/JunitTest/com/shelton/ebu6403/controller/AnalysisControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ApiClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ApiQATest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/BudgetSetTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseAnalyzerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseCategoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseRecordTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseTrackerGUITest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shelton/ebu6403/controller/AiDeepseekController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shelton/ebu6403/controller/AiDeepseekController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +41,9 @@
     &quot;accountId&quot;: &quot;be8bd6ad-e652-4514-a868-1265d144818b&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -61,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AiDeepseekControllerTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -125,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747968842870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created a test for the AIDeepseekController class">
+      <option name="closed" value="true" />
+      <created>1747970162013</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747970162013</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,12 +153,17 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Wenxian Ee" />
+                  <option value="GuangXiaoc" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="*" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Wenxian Ee" />
                 </option>
               </RecentGroup>
             </list>
@@ -188,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update the project configuration files" />
     <MESSAGE value="add new feature of fixedincome" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new feature of fixedincome" />
+    <MESSAGE value="Created a test for the AIDeepseekController class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a test for the AIDeepseekController class" />
   </component>
 </project>
