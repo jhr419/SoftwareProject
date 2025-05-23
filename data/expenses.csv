@@ -6105,3 +6105,7 @@ serialNo,name,date,amount,category
 6104,Toy,2025-06-01,100.00,Entertainment
 6105,Apple Watch,2025-06-02,4000.00,others
 6106,Clothes,2025-06-03,50.00,Clothing
+6107,Strawberry,2025-05-24,40.00,Food
+6108,Taxi,2025-05-24,24.60,Transportation
+6109,Badminton,2025-05-24,100.00,Sports
+6110,Jordan,2025-05-24,1200.00,Clothing
