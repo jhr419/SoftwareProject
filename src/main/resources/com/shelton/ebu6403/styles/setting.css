@@ -149,3 +149,12 @@
 .generate-button:hover {
     -fx-background-color: linear-gradient(to right, #218838, #1e7e34);
 }
+/* 进度条容器样式 */
+#progressOverlay {
+    -fx-background-color: rgba(0, 0, 0, 0.3); /* 半透明黑色 */
+}
+
+/* 进度条样式 */
+#insightProgress {
+    -fx-progress-color: white !important; /* 白色进度条 */
+}

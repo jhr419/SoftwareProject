@@ -423,51 +423,66 @@ public class SettingController {
         alert.setContentText(message);
         alert.showAndWait();
     }
+    @FXML
+    private StackPane progressOverlay;
 
     @FXML
     private void handleGenerateInsights() {
-        // 显示进度条
-        insightProgress.setVisible(true);
+        // 显示进度条并禁用按钮
+        progressOverlay.setVisible(true);
+        insightButton.setDisable(true);
 
         Task<String> task = new Task<>() {
             @Override
             protected String call() throws Exception {
-                ExpenseManager manager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
-                List<ExpenseRecord> expenseList = manager.getExpenses();
-                SpendingInsightService insightService = new SpendingInsightService(expenseList, manager.getApiClient());
-                return insightService.generateSpendingInsights();
+                try {
+                    ExpenseManager manager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
+                    List<ExpenseRecord> expenseList = manager.getExpenses();
+                    SpendingInsightService insightService = new SpendingInsightService(expenseList, manager.getApiClient());
+                    return insightService.generateSpendingInsights();
+                } catch (Exception e) {
+                    throw new RuntimeException("Failed to generate insights: " + e.getMessage(), e);
+                }
             }
         };
 
+        // 成功回调
         task.setOnSucceeded(e -> {
-            insightProgress.setVisible(false); // 隐藏进度条
-
-            String result = task.getValue();
-            TextArea resultArea = new TextArea(result);
-            resultArea.setWrapText(true);
-            resultArea.setEditable(false);
-            resultArea.setPrefWidth(500);
-            resultArea.setPrefHeight(400);
-
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Spending Insights & Predictions");
-            alert.setHeaderText("AI-generated Financial Analysis:");
-            alert.getDialogPane().setContent(resultArea);
-            alert.showAndWait();
+            progressOverlay.setVisible(false);
+            insightButton.setDisable(false);
+            showResultDialog(task.getValue());
         });
 
+        // 失败回调
         task.setOnFailed(e -> {
-            insightProgress.setVisible(false); // 隐藏进度条
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Failed to generate insights.");
-            alert.setContentText(task.getException().getMessage());
-            alert.showAndWait();
+            progressOverlay.setVisible(false);
+            insightButton.setDisable(false);
+            showErrorDialog(task.getException());
         });
 
-        Thread thread = new Thread(task);
-        thread.setDaemon(true);
-        thread.start();
+        // 启动任务
+        new Thread(task).start();
+    }
+
+    private void showResultDialog(String result) {
+        TextArea resultArea = new TextArea(result);
+        resultArea.setWrapText(true);
+        resultArea.setEditable(false);
+        resultArea.setPrefSize(500, 400);
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Spending Insights");
+        alert.setHeaderText("AI Analysis Result");
+        alert.getDialogPane().setContent(resultArea);
+        alert.show();
+    }
+
+    private void showErrorDialog(Throwable ex) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Operation Failed");
+        alert.setContentText(ex.getMessage());
+        alert.show();
     }
 
 

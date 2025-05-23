@@ -56,20 +56,18 @@
                         </VBox.margin>
                     </Button>
                 </HBox>
-                <HBox alignment="CENTER">
-                    <ProgressIndicator fx:id="insightProgress"
-                                       visible="false"
-                                       maxWidth="100"
-                                       maxHeight="100">
-                        <VBox.margin>
-                            <Insets top="20"/>
-                        </VBox.margin>
-                    </ProgressIndicator>
-                </HBox>
-
-
 
             </VBox>
         </VBox>
     </center>
+    <!-- 覆盖全屏的进度条层 -->
+    <StackPane fx:id="progressOverlay"
+               alignment="CENTER"
+               visible="false"
+               style="-fx-background-color: rgba(0, 0, 0, 0.3);">
+        <ProgressIndicator fx:id="insightProgress"
+                           prefWidth="100"
+                           prefHeight="100"
+                           style="-fx-progress-color: white;"/>
+    </StackPane>
 </BorderPane>

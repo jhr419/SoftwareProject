@@ -16,8 +16,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.FileChooser;
 
 import java.time.LocalDate;
-import java.util.Set;
-import java.util.HashSet;
 import java.io.*;
 import java.util.Optional;
 
@@ -104,23 +102,23 @@ public class CategoriesController {
     private void initCategoryCards() {
         // 创建支出卡片
         for (String category : expenseCategories) {
-            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/icon.png");
+            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/profile photo.png");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(category, "Expense"));
             expensesCardContainer.getChildren().add(card);
         }
 
-        VBox moreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/icon.png");
+        VBox moreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/profile photo.png");
         moreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Expense"));
         expensesCardContainer.getChildren().add(moreCard);
 
         // 创建收入卡片
         for (String category : incomeCategories) {
-            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/icon.png");
+            VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/profile photo.png");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(category, "Income"));
             incomeCardContainer.getChildren().add(card);
         }
 
-        VBox incomeMoreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/icon.png");
+        VBox incomeMoreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/profile photo.png");
         incomeMoreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Income"));
         incomeCardContainer.getChildren().add(incomeMoreCard);
     }
@@ -266,7 +264,7 @@ public class CategoriesController {
 
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(name -> {
-            VBox card = createCategoryCard(name, "/com/shelton/ebu6403/images/icon.png");
+            VBox card = createCategoryCard(name, "/com/shelton/ebu6403/images/profile photo.png");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(name, type));
             if ("Expense".equals(type)) {
                 expensesCardContainer.getChildren().add(expensesCardContainer.getChildren().size() - 1, card);

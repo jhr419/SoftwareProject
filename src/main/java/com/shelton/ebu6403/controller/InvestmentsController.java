@@ -380,7 +380,7 @@ public class InvestmentsController {
 
     private HBox createInvestmentItem(String name, String amount, String returnValue, String category, String color) {
         HBox row = new HBox(10);
-        ImageView icon = new ImageView(new Image(getClass().getResourceAsStream("/com/shelton/ebu6403/images/icon.png")));
+        ImageView icon = new ImageView(new Image(getClass().getResourceAsStream("/com/shelton/ebu6403/images/profile photo.png")));
         icon.setFitWidth(32); icon.setFitHeight(32);
         VBox desc = new VBox(new Label(name), new Label(category));
         Label amountLabel = new Label(amount);
