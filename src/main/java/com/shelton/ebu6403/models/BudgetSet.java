@@ -168,7 +168,7 @@ public class BudgetSet {
     // **保存预算**
     private void saveBudgetsToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(BUDGET_FILE))) {
-            // ✅ 写入表头
+            //  写入表头
             writer.write("No,Category,Month,Amount");
             writer.newLine();
 

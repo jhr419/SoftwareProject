@@ -54,7 +54,7 @@ public class LedgerController {
 
     private void loadDynamicImages() {
         loadImage(notificationIcon, "/com/shelton/ebu6403/images/notification.png");
-        loadImage(avatarView, "/com/shelton/ebu6403/images/icon.png");
+        loadImage(avatarView, "/com/shelton/ebu6403/images/profile photo.png");
     }
 
     private void loadImage(ImageView imageView, String path) {

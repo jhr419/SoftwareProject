@@ -13,7 +13,7 @@
       style="-fx-background-color: linear-gradient(to bottom, #ffffff, #f7f7f7); -fx-padding: 20;">
 
     <!-- 顶部标题 -->
-    <Label text="AI Helper 智能助手"
+    <Label text="AI Helper"
            style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;" />
 
     <!-- 输出区域 -->
