@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="update the project configuration files" />
+    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="add new feature of fixedincome">
+      <change afterPath="$PROJECT_DIR$/JunitTest/com/shelton/ebu6403/controller/AiDeepseekControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JunitTest/com/shelton/ebu6403/controller/AnalysisControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ApiClientTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ApiQATest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/BudgetSetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseAnalyzerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseCategoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseRecordTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JunitTest/ExpenseTrackerGUITest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shelton/ebu6403/controller/AiDeepseekController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shelton/ebu6403/controller/AiDeepseekController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -24,15 +44,15 @@
     &quot;assignee&quot;: &quot;jhr419&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jhr419/SoftwareProject.git",
-    "accountId": "be8bd6ad-e652-4514-a868-1265d144818b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jhr419/SoftwareProject.git&quot;,
+    &quot;accountId&quot;: &quot;be8bd6ad-e652-4514-a868-1265d144818b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2xTef6HP04k2u993ywvhOgEJQjb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,16 +63,29 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/WorkFiles/Code/JavaCode/SoftwareProject",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.shelton.ebu6403.controller" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SmartMoney" />
@@ -154,6 +187,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update the project configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the project configuration files" />
+    <MESSAGE value="add new feature of fixedincome" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new feature of fixedincome" />
   </component>
 </project>
