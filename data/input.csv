@@ -1,4 +1,11 @@
 serialNo,name,date,amount
-1,Grocery,2025-06-19,85.20
-2,Electricity Bill,2025-06-18,120.75
-3,English Class,2025-06-17,300.00
+1,Rent,2025-04-01,1500.00
+2,Internet Bill,2025-04-05,60.00
+3,Coffee,2025-04-07,15.50
+4,Clothing,2025-04-12,250.00
+5,Transport Card Recharge,2025-04-15,100.00
+6,Dining Out,2025-04-18,80.25
+7,Books,2025-04-25,120.00
+8,Gym Membership,2025-05-01,200.00
+9,Grocery,2025-05-10,92.35
+10,Electricity Bill,2025-05-15,110.60

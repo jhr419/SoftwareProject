@@ -23,8 +23,8 @@ public class LoginController {
 
     @FXML
     public void initialize() {
-        loadImage(avatarView, "/com/shelton/ebu6403/images/avatar.png");
-        loadImage(eyeIcon, "/com/shelton/ebu6403/images/avatar.png");
+        loadImage(avatarView, "/com/shelton/ebu6403/images/icon.png");
+        loadImage(eyeIcon, "/com/shelton/ebu6403/images/hide.png");
 
     }
 
@@ -97,14 +97,14 @@ public class LoginController {
             passwordVisibleField.setManaged(true);
             passwordField.setVisible(false);
             passwordField.setManaged(false);
-            loadImage(eyeIcon, "/com/shelton/ebu6403/images/icon1.png");
+            loadImage(eyeIcon, "/com/shelton/ebu6403/images/show.png");
         } else {
             passwordField.setText(passwordVisibleField.getText());
             passwordField.setVisible(true);
             passwordField.setManaged(true);
             passwordVisibleField.setVisible(false);
             passwordVisibleField.setManaged(false);
-            loadImage(eyeIcon, "/com/shelton/ebu6403/images/icon.png");
+            loadImage(eyeIcon, "/com/shelton/ebu6403/images/hide.png");
         }
     }
 

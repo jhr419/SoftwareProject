@@ -1,6 +1,7 @@
 package com.shelton.ebu6403.controller;
 
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
@@ -34,25 +35,44 @@ public class InvestmentsController {
     public void initialize() {
         initCards();
         initSummary();
-        LocalDate today = LocalDate.now();
-        initInvestmentList(today); // 新版带日期的调用
-
         initChart();
-        summaryDatePicker.setValue(LocalDate.now()); // 默认显示今天
-        summaryDatePicker.valueProperty().addListener((obs, oldVal, newVal) -> {
-            if (newVal != null) {
-                updateSummaryForDate(newVal);
+
+        LocalDate today = LocalDate.now();
+
+        // 禁用 summaryDatePicker 未来日期
+        summaryDatePicker.setValue(today);
+        summaryDatePicker.setDayCellFactory(picker -> new DateCell() {
+            @Override
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                if (date.isAfter(today)) {
+                    setDisable(true);
+                }
             }
         });
+        summaryDatePicker.valueProperty().addListener((obs, o, n) -> {
+            if (n != null) updateSummaryForDate(n);
+        });
 
+        // 禁用 investmentDatePicker 未来日期
         investmentDatePicker.setValue(today);
-        investmentDatePicker.valueProperty().addListener((obs, oldDate, newDate) -> {
-            if (newDate != null) {
-                initInvestmentList(newDate); // 根据选定日期更新公司列表
+        investmentDatePicker.setDayCellFactory(picker -> new DateCell() {
+            @Override
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                if (date.isAfter(today)) {
+                    setDisable(true);
+                }
             }
         });
+        investmentDatePicker.valueProperty().addListener((obs, o, n) -> {
+            if (n != null) initInvestmentList(n);
+        });
 
+        // 第一次加载
+        initInvestmentList(today);
     }
+
 
     private void updateSummaryForDate(LocalDate date) {
         infoSummaryContainer.getChildren().clear();
@@ -284,7 +304,7 @@ public class InvestmentsController {
 
     private void initChart() {
         String path = "data/investment.csv";
-        Map<Integer, Double> monthlyRevenue = new HashMap<>(); // key: month (1~6)
+        Map<Integer, Double> monthlyRevenue = new HashMap<>();
 
         File file = new File(path);
         if (!file.exists()) {
@@ -292,15 +312,12 @@ public class InvestmentsController {
             return;
         }
 
+        // 读取并按月累计 revenue
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             boolean isFirst = true;
             while ((line = reader.readLine()) != null) {
-                if (isFirst) {
-                    isFirst = false;
-                    continue;
-                }
-
+                if (isFirst) { isFirst = false; continue; }
                 String[] parts = line.split(",", -1);
                 if (parts.length >= 3) {
                     LocalDate date = LocalDate.parse(parts[0].trim());
@@ -309,37 +326,46 @@ public class InvestmentsController {
                     double expense = Double.parseDouble(parts[2].trim());
                     double revenue = income - expense;
 
-                    monthlyRevenue.put(month, monthlyRevenue.getOrDefault(month, 0.0) + revenue);
+                    // 只统计不晚于今天的月份
+                    if (!date.isAfter(LocalDate.now())) {
+                        monthlyRevenue.put(month,
+                                monthlyRevenue.getOrDefault(month, 0.0) + revenue);
+                    }
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        // 准备绘图
         monthlyRevenueChart.getData().clear();
         XYChart.Series<String, Number> series = new XYChart.Series<>();
         series.setName("Revenue");
 
-        for (int month = 1; month <= 6; month++) {
-            double revenue = monthlyRevenue.getOrDefault(month, 0.0);
+        // 只画到当前月
+        int thisMonth = LocalDate.now().getMonthValue();
+        int maxMonth = Math.min(thisMonth, 6);  // 你的图表只关心 1–6 月
+
+        for (int month = 1; month <= maxMonth; month++) {
+            double rev = monthlyRevenue.getOrDefault(month, 0.0);
             String monthStr = String.format("%02d", month);
-            XYChart.Data<String, Number> dataPoint = new XYChart.Data<>(monthStr, revenue);
+            XYChart.Data<String, Number> dataPoint = new XYChart.Data<>(monthStr, rev);
             series.getData().add(dataPoint);
 
-            // 添加数值标签
+            // 添加数据标签
             dataPoint.nodeProperty().addListener((obs, oldNode, newNode) -> {
                 if (newNode != null) {
-                    Label label = new Label(String.format("$%.0f", revenue));
+                    Label label = new Label(String.format("$%.0f", rev));
                     label.setStyle("-fx-font-size: 11px; -fx-text-fill: #444;");
-                    StackPane.setAlignment(label, javafx.geometry.Pos.TOP_CENTER);
+                    StackPane.setAlignment(label, Pos.TOP_CENTER);
                     ((StackPane) newNode).getChildren().add(label);
                 }
             });
         }
 
         monthlyRevenueChart.getData().add(series);
-
     }
+
 
 
     private void initInvestmentList(LocalDate targetDate) {
@@ -380,7 +406,7 @@ public class InvestmentsController {
 
     private HBox createInvestmentItem(String name, String amount, String returnValue, String category, String color) {
         HBox row = new HBox(10);
-        ImageView icon = new ImageView(new Image(getClass().getResourceAsStream("/com/shelton/ebu6403/images/icon.png")));
+        ImageView icon = new ImageView(new Image(getClass().getResourceAsStream("/com/shelton/ebu6403/images/profile photo.png")));
         icon.setFitWidth(32); icon.setFitHeight(32);
         VBox desc = new VBox(new Label(name), new Label(category));
         Label amountLabel = new Label(amount);

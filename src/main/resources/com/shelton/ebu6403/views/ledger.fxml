@@ -42,7 +42,7 @@
             <!-- 右侧的顶部工具栏 -->
             <top>
                 <HBox styleClass="top-toolbar" alignment="CENTER_LEFT">
-                    <TextField promptText="搜索交易..." styleClass="search-field"/>
+                    <TextField promptText="Search transactions..." styleClass="search-field"/>
                     <Region HBox.hgrow="ALWAYS"/>
                     <Button styleClass="icon-btn">
                         <graphic>

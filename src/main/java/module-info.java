@@ -1,8 +1,8 @@
 module com.shelton.ebu6403.ledgerapp {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.net.http;      // 若你用 HttpClient，可加
-    requires org.json;           // 这是关键，显示声明使用 org.json
+    requires java.net.http;
+    requires org.json;
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
