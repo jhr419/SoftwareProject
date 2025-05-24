@@ -557,7 +557,7 @@ serialNo,name,date,amount,category
 556,Internet,2020-10-17,2445.19,Home
 557,Meat,2020-10-12,1680.37,Food
 558,Drinks,2020-10-08,8325.59,Food
-559,Swimming,2020-10-20,5915.47,Sports
+559,Swimming,2020-10-20,100.00,Sports
 560,Cafe,2020-10-09,9759.05,Food
 561,Travel Insurance,2020-10-15,3699.60,Travel
 562,Exam Fee,2020-10-10,8136.26,Education
@@ -6005,98 +6005,101 @@ serialNo,name,date,amount,category
 6004,Insurance,2025-05-11,359.90,Medical
 6005,Data Plan,2025-05-02,8857.50,Communication
 6006,Amusement Park,2025-05-15,2915.77,Entertainment
-6007,Storage,2025-05-21,4911.05,Others
-6008,Fuel,2025-05-10,4266.67,Transportation
-6009,Security,2025-05-01,6198.21,Others
-6010,Gas,2025-05-06,4364.70,Home
-6011,Donation,2025-05-14,4363.49,Others
-6012,Football,2025-05-20,8709.08,Sports
-6013,Dental Check,2025-05-02,83.25,Medical
-6014,Rent,2025-05-06,4672.58,Home
-6015,SIM Card,2025-05-28,6491.25,Communication
-6016,Amusement Park,2025-05-01,8526.42,Entertainment
-6017,Online Course,2025-05-03,9128.73,Education
-6018,Roaming,2025-05-14,5673.24,Communication
-6019,Theater,2025-05-18,6667.15,Entertainment
-6020,Vaccination,2025-05-09,3530.17,Medical
-6021,Maintenance,2025-05-04,9427.32,Home
-6022,Concert,2025-05-06,3597.06,Entertainment
-6023,Bus,2025-05-06,7405.66,Transportation
-6024,Notebook,2025-05-11,5648.79,Education
-6025,Sports Event,2025-05-19,5339.80,Entertainment
-6026,Game,2025-05-26,9782.83,Entertainment
-6027,Health Check,2025-05-18,9940.51,Medical
-6028,Ride Sharing,2025-05-22,9115.53,Transportation
-6029,Fuel,2025-05-12,7298.00,Transportation
-6030,Metro,2025-05-07,3175.26,Transportation
-6031,Amusement Park,2025-05-08,6555.98,Entertainment
-6032,Meat,2025-05-10,2422.22,Food
-6033,Scarf,2025-05-08,2521.33,Clothing
-6034,Workshop,2025-05-08,7531.33,Education
-6035,Therapy,2025-05-20,8052.30,Medical
-6036,Lottery,2025-05-14,1835.55,Others
-6037,Cleaning,2025-05-15,4331.72,Home
-6038,Therapy,2025-05-15,7335.47,Medical
-6039,Music Festival,2025-05-16,9379.44,Entertainment
-6040,Snacks,2025-05-26,2990.41,Food
-6041,Yoga,2025-05-15,6250.27,Sports
-6042,Charity,2025-05-09,8054.89,Others
-6043,Internet,2025-05-26,2073.02,Home
-6044,Data Plan,2025-05-02,2758.07,Communication
-6045,Health Check,2025-05-01,3637.67,Medical
-6046,Internet,2025-05-18,7049.05,Communication
-6047,Fuel,2025-05-27,2431.08,Travel
-6048,Hotel,2025-05-23,264.95,Travel
-6049,Karaoke,2025-05-19,2182.27,Entertainment
-6050,Belt,2025-05-09,7865.33,Clothing
-6051,Mortgage,2025-05-24,8891.83,Home
-6052,Health Check,2025-05-27,7315.23,Medical
-6053,Socks,2025-05-09,4943.08,Clothing
-6054,Workshop,2025-05-08,1091.47,Education
-6055,Vaccination,2025-05-18,2341.78,Medical
-6056,Accessories,2025-05-01,4557.49,Others
-6057,Mortgage,2025-05-19,9297.93,Home
-6058,Socks,2025-05-21,6364.96,Clothing
-6059,Internet,2025-05-22,751.66,Communication
-6060,Internet,2025-05-11,7256.13,Communication
-6061,Yoga,2025-05-21,1352.67,Sports
-6062,VPN,2025-05-28,9960.21,Communication
-6063,Electricity,2025-05-04,1010.11,Home
-6064,Storage,2025-05-07,6680.55,Others
-6065,Security,2025-05-14,2033.17,Others
-6066,Shoes,2025-05-26,3536.43,Clothing
-6067,Fuel,2025-05-19,532.38,Travel
-6068,Storage,2025-05-19,5386.29,Others
-6069,Notebook,2025-05-06,9738.02,Education
-6070,Fitness Class,2025-05-02,358.70,Sports
-6071,Health Check,2025-05-10,5893.12,Medical
-6072,Hotel,2025-05-12,2344.04,Travel
-6073,Bank Fee,2025-05-15,779.86,Others
-6074,Theater,2025-05-17,405.32,Entertainment
-6075,Electricity,2025-05-09,8317.56,Home
-6076,Insurance,2025-05-02,5983.59,Medical
-6077,Vegetables,2025-05-12,3551.92,Food
-6078,Drinks,2025-05-13,4536.40,Food
-6079,Karaoke,2025-05-14,9591.19,Entertainment
-6080,Pet,2025-05-04,3717.10,Others
-6081,Phone Bill,2025-05-06,2536.42,Communication
-6082,Basketball,2025-05-16,4482.86,Sports
-6083,Fast Food,2025-05-08,2336.95,Food
-6084,Gym,2025-05-19,4915.86,Sports
-6085,Online Course,2025-05-12,1733.79,Education
-6086,Delivery,2025-05-06,3766.19,Food
-6087,Mobile Recharge,2025-05-04,1296.06,Communication
-6088,VPN,2025-05-19,9820.52,Communication
-6089,Mortgage,2025-05-16,8870.83,Home
-6090,Seminar,2025-05-20,7680.38,Education
-6091,Flight,2025-05-11,5885.22,Travel
-6092,Mobile Recharge,2025-05-15,7218.95,Communication
-6093,Running,2025-05-27,4523.20,Sports
-6094,Parking,2025-05-12,5134.05,Transportation
-6095,Scarf,2025-05-12,2712.16,Clothing
-6096,Restaurant,2025-05-12,5057.87,Food
-6097,Running,2025-05-01,1941.65,Sports
-6098,Hotel,2025-05-28,7930.37,Travel
-6099,Course,2025-05-28,4500.96,Education
-6100,Strawberry,2025-05-24,40.00,Food
-6101,Taxi,2025-05-24,24.60,Transportation
+6007,Fuel,2025-05-10,4266.67,Transportation
+6008,Security,2025-05-01,6198.21,Others
+6009,Gas,2025-05-06,4364.70,Home
+6010,Donation,2025-05-14,4363.49,Others
+6011,Football,2025-05-20,8709.08,Sports
+6012,Dental Check,2025-05-02,83.25,Medical
+6013,Rent,2025-05-06,4672.58,Home
+6014,SIM Card,2025-05-28,6491.25,Communication
+6015,Amusement Park,2025-05-01,8526.42,Entertainment
+6016,Online Course,2025-05-03,9128.73,Education
+6017,Roaming,2025-05-14,5673.24,Communication
+6018,Theater,2025-05-18,6667.15,Entertainment
+6019,Vaccination,2025-05-09,3530.17,Medical
+6020,Maintenance,2025-05-04,9427.32,Home
+6021,Concert,2025-05-06,3597.06,Entertainment
+6022,Bus,2025-05-06,7405.66,Transportation
+6023,Notebook,2025-05-11,5648.79,Education
+6024,Sports Event,2025-05-19,5339.80,Entertainment
+6025,Game,2025-05-26,9782.83,Entertainment
+6026,Health Check,2025-05-18,9940.51,Medical
+6027,Ride Sharing,2025-05-22,9115.53,Transportation
+6028,Fuel,2025-05-12,7298.00,Transportation
+6029,Metro,2025-05-07,3175.26,Transportation
+6030,Amusement Park,2025-05-08,6555.98,Entertainment
+6031,Meat,2025-05-10,2422.22,Food
+6032,Scarf,2025-05-08,2521.33,Clothing
+6033,Workshop,2025-05-08,7531.33,Education
+6034,Therapy,2025-05-20,8052.30,Medical
+6035,Lottery,2025-05-14,1835.55,Others
+6036,Cleaning,2025-05-15,4331.72,Home
+6037,Therapy,2025-05-15,7335.47,Medical
+6038,Music Festival,2025-05-16,9379.44,Entertainment
+6039,Snacks,2025-05-26,2990.41,Food
+6040,Yoga,2025-05-15,6250.27,Sports
+6041,Charity,2025-05-09,8054.89,Others
+6042,Internet,2025-05-26,2073.02,Home
+6043,Data Plan,2025-05-02,2758.07,Communication
+6044,Health Check,2025-05-01,3637.67,Medical
+6045,Internet,2025-05-18,7049.05,Communication
+6046,Fuel,2025-05-27,2431.08,Travel
+6047,Hotel,2025-05-23,264.95,Travel
+6048,Karaoke,2025-05-19,2182.27,Entertainment
+6049,Belt,2025-05-09,7865.33,Clothing
+6050,Mortgage,2025-05-24,8891.83,Home
+6051,Health Check,2025-05-27,7315.23,Medical
+6052,Socks,2025-05-09,4943.08,Clothing
+6053,Workshop,2025-05-08,1091.47,Education
+6054,Vaccination,2025-05-18,2341.78,Medical
+6055,Accessories,2025-05-01,4557.49,Others
+6056,Mortgage,2025-05-19,9297.93,Home
+6057,Socks,2025-05-21,6364.96,Clothing
+6058,Internet,2025-05-22,751.66,Communication
+6059,Internet,2025-05-11,7256.13,Communication
+6060,Yoga,2025-05-21,1352.67,Sports
+6061,VPN,2025-05-28,9960.21,Communication
+6062,Electricity,2025-05-04,1010.11,Home
+6063,Storage,2025-05-07,6680.55,Others
+6064,Security,2025-05-14,2033.17,Others
+6065,Shoes,2025-05-26,3536.43,Clothing
+6066,Fuel,2025-05-19,532.38,Travel
+6067,Storage,2025-05-19,5386.29,Others
+6068,Notebook,2025-05-06,9738.02,Education
+6069,Fitness Class,2025-05-02,358.70,Sports
+6070,Health Check,2025-05-10,5893.12,Medical
+6071,Hotel,2025-05-12,2344.04,Travel
+6072,Bank Fee,2025-05-15,779.86,Others
+6073,Theater,2025-05-17,405.32,Entertainment
+6074,Electricity,2025-05-09,8317.56,Home
+6075,Insurance,2025-05-02,5983.59,Medical
+6076,Vegetables,2025-05-12,3551.92,Food
+6077,Drinks,2025-05-13,4536.40,Food
+6078,Karaoke,2025-05-14,9591.19,Entertainment
+6079,Pet,2025-05-04,3717.10,Others
+6080,Phone Bill,2025-05-06,2536.42,Communication
+6081,Basketball,2025-05-16,4482.86,Sports
+6082,Fast Food,2025-05-08,2336.95,Food
+6083,Gym,2025-05-19,4915.86,Sports
+6084,Online Course,2025-05-12,1733.79,Education
+6085,Delivery,2025-05-06,3766.19,Food
+6086,Mobile Recharge,2025-05-04,1296.06,Communication
+6087,VPN,2025-05-19,9820.52,Communication
+6088,Mortgage,2025-05-16,8870.83,Home
+6089,Seminar,2025-05-20,7680.38,Education
+6090,Flight,2025-05-11,5885.22,Travel
+6091,Mobile Recharge,2025-05-15,7218.95,Communication
+6092,Running,2025-05-27,4523.20,Sports
+6093,Parking,2025-05-12,5134.05,Transportation
+6094,Scarf,2025-05-12,2712.16,Clothing
+6095,Restaurant,2025-05-12,5057.87,Food
+6096,Running,2025-05-01,1941.65,Sports
+6097,Hotel,2025-05-28,7930.37,Travel
+6098,Course,2025-05-28,4500.96,Education
+6099,Strawberry,2025-05-24,40.00,Food
+6100,Taxi,2025-05-24,24.60,Transportation
+6101,Badminton,2025-05-24,100.00,Sports
+6102,food,2025-01-15,100.00,Food
+6103,foos,2022-01-15,200.00,Others
+6104,English class,2025-06-07,100.00,Education

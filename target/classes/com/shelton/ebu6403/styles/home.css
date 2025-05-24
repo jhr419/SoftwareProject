@@ -31,7 +31,7 @@
 }
 
 .card-category {
-    -fx-text-fill: -text-light;
+    -fx-text-fill: #ffffff;
     -fx-font-size: 14px;
 }
 
