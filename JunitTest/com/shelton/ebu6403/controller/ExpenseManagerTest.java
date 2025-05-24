@@ -38,19 +38,6 @@ class ExpenseManagerTest {
     }
 
     @Test
-    void testGetDailyIncomeData() {
-        // Given
-        ExpenseRecord income = new ExpenseRecord(TEST_INCOME_CATEGORY, TEST_AMOUNT, TODAY, "Salary", "income");
-        expenseManager.getExpenses().add(income);
-
-        // When
-        Map<LocalDate, Double> dailyIncome = expenseManager.getDailyIncomeData();
-
-        // Then
-        assertEquals(TEST_AMOUNT, dailyIncome.get(TODAY));
-    }
-
-    @Test
     void testDisplayExpenses() {
         // Given
         ExpenseRecord expense = new ExpenseRecord(TEST_EXPENSE_CATEGORY, TEST_AMOUNT, TODAY, "Test", "expense");

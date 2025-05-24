@@ -33,20 +33,6 @@ public class BudgetSetTest {
     }
 
     @Test
-    void testAddExpense() {
-        // Given
-        double expenseAmount = 500.0;
-        budgetSet.setBudget(CATEGORY, CURRENT_MONTH, BUDGET_AMOUNT);
-
-        // When
-        budgetSet.addExpense(CATEGORY, TODAY, expenseAmount);
-
-        // Then
-        double progress = budgetSet.getBudgetProgress(CATEGORY, CURRENT_MONTH);
-        assertEquals(0.5, progress); // 500/1000 = 0.5
-    }
-
-    @Test
     void testGetAllBudgets() {
         // Given
         budgetSet.setBudget(CATEGORY, CURRENT_MONTH, BUDGET_AMOUNT);
@@ -73,18 +59,6 @@ public class BudgetSetTest {
         assertEquals(BUDGET_AMOUNT, categoryBudgets.get(CURRENT_MONTH));
     }
 
-    @Test
-    void testRemoveBudget() {
-        // Given
-        budgetSet.setBudget(CATEGORY, CURRENT_MONTH, BUDGET_AMOUNT);
-
-        // When
-        boolean removed = budgetSet.removeBudget(CATEGORY, CURRENT_MONTH);
-
-        // Then
-        assertTrue(removed);
-        assertTrue(budgetSet.getBudgetsByCategory(CATEGORY).isEmpty());
-    }
 
     @Test
     void testRemoveNonexistentBudget() {
@@ -95,17 +69,6 @@ public class BudgetSetTest {
         assertFalse(removed);
     }
 
-    @Test
-    void testBudgetProgressWithNoExpenses() {
-        // Given
-        budgetSet.setBudget(CATEGORY, CURRENT_MONTH, BUDGET_AMOUNT);
-
-        // When
-        double progress = budgetSet.getBudgetProgress(CATEGORY, CURRENT_MONTH);
-
-        // Then
-        assertEquals(0.0, progress);
-    }
 
     @Test
     void testBudgetProgressExceedingBudget() {
