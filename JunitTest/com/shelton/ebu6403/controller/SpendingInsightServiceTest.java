@@ -16,6 +16,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
+/**
+ * Test class for SpendingInsightService.
+ * Contains test cases to verify the AI-powered spending analysis functionality including:
+ * - Successful insight generation
+ * - Empty expense list handling
+ * - API failure scenarios
+ * Uses Mockito for API client simulation.
+ */
 public class SpendingInsightServiceTest {
 
     @Mock
@@ -24,12 +32,19 @@ public class SpendingInsightServiceTest {
     private SpendingInsightService spendingInsightService;
     private List<ExpenseRecord> testExpenses;
 
+    /**
+     * Sets up the test environment before each test.
+     * Initializes:
+     * - Mock API client
+     * - Test expense records
+     * - SpendingInsightService instance with test data
+     */
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
         testExpenses = new ArrayList<>();
 
-        // 创建测试数据
+        // Create test expense records
         testExpenses.add(new ExpenseRecord(
             "Food",         // category
             100.0,         // amount
@@ -48,23 +63,41 @@ public class SpendingInsightServiceTest {
         spendingInsightService = new SpendingInsightService(testExpenses, mockApiClient);
     }
 
+    /**
+     * Tests successful generation of spending insights.
+     * Verifies that:
+     * - API call returns expected response
+     * - Response is properly processed
+     * - Result matches expected insight
+     *
+     * @throws Exception if there is an error during API communication
+     */
     @Test
     void testGenerateSpendingInsights_Success() throws Exception {
-        // 设置模拟API响应
+        // Setup mock API response
         String expectedInsight = "Test spending analysis response";
         when(mockApiClient.sendRequest(anyString())).thenReturn(expectedInsight);
 
-        // 执行测试
+        // Execute test
         String result = spendingInsightService.generateSpendingInsights();
 
-        // 验证结果
+        // Verify results
         assertNotNull(result);
         assertEquals(expectedInsight, result);
     }
 
+    /**
+     * Tests insight generation with empty expense list.
+     * Verifies that:
+     * - Empty expense list is handled gracefully
+     * - Appropriate message is returned
+     * - No errors are thrown
+     *
+     * @throws Exception if there is an error during API communication
+     */
     @Test
     void testGenerateSpendingInsights_EmptyExpenseList() throws Exception {
-        // 使用空的消费记录列表创建服务
+        // Create service with empty expense list
         spendingInsightService = new SpendingInsightService(new ArrayList<>(), mockApiClient);
         when(mockApiClient.sendRequest(anyString())).thenReturn("No expenses to analyze");
 
@@ -74,9 +107,18 @@ public class SpendingInsightServiceTest {
         assertEquals("No expenses to analyze", result);
     }
 
+    /**
+     * Tests insight generation when API call fails.
+     * Verifies that:
+     * - API failures are handled gracefully
+     * - Error message is properly formatted
+     * - Service continues to function despite API failure
+     *
+     * @throws Exception if there is an error during API communication
+     */
     @Test
     void testGenerateSpendingInsights_ApiFailure() throws Exception {
-        // 模拟API调用失败的情况
+        // Simulate API failure
         when(mockApiClient.sendRequest(anyString())).thenThrow(new RuntimeException("API Error"));
 
         String result = spendingInsightService.generateSpendingInsights();
