@@ -82,4 +82,8 @@ public class AiDeepseekController {
                     .getString("content");
         }
     }
+
+    public String testSendRequest(String question) throws Exception {
+        return sendRequest(question);
+    }
 }

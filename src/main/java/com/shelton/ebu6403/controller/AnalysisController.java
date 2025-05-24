@@ -119,7 +119,7 @@ public class AnalysisController {
         amountCol.setCellValueFactory(cellData ->
                 new SimpleStringProperty("$" + String.format("%.2f", cellData.getValue().getAmount())));
     }
-    private List<Transaction> readTransactionsFromCSV(String path, String type, LocalDate targetDate) {
+    List<Transaction> readTransactionsFromCSV(String path, String type, LocalDate targetDate) {
         List<Transaction> result = new ArrayList<>();
         File file = new File(path);
         if (!file.exists()) return result;
@@ -295,7 +295,7 @@ public class AnalysisController {
         return result;
     }
 
-    private Map<String, Double> aggregateByDayOrMonthOrYear(String filePath, String mode) {
+    Map<String, Double> aggregateByDayOrMonthOrYear(String filePath, String mode) {
         Map<String, Double> result = new LinkedHashMap<>();
         File file = new File(filePath);
         if (!file.exists()) return result;
