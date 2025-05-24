@@ -3,15 +3,34 @@ package com.shelton.ebu6403.models;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * An analyzer that detects seasonal expense patterns based on traditional Chinese holidays.
+ * <p>
+ * Provides budget reminder prompts before holidays and checks for unusual spending spikes.
+ * Useful for integrating spending context into AI-driven budgeting advice.
+ * </p>
+ *
+ * @author Weicheng Xie, Zhifei Liu, Haihan Sun
+ */
 public class ChineseHolidayAnalyzer {
 
+    /** List of all expense records to be analyzed */
     private List<ExpenseRecord> expenses;
 
+    /**
+     * Constructs a ChineseHolidayAnalyzer with the given expense data.
+     *
+     * @param expenses list of expense records
+     */
     public ChineseHolidayAnalyzer(List<ExpenseRecord> expenses) {
         this.expenses = expenses;
     }
-    // 添加：判断是否临近节日（提前7天提醒）
 
+    /**
+     * Generates a reminder message if a major holiday is within the next 7 days.
+     *
+     * @return a holiday reminder string; empty if no holiday is near
+     */
     public String getUpcomingHolidayReminder() {
         LocalDate now = LocalDate.now();
         int year = now.getYear();
@@ -35,76 +54,133 @@ public class ChineseHolidayAnalyzer {
         return "";
     }
 
-
-    // 判断春节支出是否异常高（1月20日 - 2月20日）
+    /**
+     * Detects if Spring Festival expenses (Jan 20 – Feb 20) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectSpringFestivalSpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 1, 20),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 1, 20),
                 LocalDate.of(LocalDate.now().getYear(), 2, 20),
-                1000);
+                1000
+        );
     }
 
-    // 判断五一劳动节支出是否异常高（5月1日 - 5月5日）
+    /**
+     * Detects if May Day expenses (May 1 – May 5) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectMayDaySpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 5, 1),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 5, 1),
                 LocalDate.of(LocalDate.now().getYear(), 5, 5),
-                800);
+                800
+        );
     }
 
-    // 判断国庆节支出是否异常高（10月1日 - 10月7日）
+    /**
+     * Detects if National Day expenses (Oct 1 – Oct 7) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectNationalDaySpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 10, 1),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 10, 1),
                 LocalDate.of(LocalDate.now().getYear(), 10, 7),
-                1000);
+                1000
+        );
     }
-    // 判断清明节支出是否异常高（3月28日 - 4月4日）
+
+    /**
+     * Detects if Qingming Festival expenses (Mar 28 – Apr 4) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectQingmingSpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 3, 28),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 3, 28),
                 LocalDate.of(LocalDate.now().getYear(), 4, 4),
-                500); // 阈值可调整
+                500
+        );
     }
 
-    // 判断儿童节支出是否异常高（5月25日 - 6月2日）
+    /**
+     * Detects if Children's Day expenses (May 25 – Jun 2) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectChildrenDaySpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 5, 25),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 5, 25),
                 LocalDate.of(LocalDate.now().getYear(), 6, 2),
-                300);
+                300
+        );
     }
 
-    // 判断端午节支出是否异常高（5月30日 - 6月7日）
+    /**
+     * Detects if Dragon Boat Festival expenses (May 30 – Jun 7) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectDragonBoatSpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 5, 30),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 5, 30),
                 LocalDate.of(LocalDate.now().getYear(), 6, 7),
-                500);
+                500
+        );
     }
 
-    // 判断中秋节支出是否异常高（9月10日 - 9月17日）
+    /**
+     * Detects if Mid-Autumn Festival expenses (Sep 10 – Sep 17) are unusually high.
+     *
+     * @return true if a spending spike is detected
+     */
     public boolean detectMidAutumnSpike() {
-        return detectSpikeBetween(LocalDate.of(LocalDate.now().getYear(), 9, 10),
+        return detectSpikeBetween(
+                LocalDate.of(LocalDate.now().getYear(), 9, 10),
                 LocalDate.of(LocalDate.now().getYear(), 9, 17),
-                600);
+                600
+        );
     }
 
-    // 公共方法：检测某个时间段内是否总支出超过阈值
+    /**
+     * Core method to check if total expenses during a period exceed a threshold.
+     * <p>
+     * Only considers expenses within the last month and within the target holiday window.
+     * </p>
+     *
+     * @param start     start date of the time window
+     * @param end       end date of the time window
+     * @param threshold the threshold amount for a spike
+     * @return true if total expenses exceed the threshold
+     */
     private boolean detectSpikeBetween(LocalDate start, LocalDate end, double threshold) {
-        LocalDate cutoff = LocalDate.now().minusMonths(1); // 限定只看过去一个月
+        LocalDate cutoff = LocalDate.now().minusMonths(1);
         double total = 0;
         for (ExpenseRecord record : expenses) {
             LocalDate date = record.getDate();
             if (!record.getTransactionType().equalsIgnoreCase("expense")) continue;
 
-            // 限定日期必须在过去1个月内，且落入节日时间段
             if ((date.isEqual(start) || date.isAfter(start)) &&
                     date.isBefore(end.plusDays(1)) &&
                     !date.isBefore(cutoff)) {
-
                 total += record.getAmount();
             }
         }
         return total > threshold;
     }
 
-
-    // 生成用于提示模型的自然语言上下文
+    /**
+     * Generates a seasonal spending context summary for use in AI prompts.
+     * <p>
+     * This method analyzes recent expense spikes and returns explanations
+     * tied to known Chinese holidays.
+     * </p>
+     *
+     * @return context string describing detected holiday spending
+     */
     public String generateSeasonalContext() {
         StringBuilder sb = new StringBuilder();
 
@@ -132,5 +208,4 @@ public class ChineseHolidayAnalyzer {
 
         return sb.toString();
     }
-
 }

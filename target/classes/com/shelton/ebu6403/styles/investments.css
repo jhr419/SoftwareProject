@@ -1,10 +1,17 @@
-/* ===== investments.css (updated) ===== */
+/*
+ * File: investments.css
+ * Description: Styling for investment cards, summaries, charts, and AI assistant UI.
+ * Applies to the investment dashboard section in LedgerEase.
+ * Author: LedgerEase Team
+ * Last updated: May 2025
+ */
 
-/* 卡片横向滚动区域 */
+/* Horizontal scroll container for investment cards */
 .card-scroll-container {
     -fx-padding: 10;
 }
 
+/* Bank card styles (both default and selected) */
 .bank-card, .bank-card-selected {
     -fx-background-color: #f5f5f5;
     -fx-background-radius: 20px;
@@ -17,11 +24,13 @@
     -fx-font-size: 14px;
 }
 
+/* Selected bank card with gradient highlight */
 .bank-card-selected {
     -fx-background-color: linear-gradient(to bottom right, #3f51b5, #1e88e5);
     -fx-text-fill: white;
 }
 
+/* Add new investment card style */
 .add-card {
     -fx-background-color: #eeeeee;
     -fx-background-radius: 20px;
@@ -35,11 +44,12 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0.1, 0, 2);
 }
 
+/* Icon inside the add-card */
 .add-icon {
     -fx-font-size: 48px;
 }
 
-/* Summary 小卡片 */
+/* Small summary cards for investment stats */
 .summary-card {
     -fx-background-color: white;
     -fx-background-radius: 15px;
@@ -49,7 +59,7 @@
     -fx-font-size: 13px;
 }
 
-/* 折线图标题 */
+/* Section title used above line charts */
 .section-title {
     -fx-font-size: 18px;
     -fx-font-weight: bold;
@@ -57,7 +67,7 @@
     -fx-text-fill: #333;
 }
 
-/* 投资列表项 */
+/* Individual investment list item style */
 .investment-item {
     -fx-background-color: #ffffff;
     -fx-background-radius: 15px;
@@ -70,7 +80,7 @@
     -fx-font-size: 14px;
 }
 
-/* AI Assistant 按钮样式 */
+/* AI Assistant button style */
 .ai-assistant-button {
     -fx-background-color: #3f51b5;
     -fx-text-fill: white;
@@ -82,7 +92,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 4, 0.1, 0, 1);
 }
 
-/* 对话框说明文字 */
+/* Dialog description text (e.g., tips, instructions) */
 .dialog-description {
     -fx-font-size: 13px;
     -fx-text-fill: #555;

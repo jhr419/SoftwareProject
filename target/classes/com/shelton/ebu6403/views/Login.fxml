@@ -4,45 +4,58 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
+
+<!--
+    File: Login.fxml
+    Description: Login interface for LedgerEase application.
+                 Allows user authentication via username/password or fingerprint.
+                 Includes password visibility toggle and navigation to registration.
+    Controller: com.shelton.ebu6403.controller.LoginController
+    Author: LedgerEase Team
+    Last updated: May 2025
+-->
+
 <VBox alignment="CENTER" spacing="20"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.shelton.ebu6403.controller.LoginController"
       style="-fx-background-color: #f5f6fa;">
 
+    <!-- Outer padding for the login form -->
     <padding>
         <Insets top="40" right="40" bottom="40" left="40"/>
     </padding>
 
-    <!-- User Avatar -->
+    <!-- User avatar icon (optional branding or personalization) -->
     <ImageView fx:id="avatarView" fitWidth="100" fitHeight="100"/>
 
-    <!-- Title -->
+    <!-- Title label -->
     <Label text="Welcome to LedgerEase" style="-fx-font-weight: bold; -fx-font-size: 24;">
         <font>
             <Font name="Arial"/>
         </font>
     </Label>
 
-    <!-- Username Input -->
+    <!-- Username input field -->
     <TextField fx:id="usernameField"
                promptText="Enter username"
                style="-fx-background-radius: 20; -fx-pref-width: 300;"/>
 
-    <!-- Password Input -->
-    <!-- Password Input with Visibility Toggle -->
+    <!-- Password input field with visibility toggle -->
     <HBox spacing="5" alignment="CENTER_LEFT">
         <StackPane>
+            <!-- Hidden password field (default) -->
             <PasswordField fx:id="passwordField"
                            promptText="Enter password"
                            style="-fx-background-radius: 20; -fx-pref-width: 300;" />
+            <!-- Visible password field (shown when toggled) -->
             <TextField fx:id="passwordVisibleField"
                        promptText="Enter password"
                        visible="false" managed="false"
                        style="-fx-background-radius: 20; -fx-pref-width: 300;" />
         </StackPane>
+        <!-- Eye icon to toggle password visibility -->
         <ImageView fx:id="eyeIcon"
                    fitWidth="20" fitHeight="20"
                    onMouseClicked="#togglePasswordVisibility"
@@ -50,9 +63,10 @@
                    style="-fx-cursor: hand;" />
     </HBox>
 
+    <!-- Message label for login errors or feedback -->
     <Label fx:id="loginMessage" text="" style="-fx-text-fill: red;" />
 
-    <!-- Login Button -->
+    <!-- Login button -->
     <Button text="Sign In" onAction="#handleLogin"
             style="-fx-background-color: #3498db;
                    -fx-text-fill: white;
@@ -61,7 +75,7 @@
                    -fx-pref-width: 300;
                    -fx-pref-height: 40;"/>
 
-    <!-- Fingerprint Section -->
+    <!-- Fingerprint login option -->
     <VBox alignment="CENTER" spacing="10">
         <Label text="Or use fingerprint"
                style="-fx-text-fill: #7f8c8d; -fx-font-size: 12;"/>
@@ -71,11 +85,9 @@
                    preserveRatio="true"/>
     </VBox>
 
-    <!-- Footer Link -->
+    <!-- Link to registration screen -->
     <Hyperlink text="Create new account"
                onAction="#handleCreateAccount"
                style="-fx-text-fill: #3498db; -fx-border-color: transparent;" />
 
 </VBox>
-
-

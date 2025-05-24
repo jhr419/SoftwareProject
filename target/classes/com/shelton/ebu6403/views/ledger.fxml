@@ -2,44 +2,58 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.ImageView?>
-
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
 
-<!-- ledger.fxml -->
+<!--
+    File: ledger.fxml
+    Description: Main layout container for the LedgerEase application.
+                 Contains:
+                 - Sidebar navigation with page buttons
+                 - Top toolbar with search, language selector, notifications, and avatar
+                 - Dynamic content area (e.g., Home, Analysis, Categories, etc.)
+    Controller: com.shelton.ebu6403.controller.LedgerController
+    Stylesheet: ../styles/main.css
+    Author: LedgerEase Team
+    Last updated: May 2025
+-->
+
 <BorderPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:id="mainContainer"
             fx:controller="com.shelton.ebu6403.controller.LedgerController"
             stylesheets="@../styles/main.css">
 
-    <!-- 左侧导航栏 (固定宽度) -->
+    <!-- Left sidebar navigation with fixed width -->
     <left>
         <VBox spacing="15" styleClass="nav-sidebar" prefWidth="150">
+            <!-- Navigation buttons -->
             <Button text="Home" onAction="#loadHome" styleClass="nav-btn"/>
             <Button text="Analysis" onAction="#loadAnalysis" styleClass="nav-btn"/>
             <Button text="Categories" onAction="#loadCategories" styleClass="nav-btn"/>
             <Button text="Investments" onAction="#loadInvestments" styleClass="nav-btn"/>
             <Button text="Setting" onAction="#loadSettings" styleClass="nav-btn"/>
+
+            <!-- Spacer pushes AI button to bottom -->
             <Region fx:id="spacer" VBox.vgrow="ALWAYS" />
 
-            <!-- AI按钮靠底 -->
+            <!-- AI Assistant button -->
             <Button text="AI Helper"
                     prefWidth="120"
                     onAction="#loadAiChat"
                     style="-fx-background-color: #ff4c4c;
-               -fx-text-fill: white;
-               -fx-font-weight: bold;
-               -fx-background-radius: 20;
-               -fx-padding: 6 12 6 12;
-               -fx-translate-x: 10;" />
+                           -fx-text-fill: white;
+                           -fx-font-weight: bold;
+                           -fx-background-radius: 20;
+                           -fx-padding: 6 12 6 12;
+                           -fx-translate-x: 10;" />
         </VBox>
     </left>
 
-    <!-- 右侧主区域 (BorderPane嵌套) -->
+    <!-- Main content area with nested BorderPane -->
     <center>
         <BorderPane>
-            <!-- 右侧的顶部工具栏 -->
+            <!-- Top toolbar with search, language selection, and avatar -->
             <top>
                 <HBox styleClass="top-toolbar" alignment="CENTER_LEFT">
                     <TextField promptText="Search transactions..." styleClass="search-field"/>
@@ -61,7 +75,7 @@
                 </HBox>
             </top>
 
-            <!-- 右侧的动态内容区域 -->
+            <!-- Center area dynamically loads selected content (default is home.fxml) -->
             <center>
                 <fx:include fx:id="contentContainer" source="home.fxml"/>
             </center>

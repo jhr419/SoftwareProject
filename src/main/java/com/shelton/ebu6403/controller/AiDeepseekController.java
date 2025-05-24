@@ -105,17 +105,4 @@ public class AiDeepseekController {
                     .getString("content");
         }
     }
-
-    /**
-     * Test method for sending a request to the AI API.
-     * <p>
-     * Used for unit testing or debugging the sendRequest method.
-     * </p>
-     * @param question The user's question to send to the AI.
-     * @return The AI's response as a String.
-     * @throws Exception If an error occurs during the request or response parsing.
-     */
-    public String testSendRequest(String question) throws Exception {
-        return sendRequest(question);
-    }
 }

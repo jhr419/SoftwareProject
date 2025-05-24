@@ -2,62 +2,116 @@ package com.shelton.ebu6403.models;
 
 import java.time.LocalDate;
 
+/**
+ * Represents a single financial transaction, including both income and expenses.
+ * <p>
+ * Stores details such as category, amount, date, item name, and transaction type.
+ * Also supports an optional AI-based classification field.
+ * </p>
+ *
+ * author Haoran Jin, Haihan Sun, Jia Liu
+ */
 public class ExpenseRecord {
-    private String category;       // 分类
-    private String aiCategory;     // AI分类
 
-    private double amount;         // 金额
-    private LocalDate date;        // 日期
-    private String itemName;       // 物品名称
-    private String transactionType; // 交易类型："income" 或 "expense"
+    /** Human-assigned category (e.g., Food, Travel) */
+    private String category;
+
+    /** AI-predicted category (optional) */
+    private String aiCategory;
+
+    /** Transaction amount */
+    private double amount;
+
+    /** Date of the transaction */
+    private LocalDate date;
+
+    /** Description or name of the item */
+    private String itemName;
+
+    /** Type of transaction: "income" or "expense" */
+    private String transactionType;
+
+    /** Whether to enable AI classification */
     private boolean useAI = true;
 
-    public ExpenseRecord(String Category, double amount, LocalDate date, String itemName, String transactionType) {
-        this.category = Category;
-        //this.aiCategory = aiCategory;  // AI分类
+    /**
+     * Constructs an ExpenseRecord with specified parameters.
+     *
+     * @param category         the manual category name
+     * @param amount           the transaction amount
+     * @param date             the transaction date
+     * @param itemName         the name or label of the transaction
+     * @param transactionType  "income" or "expense"
+     */
+    public ExpenseRecord(String category, double amount, LocalDate date, String itemName, String transactionType) {
+        this.category = category;
         this.amount = amount;
         this.date = date;
         this.itemName = itemName;
         this.transactionType = transactionType;
     }
+
+    /**
+     * Sets the manual category.
+     *
+     * @param category the new category
+     */
     public void setCategory(String category) {
         this.category = category;
     }
 
-
+    /**
+     * Gets the manual category.
+     *
+     * @return the category
+     */
     public String getCategory() {
-       return category;
+        return category;
     }
 
+    /**
+     * Gets the transaction amount.
+     *
+     * @return the amount
+     */
     public double getAmount() {
         return amount;
     }
 
+    /**
+     * Gets the date of the transaction.
+     *
+     * @return the date
+     */
     public LocalDate getDate() {
         return date;
     }
 
+    /**
+     * Gets the item name or description.
+     *
+     * @return the item name
+     */
     public String getItemName() {
         return itemName;
     }
 
+    /**
+     * Gets the transaction type.
+     *
+     * @return "income" or "expense"
+     */
     public String getTransactionType() {
         return transactionType;
     }
-    public String getAiCategory() {
-        return aiCategory;
-    }
-    public void setAiCategory(String aiCategory) {
-        this.aiCategory = aiCategory;
-    }
-    public boolean getUseAI(){
-        return useAI;
-    }
 
-
+    /**
+     * Returns a CSV-style string representation of the record.
+     *
+     * @return CSV string including category, amount, date, item name, and type
+     */
     @Override
     public String toString() {
-        // 保存时采用 CSV 格式，新增交易类型字段
         return category + "," + amount + "," + date + "," + itemName + "," + transactionType;
     }
 }

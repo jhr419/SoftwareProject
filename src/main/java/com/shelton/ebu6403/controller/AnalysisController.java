@@ -17,9 +17,19 @@ import java.time.YearMonth;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Controller class for the Analysis view in LedgerEase.
+ * <p>
+ * Provides calendar-based financial data exploration, including daily, monthly, and yearly views.
+ * Supports transaction summaries, income/expense charts, and category-based pie charts.
+ * </p>
+ *
+ * Author: Haoran Jin, Zuhao Zhang, Haihan Sun
+ * Date: May 2025
+ */
+
 public class AnalysisController {
 
-    @FXML private VBox dailyDetailsContainer;
     @FXML private VBox calendarContainer;
     @FXML private TableView<Transaction> transactionsTable;
     @FXML private Label summaryIncome, summarySpend, summaryBalance;
@@ -31,14 +41,17 @@ public class AnalysisController {
 
     private YearMonth currentYearMonth = YearMonth.now();
 
+    /**
+     * Initializes the controller and sets up UI components.
+     */
     @FXML
     public void initialize() {
-        // Daily 部分初始化
+        // Daily initialize
         buildCalendar();
         setupTransactionTable();
         loadDailyData(LocalDate.now());
 
-        // Analysis 部分初始化
+        // Analysis initialize
         setupAnalysisTabs();
         analysisTabs.getSelectionModel().selectedItemProperty().addListener((obs, oldTab, newTab) -> {
             if (newTab.getText().equals("Daily")) {
@@ -51,11 +64,13 @@ public class AnalysisController {
         });
 
     }
-
+    /**
+     * Builds calendar view with clickable days.
+     */
     private void buildCalendar() {
         calendarContainer.getChildren().clear();
 
-        // 月份和年份选择
+        // choose month and year
         HBox header = new HBox(10);
         ComboBox<String> monthCombo = new ComboBox<>(FXCollections.observableArrayList(
                 "January", "February", "March", "April", "May", "June",
@@ -78,7 +93,7 @@ public class AnalysisController {
         header.getChildren().addAll(monthCombo, yearSpinner);
         calendarContainer.getChildren().add(header);
 
-        // 星期标题
+        // weekday and weekend choice
         GridPane dayNames = new GridPane();
         String[] dayNamesArr = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
         for (int i = 0; i < 7; i++) {
@@ -88,7 +103,7 @@ public class AnalysisController {
         }
         calendarContainer.getChildren().add(dayNames);
 
-        // 日期按钮
+        // date button
         GridPane calendarGrid = new GridPane();
         LocalDate firstOfMonth = currentYearMonth.atDay(1);
         int dayOfWeek = firstOfMonth.getDayOfWeek().getValue() % 7; // Sunday = 0
@@ -105,7 +120,9 @@ public class AnalysisController {
         }
         calendarContainer.getChildren().add(calendarGrid);
     }
-
+    /**
+     * Configures transaction table columns.
+     */
     private void setupTransactionTable() {
         TableColumn<Transaction, String> categoryCol = (TableColumn<Transaction, String>) transactionsTable.getColumns().get(0);
         categoryCol.setCellValueFactory(cellData ->
@@ -119,6 +136,14 @@ public class AnalysisController {
         amountCol.setCellValueFactory(cellData ->
                 new SimpleStringProperty("$" + String.format("%.2f", cellData.getValue().getAmount())));
     }
+
+    /**
+     * Reads a list of transactions from a CSV file filtered by date.
+     * @param path The file path to read from.
+     * @param type The type of transaction ("Income" or "Spend").
+     * @param targetDate The date to match.
+     * @return A list of matching transactions.
+     */
     List<Transaction> readTransactionsFromCSV(String path, String type, LocalDate targetDate) {
         List<Transaction> result = new ArrayList<>();
         File file = new File(path);
@@ -147,14 +172,14 @@ public class AnalysisController {
 
         return result;
     }
-
+    /**
+     * Loads transactions for a given date and updates UI summary.
+     * @param date The date to load transactions for.
+     */
     private void loadDailyData(LocalDate date) {
         ObservableList<Transaction> transactions = FXCollections.observableArrayList();
 
-        // 读取所有数据（支出）
         transactions.addAll(readTransactionsFromCSV("data/expenses.csv", "Spend", date));
-
-        // 读取所有数据（收入）
         transactions.addAll(readTransactionsFromCSV("data/incomes.csv", "Income", date));
 
         transactionsTable.setItems(transactions);
@@ -174,18 +199,25 @@ public class AnalysisController {
         summaryBalance.setText(String.format("Balance: $%.2f", income - spend));
     }
 
-
+    /**
+     * Sets up tab content containers for Daily/Monthly/Yearly analysis.
+     */
     private void setupAnalysisTabs() {
         createAnalysisTabContent(analysisDailyPane, "Daily");
         createAnalysisTabContent(analysisMonthlyPane, "Monthly");
         createAnalysisTabContent(analysisYearlyPane, "Yearly");
     }
 
+    /**
+     * Populates a given analysis pane with bar and pie charts.
+     * @param pane The pane to populate.
+     * @param type The time aggregation type: Daily, Monthly, or Yearly.
+     */
     private void createAnalysisTabContent(VBox pane, String type) {
 
         pane.getChildren().clear();
 
-        // 柱状图（收入+支出）
+        // bar chart
         CategoryAxis xAxis = new CategoryAxis();
         xAxis.setLabel(type);
         NumberAxis yAxis = new NumberAxis();
@@ -201,7 +233,7 @@ public class AnalysisController {
         XYChart.Series<String, Number> expenseSeries = new XYChart.Series<>();
         expenseSeries.setName("Expense");
 
-        // 加载柱状图数据（按日、月或年）
+        // load data
         Map<String, Double> incomeData = new LinkedHashMap<>();
         Map<String, Double> expenseData = new LinkedHashMap<>();
 
@@ -234,14 +266,12 @@ public class AnalysisController {
 
         barChart.getData().addAll(incomeSeries, expenseSeries);
 
-        // 右侧信息：均值卡片（静态或后续可动态计算）
         VBox avgBox = new VBox(10);
 
         double incomeSum = incomeData.values().stream().mapToDouble(d -> d).sum();
         double expenseSum = expenseData.values().stream().mapToDouble(d -> d).sum();
         int count = incomeData.size(); // 或 expenseData.size()
 
-        // 防止除以 0
         int divider = Math.max(count, 1);
 
         Label avgIncome = new Label(type + " Average Income: $" + String.format("%.2f", incomeSum / divider));
@@ -249,8 +279,7 @@ public class AnalysisController {
 
         avgBox.getChildren().addAll(avgIncome, avgExpense);
 
-
-        // 饼图：仅统计当前月的支出分类
+        // pie chart
         PieChart pieChart = new PieChart();
         pieChart.setTitle("Category Share");
 
@@ -263,38 +292,19 @@ public class AnalysisController {
         rightPane.getChildren().addAll(avgBox, pieChart);
         rightPane.setPrefWidth(300);
 
-        // 最终布局
         HBox layout = new HBox(20);
         layout.getChildren().addAll(barChart, rightPane);
         pane.getChildren().add(layout);
     }
 
-
-    private Map<Integer, Double> aggregateByDay(String filePath) {
-        Map<Integer, Double> result = new HashMap<>();
-        File file = new File(filePath);
-        if (!file.exists()) return result;
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            String line;
-            boolean isFirst = true;
-            while ((line = reader.readLine()) != null) {
-                if (isFirst) { isFirst = false; continue; }
-                String[] parts = line.split(",", -1);
-                if (parts.length >= 3) {
-                    String date = parts[2]; // yyyy-MM-dd
-                    int day = Integer.parseInt(date.substring(8, 10));
-                    double amount = Double.parseDouble(parts[3]);
-                    result.put(day, result.getOrDefault(day, 0.0) + amount);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return result;
-    }
-
+    /**
+     * Aggregates transaction amounts by day, month, or year based on the mode.
+     * Only includes data from the current year or month as applicable.
+     *
+     * @param filePath The path to the CSV file
+     * @param mode Aggregation mode: "day", "month", or "year"
+     * @return A map of date keys to aggregated amounts
+     */
     Map<String, Double> aggregateByDayOrMonthOrYear(String filePath, String mode) {
         Map<String, Double> result = new LinkedHashMap<>();
         File file = new File(filePath);
@@ -339,8 +349,13 @@ public class AnalysisController {
         return result;
     }
 
-
-
+    /**
+     * Aggregates expenses by category for a specified month.
+     *
+     * @param filePath The path to the CSV file
+     * @param targetMonth The month to filter for (1–12)
+     * @return A map of category names to total expenses in that category
+     */
     private Map<String, Double> aggregateByCategoryForMonth(String filePath, int targetMonth) {
         Map<String, Double> result = new HashMap<>();
         File file = new File(filePath);
@@ -369,31 +384,9 @@ public class AnalysisController {
         return result;
     }
 
-
-    private Map<String, Double> aggregateByCategory(String filePath) {
-        Map<String, Double> result = new HashMap<>();
-        File file = new File(filePath);
-        if (!file.exists()) return result;
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            String line;
-            boolean isFirst = true;
-            while ((line = reader.readLine()) != null) {
-                if (isFirst) { isFirst = false; continue; }
-                String[] parts = line.split(",", -1);
-                if (parts.length >= 5) {
-                    String category = parts[4];
-                    double amount = Double.parseDouble(parts[3]);
-                    result.put(category, result.getOrDefault(category, 0.0) + amount);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return result;
-    }
-
+    /**
+     * Data model for a single financial transaction.
+     */
     public static class Transaction {
         private final String category;
         private final String type;

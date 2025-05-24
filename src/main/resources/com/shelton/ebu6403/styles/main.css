@@ -1,14 +1,23 @@
-/* 基础样式 */
+/*
+ * File: main.css
+ * Description: Root theme variables, sidebar layout, top bar, language selectors,
+ * and search box design for LedgerEase's primary interface.
+ * Author: LedgerEase Team
+ * Last updated: May 2025
+ */
+
+/* ===== Base Styles ===== */
 .root {
-    /* 主色调 */
+    /* Primary theme colors */
     -primary-blue: #4285f4;
     -text-light-gray: #9e9e9e;
     -text-dark-gray: #616161;
-    -bg-ultralight: #f5f5f5;  /* 动态页面背景 */
-    -bg-light: #eeeeee;       /* 搜索框背景 */
+    -bg-ultralight: #f5f5f5;  /* Light background for dynamic views */
+    -bg-light: #eeeeee;       /* Background for search box */
     -card-white: #ffffff;
 }
 
+/* ===== Primary Buttons ===== */
 .primary-button {
     -fx-background-color: #4A90E2;
     -fx-text-fill: white;
@@ -17,7 +26,7 @@
     -fx-padding: 6 16 6 16;
 }
 
-
+/* ===== Sidebar Navigation ===== */
 .nav-sidebar {
     -fx-background-color: -card-white;
     -fx-padding: 20px 0;
@@ -44,7 +53,7 @@
     -fx-border-width: 0 0 0 3px;
 }
 
-/* 图标样式（需准备24x24图标） */
+/* ===== Sidebar Icon Styles (expecting 24x24 icons) ===== */
 .nav-btn .ikonli-font-icon {
     -fx-icon-color: -text-light-gray;
     -fx-icon-size: 24px;
@@ -54,38 +63,44 @@
     -fx-icon-color: -primary-blue;
 }
 
+/* ===== Search Box Styles ===== */
 .search-field {
     -fx-pref-width: 300px;
     -fx-background-radius: 20px;
     -fx-prompt-text-fill: #95a5a6;
 }
 
-/* 用户头像 */
+.search-field {
+    -fx-background-color: -bg-light;
+    -fx-background-radius: 20;
+    -fx-prompt-text-fill: -text-light-gray;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15 8 35;
+    -fx-pref-width: 300px;
+    -fx-background-image: url('/com/shelton/ebu6403/images/icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10px center;
+}
+
+/* ===== User Avatar ===== */
 .user-avatar {
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 3);
     -fx-border-radius: 20px;
 }
 
-.lang-combo {
-
-}
-
-.icon-btn {
-}
-
-/* 右侧顶部工具栏 */
+/* ===== Top Right Toolbar ===== */
 .top-toolbar {
     -fx-background-color: white;
     -fx-padding: 12px 25px;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 6, 0, 0, 3);
 }
 
-/* 确保内容区域不被遮挡 */
+/* Ensure center content is not obscured */
 BorderPane > .center > BorderPane > .center {
     -fx-padding: 15px;
 }
 
-/* 语言选择框样式 */
+/* ===== Language ComboBox ===== */
 .lang-combo {
     -fx-pref-width: 120;
     -fx-background-radius: 15;
@@ -104,18 +119,6 @@ BorderPane > .center > BorderPane > .center {
     -fx-background-color: transparent;
 }
 
-.search-field {
-    -fx-background-color: -bg-light;
-    -fx-background-radius: 20;
-    -fx-prompt-text-fill: -text-light-gray;
-    -fx-font-size: 14px;
-    -fx-padding: 8 15 8 35;
-    -fx-pref-width: 300px;
-}
-
-/* 搜索图标 */
-.search-field {
-    -fx-background-image: url('/com/shelton/ebu6403/images/icon.png');
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: 10px center;
-}
+/* ===== Empty Classes for Custom Icons or Buttons (reserved for extension) ===== */
+.lang-combo { }
+.icon-btn { }
