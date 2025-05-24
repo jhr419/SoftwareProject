@@ -12,6 +12,14 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * Controller for the AI chat interface.
+ * <p>
+ * Handles user input, sends requests to the AI API, and displays AI responses.
+ * Supports asynchronous requests to prevent UI blocking.
+ * </p>
+ * author Haoran Jin, Zhifei liu， Zuhao Zhang
+ */
 public class AiDeepseekController {
     @FXML private VBox aiContainer;
     @FXML private TextArea inputArea;
@@ -20,6 +28,12 @@ public class AiDeepseekController {
 
     private final String apiKey = "sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf"; // 替换成你的 API Key
 
+    /**
+     * Initializes the AI chat interface.
+     * <p>
+     * Sets up the send button action to handle user input and display AI responses asynchronously.
+     * </p>
+     */
     @FXML
     public void initialize() {
         sendButton.setOnAction(e -> {
@@ -39,6 +53,15 @@ public class AiDeepseekController {
         });
     }
 
+    /**
+     * Sends a request to the AI API with the given question and returns the AI's response.
+     * <p>
+     * Constructs the request payload, sends it to the API endpoint, and parses the response.
+     * </p>
+     * @param question The user's question to send to the AI.
+     * @return The AI's response as a String.
+     * @throws Exception If an error occurs during the request or response parsing.
+     */
     private String sendRequest(String question) throws Exception {
         JSONObject jsonPayload = new JSONObject();
         jsonPayload.put("model", "Qwen/Qwen2.5-72B-Instruct");
@@ -83,6 +106,15 @@ public class AiDeepseekController {
         }
     }
 
+    /**
+     * Test method for sending a request to the AI API.
+     * <p>
+     * Used for unit testing or debugging the sendRequest method.
+     * </p>
+     * @param question The user's question to send to the AI.
+     * @return The AI's response as a String.
+     * @throws Exception If an error occurs during the request or response parsing.
+     */
     public String testSendRequest(String question) throws Exception {
         return sendRequest(question);
     }
