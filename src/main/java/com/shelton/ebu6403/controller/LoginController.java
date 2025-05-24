@@ -10,17 +10,35 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.util.Objects;
 
+/**
+ * Controller class for handling user login functionality.
+ * <p>
+ * Manages user authentication, account creation, and password visibility.
+ * </p>
+ * author Zuhao Zhang, Jia LIU, Haihan Sun
+ */
 public class LoginController {
+    /** Username input field */
     @FXML private TextField usernameField;
+    /** Password input field (hidden) */
     @FXML private PasswordField passwordField;
+    /** Fingerprint icon for biometric login */
     @FXML private ImageView fingerprintIcon;
+    /** Label for displaying login status messages */
     @FXML private Label loginMessage;
+    /** Password input field (visible) */
     @FXML private TextField passwordVisibleField;
+    /** Icon for toggling password visibility */
     @FXML private ImageView eyeIcon;
+    /** Flag indicating whether password is visible */
     private boolean passwordVisible = false;
-
+    /** User avatar display */
     @FXML private ImageView avatarView;
 
+    /**
+     * Initializes the controller.
+     * Loads necessary images for the interface.
+     */
     @FXML
     public void initialize() {
         loadImage(avatarView, "/com/shelton/ebu6403/images/icon.png");
@@ -28,6 +46,11 @@ public class LoginController {
 
     }
 
+    /**
+     * Loads an image from resources into an ImageView.
+     * @param imageView The ImageView to load the image into
+     * @param resourcePath The path to the image resource
+     */
     private void loadImage(ImageView imageView, String resourcePath) {
         try {
             Image image = new Image(Objects.requireNonNull(
@@ -35,11 +58,16 @@ public class LoginController {
             ));
             imageView.setImage(image);
         } catch (NullPointerException e) {
-            System.err.println("资源加载失败: " + resourcePath);
-            // 设置默认占位图或处理错误
+            System.err.println("Failed to load resource: " + resourcePath);
+            // Set default placeholder or handle error
         }
     }
 
+    /**
+     * Handles the login button click event.
+     * Validates credentials and opens the main application if successful.
+     * @throws IOException If there's an error loading the main view
+     */
     @FXML
     private void handleLogin() throws IOException {
         String username = usernameField.getText().trim();
@@ -49,11 +77,11 @@ public class LoginController {
         boolean loginSuccess = checkCredentials(username, password);
 
         if (!loginSuccess) {
-            loginMessage.setText("Login failed. Hint: It’s your school");
+            loginMessage.setText("Login failed. Hint: It's your school");
             return;
         }
 
-        loginMessage.setText(""); // 清空提示
+        loginMessage.setText(""); // Clear message
         Stage currentStage = (Stage) usernameField.getScene().getWindow();
         currentStage.close();
 
@@ -66,6 +94,12 @@ public class LoginController {
         mainStage.show();
     }
 
+    /**
+     * Validates user credentials against stored values.
+     * @param user The username to check
+     * @param pass The password to check
+     * @return true if credentials are valid, false otherwise
+     */
     private boolean checkCredentials(String user, String pass) {
         File file = new File("data/users.csv");
         if (!file.exists()) return user.equals("BUPT") && pass.equals("BUPT");
@@ -82,11 +116,14 @@ public class LoginController {
             e.printStackTrace();
         }
 
-        // 没写入，默认
+        // If no match found in file, use default credentials
         return user.equals("BUPT") && pass.equals("BUPT");
     }
 
-
+    /**
+     * Toggles password visibility between hidden and visible states.
+     * Updates the UI to show/hide password and changes the eye icon accordingly.
+     */
     @FXML
     private void togglePasswordVisibility() {
         passwordVisible = !passwordVisible;
@@ -108,6 +145,10 @@ public class LoginController {
         }
     }
 
+    /**
+     * Shows a dialog for creating a new user account.
+     * Validates input fields and saves the new account if validation passes.
+     */
     @FXML
     private void handleCreateAccount() {
         Dialog<ButtonType> dialog = new Dialog<>();
@@ -151,7 +192,6 @@ public class LoginController {
                 }
 
                 saveUserToFile(user, pass);
-
             }
             return null;
         });
@@ -159,7 +199,12 @@ public class LoginController {
         dialog.showAndWait();
     }
 
-
+    /**
+     * Saves new user credentials to the users database file.
+     * Appends the username and password to the CSV file.
+     * @param username The username to save
+     * @param password The password to save
+     */
     private void saveUserToFile(String username, String password) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("data/users.csv", true))) {
             writer.newLine();
@@ -169,6 +214,11 @@ public class LoginController {
         }
     }
 
+    /**
+     * Displays a warning alert dialog.
+     * Shows validation errors or other important messages to the user.
+     * @param msg The message to display in the alert
+     */
     private void showInlineAlert(String msg) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("Invalid Input");
@@ -177,6 +227,12 @@ public class LoginController {
         alert.showAndWait();
     }
 
+    /**
+     * Checks if a username is already registered.
+     * Performs a case-insensitive search in the users database file.
+     * @param username The username to check for existence
+     * @return true if the username exists, false otherwise
+     */
     private boolean isUsernameExists(String username) {
         File file = new File("data/users.csv");
         if (!file.exists()) return false;
@@ -192,16 +248,7 @@ public class LoginController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return false;
     }
-
-
-    private void showErrorDialog(String title, String message) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
 }
+
