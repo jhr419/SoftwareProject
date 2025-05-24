@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BudgetSetTest {
     private BudgetSet budgetSet;
-    private final String CATEGORY = "食品";
+    private final String CATEGORY = "Food";
     private final YearMonth CURRENT_MONTH = YearMonth.now();
     private final LocalDate TODAY = LocalDate.now();
     private final double BUDGET_AMOUNT = 1000.0;
@@ -88,7 +88,7 @@ public class BudgetSetTest {
     @Test
     void testRemoveNonexistentBudget() {
         // When
-        boolean removed = budgetSet.removeBudget("不存在的类别", CURRENT_MONTH);
+        boolean removed = budgetSet.removeBudget("NonexistentCategory", CURRENT_MONTH);
 
         // Then
         assertFalse(removed);
@@ -122,7 +122,7 @@ public class BudgetSetTest {
     @Test
     void testBudgetProgressWithNoBudget() {
         // When
-        double progress = budgetSet.getBudgetProgress("不存在的类别", CURRENT_MONTH);
+        double progress = budgetSet.getBudgetProgress("NonexistentCategory", CURRENT_MONTH);
 
         // Then
         assertEquals(0.0, progress);

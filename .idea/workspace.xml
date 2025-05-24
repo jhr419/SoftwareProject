@@ -67,8 +67,10 @@
 }]]></component>
   <component name="RunManager" selected="JUnit.BudgetSetTest">
     <configuration name="LedgerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.LedgerApp" />
-      <module name="SmartMoney" />
+      <module name="ledgerEase" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shelton.ebu6403.*" />
@@ -155,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BudgetSetTest" />
+        <item itemvalue="应用程序.LedgerApp" />
         <item itemvalue="JUnit.SpendingInsightServiceTest (1)" />
         <item itemvalue="JUnit.SpendingInsightServiceTest" />
         <item itemvalue="JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success" />
-        <item itemvalue="应用程序.LedgerApp" />
       </list>
     </recent_temporary>
   </component>
