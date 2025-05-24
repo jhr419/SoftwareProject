@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="update the project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/CategoriesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/CategoriesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/InvestmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/InvestmentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-    </list>
+    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="Zuhao Zhang update some bugs in BudgetSetTest (TDD)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +24,22 @@
     &quot;assignee&quot;: &quot;jhr419&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:jhr419/SoftwareProject.git&quot;,
-    &quot;accountId&quot;: &quot;0507dcf2-e8f1-47a3-8910-1a68ae690abc&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:jhr419/SoftwareProject.git",
+    "accountId": "0507dcf2-e8f1-47a3-8910-1a68ae690abc"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "jhr419",
+    "repository": "SoftwareProject"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -48,12 +52,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.BudgetSetTest.executor": "Run",
+    "JUnit.ExpenseManagerTest.executor": "Run",
     "JUnit.SpendingInsightServiceTest (1).executor": "Run",
     "JUnit.SpendingInsightServiceTest.executor": "Run",
     "JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "test",
+    "git-widget-placeholder": "test 上的 #23",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/WorkFiles/Code/JavaCode/SoftwareProject",
     "node.js.detected.package.eslint": "true",
@@ -65,7 +70,7 @@
     "应用程序.LedgerApp.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BudgetSetTest">
+  <component name="RunManager" selected="JUnit.ExpenseManagerTest">
     <configuration name="LedgerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -91,6 +96,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.shelton.ebu6403.models" />
       <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.models.BudgetSetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ledgerEase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shelton.ebu6403.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shelton.ebu6403.models" />
+      <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.models.ExpenseManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,22 +146,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpendingInsightServiceTest.testGenerateSpendingInsights_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SmartMoney" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shelton.ebu6403.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shelton.ebu6403.models" />
-      <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.models.SpendingInsightServiceTest" />
-      <option name="METHOD_NAME" value="testGenerateSpendingInsights_Success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="SmartMoney" />
       <option name="filePath" />
@@ -149,18 +153,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BudgetSetTest" />
+      <item itemvalue="JUnit.ExpenseManagerTest" />
       <item itemvalue="JUnit.SpendingInsightServiceTest (1)" />
       <item itemvalue="JUnit.SpendingInsightServiceTest" />
-      <item itemvalue="JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success" />
       <item itemvalue="应用程序.LedgerApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExpenseManagerTest" />
         <item itemvalue="JUnit.BudgetSetTest" />
         <item itemvalue="应用程序.LedgerApp" />
         <item itemvalue="JUnit.SpendingInsightServiceTest (1)" />
         <item itemvalue="JUnit.SpendingInsightServiceTest" />
-        <item itemvalue="JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +196,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747968842870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Zuhao Zhang add BudgetSetTest (TDD)">
+      <option name="closed" value="true" />
+      <created>1748065060724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748065060724</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Zuhao Zhang add BudgetSetTest (TDD)">
+      <option name="closed" value="true" />
+      <created>1748065291813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748065291813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +275,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update the project configuration files" />
     <MESSAGE value="add new feature of fixedincome" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new feature of fixedincome" />
+    <MESSAGE value="Zuhao Zhang update some bugs in BudgetSetTest (TDD)" />
+    <MESSAGE value="Zuhao Zhang update some bugs in BudgetSetTest (TDD)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zuhao Zhang update some bugs in BudgetSetTest (TDD)" />
   </component>
 </project>
