@@ -9,8 +9,14 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.collections.*;
 import javafx.scene.chart.*;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.YearMonth;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -42,10 +48,8 @@ public class SettingController {
     private final BudgetSet budgetSet = new BudgetSet();
     private final ExpenseManager expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
 
-    private final String[] categories = {
-            "Travel", "Entertainment", "Clothing", "Education", "Transportation",
-            "Medical", "Home", "Food", "Sports", "Communication", "Others"
-    };
+    private final String customExpenseFile = "data/custom_expense_categories.csv";
+
 
     private final String[] months = {
             "January", "February", "March", "April",
@@ -105,8 +109,12 @@ public class SettingController {
         monthCombo.getSelectionModel().select(LocalDate.now().getMonthValue() - 1);
 
         // 初始化分类选择
-        // 初始化分类选择
-        ObservableList<String> categoryOptions = FXCollections.observableArrayList(categories);
+        List<String> allCats = new ArrayList<>(List.of(
+                "Travel", "Entertainment", "Clothing", "Education", "Transportation",
+                "Medical", "Home", "Food", "Sports", "Communication", "Others"
+        ));
+        allCats.addAll(readCustomCategories(customExpenseFile)); // 添加自定义分类
+        ObservableList<String> categoryOptions = FXCollections.observableArrayList(allCats);
         categoryOptions.add(0, "Select All"); // 添加“Select All”选项
         categoryCombo.setItems(categoryOptions);
         categoryCombo.getSelectionModel().selectFirst(); // 默认选择“Select All”
@@ -121,6 +129,23 @@ public class SettingController {
         // 初始化筛选功能
         setupFiltering();
     }
+
+    private List<String> readCustomCategories(String filePath) {
+        List<String> categories = new ArrayList<>();
+        File file = new File(filePath);
+        if (!file.exists()) return categories;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (!line.isBlank()) categories.add(line.trim());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return categories;
+    }
+
 
     private void initBudgetTable() {
         // 清除旧列
