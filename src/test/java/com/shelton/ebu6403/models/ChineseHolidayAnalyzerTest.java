@@ -29,7 +29,7 @@ public class ChineseHolidayAnalyzerTest {
         boolean hasSpike = analyzer.detectSpringFestivalSpike();
 
         // Then
-        assertFalse(hasSpike, "Spring Festival spending should exceed threshold");
+        assertTrue(hasSpike, "Spring Festival spending should exceed threshold");
     }
 
     @Test
