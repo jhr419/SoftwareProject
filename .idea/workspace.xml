@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="update the project configuration files">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e9847f4b-6209-43ab-9a6c-d3c205247e6e" name="更改" comment="update the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunitTest/ApiClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/AnalysisController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/CategoriesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/CategoriesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/InvestmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shelton/ebu6403/controller/InvestmentsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.SpendingInsightServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/WorkFiles/Code/JavaCode/SoftwareProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.LedgerApp.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.BudgetSetTest.executor": "Run",
+    "JUnit.SpendingInsightServiceTest (1).executor": "Run",
+    "JUnit.SpendingInsightServiceTest.executor": "Run",
+    "JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "test",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/WorkFiles/Code/JavaCode/SoftwareProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.LedgerApp.executor": "Run"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.SpendingInsightServiceTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.BudgetSetTest">
     <configuration name="LedgerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.LedgerApp" />
       <module name="SmartMoney" />
@@ -76,6 +75,36 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BudgetSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ledgerEase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shelton.ebu6403.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shelton.ebu6403.models" />
+      <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.models.BudgetSetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpendingInsightServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ledgerEase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shelton.ebu6403.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shelton.ebu6403.models" />
+      <option name="MAIN_CLASS_NAME" value="com.shelton.ebu6403.models.SpendingInsightServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,8 +145,17 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BudgetSetTest" />
+      <item itemvalue="JUnit.SpendingInsightServiceTest (1)" />
+      <item itemvalue="JUnit.SpendingInsightServiceTest" />
+      <item itemvalue="JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success" />
+      <item itemvalue="应用程序.LedgerApp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BudgetSetTest" />
+        <item itemvalue="JUnit.SpendingInsightServiceTest (1)" />
         <item itemvalue="JUnit.SpendingInsightServiceTest" />
         <item itemvalue="JUnit.SpendingInsightServiceTest.testGenerateSpendingInsights_Success" />
         <item itemvalue="应用程序.LedgerApp" />

@@ -21,13 +21,17 @@ import java.util.Optional;
 
 public class CategoriesController {
 
-    @FXML private FlowPane expensesCardContainer;
-    @FXML private FlowPane incomeCardContainer;
-    @FXML private TableView<Transaction> expensesTable;
-    @FXML private TableView<Transaction> incomeTable;
+    @FXML
+    FlowPane expensesCardContainer;
+    @FXML
+    FlowPane incomeCardContainer;
+    @FXML
+    TableView<Transaction> expensesTable;
+    @FXML
+    TableView<Transaction> incomeTable;
 
     // 支出分类
-    private final String[] expenseCategories = {
+    final String[] expenseCategories = {
             "Travel", "Entertainment", "Clothing", "Education",
             "Transportation", "Medical", "Home", "Food",
             "Sports", "Communication","Others"
@@ -35,10 +39,10 @@ public class CategoriesController {
     private final ExpenseManager expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
 
     // 收入分类
-    private final String[] incomeCategories = {"Salary", "Investment","Others"};
+    final String[] incomeCategories = {"Salary", "Investment","Others"};
 
-    private final ObservableList<Transaction> allExpenses = FXCollections.observableArrayList();
-    private final ObservableList<Transaction> allIncomes = FXCollections.observableArrayList();
+    final ObservableList<Transaction> allExpenses = FXCollections.observableArrayList();
+    final ObservableList<Transaction> allIncomes = FXCollections.observableArrayList();
     private BudgetSet budgetSet = new BudgetSet();
 
     @FXML
@@ -237,7 +241,7 @@ public class CategoriesController {
     }
 
 
-    private void filterTransactions(String category, String type) {
+    void filterTransactions(String category, String type) {
         if ("Expense".equals(type)) {
             ObservableList<Transaction> filtered = allExpenses.filtered(t -> category.equals(t.getCategory()));
             expensesTable.setItems(filtered);
@@ -247,7 +251,7 @@ public class CategoriesController {
         }
     }
 
-    private ObservableList<Transaction> readTransactionsFromCSV(String filePath) {
+    ObservableList<Transaction> readTransactionsFromCSV(String filePath) {
         ObservableList<Transaction> transactions = FXCollections.observableArrayList();
         File file = new File(filePath);
         if (!file.exists()) return transactions;
@@ -276,7 +280,7 @@ public class CategoriesController {
 
 
     @FXML
-    private void showNewCategoryDialog(String type) {
+    void showNewCategoryDialog(String type) {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Add New Category");
         dialog.setHeaderText("Create a new " + type + " category");
@@ -423,7 +427,7 @@ public class CategoriesController {
 
     // 修改后的 CategoriesController 的增删改功能
     @FXML
-    private void handleDeleteExpense() {
+    void handleDeleteExpense() {
         Transaction selected = expensesTable.getSelectionModel().getSelectedItem();
         if (selected != null) {
             allExpenses.remove(selected);
