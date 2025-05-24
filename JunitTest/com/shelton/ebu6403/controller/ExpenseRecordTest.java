@@ -1,5 +1,6 @@
-package com.shelton.ebu6403.models;
+package com.shelton.ebu6403.controller;
 
+import com.shelton.ebu6403.models.ExpenseRecord;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;

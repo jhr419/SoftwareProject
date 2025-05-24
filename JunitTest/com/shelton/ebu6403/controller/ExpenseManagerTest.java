@@ -1,5 +1,8 @@
-package com.shelton.ebu6403.models;
+package com.shelton.ebu6403.controller;
 
+import com.shelton.ebu6403.models.ApiClient;
+import com.shelton.ebu6403.models.ExpenseManager;
+import com.shelton.ebu6403.models.ExpenseRecord;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
