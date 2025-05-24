@@ -17,6 +17,9 @@ import javafx.stage.FileChooser;
 
 import java.time.LocalDate;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 public class CategoriesController {
@@ -31,15 +34,25 @@ public class CategoriesController {
     TableView<Transaction> incomeTable;
 
     // 支出分类
-    final String[] expenseCategories = {
-            "Travel", "Entertainment", "Clothing", "Education",
-            "Transportation", "Medical", "Home", "Food",
-            "Sports", "Communication","Others"
-    };
+//    final String[] expenseCategories = {
+//            "Travel", "Entertainment", "Clothing", "Education",
+//            "Transportation", "Medical", "Home", "Food",
+//            "Sports", "Communication","Others"
+//    };
     private final ExpenseManager expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
 
     // 收入分类
-    final String[] incomeCategories = {"Salary", "Investment","Others"};
+//    final String[] incomeCategories = {"Salary", "Investment","Gift","Others"};
+    private final String[] defaultExpenseCategories = {
+            "Travel", "Entertainment", "Clothing", "Education",
+            "Transportation", "Medical", "Home", "Food",
+            "Sports", "Communication", "Others"
+    };
+    private final String[] defaultIncomeCategories = {
+            "Salary", "Investment", "Gift", "Others"
+    };
+    private final String customExpenseFile = "data/custom_expense_categories.csv";
+    private final String customIncomeFile = "data/custom_income_categories.csv";
 
     final ObservableList<Transaction> allExpenses = FXCollections.observableArrayList();
     final ObservableList<Transaction> allIncomes = FXCollections.observableArrayList();
@@ -51,6 +64,7 @@ public class CategoriesController {
         initTransactionTables();
         loadSampleData();
     }
+
 
     @FXML
     private void handleImportCSV() {
@@ -100,10 +114,12 @@ public class CategoriesController {
 
         }
     }
-
     private void initCategoryCards() {
-        // 创建支出卡片
-        for (String category : expenseCategories) {
+        // 支出卡片（包含默认 + 自定义）
+        List<String> allExpenseCats = new ArrayList<>(Arrays.asList(defaultExpenseCategories));
+        allExpenseCats.addAll(readCustomCategories(customExpenseFile));
+
+        for (String category : allExpenseCats) {
             VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/icons/");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(category, "Expense"));
             expensesCardContainer.getChildren().add(card);
@@ -113,9 +129,11 @@ public class CategoriesController {
         moreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Expense"));
         expensesCardContainer.getChildren().add(moreCard);
 
-
         // 收入卡片
-        for (String category : incomeCategories) {
+        List<String> allIncomeCats = new ArrayList<>(Arrays.asList(defaultIncomeCategories));
+        allIncomeCats.addAll(readCustomCategories(customIncomeFile));
+
+        for (String category : allIncomeCats) {
             VBox card = createCategoryCard(category, "/com/shelton/ebu6403/images/icons/");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(category, "Income"));
             incomeCardContainer.getChildren().add(card);
@@ -124,8 +142,8 @@ public class CategoriesController {
         VBox incomeMoreCard = createCategoryCard("More", "/com/shelton/ebu6403/images/icons/");
         incomeMoreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Income"));
         incomeCardContainer.getChildren().add(incomeMoreCard);
-
     }
+
 
     private VBox createCategoryCard(String title, String iconDir) {
         VBox card = new VBox(5);
@@ -288,15 +306,48 @@ public class CategoriesController {
 
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(name -> {
-            VBox card = createCategoryCard(name, "/com/shelton/ebu6403/images/profile photo.png");
+            VBox card = createCategoryCard(name, "/com/shelton/ebu6403/images/icons/");
             card.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> filterTransactions(name, type));
+
             if ("Expense".equals(type)) {
                 expensesCardContainer.getChildren().add(expensesCardContainer.getChildren().size() - 1, card);
+                appendToCustomCategoryFile(customExpenseFile, name);
             } else {
                 incomeCardContainer.getChildren().add(incomeCardContainer.getChildren().size() - 1, card);
+                appendToCustomCategoryFile(customIncomeFile, name);
             }
         });
     }
+
+    private List<String> readCustomCategories(String filePath) {
+        List<String> categories = new ArrayList<>();
+        File file = new File(filePath);
+        if (!file.exists()) return categories;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (!line.isBlank()) categories.add(line.trim());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return categories;
+    }
+
+    private void appendToCustomCategoryFile(String filePath, String category) {
+        try {
+            File file = new File(filePath);
+            file.getParentFile().mkdirs(); // 确保 data 文件夹存在
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
+                writer.write(category);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @FXML
     private void showAddExpenseDialog() {

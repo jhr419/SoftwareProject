@@ -7,6 +7,7 @@ com\shelton\ebu6403\LedgerApp.class
 com\shelton\ebu6403\models\ExpenseManager.class
 com\shelton\ebu6403\models\ExpenseRecord.class
 com\shelton\ebu6403\controller\AnalysisController.class
+com\shelton\ebu6403\controller\InvestmentsController$2.class
 com\shelton\ebu6403\controller\InvestmentsController.class
 com\shelton\ebu6403\models\SpendingInsightService.class
 com\shelton\ebu6403\models\ApiClient.class
@@ -20,5 +21,6 @@ com\shelton\ebu6403\controller\SettingController.class
 com\shelton\ebu6403\controller\AnalysisController$Transaction.class
 com\shelton\ebu6403\controller\SettingController$2.class
 com\shelton\ebu6403\controller\AiDeepseekController.class
+com\shelton\ebu6403\controller\InvestmentsController$1.class
 com\shelton\ebu6403\controller\LedgerController.class
 com\shelton\ebu6403\models\ChineseHolidayAnalyzer.class

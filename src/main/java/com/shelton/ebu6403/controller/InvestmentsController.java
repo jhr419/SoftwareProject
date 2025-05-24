@@ -281,7 +281,7 @@ public class InvestmentsController {
         }
 
         double balance = income - expense;
-        System.out.println("initSummary loaded: income=" + income + ", expense=" + expense);
+        //System.out.println("initSummary loaded: income=" + income + ", expense=" + expense);
 
         infoSummaryContainer.getChildren().addAll(
                 createSummaryCard("Today's Balance", String.format("%+.2f", balance), balance >= 0 ? "#fdd835" : "#d32f2f"),
