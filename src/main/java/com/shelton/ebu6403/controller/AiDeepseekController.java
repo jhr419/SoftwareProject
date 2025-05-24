@@ -105,4 +105,14 @@ public class AiDeepseekController {
                     .getString("content");
         }
     }
+    /**
+     * Exposes the sendRequest method for testing purposes.
+     *
+     * @param question The user's input question.
+     * @return The AI response string.
+     * @throws Exception if an error occurs during the request.
+     */
+    public String testSendRequest(String question) throws Exception {
+        return sendRequest(question);
+    }
 }

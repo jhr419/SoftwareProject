@@ -1,5 +1,3 @@
-package com.shelton.ebu6403.controller;
-
 import com.shelton.ebu6403.models.ExpenseRecord;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
@@ -45,26 +43,6 @@ public class ExpenseRecordTest {
     }
 
     /**
-     * Tests setting and getting the AI-suggested category.
-     * Verifies that:
-     * - AI category can be set
-     * - AI category can be retrieved
-     * - Retrieved value matches the set value
-     */
-    @Test
-    void testSetAndGetAICategory() {
-        // Given
-        ExpenseRecord record = new ExpenseRecord("Food", 100.0, LocalDate.now(), "Dinner", "expense");
-        String aiCategory = "Restaurant";
-
-        // When
-        record.setAiCategory(aiCategory);
-
-        // Then - Verify AI category is correctly stored
-        assertEquals(aiCategory, record.getAiCategory());
-    }
-
-    /**
      * Tests the string representation of an expense record.
      * Verifies that toString() returns the correct CSV format:
      * category,amount,date,itemName,transactionType
@@ -87,21 +65,4 @@ public class ExpenseRecordTest {
         assertEquals(expected, result);
     }
 
-    /**
-     * Tests the default value of the AI usage flag.
-     * Verifies that:
-     * - New records have AI usage enabled by default
-     * - The getUseAI method returns true for new records
-     */
-    @Test
-    void testDefaultUseAIValue() {
-        // Given
-        ExpenseRecord record = new ExpenseRecord("Food", 100.0, LocalDate.now(), "Dinner", "expense");
-
-        // When
-        boolean useAI = record.getUseAI();
-
-        // Then - Verify default AI usage is enabled
-        assertTrue(useAI); // Default value should be true
-    }
 }

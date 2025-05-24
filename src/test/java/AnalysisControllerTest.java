@@ -1,11 +1,8 @@
-package com.shelton.ebu6403.controller;
-
+import com.shelton.ebu6403.controller.AnalysisController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
 import java.time.LocalDate;
-import java.time.YearMonth;
 import java.util.List;
 import java.util.Map;
 
@@ -44,7 +41,7 @@ public class AnalysisControllerTest {
      */
     @Test
     public void testReadTransactionsFromCSV_spend() {
-        String path = "JunitTest/test_data/expenses.csv";
+        String path = "src/test/resources/expenses.csv";
         LocalDate date = LocalDate.of(2025, 5, 1);
 
         List<AnalysisController.Transaction> transactions =
@@ -71,7 +68,7 @@ public class AnalysisControllerTest {
      */
     @Test
     public void testReadTransactionsFromCSV_income() {
-        String path = "JunitTest/test_data/incomes.csv";
+        String path = "src/test/resources/incomes.csv";
         LocalDate date = LocalDate.of(2025, 5, 1);
 
         List<AnalysisController.Transaction> transactions =
@@ -97,7 +94,7 @@ public class AnalysisControllerTest {
      */
     @Test
     public void testAggregateByDayOrMonthOrYear_daily() {
-        String path = "JunitTest/test_data/expenses.csv";
+        String path = "src/test/resources/expenses.csv";
 
         Map<String, Double> dailyData = controller.aggregateByDayOrMonthOrYear(path, "day");
         assertNotNull(dailyData);
@@ -120,7 +117,7 @@ public class AnalysisControllerTest {
      */
     @Test
     public void testAggregateByDayOrMonthOrYear_monthly() {
-        String path = "JunitTest/test_data/incomes.csv";
+        String path = "src/test/resources/incomes.csv";
 
         Map<String, Double> monthlyData = controller.aggregateByDayOrMonthOrYear(path, "month");
         assertNotNull(monthlyData);
@@ -143,7 +140,7 @@ public class AnalysisControllerTest {
      */
     @Test
     public void testAggregateByDayOrMonthOrYear_yearly() {
-        String path = "JunitTest/test_data/expenses.csv";
+        String path = "src/test/resources/expenses.csv";
 
         Map<String, Double> yearlyData = controller.aggregateByDayOrMonthOrYear(path, "year");
         assertNotNull(yearlyData);

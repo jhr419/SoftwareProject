@@ -144,7 +144,7 @@ public class AnalysisController {
      * @param targetDate The date to match.
      * @return A list of matching transactions.
      */
-    List<Transaction> readTransactionsFromCSV(String path, String type, LocalDate targetDate) {
+    public List<Transaction> readTransactionsFromCSV(String path, String type, LocalDate targetDate) {
         List<Transaction> result = new ArrayList<>();
         File file = new File(path);
         if (!file.exists()) return result;
@@ -305,7 +305,7 @@ public class AnalysisController {
      * @param mode Aggregation mode: "day", "month", or "year"
      * @return A map of date keys to aggregated amounts
      */
-    Map<String, Double> aggregateByDayOrMonthOrYear(String filePath, String mode) {
+    public Map<String, Double> aggregateByDayOrMonthOrYear(String filePath, String mode) {
         Map<String, Double> result = new LinkedHashMap<>();
         File file = new File(filePath);
         if (!file.exists()) return result;

@@ -162,7 +162,7 @@ public class HomeController {
      * @param path The path to the CSV file containing financial records
      * @return A map of dates to total amounts for each day
      */
-    private Map<LocalDate, Double> loadDailyTotal(String path) {
+    public Map<LocalDate, Double> loadDailyTotal(String path) {
         Map<LocalDate, Double> result = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line;
@@ -303,7 +303,7 @@ public class HomeController {
      * @param path The path to the CSV file
      * @return A list of Transaction objects
      */
-    private List<Transaction> readTransactionsFromCSV(String path) {
+    public List<Transaction> readTransactionsFromCSV(String path) {
         List<Transaction> result = new ArrayList<>();
         File file = new File(path);
         if (!file.exists()) return result;
