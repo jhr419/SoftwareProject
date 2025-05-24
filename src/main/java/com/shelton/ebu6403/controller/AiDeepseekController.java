@@ -26,7 +26,7 @@ public class AiDeepseekController {
     @FXML private TextArea outputArea;
     @FXML private Button sendButton;
 
-    private final String apiKey = "sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf"; // 替换成你的 API Key
+    private final String apiKey = "sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf"; // change to your API Key
 
     /**
      * Initializes the AI chat interface.
