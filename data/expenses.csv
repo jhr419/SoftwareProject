@@ -6098,14 +6098,7 @@ serialNo,name,date,amount,category
 6097,Running,2025-05-01,1941.65,Sports
 6098,Hotel,2025-05-28,7930.37,Travel
 6099,Course,2025-05-28,4500.96,Education
-6100,Go to Hainan on vacation,2025-06-01,500.00,Travel
-6101,Grocery,2025-06-19,85.20,Food
-6102,Electricity Bill,2025-06-18,120.75,Home
-6103,English Class,2025-06-17,300.00,Education
-6104,Toy,2025-06-01,100.00,Entertainment
-6105,Apple Watch,2025-06-02,4000.00,others
-6106,Clothes,2025-06-03,50.00,Clothing
-6107,Strawberry,2025-05-24,40.00,Food
-6108,Taxi,2025-05-24,24.60,Transportation
-6109,Badminton,2025-05-24,100.00,Sports
-6110,Jordan,2025-05-24,1200.00,Clothing
+6100,Strawberry,2025-05-24,40.00,Food
+6101,Taxi,2025-05-24,24.60,Transportation
+6102,Badminton,2025-05-24,100.00,Sports
+6103,Jordan,2025-05-24,1200.00,Clothing
