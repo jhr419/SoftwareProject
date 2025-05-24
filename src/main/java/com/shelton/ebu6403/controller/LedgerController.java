@@ -7,30 +7,48 @@ import javafx.scene.image.*;
 import javafx.scene.layout.*;
 import java.util.Objects;
 
+/**
+ * Controller class for the main ledger interface.
+ * <p>
+ * Manages the main application layout, navigation, language switching,
+ * and dynamic resource loading.
+ * </p>
+ * author Haihan Sun, Jia LIU, Zuhao Zhang
+ */
 public class LedgerController {
+    /** Content container for dynamic views */
     public BorderPane contentContainer;
+    /** Main application container */
     @FXML private BorderPane mainContainer;
+    /** Notification icon in the header */
     @FXML private ImageView notificationIcon;
+    /** User avatar image */
     @FXML private ImageView avatarView;
+    /** Language selection dropdown */
     @FXML private ComboBox<String> languageCombo;
 
+    /**
+     * Initializes the controller.
+     * Loads images, sets up language selector, and applies CSS styles.
+     */
     @FXML
     public void initialize() {
         loadDynamicImages();
-        // 初始化语言选择框
         initLanguageSelector();
-        // 动态加载 CSS
+
         String cssPath = Objects.requireNonNull(getClass().getResource(
                 "/com/shelton/ebu6403/styles/main.css"
         )).toExternalForm();
         mainContainer.getStylesheets().add(cssPath);
     }
 
+    /**
+     * Initializes the language selector dropdown.
+     * Sets default language and adds change listener.
+     */
     private void initLanguageSelector() {
-        // 设置默认选中英语
         languageCombo.getSelectionModel().select("English");
 
-        // 添加选择监听器
         languageCombo.getSelectionModel().selectedItemProperty().addListener(
                 (obs, oldVal, newVal) -> {
                     if ("简体中文".equals(newVal)) {
@@ -42,21 +60,33 @@ public class LedgerController {
         );
     }
 
+    /**
+     * Switches the application interface to Chinese.
+     */
     private void switchToChinese() {
-        // 这里添加切换到中文的逻辑
-        System.out.println("切换到中文界面");
+        System.out.println("Switching to Chinese interface");
     }
 
+    /**
+     * Switches the application interface to English.
+     */
     private void switchToEnglish() {
-        // 这里添加切换到英文的逻辑
-        System.out.println("切换到英文界面");
+        System.out.println("Switching to English interface");
     }
 
+    /**
+     * Loads all dynamic images used in the interface.
+     */
     private void loadDynamicImages() {
         loadImage(notificationIcon, "/com/shelton/ebu6403/images/notification.png");
         loadImage(avatarView, "/com/shelton/ebu6403/images/profile photo.png");
     }
 
+    /**
+     * Loads an image into an ImageView component.
+     * @param imageView The ImageView to load into
+     * @param path The resource path of the image
+     */
     private void loadImage(ImageView imageView, String path) {
         try {
             Image image = new Image(Objects.requireNonNull(
@@ -64,58 +94,88 @@ public class LedgerController {
             ));
             imageView.setImage(image);
         } catch (NullPointerException e) {
-            System.err.println("资源加载失败: " + path);
+            System.err.println("Failed to load resource: " + path);
             imageView.setImage(createPlaceholder(imageView.getFitWidth(), imageView.getFitHeight()));
         }
     }
 
+    /**
+     * Creates a placeholder image when resource loading fails.
+     * @param width The width of the placeholder
+     * @param height The height of the placeholder
+     * @return A gray placeholder Image
+     */
     private Image createPlaceholder(double width, double height) {
-        // 生成灰色占位图
         return new Image(
                 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjYGBgYAAAAAUAAYehTtQAAAAASUVORK5CYII=",
                 width, height, true, true
         );
     }
 
-    // 原有页面导航方法保持不变
+    /**
+     * Loads the home view.
+     */
     @FXML
-    private void loadHome() { loadView("/com/shelton/ebu6403/views/home.fxml"); }
+    private void loadHome() {
+        loadView("/com/shelton/ebu6403/views/home.fxml");
+    }
 
+    /**
+     * Loads the analysis view.
+     */
     @FXML
-    private void loadAnalysis() { loadView("/com/shelton/ebu6403/views/analysis.fxml"); }
+    private void loadAnalysis() {
+        loadView("/com/shelton/ebu6403/views/analysis.fxml");
+    }
 
+    /**
+     * Loads the categories view.
+     */
     @FXML
-    private void loadCategories() { loadView("/com/shelton/ebu6403/views/categories.fxml"); }
+    private void loadCategories() {
+        loadView("/com/shelton/ebu6403/views/categories.fxml");
+    }
 
+    /**
+     * Loads the investments view.
+     */
     @FXML
-    private void loadInvestments() { loadView("/com/shelton/ebu6403/views/investments.fxml"); }
+    private void loadInvestments() {
+        loadView("/com/shelton/ebu6403/views/investments.fxml");
+    }
 
+    /**
+     * Loads the settings view.
+     */
     @FXML
-    private void loadSettings() { loadView("/com/shelton/ebu6403/views/Setting.fxml"); }
+    private void loadSettings() {
+        loadView("/com/shelton/ebu6403/views/Setting.fxml");
+    }
 
+    /**
+     * Loads the AI chat interface view.
+     */
     @FXML
     private void loadAiChat() {
         loadView("/com/shelton/ebu6403/views/AiDeepseekView.fxml");
     }
 
-    // 修改页面加载方法，只替换中心区域
-// 页面加载方法只需修改这一部分：
+    /**
+     * Loads a view into the main content area.
+     * Only replaces the center region of the right BorderPane.
+     * @param fxmlPath The FXML resource path of the view to load
+     */
     private void loadView(String fxmlPath) {
         try {
-            // 获取右侧的嵌套BorderPane
             BorderPane rightPane = (BorderPane) mainContainer.getCenter();
-
-            // 只替换中心内容区域（保留顶部工具栏）
             Parent view = FXMLLoader.load(
                     Objects.requireNonNull(getClass().getResource(fxmlPath))
             );
             rightPane.setCenter(view);
-
         } catch (Exception e) {
-            System.err.println("视图加载失败: " + fxmlPath);
+            System.err.println("Failed to load view: " + fxmlPath);
             e.printStackTrace();
         }
     }
 }
-
 

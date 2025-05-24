@@ -26,11 +26,18 @@ import javafx.concurrent.WorkerStateEvent;
 
 import java.lang.Thread;
 
+/**
+ * Controller class for managing application settings and budget configurations.
+ * <p>
+ * Handles budget settings, expense categories, and AI-powered spending insights.
+ * </p>
+ * @author Haoran Jin, Zhifei liu， Weicheng Xie
+ */
 public class SettingController {
-    // 顶部选项卡
+    /** Top navigation tabs */
     @FXML private TabPane settingsTabPane;
 
-    // 预算设置组件
+    /** Budget setting components */
     @FXML private ComboBox<String> categoryCombo;
     @FXML private ComboBox<Integer> yearCombo;
     @FXML private ComboBox<String> monthCombo;
@@ -39,8 +46,6 @@ public class SettingController {
     @FXML private FlowPane budgetCardsContainer;
     @FXML private ProgressIndicator insightProgress;
     @FXML private Label holidayReminderLabel;
-
-
     @FXML private Button insightButton;
 
     private final ObservableList<Budget> budgets = FXCollections.observableArrayList();
@@ -50,25 +55,30 @@ public class SettingController {
 
     private final String customExpenseFile = "data/custom_expense_categories.csv";
 
-
     private final String[] months = {
             "January", "February", "March", "April",
             "May", "June", "July", "August",
             "September", "October", "November", "December"
     };
 
+    /**
+     * Initializes the controller.
+     * Sets up settings tabs, budget configurations, and expense monitoring.
+     */
     @FXML
     public void initialize() {
         initSettingsTabs();
         initBudgetSettings();
         categoryCombo.setValue("Select All");
         updateMonthFilter();
-        // 注册消费变化监听
+
+        // Register expense change listener
         budgetSet.setOnExpenseChanged(() -> {
             refreshBudgetCards();
             budgetTable.refresh();
         });
-        // 添加：启动时展示节日前提醒（非弹窗）
+
+        // Display holiday reminder on startup (non-popup)
         ChineseHolidayAnalyzer analyzer = new ChineseHolidayAnalyzer(expenseManager.getExpenses());
         String reminder = analyzer.getUpcomingHolidayReminder();
         if (!reminder.isBlank()) {
@@ -77,9 +87,11 @@ public class SettingController {
         }
     }
 
-
+    /**
+     * Initializes settings tabs.
+     * Creates and adds the main setting sections as tabs.
+     */
     private void initSettingsTabs() {
-        // 添加设置选项选项卡
         settingsTabPane.getTabs().addAll(
                 createTab("Edit Account"),
                 createTab("Budget Settings"),
@@ -89,14 +101,23 @@ public class SettingController {
         );
     }
 
+    /**
+     * Creates a new tab with the specified text.
+     * @param text The tab label text
+     * @return A new non-closeable Tab instance
+     */
     private Tab createTab(String text) {
         Tab tab = new Tab(text);
         tab.setClosable(false);
         return tab;
     }
 
+    /**
+     * Initializes budget settings.
+     * Sets up year, month, and category selectors, budget table, and filtering.
+     */
     private void initBudgetSettings() {
-        // 初始化年份选择 (当前年份+未来5年)
+        // Initialize year selection (current year + next 5 years)
         int currentYear = LocalDate.now().getYear();
         yearCombo.setItems(FXCollections.observableArrayList(
                 currentYear, currentYear + 1, currentYear + 2,
@@ -104,32 +125,36 @@ public class SettingController {
         ));
         yearCombo.getSelectionModel().select(0);
 
-        // 初始化月份选择
+        // Initialize month selection
         monthCombo.setItems(FXCollections.observableArrayList(months));
         monthCombo.getSelectionModel().select(LocalDate.now().getMonthValue() - 1);
 
-        // 初始化分类选择
+        // Initialize category selection
         List<String> allCats = new ArrayList<>(List.of(
                 "Travel", "Entertainment", "Clothing", "Education", "Transportation",
                 "Medical", "Home", "Food", "Sports", "Communication", "Others"
         ));
-        allCats.addAll(readCustomCategories(customExpenseFile)); // 添加自定义分类
+        allCats.addAll(readCustomCategories(customExpenseFile)); // Add custom categories
         ObservableList<String> categoryOptions = FXCollections.observableArrayList(allCats);
-        categoryOptions.add(0, "Select All"); // 添加“Select All”选项
+        categoryOptions.add(0, "Select All"); // Add "Select All" option
         categoryCombo.setItems(categoryOptions);
-        categoryCombo.getSelectionModel().selectFirst(); // 默认选择“Select All”
+        categoryCombo.getSelectionModel().selectFirst(); // Default to "Select All"
 
-
-        // 初始化预算表格
+        // Initialize budget table
         initBudgetTable();
 
-        // 加载已有数据
+        // Load existing data
         loadBudgetFromBudgetSet();
 
-        // 初始化筛选功能
+        // Initialize filtering
         setupFiltering();
     }
 
+    /**
+     * Reads custom categories from a file.
+     * @param filePath The file path to read from
+     * @return A list of custom categories
+     */
     private List<String> readCustomCategories(String filePath) {
         List<String> categories = new ArrayList<>();
         File file = new File(filePath);
@@ -146,33 +171,35 @@ public class SettingController {
         return categories;
     }
 
-
+    /**
+     * Initializes the budget table.
+     * Sets up columns and data bindings.
+     */
     private void initBudgetTable() {
-        // 清除旧列
+        // Clear old columns
         budgetTable.getColumns().clear();
 
-        // SL No列
+        // SL No column
         TableColumn<Budget, Number> slNoCol = new TableColumn<>("SL No");
         slNoCol.setCellValueFactory(col -> new ReadOnlyIntegerWrapper(filteredBudgets.indexOf(col.getValue()) + 1));
-
         slNoCol.setPrefWidth(60);
 
-        // Category列
+        // Category column
         TableColumn<Budget, String> categoryCol = new TableColumn<>("Category");
         categoryCol.setCellValueFactory(cellData -> cellData.getValue().categoryProperty());
         categoryCol.setPrefWidth(120);
 
-        // Month列
+        // Month column
         TableColumn<Budget, String> monthCol = new TableColumn<>("Month");
         monthCol.setCellValueFactory(cellData -> cellData.getValue().monthProperty());
         monthCol.setPrefWidth(150);
 
-        // Budget列
+        // Budget column
         TableColumn<Budget, Double> amountCol = new TableColumn<>("Budget");
         amountCol.setCellValueFactory(cellData -> cellData.getValue().amountProperty().asObject());
         amountCol.setPrefWidth(100);
 
-        // Action列
+        // Action column
         TableColumn<Budget, Void> actionCol = new TableColumn<>("Action");
         actionCol.setCellFactory(param -> new TableCell<>() {
             private final HBox actionBox = new HBox(5);
@@ -216,26 +243,33 @@ public class SettingController {
         budgetTable.getColumns().addAll(slNoCol, categoryCol, monthCol, amountCol, actionCol);
         budgetTable.setItems(filteredBudgets);
 
-        // 设置表格高度
+        // Set table height
         budgetTable.setPrefHeight(200);
         budgetTable.setFixedCellSize(35);
     }
 
+    /**
+     * Sets up filtering for the budget table.
+     * Filters by category, year, and month.
+     */
     private void setupFiltering() {
-        // 分类筛选
+        // Category filter
         categoryCombo.valueProperty().addListener((obs, oldVal, newVal) -> {
-            updateMonthFilter();  // 分类改变时重新用当前年月过滤
+            updateMonthFilter();  // Re-filter by current year and month when category changes
         });
 
-        // 年月筛选
+        // Year and month filter
         yearCombo.valueProperty().addListener((obs, oldVal, newVal) -> updateMonthFilter());
         monthCombo.valueProperty().addListener((obs, oldVal, newVal) -> updateMonthFilter());
 
-        // 初始显示当前年月的预算
-        updateMonthFilter();  // 强制初次过滤并刷新饼图
+        // Initially display budgets for the current year and month
+        updateMonthFilter();  // Force initial filtering and refresh pie chart
     }
 
-
+    /**
+     * Updates the month filter for the budget table.
+     * Filters budgets based on selected year, month, and category.
+     */
     private void updateMonthFilter() {
         String selectedMonth = monthCombo.getValue();
         Integer selectedYear = yearCombo.getValue();
@@ -250,14 +284,17 @@ public class SettingController {
                                     || budget.getCategory().equals(selectedCategory))
             );
         } else {
-            filteredBudgets.setPredicate(null);  // 全部显示
+            filteredBudgets.setPredicate(null);  // Show all
         }
 
         refreshBudgetCards();
     }
 
-
-
+    /**
+     * Checks if the given month-year string represents a future month.
+     * @param monthYear The month-year string in the format "Month Year"
+     * @return True if the month-year is in the future, false otherwise
+     */
     private boolean isFutureMonth(String monthYear) {
         String[] parts = monthYear.split(" ");
         int monthIndex = getMonthIndex(parts[0]);
@@ -267,6 +304,11 @@ public class SettingController {
         return !budgetMonth.isBefore(YearMonth.now());
     }
 
+    /**
+     * Gets the index of the specified month.
+     * @param month The month name
+     * @return The index of the month (0-based)
+     */
     private int getMonthIndex(String month) {
         for (int i = 0; i < months.length; i++) {
             if (months[i].equals(month)) {
@@ -276,7 +318,10 @@ public class SettingController {
         return 0;
     }
 
-
+    /**
+     * Handles the addition of a new budget.
+     * Validates input and updates the budget set and table.
+     */
     @FXML
     private void handleAddBudget() {
         String category = categoryCombo.getValue();
@@ -292,7 +337,7 @@ public class SettingController {
         int monthIndex = getMonthIndex(monthCombo.getValue()) + 1;
         YearMonth ym = YearMonth.of(year, monthIndex);
 
-        // 检查是否已存在预算
+        // Check if budget already exists
         if (budgetSet.getBudgetsByCategory(category).containsKey(ym)) {
             showAlert("Duplicate Budget", "Budget already exists for selected category and month");
             return;
@@ -305,12 +350,15 @@ public class SettingController {
         budgetAmountField.clear();
     }
 
+    /**
+     * Loads budgets from the budget set into the table.
+     */
     private void loadBudgetFromBudgetSet() {
         budgets.clear();
 
         Map<String, Map<YearMonth, Double>> allBudgets = budgetSet.getAllBudgets();
 
-        // 先展开为一个 BudgetEntry 列表
+        // Expand to a list of BudgetEntry
         List<BudgetEntry> allEntries = allBudgets.entrySet().stream()
                 .flatMap(entry -> entry.getValue().entrySet().stream()
                         .map(e -> new BudgetEntry(entry.getKey(), e.getKey(), e.getValue())))
@@ -320,13 +368,13 @@ public class SettingController {
                 })
                 .collect(Collectors.toList());
 
-        // 用 Map<YearMonth, Integer> 单独记录每月编号计数器
+        // Use Map<YearMonth, Integer> to record serial number counter per month
         Map<YearMonth, Integer> serialCounterPerMonth = new LinkedHashMap<>();
 
         for (BudgetEntry be : allEntries) {
             YearMonth ym = be.month;
 
-            // 分组编号：每个 YearMonth 内从 1 开始编号
+            // Group serial number: start from 1 within each YearMonth
             int currentSerial = serialCounterPerMonth.getOrDefault(ym, 0) + 1;
             serialCounterPerMonth.put(ym, currentSerial);
 
@@ -338,9 +386,9 @@ public class SettingController {
         refreshBudgetCards();
     }
 
-
-
-
+    /**
+     * Represents a budget entry with category, month, and amount.
+     */
     private static class BudgetEntry {
         String category;
         YearMonth month;
@@ -353,8 +401,11 @@ public class SettingController {
         }
     }
 
-
-
+    /**
+     * Edits an existing budget.
+     * Prompts the user for a new amount and updates the budget set and table.
+     * @param budget The budget to edit
+     */
     private void editBudget(Budget budget) {
         TextInputDialog dialog = new TextInputDialog(Double.toString(budget.getAmount()));
         dialog.setTitle("Edit Budget");
@@ -366,7 +417,7 @@ public class SettingController {
                 double amount = Double.parseDouble(newAmount);
                 budget.setAmount(amount);
 
-                // 同步更新 BudgetSet 并保存
+                // Synchronize with BudgetSet and save
                 String[] parts = budget.getMonth().split(" ");
                 YearMonth ym = YearMonth.of(Integer.parseInt(parts[1]), getMonthIndex(parts[0]) + 1);
                 budgetSet.setBudget(budget.getCategory(), ym, amount);
@@ -379,7 +430,11 @@ public class SettingController {
         });
     }
 
-
+    /**
+     * Removes an existing budget.
+     * Updates the budget set and table.
+     * @param budget The budget to remove
+     */
     private void removeBudget(Budget budget) {
         String[] parts = budget.getMonth().split(" ");
         YearMonth ym = YearMonth.of(Integer.parseInt(parts[1]), getMonthIndex(parts[0]) + 1);
@@ -389,7 +444,9 @@ public class SettingController {
         refreshBudgetCards();
     }
 
-
+    /**
+     * Refreshes the budget cards displayed in the UI.
+     */
     private void refreshBudgetCards() {
         budgetCardsContainer.getChildren().clear();
 
@@ -399,7 +456,7 @@ public class SettingController {
             int monthIndex = getMonthIndex(parts[0]) + 1;
             YearMonth ym = YearMonth.of(year, monthIndex);
 
-            // 获取进度
+            // Get progress
             double progress = budgetSet.getBudgetProgress(budget.getCategory(), ym);
 
             PieChart pieChart = createBudgetPieChart(progress, budget.getAmount());
@@ -408,6 +465,12 @@ public class SettingController {
         });
     }
 
+    /**
+     * Creates a pie chart for budget progress.
+     * @param progress The progress percentage
+     * @param totalAmount The total budget amount
+     * @return A PieChart instance
+     */
     private PieChart createBudgetPieChart(double progress, double totalAmount) {
         ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
                 new PieChart.Data("Used", totalAmount * progress),
@@ -422,7 +485,14 @@ public class SettingController {
         return pieChart;
     }
 
-
+    /**
+     * Creates a budget card for display.
+     * @param category The budget category
+     * @param amount The budget amount
+     * @param progress The budget progress percentage
+     * @param chart The pie chart representing the budget progress
+     * @return A VBox instance representing the budget card
+     */
     private VBox createBudgetCard(String category, double amount, double progress, PieChart chart) {
         VBox card = new VBox(10);
         card.getStyleClass().add("budget-card");
@@ -440,9 +510,13 @@ public class SettingController {
         card.getChildren().addAll(categoryLabel, chart, amountLabel, progressLabel);
         return card;
     }
+
+    /**
+     * Displays an alert dialog with the specified title and message.
+     * @param title The alert title
+     * @param message The alert message
+     */
     @FXML
-
-
     private void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title);
@@ -450,12 +524,17 @@ public class SettingController {
         alert.setContentText(message);
         alert.showAndWait();
     }
+
     @FXML
     private StackPane progressOverlay;
 
+    /**
+     * Handles the generation of spending insights.
+     * Displays a progress indicator and performs the analysis in a background task.
+     */
     @FXML
     private void handleGenerateInsights() {
-        // 显示进度条并禁用按钮
+        // Show progress indicator and disable button
         progressOverlay.setVisible(true);
         insightButton.setDisable(true);
 
@@ -473,24 +552,28 @@ public class SettingController {
             }
         };
 
-        // 成功回调
+        // Success callback
         task.setOnSucceeded(e -> {
             progressOverlay.setVisible(false);
             insightButton.setDisable(false);
             showResultDialog(task.getValue());
         });
 
-        // 失败回调
+        // Failure callback
         task.setOnFailed(e -> {
             progressOverlay.setVisible(false);
             insightButton.setDisable(false);
             showErrorDialog(task.getException());
         });
 
-        // 启动任务
+        // Start task
         new Thread(task).start();
     }
 
+    /**
+     * Displays the result of the spending insights analysis.
+     * @param result The analysis result
+     */
     private void showResultDialog(String result) {
         TextArea resultArea = new TextArea(result);
         resultArea.setWrapText(true);
@@ -504,6 +587,10 @@ public class SettingController {
         alert.show();
     }
 
+    /**
+     * Displays an error dialog with the specified exception message.
+     * @param ex The exception
+     */
     private void showErrorDialog(Throwable ex) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
@@ -512,10 +599,10 @@ public class SettingController {
         alert.show();
     }
 
-
-    // Budget模型类
+    /**
+     * Budget model class.
+     */
     public static class Budget {
-        //private final IntegerProperty serialNo;
         private final StringProperty category;
         private final StringProperty month;
         private final DoubleProperty amount;
@@ -525,7 +612,6 @@ public class SettingController {
             this.month = new SimpleStringProperty(month);
             this.amount = new SimpleDoubleProperty(amount);
         }
-
 
         public String getCategory() {
             return category.get();
@@ -563,5 +649,5 @@ public class SettingController {
             return amount;
         }
     }
-
 }
+

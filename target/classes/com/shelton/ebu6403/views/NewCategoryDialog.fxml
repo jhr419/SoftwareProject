@@ -2,14 +2,25 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
+<!--
+    File: add_category_dialog.fxml
+    Description: Dialog for creating a new category in LedgerEase.
+                 Allows users to enter a category name and either confirm or cancel the action.
+    Author: LedgerEase Team
+    Last updated: May 2025
+-->
+
 <VBox xmlns="http://javafx.com/javafx/21"
       xmlns:fx="http://javafx.com/fxml/1"
       spacing="15" style="-fx-padding: 20; -fx-pref-width: 300;">
 
+    <!-- Dialog title -->
     <Label text="New Category" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
 
+    <!-- Input field for new category name -->
     <TextField fx:id="categoryField" promptText="Category Name"/>
 
+    <!-- Button group: Save and Cancel -->
     <HBox spacing="10" alignment="CENTER_RIGHT">
         <Button text="Save" styleClass="dialog-button"/>
         <Button text="Cancel" styleClass="dialog-button"/>

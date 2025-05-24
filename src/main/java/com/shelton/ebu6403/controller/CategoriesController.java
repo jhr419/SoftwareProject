@@ -22,6 +22,24 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Controller for managing expense and income categories.
+ * <p>
+ * Handles the display and interaction of transaction category cards, transaction tables,
+ * and supports operations like importing CSV data, AI-assisted categorization, and
+ * transaction CRUD (create, read, update, delete).
+ * </p>
+ *
+ * <p>Main functionalities include:</p>
+ * <ul>
+ *   <li>Initializing category cards and transaction tables</li>
+ *   <li>Importing transactions from CSV with AI classification fallback</li>
+ *   <li>Creating, editing, deleting both expense and income entries</li>
+ *   <li>Persisting transaction data to CSV</li>
+ * </ul>
+ *
+ * Author: Haoran Jin, Zhifei Liu, Zuhao Zhang
+ */
 public class CategoriesController {
 
     @FXML
@@ -33,16 +51,8 @@ public class CategoriesController {
     @FXML
     TableView<Transaction> incomeTable;
 
-    // 支出分类
-//    final String[] expenseCategories = {
-//            "Travel", "Entertainment", "Clothing", "Education",
-//            "Transportation", "Medical", "Home", "Food",
-//            "Sports", "Communication","Others"
-//    };
     private final ExpenseManager expenseManager = new ExpenseManager("sk-cbzpgeqjquxjgusngdklsmrzikmptukukbrvzbjhibsosfyf");
 
-    // 收入分类
-//    final String[] incomeCategories = {"Salary", "Investment","Gift","Others"};
     private final String[] defaultExpenseCategories = {
             "Travel", "Entertainment", "Clothing", "Education",
             "Transportation", "Medical", "Home", "Food",
@@ -58,6 +68,13 @@ public class CategoriesController {
     final ObservableList<Transaction> allIncomes = FXCollections.observableArrayList();
     private BudgetSet budgetSet = new BudgetSet();
 
+    /**
+     * Initializes the category cards and transaction tables.
+     * <p>
+     * Loads default and custom categories for expenses and incomes,
+     * sets up click actions for filtering, and displays existing transactions.
+     * </p>
+     */
     @FXML
     public void initialize() {
         initCategoryCards();
@@ -65,7 +82,13 @@ public class CategoriesController {
         loadSampleData();
     }
 
-
+    /**
+     * Opens a file chooser to import a CSV file of transactions.
+     * <p>
+     * Automatically assigns serial numbers and uses AI to classify categories
+     * if none is provided. Data is added to the expense list and persisted to file.
+     * </p>
+     */
     @FXML
     private void handleImportCSV() {
         FileChooser fileChooser = new FileChooser();
@@ -75,19 +98,18 @@ public class CategoriesController {
         );
         File selectedFile = fileChooser.showOpenDialog(null);
         if (selectedFile != null) {
-            // 1. 从当前列表获取起始编号
+            // 1. get serial number
             int nextSerialNo = allExpenses.size() + 1;
 
             try (BufferedReader reader = new BufferedReader(new FileReader(selectedFile))) {
                 String line;
                 boolean isFirst = true;
                 while ((line = reader.readLine()) != null) {
-                    if (isFirst) { isFirst = false; continue; } // 跳过表头
+                    if (isFirst) { isFirst = false; continue; } // skip the first line
 
                     String[] parts = line.split(",", -1);
                     if (parts.length < 4) continue;
 
-                    // 忽略 parts[0] 原序号，直接重编号
                     String name = parts[1];
                     String date = parts[2];
                     double amount = Double.parseDouble(parts[3]);
@@ -105,7 +127,7 @@ public class CategoriesController {
 
             expensesTable.setItems(allExpenses);
 
-            // 导入成功弹窗
+            // alert fow successful import
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Import Successful");
             alert.setHeaderText(null);
@@ -114,8 +136,16 @@ public class CategoriesController {
 
         }
     }
+
+    /**
+     * Initializes category cards for both expense and income types.
+     * <p>
+     * Loads default and custom-defined categories, and creates visual cards for each.
+     * Cards are added to their respective containers and configured with click listeners
+     * to filter transactions by category. A "More" card is appended for adding new categories.
+     * </p>
+     */
     private void initCategoryCards() {
-        // 支出卡片（包含默认 + 自定义）
         List<String> allExpenseCats = new ArrayList<>(Arrays.asList(defaultExpenseCategories));
         allExpenseCats.addAll(readCustomCategories(customExpenseFile));
 
@@ -129,7 +159,7 @@ public class CategoriesController {
         moreCard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> showNewCategoryDialog("Expense"));
         expensesCardContainer.getChildren().add(moreCard);
 
-        // 收入卡片
+        // income card
         List<String> allIncomeCats = new ArrayList<>(Arrays.asList(defaultIncomeCategories));
         allIncomeCats.addAll(readCustomCategories(customIncomeFile));
 
@@ -144,7 +174,18 @@ public class CategoriesController {
         incomeCardContainer.getChildren().add(incomeMoreCard);
     }
 
-
+    /**
+     * Creates a visual category card with an icon and label.
+     * <p>
+     * Tries to load an icon image from the specified directory using the category name.
+     * If the icon is missing, a fallback emoji is displayed instead. The card is styled
+     * and aligned for consistent appearance in the UI.
+     * </p>
+     *
+     * @param title    The display name of the category (e.g., "Food", "Salary").
+     * @param iconDir  The directory path where icon images are stored.
+     * @return A VBox node representing the formatted category card.
+     */
     private VBox createCategoryCard(String title, String iconDir) {
         VBox card = new VBox(5);
         card.getStyleClass().add("category-card");
@@ -179,13 +220,22 @@ public class CategoriesController {
 
         return card;
     }
-
+    /**
+     * Appends a single transaction entry to the specified CSV file.
+     * <p>
+     * If the file does not exist, it creates it and writes the header line first.
+     * Ensures the parent directory exists before writing.
+     * </p>
+     *
+     * @param tx       The transaction to append.
+     * @param filePath The CSV file path to write to.
+     */
     private void appendTransactionToCSV(Transaction tx, String filePath) {
         File file = new File(filePath);
         boolean fileExists = file.exists();
 
         try {
-            // 确保目录存在
+            // make sure the dictionary exist
             File parent = file.getParentFile();
             if (parent != null && !parent.exists()) {
                 parent.mkdirs();
@@ -204,6 +254,15 @@ public class CategoriesController {
         }
     }
 
+    /**
+     * Overwrites the given CSV file with a new list of transactions.
+     * <p>
+     * Writes a header line followed by all transaction records, re-indexing serial numbers.
+     * </p>
+     *
+     * @param transactions The list of transactions to write.
+     * @param filePath     The CSV file path to overwrite.
+     */
     private void overwriteCSV(ObservableList<Transaction> transactions, String filePath) {
         File file = new File(filePath);
         try (FileWriter writer = new FileWriter(file)) {
@@ -218,6 +277,13 @@ public class CategoriesController {
         }
     }
 
+    /**
+     * Initializes the column bindings for both expense and income tables.
+     * <p>
+     * Sets the property value factories for serial number, name, date,
+     * amount, and category columns in each table.
+     * </p>
+     */
     private void initTransactionTables() {
         TableColumn<Transaction, Integer> expNoCol = (TableColumn<Transaction, Integer>) expensesTable.getColumns().get(0);
         expNoCol.setCellValueFactory(new PropertyValueFactory<>("serialNo"));
@@ -250,6 +316,13 @@ public class CategoriesController {
         incCategoryCol.setCellValueFactory(new PropertyValueFactory<>("category"));
     }
 
+    /**
+     * Loads sample transaction data from local CSV files.
+     * <p>
+     * Populates the expense and income tables with transactions
+     * read from 'data/expenses.csv' and 'data/incomes.csv'.
+     * </p>
+     */
     private void loadSampleData() {
         allExpenses.setAll(readTransactionsFromCSV("data/expenses.csv"));
         expensesTable.setItems(allExpenses);
@@ -258,7 +331,12 @@ public class CategoriesController {
         incomeTable.setItems(allIncomes);
     }
 
-
+    /**
+     * Filters and displays transactions of a specific category and type.
+     *
+     * @param category The category to filter by (e.g., "Food", "Salary").
+     * @param type     The type of transaction ("Expense" or "Income").
+     */
     void filterTransactions(String category, String type) {
         if ("Expense".equals(type)) {
             ObservableList<Transaction> filtered = allExpenses.filtered(t -> category.equals(t.getCategory()));
@@ -269,6 +347,15 @@ public class CategoriesController {
         }
     }
 
+    /**
+     * Reads transactions from a CSV file and returns them as an observable list.
+     * <p>
+     * Skips the header line and parses each transaction into a {@code Transaction} object.
+     * </p>
+     *
+     * @param filePath The path to the CSV file.
+     * @return An observable list of {@code Transaction} objects.
+     */
     ObservableList<Transaction> readTransactionsFromCSV(String filePath) {
         ObservableList<Transaction> transactions = FXCollections.observableArrayList();
         File file = new File(filePath);
@@ -296,7 +383,15 @@ public class CategoriesController {
         return transactions;
     }
 
-
+    /**
+     * Displays a dialog to let the user create a new category.
+     * <p>
+     * After user input, creates a new category card and adds it to the UI.
+     * Also persists the category to the corresponding custom category file.
+     * </p>
+     *
+     * @param type Either "Expense" or "Income" indicating the category type.
+     */
     @FXML
     void showNewCategoryDialog(String type) {
         TextInputDialog dialog = new TextInputDialog();
@@ -319,6 +414,15 @@ public class CategoriesController {
         });
     }
 
+    /**
+     * Reads custom category names from a text file.
+     * <p>
+     * Each line in the file represents a single category. Blank lines are ignored.
+     * </p>
+     *
+     * @param filePath The file path containing custom category names.
+     * @return A list of category names.
+     */
     private List<String> readCustomCategories(String filePath) {
         List<String> categories = new ArrayList<>();
         File file = new File(filePath);
@@ -335,10 +439,19 @@ public class CategoriesController {
         return categories;
     }
 
+    /**
+     * Appends a new custom category to the specified file.
+     * <p>
+     * Ensures the directory exists before writing. The new category is written on a new line.
+     * </p>
+     *
+     * @param filePath The file to which the category should be appended.
+     * @param category The name of the new custom category.
+     */
     private void appendToCustomCategoryFile(String filePath, String category) {
         try {
             File file = new File(filePath);
-            file.getParentFile().mkdirs(); // 确保 data 文件夹存在
+            file.getParentFile().mkdirs(); // make sure data file exist
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
                 writer.write(category);
                 writer.newLine();
@@ -348,7 +461,14 @@ public class CategoriesController {
         }
     }
 
-
+    /**
+     * Displays a dialog for adding a new expense transaction.
+     * <p>
+     * If the category field is left blank, the system uses AI to suggest a category.
+     * The user can confirm or modify the suggestion. The new expense is added to the
+     * table and stored in the local CSV file. It is also recorded in the {@code BudgetSet}.
+     * </p>
+     */
     @FXML
     private void showAddExpenseDialog() {
         Dialog<Transaction> dialog = new Dialog<>();
@@ -408,11 +528,19 @@ public class CategoriesController {
             allExpenses.add(tx);
             expensesTable.setItems(allExpenses);
             appendTransactionToCSV(tx, "data/expenses.csv");
-            // 记录进 BudgetSet（并自动触发进度刷新）
+            // refresh automatically
             budgetSet.addExpense(tx.getCategory(), LocalDate.parse(tx.getDate()), tx.getAmount());
         });
     }
 
+    /**
+     * Displays a dialog for adding a new income transaction.
+     * <p>
+     * If the category field is left blank, the system uses AI to suggest a category.
+     * The user can confirm or modify the suggestion. The new income is added to the
+     * table and stored in the local CSV file.
+     * </p>
+     */
     @FXML
     private void showAddIncomeDialog() {
         Dialog<Transaction> dialog = new Dialog<>();
@@ -476,7 +604,9 @@ public class CategoriesController {
     }
 
 
-    // 修改后的 CategoriesController 的增删改功能
+    /**
+     * Deletes the selected expense transaction from the table and updates the CSV file.
+     */
     @FXML
     void handleDeleteExpense() {
         Transaction selected = expensesTable.getSelectionModel().getSelectedItem();
@@ -487,7 +617,12 @@ public class CategoriesController {
         }
     }
 
-
+    /**
+     * Opens a dialog for editing the selected expense transaction.
+     * <p>
+     * Updates the expense table and overwrites the CSV file with new values.
+     * </p>
+     */
     @FXML
     private void handleEditExpense() {
         Transaction selected = expensesTable.getSelectionModel().getSelectedItem();
@@ -498,7 +633,15 @@ public class CategoriesController {
         }
     }
 
-
+    /**
+     * Displays a dialog for editing a given transaction.
+     * <p>
+     * Allows the user to update the transaction's name, date, amount, and category.
+     * </p>
+     *
+     * @param tx   The transaction to edit.
+     * @param type The type of transaction ("Expense" or "Income") for display labeling.
+     */
     private void showEditTransactionDialog(Transaction tx, String type) {
         Dialog<Transaction> dialog = new Dialog<>();
         dialog.setTitle("Edit " + type);
@@ -534,6 +677,9 @@ public class CategoriesController {
         expensesTable.refresh();
     }
 
+    /**
+     * Deletes the selected income transaction from the table and updates the CSV file.
+     */
     @FXML
     private void handleDeleteIncome() {
         Transaction selected = incomeTable.getSelectionModel().getSelectedItem();
@@ -544,7 +690,12 @@ public class CategoriesController {
         }
     }
 
-
+    /**
+     * Opens a dialog for editing the selected income transaction.
+     * <p>
+     * Updates the income table and overwrites the CSV file with new values.
+     * </p>
+     */
     @FXML
     private void handleEditIncome() {
         Transaction selected = incomeTable.getSelectionModel().getSelectedItem();
@@ -555,6 +706,12 @@ public class CategoriesController {
         }
     }
 
+    /**
+     * Represents a single financial transaction, either income or expense.
+     * <p>
+     * Stores transaction metadata including serial number, name, date, amount, and category.
+     * </p>
+     */
     public static class Transaction {
         private int serialNo;
         private String name;

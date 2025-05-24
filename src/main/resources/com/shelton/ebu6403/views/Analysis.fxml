@@ -1,37 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.chart.*?>
+
+<!--
+    File: Analysis.fxml
+    Description: Defines the UI layout for financial analysis in LedgerEase.
+                 Includes daily calendar view, transaction summary, and trend analysis charts.
+    Controller: com.shelton.ebu6403.controller.AnalysisController
+    Author: LedgerEase Team
+    Last updated: May 2025
+-->
 
 <BorderPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.shelton.ebu6403.controller.AnalysisController"
             stylesheets="@../styles/analysis.css">
 
+    <!-- Top title section -->
     <top>
-        <!-- 顶部标题 -->
         <Label text="Financial Analysis" styleClass="title-label"/>
     </top>
 
+    <!-- Center content: calendar + transactions + analysis tabs -->
     <center>
         <VBox spacing="20">
-            <!-- Daily Details 模块 -->
-            <HBox spacing="20" styleClass="details-container">
-                <!-- 左侧日历卡片 -->
-                <VBox fx:id="calendarContainer" styleClass="calendar-card" prefWidth="350">
-                    <!-- 日历内容由 Controller 生成 -->
-                </VBox>
 
-                <!-- 右侧交易明细 -->
+            <!-- Daily Details Section -->
+            <HBox spacing="20" styleClass="details-container">
+
+                <!-- Left: Calendar summary card (generated dynamically) -->
+                <VBox fx:id="calendarContainer" styleClass="calendar-card" prefWidth="350" />
+
+                <!-- Right: Transaction details section -->
                 <VBox spacing="15" styleClass="transactions-container" HBox.hgrow="ALWAYS">
-                    <!-- 顶部汇总卡片 -->
+
+                    <!-- Summary income/spend/balance card -->
                     <HBox styleClass="summary-card">
                         <Label fx:id="summaryIncome" text="Income: $" styleClass="summary-income"/>
                         <Label fx:id="summarySpend" text="Spend: $" styleClass="summary-spend"/>
                         <Label fx:id="summaryBalance" text="Balance: $" styleClass="summary-balance"/>
                     </HBox>
 
-                    <!-- 交易明细表格 -->
+                    <!-- TableView for displaying daily transactions -->
                     <TableView fx:id="transactionsTable" styleClass="transactions-table">
                         <columns>
                             <TableColumn text="Category" prefWidth="150"/>
@@ -42,9 +52,10 @@
                 </VBox>
             </HBox>
 
-            <!-- Analysis 模块 -->
+            <!-- Analysis Tabs Section -->
             <VBox spacing="15" styleClass="analysis-container">
-                <!-- 选项卡 -->
+
+                <!-- Tabs for Daily / Monthly / Yearly analysis -->
                 <TabPane fx:id="analysisTabs" styleClass="analysis-tabs">
                     <Tab text="Daily">
                         <VBox fx:id="analysisDailyPane" spacing="15"/>
@@ -60,4 +71,3 @@
         </VBox>
     </center>
 </BorderPane>
-

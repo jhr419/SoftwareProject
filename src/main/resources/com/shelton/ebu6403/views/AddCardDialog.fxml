@@ -2,32 +2,48 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<!--
+    File: AddCardDialog.fxml
+    Description: Dialog interface for adding a new credit card.
+    Includes form fields for card type, cardholder name, card number, and expiry date.
+    Used in the investment or banking feature of LedgerEase.
+-->
+
 <DialogPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1">
 
+    <!-- Dialog content layout -->
     <content>
         <VBox spacing="15" style="-fx-padding: 20;">
-            <Label wrapText="true" text="Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to a Cardholder, with a credit limit, that can be used to purchase goods and services on credit or obtain cash advances." styleClass="dialog-description" />
+            <!-- Description label explaining what a credit card is -->
+            <Label wrapText="true"
+                   text="Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to a Cardholder, with a credit limit, that can be used to purchase goods and services on credit or obtain cash advances."
+                   styleClass="dialog-description" />
 
+            <!-- Grid layout for form fields -->
             <GridPane hgap="10" vgap="10">
+                <!-- Card Type field -->
                 <Label text="Card Type" GridPane.rowIndex="0" GridPane.columnIndex="0" />
                 <TextField fx:id="cardTypeField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
 
+                <!-- Name on Card field -->
                 <Label text="Name On Card" GridPane.rowIndex="1" GridPane.columnIndex="0" />
                 <TextField fx:id="nameField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
 
+                <!-- Card Number field -->
                 <Label text="Card Number" GridPane.rowIndex="2" GridPane.columnIndex="0" />
                 <TextField fx:id="cardNumberField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
 
+                <!-- Expiration Date field -->
                 <Label text="Expiration Date" GridPane.rowIndex="3" GridPane.columnIndex="0" />
                 <DatePicker fx:id="expiryDatePicker" GridPane.rowIndex="3" GridPane.columnIndex="1" />
             </GridPane>
         </VBox>
     </content>
 
+    <!-- Dialog buttons: Add and Cancel -->
     <buttonTypes>
         <ButtonType text="Add Card" buttonData="OK_DONE" />
         <ButtonType text="Cancel" buttonData="CANCEL_CLOSE" />
     </buttonTypes>
 </DialogPane>
-

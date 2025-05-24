@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.chart.*?>
+
+<!--
+    File: Investments.fxml
+    Description: Layout for the investments page in LedgerEase. Includes:
+                 - Horizontal scrollable card view for bank/investment summaries
+                 - Summary analysis and revenue chart
+                 - Investment list and AI assistant entry
+    Controller: com.shelton.ebu6403.controller.InvestmentsController
+    Stylesheet: ../styles/investments.css
+    Author: LedgerEase Team
+    Last updated: May 2025
+-->
 
 <ScrollPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
@@ -13,19 +25,25 @@
     <content>
         <BorderPane>
 
-            <!-- 顶部卡片区 -->
+            <!-- Top card + summary + chart section -->
             <top>
                 <VBox spacing="20" style="-fx-padding: 20;">
+
+                    <!-- Scrollable card view (e.g., bank cards) -->
                     <ScrollPane fitToHeight="false" fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="NEVER">
                         <HBox fx:id="cardScrollContainer" spacing="15" styleClass="card-scroll-container" />
                     </ScrollPane>
-                    <DatePicker fx:id="summaryDatePicker"  style="-fx-padding: 4; -fx-font-size: 13px; -fx-background-color: white;"
+
+                    <!-- Date picker for summary filtering -->
+                    <DatePicker fx:id="summaryDatePicker"
+                                style="-fx-padding: 4; -fx-font-size: 13px; -fx-background-color: white;"
                                 promptText="Select a Date" />
+
                     <HBox spacing="20">
-                        <!-- 左侧 Summary -->
+                        <!-- Left: Summary insight cards -->
                         <VBox fx:id="infoSummaryContainer" spacing="15" prefWidth="400" />
 
-                        <!-- 右侧 Line Chart -->
+                        <!-- Right: Monthly revenue line chart -->
                         <VBox HBox.hgrow="ALWAYS">
                             <Label text="Monthly Revenue" styleClass="section-title" />
                             <LineChart fx:id="monthlyRevenueChart" title="" prefHeight="350">
@@ -41,10 +59,11 @@
                 </VBox>
             </top>
 
-            <!-- 下部投资区 -->
+            <!-- Bottom investment + assistant section -->
             <center>
                 <HBox spacing="20" style="-fx-padding: 20;">
-                    <!-- My Investment 列表 -->
+
+                    <!-- Investment list with date filter -->
                     <VBox spacing="10">
                         <DatePicker fx:id="investmentDatePicker"
                                     style="-fx-padding: 4; -fx-font-size: 13px; -fx-background-color: white;"
@@ -54,7 +73,8 @@
                             <VBox fx:id="investmentListContainer" spacing="15" />
                         </ScrollPane>
                     </VBox>
-                    <!-- AI Assistant -->
+
+                    <!-- AI Assistant card with button -->
                     <VBox fx:id="aiAssistantCard" alignment="CENTER" spacing="15">
                         <Button text="AI+  DEEPSEEK-R1   →" styleClass="ai-assistant-button" onAction="#goToAiPage"/>
                     </VBox>
@@ -63,4 +83,3 @@
         </BorderPane>
     </content>
 </ScrollPane>
-

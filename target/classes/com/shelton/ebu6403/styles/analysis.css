@@ -1,4 +1,11 @@
-/* 基础样式 */
+/*
+ * File: Analysis.css
+ * Description: Styles for Analysis page layout, including calendar, summary cards, and charts.
+ * Author: LedgerEase Team
+ * Last updated: May 2025
+ */
+
+/* Base title style */
 .title-label {
     -fx-font-size: 24px;
     -fx-text-fill: #4285f4;
@@ -6,7 +13,7 @@
     -fx-padding: 0 0 20px 0;
 }
 
-/* 日历卡片 */
+/* Calendar card layout */
 .calendar-card {
     -fx-background-color: white;
     -fx-background-radius: 10;
@@ -14,6 +21,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
 }
 
+/* Calendar weekday label */
 .calendar-dayname {
     -fx-font-size: 12px;
     -fx-text-fill: #616161;
@@ -21,6 +29,7 @@
     -fx-padding: 5px;
 }
 
+/* Calendar individual day style */
 .calendar-day {
     -fx-min-width: 30px;
     -fx-min-height: 30px;
@@ -30,11 +39,12 @@
     -fx-border-radius: 15;
 }
 
+/* Hover effect for calendar day */
 .calendar-day:hover {
     -fx-background-color: #f5f5f5;
 }
 
-/* 交易明细 */
+/* Summary card (for totals or balance) */
 .summary-card {
     -fx-background-color: white;
     -fx-background-radius: 10;
@@ -42,28 +52,32 @@
     -fx-spacing: 20px;
 }
 
+/* Income amount text */
 .summary-income {
     -fx-text-fill: #2ecc71;
     -fx-font-weight: bold;
 }
 
+/* Expense amount text */
 .summary-spend {
     -fx-text-fill: #e74c3c;
     -fx-font-weight: bold;
 }
 
+/* Balance amount text */
 .summary-balance {
     -fx-text-fill: #4285f4;
     -fx-font-weight: bold;
 }
 
+/* Transaction table container */
 .transactions-table {
     -fx-background-color: white;
     -fx-background-radius: 10;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
 }
 
-/* 分析图表区域 */
+/* Tab headers in analysis section */
 .analysis-tabs {
     -fx-tab-min-width: 100px;
 }
@@ -72,6 +86,7 @@
     -fx-background-color: transparent;
 }
 
+/* Chart area container */
 .chart-container {
     -fx-background-color: white;
     -fx-background-radius: 10;

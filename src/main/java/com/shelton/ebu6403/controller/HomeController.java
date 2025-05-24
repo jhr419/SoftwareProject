@@ -20,53 +20,61 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+/**
+ * Controller class for the home dashboard interface.
+ * <p>
+ * Manages the main dashboard view showing daily expense statistics,
+ * financial charts, bank card information, and recent transactions.
+ * </p>
+ * @author Haoran Jin, Zhifei liu， Weicheng Xie
+ */
 public class HomeController {
-    // 卡片金额显示
-    @FXML
-    private Label foodAmount;
+    /** Labels for category amounts */
+    @FXML private Label foodAmount;
     @FXML private Label transportAmount;
     @FXML private Label medicineAmount;
     @FXML private Label giftsAmount;
     @FXML private Label clothingAmount;
     @FXML private Label sportsAmount;
+
+    /** Labels for last update timestamps */
     @FXML private Label foodUpdate;
     @FXML private Label transportUpdate;
     @FXML private Label sportsUpdate;
     @FXML private Label clothingUpdate;
 
-    // 图表控件
+    /** Chart components */
     @FXML private BarChart<String, Number> weeklyChart;
     @FXML private CategoryAxis xAxis;
     @FXML private NumberAxis yAxis;
     @FXML private PieChart expenseChart;
 
-    // 银行卡信息
+    /** Bank card information labels */
     @FXML private Label card1Balance;
     @FXML private Label card1Holder;
     @FXML private Label card2Balance;
     @FXML private Label card2Holder;
 
-    @FXML  // 必须添加此注解
-    private ListView<String> recentTransactions; // 类型与泛型需匹配
+    /** List view for recent transactions */
+    @FXML private ListView<String> recentTransactions;
 
+    /**
+     * Initializes the controller.
+     * Sets up all dashboard components including statistics, charts, and transaction list.
+     */
     @FXML
     public void initialize() {
-        // 初始化卡片数据
         initDailyStats();
-
-        // 配置周活动图表
         configureWeeklyChart();
-
-        // 初始化支出饼图
         initExpenseChart();
-
-        // 加载交易记录
         loadTransactions();
-
-        // 加载银行卡信息
         loadBankCards();
     }
 
+    /**
+     * Initializes daily statistics.
+     * Loads and displays current day's expense amounts for different categories.
+     */
     private void initDailyStats() {
         Map<String, Double> amountMap = new HashMap<>();
         LocalDate latestDate = null;
@@ -97,13 +105,13 @@ public class HomeController {
             e.printStackTrace();
         }
 
-        // 更新金额显示（默认 0）
+        // Update amount displays with formatted values
         foodAmount.setText("$" + String.format("%.2f", amountMap.getOrDefault("Food", 0.0)));
         transportAmount.setText("$" + String.format("%.2f", amountMap.getOrDefault("Transportation", 0.0)));
         sportsAmount.setText("$" + String.format("%.2f", amountMap.getOrDefault("Sports", 0.0)));
         clothingAmount.setText("$" + String.format("%.2f", amountMap.getOrDefault("Clothing", 0.0)));
 
-        // 如果你 FXML 中还定义了时间戳 Label（如 foodUpdate），也可以添加更新时间
+        // Update timestamps with current time
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm - MMM dd", Locale.ENGLISH);
         String now = "Updated at " + LocalDateTime.now().format(formatter);
 
@@ -111,27 +119,34 @@ public class HomeController {
         transportUpdate.setText(now);
         sportsUpdate.setText(now);
         clothingUpdate.setText(now);
-
     }
 
-
+    /**
+     * Configures the weekly financial activity chart.
+     * Sets up and populates a bar chart showing income and expenses for the past 7 days.
+     */
     private void configureWeeklyChart() {
+        // Configure Y-axis to show currency values
         yAxis.setTickLabelFormatter(new NumberAxis.DefaultFormatter(yAxis, "$", null));
 
+        // Create series for expenses and income
         XYChart.Series<String, Number> expenseSeries = new XYChart.Series<>();
         expenseSeries.setName("Expense");
 
         XYChart.Series<String, Number> incomeSeries = new XYChart.Series<>();
         incomeSeries.setName("Income");
 
+        // Generate dates for the last 7 days
         LocalDate today = LocalDate.now();
         List<LocalDate> last7Days = IntStream.rangeClosed(1, 7)
                 .mapToObj(i -> today.minusDays(7 - i))
                 .collect(Collectors.toList());
 
+        // Load financial data
         Map<LocalDate, Double> incomeMap = loadDailyTotal("data/incomes.csv");
         Map<LocalDate, Double> expenseMap = loadDailyTotal("data/expenses.csv");
 
+        // Populate chart data
         for (LocalDate date : last7Days) {
             String label = date.getDayOfWeek().getDisplayName(TextStyle.SHORT, Locale.ENGLISH);
             incomeSeries.getData().add(new XYChart.Data<>(label, incomeMap.getOrDefault(date, 0.0)));
@@ -142,7 +157,12 @@ public class HomeController {
         weeklyChart.setStyle("-fx-bar-fill-0: #e74c3c; -fx-bar-fill-1: #2ecc71;");
     }
 
-    Map<LocalDate, Double> loadDailyTotal(String path) {
+    /**
+     * Loads and aggregates daily financial totals from a CSV file.
+     * @param path The path to the CSV file containing financial records
+     * @return A map of dates to total amounts for each day
+     */
+    private Map<LocalDate, Double> loadDailyTotal(String path) {
         Map<LocalDate, Double> result = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String line;
@@ -150,15 +170,14 @@ public class HomeController {
             while ((line = reader.readLine()) != null) {
                 if (skip) { skip = false; continue; }
                 String[] parts = line.split(",", -1);
-                if (parts.length < 4) continue; // 跳过非法行
+                if (parts.length < 4) continue;
                 try {
                     LocalDate date = LocalDate.parse(parts[2]);
                     double amount = Double.parseDouble(parts[3]);
                     result.put(date, result.getOrDefault(date, 0.0) + amount);
                 } catch (Exception e) {
-                    e.printStackTrace(); // 或忽略解析失败
+                    e.printStackTrace();
                 }
-
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -166,7 +185,10 @@ public class HomeController {
         return result;
     }
 
-
+    /**
+     * Initializes and populates the expense distribution pie chart.
+     * Shows category-wise breakdown of expenses for the current day.
+     */
     private void initExpenseChart() {
         Map<String, Double> categoryTotals = new HashMap<>();
         LocalDate today = LocalDate.now();
@@ -201,32 +223,48 @@ public class HomeController {
         expenseChart.setData(pieData);
     }
 
+    /**
+     * Loads and displays recent transactions in the list view.
+     * Combines and sorts transactions from both income and expense files.
+     */
     private void loadTransactions() {
         List<Transaction> recentList = new ArrayList<>();
 
         recentList.addAll(readTransactionsFromCSV("data/expenses.csv"));
         recentList.addAll(readTransactionsFromCSV("data/incomes.csv"));
 
-        // 根据日期降序排列（假设格式为 yyyy-MM-dd）
+        // Sort by date in descending order
         recentList.sort((a, b) -> b.getDate().compareTo(a.getDate()));
 
         ObservableList<String> displayItems = FXCollections.observableArrayList();
 
+        // Display the most recent 10 transactions
         for (int i = 0; i < Math.min(10, recentList.size()); i++) {
             Transaction tx = recentList.get(i);
-            String sign = tx.getCategory().equalsIgnoreCase("Salary") || tx.getCategory().equalsIgnoreCase("Investment")
-                    ? "+" : "-";
+            String sign = tx.getCategory().equalsIgnoreCase("Salary") ||
+                         tx.getCategory().equalsIgnoreCase("Investment") ? "+" : "-";
             displayItems.add(String.format("%s %s$%.2f", tx.getName(), sign, tx.getAmount()));
         }
 
         recentTransactions.setItems(displayItems);
     }
-    public static class Transaction {
-        private String name;
-        private String date;
-        private double amount;
-        private String category;
 
+    /**
+     * Model class representing a financial transaction.
+     */
+    public static class Transaction {
+        private final String name;
+        private final String date;
+        private final double amount;
+        private final String category;
+
+        /**
+         * Creates a new Transaction instance.
+         * @param name The transaction name or description
+         * @param date The transaction date in yyyy-MM-dd format
+         * @param amount The monetary amount of the transaction
+         * @param category The category classification of the transaction
+         */
         public Transaction(String name, String date, double amount, String category) {
             this.name = name;
             this.date = date;
@@ -234,13 +272,38 @@ public class HomeController {
             this.category = category;
         }
 
+        /**
+         * Gets the transaction name.
+         * @return The transaction name or description
+         */
         public String getName() { return name; }
+
+        /**
+         * Gets the transaction date.
+         * @return The date in yyyy-MM-dd format
+         */
         public String getDate() { return date; }
+
+        /**
+         * Gets the transaction amount.
+         * @return The monetary amount
+         */
         public double getAmount() { return amount; }
+
+        /**
+         * Gets the transaction category.
+         * @return The category name
+         */
         public String getCategory() { return category; }
     }
 
-    List<Transaction> readTransactionsFromCSV(String path) {
+    /**
+     * Reads transaction records from a CSV file.
+     * Parses each line into a Transaction object.
+     * @param path The path to the CSV file
+     * @return A list of Transaction objects
+     */
+    private List<Transaction> readTransactionsFromCSV(String path) {
         List<Transaction> result = new ArrayList<>();
         File file = new File(path);
         if (!file.exists()) return result;
@@ -252,21 +315,25 @@ public class HomeController {
                 if (isFirst) { isFirst = false; continue; }
                 String[] parts = line.split(",", -1);
                 if (parts.length == 5) {
-                    String name = parts[1];
-                    String date = parts[2];
-                    double amount = Double.parseDouble(parts[3]);
-                    String category = parts[4];
-                    result.add(new Transaction(name, date, amount, category));
+                    result.add(new Transaction(
+                        parts[1],  // name
+                        parts[2],  // date
+                        Double.parseDouble(parts[3]),  // amount
+                        parts[4]   // category
+                    ));
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return result;
     }
 
-
+    /**
+     * Loads and displays bank card information.
+     * Updates UI labels with sample card balances and holder names.
+     * Note: This method currently uses static sample data for demonstration purposes.
+     */
     private void loadBankCards() {
         card1Balance.setText("$5,756.38");
         card1Holder.setText("Eddy Cusuma");
@@ -274,5 +341,4 @@ public class HomeController {
         card2Holder.setText("Shelton Li");
     }
 }
-
 

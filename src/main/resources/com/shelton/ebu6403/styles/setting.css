@@ -1,4 +1,13 @@
-/* 设置选项卡样式 */
+/*
+ * File: settings.css
+ * Description: Styling for the Settings section including tabs, budget table,
+ * form inputs, budget cards, buttons, and insight generation progress overlay.
+ * Applies to the budget configuration and insight features of LedgerEase.
+ * Author: LedgerEase Team
+ * Last updated: May 2025
+ */
+
+/* Tab styling */
 .settings-tab-pane {
     -fx-tab-min-width: 120px;
     -fx-tab-max-width: 120px;
@@ -22,7 +31,7 @@
     -fx-text-fill: white;
 }
 
-/* 预算设置区域样式 */
+/* Budget settings section */
 .budget-settings-container {
     -fx-padding: 15px 0 0 0;
 }
@@ -39,7 +48,7 @@
     -fx-text-fill: #616161;
 }
 
-/* 预算表格样式 */
+/* Budget table styling */
 .budget-table {
     -fx-background-color: white;
     -fx-background-radius: 5px;
@@ -62,7 +71,7 @@
     -fx-background-color: #f9f9f9;
 }
 
-/* 按钮样式 */
+/* Button styles */
 .save-button {
     -fx-background-color: #4285f4;
     -fx-text-fill: white;
@@ -99,7 +108,7 @@
     -fx-background-color: #c0392b;
 }
 
-/* 预算卡片 */
+/* Budget card style */
 .budget-card {
     -fx-background-color: white;
     -fx-background-radius: 10px;
@@ -120,7 +129,7 @@
     -fx-font-weight: bold;
 }
 
-/* 饼图样式 */
+/* Pie chart styles */
 .chart-pie-label {
     -fx-fill: white;
     -fx-font-size: 10px;
@@ -129,12 +138,14 @@
 .default-color0.chart-pie { -fx-pie-color: #e74c3c; }
 .default-color1.chart-pie { -fx-pie-color: #2ecc71; }
 
-/* 卡片容器 */
+/* Card container */
 .budget-cards-container {
     -fx-padding: 10px;
     -fx-hgap: 15px;
     -fx-vgap: 15px;
 }
+
+/* Insight generation button */
 .generate-button {
     -fx-background-color: linear-gradient(to right, #28a745, #218838);
     -fx-text-fill: white;
@@ -149,12 +160,13 @@
 .generate-button:hover {
     -fx-background-color: linear-gradient(to right, #218838, #1e7e34);
 }
-/* 进度条容器样式 */
+
+/* Overlay style for loading progress */
 #progressOverlay {
-    -fx-background-color: rgba(0, 0, 0, 0.3); /* 半透明黑色 */
+    -fx-background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* 进度条样式 */
+/* Insight progress bar style */
 #insightProgress {
-    -fx-progress-color: white !important; /* 白色进度条 */
+    -fx-progress-color: white !important;
 }

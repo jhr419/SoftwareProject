@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.chart.*?>
-
 <?import javafx.geometry.Insets?>
+
+<!--
+    File: setting.fxml
+    Description: UI for budget management and AI-based financial insight generation in LedgerEase.
+    Provides tabs for budget entry, table overview, visual cards, and AI analysis trigger.
+    Author: LedgerEase Team
+    Last updated: May 2025
+-->
+
 <BorderPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.shelton.ebu6403.controller.SettingController"
@@ -11,66 +18,71 @@
 
     <center>
         <VBox spacing="15" style="-fx-padding: 20;">
-            <!-- 设置选项卡 -->
+
+            <!-- TabPane for organizing settings (can be extended) -->
             <TabPane fx:id="settingsTabPane" styleClass="settings-tab-pane"/>
-                <HBox alignment="CENTER">
-                    <Label fx:id="holidayReminderLabel"
-                           text=""
-                           visible="false"
-                           wrapText="true"
-                           style="-fx-background-color: #fff3cd; -fx-border-color: #ffeeba; -fx-padding: 10px 20px;
-                           -fx-text-fill: #856404; -fx-font-size: 14px; -fx-font-weight: bold;"
-                           maxWidth="900"/>
-                    <VBox.margin>
-                        <Insets top="10" bottom="10"/>
-                    </VBox.margin>
-                </HBox>
 
-                <!-- 预算设置表单 -->
-                <HBox styleClass="budget-form">
-                    <VBox spacing="10" prefWidth="300">
-                        <Label text="Select budget categories" styleClass="section-label"/>
-                        <ComboBox fx:id="categoryCombo" promptText="Select category"/>
+            <!-- Holiday alert label shown dynamically before major Chinese festivals -->
+            <HBox alignment="CENTER">
+                <Label fx:id="holidayReminderLabel"
+                       text=""
+                       visible="false"
+                       wrapText="true"
+                       style="-fx-background-color: #fff3cd; -fx-border-color: #ffeeba; -fx-padding: 10px 20px;
+                              -fx-text-fill: #856404; -fx-font-size: 14px; -fx-font-weight: bold;"
+                       maxWidth="900"/>
+                <VBox.margin>
+                    <Insets top="10" bottom="10"/>
+                </VBox.margin>
+            </HBox>
 
-                        <Label text="Set budget amount" styleClass="section-label"/>
-                        <TextField fx:id="budgetAmountField" promptText="Amount"/>
+            <!-- Budget entry form -->
+            <HBox styleClass="budget-form">
+                <VBox spacing="10" prefWidth="300">
+                    <Label text="Select budget categories" styleClass="section-label"/>
+                    <ComboBox fx:id="categoryCombo" promptText="Select category"/>
 
-                        <Label text="Select month and year" styleClass="section-label"/>
-                        <HBox spacing="10">
-                            <ComboBox fx:id="monthCombo" prefWidth="150"/>
-                            <ComboBox fx:id="yearCombo" prefWidth="100"/>
-                        </HBox>
+                    <Label text="Set budget amount" styleClass="section-label"/>
+                    <TextField fx:id="budgetAmountField" promptText="Amount"/>
 
-                        <Button text="SAVE" onAction="#handleAddBudget" styleClass="save-button"/>
-                    </VBox>
+                    <Label text="Select month and year" styleClass="section-label"/>
+                    <HBox spacing="10">
+                        <ComboBox fx:id="monthCombo" prefWidth="150"/>
+                        <ComboBox fx:id="yearCombo" prefWidth="100"/>
+                    </HBox>
 
-                    <!-- 预算表格 -->
-                    <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
-                        <TableView fx:id="budgetTable" styleClass="budget-table"/>
-                    </ScrollPane>
-                </HBox>
+                    <Button text="SAVE" onAction="#handleAddBudget" styleClass="save-button"/>
+                </VBox>
 
-                <!-- 预算卡片 -->
-                <Label text="Budget Overview" styleClass="section-title"/>
-                <ScrollPane fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="NEVER">
-                    <FlowPane fx:id="budgetCardsContainer" styleClass="budget-cards-container"
-                              prefWrapLength="800" hgap="15" vgap="15"/>
+                <!-- Budget table showing existing entries -->
+                <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+                    <TableView fx:id="budgetTable" styleClass="budget-table"/>
                 </ScrollPane>
-                <HBox alignment="CENTER">
-                    <Button text="Generate AI Spending Insights"
-                            onAction="#handleGenerateInsights"
-                            fx:id="insightButton"
-                            styleClass="generate-button">
-                        <VBox.margin>
-                            <Insets top="20"/>
-                        </VBox.margin>
-                    </Button>
-                </HBox>
+            </HBox>
 
-            </VBox>
+            <!-- Visual budget cards (category + progress) -->
+            <Label text="Budget Overview" styleClass="section-title"/>
+            <ScrollPane fitToWidth="true" hbarPolicy="AS_NEEDED" vbarPolicy="NEVER">
+                <FlowPane fx:id="budgetCardsContainer" styleClass="budget-cards-container"
+                          prefWrapLength="800" hgap="15" vgap="15"/>
+            </ScrollPane>
 
+            <!-- AI insight trigger button -->
+            <HBox alignment="CENTER">
+                <Button text="Generate AI Spending Insights"
+                        onAction="#handleGenerateInsights"
+                        fx:id="insightButton"
+                        styleClass="generate-button">
+                    <VBox.margin>
+                        <Insets top="20"/>
+                    </VBox.margin>
+                </Button>
+            </HBox>
+
+        </VBox>
     </center>
-    <!-- 覆盖全屏的进度条层 -->
+
+    <!-- Fullscreen overlay progress indicator -->
     <StackPane fx:id="progressOverlay"
                alignment="CENTER"
                visible="false"

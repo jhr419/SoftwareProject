@@ -1,21 +1,31 @@
-/* 基础样式 */
+/*
+ * File: categories.css
+ * Description: Styling for category section, cards, transaction tables, and action buttons.
+ * Applies to category management views and related components.
+ * Author: LedgerEase Team
+ * Last updated: May 2025
+ */
+
+/* Base layout style for category section */
 .category-section {
     -fx-background-color: #f5f5f5;
     -fx-padding: 15px;
     -fx-background-radius: 10px;
 }
 
+/* Section title style */
 .section-title {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
     -fx-text-fill: #4285f4;
 }
 
-/* 分类卡片 */
+/* Container for category cards */
 .card-container {
     -fx-padding: 5px;
 }
 
+/* Individual category card style */
 .category-card {
     -fx-background-color: white;
     -fx-background-radius: 10px;
@@ -27,29 +37,32 @@
     -fx-cursor: hand;
 }
 
+/* Hover effect for category cards */
 .category-card:hover {
     -fx-background-color: #f0f0f0;
 }
 
+/* Category name text on card */
 .card-title {
     -fx-font-size: 14px;
     -fx-text-fill: #616161;
     -fx-font-weight: bold;
 }
 
-/* 交易表格 */
+/* Transaction table container */
 .transaction-table {
     -fx-background-color: white;
     -fx-background-radius: 10px;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
 }
 
+/* Header style for transaction table */
 .transaction-table .column-header {
     -fx-background-color: #4285f4;
     -fx-text-fill: white;
 }
 
-/* 添加按钮 */
+/* Add button style */
 .add-button {
     -fx-background-color: #4285f4;
     -fx-text-fill: white;
@@ -58,6 +71,7 @@
     -fx-background-radius: 20px;
 }
 
+/* Hover effect for add button */
 .add-button:hover {
     -fx-background-color: #3a79e0;
 }

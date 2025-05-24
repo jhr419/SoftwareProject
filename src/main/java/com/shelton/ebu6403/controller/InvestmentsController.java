@@ -19,7 +19,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Initializes the investment dashboard.
+ * <p>
+ * Sets up cards, summary, revenue chart, and date pickers with listeners.
+ * Disables future date selection and triggers initial data loading.
+ * </p>
+ * Author: Jia Liu, Haihan Sun, Weicheng Xie
+ */
 public class InvestmentsController {
 
     @FXML private HBox cardScrollContainer;
@@ -31,6 +38,14 @@ public class InvestmentsController {
     @FXML private VBox monthlyDataContainer;
     @FXML private DatePicker investmentDatePicker;
 
+
+    /**
+     * Initializes the investment dashboard.
+     * <p>
+     * Sets up cards, summary, revenue chart, and date pickers with listeners.
+     * Disables future date selection and triggers initial data loading.
+     * </p>
+     */
     @FXML
     public void initialize() {
         initCards();
@@ -39,7 +54,7 @@ public class InvestmentsController {
 
         LocalDate today = LocalDate.now();
 
-        // 禁用 summaryDatePicker 未来日期
+        // ban summaryDatePicker from future date
         summaryDatePicker.setValue(today);
         summaryDatePicker.setDayCellFactory(picker -> new DateCell() {
             @Override
@@ -54,7 +69,7 @@ public class InvestmentsController {
             if (n != null) updateSummaryForDate(n);
         });
 
-        // 禁用 investmentDatePicker 未来日期
+        // ban investmentDatePicker from future date
         investmentDatePicker.setValue(today);
         investmentDatePicker.setDayCellFactory(picker -> new DateCell() {
             @Override
@@ -69,11 +84,19 @@ public class InvestmentsController {
             if (n != null) initInvestmentList(n);
         });
 
-        // 第一次加载
+        // load for the first time
         initInvestmentList(today);
     }
 
-
+    /**
+     * Updates the summary section based on the selected date.
+     * <p>
+     * Calculates income, expense, and balance for the specified date
+     * using data from investment.csv.
+     * </p>
+     *
+     * @param date The date for which to display the investment summary.
+     */
     private void updateSummaryForDate(LocalDate date) {
         infoSummaryContainer.getChildren().clear();
 
@@ -119,6 +142,13 @@ public class InvestmentsController {
         );
     }
 
+    /**
+     * Initializes bank card views from the cards.csv file.
+     * <p>
+     * Loads all existing cards and highlights the most recently added one.
+     * Appends a button for adding new cards.
+     * </p>
+     */
     private void initCards() {
         cardScrollContainer.getChildren().clear();
         int index = 0;
@@ -146,7 +176,6 @@ public class InvestmentsController {
                 e.printStackTrace();
             }
 
-// 全部添加后，选中最后一个卡片
             if (!cardList.isEmpty()) {
                 VBox lastCard = cardList.get(cardList.size() - 1);
                 lastCard.getStyleClass().clear();
@@ -155,12 +184,21 @@ public class InvestmentsController {
             cardScrollContainer.getChildren().addAll(cardList);
         }
 
-        // 添加已有默认卡片（如你之前硬编码的）或保留新增卡片
+        // add default card
         VBox addCard = createAddCard();
         cardScrollContainer.getChildren().add(addCard);
     }
 
-
+    /**
+     * Creates a visual representation of a bank card.
+     *
+     * @param balance  Card balance (e.g., "$1000")
+     * @param holder   Cardholder name
+     * @param expiry   Expiration date
+     * @param number   Card number
+     * @param selected Whether the card is selected
+     * @return VBox representing the card
+     */
     private VBox createBankCard(String balance, String holder, String expiry, String number, boolean selected) {
         VBox card = new VBox();
         card.getStyleClass().add(selected ? "bank-card-selected" : "bank-card");
@@ -172,6 +210,11 @@ public class InvestmentsController {
         return card;
     }
 
+    /**
+     * Creates an "Add Card" button card with a "+" sign.
+     *
+     * @return VBox node that triggers the add card dialog when clicked.
+     */
     private VBox createAddCard() {
         VBox add = new VBox();
         add.getStyleClass().add("add-card");
@@ -182,6 +225,12 @@ public class InvestmentsController {
         return add;
     }
 
+    /**
+     * Displays a dialog allowing the user to add a new card.
+     * <p>
+     * The entered data is saved to cards.csv and the UI is refreshed.
+     * </p>
+     */
     private void showAddCardDialog() {
         try {
             Dialog<ButtonType> dialog = new Dialog<>();
@@ -214,7 +263,7 @@ public class InvestmentsController {
                     String expiry = expiryDate.getValue() != null ? expiryDate.getValue().getMonthValue() + "/" + (expiryDate.getValue().getYear() % 100) : "N/A";
 
                     saveCardToFile(type, name, number, expiry);
-                    refreshCards(); // 重新加载卡片视图
+                    refreshCards(); // reload figure
                 }
                 return null;
             });
@@ -225,13 +274,24 @@ public class InvestmentsController {
         }
     }
 
+
+    /**
+     * Reloads the card container to reflect any new changes.
+     */
     private void refreshCards() {
-        initCards(); // 简单调用已有的卡片初始化方法
+        initCards();
     }
 
-
+    /**
+     * Saves card information to cards.csv.
+     *
+     * @param type   Card type (e.g., "Classic")
+     * @param name   Cardholder name
+     * @param number Card number
+     * @param expiry Expiration date (formatted as MM/YY)
+     */
     private void saveCardToFile(String type, String name, String number, String expiry) {
-        String balance = "1000"; // 写死或将来可输入
+        String balance = "1000";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("data/cards.csv", true))) {
             writer.write(String.join(",", type, name, number, expiry, balance));
             writer.newLine();
@@ -240,10 +300,15 @@ public class InvestmentsController {
         }
     }
 
-
-
+    /**
+     * Initializes today's investment summary.
+     * <p>
+     * Aggregates income, expenses, and balance for the current date from investment.csv.
+     * Displays the result in three summary cards.
+     * </p>
+     */
     private void initSummary() {
-        infoSummaryContainer.getChildren().clear(); // 清除旧卡片
+        infoSummaryContainer.getChildren().clear(); // clear old card
 
         String path = "data/investment.csv";
         LocalDate today = LocalDate.now();
@@ -291,7 +356,14 @@ public class InvestmentsController {
     }
 
 
-
+    /**
+     * Creates a summary card with a title and styled value.
+     *
+     * @param title The title (e.g., "Income")
+     * @param value The value (e.g., "+100.00")
+     * @param color The color used to style the value label
+     * @return A VBox representing the summary card
+     */
     private VBox createSummaryCard(String title, String value, String color) {
         VBox box = new VBox();
         Label titleLabel = new Label(title);
@@ -302,6 +374,13 @@ public class InvestmentsController {
         return box;
     }
 
+    /**
+     * Initializes a line chart showing monthly revenue.
+     * <p>
+     * Aggregates income and expense differences per month
+     * from investment.csv and plots data for months 1–6.
+     * </p>
+     */
     private void initChart() {
         String path = "data/investment.csv";
         Map<Integer, Double> monthlyRevenue = new HashMap<>();
@@ -312,7 +391,7 @@ public class InvestmentsController {
             return;
         }
 
-        // 读取并按月累计 revenue
+        // read revenue by month
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             boolean isFirst = true;
@@ -326,7 +405,6 @@ public class InvestmentsController {
                     double expense = Double.parseDouble(parts[2].trim());
                     double revenue = income - expense;
 
-                    // 只统计不晚于今天的月份
                     if (!date.isAfter(LocalDate.now())) {
                         monthlyRevenue.put(month,
                                 monthlyRevenue.getOrDefault(month, 0.0) + revenue);
@@ -337,14 +415,14 @@ public class InvestmentsController {
             e.printStackTrace();
         }
 
-        // 准备绘图
+        // prepare to figure
         monthlyRevenueChart.getData().clear();
         XYChart.Series<String, Number> series = new XYChart.Series<>();
         series.setName("Revenue");
 
-        // 只画到当前月
+        // draw to present month
         int thisMonth = LocalDate.now().getMonthValue();
-        int maxMonth = Math.min(thisMonth, 6);  // 你的图表只关心 1–6 月
+        int maxMonth = Math.min(thisMonth, 6);
 
         for (int month = 1; month <= maxMonth; month++) {
             double rev = monthlyRevenue.getOrDefault(month, 0.0);
@@ -352,7 +430,7 @@ public class InvestmentsController {
             XYChart.Data<String, Number> dataPoint = new XYChart.Data<>(monthStr, rev);
             series.getData().add(dataPoint);
 
-            // 添加数据标签
+            // Add data tag
             dataPoint.nodeProperty().addListener((obs, oldNode, newNode) -> {
                 if (newNode != null) {
                     Label label = new Label(String.format("$%.0f", rev));
@@ -367,7 +445,11 @@ public class InvestmentsController {
     }
 
 
-
+    /**
+     * Loads and displays investments for a specific date.
+     *
+     * @param targetDate The date for which to show investment records
+     */
     private void initInvestmentList(LocalDate targetDate) {
         investmentListContainer.getChildren().clear();
 
@@ -403,7 +485,16 @@ public class InvestmentsController {
         }
     }
 
-
+    /**
+     * Creates a row displaying investment information.
+     *
+     * @param name        Company name
+     * @param amount      Investment amount (e.g., "$1500")
+     * @param returnValue Return percentage (e.g., "+12%")
+     * @param category    Investment category (e.g., "Tech")
+     * @param color       Return value text color
+     * @return An HBox representing the investment item row
+     */
     private HBox createInvestmentItem(String name, String amount, String returnValue, String category, String color) {
         HBox row = new HBox(10);
         ImageView icon = new ImageView(new Image(getClass().getResourceAsStream("/com/shelton/ebu6403/images/profile photo.png")));
@@ -416,6 +507,13 @@ public class InvestmentsController {
         row.getStyleClass().add("investment-item");
         return row;
     }
+
+    /**
+     * Navigates to the AI Assistant page.
+     * <p>
+     * Loads the AiDeepseekView.fxml view and opens it in a new window.
+     * </p>
+     */
     @FXML
     private void goToAiPage() {
         try {

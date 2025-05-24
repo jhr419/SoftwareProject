@@ -7,13 +7,35 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
-
+/**
+ * BudgetSet manages user-defined monthly budgets and tracks corresponding expenses.
+ * <p>
+ * It supports saving and loading budget data from CSV files, calculating progress,
+ * and providing callback notifications on budget changes.
+ * </p>
+ *
+ * @author Haoran Jin, Zuhao Zhang, Haihan Sun
+ */
 public class BudgetSet {
-    Map<String, Map<YearMonth, Double>> monthlyBudgets; // {类别 -> {截止日期 -> 预算金额}}
-    private Map<String, Map<LocalDate, Double>> categorySpending; // {类别 -> {日期 -> 已支出金额}}
+
+    /** Stores monthly budgets: category -> (YearMonth -> amount) */
+    Map<String, Map<YearMonth, Double>> monthlyBudgets;
+
+    /** Stores expenses by category and date: category -> (LocalDate -> amount spent) */
+    private Map<String, Map<LocalDate, Double>> categorySpending;
+
+    /** Stores savings per category (optional, currently unused) */
+    private Map<String, Map<LocalDate, Double>> categorySavings;
+
+    /** Path to the budget CSV file */
     private static final String BUDGET_FILE = "data/budgets.csv";
+
+    /** Callback triggered when expenses change */
     private Runnable onExpenseChanged;
-    private Map<String, Map<LocalDate, Double>> categorySavings;  // {类别 -> {日期 -> 储蓄金额}}
+
+    /**
+     * Constructs a new BudgetSet and loads any existing budget/expense data.
+     */
     public BudgetSet() {
         monthlyBudgets = new HashMap<>();
         categorySpending = new HashMap<>();
@@ -22,15 +44,26 @@ public class BudgetSet {
         loadExpensesFromFile();
     }
 
-    // **设定预算**
+    /**
+     * Sets the budget amount for a given category and month.
+     *
+     * @param category the name of the category
+     * @param month the month for which the budget is set
+     * @param amount the budgeted amount
+     */
     public void setBudget(String category, YearMonth month, double amount) {
         monthlyBudgets.putIfAbsent(category, new HashMap<>());
         monthlyBudgets.get(category).put(month, amount);
         saveBudgetsToFile();
     }
 
-
-    // **记录支出**
+    /**
+     * Adds an expense to the specified category on a given date.
+     *
+     * @param category the category of the expense
+     * @param date the date of the expense
+     * @param amount the amount spent
+     */
     public void addExpense(String category, LocalDate date, double amount) {
         categorySpending.putIfAbsent(category, new HashMap<>());
         categorySpending.get(category).put(date,
@@ -39,19 +72,32 @@ public class BudgetSet {
         notifyExpenseChanged();
     }
 
-
-    // **查询所有预算**
+    /**
+     * Retrieves all budgets for all categories and months.
+     *
+     * @return a map of category to month-budget mappings
+     */
     public Map<String, Map<YearMonth, Double>> getAllBudgets() {
         return monthlyBudgets;
     }
 
-    // **按类别查询预算**
+    /**
+     * Retrieves the budget for a specific category.
+     *
+     * @param category the category name
+     * @return a map of YearMonth to budget amount
+     */
     public Map<YearMonth, Double> getBudgetsByCategory(String category) {
         return monthlyBudgets.getOrDefault(category, new HashMap<>());
     }
 
-
-    // **删除预算（优化交互）**
+    /**
+     * Removes a specific month's budget for a given category.
+     *
+     * @param category the category name
+     * @param month the target month
+     * @return true if removed successfully; false otherwise
+     */
     public boolean removeBudget(String category, YearMonth month) {
         if (monthlyBudgets.containsKey(category) && monthlyBudgets.get(category).containsKey(month)) {
             monthlyBudgets.get(category).remove(month);
@@ -64,16 +110,20 @@ public class BudgetSet {
         return false;
     }
 
-    // **获取预算进度**
+    /**
+     * Calculates the percentage of budget spent in a given month and category.
+     *
+     * @param category the budget category
+     * @param ym the month
+     * @return a value between 0.0 and 1.0 representing progress
+     */
     public double getBudgetProgress(String category, YearMonth ym) {
-        // 获取预算金额
         double budgetAmount = monthlyBudgets
                 .getOrDefault(category, new HashMap<>())
                 .getOrDefault(ym, 0.0);
 
         if (budgetAmount == 0.0) return 0.0;
 
-        // 计算该分类在这个月的支出总额
         double totalSpent = 0.0;
         Map<LocalDate, Double> expensesByDate = categorySpending.getOrDefault(category, new HashMap<>());
 
@@ -84,15 +134,18 @@ public class BudgetSet {
             }
         }
 
-        // 返回支出/预算的百分比（最大为1.0）
         return Math.min(totalSpent / budgetAmount, 1.0);
     }
+
+    /**
+     * Loads expense records from a CSV file and accumulates them in memory.
+     */
     private void loadExpensesFromFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader("data/expenses.csv"))) {
             String line;
             boolean isFirstLine = true;
             while ((line = reader.readLine()) != null) {
-                if (isFirstLine) { // 跳过表头
+                if (isFirstLine) {
                     isFirstLine = false;
                     continue;
                 }
@@ -100,11 +153,10 @@ public class BudgetSet {
                 String[] data = line.split(",", -1);
                 if (data.length < 5) continue;
 
-                String category = data[4]; // 第5列是 category
-                double amount = Double.parseDouble(data[3]); // 第4列是 amount
-                LocalDate date = LocalDate.parse(data[2]); // 第3列是 date
+                String category = data[4];
+                double amount = Double.parseDouble(data[3]);
+                LocalDate date = LocalDate.parse(data[2]);
 
-                // 存入 categorySpending
                 categorySpending.putIfAbsent(category, new HashMap<>());
                 Map<LocalDate, Double> map = categorySpending.get(category);
                 map.put(date, map.getOrDefault(date, 0.0) + amount);
@@ -114,17 +166,17 @@ public class BudgetSet {
         }
     }
 
-
-
-    // **加载预算**
+    /**
+     * Loads budget data from the CSV file and stores it in memory.
+     */
     private void loadBudgetsFromFile() {
-        monthlyBudgets.clear(); // 清空已有数据
+        monthlyBudgets.clear();
         try (BufferedReader reader = new BufferedReader(new FileReader(BUDGET_FILE))) {
             String line;
             boolean isFirstLine = true;
 
             while ((line = reader.readLine()) != null) {
-                if (isFirstLine) {  // 跳过表头
+                if (isFirstLine) {
                     isFirstLine = false;
                     continue;
                 }
@@ -150,9 +202,12 @@ public class BudgetSet {
         }
     }
 
-
-
-    // 用于解析字符串月份为 index
+    /**
+     * Converts a month name (e.g., "March") into a numeric index (0-based).
+     *
+     * @param month the full English month name
+     * @return an integer from 0 (January) to 11 (December)
+     */
     private int getMonthIndex(String month) {
         String[] months = {
                 "January", "February", "March", "April", "May", "June",
@@ -164,11 +219,11 @@ public class BudgetSet {
         return 0;
     }
 
-
-    // **保存预算**
+    /**
+     * Saves all current budget data to the CSV file.
+     */
     private void saveBudgetsToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(BUDGET_FILE))) {
-            //  写入表头
             writer.write("No,Category,Month,Amount");
             writer.newLine();
 
@@ -178,8 +233,7 @@ public class BudgetSet {
                             .map(e -> new BudgetEntry(entry.getKey(), e.getKey(), e.getValue())))
                     .sorted((a, b) -> {
                         int cmp = a.month.compareTo(b.month);
-                        if (cmp == 0) return a.category.compareTo(b.category);
-                        return cmp;
+                        return (cmp == 0) ? a.category.compareTo(b.category) : cmp;
                     })
                     .forEachOrdered(budget -> {
                         try {
@@ -198,6 +252,9 @@ public class BudgetSet {
         }
     }
 
+    /**
+     * A helper data class used for sorting and saving budget entries.
+     */
     private static class BudgetEntry {
         String category;
         YearMonth month;
@@ -209,15 +266,20 @@ public class BudgetSet {
             this.amount = amount;
         }
     }
+
+    /**
+     * Registers a callback to be executed whenever expense data changes.
+     *
+     * @param callback the function to run on expense updates
+     */
     public void setOnExpenseChanged(Runnable callback) {
         this.onExpenseChanged = callback;
     }
 
+    /**
+     * Executes the registered expense-changed callback, if any.
+     */
     private void notifyExpenseChanged() {
         if (onExpenseChanged != null) onExpenseChanged.run();
     }
-
-
-
-
 }

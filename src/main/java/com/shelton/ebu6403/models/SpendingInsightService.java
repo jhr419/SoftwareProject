@@ -4,21 +4,46 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Generates intelligent financial advice based on recent expense records.
+ * <p>
+ * This service analyzes expenses, detects seasonal spending patterns,
+ * integrates holiday context, and sends prompts to an AI API for budgeting insights.
+ * </p>
+ *
+ * author Zhifei Liu, Weicheng Xie, Haihan Sun
+ */
 public class SpendingInsightService {
 
     private List<ExpenseRecord> expenses;
     private ApiClient apiClient;
 
+    /**
+     * Constructs the insight service with given data and API client.
+     *
+     * @param expenses   list of historical transaction records
+     * @param apiClient  instance of ApiClient to access external AI API
+     */
     public SpendingInsightService(List<ExpenseRecord> expenses, ApiClient apiClient) {
         this.expenses = expenses;
         this.apiClient = apiClient;
     }
 
+    /**
+     * Generates spending insights using AI.
+     * <p>
+     * This method constructs a prompt based on recent expense records,
+     * adds seasonal reminders and suggestions, and submits the prompt
+     * to the AI model for analysis.
+     * </p>
+     *
+     * @return financial advice in plain English from the AI
+     */
     public String generateSpendingInsights() {
         try {
             StringBuilder prompt = new StringBuilder();
 
-            // 添加节日前提醒
+            // Add reminder if a holiday is near
             ChineseHolidayAnalyzer holidayAnalyzer = new ChineseHolidayAnalyzer(expenses);
             String upcomingReminder = holidayAnalyzer.getUpcomingHolidayReminder();
             if (!upcomingReminder.isBlank()) {
@@ -27,25 +52,23 @@ public class SpendingInsightService {
 
             prompt.append("Below are recent user expense records. Please generate the following in plain English (no markdown, no symbols):\n")
                     .append("1. Spending Analysis\n")
-                    .append("2. Monthly Budget Advice(With consideration of holidays next 30 days)\n")
+                    .append("2. Monthly Budget Advice (With consideration of holidays in the next 30 days)\n")
                     .append("3. Saving Advice\n")
                     .append("4. Expense Reduction Advice\n\n");
 
-
-            // 节日支出 spike 分析
+            // Add seasonal context
             String seasonalContext = holidayAnalyzer.generateSeasonalContext();
             if (seasonalContext != null && !seasonalContext.isBlank()) {
                 prompt.append("Here is some seasonal spending context:\n").append(seasonalContext).append("\n\n");
             }
 
-            // 节日预算建议
+            // Add holiday-specific budgeting advice
             String holidayBudgetAdvice = getHolidayBudgetAdvice();
             if (!holidayBudgetAdvice.isBlank()) {
                 prompt.append("Here is a seasonal budgeting tip:\n").append(holidayBudgetAdvice).append("\n\n");
             }
 
-
-            // 获取过去 1 个月内的记录
+            // Collect records from the past 30 days
             LocalDate oneMonthAgo = LocalDate.now().minusMonths(1);
             List<ExpenseRecord> recent = expenses.stream()
                     .filter(record -> record.getTransactionType().equalsIgnoreCase("expense"))
@@ -53,14 +76,12 @@ public class SpendingInsightService {
                     .collect(Collectors.toList());
 
             for (ExpenseRecord record : recent) {
-                if (!record.getTransactionType().equalsIgnoreCase("expense")) continue;
                 prompt.append("Date: ").append(record.getDate())
                         .append(", Item: ").append(record.getItemName())
                         .append(", Category: ").append(record.getCategory())
                         .append(", Amount: ").append(record.getAmount()).append(" RMB\n");
             }
 
-            // 调用 AI 分析
             return apiClient.sendRequest(prompt.toString());
 
         } catch (Exception e) {
@@ -69,6 +90,14 @@ public class SpendingInsightService {
         }
     }
 
+    /**
+     * Returns budgeting suggestions based on upcoming Chinese holidays.
+     * <p>
+     * If a major holiday is within the next 7 days, returns a short tip for budgeting.
+     * </p>
+     *
+     * @return holiday-related budgeting tip or empty string if no upcoming holidays
+     */
     private String getHolidayBudgetAdvice() {
         LocalDate today = LocalDate.now();
         int year = today.getYear();
@@ -91,6 +120,5 @@ public class SpendingInsightService {
 
         return "";
     }
-
 
 }
