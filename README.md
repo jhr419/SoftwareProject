@@ -5,16 +5,16 @@ This is a Java-based financial management desktop application developed using Ja
 ## 📦 Project Structure
 ```
 .
-├── src/ # Java source code (main application)
+├── src/                                # Java source code (main application)
 │ ├── main/
-│ │ ├── java/com.shelton.ebu6403/ # Main logic: controllers, models
-│ │ ├── resources/com.shelton.ebu6403/ # FXML, images, styles
-│ ├── test/ # JUnit test files
+│ │ ├── java/com.shelton.ebu6403/       # Main logic: controllers, models
+│ │ ├── resources/com.shelton.ebu6403/  # FXML, images, styles
+│ ├── test/                             # JUnit test files
 │ │ ├── java/com.shelton.ebu6403.models/
-├── JunitTest/ # Additional controller-level tests
-├── data/ # Application data (CSV files)
-├── pom.xml # Maven project configuration
-├── README.md # Project documentation
+├── JunitTest/                          # Additional controller-level tests
+├── data/                               # Application data (CSV files)
+├── pom.xml                             # Maven project configuration
+├── README.md                           # Project documentation
 ```
 
 ## 🧰 Technologies
@@ -85,7 +85,7 @@ mvn test
 
 ## 📁 Sample Data Format
 
-Example of an input CSV file in `data/`:
+Example of an **input CSV**  file in `data/` which you want to import directly :
 ```csv
 serialNo,name,date,amount
 1,Rent,2025-04-01,1500.00
@@ -102,10 +102,21 @@ serialNo,name,date,amount
 - Clean JavaFX UI with data charts
 
 ## 📸 Screenshots
-The home page can be seen as follows.
+If you run the code successfully, the home page can be seen as follows.
 
 ![App Screenshot](src/main/resources/com/shelton/ebu6403/images/preview.png)
 
+## 👥 Team Contributions
+| Member Name  | Role / Contribution                                                                                 |
+|--------------|-----------------------------------------------------------------------------------------------------|
+| Zuhao Zhang  | Developed JUnit tests and implemented the savings module                                            |
+| Zhifei Liu   | Implemented AI-based classification and report generation, budget setup                             |
+| Haihan Sun   | Built expense CRUD logic and investment module, chart demonstration                                 |
+| Weicheng Xie | Designed and structured the MVC architecture, implemented GUI rendering                             |
+| Jia Liu      | Maintained and updated the prototype regularly, developed the Analysis page                         |
+| Haoran Jin   | Created Home and Categories page interfaces, and developed the login and registration functionality |
+
+🔧 All members participated in debugging, UI polishing, and final presentation preparation.
 
 
 ## 📝 License
