@@ -98,44 +98,51 @@ public class CategoriesController {
         );
         File selectedFile = fileChooser.showOpenDialog(null);
         if (selectedFile != null) {
-            // 1. get serial number
-            int nextSerialNo = allExpenses.size() + 1;
+            int nextExpSerialNo = allExpenses.size() + 1;
+            int nextIncSerialNo = allIncomes.size() + 1;
 
             try (BufferedReader reader = new BufferedReader(new FileReader(selectedFile))) {
                 String line;
                 boolean isFirst = true;
                 while ((line = reader.readLine()) != null) {
-                    if (isFirst) { isFirst = false; continue; } // skip the first line
+                    if (isFirst) { isFirst = false; continue; }
 
                     String[] parts = line.split(",", -1);
-                    if (parts.length < 4) continue;
+                    if (parts.length < 5) continue;
 
                     String name = parts[1];
                     String date = parts[2];
                     double amount = Double.parseDouble(parts[3]);
-                    String category = (parts.length >= 5 && !parts[4].isBlank())
-                            ? parts[4]
-                            : expenseManager.classifyWithAI(name, "expense");
+                    String type = parts[4].toLowerCase().trim(); // "income" or "expense"
 
-                    Transaction tx = new Transaction(nextSerialNo++, name, date, amount, category);
-                    allExpenses.add(tx);
-                    appendTransactionToCSV(tx, "data/expenses.csv");
+                    // AI category classification based on type
+                    String category = expenseManager.classifyWithAI(name, type);
+
+                    if ("income".equals(type)) {
+                        Transaction tx = new Transaction(nextIncSerialNo++, name, date, amount, category);
+                        allIncomes.add(tx);
+                        appendTransactionToCSV(tx, "data/incomes.csv");
+                    } else if ("expense".equals(type)) {
+                        Transaction tx = new Transaction(nextExpSerialNo++, name, date, amount, category);
+                        allExpenses.add(tx);
+                        appendTransactionToCSV(tx, "data/expenses.csv");
+                    }
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
             expensesTable.setItems(allExpenses);
+            incomeTable.setItems(allIncomes);
 
-            // alert fow successful import
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Import Successful");
             alert.setHeaderText(null);
-            alert.setContentText("CSV has been imported successfully！");
+            alert.setContentText("CSV has been imported successfully!");
             alert.showAndWait();
-
         }
     }
+
 
     /**
      * Initializes category cards for both expense and income types.
