@@ -481,8 +481,8 @@ public class CategoriesController {
 
         VBox content = new VBox(10,
                 new Label("Title:"), nameField,
-                new Label("Date:"), dateField,
-                new Label("Amount:"), amountField,
+                new Label("Date(Year-Month-Day):"), dateField,
+                new Label("Amount of Money:"), amountField,
                 new Label("Category (Leave empty to use AI):"), categoryField
         );
         dialog.getDialogPane().setContent(content);
@@ -553,8 +553,8 @@ public class CategoriesController {
 
         VBox content = new VBox(10,
                 new Label("Title:"), nameField,
-                new Label("Date:"), dateField,
-                new Label("Amount:"), amountField,
+                new Label("Date(Year-Month-Day):"), dateField,
+                new Label("Amount of Money:"), amountField,
                 new Label("Category (Leave empty to use AI):"), categoryField
         );
         dialog.getDialogPane().setContent(content);

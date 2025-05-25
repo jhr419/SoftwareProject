@@ -190,7 +190,7 @@
         <version>3.6.3</version>
         <configuration>
           <encoding>UTF-8</encoding>
-          <charSet>UTF-8</charSet>
+          <charset>UTF-8</charset>
           <source>21</source>
           <failOnError>false</failOnError>
           <show>protected</show>
