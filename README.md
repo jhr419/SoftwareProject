@@ -93,6 +93,18 @@ serialNo,name,date,amount
 3,Coffee,2025-04-07,15.50
 ```
 
+## 📚 Documentation
+
+This project is documented using **Javadoc**.
+
+To view the full API documentation:
+
+1. Navigate to the `javadoc` folder in this project
+2. Open `index.html` with any web browser
+
+> 📂 Path: `javadoc/index.html`
+
+
 ## ✨ Features
 
 - Expense and income tracking
