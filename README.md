@@ -44,10 +44,17 @@ Please ensure that Maven is installed on your system before running the commands
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository (Or down download ZIP)
+### 1. Clone the repository (Or download ZIP)
 ```bash
-git clone https://github.com/jhr419/SoftwareProject
-cd SoftwareProject
+git clone https://github.com/jhr419/LedgerEase.git
+```
+After cloning, you can run the following command to verify that the project folder has been successfully created:
+```bash
+ls -l LedgerEase
+```
+If you see the full project directory structure (e.g., src, pom.xml, etc.), it means the clone was successful. Then:
+```bash
+cd LedgerEase
 ```
 
 ### 2. Build the project with Maven
