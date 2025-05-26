@@ -75,6 +75,17 @@ mvn javafx:run
 
 > ⚠️ Make sure JavaFX is configured in your environment. If using IntelliJ IDEA, enable JavaFX SDK under Project Structure.
 
+## 🔐 Default Login Account
+
+To help you get started quickly, a default login account is provided:
+
+- **Username:** `BUPT`
+- **Password:** `BUPT`
+
+Please use this account to log in when you launch the application for the first time or create a new account.
+
+> ⚠️ Note: Remember to change or disable the default account before deploying the application in a production environment.
+
 ## 🧪 Running Tests
 
 To run all unit tests:
